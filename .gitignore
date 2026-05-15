@@ -1,0 +1,15 @@
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editor folders
+.vscode/
+.idea/
+*.swp
+*~
+
+# Secrets (none used currently, but never commit them)
+.env
+.env.local
+.env.*.local

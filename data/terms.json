@@ -1,0 +1,744 @@
+{
+  "meta": {
+    "version": "0.2.2",
+    "updated": "2026-05-15",
+    "languages": ["el", "en", "ar", "fa"],
+    "note": "Greek and English fields are sourced and verified against public references. Arabic and Farsi translations are best-effort drafts from UNHCR Arabic/Farsi glossaries and should be reviewed by native-speaker interpreters before publication."
+  },
+  "categories": [
+    { "id": "status",         "el": "Καθεστώς & Προστασία",       "en": "Status & Protection" },
+    { "id": "procedure",      "el": "Διαδικασία Ασύλου",          "en": "Asylum Procedure" },
+    { "id": "reception",      "el": "Υποδοχή & Ταυτοποίηση",      "en": "Reception & Identification" },
+    { "id": "vulnerable",     "el": "Ευαλωτότητα",                "en": "Vulnerability" },
+    { "id": "legal",          "el": "Νομικοί Όροι",               "en": "Legal Terms" },
+    { "id": "medical",        "el": "Ιατρικοί Όροι",              "en": "Medical Terms" },
+    { "id": "detention",      "el": "Κράτηση",                    "en": "Detention" },
+    { "id": "return",         "el": "Επιστροφή & Αναχώρηση",      "en": "Return & Departure" },
+    { "id": "family",         "el": "Οικογένεια & Παιδιά",        "en": "Family & Children" },
+    { "id": "integration",    "el": "Ένταξη",                     "en": "Integration" },
+    { "id": "communication",  "el": "Διερμηνεία & Επικοινωνία",   "en": "Interpretation & Communication" },
+    { "id": "documentation",  "el": "Έγγραφα & Στοιχεία",          "en": "Documentation" }
+  ],
+  "terms": [
+    {
+      "id": "asylum-seeker",
+      "category": "status",
+      "translations": { "el": "Αιτών/ούσα άσυλο", "en": "Asylum seeker", "ar": "طالب لجوء", "fa": "پناهجو" },
+      "definition_el": "Πρόσωπο που έχει υποβάλει αίτηση διεθνούς προστασίας και αναμένει την εξέταση της.",
+      "definition_en": "A person who has applied for international protection and is awaiting a decision.",
+      "sources": ["UNHCR Master Glossary", "Ν. 4939/2022 αρ. 2"]
+    },
+    {
+      "id": "refugee",
+      "category": "status",
+      "translations": { "el": "Πρόσφυγας", "en": "Refugee", "ar": "لاجئ", "fa": "پناهنده" },
+      "definition_el": "Πρόσωπο που έχει αναγνωρισθεί ως δικαιούχος διεθνούς προστασίας σύμφωνα με τη Σύμβαση της Γενεύης του 1951.",
+      "definition_en": "A person recognised as a beneficiary of international protection under the 1951 Geneva Convention.",
+      "sources": ["1951 Geneva Convention art. 1A(2)", "UNHCR Master Glossary"]
+    },
+    {
+      "id": "subsidiary-protection",
+      "category": "status",
+      "translations": { "el": "Επικουρική προστασία", "en": "Subsidiary protection", "ar": "الحماية الإضافية", "fa": "حمایت فرعی" },
+      "definition_el": "Καθεστώς που χορηγείται σε αλλοδαπό που δεν πληροί τις προϋποθέσεις προσφυγικής ιδιότητας, αλλά κινδυνεύει με σοβαρή βλάβη εάν επιστρέψει στη χώρα καταγωγής.",
+      "definition_en": "Status granted to a non-EU national who does not qualify as a refugee but would face a real risk of serious harm if returned to their country of origin.",
+      "sources": ["EU Qualification Directive 2011/95/EU art. 15", "Ν. 4939/2022"]
+    },
+    {
+      "id": "stateless",
+      "category": "status",
+      "translations": { "el": "Ανιθαγενής", "en": "Stateless person", "ar": "عديم الجنسية", "fa": "بدون تابعیت" },
+      "definition_el": "Πρόσωπο που δεν θεωρείται υπήκοος από κανένα κράτος σύμφωνα με τη νομοθεσία του.",
+      "definition_en": "A person who is not considered a national by any State under the operation of its law.",
+      "sources": ["1954 Convention on Statelessness art. 1"]
+    },
+    {
+      "id": "refugee-status-determination",
+      "category": "status",
+      "translations": { "el": "Διαδικασία αναγνώρισης προσφυγικής ιδιότητας", "en": "Refugee Status Determination (RSD)", "ar": "تحديد وضع اللاجئ", "fa": "تعیین وضعیت پناهندگی" },
+      "definition_el": "Η νομική και διοικητική διαδικασία με την οποία εξετάζεται εάν ένα πρόσωπο πληροί τα κριτήρια του πρόσφυγα.",
+      "definition_en": "The legal and administrative process to determine whether a person meets the criteria of a refugee.",
+      "sources": ["UNHCR Handbook", "UNHCR Master Glossary"]
+    },
+    {
+      "id": "internally-displaced-person",
+      "category": "status",
+      "translations": { "el": "Εσωτερικά εκτοπισμένος", "en": "Internally Displaced Person (IDP)", "ar": "نازح داخلي", "fa": "آواره داخلی" },
+      "definition_el": "Πρόσωπο που αναγκάστηκε να εγκαταλείψει τον τόπο διαμονής του αλλά δεν διέσχισε διεθνώς αναγνωρισμένα σύνορα.",
+      "definition_en": "A person forced to flee their home but who has not crossed an internationally recognised border.",
+      "sources": ["UN Guiding Principles on Internal Displacement (1998)"]
+    },
+    {
+      "id": "beneficiary-international-protection",
+      "category": "status",
+      "translations": { "el": "Δικαιούχος διεθνούς προστασίας", "en": "Beneficiary of international protection", "ar": "المستفيد من الحماية الدولية", "fa": "دارنده حمایت بین‌المللی" },
+      "definition_el": "Πρόσωπο στο οποίο έχει χορηγηθεί καθεστώς πρόσφυγα ή επικουρικής προστασίας.",
+      "definition_en": "A person who has been granted refugee status or subsidiary protection.",
+      "sources": ["EU Qualification Directive 2011/95/EU art. 2(b)"]
+    },
+    {
+      "id": "resettlement",
+      "category": "status",
+      "translations": { "el": "Επανεγκατάσταση", "en": "Resettlement", "ar": "إعادة التوطين", "fa": "اسکان مجدد" },
+      "definition_el": "Η μεταφορά πρόσφυγα από τη χώρα στην οποία έχει αναζητήσει προστασία σε άλλο κράτος που τον δέχεται με μόνιμο καθεστώς διαμονής.",
+      "definition_en": "The transfer of a refugee from a country in which they sought protection to a third state that accepts them with permanent residence.",
+      "sources": ["UNHCR Resettlement Handbook"]
+    },
+    {
+      "id": "mandate-refugee",
+      "category": "status",
+      "translations": { "el": "Πρόσφυγας υπό την εντολή της UNHCR", "en": "Mandate refugee", "ar": "لاجئ بموجب ولاية المفوضية", "fa": "پناهنده تحت مأموریت کمیساریای عالی پناهندگان سازمان ملل" },
+      "definition_el": "Πρόσωπο που έχει αναγνωρισθεί ως πρόσφυγας από την UNHCR σύμφωνα με τον Καταστατικό Χάρτη της, ανεξάρτητα από αναγνώριση κράτους.",
+      "definition_en": "A person recognised as a refugee by UNHCR under its Statute, irrespective of state recognition.",
+      "sources": ["UNHCR Statute (1950)", "UNHCR Master Glossary"]
+    },
+    {
+      "id": "cessation-of-status",
+      "category": "status",
+      "translations": { "el": "Παύση καθεστώτος", "en": "Cessation of refugee status", "ar": "إنهاء وضع اللاجئ", "fa": "خاتمه وضعیت پناهندگی" },
+      "definition_el": "Η ανάκληση καθεστώτος προσφυγικής ιδιότητας όταν παύουν να συντρέχουν οι λόγοι για τους οποίους χορηγήθηκε.",
+      "definition_en": "The withdrawal of refugee status when the circumstances that led to its grant no longer exist.",
+      "sources": ["1951 Geneva Convention art. 1C", "EU Qualification Directive art. 11"]
+    },
+    {
+      "id": "application-international-protection",
+      "category": "procedure",
+      "translations": { "el": "Αίτηση διεθνούς προστασίας", "en": "Application for international protection", "ar": "طلب الحماية الدولية", "fa": "درخواست حمایت بین‌المللی" },
+      "definition_el": "Η αίτηση που υποβάλλει αλλοδαπός ή ανιθαγενής για την αναγνώριση καθεστώτος πρόσφυγα ή επικουρικής προστασίας.",
+      "definition_en": "An application made by a third-country national or stateless person for recognition as a refugee or beneficiary of subsidiary protection.",
+      "sources": ["EU Procedures Directive 2013/32/EU", "Ν. 4939/2022"]
+    },
+    {
+      "id": "personal-interview",
+      "category": "procedure",
+      "translations": { "el": "Προσωπική συνέντευξη", "en": "Personal interview", "ar": "المقابلة الشخصية", "fa": "مصاحبه شخصی" },
+      "definition_el": "Συνέντευξη επί της ουσίας της αίτησης διεθνούς προστασίας, που διενεργείται από αρμόδιο χειριστή της Υπηρεσίας Ασύλου.",
+      "definition_en": "Substantive interview on the application for international protection, conducted by a case worker of the Asylum Service.",
+      "sources": ["EU Procedures Directive 2013/32/EU art. 15", "EUAA Practical Guide: Personal Interview"]
+    },
+    {
+      "id": "dublin-transfer",
+      "category": "procedure",
+      "translations": { "el": "Μεταφορά Δουβλίνου", "en": "Dublin transfer", "ar": "نقل دبلن", "fa": "انتقال دوبلین" },
+      "definition_el": "Μεταφορά αιτούντα προς το κράτος μέλος της ΕΕ που είναι υπεύθυνο για την εξέταση της αίτησης διεθνούς προστασίας του.",
+      "definition_en": "Transfer of an applicant to the EU Member State responsible for examining their application for international protection.",
+      "sources": ["Dublin III Regulation (EU) 604/2013"]
+    },
+    {
+      "id": "country-of-origin-information",
+      "category": "procedure",
+      "translations": { "el": "Πληροφορίες για τη χώρα καταγωγής", "en": "Country of origin information (COI)", "ar": "معلومات بلد المنشأ", "fa": "اطلاعات کشور مبدأ" },
+      "definition_el": "Τεκμηριωμένες πληροφορίες για την κατάσταση στη χώρα καταγωγής του αιτούντα, που χρησιμοποιούνται κατά την εξέταση της αίτησης.",
+      "definition_en": "Documented information on the situation in the applicant's country of origin, used in the examination of the application.",
+      "sources": ["EUAA Country of Origin Information Reports", "UNHCR Refworld"]
+    },
+    {
+      "id": "admissibility-procedure",
+      "category": "procedure",
+      "translations": { "el": "Διαδικασία παραδεκτού", "en": "Admissibility procedure", "ar": "إجراء المقبولية", "fa": "روند پذیرش" },
+      "definition_el": "Προκαταρκτική εξέταση εάν η αίτηση μπορεί καθόλου να εξεταστεί επί της ουσίας (π.χ. ασφαλής τρίτη χώρα, μεταγενέστερη αίτηση).",
+      "definition_en": "Preliminary examination of whether an application can be examined on the merits at all (e.g. safe third country, subsequent application).",
+      "sources": ["EU Procedures Directive 2013/32/EU art. 33", "Ν. 4939/2022"]
+    },
+    {
+      "id": "border-procedure",
+      "category": "procedure",
+      "translations": { "el": "Διαδικασία στα σύνορα", "en": "Border procedure", "ar": "إجراءات الحدود", "fa": "روند مرزی" },
+      "definition_el": "Ταχεία διαδικασία εξέτασης αίτησης διεθνούς προστασίας που διενεργείται σε σημεία διέλευσης συνόρων ή σε δομές κοντά σε αυτά.",
+      "definition_en": "Accelerated procedure for examining applications carried out at border crossing points or facilities close to them.",
+      "sources": ["EU Procedures Directive 2013/32/EU art. 43", "EU Asylum Procedures Regulation 2024/1348"]
+    },
+    {
+      "id": "accelerated-procedure",
+      "category": "procedure",
+      "translations": { "el": "Ταχεία διαδικασία", "en": "Accelerated procedure", "ar": "إجراء معجل", "fa": "روند تسریع‌شده" },
+      "definition_el": "Διαδικασία εξέτασης αίτησης με συντομευμένες προθεσμίες, που εφαρμόζεται σε καθορισμένες περιπτώσεις (π.χ. προδήλως αβάσιμη αίτηση).",
+      "definition_en": "Examination procedure with shortened deadlines, applied in defined cases (e.g. manifestly unfounded application).",
+      "sources": ["EU Procedures Directive 2013/32/EU art. 31(8)"]
+    },
+    {
+      "id": "safe-country-of-origin",
+      "category": "procedure",
+      "translations": { "el": "Ασφαλής χώρα καταγωγής", "en": "Safe country of origin", "ar": "بلد المنشأ الآمن", "fa": "کشور مبدأ امن" },
+      "definition_el": "Χώρα η οποία θεωρείται γενικά ασφαλής για τους υπηκόους της, με βάση τη νομοθεσία, την εφαρμογή της και τη γενικότερη κατάσταση.",
+      "definition_en": "A country considered generally safe for its nationals, based on its legal framework, application of the law and overall situation.",
+      "sources": ["EU Procedures Directive 2013/32/EU art. 37, Annex I"]
+    },
+    {
+      "id": "safe-third-country",
+      "category": "procedure",
+      "translations": { "el": "Ασφαλής τρίτη χώρα", "en": "Safe third country", "ar": "بلد ثالث آمن", "fa": "کشور سوم امن" },
+      "definition_el": "Τρίτη χώρα όπου ο αιτών θα μπορούσε να έχει αναζητήσει προστασία και η οποία πληροί συγκεκριμένα κριτήρια ασφάλειας.",
+      "definition_en": "A third country where the applicant could have sought protection and which meets specific safety criteria.",
+      "sources": ["EU Procedures Directive 2013/32/EU art. 38"]
+    },
+    {
+      "id": "subsequent-application",
+      "category": "procedure",
+      "translations": { "el": "Μεταγενέστερη αίτηση", "en": "Subsequent application", "ar": "طلب لاحق", "fa": "درخواست بعدی" },
+      "definition_el": "Νέα αίτηση διεθνούς προστασίας που υποβάλλεται μετά από οριστική απορριπτική απόφαση επί προηγούμενης αίτησης.",
+      "definition_en": "A further application for international protection lodged after a final decision rejecting a previous application.",
+      "sources": ["EU Procedures Directive 2013/32/EU art. 40"]
+    },
+    {
+      "id": "credibility-assessment",
+      "category": "procedure",
+      "translations": { "el": "Αξιολόγηση αξιοπιστίας", "en": "Credibility assessment", "ar": "تقييم المصداقية", "fa": "ارزیابی اعتبار" },
+      "definition_el": "Εκτίμηση της εσωτερικής και εξωτερικής αξιοπιστίας των δηλώσεων του αιτούντα κατά την εξέταση της αίτησης.",
+      "definition_en": "Assessment of the internal and external credibility of the applicant's statements during the examination of the application.",
+      "sources": ["EUAA Judicial Analysis: Evidence and Credibility Assessment", "UNHCR Beyond Proof"]
+    },
+    {
+      "id": "benefit-of-the-doubt",
+      "category": "procedure",
+      "translations": { "el": "Ευεργέτημα της αμφιβολίας", "en": "Benefit of the doubt", "ar": "قرينة الشك", "fa": "بهره از تردید" },
+      "definition_el": "Αρχή κατά την οποία, όταν δεν υπάρχει πλήρης απόδειξη αλλά οι δηλώσεις είναι γενικά αξιόπιστες, η αμφιβολία λειτουργεί υπέρ του αιτούντα.",
+      "definition_en": "Principle that, where full proof is lacking but statements are generally credible, doubt operates in favour of the applicant.",
+      "sources": ["UNHCR Handbook §196-204"]
+    },
+    {
+      "id": "first-reception",
+      "category": "reception",
+      "translations": { "el": "Πρώτη υποδοχή", "en": "First reception", "ar": "الاستقبال الأولي", "fa": "پذیرش اولیه" },
+      "definition_el": "Η αρχική φάση υποδοχής υπηκόων τρίτων χωρών μετά την είσοδό τους στην ελληνική επικράτεια, που περιλαμβάνει ταυτοποίηση, ιατρικό έλεγχο και ενημέρωση.",
+      "definition_en": "The initial phase of receiving third-country nationals after their arrival in Greek territory, including identification, medical screening and information.",
+      "sources": ["Ν. 4939/2022", "Υπηρεσία Υποδοχής και Ταυτοποίησης"]
+    },
+    {
+      "id": "registration",
+      "category": "reception",
+      "translations": { "el": "Καταγραφή", "en": "Registration", "ar": "التسجيل", "fa": "ثبت‌نام" },
+      "definition_el": "Η διαδικασία καταχώρισης προσωπικών στοιχείων και βιομετρικών δεδομένων του αιτούντα στα συστήματα της Υπηρεσίας Ασύλου και Eurodac.",
+      "definition_en": "The process of recording the applicant's personal details and biometric data in the Asylum Service systems and Eurodac.",
+      "sources": ["Eurodac Regulation (EU) 603/2013", "Υπηρεσία Ασύλου"]
+    },
+    {
+      "id": "screening",
+      "category": "reception",
+      "translations": { "el": "Διαλογή / Screening", "en": "Screening", "ar": "الفرز", "fa": "غربالگری" },
+      "definition_el": "Διαδικασία αρχικής διαλογής υπηκόων τρίτων χωρών στα εξωτερικά σύνορα της ΕΕ, για ταυτοποίηση, έλεγχο υγείας και ασφάλειας, και κατηγοριοποίηση των αιτημάτων.",
+      "definition_en": "Initial screening procedure at the EU external borders, for identification, health and security checks, and channelling of applications.",
+      "sources": ["EU Screening Regulation (EU) 2024/1356"]
+    },
+    {
+      "id": "reception-centre",
+      "category": "reception",
+      "translations": { "el": "Κέντρο Φιλοξενίας / Δομή Φιλοξενίας", "en": "Reception facility / Open accommodation centre", "ar": "مركز الاستقبال", "fa": "مرکز پذیرش" },
+      "definition_el": "Ανοιχτή δομή φιλοξενίας αιτούντων διεθνή προστασία στην ηπειρωτική Ελλάδα.",
+      "definition_en": "Open accommodation facility for applicants for international protection on the Greek mainland.",
+      "sources": ["EU Reception Conditions Directive 2013/33/EU", "Υπηρεσία Υποδοχής και Ταυτοποίησης"]
+    },
+    {
+      "id": "ric",
+      "category": "reception",
+      "translations": { "el": "Κέντρο Υποδοχής και Ταυτοποίησης (ΚΥΤ)", "en": "Reception and Identification Centre (RIC)", "ar": "مركز الاستقبال والتحديد", "fa": "مرکز پذیرش و شناسایی" },
+      "definition_el": "Δομή στα νησιά και στον Έβρο όπου διενεργείται η διαδικασία υποδοχής και ταυτοποίησης κατά την πρώτη υποδοχή.",
+      "definition_en": "Facility on the islands and in Evros where the reception and identification procedure is carried out upon first reception.",
+      "sources": ["Ν. 4939/2022", "Υπηρεσία Υποδοχής και Ταυτοποίησης"]
+    },
+    {
+      "id": "closed-controlled-access-centre",
+      "category": "reception",
+      "translations": { "el": "Κλειστή Ελεγχόμενη Δομή (ΚΕΔ)", "en": "Closed Controlled Access Centre (CCAC)", "ar": "مركز الوصول المراقب المغلق", "fa": "مرکز بسته با دسترسی کنترل‌شده" },
+      "definition_el": "Δομή με ελεγχόμενη πρόσβαση στα νησιά του Αιγαίου, για αιτούντες διεθνή προστασία.",
+      "definition_en": "Controlled-access facility on the Aegean islands for applicants for international protection.",
+      "sources": ["Υπουργείο Μετανάστευσης και Ασύλου"]
+    },
+    {
+      "id": "vulnerability-assessment",
+      "category": "reception",
+      "translations": { "el": "Αξιολόγηση ευαλωτότητας", "en": "Vulnerability assessment", "ar": "تقييم الضعف / الهشاشة", "fa": "ارزیابی آسیب‌پذیری" },
+      "definition_el": "Διαδικασία εντοπισμού ειδικών αναγκών υποδοχής ή διαδικαστικών εγγυήσεων του αιτούντα.",
+      "definition_en": "Procedure for identifying the applicant's special reception needs or procedural guarantees.",
+      "sources": ["EU Reception Conditions Directive 2013/33/EU art. 22", "EUAA Tool for Identification of Persons with Special Needs"]
+    },
+    {
+      "id": "biometric-data",
+      "category": "reception",
+      "translations": { "el": "Βιομετρικά δεδομένα", "en": "Biometric data", "ar": "البيانات البيومترية", "fa": "داده‌های بیومتریک" },
+      "definition_el": "Δακτυλικά αποτυπώματα και εικόνα προσώπου που λαμβάνονται και αποθηκεύονται στο σύστημα Eurodac.",
+      "definition_en": "Fingerprints and facial image collected and stored in the Eurodac system.",
+      "sources": ["Eurodac Regulation (EU) 603/2013"]
+    },
+    {
+      "id": "unaccompanied-minor",
+      "category": "vulnerable",
+      "translations": { "el": "Ασυνόδευτος ανήλικος", "en": "Unaccompanied minor", "ar": "قاصر غير مصحوب", "fa": "خردسال بدون همراه" },
+      "definition_el": "Ανήλικος υπήκοος τρίτης χώρας ή ανιθαγενής που εισέρχεται στην ελληνική επικράτεια χωρίς να συνοδεύεται από ενήλικο υπεύθυνο για αυτόν σύμφωνα με το νόμο ή την πρακτική.",
+      "definition_en": "A minor third-country national or stateless person who arrives in Greek territory unaccompanied by an adult responsible for him or her by law or practice.",
+      "sources": ["EU Qualification Directive 2011/95/EU art. 2(l)", "Ν. 4939/2022"]
+    },
+    {
+      "id": "vulnerable-person",
+      "category": "vulnerable",
+      "translations": { "el": "Ευάλωτο πρόσωπο", "en": "Vulnerable person", "ar": "شخص ضعيف", "fa": "فرد آسیب‌پذیر" },
+      "definition_el": "Πρόσωπο με ειδικές ανάγκες υποδοχής ή διαδικαστικές εγγυήσεις, όπως ανήλικοι, εγκυμονούσες, θύματα βασανιστηρίων, πρόσωπα με αναπηρία, ηλικιωμένοι.",
+      "definition_en": "A person with special reception needs or procedural guarantees, such as minors, pregnant women, victims of torture, persons with disabilities, the elderly.",
+      "sources": ["EU Reception Conditions Directive 2013/33/EU art. 21", "Ν. 4939/2022"]
+    },
+    {
+      "id": "best-interest-of-child",
+      "category": "vulnerable",
+      "translations": { "el": "Υπέρτατο συμφέρον του παιδιού", "en": "Best interest of the child", "ar": "المصلحة الفضلى للطفل", "fa": "منافع عالیه کودک" },
+      "definition_el": "Θεμελιώδης αρχή που καθοδηγεί κάθε απόφαση που αφορά παιδί, με προτεραιότητα στην ευημερία, ασφάλεια και ανάπτυξή του.",
+      "definition_en": "Fundamental principle guiding any decision concerning a child, prioritising the child's well-being, safety and development.",
+      "sources": ["UN Convention on the Rights of the Child art. 3", "EU Charter of Fundamental Rights art. 24"]
+    },
+    {
+      "id": "pregnant-woman",
+      "category": "vulnerable",
+      "translations": { "el": "Έγκυος γυναίκα", "en": "Pregnant woman", "ar": "امرأة حامل", "fa": "زن باردار" },
+      "definition_el": "Γυναίκα σε εγκυμοσύνη, κατηγοριοποιημένη ως ευάλωτο πρόσωπο με ειδικές ανάγκες υποδοχής.",
+      "definition_en": "A pregnant woman, classified as a vulnerable person with special reception needs.",
+      "sources": ["EU Reception Conditions Directive 2013/33/EU art. 21"]
+    },
+    {
+      "id": "survivor-gender-based-violence",
+      "category": "vulnerable",
+      "translations": { "el": "Επιζών έμφυλης βίας", "en": "Survivor of gender-based violence (GBV)", "ar": "الناجي/ة من العنف القائم على النوع الاجتماعي", "fa": "بازمانده خشونت مبتنی بر جنسیت" },
+      "definition_el": "Πρόσωπο που έχει υποστεί βία λόγω φύλου, συμπεριλαμβανομένης της σεξουαλικής βίας, ενδοοικογενειακής βίας, ή ακρωτηριασμού γεννητικών οργάνων.",
+      "definition_en": "A person who has experienced violence on the basis of gender, including sexual violence, domestic violence, or genital cutting.",
+      "sources": ["UNHCR SGBV Guidelines", "Istanbul Convention"]
+    },
+    {
+      "id": "survivor-trafficking",
+      "category": "vulnerable",
+      "translations": { "el": "Θύμα εμπορίας ανθρώπων", "en": "Survivor of trafficking in human beings", "ar": "ضحية الاتجار بالبشر", "fa": "قربانی قاچاق انسان" },
+      "definition_el": "Πρόσωπο που έχει υπάρξει θύμα εμπορίας ανθρώπων με σκοπό την εκμετάλλευση.",
+      "definition_en": "A person who has been a victim of trafficking in human beings for the purpose of exploitation.",
+      "sources": ["EU Anti-Trafficking Directive 2011/36/EU", "Council of Europe Convention on Action against Trafficking"]
+    },
+    {
+      "id": "person-with-disability",
+      "category": "vulnerable",
+      "translations": { "el": "Άτομο με αναπηρία", "en": "Person with disability", "ar": "شخص ذو إعاقة", "fa": "فرد دارای معلولیت" },
+      "definition_el": "Πρόσωπο με μακροχρόνια σωματική, ψυχική, διανοητική ή αισθητηριακή αναπηρία.",
+      "definition_en": "A person with long-term physical, mental, intellectual or sensory impairments.",
+      "sources": ["UN Convention on the Rights of Persons with Disabilities art. 1"]
+    },
+    {
+      "id": "elderly-person",
+      "category": "vulnerable",
+      "translations": { "el": "Ηλικιωμένος", "en": "Elderly person", "ar": "شخص مسن", "fa": "سالمند" },
+      "definition_el": "Ηλικιωμένο πρόσωπο, κατηγοριοποιημένο ως ευάλωτο σύμφωνα με την οδηγία υποδοχής.",
+      "definition_en": "An elderly person, classified as vulnerable under the Reception Conditions Directive.",
+      "sources": ["EU Reception Conditions Directive 2013/33/EU art. 21"]
+    },
+    {
+      "id": "well-founded-fear",
+      "category": "legal",
+      "translations": { "el": "Βάσιμος / Δικαιολογημένος φόβος", "en": "Well-founded fear", "ar": "خوف مبرر", "fa": "ترس موجه" },
+      "definition_el": "Κεντρικό στοιχείο του ορισμού του πρόσφυγα: ο φόβος δίωξης πρέπει να βασίζεται τόσο σε υποκειμενικά όσο και σε αντικειμενικά στοιχεία.",
+      "definition_en": "Central element of the refugee definition: the fear of persecution must be supported by both subjective and objective elements.",
+      "sources": ["1951 Geneva Convention art. 1A(2)", "UNHCR Handbook §37-50"]
+    },
+    {
+      "id": "persecution",
+      "category": "legal",
+      "translations": { "el": "Δίωξη", "en": "Persecution", "ar": "اضطهاد", "fa": "آزار و اذیت" },
+      "definition_el": "Σοβαρή παραβίαση θεμελιωδών ανθρωπίνων δικαιωμάτων λόγω φυλής, θρησκείας, εθνικότητας, πολιτικών πεποιθήσεων ή συμμετοχής σε ιδιαίτερη κοινωνική ομάδα.",
+      "definition_en": "Serious violation of fundamental human rights on grounds of race, religion, nationality, political opinion or membership of a particular social group.",
+      "sources": ["EU Qualification Directive 2011/95/EU art. 9", "1951 Geneva Convention"]
+    },
+    {
+      "id": "non-refoulement",
+      "category": "legal",
+      "translations": { "el": "Μη επαναπροώθηση", "en": "Non-refoulement", "ar": "عدم الإعادة القسرية", "fa": "اصل عدم بازگرداندن" },
+      "definition_el": "Θεμελιώδης αρχή του διεθνούς δικαίου που απαγορεύει την επιστροφή προσώπου σε χώρα όπου κινδυνεύει η ζωή ή η ελευθερία του.",
+      "definition_en": "Cornerstone principle of international law prohibiting the return of a person to a country where their life or freedom would be at risk.",
+      "sources": ["1951 Geneva Convention art. 33", "ECHR art. 3", "EU Charter art. 19"]
+    },
+    {
+      "id": "family-reunification",
+      "category": "legal",
+      "translations": { "el": "Οικογενειακή επανένωση", "en": "Family reunification", "ar": "لم شمل الأسرة", "fa": "پیوستن خانوادگی" },
+      "definition_el": "Δικαίωμα δικαιούχου διεθνούς προστασίας ή νόμιμα διαμένοντος υπηκόου τρίτης χώρας να επανενωθεί με μέλη της οικογένειάς του στην ΕΕ.",
+      "definition_en": "Right of a beneficiary of international protection or legally resident third-country national to be reunited with their family members in the EU.",
+      "sources": ["EU Family Reunification Directive 2003/86/EC", "Dublin III Regulation"]
+    },
+    {
+      "id": "particular-social-group",
+      "category": "legal",
+      "translations": { "el": "Ιδιαίτερη κοινωνική ομάδα", "en": "Particular social group (PSG)", "ar": "فئة اجتماعية معينة", "fa": "گروه اجتماعی خاص" },
+      "definition_el": "Ένας από τους πέντε λόγους δίωξης κατά τη Σύμβαση της Γενεύης: ομάδα ατόμων με κοινή έμφυτη ή θεμελιώδη ιδιότητα.",
+      "definition_en": "One of the five Convention grounds: a group of persons sharing an innate or fundamental characteristic.",
+      "sources": ["1951 Geneva Convention art. 1A(2)", "UNHCR Guidelines on PSG"]
+    },
+    {
+      "id": "acts-of-persecution",
+      "category": "legal",
+      "translations": { "el": "Πράξεις δίωξης", "en": "Acts of persecution", "ar": "أعمال الاضطهاد", "fa": "اعمال آزار و اذیت" },
+      "definition_el": "Συγκεκριμένες σοβαρές πράξεις που συνιστούν δίωξη, όπως σωματική ή ψυχολογική βία, νομικά μέτρα διακριτικά, διώξεις λόγω αρνήσεως στρατιωτικής υπηρεσίας σε παράνομο πόλεμο.",
+      "definition_en": "Specific serious acts that constitute persecution, such as physical or mental violence, discriminatory legal measures, prosecution for refusing military service in an unlawful war.",
+      "sources": ["EU Qualification Directive 2011/95/EU art. 9(2)"]
+    },
+    {
+      "id": "agents-of-persecution",
+      "category": "legal",
+      "translations": { "el": "Φορείς δίωξης", "en": "Agents of persecution", "ar": "الجهات المرتكبة للاضطهاد", "fa": "عاملان آزار و اذیت" },
+      "definition_el": "Το κράτος, οργανώσεις που ελέγχουν το κράτος ή ουσιαστικό μέρος του εδάφους, ή μη κρατικοί παράγοντες όταν το κράτος δεν παρέχει προστασία.",
+      "definition_en": "The State, parties or organisations controlling the State or a substantial part of its territory, or non-State actors where the State is unable or unwilling to provide protection.",
+      "sources": ["EU Qualification Directive 2011/95/EU art. 6"]
+    },
+    {
+      "id": "internal-protection-alternative",
+      "category": "legal",
+      "translations": { "el": "Εναλλακτική εσωτερικής προστασίας", "en": "Internal protection alternative (IPA)", "ar": "بديل الحماية الداخلية", "fa": "گزینه حمایت داخلی" },
+      "definition_el": "Δυνατότητα ο αιτών να βρει προστασία σε άλλο μέρος της χώρας καταγωγής του, όπου δεν διατρέχει βάσιμο φόβο δίωξης.",
+      "definition_en": "The possibility that the applicant could find protection in another part of their country of origin where they would not face a well-founded fear of persecution.",
+      "sources": ["EU Qualification Directive 2011/95/EU art. 8", "UNHCR Guidelines on IPA"]
+    },
+    {
+      "id": "sur-place-claim",
+      "category": "legal",
+      "translations": { "el": "Αίτημα sur place", "en": "Sur place claim", "ar": "طلب اللجوء في الموقع", "fa": "درخواست پناهندگی در محل (sur place)" },
+      "definition_el": "Αίτημα προστασίας που βασίζεται σε γεγονότα ή δραστηριότητες που έλαβαν χώρα μετά την αναχώρηση του αιτούντα από τη χώρα καταγωγής του.",
+      "definition_en": "A claim based on events or activities that occurred after the applicant's departure from their country of origin.",
+      "sources": ["UNHCR Handbook §94-96", "EU Qualification Directive art. 5"]
+    },
+    {
+      "id": "material-facts",
+      "category": "legal",
+      "translations": { "el": "Ουσιώδη πραγματικά περιστατικά", "en": "Material facts", "ar": "الوقائع الجوهرية", "fa": "وقایع اساسی" },
+      "definition_el": "Τα κρίσιμα στοιχεία της αίτησης τα οποία πρέπει να εξετασθούν για να εκτιμηθεί η ανάγκη διεθνούς προστασίας.",
+      "definition_en": "The key elements of the application that must be examined to assess the need for international protection.",
+      "sources": ["EUAA Judicial Analysis: Evidence and Credibility Assessment"]
+    },
+    {
+      "id": "medical-screening",
+      "category": "medical",
+      "translations": { "el": "Ιατρικός έλεγχος", "en": "Medical screening", "ar": "الفحص الطبي", "fa": "غربالگری پزشکی" },
+      "definition_el": "Ιατρικός έλεγχος που διενεργείται κατά τη φάση πρώτης υποδοχής για την αξιολόγηση της γενικής κατάστασης υγείας και τον εντοπισμό ευαλωτοτήτων.",
+      "definition_en": "Medical examination carried out during the first reception phase to assess general health status and identify vulnerabilities.",
+      "sources": ["Ν. 4939/2022", "WHO Health of Refugees and Migrants Reports"]
+    },
+    {
+      "id": "torture-survivor",
+      "category": "medical",
+      "translations": { "el": "Επιζών/ώσα βασανιστηρίων", "en": "Torture survivor", "ar": "ناجٍ من التعذيب", "fa": "بازمانده شکنجه" },
+      "definition_el": "Πρόσωπο που έχει υποστεί βασανιστήρια ή άλλη σοβαρή μορφή ψυχολογικής, φυσικής ή σεξουαλικής βίας, και χρειάζεται εξειδικευμένη φροντίδα.",
+      "definition_en": "A person who has experienced torture or other serious psychological, physical or sexual violence and requires specialised care.",
+      "sources": ["UN Convention against Torture", "Istanbul Protocol", "EU Reception Conditions Directive 2013/33/EU art. 25"]
+    },
+    {
+      "id": "ptsd",
+      "category": "medical",
+      "translations": { "el": "Διαταραχή Μετατραυματικού Στρες (ΔΜΣ)", "en": "Post-Traumatic Stress Disorder (PTSD)", "ar": "اضطراب ما بعد الصدمة", "fa": "اختلال استرس پس از سانحه" },
+      "definition_el": "Ψυχιατρική διαταραχή που εμφανίζεται μετά από έκθεση σε τραυματικό γεγονός, με συμπτώματα αναβίωσης, αποφυγής, διαταραχής ύπνου και υπερεγρήγορσης.",
+      "definition_en": "Psychiatric disorder occurring after exposure to a traumatic event, with symptoms of re-experiencing, avoidance, sleep disturbance and hyperarousal.",
+      "sources": ["WHO ICD-11", "DSM-5"]
+    },
+    {
+      "id": "mental-health-assessment",
+      "category": "medical",
+      "translations": { "el": "Αξιολόγηση ψυχικής υγείας", "en": "Mental health assessment", "ar": "تقييم الصحة النفسية", "fa": "ارزیابی سلامت روان" },
+      "definition_el": "Κλινική αξιολόγηση ψυχικής υγείας από εξειδικευμένο επαγγελματία, συχνά με τη συνδρομή διερμηνέα.",
+      "definition_en": "Clinical evaluation of mental health by a specialist, often with the assistance of an interpreter.",
+      "sources": ["WHO mhGAP Humanitarian Intervention Guide"]
+    },
+    {
+      "id": "referral",
+      "category": "medical",
+      "translations": { "el": "Παραπομπή", "en": "Referral", "ar": "الإحالة", "fa": "ارجاع" },
+      "definition_el": "Παραπομπή του αιτούντα σε εξειδικευμένη υπηρεσία (ιατρική, ψυχοκοινωνική, νομική) για περαιτέρω υποστήριξη.",
+      "definition_en": "Referral of the applicant to a specialised service (medical, psychosocial, legal) for further support.",
+      "sources": ["UNHCR SOPs", "IASC Guidelines"]
+    },
+    {
+      "id": "amka",
+      "category": "medical",
+      "translations": { "el": "ΑΜΚΑ", "en": "AMKA (Greek social security number)", "ar": "رقم الضمان الاجتماعي اليوناني AMKA", "fa": "شماره تأمین اجتماعی یونان (AMKA)" },
+      "definition_el": "Αριθμός Μητρώου Κοινωνικής Ασφάλισης, απαραίτητος για πρόσβαση στο σύστημα υγείας στην Ελλάδα. Για αιτούντες ασύλου χορηγείται ΠΑΑΥΠΑ.",
+      "definition_en": "Greek Social Security Registry Number, required for access to the health system. Asylum applicants receive a PAAYPA (Provisional AMKA for foreigners).",
+      "sources": ["e-EFKA", "Υπουργείο Υγείας"]
+    },
+    {
+      "id": "administrative-detention",
+      "category": "detention",
+      "translations": { "el": "Διοικητική κράτηση", "en": "Administrative detention", "ar": "الاحتجاز الإداري", "fa": "بازداشت اداری" },
+      "definition_el": "Στέρηση της ελευθερίας με διοικητική απόφαση, εκτός ποινικής διαδικασίας, συχνά για λόγους μετανάστευσης.",
+      "definition_en": "Deprivation of liberty by administrative decision, outside criminal proceedings, often on migration grounds.",
+      "sources": ["EU Return Directive 2008/115/EC", "ECHR art. 5"]
+    },
+    {
+      "id": "pre-removal-detention",
+      "category": "detention",
+      "translations": { "el": "Προαναχωρησιακή κράτηση", "en": "Pre-removal detention", "ar": "الاحتجاز قبل الترحيل", "fa": "بازداشت پیش از اخراج" },
+      "definition_el": "Κράτηση σε ειδική δομή (Προαναχωρησιακό Κέντρο Κράτησης Αλλοδαπών) προς το σκοπό της εκτέλεσης απόφασης επιστροφής.",
+      "definition_en": "Detention in a special facility (Pre-Removal Detention Centre) for the purpose of executing a return decision.",
+      "sources": ["EU Return Directive 2008/115/EC art. 15", "Ν. 3907/2011"]
+    },
+    {
+      "id": "geographic-restriction",
+      "category": "detention",
+      "translations": { "el": "Γεωγραφικός περιορισμός", "en": "Geographic restriction", "ar": "التقييد الجغرافي", "fa": "محدودیت جغرافیایی" },
+      "definition_el": "Διοικητικός περιορισμός κατά τον οποίο ο αιτών υποχρεούται να παραμείνει σε καθορισμένη γεωγραφική περιοχή, συνήθως στο νησί άφιξής του.",
+      "definition_en": "Administrative restriction under which the applicant must remain in a defined geographic area, typically the island of arrival.",
+      "sources": ["Υπουργείο Μετανάστευσης και Ασύλου", "Ν. 4939/2022"]
+    },
+    {
+      "id": "alternatives-to-detention",
+      "category": "detention",
+      "translations": { "el": "Εναλλακτικά μέτρα της κράτησης", "en": "Alternatives to detention", "ar": "بدائل الاحتجاز", "fa": "جایگزین‌های بازداشت" },
+      "definition_el": "Λιγότερο επιβαρυντικά μέτρα από την κράτηση, όπως υποχρέωση εμφάνισης, εγγύηση, ή διαμονή σε καθορισμένη δομή.",
+      "definition_en": "Less coercive measures than detention, such as reporting obligations, bail, or residence in a designated facility.",
+      "sources": ["EU Return Directive 2008/115/EC art. 15(1)", "UNHCR Detention Guidelines"]
+    },
+    {
+      "id": "detention-review",
+      "category": "detention",
+      "translations": { "el": "Δικαστικός έλεγχος κράτησης", "en": "Judicial review of detention", "ar": "المراجعة القضائية للاحتجاز", "fa": "بازنگری قضایی بازداشت" },
+      "definition_el": "Περιοδικός έλεγχος από δικαστική αρχή της νομιμότητας και αναγκαιότητας συνέχισης της κράτησης.",
+      "definition_en": "Periodic judicial assessment of the lawfulness and necessity of continued detention.",
+      "sources": ["EU Return Directive 2008/115/EC art. 15(3)", "ECHR art. 5(4)"]
+    },
+    {
+      "id": "voluntary-return",
+      "category": "return",
+      "translations": { "el": "Εκούσια επιστροφή", "en": "Voluntary return", "ar": "العودة الطوعية", "fa": "بازگشت داوطلبانه" },
+      "definition_el": "Η επιστροφή υπηκόου τρίτης χώρας στη χώρα καταγωγής του με τη συναίνεσή του, συχνά με υποστήριξη οργανισμού όπως ο ΔΟΜ (IOM).",
+      "definition_en": "Return of a third-country national to their country of origin with their consent, often with support from an organisation such as IOM.",
+      "sources": ["EU Return Directive 2008/115/EC", "IOM AVRR Programme"]
+    },
+    {
+      "id": "forced-return",
+      "category": "return",
+      "translations": { "el": "Αναγκαστική επιστροφή", "en": "Forced return", "ar": "العودة القسرية", "fa": "بازگشت اجباری" },
+      "definition_el": "Η εκτέλεση της επιστροφής με μέτρα καταναγκασμού.",
+      "definition_en": "Enforcement of return by means of coercive measures.",
+      "sources": ["EU Return Directive 2008/115/EC"]
+    },
+    {
+      "id": "removal-order",
+      "category": "return",
+      "translations": { "el": "Απόφαση επιστροφής", "en": "Return decision / Removal order", "ar": "قرار العودة", "fa": "حکم بازگشت" },
+      "definition_el": "Διοικητική απόφαση που διαπιστώνει την παράνομη παραμονή και επιβάλλει υποχρέωση εγκατάλειψης του εδάφους.",
+      "definition_en": "Administrative decision establishing irregular stay and imposing an obligation to leave the territory.",
+      "sources": ["EU Return Directive 2008/115/EC art. 3(4)"]
+    },
+    {
+      "id": "re-entry-ban",
+      "category": "return",
+      "translations": { "el": "Απαγόρευση εισόδου", "en": "Re-entry ban", "ar": "حظر إعادة الدخول", "fa": "ممنوعیت ورود مجدد" },
+      "definition_el": "Διοικητικό μέτρο που απαγορεύει την είσοδο και παραμονή στο έδαφος των κρατών μελών της ΕΕ για ορισμένο χρονικό διάστημα.",
+      "definition_en": "Administrative measure prohibiting entry and stay in EU Member States' territory for a defined period.",
+      "sources": ["EU Return Directive 2008/115/EC art. 11"]
+    },
+    {
+      "id": "avr",
+      "category": "return",
+      "translations": { "el": "Υποστηριζόμενη Εκούσια Επιστροφή", "en": "Assisted Voluntary Return (AVR)", "ar": "العودة الطوعية المساعدة", "fa": "بازگشت داوطلبانه با کمک" },
+      "definition_el": "Πρόγραμμα παροχής διοικητικής, υλικής και χρηματικής υποστήριξης σε υπηκόους τρίτων χωρών που επιθυμούν να επιστρέψουν εκούσια.",
+      "definition_en": "Programme providing administrative, material and financial support to third-country nationals wishing to return voluntarily.",
+      "sources": ["IOM AVRR", "Υπουργείο Μετανάστευσης και Ασύλου"]
+    },
+    {
+      "id": "family-member",
+      "category": "family",
+      "translations": { "el": "Μέλος οικογένειας", "en": "Family member", "ar": "أحد أفراد الأسرة", "fa": "عضو خانواده" },
+      "definition_el": "Σύζυγος, ανήλικα τέκνα, ή ο γονέας ανηλίκου αιτούντα, όπως ορίζονται από το ευρωπαϊκό δίκαιο.",
+      "definition_en": "Spouse, minor children, or parent of a minor applicant, as defined by EU law.",
+      "sources": ["EU Qualification Directive 2011/95/EU art. 2(j)", "Dublin III Regulation art. 2(g)"]
+    },
+    {
+      "id": "family-unity",
+      "category": "family",
+      "translations": { "el": "Ενότητα της οικογένειας", "en": "Family unity", "ar": "وحدة الأسرة", "fa": "وحدت خانواده" },
+      "definition_el": "Αρχή που επιβάλλει την προστασία της οικογενειακής ζωής και την αποφυγή χωρισμού μελών οικογένειας κατά τη διαδικασία.",
+      "definition_en": "Principle requiring the protection of family life and the avoidance of separation of family members during the procedure.",
+      "sources": ["ECHR art. 8", "UN Convention on the Rights of the Child art. 9"]
+    },
+    {
+      "id": "guardian",
+      "category": "family",
+      "translations": { "el": "Επίτροπος", "en": "Guardian", "ar": "الوصي", "fa": "قیم" },
+      "definition_el": "Πρόσωπο διορισμένο από δικαστήριο για την εκπροσώπηση και προστασία ασυνόδευτου ανηλίκου.",
+      "definition_en": "Person appointed by court to represent and protect an unaccompanied minor.",
+      "sources": ["Ν. 4554/2018", "EU Qualification Directive art. 31"]
+    },
+    {
+      "id": "age-assessment",
+      "category": "family",
+      "translations": { "el": "Διαπίστωση ανηλικότητας", "en": "Age assessment", "ar": "تقييم العمر", "fa": "ارزیابی سن" },
+      "definition_el": "Διαδικασία πολυεπιστημονικής εκτίμησης της ηλικίας προσώπου που δηλώνεται ως ανήλικο, όταν υπάρχει αμφιβολία.",
+      "definition_en": "Multidisciplinary procedure for assessing the age of a person who claims to be a minor, where doubt exists.",
+      "sources": ["EUAA Practical Guide on Age Assessment", "Ν. 4939/2022"]
+    },
+    {
+      "id": "best-interest-assessment",
+      "category": "family",
+      "translations": { "el": "Εκτίμηση του υπέρτατου συμφέροντος", "en": "Best Interests Assessment (BIA)", "ar": "تقييم المصالح الفضلى", "fa": "ارزیابی منافع عالیه" },
+      "definition_el": "Δομημένη διαδικασία εκτίμησης τι εξυπηρετεί καλύτερα το συμφέρον του παιδιού σε συγκεκριμένες αποφάσεις.",
+      "definition_en": "Structured procedure for assessing what best serves the child's interest in specific decisions.",
+      "sources": ["UNHCR BIA Guidelines"]
+    },
+    {
+      "id": "sponsor",
+      "category": "family",
+      "translations": { "el": "Συντηρών", "en": "Sponsor", "ar": "الكفيل / صاحب الطلب", "fa": "حامی / متقاضی اصلی" },
+      "definition_el": "Στην οικογενειακή επανένωση: το πρόσωπο νόμιμα διαμένον που υποβάλλει αίτηση για να επανενωθεί με μέλη της οικογένειάς του.",
+      "definition_en": "In family reunification: the lawfully residing person who applies to be reunited with their family members.",
+      "sources": ["EU Family Reunification Directive 2003/86/EC art. 2(c)"]
+    },
+    {
+      "id": "residence-permit",
+      "category": "integration",
+      "translations": { "el": "Άδεια διαμονής", "en": "Residence permit", "ar": "تصريح الإقامة", "fa": "اجازه اقامت" },
+      "definition_el": "Έγγραφο που χορηγεί δικαίωμα νόμιμης διαμονής στην Ελλάδα για ορισμένο χρόνο.",
+      "definition_en": "Document granting the right of lawful residence in Greece for a fixed period.",
+      "sources": ["Ν. 5038/2023 (Κώδικας Μετανάστευσης)"]
+    },
+    {
+      "id": "helios-programme",
+      "category": "integration",
+      "translations": { "el": "Πρόγραμμα HELIOS", "en": "HELIOS Programme", "ar": "برنامج هيليوس", "fa": "برنامه هلیوس (HELIOS)" },
+      "definition_el": "Πρόγραμμα ένταξης για δικαιούχους διεθνούς προστασίας στην Ελλάδα, που παρέχει μαθήματα ελληνικών, εργασιακό προσανατολισμό και επιδότηση ενοικίου.",
+      "definition_en": "Integration programme for beneficiaries of international protection in Greece, providing Greek language courses, employability support and rent subsidy.",
+      "sources": ["IOM Greece HELIOS"]
+    },
+    {
+      "id": "naturalisation",
+      "category": "integration",
+      "translations": { "el": "Πολιτογράφηση", "en": "Naturalisation", "ar": "التجنس", "fa": "تابعیت" },
+      "definition_el": "Η απόκτηση ελληνικής ιθαγένειας από αλλοδαπό κατόπιν αιτήσεως και πλήρωσης νομικών προϋποθέσεων.",
+      "definition_en": "Acquisition of Greek citizenship by a foreigner upon application and fulfilment of legal requirements.",
+      "sources": ["Κώδικας Ελληνικής Ιθαγένειας (Ν. 3284/2004)"]
+    },
+    {
+      "id": "afm-tax-number",
+      "category": "integration",
+      "translations": { "el": "ΑΦΜ", "en": "AFM (Greek tax number)", "ar": "رقم الضريبة اليوناني AFM", "fa": "شماره مالیاتی یونان AFM" },
+      "definition_el": "Αριθμός Φορολογικού Μητρώου, απαραίτητος για κάθε οικονομική συναλλαγή στην Ελλάδα.",
+      "definition_en": "Tax Registration Number, required for any economic transaction in Greece.",
+      "sources": ["ΑΑΔΕ"]
+    },
+    {
+      "id": "recognition-of-qualifications",
+      "category": "integration",
+      "translations": { "el": "Αναγνώριση επαγγελματικών προσόντων", "en": "Recognition of qualifications", "ar": "الاعتراف بالمؤهلات", "fa": "شناسایی مدارک تحصیلی" },
+      "definition_el": "Η διαδικασία αναγνώρισης τίτλων σπουδών ή επαγγελματικής εμπειρίας που αποκτήθηκαν σε άλλη χώρα.",
+      "definition_en": "The procedure for recognising qualifications or professional experience obtained in another country.",
+      "sources": ["ΔΟΑΤΑΠ", "Υπουργείο Παιδείας"]
+    },
+    {
+      "id": "integration-course",
+      "category": "integration",
+      "translations": { "el": "Μαθήματα ένταξης", "en": "Integration course", "ar": "دورة الاندماج", "fa": "دوره ادغام" },
+      "definition_el": "Μαθήματα ελληνικής γλώσσας και πολιτισμού που παρέχονται σε αιτούντες και δικαιούχους προστασίας.",
+      "definition_en": "Greek language and culture courses provided to applicants and beneficiaries of protection.",
+      "sources": ["HELIOS", "Δήμοι"]
+    },
+    {
+      "id": "interpreter",
+      "category": "communication",
+      "translations": { "el": "Διερμηνέας", "en": "Interpreter", "ar": "مترجم شفوي", "fa": "مترجم شفاهی" },
+      "definition_el": "Επαγγελματίας που μεταφέρει προφορικά μηνύματα από μια γλώσσα σε άλλη με ακρίβεια, πληρότητα και ουδετερότητα.",
+      "definition_en": "A professional who renders spoken messages from one language to another with accuracy, completeness and impartiality.",
+      "sources": ["AIIC Code of Professional Ethics", "EUAA Practical Guide: Interpretation"]
+    },
+    {
+      "id": "consecutive-interpretation",
+      "category": "communication",
+      "translations": { "el": "Διαδοχική διερμηνεία", "en": "Consecutive interpretation", "ar": "الترجمة التتبعية", "fa": "ترجمه پی‌درپی" },
+      "definition_el": "Είδος διερμηνείας όπου ο διερμηνέας μιλά αφού ο ομιλητής έχει ολοκληρώσει ένα τμήμα του λόγου του.",
+      "definition_en": "A mode of interpretation in which the interpreter speaks after the speaker has finished a segment.",
+      "sources": ["AIIC", "EUAA Practical Guide: Interpretation"]
+    },
+    {
+      "id": "whisper-interpretation",
+      "category": "communication",
+      "translations": { "el": "Ψιθυριστή διερμηνεία (chuchotage)", "en": "Whispered interpretation (chuchotage)", "ar": "الترجمة الهمسية", "fa": "ترجمه نجواگونه" },
+      "definition_el": "Διερμηνεία ταυτόχρονη και ψιθυριστή στο αυτί ενός ή δύο ακροατών, χωρίς εξοπλισμό.",
+      "definition_en": "Simultaneous interpretation whispered to one or two listeners without equipment.",
+      "sources": ["AIIC"]
+    },
+    {
+      "id": "confidentiality-interpreter",
+      "category": "communication",
+      "translations": { "el": "Εμπιστευτικότητα", "en": "Confidentiality (interpreter duty)", "ar": "السرية", "fa": "محرمانگی" },
+      "definition_el": "Θεμελιώδης δεοντολογική υποχρέωση του διερμηνέα να μην αποκαλύπτει πληροφορίες που περιήλθαν σε γνώση του κατά την άσκηση των καθηκόντων του.",
+      "definition_en": "Fundamental ethical duty of the interpreter not to disclose information learned in the course of their professional duties.",
+      "sources": ["AIIC Code of Professional Ethics", "EUAA Code of Conduct for Interpreters"]
+    },
+    {
+      "id": "cultural-mediation",
+      "category": "communication",
+      "translations": { "el": "Διαπολιτισμική μεσολάβηση", "en": "Cultural mediation", "ar": "الوساطة الثقافية", "fa": "میانجی‌گری فرهنگی" },
+      "definition_el": "Η διαμεσολάβηση μεταξύ προσώπων διαφορετικού πολιτισμικού υποβάθρου, που υπερβαίνει την απλή διερμηνεία και περιλαμβάνει επεξήγηση πολιτισμικών αναφορών.",
+      "definition_en": "Mediation between persons of different cultural backgrounds, going beyond simple interpretation to include explanation of cultural references.",
+      "sources": ["IOM Guidelines on Cultural Mediation"]
+    },
+    {
+      "id": "asylum-applicant-card",
+      "category": "documentation",
+      "translations": { "el": "Δελτίο Αιτούντος Διεθνή Προστασία", "en": "Asylum applicant card", "ar": "بطاقة طالب اللجوء", "fa": "کارت پناهجو" },
+      "definition_el": "Έγγραφο που χορηγείται στον αιτούντα διεθνή προστασία και πιστοποιεί τη νόμιμη παραμονή του κατά τη διάρκεια της διαδικασίας.",
+      "definition_en": "Document issued to the applicant for international protection certifying lawful stay during the procedure.",
+      "sources": ["Ν. 4939/2022", "Υπηρεσία Ασύλου"]
+    },
+    {
+      "id": "travel-document",
+      "category": "documentation",
+      "translations": { "el": "Ταξιδιωτικό έγγραφο", "en": "Travel document", "ar": "وثيقة السفر", "fa": "سند سفر" },
+      "definition_el": "Έγγραφο, όπως διαβατήριο ή τίτλος ταξιδιού πρόσφυγα, που επιτρέπει διεθνείς μετακινήσεις.",
+      "definition_en": "A document, such as a passport or refugee travel document, allowing international movement.",
+      "sources": ["1951 Geneva Convention art. 28", "ICAO Doc 9303"]
+    },
+    {
+      "id": "passport",
+      "category": "documentation",
+      "translations": { "el": "Διαβατήριο", "en": "Passport", "ar": "جواز سفر", "fa": "گذرنامه" },
+      "definition_el": "Επίσημο ταξιδιωτικό έγγραφο που εκδίδεται από κράτος και πιστοποιεί την ταυτότητα και την υπηκοότητα του κατόχου.",
+      "definition_en": "Official travel document issued by a State certifying the identity and nationality of the holder.",
+      "sources": ["ICAO Doc 9303"]
+    },
+    {
+      "id": "birth-certificate",
+      "category": "documentation",
+      "translations": { "el": "Πιστοποιητικό γέννησης", "en": "Birth certificate", "ar": "شهادة الميلاد", "fa": "شناسنامه / گواهی تولد" },
+      "definition_el": "Επίσημο έγγραφο που πιστοποιεί τη γέννηση προσώπου, με στοιχεία ταυτοποίησης και γονέων.",
+      "definition_en": "Official document certifying a person's birth, with identification details and parents.",
+      "sources": ["UN Convention on the Rights of the Child art. 7"]
+    },
+    {
+      "id": "identity-verification",
+      "category": "documentation",
+      "translations": { "el": "Ταυτοποίηση / Επαλήθευση ταυτότητας", "en": "Identity verification", "ar": "التحقق من الهوية", "fa": "احراز هویت" },
+      "definition_el": "Η διαδικασία διαπίστωσης της ταυτότητας προσώπου με βάση έγγραφα, βιομετρικά στοιχεία και δηλώσεις.",
+      "definition_en": "The procedure for establishing a person's identity based on documents, biometric data and statements.",
+      "sources": ["EU Screening Regulation 2024/1356", "Ν. 4939/2022"]
+    },
+    {
+      "id": "frontex",
+      "category": "reception",
+      "translations": { "el": "Frontex (Ευρωπαϊκή Συνοριοφυλακή και Ακτοφυλακή)", "en": "Frontex (European Border and Coast Guard Agency)", "ar": "فرونتكس (الوكالة الأوروبية لحرس الحدود والسواحل)", "fa": "فرونتکس (آژانس مرزبانی و گارد ساحلی اروپا)" },
+      "definition_el": "Ευρωπαϊκός οργανισμός που υποστηρίζει τα κράτη μέλη στη διαχείριση των εξωτερικών συνόρων της ΕΕ, συμπεριλαμβανομένων επιχειρήσεων στα σύνορα και επιστροφών.",
+      "definition_en": "European agency supporting Member States in managing the EU external borders, including border operations and return operations.",
+      "sources": ["Regulation (EU) 2019/1896", "frontex.europa.eu"]
+    },
+    {
+      "id": "eurodac",
+      "category": "reception",
+      "translations": { "el": "Eurodac (Ευρωπαϊκή βάση δακτυλικών αποτυπωμάτων)", "en": "Eurodac (European fingerprint database)", "ar": "يوروداك (قاعدة بيانات بصمات الأصابع الأوروبية)", "fa": "یوروداک (پایگاه داده اثر انگشت اروپا)" },
+      "definition_el": "Κεντρικό ευρωπαϊκό σύστημα για την αντιπαραβολή δακτυλικών αποτυπωμάτων αιτούντων διεθνή προστασία και υπηκόων τρίτων χωρών, που υποστηρίζει την εφαρμογή του Κανονισμού του Δουβλίνου.",
+      "definition_en": "Central European system for comparing fingerprints of applicants for international protection and third-country nationals, supporting the application of the Dublin Regulation.",
+      "sources": ["Eurodac Regulation (EU) 603/2013", "Eurodac Regulation (EU) 2024/1358"]
+    },
+    {
+      "id": "appeal",
+      "category": "procedure",
+      "translations": { "el": "Προσφυγή κατά απορριπτικής απόφασης", "en": "Appeal against negative decision", "ar": "الطعن في القرار السلبي", "fa": "اعتراض به تصمیم منفی" },
+      "definition_el": "Ένδικο μέσο που ασκεί ο αιτών κατά απορριπτικής απόφασης επί της αίτησης διεθνούς προστασίας, ενώπιον της Επιτροπής Προσφυγών ή του αρμόδιου δικαστηρίου.",
+      "definition_en": "Remedy lodged by the applicant against a negative decision on the application for international protection, before the Appeals Committee or the competent court.",
+      "sources": ["EU Procedures Directive 2013/32/EU art. 46", "Ν. 4939/2022"]
+    },
+    {
+      "id": "legal-aid",
+      "category": "procedure",
+      "translations": { "el": "Δωρεάν νομική συνδρομή", "en": "Free legal assistance", "ar": "المساعدة القانونية المجانية", "fa": "کمک حقوقی رایگان" },
+      "definition_el": "Δικαίωμα του αιτούντα διεθνή προστασία σε δωρεάν νομικές πληροφορίες και εκπροσώπηση, ιδίως κατά το στάδιο της προσφυγής.",
+      "definition_en": "Right of the applicant for international protection to free legal information and representation, particularly at the appeal stage.",
+      "sources": ["EU Procedures Directive 2013/32/EU art. 20-22", "Ν. 4939/2022 αρ. 71"]
+    }
+  ]
+}
