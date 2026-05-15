@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "0.2.2",
-    "updated": "2026-05-15",
+    "version": "0.2.3",
+    "updated": "2026-05-16",
     "languages": ["el", "en", "ar", "fa"],
     "note": "Greek and English fields are sourced and verified against public references. Arabic and Farsi translations are best-effort drafts from UNHCR Arabic/Farsi glossaries and should be reviewed by native-speaker interpreters before publication."
   },
@@ -493,6 +493,46 @@
       "sources": ["EU Return Directive 2008/115/EC art. 15(3)", "ECHR art. 5(4)"]
     },
     {
+      "id": "deprivation-of-liberty",
+      "category": "detention",
+      "translations": { "el": "Στέρηση της ελευθερίας", "en": "Deprivation of liberty", "ar": "الحرمان من الحرية", "fa": "سلب آزادی" },
+      "definition_el": "Κάθε μέτρο που στερεί από πρόσωπο την ελευθερία κίνησής του πέρα από απλό περιορισμό κίνησης. Νομικά διακριτή έννοια από τον περιορισμό κίνησης και υπόκειται σε αυστηρότερες δικονομικές εγγυήσεις.",
+      "definition_en": "Any measure that deprives a person of their liberty beyond a mere restriction of movement. Legally distinct from restriction of movement and subject to stricter procedural safeguards.",
+      "sources": ["ECHR art. 5", "EU Charter of Fundamental Rights art. 6", "UNHCR Detention Guidelines"]
+    },
+    {
+      "id": "maximum-detention-period",
+      "category": "detention",
+      "translations": { "el": "Ανώτατο χρονικό όριο κράτησης", "en": "Maximum detention period", "ar": "الحد الأقصى لمدة الاحتجاز", "fa": "حداکثر مدت بازداشت" },
+      "definition_el": "Το ανώτατο επιτρεπτό συνολικό διάστημα κράτησης για σκοπούς επιστροφής, που δεν μπορεί να υπερβαίνει τους 18 μήνες σύμφωνα με την Οδηγία Επιστροφών.",
+      "definition_en": "The absolute maximum permissible total duration of detention for removal purposes, which may not exceed 18 months under the EU Return Directive.",
+      "sources": ["EU Return Directive 2008/115/EC art. 15(5)-(6)", "Ν. 3907/2011"]
+    },
+    {
+      "id": "objections-against-detention",
+      "category": "detention",
+      "translations": { "el": "Αντιρρήσεις κατά κράτησης", "en": "Objections against detention", "ar": "اعتراضات على الاحتجاز", "fa": "اعتراض به بازداشت" },
+      "definition_el": "Ένδικο βοήθημα που μπορεί να ασκήσει ο κρατούμενος ενώπιον του διοικητικού δικαστή κατά της απόφασης κράτησης ή της συνέχισής της.",
+      "definition_en": "A judicial remedy available to the detainee before the administrative court challenging the detention decision or its continuation.",
+      "sources": ["Ν. 3907/2011 αρ. 30", "Ν. 3386/2005 αρ. 76"]
+    },
+    {
+      "id": "right-to-information-detention",
+      "category": "detention",
+      "translations": { "el": "Δικαίωμα ενημέρωσης κρατουμένου σε γλώσσα που κατανοεί", "en": "Right to information of detainee in a language they understand", "ar": "حق المحتجز في الإبلاغ بلغة يفهمها", "fa": "حق اطلاع‌رسانی به بازداشت‌شده به زبان قابل‌فهم" },
+      "definition_el": "Δικαίωμα του κρατουμένου να ενημερωθεί εγγράφως, σε γλώσσα που κατανοεί ή ευλόγως θεωρείται ότι κατανοεί, για τους λόγους κράτησης και τα διαθέσιμα ένδικα μέσα.",
+      "definition_en": "Right of the detainee to be informed in writing, in a language they understand or are reasonably presumed to understand, of the reasons for detention and the available remedies.",
+      "sources": ["EU Return Directive 2008/115/EC art. 15(2)", "ECHR art. 5(2)"]
+    },
+    {
+      "id": "dublin-detention",
+      "category": "detention",
+      "translations": { "el": "Κράτηση Δουβλίνου", "en": "Dublin detention", "ar": "الاحتجاز بموجب لائحة دبلن", "fa": "بازداشت دوبلین" },
+      "definition_el": "Κράτηση αιτούντος διεθνή προστασία αποκλειστικά για τη διασφάλιση των διαδικασιών μεταφοράς προς το υπεύθυνο κράτος-μέλος σύμφωνα με τον Κανονισμό Δουβλίνου ΙΙΙ, όταν υπάρχει σημαντικός κίνδυνος διαφυγής.",
+      "definition_en": "Detention of an applicant for international protection solely to secure transfer procedures to the Member State responsible under the Dublin III Regulation, where there is a significant risk of absconding.",
+      "sources": ["Dublin III Regulation (EU) 604/2013 art. 28"]
+    },
+    {
       "id": "voluntary-return",
       "category": "return",
       "translations": { "el": "Εκούσια επιστροφή", "en": "Voluntary return", "ar": "العودة الطوعية", "fa": "بازگشت داوطلبانه" },
@@ -531,6 +571,46 @@
       "definition_el": "Πρόγραμμα παροχής διοικητικής, υλικής και χρηματικής υποστήριξης σε υπηκόους τρίτων χωρών που επιθυμούν να επιστρέψουν εκούσια.",
       "definition_en": "Programme providing administrative, material and financial support to third-country nationals wishing to return voluntarily.",
       "sources": ["IOM AVRR", "Υπουργείο Μετανάστευσης και Ασύλου"]
+    },
+    {
+      "id": "readmission-agreement",
+      "category": "return",
+      "translations": { "el": "Συμφωνία επανεισδοχής", "en": "Readmission agreement", "ar": "اتفاقية إعادة القبول", "fa": "موافقت‌نامه بازپذیری" },
+      "definition_el": "Διακρατική ή ενωσιακή συμφωνία που θεσπίζει διαδικασίες και προθεσμίες για την επανεισδοχή προσώπων που διαμένουν παράτυπα στο συμβαλλόμενο κράτος.",
+      "definition_en": "A bilateral or EU-level agreement establishing procedures and time limits for the readmission of persons irregularly staying in the contracting state.",
+      "sources": ["EU Return Directive 2008/115/EC", "EU readmission agreements"]
+    },
+    {
+      "id": "period-for-voluntary-departure",
+      "category": "return",
+      "translations": { "el": "Προθεσμία οικειοθελούς αναχώρησης", "en": "Period for voluntary departure", "ar": "مهلة المغادرة الطوعية", "fa": "مهلت خروج داوطلبانه" },
+      "definition_el": "Χρονικό διάστημα από 7 έως 30 ημερών που χορηγείται στον αλλοδαπό με την απόφαση επιστροφής για να αναχωρήσει οικειοθελώς από το έδαφος.",
+      "definition_en": "A period of between 7 and 30 days granted in the return decision for the third-country national to leave the territory voluntarily.",
+      "sources": ["EU Return Directive 2008/115/EC art. 7", "Ν. 3907/2011"]
+    },
+    {
+      "id": "escorted-return",
+      "category": "return",
+      "translations": { "el": "Συνοδευόμενη επιστροφή", "en": "Escorted return", "ar": "العودة المرافقة", "fa": "بازگشت همراهی‌شده" },
+      "definition_el": "Αναγκαστική επιστροφή που εκτελείται με τη συνοδεία αστυνομικών ή άλλων αρμόδιων υπαλλήλων μέχρι το κράτος προορισμού.",
+      "definition_en": "Forced return carried out under the escort of police or other competent officers to the destination state.",
+      "sources": ["EU Return Directive 2008/115/EC", "Frontex Code of Conduct for Return Operations"]
+    },
+    {
+      "id": "joint-return-operation",
+      "category": "return",
+      "translations": { "el": "Κοινή επιχείρηση επιστροφής", "en": "Joint return operation", "ar": "عملية عودة مشتركة", "fa": "عملیات بازگشت مشترک" },
+      "definition_el": "Επιχείρηση επιστροφής που οργανώνεται και συντονίζεται από τον Frontex με τη συμμετοχή δύο ή περισσότερων κρατών-μελών της ΕΕ.",
+      "definition_en": "A return operation organised and coordinated by Frontex with the participation of two or more EU Member States.",
+      "sources": ["Regulation (EU) 2019/1896 (Frontex)", "Frontex Code of Conduct for Return Operations"]
+    },
+    {
+      "id": "postponement-of-removal",
+      "category": "return",
+      "translations": { "el": "Αναβολή απομάκρυνσης", "en": "Postponement of removal", "ar": "تأجيل الإبعاد", "fa": "به تعویق انداختن اخراج" },
+      "definition_el": "Αναστολή εκτέλεσης της απομάκρυνσης για λόγους όπως η σωματική ή ψυχολογική κατάσταση του αλλοδαπού, τεχνικοί λόγοι ή μη διαθεσιμότητα ταξιδιωτικών εγγράφων.",
+      "definition_en": "Suspension of the execution of removal on grounds such as the physical or psychological condition of the foreign national, technical reasons, or the unavailability of travel documents.",
+      "sources": ["EU Return Directive 2008/115/EC art. 9", "Ν. 3907/2011"]
     },
     {
       "id": "family-member",
@@ -669,6 +749,46 @@
       "sources": ["IOM Guidelines on Cultural Mediation"]
     },
     {
+      "id": "simultaneous-interpretation",
+      "category": "communication",
+      "translations": { "el": "Ταυτόχρονη διερμηνεία", "en": "Simultaneous interpretation", "ar": "الترجمة الفورية", "fa": "ترجمه همزمان" },
+      "definition_el": "Τρόπος διερμηνείας κατά τον οποίο ο διερμηνέας αποδίδει τον λόγο του ομιλητή σχεδόν ταυτόχρονα με την εκφορά του, συνήθως με χρήση εξοπλισμού καμπίνας ή ακουστικών.",
+      "definition_en": "A mode of interpretation in which the interpreter renders the speaker's message almost simultaneously with delivery, typically using booth or headset equipment.",
+      "sources": ["AIIC", "EUAA Practical Guide: Interpretation"]
+    },
+    {
+      "id": "sight-translation",
+      "category": "communication",
+      "translations": { "el": "Μετάφραση όψεως", "en": "Sight translation", "ar": "الترجمة المنظورة", "fa": "ترجمه دیداری" },
+      "definition_el": "Η προφορική απόδοση γραπτού κειμένου από τον διερμηνέα στη γλώσσα-στόχο. Χρησιμοποιείται συχνά σε συνεντεύξεις ασύλου για έγγραφα όπως αποφάσεις, εξουσιοδοτήσεις ή πρακτικά.",
+      "definition_en": "The oral rendering of a written text into the target language by the interpreter. Frequently used in asylum interviews for documents such as decisions, authorisations or minutes.",
+      "sources": ["EUAA Practical Guide: Interpretation", "AIIC"]
+    },
+    {
+      "id": "relay-interpretation",
+      "category": "communication",
+      "translations": { "el": "Διερμηνεία μέσω ενδιάμεσης γλώσσας (relay)", "en": "Relay interpretation", "ar": "الترجمة عبر لغة وسيطة", "fa": "ترجمه از طریق زبان واسط" },
+      "definition_el": "Τεχνική διερμηνείας κατά την οποία ο διερμηνέας εργάζεται από ή προς μια ενδιάμεση «pivot» γλώσσα, όταν δεν υπάρχει διαθέσιμος άμεσος συνδυασμός γλωσσών (π.χ. Τιγκρίνια ↔ Αγγλικά ↔ Ελληνικά).",
+      "definition_en": "An interpretation technique in which the interpreter works to or from an intermediary \"pivot\" language when no direct language combination is available (e.g. Tigrinya ↔ English ↔ Greek).",
+      "sources": ["AIIC", "EUAA Practical Guide: Interpretation"]
+    },
+    {
+      "id": "impartiality-interpreter",
+      "category": "communication",
+      "translations": { "el": "Αμεροληψία", "en": "Impartiality (interpreter duty)", "ar": "الحياد", "fa": "بی‌طرفی" },
+      "definition_el": "Δεοντολογική υποχρέωση του διερμηνέα να μην εκφράζει προσωπικές απόψεις ούτε να ευνοεί κανένα από τα μέρη, διατηρώντας ίση απόσταση από τον αιτούντα και την αρχή.",
+      "definition_en": "Ethical duty of the interpreter to refrain from expressing personal opinions or favouring any party, maintaining equal distance from applicant and authority.",
+      "sources": ["AIIC Code of Professional Ethics", "EUAA Code of Conduct for Interpreters"]
+    },
+    {
+      "id": "first-person-interpretation",
+      "category": "communication",
+      "translations": { "el": "Διερμηνεία σε πρώτο πρόσωπο", "en": "First-person interpretation", "ar": "الترجمة بصيغة المتكلم", "fa": "ترجمه به اول‌شخص" },
+      "definition_el": "Επαγγελματική σύμβαση κατά την οποία ο διερμηνέας αποδίδει τον λόγο σε πρώτο πρόσωπο, όπως ακριβώς εκφέρεται από τον ομιλητή («Έφυγα από τη χώρα μου»), και όχι σε τρίτο («Λέει ότι έφυγε»).",
+      "definition_en": "Professional convention whereby the interpreter renders speech in the first person, exactly as uttered by the speaker (\"I left my country\"), rather than in the third person (\"He says he left\").",
+      "sources": ["AIIC", "EUAA Practical Guide: Interpretation", "UNHCR Self-Study Module: Interview Techniques"]
+    },
+    {
       "id": "asylum-applicant-card",
       "category": "documentation",
       "translations": { "el": "Δελτίο Αιτούντος Διεθνή Προστασία", "en": "Asylum applicant card", "ar": "بطاقة طالب اللجوء", "fa": "کارت پناهجو" },
@@ -707,6 +827,46 @@
       "definition_el": "Η διαδικασία διαπίστωσης της ταυτότητας προσώπου με βάση έγγραφα, βιομετρικά στοιχεία και δηλώσεις.",
       "definition_en": "The procedure for establishing a person's identity based on documents, biometric data and statements.",
       "sources": ["EU Screening Regulation 2024/1356", "Ν. 4939/2022"]
+    },
+    {
+      "id": "refugee-travel-document",
+      "category": "documentation",
+      "translations": { "el": "Ταξιδιωτικό έγγραφο πρόσφυγα", "en": "Refugee travel document (Convention Travel Document)", "ar": "وثيقة سفر اللاجئ", "fa": "سند سفر پناهنده" },
+      "definition_el": "Ταξιδιωτικό έγγραφο που εκδίδεται από κράτος-μέρος της Σύμβασης της Γενεύης στους αναγνωρισμένους πρόσφυγες που βρίσκονται νόμιμα στο έδαφός του, ώστε να μπορούν να ταξιδεύουν εκτός αυτού.",
+      "definition_en": "A travel document issued by a state party to the Geneva Convention to recognised refugees lawfully on its territory, enabling them to travel abroad.",
+      "sources": ["1951 Geneva Convention art. 28", "ICAO Doc 9303"]
+    },
+    {
+      "id": "certified-translation",
+      "category": "documentation",
+      "translations": { "el": "Επίσημη μετάφραση", "en": "Certified (official) translation", "ar": "ترجمة معتمدة", "fa": "ترجمه رسمی" },
+      "definition_el": "Γραπτή μετάφραση εγγράφου από πιστοποιημένο μεταφραστή ή δικηγόρο, που φέρει σφραγίδα και βεβαίωση γνησιότητας και γίνεται αποδεκτή από τις ελληνικές αρχές.",
+      "definition_en": "A written translation of a document by a certified translator or qualified lawyer, bearing a stamp and statement of authenticity and accepted by Greek authorities.",
+      "sources": ["Greek Ministry of Foreign Affairs — Translation Service", "Ν. 4781/2021"]
+    },
+    {
+      "id": "paaypa",
+      "category": "documentation",
+      "translations": { "el": "ΠΑΑΥΠΑ (Προσωρινός Αριθμός Ασφάλισης και Υγειονομικής Περίθαλψης Αλλοδαπού)", "en": "PAAYPA (Temporary Insurance and Healthcare Number for Foreign Nationals)", "ar": "PAAYPA (رقم التأمين والرعاية الصحية المؤقت للأجانب)", "fa": "PAAYPA (شماره موقت بیمه و درمان برای اتباع خارجی)" },
+      "definition_el": "Προσωρινός αριθμός ασφάλισης που χορηγείται σε αιτούντες διεθνή προστασία και σε ασυνόδευτους ανηλίκους για την πρόσβαση στο σύστημα υγείας, σε αντικατάσταση του προσωρινού ΑΜΚΑ.",
+      "definition_en": "Temporary insurance number issued to applicants for international protection and to unaccompanied minors for access to the health system, replacing the provisional AMKA.",
+      "sources": ["ΚΥΑ 717/2020", "Ν. 4636/2019"]
+    },
+    {
+      "id": "apostille",
+      "category": "documentation",
+      "translations": { "el": "Σφραγίδα της Χάγης (Apostille)", "en": "Apostille", "ar": "تصديق أبوستيل", "fa": "تأیید آپوستیل" },
+      "definition_el": "Πιστοποίηση γνησιότητας δημόσιου εγγράφου που εκδίδεται από αρμόδια αρχή κράτους-μέρους της Σύμβασης της Χάγης του 1961, ώστε το έγγραφο να γίνεται δεκτό σε άλλο συμβαλλόμενο κράτος χωρίς περαιτέρω επικύρωση.",
+      "definition_en": "Authentication of a public document issued by a competent authority of a state party to the 1961 Hague Convention, enabling acceptance of the document in another contracting state without further legalisation.",
+      "sources": ["Hague Apostille Convention (1961)"]
+    },
+    {
+      "id": "marriage-certificate",
+      "category": "documentation",
+      "translations": { "el": "Πιστοποιητικό γάμου / Ληξιαρχική πράξη γάμου", "en": "Marriage certificate", "ar": "شهادة الزواج", "fa": "گواهی ازدواج" },
+      "definition_el": "Επίσημο έγγραφο που πιστοποιεί την τέλεση γάμου, με στοιχεία των συζύγων και ημερομηνία τέλεσης. Συνήθως απαιτείται, μεταφρασμένο και επικυρωμένο, σε διαδικασίες οικογενειακής επανένωσης.",
+      "definition_en": "Official document certifying that a marriage has taken place, with details of the spouses and date of celebration. Typically required, translated and authenticated, in family reunification procedures.",
+      "sources": ["UNHCR Family Reunification Guidance", "Ν. 4636/2019 αρ. 80"]
     },
     {
       "id": "frontex",
