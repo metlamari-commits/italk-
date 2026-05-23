@@ -1,5 +1,5 @@
-const LANGS = ["el", "en", "ar", "fa"];
-const LANG_LABELS = { el: "Ελληνικά", en: "English", ar: "العربية", fa: "فارسی" };
+const LANGS = ["el", "en", "ar", "fa", "fr"];
+const LANG_LABELS = { el: "Ελληνικά", en: "English", ar: "العربية", fa: "فارسی", fr: "Français" };
 const RTL_LANGS = new Set(["ar", "fa"]);
 
 const state = {
@@ -50,6 +50,7 @@ function filterTerms() {
         t.translations.en || "",
         t.translations.ar || "",
         t.translations.fa || "",
+        t.translations.fr || "",
         t.definition_el || "",
         t.definition_en || ""
       ].join(" ").toLowerCase();
