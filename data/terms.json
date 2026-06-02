@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "0.2.3",
-    "updated": "2026-05-23",
+    "version": "0.2.4",
+    "updated": "2026-05-24",
     "languages": [
       "el",
       "en",
@@ -1923,6 +1923,189 @@
       "sources": [
         "EU Procedures Directive 2013/32/EU art. 20-22",
         "Ν. 4939/2022 αρ. 71"
+      ]
+    },
+    {
+      "id": "serious-harm",
+      "category": "legal",
+      "translations": {
+        "el": "Σοβαρή βλάβη",
+        "en": "Serious harm",
+        "ar": "",
+        "fa": "",
+        "fr": "Atteintes graves"
+      },
+      "definition_el": "Σοβαρή βλάβη που, εάν επιστρέψει το πρόσωπο στη χώρα καταγωγής, συνίσταται σε: (α) θανατική ποινή ή εκτέλεση, (β) βασανιστήρια ή απάνθρωπη ή εξευτελιστική μεταχείριση ή τιμωρία, ή (γ) σοβαρή και προσωπική απειλή κατά της ζωής ή της σωματικής ακεραιότητας αμάχου λόγω αδιάκριτης βίας σε καταστάσεις διεθνούς ή εσωτερικής ένοπλης σύρραξης. Θεμελιώνει την υπαγωγή σε επικουρική προστασία.",
+      "definition_en": "Harm which, if the person were returned to the country of origin, would consist of: (a) the death penalty or execution; (b) torture or inhuman or degrading treatment or punishment; or (c) serious and individual threat to a civilian's life or person by reason of indiscriminate violence in situations of international or internal armed conflict. Establishes eligibility for subsidiary protection.",
+      "sources": [
+        "EUAA Country Guidance: Iraq 2024 — Abbreviations and Glossary (https://euaa.europa.eu/country-guidance-iraq-2024/abbreviations-and-glossary)",
+        "Qualification Directive 2011/95/EU art. 15"
+      ]
+    },
+    {
+      "id": "actors-of-protection",
+      "category": "legal",
+      "translations": {
+        "el": "Φορείς προστασίας",
+        "en": "Actors of protection",
+        "ar": "",
+        "fa": "",
+        "fr": "Acteurs de la protection"
+      },
+      "definition_el": "Φορείς που μπορούν να παρέχουν προστασία από δίωξη ή σοβαρή βλάβη: (α) το ίδιο το κράτος, ή (β) ομάδες, συμπεριλαμβανομένων διεθνών οργανισμών, που ελέγχουν το κράτος ή σημαντικό τμήμα του εδάφους του. Η προστασία πρέπει να είναι αποτελεσματική και μη προσωρινή.",
+      "definition_en": "Actors who can provide protection against persecution or serious harm: (a) the State, or (b) parties or organisations, including international organisations, controlling the State or a substantial part of its territory. The protection must be effective and of a non-temporary nature.",
+      "sources": [
+        "EUAA Country Guidance: Iraq 2024 — Table of contents lists 'Actors of protection' as a guidance section (https://euaa.europa.eu/country-guidance-iraq-2024)",
+        "Qualification Directive 2011/95/EU art. 7"
+      ]
+    },
+    {
+      "id": "exclusion-from-protection",
+      "category": "legal",
+      "translations": {
+        "el": "Αποκλεισμός από τη διεθνή προστασία",
+        "en": "Exclusion from international protection",
+        "ar": "",
+        "fa": "",
+        "fr": "Exclusion de la protection internationale"
+      },
+      "definition_el": "Νομικός μηχανισμός με τον οποίο ένα πρόσωπο, μολονότι πληροί κατά τα λοιπά τις προϋποθέσεις για το καθεστώς πρόσφυγα ή επικουρικής προστασίας, αποκλείεται από αυτό όταν υπάρχουν σοβαροί λόγοι να θεωρηθεί ότι έχει διαπράξει έγκλημα κατά της ειρήνης, έγκλημα πολέμου, έγκλημα κατά της ανθρωπότητας, σοβαρό μη πολιτικό έγκλημα εκτός της χώρας ασύλου ή πράξεις αντίθετες προς τους σκοπούς και τις αρχές των Ηνωμένων Εθνών.",
+      "definition_en": "Legal mechanism by which a person who otherwise meets the criteria for refugee status or subsidiary protection is excluded from it where there are serious reasons for considering that they have committed a crime against peace, a war crime, a crime against humanity, a serious non-political crime outside the country of refuge, or acts contrary to the purposes and principles of the United Nations.",
+      "sources": [
+        "EUAA Country Guidance: Iraq 2024 — Table of contents lists 'Exclusion' as a guidance section (https://euaa.europa.eu/country-guidance-iraq-2024)",
+        "Qualification Directive 2011/95/EU arts. 12 and 17"
+      ]
+    },
+    {
+      "id": "qualification-directive",
+      "category": "legal",
+      "translations": {
+        "el": "Οδηγία για την Αναγνώριση (Οδηγία 2011/95/ΕΕ)",
+        "en": "Qualification Directive (QD)",
+        "ar": "",
+        "fa": "",
+        "fr": "Directive Qualification"
+      },
+      "definition_el": "Οδηγία 2011/95/ΕΕ που θεσπίζει κοινά κριτήρια για τον προσδιορισμό προσώπων που χρήζουν διεθνούς προστασίας (καθεστώς πρόσφυγα ή επικουρική προστασία) και καθορίζει το περιεχόμενο της προστασίας που τους χορηγείται.",
+      "definition_en": "Directive 2011/95/EU laying down common criteria for identifying persons in need of international protection (refugee status or subsidiary protection) and defining the content of the protection granted to them.",
+      "sources": [
+        "EUAA Country Guidance: Iraq 2024 — Abbreviations and Glossary, entry 'QD' (https://euaa.europa.eu/country-guidance-iraq-2024/abbreviations-and-glossary)",
+        "EUAA Asylum Report 2024 — Acronyms and Abbreviations (https://www.euaa.europa.eu/asylum-report-2024/acronyms-and-abbreviations)"
+      ]
+    },
+    {
+      "id": "qualification-regulation",
+      "category": "legal",
+      "translations": {
+        "el": "Κανονισμός για την Αναγνώριση (Κανονισμός (ΕΕ) 2024/1347)",
+        "en": "Qualification Regulation (QR)",
+        "ar": "",
+        "fa": "",
+        "fr": "Règlement Qualification"
+      },
+      "definition_el": "Κανονισμός (ΕΕ) 2024/1347 του Συμφώνου για τη Μετανάστευση και το Άσυλο, ο οποίος αντικαθιστά την Οδηγία 2011/95/ΕΕ και θεσπίζει ενιαία, άμεσα εφαρμοστέα κριτήρια αναγνώρισης δικαιούχων διεθνούς προστασίας σε όλα τα κράτη μέλη.",
+      "definition_en": "Regulation (EU) 2024/1347 under the Pact on Migration and Asylum which replaces Directive 2011/95/EU and lays down uniform, directly applicable criteria for the qualification of beneficiaries of international protection across all Member States.",
+      "sources": [
+        "EUAA Country Guidance: Iraq 2024 — Abbreviations and Glossary, entry 'QR' (https://euaa.europa.eu/country-guidance-iraq-2024/abbreviations-and-glossary)"
+      ]
+    },
+    {
+      "id": "asylum-procedures-directive",
+      "category": "legal",
+      "translations": {
+        "el": "Οδηγία για τις Διαδικασίες Ασύλου (Οδηγία 2013/32/ΕΕ)",
+        "en": "Asylum Procedures Directive (APD)",
+        "ar": "",
+        "fa": "",
+        "fr": "Directive Procédures d'asile"
+      },
+      "definition_el": "Οδηγία 2013/32/ΕΕ σχετικά με τις κοινές διαδικασίες για τη χορήγηση και ανάκληση του καθεστώτος διεθνούς προστασίας. Καθορίζει εγγυήσεις για τους αιτούντες, τη συνέντευξη, τα ένδικα μέσα και τις ταχύρρυθμες/συνοριακές διαδικασίες.",
+      "definition_en": "Directive 2013/32/EU on common procedures for granting and withdrawing international protection. It sets out guarantees for applicants, the personal interview, remedies, and accelerated/border procedures.",
+      "sources": [
+        "EUAA Asylum Report 2024 — Acronyms and Abbreviations, entry 'APD' (https://www.euaa.europa.eu/asylum-report-2024/acronyms-and-abbreviations)"
+      ]
+    },
+    {
+      "id": "reception-conditions-directive",
+      "category": "legal",
+      "translations": {
+        "el": "Οδηγία για τις Συνθήκες Υποδοχής (Οδηγία 2013/33/ΕΕ)",
+        "en": "Reception Conditions Directive (RCD)",
+        "ar": "",
+        "fa": "",
+        "fr": "Directive Accueil"
+      },
+      "definition_el": "Οδηγία 2013/33/ΕΕ που καθορίζει τις προδιαγραφές για την υποδοχή των αιτούντων διεθνή προστασία (στέγαση, διατροφή, ένδυση, ιατροφαρμακευτική περίθαλψη, πρόσβαση σε εκπαίδευση και εργασία, οικονομικό βοήθημα), καθώς και τους όρους κράτησης.",
+      "definition_en": "Directive 2013/33/EU laying down standards for the reception of applicants for international protection (housing, food, clothing, healthcare, access to education and employment, financial allowance) and the conditions for detention.",
+      "sources": [
+        "EUAA Guidance on Reception — Terminology, references Article 2(g) of the RCD (https://euaa.europa.eu/guidance-reception/terminology)",
+        "EUAA Asylum Report 2024 — Acronyms and Abbreviations, entry 'RCD' (https://www.euaa.europa.eu/asylum-report-2024/acronyms-and-abbreviations)"
+      ]
+    },
+    {
+      "id": "common-european-asylum-system",
+      "category": "legal",
+      "translations": {
+        "el": "Κοινό Ευρωπαϊκό Σύστημα Ασύλου (ΚΕΣΑ)",
+        "en": "Common European Asylum System (CEAS)",
+        "ar": "",
+        "fa": "",
+        "fr": "Régime d'asile européen commun (RAEC)"
+      },
+      "definition_el": "Το σύνολο των νομοθετικών και θεσμικών μέσων της ΕΕ που διέπουν τη χορήγηση διεθνούς προστασίας, την υποδοχή των αιτούντων, τις διαδικασίες ασύλου και τον προσδιορισμό του υπεύθυνου κράτους μέλους (κανονισμός Δουβλίνου). Στόχος είναι η εναρμόνιση των κανόνων ασύλου σε όλα τα κράτη μέλη.",
+      "definition_en": "The body of EU legislative and institutional instruments governing the granting of international protection, reception of applicants, asylum procedures, and determination of the Member State responsible (Dublin Regulation). It aims to harmonise asylum rules across all Member States.",
+      "sources": [
+        "EUAA Asylum Report 2024 — Acronyms and Abbreviations, entry 'CEAS' (https://www.euaa.europa.eu/asylum-report-2024/acronyms-and-abbreviations)"
+      ]
+    },
+    {
+      "id": "court-of-justice-eu",
+      "category": "legal",
+      "translations": {
+        "el": "Δικαστήριο της Ευρωπαϊκής Ένωσης (ΔΕΕ)",
+        "en": "Court of Justice of the European Union (CJEU)",
+        "ar": "",
+        "fa": "",
+        "fr": "Cour de justice de l'Union européenne (CJUE)"
+      },
+      "definition_el": "Το ανώτατο δικαστήριο της Ευρωπαϊκής Ένωσης, αρμόδιο να διασφαλίζει την ομοιόμορφη ερμηνεία και εφαρμογή του δικαίου της ΕΕ. Σε θέματα ασύλου εκδίδει προδικαστικές αποφάσεις που δεσμεύουν τα εθνικά δικαστήρια κατά την εφαρμογή του ΚΕΣΑ.",
+      "definition_en": "The highest court of the European Union, responsible for ensuring the uniform interpretation and application of EU law. In asylum matters it delivers preliminary rulings binding on national courts when applying the CEAS.",
+      "sources": [
+        "EUAA Country Guidance: Iraq 2024 — Abbreviations and Glossary, entry 'CJEU' (https://euaa.europa.eu/country-guidance-iraq-2024/abbreviations-and-glossary)",
+        "EUAA Asylum Report 2024 — Acronyms and Abbreviations (https://www.euaa.europa.eu/asylum-report-2024/acronyms-and-abbreviations)"
+      ]
+    },
+    {
+      "id": "european-court-of-human-rights",
+      "category": "legal",
+      "translations": {
+        "el": "Ευρωπαϊκό Δικαστήριο Δικαιωμάτων του Ανθρώπου (ΕΔΔΑ)",
+        "en": "European Court of Human Rights (ECtHR)",
+        "ar": "",
+        "fa": "",
+        "fr": "Cour européenne des droits de l'homme (CEDH)"
+      },
+      "definition_el": "Διεθνές δικαστήριο με έδρα το Στρασβούργο, αρμόδιο να εξετάζει προσφυγές για παραβιάσεις της Ευρωπαϊκής Σύμβασης Δικαιωμάτων του Ανθρώπου. Σε υποθέσεις ασύλου εξετάζει συχνά αιτιάσεις βάσει του άρθρου 3 (απαγόρευση βασανιστηρίων και απάνθρωπης μεταχείρισης) σε σχέση με απελάσεις και κράτηση.",
+      "definition_en": "International court seated in Strasbourg that examines applications alleging violations of the European Convention on Human Rights. In asylum cases it frequently reviews claims under Article 3 (prohibition of torture and inhuman or degrading treatment) in connection with removals and detention.",
+      "sources": [
+        "EUAA Country Guidance: Iraq 2024 — Abbreviations and Glossary, entry 'ECtHR' (https://euaa.europa.eu/country-guidance-iraq-2024/abbreviations-and-glossary)",
+        "EUAA Asylum Report 2024 — Acronyms and Abbreviations (https://www.euaa.europa.eu/asylum-report-2024/acronyms-and-abbreviations)"
+      ]
+    },
+    {
+      "id": "european-convention-on-human-rights",
+      "category": "legal",
+      "translations": {
+        "el": "Ευρωπαϊκή Σύμβαση Δικαιωμάτων του Ανθρώπου (ΕΣΔΑ)",
+        "en": "European Convention on Human Rights (ECHR)",
+        "ar": "",
+        "fa": "",
+        "fr": "Convention européenne des droits de l'homme (CEDH)"
+      },
+      "definition_el": "Διεθνής συνθήκη του Συμβουλίου της Ευρώπης που υπογράφηκε στη Ρώμη στις 4 Νοεμβρίου 1950 και προστατεύει θεμελιώδη δικαιώματα και ελευθερίες. Στο πλαίσιο του ασύλου, ιδιαίτερη σημασία έχουν το άρθρο 3 (απαγόρευση βασανιστηρίων) και το άρθρο 8 (δικαίωμα σεβασμού της ιδιωτικής και οικογενειακής ζωής).",
+      "definition_en": "International treaty of the Council of Europe signed in Rome on 4 November 1950 protecting fundamental rights and freedoms. In the asylum context, Article 3 (prohibition of torture) and Article 8 (right to respect for private and family life) are of particular importance.",
+      "sources": [
+        "EUAA Country Guidance: Iraq 2024 — Abbreviations and Glossary, entry 'ECHR' (https://euaa.europa.eu/country-guidance-iraq-2024/abbreviations-and-glossary)"
       ]
     }
   ]

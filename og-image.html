@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<title>i-talk.gr — OG preview</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    background: #FAF7F2;
+    color: #1F2937;
+  }
+  .card {
+    width: 1200px;
+    height: 630px;
+    padding: 64px 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background:
+      radial-gradient(circle at 92% 8%, rgba(194, 65, 12, 0.08) 0%, transparent 45%),
+      linear-gradient(135deg, #FAF7F2 0%, #F4EDE0 100%);
+  }
+  .brand {
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    color: #1F2937;
+    line-height: 1;
+  }
+  .brand .dot { color: #C2410C; }
+  .brand-rule {
+    width: 120px;
+    height: 6px;
+    background: #C2410C;
+    margin-top: 18px;
+    border-radius: 3px;
+  }
+  .headline {
+    font-size: 78px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+    color: #1F2937;
+    margin-top: 40px;
+  }
+  .stats {
+    margin-top: 28px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #1F2937;
+    letter-spacing: -0.5px;
+  }
+  .stats .sep { color: #C2410C; padding: 0 14px; font-weight: 800; }
+  .languages {
+    margin-top: 12px;
+    font-size: 26px;
+    color: #6B7280;
+    font-weight: 500;
+    letter-spacing: 4px;
+  }
+  .badges {
+    display: flex;
+    gap: 16px;
+    margin-top: 0;
+  }
+  .badge {
+    padding: 14px 26px;
+    background: #FFFFFF;
+    border: 2px solid #1F2937;
+    border-radius: 999px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1F2937;
+    letter-spacing: 0.5px;
+  }
+  .badge.accent {
+    background: #C2410C;
+    color: #FFFFFF;
+    border-color: #C2410C;
+  }
+  .signature {
+    position: absolute;
+    bottom: 36px;
+    right: 80px;
+    font-size: 20px;
+    color: #6B7280;
+    font-style: italic;
+    font-weight: 500;
+  }
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div>
+      <div class="brand">i-talk<span class="dot">.gr</span></div>
+      <div class="brand-rule"></div>
+      <div class="headline">Γλωσσάρι Διερμηνέα<br>Ασύλου</div>
+      <div class="stats">121 όροι<span class="sep">·</span>5 γλώσσες<span class="sep">·</span>Δωρεάν</div>
+      <div class="languages">EL · EN · AR · FA · FR</div>
+    </div>
+    <div class="footer-row">
+      <div class="badges">
+        <div class="badge">UNHCR</div>
+        <div class="badge">EUAA</div>
+        <div class="badge">IATE</div>
+        <div class="badge accent">Ν.4939/2022</div>
+      </div>
+    </div>
+    <div class="signature">Made by a working interpreter</div>
+  </div>
+</body>
+</html>
