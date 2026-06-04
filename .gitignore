@@ -13,3 +13,10 @@ desktop.ini
 .env
 .env.local
 .env.*.local
+
+# Local-only notes and tooling (never deploy publicly)
+dispute-log.txt
+setup-form.txt
+setup-notifications.txt
+icon-source.html
+review/
