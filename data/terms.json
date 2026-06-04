@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "0.2.4",
-    "updated": "2026-05-24",
+    "version": "0.2.5",
+    "updated": "2026-06-04",
     "languages": [
       "el",
       "en",
@@ -2106,6 +2106,246 @@
       "definition_en": "International treaty of the Council of Europe signed in Rome on 4 November 1950 protecting fundamental rights and freedoms. In the asylum context, Article 3 (prohibition of torture) and Article 8 (right to respect for private and family life) are of particular importance.",
       "sources": [
         "EUAA Country Guidance: Iraq 2024 — Abbreviations and Glossary, entry 'ECHR' (https://euaa.europa.eu/country-guidance-iraq-2024/abbreviations-and-glossary)"
+      ]
+    },
+    {
+      "id": "inadmissible-application",
+      "category": "procedure",
+      "translations": {
+        "el": "Απαράδεκτη αίτηση",
+        "en": "Inadmissible application",
+        "ar": "",
+        "fa": "",
+        "fr": "Demande irrecevable"
+      },
+      "definition_el": "Αίτηση διεθνούς προστασίας που απορρίπτεται χωρίς εξέταση επί της ουσίας, όταν συντρέχει ένας από τους λόγους του άρθρου 33 της Οδηγίας 2013/32/ΕΕ (π.χ. έχει ήδη χορηγηθεί προστασία από άλλο κράτος μέλος, υπάρχει πρώτη χώρα ασύλου, ασφαλής τρίτη χώρα, ή πρόκειται για μεταγενέστερη αίτηση χωρίς νέα στοιχεία).",
+      "definition_en": "An application for international protection that is rejected without examination on the merits because one of the grounds in Article 33 of the Asylum Procedures Directive (2013/32/EU) applies — e.g. protection already granted by another Member State, a first country of asylum exists, a safe third country will readmit the applicant, or a subsequent application is made without new elements.",
+      "sources": [
+        "Asylum Procedures Directive 2013/32/EU, Article 33"
+      ]
+    },
+    {
+      "id": "manifestly-unfounded-application",
+      "category": "procedure",
+      "translations": {
+        "el": "Προδήλως αβάσιμη αίτηση",
+        "en": "Manifestly unfounded application",
+        "ar": "",
+        "fa": "",
+        "fr": "Demande manifestement infondée"
+      },
+      "definition_el": "Αίτηση που χαρακτηρίζεται ως προδήλως αβάσιμη όταν δεν προκύπτουν ουσιαστικοί λόγοι να γίνει δεκτό ότι ο αιτών διατρέχει κίνδυνο δίωξης ή σοβαρής βλάβης, ή όταν οι ισχυρισμοί του είναι σαφώς πλασματικοί. Συνήθως εξετάζεται με ταχεία διαδικασία (άρθρο 32 της Οδηγίας 2013/32/ΕΕ).",
+      "definition_en": "An application clearly lacking merit, where there are no substantial grounds for believing the applicant would be at risk of persecution or serious harm, or where the applicant's claims are clearly fabricated. Typically dealt with under the accelerated procedure (Article 32 of Directive 2013/32/EU).",
+      "sources": [
+        "Asylum Procedures Directive 2013/32/EU, Article 32"
+      ]
+    },
+    {
+      "id": "first-country-of-asylum",
+      "category": "procedure",
+      "translations": {
+        "el": "Πρώτη χώρα ασύλου",
+        "en": "First country of asylum",
+        "ar": "",
+        "fa": "",
+        "fr": "Premier pays d'asile"
+      },
+      "definition_el": "Χώρα στην οποία ο αιτών έχει ήδη αναγνωριστεί ως πρόσφυγας ή απολαμβάνει επαρκούς προστασίας, συμπεριλαμβανομένης της αρχής της μη επαναπροώθησης, και στην οποία θα γίνει εκ νέου δεκτός. Αποτελεί λόγο απαραδέκτου σύμφωνα με το άρθρο 35 της Οδηγίας 2013/32/ΕΕ.",
+      "definition_en": "A country in which the applicant has already been recognised as a refugee or otherwise enjoys sufficient protection — including the principle of non-refoulement — and will be readmitted. It is a ground of inadmissibility under Article 35 of Directive 2013/32/EU.",
+      "sources": [
+        "Asylum Procedures Directive 2013/32/EU, Article 35"
+      ]
+    },
+    {
+      "id": "explicit-withdrawal",
+      "category": "procedure",
+      "translations": {
+        "el": "Ρητή ανάκληση της αίτησης",
+        "en": "Explicit withdrawal of the application",
+        "ar": "",
+        "fa": "",
+        "fr": "Retrait explicite de la demande"
+      },
+      "definition_el": "Όταν ο αιτών δηλώνει ρητώς και εγγράφως ότι αποσύρει την αίτηση διεθνούς προστασίας. Η αρμόδια αρχή σταματά την εξέταση και η υπόθεση τίθεται στο αρχείο (άρθρο 27 της Οδηγίας 2013/32/ΕΕ).",
+      "definition_en": "Where the applicant formally and explicitly withdraws their application for international protection. The determining authority discontinues the examination and closes the file (Article 27 of Directive 2013/32/EU).",
+      "sources": [
+        "Asylum Procedures Directive 2013/32/EU, Article 27"
+      ]
+    },
+    {
+      "id": "implicit-withdrawal",
+      "category": "procedure",
+      "translations": {
+        "el": "Σιωπηρή ανάκληση της αίτησης",
+        "en": "Implicit withdrawal of the application",
+        "ar": "",
+        "fa": "",
+        "fr": "Retrait implicite de la demande"
+      },
+      "definition_el": "Τεκμήριο εγκατάλειψης της αίτησης όταν ο αιτών δεν εμφανίζεται στη συνέντευξη, δεν συμμορφώνεται με υποχρεώσεις συνεργασίας ή έχει διαφύγει. Η αρχή δύναται να απορρίψει την αίτηση λόγω σιωπηρής ανάκλησης (άρθρο 28 της Οδηγίας 2013/32/ΕΕ).",
+      "definition_en": "A presumption of abandonment when the applicant fails to appear for the personal interview, fails to comply with reporting duties, or has absconded. The determining authority may reject the application on the ground of implicit withdrawal (Article 28 of Directive 2013/32/EU).",
+      "sources": [
+        "Asylum Procedures Directive 2013/32/EU, Article 28"
+      ]
+    },
+    {
+      "id": "special-procedural-guarantees",
+      "category": "vulnerable",
+      "translations": {
+        "el": "Ειδικές διαδικαστικές εγγυήσεις",
+        "en": "Special procedural guarantees",
+        "ar": "",
+        "fa": "",
+        "fr": "Garanties procédurales spéciales"
+      },
+      "definition_el": "Πρόσθετες εγγυήσεις που χορηγούνται σε αιτούντες των οποίων η ικανότητα να ασκούν τα δικαιώματά τους και να εκπληρώνουν τις υποχρεώσεις τους στη διαδικασία ασύλου περιορίζεται λόγω ατομικών περιστάσεων (π.χ. ηλικία, φύλο, αναπηρία, βασανιστήρια, σοβαρή ψυχική ή σωματική νόσος). Άρθρα 2(δ) και 24 της Οδηγίας 2013/32/ΕΕ.",
+      "definition_en": "Additional guarantees granted to applicants whose ability to benefit from their rights and comply with their obligations in the asylum procedure is limited due to individual circumstances such as age, gender, disability, serious illness, torture, rape or other serious forms of violence (Articles 2(d) and 24 of Directive 2013/32/EU).",
+      "sources": [
+        "Asylum Procedures Directive 2013/32/EU, Articles 2(d) and 24"
+      ]
+    },
+    {
+      "id": "right-to-remain",
+      "category": "legal",
+      "translations": {
+        "el": "Δικαίωμα παραμονής κατά την εξέταση",
+        "en": "Right to remain pending examination",
+        "ar": "",
+        "fa": "",
+        "fr": "Droit de rester pendant l'examen"
+      },
+      "definition_el": "Δικαίωμα του αιτούντος να παραμείνει στο έδαφος του κράτους μέλους αποκλειστικά για τους σκοπούς της διαδικασίας, έως ότου η αποφαινόμενη αρχή εκδώσει απόφαση σε πρώτο βαθμό. Δεν θεμελιώνει δικαίωμα σε άδεια διαμονής (άρθρο 9 της Οδηγίας 2013/32/ΕΕ).",
+      "definition_en": "The applicant's right to remain on the territory of the Member State, for the sole purpose of the procedure, until the determining authority has taken a first-instance decision. It does not constitute an entitlement to a residence permit (Article 9 of Directive 2013/32/EU).",
+      "sources": [
+        "Asylum Procedures Directive 2013/32/EU, Article 9"
+      ]
+    },
+    {
+      "id": "effective-remedy",
+      "category": "legal",
+      "translations": {
+        "el": "Πραγματική προσφυγή",
+        "en": "Effective remedy",
+        "ar": "",
+        "fa": "",
+        "fr": "Recours effectif"
+      },
+      "definition_el": "Δικαίωμα του αιτούντος σε πραγματική δικαστική προσφυγή ενώπιον δικαστηρίου κατά απόφασης επί της αίτησης διεθνούς προστασίας, με δυνατότητα πλήρους και ex nunc εξέτασης των πραγματικών και νομικών στοιχείων (άρθρο 46 της Οδηγίας 2013/32/ΕΕ· άρθρο 47 ΧΘΔΕΕ).",
+      "definition_en": "The applicant's right to an effective remedy before a court or tribunal against a decision on their application for international protection, providing for a full and ex nunc examination of both facts and points of law (Article 46 of Directive 2013/32/EU; Article 47 of the EU Charter of Fundamental Rights).",
+      "sources": [
+        "Asylum Procedures Directive 2013/32/EU, Article 46"
+      ]
+    },
+    {
+      "id": "take-charge-request",
+      "category": "procedure",
+      "translations": {
+        "el": "Αίτημα αναδοχής",
+        "en": "Take charge request",
+        "ar": "",
+        "fa": "",
+        "fr": "Requête aux fins de prise en charge"
+      },
+      "definition_el": "Αίτημα κράτους μέλους προς άλλο κράτος μέλος να αναλάβει την εξέταση αίτησης διεθνούς προστασίας, βάσει των κριτηρίων του Κεφαλαίου ΙΙΙ του Κανονισμού Δουβλίνο ΙΙΙ. Υποβάλλεται εντός τριών μηνών από την κατάθεση της αίτησης (άρθρο 21).",
+      "definition_en": "A request made by one Member State to another to assume responsibility for examining an application for international protection, based on the criteria in Chapter III of the Dublin III Regulation. It must be submitted within three months of the application being lodged (Article 21).",
+      "sources": [
+        "Dublin III Regulation (EU) 604/2013, Article 21"
+      ]
+    },
+    {
+      "id": "take-back-request",
+      "category": "procedure",
+      "translations": {
+        "el": "Αίτημα εκ νέου ανάληψης",
+        "en": "Take back request",
+        "ar": "",
+        "fa": "",
+        "fr": "Requête aux fins de reprise en charge"
+      },
+      "definition_el": "Αίτημα κράτους μέλους προς το υπεύθυνο κράτος μέλος να δεχθεί εκ νέου αιτούντα που έχει υποβάλει αίτηση σε άλλο κράτος μέλος ή βρίσκεται σε αυτό χωρίς τίτλο διαμονής. Άρθρα 23-24 Κανονισμού Δουβλίνο ΙΙΙ.",
+      "definition_en": "A request made by one Member State to the responsible Member State to take back an applicant who has lodged an application in another Member State or is present without a residence document (Articles 23-24 of the Dublin III Regulation).",
+      "sources": [
+        "Dublin III Regulation (EU) 604/2013, Articles 23-24"
+      ]
+    },
+    {
+      "id": "sovereignty-clause",
+      "category": "procedure",
+      "translations": {
+        "el": "Ρήτρα κυριαρχίας",
+        "en": "Sovereignty clause",
+        "ar": "",
+        "fa": "",
+        "fr": "Clause de souveraineté"
+      },
+      "definition_el": "Διακριτική ευχέρεια κράτους μέλους να εξετάσει αίτηση διεθνούς προστασίας ακόμη και αν δεν είναι υπεύθυνο βάσει των κριτηρίων του Κανονισμού. Άρθρο 17 παρ. 1 Κανονισμού Δουβλίνο ΙΙΙ.",
+      "definition_en": "The discretion of a Member State to examine an application for international protection even where such examination is not its responsibility under the criteria of the Regulation (Article 17(1) of the Dublin III Regulation).",
+      "sources": [
+        "Dublin III Regulation (EU) 604/2013, Article 17(1)"
+      ]
+    },
+    {
+      "id": "humanitarian-clause",
+      "category": "family",
+      "translations": {
+        "el": "Ανθρωπιστική ρήτρα",
+        "en": "Humanitarian clause",
+        "ar": "",
+        "fa": "",
+        "fr": "Clause humanitaire"
+      },
+      "definition_el": "Δυνατότητα κράτους μέλους να αναλάβει την εξέταση αίτησης για ανθρωπιστικούς λόγους, ιδίως οικογενειακούς ή πολιτισμικούς, ώστε να συνενώσει συγγενικά πρόσωπα. Άρθρο 17 παρ. 2 Κανονισμού Δουβλίνο ΙΙΙ.",
+      "definition_en": "The possibility for a Member State to assume responsibility for examining an application on humanitarian grounds — in particular based on family or cultural considerations — in order to bring together family members (Article 17(2) of the Dublin III Regulation).",
+      "sources": [
+        "Dublin III Regulation (EU) 604/2013, Article 17(2)"
+      ]
+    },
+    {
+      "id": "systemic-flaws",
+      "category": "legal",
+      "translations": {
+        "el": "Συστημικές ελλείψεις",
+        "en": "Systemic flaws",
+        "ar": "",
+        "fa": "",
+        "fr": "Défaillances systémiques"
+      },
+      "definition_el": "Συστημικές ελλείψεις στη διαδικασία ασύλου και τις συνθήκες υποδοχής κράτους μέλους που συνεπάγονται κίνδυνο απάνθρωπης ή εξευτελιστικής μεταχείρισης κατά την έννοια του άρθρου 4 του ΧΘΔΕΕ· κωλύουν τη μεταφορά Δουβλίνου (άρθρο 3 παρ. 2 Κανονισμού Δουβλίνο ΙΙΙ).",
+      "definition_en": "Systemic flaws in the asylum procedure and reception conditions of a Member State, resulting in a risk of inhuman or degrading treatment within the meaning of Article 4 of the EU Charter — which prevent a Dublin transfer (Article 3(2) of the Dublin III Regulation).",
+      "sources": [
+        "Dublin III Regulation (EU) 604/2013, Article 3(2)"
+      ]
+    },
+    {
+      "id": "temporary-protection",
+      "category": "status",
+      "translations": {
+        "el": "Προσωρινή προστασία",
+        "en": "Temporary protection",
+        "ar": "",
+        "fa": "",
+        "fr": "Protection temporaire"
+      },
+      "definition_el": "Διαδικασία εξαιρετικού χαρακτήρα για την παροχή άμεσης και προσωρινής προστασίας σε εκτοπισθέντες από τρίτες χώρες που αδυνατούν να επιστρέψουν, σε περίπτωση μαζικής εισροής ή επικείμενης μαζικής εισροής. Ενεργοποιείται με Απόφαση του Συμβουλίου (Οδηγία 2001/55/ΕΚ, άρθρο 2 στοιχ. α).",
+      "definition_en": "A procedure of exceptional character to provide, in the event of a mass influx or imminent mass influx of displaced persons from third countries who are unable to return to their country of origin, immediate and temporary protection. Activated by Council Decision (Directive 2001/55/EC, Article 2(a)).",
+      "sources": [
+        "Temporary Protection Directive 2001/55/EC, Article 2(a)"
+      ]
+    },
+    {
+      "id": "mass-influx",
+      "category": "status",
+      "translations": {
+        "el": "Μαζική εισροή",
+        "en": "Mass influx",
+        "ar": "",
+        "fa": "",
+        "fr": "Afflux massif"
+      },
+      "definition_el": "Άφιξη στην Ένωση μεγάλου αριθμού εκτοπισθέντων που προέρχονται από συγκεκριμένη χώρα ή γεωγραφική περιοχή, είτε η άφιξη ήταν αυθόρμητη είτε υποβοηθούμενη (π.χ. μέσω προγράμματος εκκένωσης). Άρθρο 2 στοιχ. δ της Οδηγίας 2001/55/ΕΚ.",
+      "definition_en": "Arrival in the Union of a large number of displaced persons who come from a specific country or geographical area, whether their arrival was spontaneous or aided — for example through an evacuation programme (Article 2(d) of Directive 2001/55/EC).",
+      "sources": [
+        "Temporary Protection Directive 2001/55/EC, Article 2(d)"
       ]
     }
   ]
