@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.2.6",
+    "version": "0.2.7",
     "updated": "2026-06-12",
     "languages": [
       "el",
@@ -266,7 +266,8 @@
       "definition_en": "An application made by a third-country national or stateless person for recognition as a refugee or beneficiary of subsidiary protection.",
       "sources": [
         "EU Procedures Directive 2013/32/EU",
-        "Ν. 4939/2022"
+        "Ν. 4939/2022",
+        "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
       ]
     },
     {
@@ -283,7 +284,8 @@
       "definition_en": "Substantive interview on the application for international protection, conducted by a case worker of the Asylum Service.",
       "sources": [
         "EU Procedures Directive 2013/32/EU art. 15",
-        "EUAA Practical Guide: Personal Interview"
+        "EUAA Practical Guide: Personal Interview",
+        "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
       ]
     },
     {
@@ -333,7 +335,8 @@
       "definition_en": "Preliminary examination of whether an application can be examined on the merits at all (e.g. safe third country, subsequent application).",
       "sources": [
         "EU Procedures Directive 2013/32/EU art. 33",
-        "Ν. 4939/2022"
+        "Ν. 4939/2022",
+        "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
       ]
     },
     {
@@ -366,7 +369,8 @@
       "definition_el": "Διαδικασία εξέτασης αίτησης με συντομευμένες προθεσμίες, που εφαρμόζεται σε καθορισμένες περιπτώσεις (π.χ. προδήλως αβάσιμη αίτηση).",
       "definition_en": "Examination procedure with shortened deadlines, applied in defined cases (e.g. manifestly unfounded application).",
       "sources": [
-        "EU Procedures Directive 2013/32/EU art. 31(8)"
+        "EU Procedures Directive 2013/32/EU art. 31(8)",
+        "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
       ]
     },
     {
@@ -382,7 +386,8 @@
       "definition_el": "Χώρα η οποία θεωρείται γενικά ασφαλής για τους υπηκόους της, με βάση τη νομοθεσία, την εφαρμογή της και τη γενικότερη κατάσταση.",
       "definition_en": "A country considered generally safe for its nationals, based on its legal framework, application of the law and overall situation.",
       "sources": [
-        "EU Procedures Directive 2013/32/EU art. 37, Annex I"
+        "EU Procedures Directive 2013/32/EU art. 37, Annex I",
+        "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
       ]
     },
     {
@@ -398,7 +403,8 @@
       "definition_el": "Τρίτη χώρα όπου ο αιτών θα μπορούσε να έχει αναζητήσει προστασία και η οποία πληροί συγκεκριμένα κριτήρια ασφάλειας.",
       "definition_en": "A third country where the applicant could have sought protection and which meets specific safety criteria.",
       "sources": [
-        "EU Procedures Directive 2013/32/EU art. 38"
+        "EU Procedures Directive 2013/32/EU art. 38",
+        "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
       ]
     },
     {
@@ -414,7 +420,8 @@
       "definition_el": "Νέα αίτηση διεθνούς προστασίας που υποβάλλεται μετά από οριστική απορριπτική απόφαση επί προηγούμενης αίτησης.",
       "definition_en": "A further application for international protection lodged after a final decision rejecting a previous application.",
       "sources": [
-        "EU Procedures Directive 2013/32/EU art. 40"
+        "EU Procedures Directive 2013/32/EU art. 40",
+        "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
       ]
     },
     {
@@ -1905,7 +1912,8 @@
       "definition_en": "Remedy lodged by the applicant against a negative decision on the application for international protection, before the Appeals Committee or the competent court.",
       "sources": [
         "EU Procedures Directive 2013/32/EU art. 46",
-        "Ν. 4939/2022"
+        "Ν. 4939/2022",
+        "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
       ]
     },
     {
@@ -1922,7 +1930,8 @@
       "definition_en": "Right of the applicant for international protection to free legal information and representation, particularly at the appeal stage.",
       "sources": [
         "EU Procedures Directive 2013/32/EU art. 20-22",
-        "Ν. 4939/2022 αρ. 71"
+        "Ν. 4939/2022 αρ. 71",
+        "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
       ]
     },
     {
@@ -2121,7 +2130,8 @@
       "definition_el": "Αίτηση διεθνούς προστασίας που απορρίπτεται χωρίς εξέταση επί της ουσίας, όταν συντρέχει ένας από τους λόγους του άρθρου 33 της Οδηγίας 2013/32/ΕΕ (π.χ. έχει ήδη χορηγηθεί προστασία από άλλο κράτος μέλος, υπάρχει πρώτη χώρα ασύλου, ασφαλής τρίτη χώρα, ή πρόκειται για μεταγενέστερη αίτηση χωρίς νέα στοιχεία).",
       "definition_en": "An application for international protection that is rejected without examination on the merits because one of the grounds in Article 33 of the Asylum Procedures Directive (2013/32/EU) applies — e.g. protection already granted by another Member State, a first country of asylum exists, a safe third country will readmit the applicant, or a subsequent application is made without new elements.",
       "sources": [
-        "Asylum Procedures Directive 2013/32/EU, Article 33"
+        "Asylum Procedures Directive 2013/32/EU, Article 33",
+        "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
       ]
     },
     {
@@ -2137,7 +2147,8 @@
       "definition_el": "Αίτηση που χαρακτηρίζεται ως προδήλως αβάσιμη όταν δεν προκύπτουν ουσιαστικοί λόγοι να γίνει δεκτό ότι ο αιτών διατρέχει κίνδυνο δίωξης ή σοβαρής βλάβης, ή όταν οι ισχυρισμοί του είναι σαφώς πλασματικοί. Συνήθως εξετάζεται με ταχεία διαδικασία (άρθρο 32 της Οδηγίας 2013/32/ΕΕ).",
       "definition_en": "An application clearly lacking merit, where there are no substantial grounds for believing the applicant would be at risk of persecution or serious harm, or where the applicant's claims are clearly fabricated. Typically dealt with under the accelerated procedure (Article 32 of Directive 2013/32/EU).",
       "sources": [
-        "Asylum Procedures Directive 2013/32/EU, Article 32"
+        "Asylum Procedures Directive 2013/32/EU, Article 32",
+        "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
       ]
     },
     {
@@ -2153,7 +2164,8 @@
       "definition_el": "Χώρα στην οποία ο αιτών έχει ήδη αναγνωριστεί ως πρόσφυγας ή απολαμβάνει επαρκούς προστασίας, συμπεριλαμβανομένης της αρχής της μη επαναπροώθησης, και στην οποία θα γίνει εκ νέου δεκτός. Αποτελεί λόγο απαραδέκτου σύμφωνα με το άρθρο 35 της Οδηγίας 2013/32/ΕΕ.",
       "definition_en": "A country in which the applicant has already been recognised as a refugee or otherwise enjoys sufficient protection — including the principle of non-refoulement — and will be readmitted. It is a ground of inadmissibility under Article 35 of Directive 2013/32/EU.",
       "sources": [
-        "Asylum Procedures Directive 2013/32/EU, Article 35"
+        "Asylum Procedures Directive 2013/32/EU, Article 35",
+        "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
       ]
     },
     {
@@ -2169,7 +2181,8 @@
       "definition_el": "Όταν ο αιτών δηλώνει ρητώς και εγγράφως ότι αποσύρει την αίτηση διεθνούς προστασίας. Η αρμόδια αρχή σταματά την εξέταση και η υπόθεση τίθεται στο αρχείο (άρθρο 27 της Οδηγίας 2013/32/ΕΕ).",
       "definition_en": "Where the applicant formally and explicitly withdraws their application for international protection. The determining authority discontinues the examination and closes the file (Article 27 of Directive 2013/32/EU).",
       "sources": [
-        "Asylum Procedures Directive 2013/32/EU, Article 27"
+        "Asylum Procedures Directive 2013/32/EU, Article 27",
+        "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
       ]
     },
     {
@@ -2185,7 +2198,8 @@
       "definition_el": "Τεκμήριο εγκατάλειψης της αίτησης όταν ο αιτών δεν εμφανίζεται στη συνέντευξη, δεν συμμορφώνεται με υποχρεώσεις συνεργασίας ή έχει διαφύγει. Η αρχή δύναται να απορρίψει την αίτηση λόγω σιωπηρής ανάκλησης (άρθρο 28 της Οδηγίας 2013/32/ΕΕ).",
       "definition_en": "A presumption of abandonment when the applicant fails to appear for the personal interview, fails to comply with reporting duties, or has absconded. The determining authority may reject the application on the ground of implicit withdrawal (Article 28 of Directive 2013/32/EU).",
       "sources": [
-        "Asylum Procedures Directive 2013/32/EU, Article 28"
+        "Asylum Procedures Directive 2013/32/EU, Article 28",
+        "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
       ]
     },
     {
