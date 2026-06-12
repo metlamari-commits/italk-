@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.2.7",
+    "version": "0.2.8",
     "updated": "2026-06-12",
     "languages": [
       "el",
@@ -2442,6 +2442,182 @@
       "sources": [
         "COM(2024) 251 final — Common Implementation Plan",
         "Council of the EU: EU Pact on Migration and Asylum"
+      ]
+    },
+    {
+      "id": "screening-regulation",
+      "category": "procedure",
+      "translations": {
+        "el": "Κανονισμός Διαλογής",
+        "en": "Screening Regulation",
+        "ar": "",
+        "fa": "",
+        "fr": "Règlement filtrage"
+      },
+      "definition_el": "Κανονισμός (ΕΕ) 2024/1356 του Συμφώνου Μετανάστευσης και Ασύλου, που εφαρμόζεται από 12 Ιουνίου 2026. Θεσπίζει ενιαία διαδικασία διαλογής υπηκόων τρίτων χωρών στα εξωτερικά σύνορα της ΕΕ, με ελέγχους ταυτοποίησης, ασφάλειας, ευαλωτότητας και προκαταρκτικό ιατρικό έλεγχο, πριν την παραπομπή σε διαδικασία ασύλου ή επιστροφής.",
+      "definition_en": "Regulation (EU) 2024/1356 of the Pact on Migration and Asylum, applicable from 12 June 2026. Establishes a uniform pre-entry screening procedure for third-country nationals at the EU external borders, comprising identification, security, vulnerability and preliminary health checks, before referral to either the asylum or the return procedure.",
+      "sources": [
+        "European Commission — DG Home Affairs, Pact on Migration and Asylum overview",
+        "European Parliament — IPR20290, 10 April 2024",
+        "Regulation (EU) 2024/1356"
+      ]
+    },
+    {
+      "id": "screening-duration",
+      "category": "procedure",
+      "translations": {
+        "el": "Διάρκεια διαλογής",
+        "en": "Screening duration",
+        "ar": "",
+        "fa": "",
+        "fr": "Durée du filtrage"
+      },
+      "definition_el": "Μέγιστη διάρκεια της διαδικασίας διαλογής σύμφωνα με τον Κανονισμό (ΕΕ) 2024/1356: έως 7 ημέρες όταν διενεργείται στα εξωτερικά σύνορα και έως 3 ημέρες όταν διενεργείται εντός της επικράτειας κράτους μέλους. Μετά τη λήξη της προθεσμίας, ο/η ενδιαφερόμενος/η παραπέμπεται στην κατάλληλη διαδικασία.",
+      "definition_en": "Maximum duration of the screening procedure under Regulation (EU) 2024/1356: up to 7 days when carried out at the external border and up to 3 days when carried out within a Member State's territory. After expiry of the deadline, the person is referred to the relevant procedure.",
+      "sources": [
+        "European Parliament — IPR20290, 10 April 2024 (\"a pre-entry procedure lasting up to seven days\")",
+        "Regulation (EU) 2024/1356, art. 6"
+      ]
+    },
+    {
+      "id": "debriefing-form",
+      "category": "documentation",
+      "translations": {
+        "el": "Έντυπο διαλογής (debriefing form)",
+        "en": "Debriefing / screening form",
+        "ar": "",
+        "fa": "",
+        "fr": "Formulaire de débriefing"
+      },
+      "definition_el": "Τυποποιημένο έντυπο που συμπληρώνεται στο τέλος της διαλογής σύμφωνα με τον Κανονισμό (ΕΕ) 2024/1356. Περιλαμβάνει στοιχεία ταυτότητας, διαδρομή ταξιδιού, ενδείξεις ευαλωτότητας, αποτελέσματα ελέγχων ασφαλείας και υγείας, καθώς και την προτεινόμενη παραπομπή σε διαδικασία ασύλου ή επιστροφής. Συνοδεύει τον φάκελο του ατόμου στα επόμενα στάδια.",
+      "definition_en": "Standardised form completed at the end of the screening under Regulation (EU) 2024/1356. It records identity data, travel route, vulnerability indicators, outcomes of security and health checks, and the proposed referral to either the asylum or return procedure. It accompanies the person's file in subsequent stages.",
+      "sources": [
+        "Regulation (EU) 2024/1356, art. 17 (debriefing form)",
+        "European Commission — DG Home Affairs, Pact overview"
+      ]
+    },
+    {
+      "id": "asylum-border-procedure",
+      "category": "procedure",
+      "translations": {
+        "el": "Διαδικασία ασύλου στα σύνορα",
+        "en": "Asylum border procedure",
+        "ar": "",
+        "fa": "",
+        "fr": "Procédure d'asile à la frontière"
+      },
+      "definition_el": "Ταχεία διαδικασία εξέτασης αιτήσεων διεθνούς προστασίας στα εξωτερικά σύνορα, σύμφωνα με τον Κανονισμό (ΕΕ) 2024/1348. Εφαρμόζεται κυρίως όταν ο/η αιτών/ούσα προέρχεται από χώρα με χαμηλό ποσοστό αναγνώρισης, παραπλανά τις αρχές ή συνιστά κίνδυνο για την ασφάλεια. Μέγιστη διάρκεια 12 εβδομάδες.",
+      "definition_en": "Accelerated procedure for examining applications for international protection at the external borders under Regulation (EU) 2024/1348. Mainly applied when the applicant comes from a country with a low recognition rate, misleads the authorities or poses a security risk. Maximum duration of 12 weeks.",
+      "sources": [
+        "European Commission — DG Home Affairs, Pact overview",
+        "European Parliament — IPR20290, 10 April 2024",
+        "Regulation (EU) 2024/1348, art. 43–45"
+      ]
+    },
+    {
+      "id": "return-border-procedure",
+      "category": "return",
+      "translations": {
+        "el": "Διαδικασία επιστροφής στα σύνορα",
+        "en": "Return border procedure",
+        "ar": "",
+        "fa": "",
+        "fr": "Procédure de retour à la frontière"
+      },
+      "definition_el": "Διαδικασία ταχείας επιστροφής, που θεσπίστηκε με τον Κανονισμό (ΕΕ) 2024/1349. Εφαρμόζεται σε όσους έχει απορριφθεί η αίτηση διεθνούς προστασίας στη διαδικασία ασύλου στα σύνορα. Παρέχεται υποστήριξη επανένταξης και εφαρμόζονται σύντομες προθεσμίες, με τον/την ενδιαφερόμενο/η να μη θεωρείται ότι έχει εισέλθει στην επικράτεια.",
+      "definition_en": "Expedited return procedure established by Regulation (EU) 2024/1349. It applies to persons whose application for international protection has been rejected in the asylum border procedure. Reintegration support is provided and short deadlines apply, with the person not considered to have entered the territory.",
+      "sources": [
+        "European Commission — DG Home Affairs, Pact overview",
+        "Regulation (EU) 2024/1349"
+      ]
+    },
+    {
+      "id": "solidarity-mechanism",
+      "category": "legal",
+      "translations": {
+        "el": "Μηχανισμός αλληλεγγύης",
+        "en": "Solidarity mechanism",
+        "ar": "",
+        "fa": "",
+        "fr": "Mécanisme de solidarité"
+      },
+      "definition_el": "Μόνιμος και υποχρεωτικός μηχανισμός κατανομής βαρών μεταξύ των κρατών μελών της ΕΕ, που θεσπίστηκε με τον Κανονισμό (ΕΕ) 2024/1351 για τη Διαχείριση Ασύλου και Μετανάστευσης (AMMR). Τα κράτη μέλη υπό μεταναστευτική πίεση λαμβάνουν στήριξη μέσω μετεγκαταστάσεων, χρηματοδοτικών συνεισφορών ή εναλλακτικών μέτρων αλληλεγγύης.",
+      "definition_en": "Permanent and mandatory burden-sharing framework among EU Member States, established by Regulation (EU) 2024/1351 on Asylum and Migration Management (AMMR). Member States under migratory pressure receive support through relocations, financial contributions or alternative solidarity measures.",
+      "sources": [
+        "European Commission — DG Home Affairs, Pact overview",
+        "European Parliament — IPR20290, 10 April 2024",
+        "Regulation (EU) 2024/1351, Part IV"
+      ]
+    },
+    {
+      "id": "relocation-pact",
+      "category": "procedure",
+      "translations": {
+        "el": "Μετεγκατάσταση (Σύμφωνο)",
+        "en": "Relocation (Pact)",
+        "ar": "",
+        "fa": "",
+        "fr": "Relocalisation (Pacte)"
+      },
+      "definition_el": "Μεταφορά αιτούντων διεθνή προστασία ή δικαιούχων διεθνούς προστασίας από κράτος μέλος υπό μεταναστευτική πίεση σε άλλο κράτος μέλος, στο πλαίσιο του μηχανισμού αλληλεγγύης του Κανονισμού (ΕΕ) 2024/1351. Συνιστά μία από τις τρεις βασικές μορφές συνεισφοράς αλληλεγγύης.",
+      "definition_en": "Transfer of applicants for international protection or beneficiaries of international protection from a Member State under migratory pressure to another Member State, within the solidarity mechanism of Regulation (EU) 2024/1351. It is one of the three main forms of solidarity contribution.",
+      "sources": [
+        "European Commission — DG Home Affairs, Pact overview",
+        "European Parliament — IPR20290, 10 April 2024",
+        "Regulation (EU) 2024/1351, art. 67"
+      ]
+    },
+    {
+      "id": "financial-contribution-solidarity",
+      "category": "legal",
+      "translations": {
+        "el": "Χρηματοδοτική συνεισφορά αλληλεγγύης",
+        "en": "Financial contribution (solidarity)",
+        "ar": "",
+        "fa": "",
+        "fr": "Contribution financière de solidarité"
+      },
+      "definition_el": "Χρηματική συνεισφορά κράτους μέλους ως εναλλακτική μορφή αλληλεγγύης αντί της μετεγκατάστασης αιτούντων διεθνή προστασία, σύμφωνα με τον Κανονισμό (ΕΕ) 2024/1351. Διοχετεύεται στη διαχείριση μετανάστευσης σε επίπεδο ΕΕ και σε τρίτες χώρες.",
+      "definition_en": "Monetary contribution by a Member State as an alternative form of solidarity in lieu of relocating applicants for international protection, under Regulation (EU) 2024/1351. It is channelled into migration management within the EU and in third countries.",
+      "sources": [
+        "European Commission — DG Home Affairs, Pact overview",
+        "Regulation (EU) 2024/1351, art. 65"
+      ]
+    },
+    {
+      "id": "eurodac-recast",
+      "category": "documentation",
+      "translations": {
+        "el": "Eurodac (αναδιατύπωση 2024)",
+        "en": "Eurodac Recast",
+        "ar": "",
+        "fa": "",
+        "fr": "Eurodac (refonte 2024)"
+      },
+      "definition_el": "Αναδιατυπωμένη βάση δεδομένων Eurodac βάσει του Κανονισμού (ΕΕ) 2024/1358, που μετατρέπεται από βάση αποθήκευσης δακτυλικών αποτυπωμάτων σε ευρύτερη βάση δεδομένων ασύλου και μετανάστευσης. Καταχωρεί δακτυλικά αποτυπώματα και εικόνες προσώπου από την ηλικία των 6 ετών, με σήμανση κινδύνων ασφαλείας ή βίας.",
+      "definition_en": "Recast Eurodac database under Regulation (EU) 2024/1358, transforming the system from a fingerprint storage database into a broader asylum and migration database. It records fingerprints and facial images from the age of 6, flagging security or violence risks.",
+      "sources": [
+        "European Commission — DG Home Affairs, Pact overview",
+        "European Parliament — IPR20290, 10 April 2024",
+        "Regulation (EU) 2024/1358"
+      ]
+    },
+    {
+      "id": "crisis-force-majeure-regulation",
+      "category": "legal",
+      "translations": {
+        "el": "Κανονισμός Κρίσης και Ανωτέρας Βίας",
+        "en": "Crisis and Force Majeure Regulation",
+        "ar": "",
+        "fa": "",
+        "fr": "Règlement situations de crise et de force majeure"
+      },
+      "definition_el": "Κανονισμός (ΕΕ) 2024/1359, που θεσπίζει ταχεία πρωτόκολλα διαχείρισης κρίσεων ασύλου και μετανάστευσης (μαζικές αφίξεις, εργαλειοποίηση μεταναστών, ανωτέρα βία). Επιτρέπει παρεκκλίσεις από τις γενικές διαδικασίες ασύλου, με στήριξη της ΕΕ και ενεργοποίηση του μηχανισμού αλληλεγγύης.",
+      "definition_en": "Regulation (EU) 2024/1359, establishing quick crisis-response protocols for asylum and migration emergencies (mass arrivals, instrumentalisation of migrants, force majeure). It allows derogations from the general asylum procedures, with EU support and activation of the solidarity mechanism.",
+      "sources": [
+        "European Commission — DG Home Affairs, Pact overview",
+        "European Parliament — IPR20290, 10 April 2024",
+        "Regulation (EU) 2024/1359"
       ]
     }
   ]
