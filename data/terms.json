@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "0.2.5",
-    "updated": "2026-06-04",
+    "version": "0.2.6",
+    "updated": "2026-06-12",
     "languages": [
       "el",
       "en",
@@ -2346,6 +2346,88 @@
       "definition_en": "Arrival in the Union of a large number of displaced persons who come from a specific country or geographical area, whether their arrival was spontaneous or aided — for example through an evacuation programme (Article 2(d) of Directive 2001/55/EC).",
       "sources": [
         "Temporary Protection Directive 2001/55/EC, Article 2(d)"
+      ]
+    },
+    {
+      "id": "asylum-procedures-regulation",
+      "category": "procedure",
+      "translations": {
+        "el": "Κανονισμός Διαδικασιών Ασύλου (ΚΔΑ)",
+        "en": "Asylum Procedures Regulation (APR)",
+        "ar": "",
+        "fa": "",
+        "fr": "Règlement sur les procédures d'asile (RPA)"
+      },
+      "definition_el": "Κανονισμός (ΕΕ) 2024/1348 του Ευρωπαϊκού Κοινοβουλίου και του Συμβουλίου, της 14ης Μαΐου 2024, για τη θέσπιση κοινής διαδικασίας διεθνούς προστασίας στην Ένωση. Εφαρμόζεται από 12 Ιουνίου 2026 και καταργεί την Οδηγία 2013/32/ΕΕ από 11 Ιουλίου 2026. Ως κανονισμός, εφαρμόζεται άμεσα σε όλα τα κράτη μέλη χωρίς μεταφορά στο εθνικό δίκαιο.",
+      "definition_en": "Regulation (EU) 2024/1348 of the European Parliament and of the Council of 14 May 2024 establishing a common procedure for international protection in the Union. Applies from 12 June 2026 and repeals Directive 2013/32/EU from 11 July 2026. As a regulation, it is directly applicable in all Member States without national transposition.",
+      "sources": [
+        "Regulation (EU) 2024/1348, CELEX:32024R1348",
+        "EUR-Lex summary: european-union-asylum-procedures-from-2026"
+      ]
+    },
+    {
+      "id": "common-procedure-international-protection",
+      "category": "procedure",
+      "translations": {
+        "el": "Κοινή διαδικασία διεθνούς προστασίας",
+        "en": "Common procedure for international protection",
+        "ar": "",
+        "fa": "",
+        "fr": "Procédure commune pour la protection internationale"
+      },
+      "definition_el": "Ενιαία διαδικασία εξέτασης αιτημάτων διεθνούς προστασίας στο σύνολο της ΕΕ, με κοινούς κανόνες ως προς τη συνέντευξη, τις εγγυήσεις, τα ένδικα βοηθήματα και την επιταχυνόμενη/συνοριακή διαδικασία. Αντικαθιστά τις διαφορετικές εθνικές διαδικασίες που προέβλεπε η Οδηγία 2013/32/ΕΕ.",
+      "definition_en": "A single procedure for examining international protection claims throughout the EU, with common rules on the interview, guarantees, remedies, and accelerated/border procedures. Replaces the divergent national procedures previously allowed under Directive 2013/32/EU.",
+      "sources": [
+        "Regulation (EU) 2024/1348, recital 7 and Chapter II"
+      ]
+    },
+    {
+      "id": "twenty-percent-rule",
+      "category": "procedure",
+      "translations": {
+        "el": "Κανόνας 20% (επιταχυνόμενη/συνοριακή διαδικασία)",
+        "en": "20% rule (accelerated/border procedure)",
+        "ar": "",
+        "fa": "",
+        "fr": "Règle des 20%"
+      },
+      "definition_el": "Νέος λόγος επιτάχυνσης κατά τον Κανονισμό 2024/1348: αιτήσεις από χώρες όπου το μέσο ποσοστό αναγνώρισης διεθνούς προστασίας στην ΕΕ είναι 20% ή χαμηλότερο μπορούν να εξεταστούν με επιταχυνόμενη ή συνοριακή διαδικασία. Άρθρο 42 παρ. 1 στοιχ. ι (ι).",
+      "definition_en": "A new acceleration ground under Regulation 2024/1348: applications from countries whose EU-wide protection recognition rate is 20% or lower may be examined under an accelerated or border procedure. Article 42(1)(j).",
+      "sources": [
+        "Regulation (EU) 2024/1348, Article 42(1)(j)"
+      ]
+    },
+    {
+      "id": "effective-protection-third-country",
+      "category": "procedure",
+      "translations": {
+        "el": "Αποτελεσματική προστασία σε τρίτη χώρα",
+        "en": "Effective protection in a third country",
+        "ar": "",
+        "fa": "",
+        "fr": "Protection effective dans un pays tiers"
+      },
+      "definition_el": "Έννοια του Κανονισμού 2024/1348 βάσει της οποίας θεωρείται ότι σε τρίτη χώρα ο αιτών έχει πρόσβαση σε αποτελεσματική προστασία, εφόσον πληρούνται κριτήρια όπως η τήρηση της αρχής μη επαναπροώθησης, η πρόσβαση σε διαμονή και βασικά δικαιώματα. Διακρίνεται από την έννοια της ασφαλούς τρίτης χώρας.",
+      "definition_en": "A concept under Regulation 2024/1348 by which an applicant is considered to have access to effective protection in a third country if criteria are met such as respect for non-refoulement, access to residence and basic rights. Distinct from the concept of a safe third country.",
+      "sources": [
+        "Regulation (EU) 2024/1348"
+      ]
+    },
+    {
+      "id": "migration-asylum-pact",
+      "category": "procedure",
+      "translations": {
+        "el": "Σύμφωνο για τη Μετανάστευση και το Άσυλο",
+        "en": "Migration and Asylum Pact",
+        "ar": "",
+        "fa": "",
+        "fr": "Pacte sur la migration et l'asile"
+      },
+      "definition_el": "Δέσμη πέντε κανονισμών της ΕΕ (Μάιος 2024) που μεταρρυθμίζει τη μετανάστευση και το άσυλο: Κανονισμός Διαλογής 2024/1356, Κανονισμός Διαδικασιών Ασύλου 2024/1348, Κανονισμός Διαχείρισης Ασύλου & Μετανάστευσης 2024/1351, Κανονισμός Κρίσεων & Ανωτέρας Βίας 2024/1359, αναδιατύπωση Eurodac 2024/1358. Εφαρμόζεται από μέσα 2026.",
+      "definition_en": "A package of five EU regulations (May 2024) reforming migration and asylum: Screening Regulation 2024/1356, Asylum Procedures Regulation 2024/1348, Asylum & Migration Management Regulation 2024/1351, Crisis & Force Majeure Regulation 2024/1359, Eurodac recast 2024/1358. Applies from mid-2026.",
+      "sources": [
+        "COM(2024) 251 final — Common Implementation Plan",
+        "Council of the EU: EU Pact on Migration and Asylum"
       ]
     }
   ]

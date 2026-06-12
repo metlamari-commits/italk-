@@ -618,3 +618,88 @@ footer a { margin: 0 8px; }
   .term-table thead th,
   .term-table tbody td { padding: 8px 10px; }
 }
+
+/* APR 2026 landing page */
+.apr-hero {
+  background: linear-gradient(180deg, var(--bg-elev) 0%, var(--bg-card) 100%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 24px;
+  margin-bottom: 20px;
+}
+.apr-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: #0f1419;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+.apr-hero h1 {
+  font-size: 26px;
+  line-height: 1.25;
+  margin: 0 0 12px;
+}
+.apr-subtitle {
+  color: var(--text-dim);
+  font-size: 15px;
+  margin: 0;
+}
+.apr-terms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 8px 0 20px;
+}
+.apr-term {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.15s, background 0.15s;
+}
+.apr-term:hover {
+  border-color: var(--accent);
+  background: var(--bg-elev);
+}
+.apr-term-el { font-weight: 600; font-size: 14px; }
+.apr-term-en { font-size: 12px; color: var(--text-dim); }
+
+/* New-feature badge for the homepage hero */
+.new-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-elev);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin: 0 0 16px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 14px;
+}
+.new-banner:hover { background: var(--bg-card); }
+.new-banner-tag {
+  background: var(--accent);
+  color: #0f1419;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+.new-banner-arrow { margin-left: auto; color: var(--accent); font-weight: 700; }
+
+@media (max-width: 600px) {
+  .apr-terms { grid-template-columns: 1fr; }
+  .apr-hero h1 { font-size: 20px; }
+}
