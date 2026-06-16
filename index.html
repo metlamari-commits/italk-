@@ -37,6 +37,34 @@
   <meta name="twitter:description" content="151 όροι ασύλου σε 5 γλώσσες. Δωρεάν, χωρίς εγγραφή.">
   <meta name="twitter:image" content="https://i-talk.gr/og-image.png">
 
+  <!-- Search engine indexing -->
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="googlebot" content="index, follow">
+
+  <!-- Structured data (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "i-talk.gr",
+    "alternateName": "Γλωσσάρι Διερμηνέα Ασύλου",
+    "url": "https://i-talk.gr/",
+    "description": "Πολύγλωσσο γλωσσάρι ορολογίας ασύλου και πρώτης υποδοχής για διερμηνείς στην Ελλάδα. 151 όροι σε ΕΛ/ΕΝ/AR/FA/FR.",
+    "inLanguage": ["el", "en", "ar", "fa", "fr"],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://i-talk.gr/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "i-talk.gr",
+      "url": "https://i-talk.gr/",
+      "logo": "https://i-talk.gr/icon-512.png"
+    }
+  }
+  </script>
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -57,7 +85,10 @@
       <h1>Γλωσσάρι Διερμηνέα Ασύλου</h1>
       <a class="new-banner" href="/apr-2026.html">
         <span class="new-banner-tag">ΝΕΟ</span>
-        <span>Κανονισμός Ασύλου ΕΕ 2024/1348 &mdash; ισχύει από 12.06.2026</span>
+        <span class="new-banner-text">
+          <strong>Κανονισμός Ασύλου ΕΕ 2024/1348</strong>
+          <span class="new-banner-date">Ισχύει από 12.06.2026 &middot; Δες τι αλλάζει</span>
+        </span>
         <span class="new-banner-arrow">&rarr;</span>
       </a>
       <ul class="trust-badges" aria-label="Χαρακτηριστικά">
