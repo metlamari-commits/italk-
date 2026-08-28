@@ -16,9 +16,23 @@ const VIEW_LABELS = {
 };
 
 async function loadData() {
-  const res = await fetch("data/terms.json");
-  if (!res.ok) throw new Error("Failed to load terms.json: " + res.status);
-  state.data = await res.json();
+  const delays = [0, 500, 1500];
+  let lastErr;
+  for (const delay of delays) {
+    if (delay) await new Promise(r => setTimeout(r, delay));
+    try {
+      const res = await fetch("data/terms.json", { cache: "no-cache" });
+      if (res.ok) {
+        state.data = await res.json();
+        return;
+      }
+      lastErr = new Error("Failed to load terms.json: " + res.status);
+      if (res.status < 500) throw lastErr;
+    } catch (err) {
+      lastErr = err;
+    }
+  }
+  throw lastErr;
 }
 
 function readUrlState() {
