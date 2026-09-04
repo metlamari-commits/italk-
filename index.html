@@ -479,6 +479,87 @@
     .cat-chip[data-dom="favorites"] .cat-dot { background: var(--dom-warm); }
     .cat-chip[data-dom="favorites"].active { background: var(--dom-warm); }
 
+    /* AI translation card */
+    .term-card.ai-card {
+      background: linear-gradient(180deg, var(--dom-warm-bg) 0%, var(--surface) 40%);
+      border-color: var(--dom-warm);
+    }
+    .ai-badge-inline {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--dom-warm);
+      color: #fff;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 4px 10px;
+      border-radius: 12px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    /* Ask AI wrap */
+    .ask-ai-wrap {
+      background: var(--surface);
+      border: 2px dashed var(--dom-warm);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+    .ask-ai-title {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 12px;
+    }
+    .ask-ai-btn {
+      background: var(--dom-warm);
+      color: #fff;
+      border: none;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: transform 0.1s, background 0.15s;
+      max-width: 100%;
+    }
+    .ask-ai-btn:hover { background: #8b4909; }
+    .ask-ai-btn:active { transform: scale(0.97); }
+    .ask-ai-btn span:last-child {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .ask-ai-note {
+      margin-top: 12px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .ask-ai-loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: var(--dom-warm);
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .spinner {
+      width: 20px;
+      height: 20px;
+      border: 2.5px solid rgba(178,94,14,0.25);
+      border-top-color: var(--dom-warm);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
     /* ---- CATEGORY BAR ---- */
     .cat-bar {
       display: flex;
@@ -916,6 +997,9 @@ const LANG_SHORT  = { el: "EL", en: "EN", ar: "AR", fa: "FA", fr: "FR" };
 const LANG_BCP47  = { el: "el-GR", en: "en-US", ar: "ar-SA", fa: "fa-IR", fr: "fr-FR" };
 const RTL_LANGS = new Set(["ar", "fa"]);
 const BOOKMARKS_KEY = "italk_bookmarks_v1";
+const AI_CACHE_KEY = "italk_ai_cache_v1";
+const AI_CACHE_TTL = 30 * 24 * 60 * 60 * 1000; // 30 days
+const WORKER_URL = "https://cool-moon-d7ebitalk-translate.metlamari.workers.dev/";
 
 const CAT_DOMAIN = {
   status: "legal",
@@ -937,7 +1021,9 @@ const state = {
   uiLang: "el",
   activeCategory: "all",
   query: "",
-  bookmarks: new Set()
+  bookmarks: new Set(),
+  aiResult: null,
+  aiLoading: false
 };
 
 async function loadData() {
@@ -1083,8 +1169,10 @@ function startVoiceSearch() {
   btn.classList.add("listening");
   rec.onresult = (e) => {
     const transcript = e.results[0][0].transcript;
+    const newQuery = transcript.trim();
     search.value = transcript;
-    state.query = transcript.trim();
+    if (newQuery !== state.query) state.aiResult = null;
+    state.query = newQuery;
     document.getElementById("search-clear").classList.add("show");
     render();
     syncUrl();
@@ -1133,6 +1221,73 @@ function openFullscreen(term, lang) {
 function closeFullscreen() {
   document.getElementById("fs-overlay").classList.remove("show");
   if (window.speechSynthesis) speechSynthesis.cancel();
+}
+
+/* ---- AI TRANSLATION (Cloudflare Worker → Claude) ---- */
+function getAiCache(term, srcLang) {
+  try {
+    const raw = localStorage.getItem(AI_CACHE_KEY);
+    if (!raw) return null;
+    const cache = JSON.parse(raw);
+    const key = term.toLowerCase().trim() + "|" + srcLang;
+    const entry = cache[key];
+    if (!entry) return null;
+    if (Date.now() - entry._cachedAt > AI_CACHE_TTL) {
+      delete cache[key];
+      localStorage.setItem(AI_CACHE_KEY, JSON.stringify(cache));
+      return null;
+    }
+    return entry;
+  } catch(e) { return null; }
+}
+function setAiCache(term, srcLang, data) {
+  try {
+    const raw = localStorage.getItem(AI_CACHE_KEY);
+    const cache = raw ? JSON.parse(raw) : {};
+    const key = term.toLowerCase().trim() + "|" + srcLang;
+    cache[key] = { ...data, _cachedAt: Date.now() };
+    // Cap cache at 500 entries
+    const keys = Object.keys(cache);
+    if (keys.length > 500) {
+      keys.sort((a, b) => (cache[a]._cachedAt || 0) - (cache[b]._cachedAt || 0));
+      for (let i = 0; i < keys.length - 500; i++) delete cache[keys[i]];
+    }
+    localStorage.setItem(AI_CACHE_KEY, JSON.stringify(cache));
+  } catch(e) {}
+}
+
+async function fetchAiTranslation(term, sourceLang) {
+  const cached = getAiCache(term, sourceLang);
+  if (cached) {
+    state.aiResult = cached;
+    render();
+    return;
+  }
+  state.aiLoading = true;
+  render();
+  try {
+    const res = await fetch(WORKER_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ term, sourceLang })
+    });
+    const data = await res.json();
+    if (!res.ok || data.error) {
+      throw new Error(data.error || ("HTTP " + res.status));
+    }
+    if (!data.translations) {
+      toast(state.uiLang === "el" ? "Το AI δεν μπόρεσε να μεταφράσει αυτόν τον όρο" : "AI couldn't translate this term");
+      state.aiResult = null;
+    } else {
+      state.aiResult = data;
+      setAiCache(term, sourceLang, data);
+    }
+  } catch (e) {
+    toast((state.uiLang === "el" ? "Σφάλμα AI: " : "AI error: ") + (e.message || e));
+    state.aiResult = null;
+  }
+  state.aiLoading = false;
+  render();
 }
 
 /* ---- BUILDERS ---- */
@@ -1354,6 +1509,141 @@ function renderTermCard(term) {
   return card;
 }
 
+function renderAiCard(ai) {
+  const card = document.createElement("article");
+  card.className = "term-card ai-card";
+  card.dataset.dom = ai.category && CAT_DOMAIN[ai.category] ? CAT_DOMAIN[ai.category] : "warm";
+
+  const head = document.createElement("div");
+  head.className = "term-head";
+  const titleWrap = document.createElement("div");
+  titleWrap.style.flex = "1";
+  titleWrap.style.minWidth = "0";
+  const aiBadge = document.createElement("div");
+  aiBadge.className = "ai-badge-inline";
+  aiBadge.innerHTML = '<span>🤖</span> ' + (state.uiLang === "el" ? "Μετάφραση από AI · μη επικυρωμένη" : "AI translation · unverified");
+  titleWrap.appendChild(aiBadge);
+
+  const primaryVal = ai.translations[state.uiLang] || ai.translations.en || ai.term_input;
+  const isRtlPrimary = RTL_LANGS.has(state.uiLang);
+  const title = document.createElement("div");
+  title.className = "term-title" + (isRtlPrimary ? " rtl" : "");
+  title.textContent = primaryVal;
+  titleWrap.appendChild(title);
+  head.appendChild(titleWrap);
+
+  const badge = document.createElement("span");
+  badge.className = "term-cat-badge";
+  badge.dataset.dom = card.dataset.dom;
+  badge.textContent = ai.category || "general";
+  head.appendChild(badge);
+  card.appendChild(head);
+
+  const grid = document.createElement("div");
+  grid.className = "term-translations";
+  LANGS.forEach(l => {
+    const item = document.createElement("div");
+    item.className = "trans-item" + (l === state.uiLang ? " primary" : "");
+    const val = ai.translations[l];
+    const langLine = document.createElement("div");
+    langLine.className = "trans-lang";
+    const langLbl = document.createElement("span");
+    langLbl.textContent = LANG_SHORT[l] + " · " + LANG_LABELS[l];
+    langLine.appendChild(langLbl);
+    const rightBtns = document.createElement("span");
+    rightBtns.style.display = "inline-flex";
+    rightBtns.style.alignItems = "center";
+    rightBtns.style.gap = "2px";
+    if (val) {
+      const speakBtn = document.createElement("button");
+      speakBtn.className = "speak-inline";
+      speakBtn.title = "Speak · " + LANG_LABELS[l];
+      speakBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>';
+      speakBtn.addEventListener("click", (e) => { e.stopPropagation(); speakText(val, l, speakBtn); });
+      rightBtns.appendChild(speakBtn);
+      const fsBtn = document.createElement("button");
+      fsBtn.className = "speak-inline";
+      fsBtn.title = "Fullscreen · " + LANG_LABELS[l];
+      fsBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h6M3 3v6M21 3h-6M21 3v6M3 21h6M3 21v-6M21 21h-6M21 21v-6"/></svg>';
+      fsBtn.addEventListener("click", (e) => { e.stopPropagation(); openFullscreen({ translations: ai.translations }, l); });
+      rightBtns.appendChild(fsBtn);
+    }
+    langLine.appendChild(rightBtns);
+    item.appendChild(langLine);
+    const txt = document.createElement("div");
+    if (val) {
+      txt.className = "trans-text" + (RTL_LANGS.has(l) ? " rtl" : "");
+      txt.textContent = val;
+      item.addEventListener("click", (e) => { e.stopPropagation(); copyText(val); });
+    } else {
+      txt.className = "trans-pending";
+      txt.textContent = "—";
+    }
+    item.appendChild(txt);
+    grid.appendChild(item);
+  });
+  card.appendChild(grid);
+
+  if (ai.definition_el || ai.definition_en) {
+    const details = document.createElement("div");
+    details.className = "term-details";
+    details.style.display = "block";
+    details.style.marginTop = "10px";
+    details.style.paddingTop = "10px";
+    details.style.borderTop = "1px solid var(--border)";
+    ["el","en"].forEach(l => {
+      const key = "definition_" + l;
+      if (ai[key]) {
+        const block = document.createElement("div");
+        block.className = "def-block";
+        block.innerHTML = '<div class="def-lang">' + (state.uiLang === "el" ? "Ορισμός" : "Definition") + ' · ' + LANG_SHORT[l] + '</div><div class="def-text"></div>';
+        block.querySelector(".def-text").textContent = ai[key];
+        details.appendChild(block);
+      }
+    });
+    const src = document.createElement("div");
+    src.className = "sources-line";
+    src.innerHTML = '<strong>' + (state.uiLang === "el" ? "Πηγή:" : "Source:") + '</strong>' +
+                    '<span class="source-pill" style="background:var(--dom-warm-bg);color:var(--dom-warm);border-color:var(--dom-warm)">🤖 ' + (ai.model || "AI") + ' · unverified</span>';
+    details.appendChild(src);
+    card.appendChild(details);
+  }
+  return card;
+}
+
+function renderAskAiButton(query) {
+  const wrap = document.createElement("div");
+  wrap.className = "ask-ai-wrap";
+  if (state.aiLoading) {
+    wrap.innerHTML =
+      '<div class="ask-ai-loading">' +
+      '<div class="spinner"></div>' +
+      '<div>' + (state.uiLang === "el" ? "Ζητάω μετάφραση από AI…" : "Asking AI…") + '</div>' +
+      '</div>';
+    return wrap;
+  }
+  wrap.innerHTML =
+    '<div class="ask-ai-title">' +
+    (state.uiLang === "el"
+      ? 'Δεν βρέθηκε στους 151 όρους του γλωσσάριου.'
+      : 'Not found in the 151-term glossary.') +
+    '</div>' +
+    '<button class="ask-ai-btn" id="ask-ai-btn">' +
+    '<span style="font-size:18px">🤖</span>' +
+    '<span>' + (state.uiLang === "el" ? 'Ζήτα μετάφραση από AI για «' : 'Ask AI to translate «') + query + '»</span>' +
+    '</button>' +
+    '<div class="ask-ai-note">' +
+    (state.uiLang === "el"
+      ? '⚠ Οι AI μεταφράσεις είναι ενδεικτικές — για επίσημη χρήση επιβεβαίωσε πάντα με πηγή.'
+      : '⚠ AI translations are indicative — for official use, always verify against a source.') +
+    '</div>';
+  setTimeout(() => {
+    const btn = document.getElementById("ask-ai-btn");
+    if (btn) btn.addEventListener("click", () => fetchAiTranslation(query, state.uiLang));
+  }, 0);
+  return wrap;
+}
+
 function render() {
   const list = document.getElementById("term-list");
   list.innerHTML = "";
@@ -1364,9 +1654,22 @@ function render() {
     (state.activeCategory !== "all" ? " · " + categoryLabel(state.activeCategory) : "") +
     (state.query ? " · «" + state.query + "»" : "");
 
+  // AI result at top (if it matches current query)
+  if (state.aiResult && state.query && state.aiResult.term_input) {
+    if (state.aiResult.term_input.toLowerCase().trim() === state.query.toLowerCase().trim()) {
+      list.appendChild(renderAiCard(state.aiResult));
+    }
+  }
+
   if (!terms.length) {
-    list.innerHTML = '<div class="empty">' +
-      (state.uiLang === "el" ? "Δεν βρέθηκαν όροι." : "No terms found.") + '</div>';
+    if (state.query && !state.aiResult) {
+      list.appendChild(renderAskAiButton(state.query));
+    } else if (!state.query) {
+      const empty = document.createElement("div");
+      empty.className = "empty";
+      empty.textContent = state.uiLang === "el" ? "Δεν βρέθηκαν όροι." : "No terms found.";
+      list.appendChild(empty);
+    }
     return;
   }
 
@@ -1376,6 +1679,11 @@ function render() {
     return al.localeCompare(bl);
   });
   sorted.forEach(t => list.appendChild(renderTermCard(t)));
+
+  // Also offer AI even when we DO have results, for terms that might be ambiguous
+  if (state.query && !state.aiResult && terms.length < 3) {
+    list.appendChild(renderAskAiButton(state.query));
+  }
 }
 
 async function init() {
@@ -1395,13 +1703,16 @@ async function init() {
   search.value = state.query;
   if (state.query) clearBtn.classList.add("show");
   search.addEventListener("input", e => {
-    state.query = e.target.value.trim();
+    const newQuery = e.target.value.trim();
+    if (newQuery !== state.query) state.aiResult = null;
+    state.query = newQuery;
     clearBtn.classList.toggle("show", !!state.query);
     render();
     syncUrl();
   });
   clearBtn.addEventListener("click", () => {
-    search.value = ""; state.query = ""; clearBtn.classList.remove("show"); render(); syncUrl();
+    search.value = ""; state.query = ""; state.aiResult = null;
+    clearBtn.classList.remove("show"); render(); syncUrl();
     search.focus();
   });
   // Form submit — close mobile keyboard, scroll to results, keep live search behavior
