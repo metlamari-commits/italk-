@@ -301,6 +301,149 @@
       justify-content: center;
     }
     .search-clear.show { display: flex; }
+    .search-clear.show + .mic-btn { right: 50px; }
+
+    /* Mic button (voice search) */
+    .mic-btn {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: var(--primary);
+      border: none;
+      color: #fff;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .mic-btn:hover { background: var(--primary-hover); }
+    .mic-btn:active { transform: translateY(-50%) scale(0.92); }
+    .mic-btn.listening {
+      background: var(--dom-medical);
+      animation: pulse-mic 1.2s ease-in-out infinite;
+    }
+    .mic-btn.unavailable { opacity: 0.35; cursor: not-allowed; }
+    @keyframes pulse-mic {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(217,56,58,0.6); }
+      50%      { box-shadow: 0 0 0 10px rgba(217,56,58,0); }
+    }
+
+    /* Card action row (bookmark, speak, fullscreen) */
+    .term-actions {
+      display: flex;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+    .icon-btn {
+      background: var(--surface-alt);
+      border: 1px solid transparent;
+      color: var(--text-dim);
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.12s;
+    }
+    .icon-btn:hover {
+      background: var(--surface);
+      border-color: var(--border);
+      color: var(--primary);
+    }
+    .icon-btn:active { transform: scale(0.92); }
+    .icon-btn.bookmarked {
+      background: var(--dom-warm-bg);
+      color: var(--dom-warm);
+    }
+    .icon-btn svg { display: block; }
+
+    /* Small speak button (per-language, inside trans-item) */
+    .speak-inline {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 2px 4px;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      transition: color 0.12s, background 0.12s;
+      margin-left: 4px;
+    }
+    .speak-inline:hover { color: var(--primary); background: rgba(17,66,119,0.08); }
+    .speak-inline.speaking { color: var(--dom-medical); animation: pulse-speak 1s ease-in-out infinite; }
+    @keyframes pulse-speak {
+      0%, 100% { opacity: 1; }
+      50%      { opacity: 0.5; }
+    }
+
+    /* Fullscreen "show to patient" overlay */
+    .fs-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(10,14,19,0.95);
+      z-index: 200;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      cursor: pointer;
+    }
+    .fs-overlay.show { display: flex; }
+    .fs-content {
+      max-width: 100%;
+      max-height: 100%;
+      text-align: center;
+      color: #fff;
+    }
+    .fs-source {
+      font-size: clamp(20px, 4vw, 32px);
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 24px;
+      font-weight: 400;
+    }
+    .fs-target {
+      font-size: clamp(48px, 12vw, 120px);
+      font-weight: 700;
+      line-height: 1.15;
+      color: #fff;
+    }
+    .fs-target.rtl {
+      direction: rtl;
+      font-family: 'Noto Naskh Arabic', 'Atkinson Hyperlegible', serif;
+    }
+    .fs-lang-label {
+      display: inline-block;
+      background: var(--dom-warm);
+      color: #fff;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 20px;
+      letter-spacing: 1px;
+      margin-top: 24px;
+    }
+    .fs-hint {
+      position: absolute;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,0.5);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+    }
+
+    /* Bookmarks-only chip variant */
+    .cat-chip[data-dom="favorites"] .cat-dot { background: var(--dom-warm); }
+    .cat-chip[data-dom="favorites"].active { background: var(--dom-warm); }
 
     /* ---- CATEGORY BAR ---- */
     .cat-bar {
@@ -674,6 +817,9 @@
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
       <input id="search" class="search-box" type="search" placeholder="Αναζήτηση σε 5 γλώσσες (Ελληνικά, English, العربية, فارسی, Français)...">
       <button class="search-clear" id="search-clear" aria-label="Καθαρισμός">&times;</button>
+      <button class="mic-btn" id="mic-btn" aria-label="Φωνητική αναζήτηση" title="Πάτα και μίλα">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+      </button>
     </div>
 
     <div class="cat-bar" id="cat-bar"></div>
@@ -704,6 +850,15 @@
 
   <div class="toast" id="toast"></div>
 
+  <div class="fs-overlay" id="fs-overlay" role="dialog" aria-modal="true" aria-label="Προβολή στον εξυπηρετούμενο">
+    <div class="fs-content">
+      <div class="fs-source" id="fs-source"></div>
+      <div class="fs-target" id="fs-target"></div>
+      <div class="fs-lang-label" id="fs-lang"></div>
+    </div>
+    <div class="fs-hint">tap anywhere to close</div>
+  </div>
+
   <footer>
     <div>
       <a href="index.html">Γλωσσάρι</a> &middot;
@@ -718,7 +873,9 @@
 const LANGS = ["el", "en", "ar", "fa", "fr"];
 const LANG_LABELS = { el: "Ελληνικά", en: "English", ar: "العربية", fa: "فارسی", fr: "Français" };
 const LANG_SHORT  = { el: "EL", en: "EN", ar: "AR", fa: "FA", fr: "FR" };
+const LANG_BCP47  = { el: "el-GR", en: "en-US", ar: "ar-SA", fa: "fa-IR", fr: "fr-FR" };
 const RTL_LANGS = new Set(["ar", "fa"]);
+const BOOKMARKS_KEY = "italk_bookmarks_v1";
 
 const CAT_DOMAIN = {
   status: "legal",
@@ -739,7 +896,8 @@ const state = {
   data: null,
   uiLang: "el",
   activeCategory: "all",
-  query: ""
+  query: "",
+  bookmarks: new Set()
 };
 
 async function loadData() {
@@ -783,7 +941,11 @@ function categoryLabel(catId) {
 function filterTerms() {
   const { data, activeCategory, query } = state;
   let terms = data.terms;
-  if (activeCategory !== "all") terms = terms.filter(t => t.category === activeCategory);
+  if (activeCategory === "favorites") {
+    terms = terms.filter(t => state.bookmarks.has(t.id));
+  } else if (activeCategory !== "all") {
+    terms = terms.filter(t => t.category === activeCategory);
+  }
   if (query) {
     const q = query.toLowerCase();
     terms = terms.filter(t => {
@@ -821,6 +983,98 @@ function copyText(text) {
   }
 }
 
+/* ---- SPEECH SYNTHESIS (voice output) ---- */
+let currentUtterance = null;
+function speakText(text, lang, btn) {
+  if (!window.speechSynthesis || !text) return;
+  // Stop any current speech
+  speechSynthesis.cancel();
+  document.querySelectorAll(".speak-inline.speaking").forEach(b => b.classList.remove("speaking"));
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = LANG_BCP47[lang] || "en-US";
+  u.rate = 0.9;
+  // Try to pick a matching voice
+  const voices = speechSynthesis.getVoices();
+  const match = voices.find(v => v.lang.toLowerCase().startsWith((LANG_BCP47[lang] || "").toLowerCase().slice(0, 2)));
+  if (match) u.voice = match;
+  if (btn) {
+    btn.classList.add("speaking");
+    u.onend = () => btn.classList.remove("speaking");
+    u.onerror = () => btn.classList.remove("speaking");
+  }
+  currentUtterance = u;
+  speechSynthesis.speak(u);
+}
+
+/* ---- SPEECH RECOGNITION (voice search) ---- */
+const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+function startVoiceSearch() {
+  const btn = document.getElementById("mic-btn");
+  const search = document.getElementById("search");
+  if (!SpeechRec) {
+    toast(state.uiLang === "el" ? "Ο browser σου δεν υποστηρίζει φωνητική αναζήτηση" : "Voice search not supported");
+    return;
+  }
+  const rec = new SpeechRec();
+  rec.lang = LANG_BCP47[state.uiLang] || "el-GR";
+  rec.continuous = false;
+  rec.interimResults = false;
+  rec.maxAlternatives = 1;
+  btn.classList.add("listening");
+  rec.onresult = (e) => {
+    const transcript = e.results[0][0].transcript;
+    search.value = transcript;
+    state.query = transcript.trim();
+    document.getElementById("search-clear").classList.add("show");
+    render();
+    syncUrl();
+  };
+  rec.onerror = () => toast(state.uiLang === "el" ? "Δεν άκουσα κάτι" : "Nothing heard");
+  rec.onend = () => btn.classList.remove("listening");
+  try { rec.start(); } catch(e) { btn.classList.remove("listening"); }
+}
+
+/* ---- BOOKMARKS ---- */
+function loadBookmarks() {
+  try {
+    const raw = localStorage.getItem(BOOKMARKS_KEY);
+    if (raw) state.bookmarks = new Set(JSON.parse(raw));
+  } catch(e) {}
+}
+function saveBookmarks() {
+  try { localStorage.setItem(BOOKMARKS_KEY, JSON.stringify([...state.bookmarks])); } catch(e) {}
+}
+function toggleBookmark(termId) {
+  if (state.bookmarks.has(termId)) {
+    state.bookmarks.delete(termId);
+    toast(state.uiLang === "el" ? "Αφαιρέθηκε από αγαπημένα" : "Removed from favorites");
+  } else {
+    state.bookmarks.add(termId);
+    toast(state.uiLang === "el" ? "Προστέθηκε στα αγαπημένα ★" : "Added to favorites ★");
+  }
+  saveBookmarks();
+  buildCatBar();
+  render();
+}
+
+/* ---- FULLSCREEN "SHOW TO PATIENT" ---- */
+function openFullscreen(term, lang) {
+  const overlay = document.getElementById("fs-overlay");
+  const src = document.getElementById("fs-source");
+  const tgt = document.getElementById("fs-target");
+  const lbl = document.getElementById("fs-lang");
+  const srcLang = state.uiLang === lang ? (lang === "el" ? "en" : "el") : state.uiLang;
+  src.textContent = term.translations[srcLang] || term.translations.en || "";
+  tgt.textContent = term.translations[lang] || "";
+  tgt.className = "fs-target" + (RTL_LANGS.has(lang) ? " rtl" : "");
+  lbl.textContent = LANG_SHORT[lang] + " · " + LANG_LABELS[lang];
+  overlay.classList.add("show");
+}
+function closeFullscreen() {
+  document.getElementById("fs-overlay").classList.remove("show");
+  if (window.speechSynthesis) speechSynthesis.cancel();
+}
+
 /* ---- BUILDERS ---- */
 function buildLangToggle() {
   const wrap = document.getElementById("lang-toggle");
@@ -850,6 +1104,18 @@ function buildCatBar() {
                   ' <span style="opacity:0.6;font-family:JetBrains Mono, monospace;font-size:11px">(' + state.data.terms.length + ')</span>';
   all.addEventListener("click", () => { state.activeCategory = "all"; buildCatBar(); render(); syncUrl(); });
   bar.appendChild(all);
+
+  // Favorites chip (only shown if user has any bookmarks)
+  if (state.bookmarks.size > 0) {
+    const fav = document.createElement("button");
+    fav.className = "cat-chip" + (state.activeCategory === "favorites" ? " active" : "");
+    fav.dataset.dom = "favorites";
+    fav.innerHTML = '<span class="cat-dot"></span>★ ' + (state.uiLang === "el" ? "Αγαπημένα" : "Favorites") +
+                    ' <span style="opacity:0.6;font-family:JetBrains Mono, monospace;font-size:11px">(' + state.bookmarks.size + ')</span>';
+    fav.addEventListener("click", () => { state.activeCategory = "favorites"; buildCatBar(); render(); syncUrl(); });
+    bar.appendChild(fav);
+  }
+
   state.data.categories.forEach(cat => {
     const chip = document.createElement("button");
     chip.className = "cat-chip" + (state.activeCategory === cat.id ? " active" : "");
@@ -903,11 +1169,31 @@ function renderTermCard(term) {
   }
   head.appendChild(titleWrap);
 
+  const rightCol = document.createElement("div");
+  rightCol.style.display = "flex";
+  rightCol.style.flexDirection = "column";
+  rightCol.style.alignItems = "flex-end";
+  rightCol.style.gap = "6px";
+  rightCol.style.flexShrink = "0";
+
   const badge = document.createElement("span");
   badge.className = "term-cat-badge";
   badge.dataset.dom = dom;
   badge.textContent = categoryLabel(term.category);
-  head.appendChild(badge);
+  rightCol.appendChild(badge);
+
+  const bookBtn = document.createElement("button");
+  const isBooked = state.bookmarks.has(term.id);
+  bookBtn.className = "icon-btn" + (isBooked ? " bookmarked" : "");
+  bookBtn.title = state.uiLang === "el" ? (isBooked ? "Αφαίρεση από αγαπημένα" : "Προσθήκη στα αγαπημένα") : (isBooked ? "Remove from favorites" : "Add to favorites");
+  bookBtn.setAttribute("aria-label", bookBtn.title);
+  bookBtn.innerHTML = isBooked
+    ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>'
+    : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>';
+  bookBtn.addEventListener("click", (e) => { e.stopPropagation(); toggleBookmark(term.id); });
+  rightCol.appendChild(bookBtn);
+
+  head.appendChild(rightCol);
   card.appendChild(head);
 
   const grid = document.createElement("div");
@@ -915,11 +1201,45 @@ function renderTermCard(term) {
   LANGS.forEach(l => {
     const item = document.createElement("div");
     item.className = "trans-item" + (l === state.uiLang ? " primary" : "");
+    const val = term.translations[l];
+
     const langLine = document.createElement("div");
     langLine.className = "trans-lang";
-    langLine.innerHTML = '<span>' + LANG_SHORT[l] + ' · ' + LANG_LABELS[l] + '</span><span class="copy-hint">click to copy</span>';
+    const langLbl = document.createElement("span");
+    langLbl.textContent = LANG_SHORT[l] + " · " + LANG_LABELS[l];
+    langLine.appendChild(langLbl);
+
+    const rightBtns = document.createElement("span");
+    rightBtns.style.display = "inline-flex";
+    rightBtns.style.alignItems = "center";
+    rightBtns.style.gap = "2px";
+
+    if (val) {
+      // Speak (audio pronunciation)
+      const speakBtn = document.createElement("button");
+      speakBtn.className = "speak-inline";
+      speakBtn.title = (state.uiLang === "el" ? "Άκουσε την προφορά · " : "Play pronunciation · ") + LANG_LABELS[l];
+      speakBtn.setAttribute("aria-label", speakBtn.title);
+      speakBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>';
+      speakBtn.addEventListener("click", (e) => { e.stopPropagation(); speakText(val, l, speakBtn); });
+      rightBtns.appendChild(speakBtn);
+
+      // Fullscreen (show to patient)
+      const fsBtn = document.createElement("button");
+      fsBtn.className = "speak-inline";
+      fsBtn.title = (state.uiLang === "el" ? "Δείξε σε πλήρη οθόνη · " : "Show fullscreen · ") + LANG_LABELS[l];
+      fsBtn.setAttribute("aria-label", fsBtn.title);
+      fsBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h6M3 3v6M21 3h-6M21 3v6M3 21h6M3 21v-6M21 21h-6M21 21v-6"/></svg>';
+      fsBtn.addEventListener("click", (e) => { e.stopPropagation(); openFullscreen(term, l); });
+      rightBtns.appendChild(fsBtn);
+    }
+    const hint = document.createElement("span");
+    hint.className = "copy-hint";
+    hint.textContent = val ? "click to copy" : "";
+    rightBtns.appendChild(hint);
+    langLine.appendChild(rightBtns);
     item.appendChild(langLine);
-    const val = term.translations[l];
+
     const txt = document.createElement("div");
     if (val) {
       txt.className = "trans-text" + (RTL_LANGS.has(l) ? " rtl" : "");
@@ -1004,12 +1324,14 @@ async function init() {
       '<div class="empty">Error loading data: ' + (e.message || e) + '</div>';
     return;
   }
+  loadBookmarks();
   readUrlState();
   buildLangToggle();
   buildCatBar();
   buildMetaLine();
   const search = document.getElementById("search");
   const clearBtn = document.getElementById("search-clear");
+  const micBtn = document.getElementById("mic-btn");
   search.value = state.query;
   if (state.query) clearBtn.classList.add("show");
   search.addEventListener("input", e => {
@@ -1021,6 +1343,23 @@ async function init() {
   clearBtn.addEventListener("click", () => {
     search.value = ""; state.query = ""; clearBtn.classList.remove("show"); render(); syncUrl();
   });
+  // Mic — voice search
+  if (!SpeechRec) micBtn.classList.add("unavailable");
+  micBtn.addEventListener("click", () => {
+    if (SpeechRec) startVoiceSearch();
+    else toast(state.uiLang === "el" ? "Ο browser σου δεν υποστηρίζει φωνητική αναζήτηση (δοκίμασε Chrome ή Edge)" : "Voice search not supported (try Chrome or Edge)");
+  });
+  // Fullscreen — close on any click, or ESC
+  const fs = document.getElementById("fs-overlay");
+  fs.addEventListener("click", closeFullscreen);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && fs.classList.contains("show")) closeFullscreen();
+  });
+  // Preload speech voices (some browsers load asynchronously)
+  if (window.speechSynthesis) {
+    speechSynthesis.getVoices();
+    speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
+  }
   render();
 }
 
