@@ -260,8 +260,19 @@
     .new-banner-arrow { color: var(--dom-warm); font-weight: 700; font-size: 22px; flex-shrink: 0; }
 
     /* ---- SEARCH ---- */
-    .search-wrap { position: relative; margin-bottom: 16px; }
-    .search-wrap svg {
+    .search-wrap {
+      display: flex;
+      gap: 8px;
+      align-items: stretch;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .search-input-block {
+      position: relative;
+      flex: 1;
+      min-width: 260px;
+    }
+    .search-input-block > svg {
       position: absolute;
       left: 14px;
       top: 50%;
@@ -275,17 +286,17 @@
       border: 2px solid var(--border);
       color: var(--text);
       font-family: inherit;
-      padding: 14px 44px 14px 44px;
+      padding: 14px 90px 14px 44px;
       border-radius: 12px;
       font-size: 16px;
       outline: none;
-      min-height: 48px;
+      min-height: 52px;
       transition: border-color 0.15s;
     }
     .search-box:focus { border-color: var(--primary); }
     .search-clear {
       position: absolute;
-      right: 10px;
+      right: 52px;
       top: 50%;
       transform: translateY(-50%);
       background: var(--surface-alt);
@@ -301,19 +312,18 @@
       justify-content: center;
     }
     .search-clear.show { display: flex; }
-    .search-clear.show + .mic-btn { right: 50px; }
 
     /* Mic button (voice search) */
     .mic-btn {
       position: absolute;
-      right: 10px;
+      right: 8px;
       top: 50%;
       transform: translateY(-50%);
       background: var(--primary);
       border: none;
       color: #fff;
-      width: 36px;
-      height: 36px;
+      width: 38px;
+      height: 38px;
       border-radius: 50%;
       cursor: pointer;
       display: flex;
@@ -331,6 +341,30 @@
     @keyframes pulse-mic {
       0%, 100% { box-shadow: 0 0 0 0 rgba(217,56,58,0.6); }
       50%      { box-shadow: 0 0 0 10px rgba(217,56,58,0); }
+    }
+
+    /* Submit button */
+    .search-submit {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 0 22px;
+      min-height: 52px;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.15s, transform 0.1s;
+      white-space: nowrap;
+    }
+    .search-submit:hover { background: var(--primary-hover); }
+    .search-submit:active { transform: scale(0.97); }
+    @media (max-width: 640px) {
+      .search-submit { flex: 1; justify-content: center; }
     }
 
     /* Card action row (bookmark, speak, fullscreen) */
@@ -813,14 +847,20 @@
       </a>
     </section>
 
-    <div class="search-wrap">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-      <input id="search" class="search-box" type="search" placeholder="Αναζήτηση σε 5 γλώσσες (Ελληνικά, English, العربية, فارسی, Français)...">
-      <button class="search-clear" id="search-clear" aria-label="Καθαρισμός">&times;</button>
-      <button class="mic-btn" id="mic-btn" aria-label="Φωνητική αναζήτηση" title="Πάτα και μίλα">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+    <form class="search-wrap" id="search-form" autocomplete="off">
+      <div class="search-input-block">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input id="search" class="search-box" type="search" placeholder="Αναζήτηση σε 5 γλώσσες (Ελληνικά, English, العربية, فارسی, Français)...">
+        <button type="button" class="search-clear" id="search-clear" aria-label="Καθαρισμός">&times;</button>
+        <button type="button" class="mic-btn" id="mic-btn" aria-label="Φωνητική αναζήτηση" title="Πάτα και μίλα">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+        </button>
+      </div>
+      <button type="submit" class="search-submit" id="search-submit">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <span>Αναζήτηση</span>
       </button>
-    </div>
+    </form>
 
     <div class="cat-bar" id="cat-bar"></div>
     <div class="stats" id="stats"></div>
@@ -985,20 +1025,40 @@ function copyText(text) {
 
 /* ---- SPEECH SYNTHESIS (voice output) ---- */
 let currentUtterance = null;
+function pickBestVoice(lang) {
+  const voices = speechSynthesis.getVoices();
+  if (!voices.length) return null;
+  const targetFull = (LANG_BCP47[lang] || "").toLowerCase();
+  const targetShort = targetFull.slice(0, 2);
+  // Try exact BCP47 match first (e.g. ar-SA), preferring network voices (higher quality for Arabic/Farsi)
+  let match = voices.find(v => v.lang.toLowerCase() === targetFull && !v.localService);
+  if (match) return match;
+  match = voices.find(v => v.lang.toLowerCase() === targetFull);
+  if (match) return match;
+  // Fall back to any Arabic/Farsi variant, preferring network
+  match = voices.find(v => v.lang.toLowerCase().startsWith(targetShort) && !v.localService);
+  if (match) return match;
+  match = voices.find(v => v.lang.toLowerCase().startsWith(targetShort));
+  return match || null;
+}
 function speakText(text, lang, btn) {
   if (!window.speechSynthesis || !text) return;
-  // Stop any current speech
   speechSynthesis.cancel();
   document.querySelectorAll(".speak-inline.speaking").forEach(b => b.classList.remove("speaking"));
+  const voice = pickBestVoice(lang);
+  if (!voice && (lang === "ar" || lang === "fa")) {
+    toast(state.uiLang === "el"
+      ? "Δεν βρέθηκε καλή φωνή για " + LANG_LABELS[lang] + " — δοκίμασε Edge"
+      : "No good voice for " + LANG_LABELS[lang] + " — try Edge");
+    return;
+  }
   const u = new SpeechSynthesisUtterance(text);
   u.lang = LANG_BCP47[lang] || "en-US";
-  u.rate = 0.9;
-  // Try to pick a matching voice
-  const voices = speechSynthesis.getVoices();
-  const match = voices.find(v => v.lang.toLowerCase().startsWith((LANG_BCP47[lang] || "").toLowerCase().slice(0, 2)));
-  if (match) u.voice = match;
+  u.rate = 0.85;
+  if (voice) u.voice = voice;
   if (btn) {
     btn.classList.add("speaking");
+    btn.title = "Voice: " + (voice ? voice.name : "default");
     u.onend = () => btn.classList.remove("speaking");
     u.onerror = () => btn.classList.remove("speaking");
   }
@@ -1342,6 +1402,14 @@ async function init() {
   });
   clearBtn.addEventListener("click", () => {
     search.value = ""; state.query = ""; clearBtn.classList.remove("show"); render(); syncUrl();
+    search.focus();
+  });
+  // Form submit — close mobile keyboard, scroll to results, keep live search behavior
+  document.getElementById("search-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    search.blur();
+    const stats = document.getElementById("stats");
+    if (stats) stats.scrollIntoView({ behavior: "smooth", block: "start" });
   });
   // Mic — voice search
   if (!SpeechRec) micBtn.classList.add("unavailable");
