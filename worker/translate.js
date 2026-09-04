@@ -172,19 +172,24 @@ async function handleSave(request, env, origin) {
 
 async function handleList(env, origin) {
   if (!env.ITALK_KV) {
-    return jsonResponse({ terms: [], warning: 'KV not bound' }, 200, origin);
+    return jsonResponse({ terms: [], warning: 'KV not bound', has_kv: false }, 200, origin);
   }
-  const list = await env.ITALK_KV.list({ prefix: KV_PREFIX, limit: 1000 });
-  const terms = [];
-  for (const k of list.keys) {
-    try {
-      const v = await env.ITALK_KV.get(k.name);
-      if (v) terms.push(JSON.parse(v));
-    } catch (e) {}
+  try {
+    const list = await env.ITALK_KV.list({ prefix: KV_PREFIX, limit: 1000 });
+    const keys = (list && list.keys) || [];
+    const terms = [];
+    for (const k of keys) {
+      try {
+        const v = await env.ITALK_KV.get(k.name);
+        if (v) terms.push(JSON.parse(v));
+      } catch (e) {}
+    }
+    const res = jsonResponse({ terms, count: terms.length }, 200, origin);
+    res.headers.set('Cache-Control', 'public, max-age=60');
+    return res;
+  } catch (e) {
+    return jsonResponse({ error: 'KV list failed', detail: String(e), stack: (e && e.stack) || null }, 500, origin);
   }
-  const res = jsonResponse({ terms, count: terms.length }, 200, origin);
-  res.headers.set('Cache-Control', 'public, max-age=60');
-  return res;
 }
 
 export default {
