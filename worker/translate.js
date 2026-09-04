@@ -83,7 +83,11 @@ export default {
       return jsonResponse({ error: 'Origin not allowed', origin }, 403, origin);
     }
     if (!env.ANTHROPIC_API_KEY) {
-      return jsonResponse({ error: 'Worker not configured: missing ANTHROPIC_API_KEY secret' }, 500, origin);
+      return jsonResponse({
+        error: 'Worker not configured: missing ANTHROPIC_API_KEY secret',
+        env_keys_present: Object.keys(env),
+        env_key_count: Object.keys(env).length
+      }, 500, origin);
     }
 
     let body;
