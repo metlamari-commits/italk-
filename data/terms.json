@@ -183,7 +183,9 @@
       "sources": [
         "UNHCR Handbook",
         "UNHCR Master Glossary"
-      ]
+      ],
+      "phonetics_ar": "tahdid wad' al-laji'",
+      "phonetics_fa": "ta'yin-e vaziyat-e panahandegi"
     },
     {
       "id": "internally-displaced-person",
@@ -199,7 +201,9 @@
       "definition_en": "A person forced to flee their home but who has not crossed an internationally recognised border.",
       "sources": [
         "UN Guiding Principles on Internal Displacement (1998)"
-      ]
+      ],
+      "phonetics_ar": "nazih dakhili",
+      "phonetics_fa": "avareh-ye dakheli"
     },
     {
       "id": "beneficiary-international-protection",
@@ -233,7 +237,9 @@
       "definition_en": "The transfer of a refugee from a country in which they sought protection to a third state that accepts them with permanent residence.",
       "sources": [
         "UNHCR Resettlement Handbook"
-      ]
+      ],
+      "phonetics_ar": "i'adat at-tawtin",
+      "phonetics_fa": "esteqrar-e mojaddad"
     },
     {
       "id": "mandate-refugee",
@@ -250,7 +256,9 @@
       "sources": [
         "UNHCR Statute (1950)",
         "UNHCR Master Glossary"
-      ]
+      ],
+      "phonetics_ar": "laji' bi-mujib wilayat al-mufawwadiyya",
+      "phonetics_fa": "panahandeh-ye tahat-e mandat"
     },
     {
       "id": "cessation-of-status",
@@ -267,7 +275,9 @@
       "sources": [
         "1951 Geneva Convention art. 1C",
         "EU Qualification Directive art. 11"
-      ]
+      ],
+      "phonetics_ar": "inha' wad' al-laji'",
+      "phonetics_fa": "khatm-e vaziyat-e panahandegi"
     },
     {
       "id": "application-international-protection",
@@ -346,7 +356,9 @@
       "sources": [
         "EUAA Country of Origin Information Reports",
         "UNHCR Refworld"
-      ]
+      ],
+      "phonetics_ar": "ma'lumat balad al-mansha'",
+      "phonetics_fa": "ettelaat-e keshvar-e mabda"
     },
     {
       "id": "admissibility-procedure",
@@ -364,7 +376,9 @@
         "EU Procedures Directive 2013/32/EU art. 33",
         "Ν. 4939/2022",
         "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
-      ]
+      ],
+      "phonetics_ar": "ijra' al-maqbuliyya",
+      "phonetics_fa": "ravand-e paziresh"
     },
     {
       "id": "border-procedure",
@@ -421,7 +435,9 @@
       "sources": [
         "EU Procedures Directive 2013/32/EU art. 37, Annex I",
         "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
-      ]
+      ],
+      "phonetics_ar": "balad al-mansha' al-amin",
+      "phonetics_fa": "keshvar-e mabda-ye amn"
     },
     {
       "id": "safe-third-country",
@@ -438,7 +454,9 @@
       "sources": [
         "EU Procedures Directive 2013/32/EU art. 38",
         "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
-      ]
+      ],
+      "phonetics_ar": "balad thalith amin",
+      "phonetics_fa": "keshvar-e sales-e amn"
     },
     {
       "id": "subsequent-application",
@@ -455,7 +473,9 @@
       "sources": [
         "EU Procedures Directive 2013/32/EU art. 40",
         "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
-      ]
+      ],
+      "phonetics_ar": "talab lahiq",
+      "phonetics_fa": "darkhast-e ba'di"
     },
     {
       "id": "credibility-assessment",
@@ -509,7 +529,9 @@
       "sources": [
         "Ν. 4939/2022",
         "Υπηρεσία Υποδοχής και Ταυτοποίησης"
-      ]
+      ],
+      "phonetics_ar": "al-istiqbal al-awwali",
+      "phonetics_fa": "paziresh-e avvaliyeh"
     },
     {
       "id": "registration",
@@ -544,7 +566,9 @@
       "definition_en": "Initial screening procedure at the EU external borders, for identification, health and security checks, and channelling of applications.",
       "sources": [
         "EU Screening Regulation (EU) 2024/1356"
-      ]
+      ],
+      "phonetics_ar": "al-farz",
+      "phonetics_fa": "ghalbargari"
     },
     {
       "id": "reception-centre",
@@ -561,7 +585,9 @@
       "sources": [
         "EU Reception Conditions Directive 2013/33/EU",
         "Υπηρεσία Υποδοχής και Ταυτοποίησης"
-      ]
+      ],
+      "phonetics_ar": "markaz al-istiqbal",
+      "phonetics_fa": "markaz-e paziresh"
     },
     {
       "id": "ric",
@@ -578,7 +604,9 @@
       "sources": [
         "Ν. 4939/2022",
         "Υπηρεσία Υποδοχής και Ταυτοποίησης"
-      ]
+      ],
+      "phonetics_ar": "markaz al-istiqbal wa-t-tahdid",
+      "phonetics_fa": "markaz-e paziresh va shenasayi"
     },
     {
       "id": "closed-controlled-access-centre",
@@ -594,7 +622,9 @@
       "definition_en": "Controlled-access facility on the Aegean islands for applicants for international protection.",
       "sources": [
         "Υπουργείο Μετανάστευσης και Ασύλου"
-      ]
+      ],
+      "phonetics_ar": "markaz al-wusul al-muraqab al-mughlaq",
+      "phonetics_fa": "markaz-e dastresi-ye kontrol-shodeh-ye baste"
     },
     {
       "id": "vulnerability-assessment",
@@ -631,7 +661,9 @@
       "definition_en": "Fingerprints and facial image collected and stored in the Eurodac system.",
       "sources": [
         "Eurodac Regulation (EU) 603/2013"
-      ]
+      ],
+      "phonetics_ar": "al-bayanat al-biyumitriyya",
+      "phonetics_fa": "dade-haye biyometrik"
     },
     {
       "id": "unaccompanied-minor",
@@ -908,7 +940,9 @@
       "definition_en": "Specific serious acts that constitute persecution, such as physical or mental violence, discriminatory legal measures, prosecution for refusing military service in an unlawful war.",
       "sources": [
         "EU Qualification Directive 2011/95/EU art. 9(2)"
-      ]
+      ],
+      "phonetics_ar": "a'mal al-idtihad",
+      "phonetics_fa": "a'mal-e az̄ar"
     },
     {
       "id": "agents-of-persecution",
@@ -924,7 +958,9 @@
       "definition_en": "The State, parties or organisations controlling the State or a substantial part of its territory, or non-State actors where the State is unable or unwilling to provide protection.",
       "sources": [
         "EU Qualification Directive 2011/95/EU art. 6"
-      ]
+      ],
+      "phonetics_ar": "al-jihat al-murtakiba li-l-idtihad",
+      "phonetics_fa": "amelan-e az̄ar"
     },
     {
       "id": "internal-protection-alternative",
@@ -941,7 +977,9 @@
       "sources": [
         "EU Qualification Directive 2011/95/EU art. 8",
         "UNHCR Guidelines on IPA"
-      ]
+      ],
+      "phonetics_ar": "badil al-himaya ad-dakhiliyya",
+      "phonetics_fa": "jaygozin-e hemayat-e dakheli"
     },
     {
       "id": "sur-place-claim",
@@ -958,7 +996,9 @@
       "sources": [
         "UNHCR Handbook §94-96",
         "EU Qualification Directive art. 5"
-      ]
+      ],
+      "phonetics_ar": "talab al-luju' fi al-mawqi'",
+      "phonetics_fa": "darkhast-e panahandegi dar mahal"
     },
     {
       "id": "material-facts",
@@ -974,7 +1014,9 @@
       "definition_en": "The key elements of the application that must be examined to assess the need for international protection.",
       "sources": [
         "EUAA Judicial Analysis: Evidence and Credibility Assessment"
-      ]
+      ],
+      "phonetics_ar": "al-waqa'i' al-jawhariyya",
+      "phonetics_fa": "haqayeq-e jouhari"
     },
     {
       "id": "medical-screening",
@@ -1132,7 +1174,9 @@
       "sources": [
         "EU Return Directive 2008/115/EC art. 15",
         "Ν. 3907/2011"
-      ]
+      ],
+      "phonetics_ar": "al-ihtijaz qabl at-tarhil",
+      "phonetics_fa": "bazdasht-e pish az ekhraj"
     },
     {
       "id": "geographic-restriction",
@@ -1149,7 +1193,9 @@
       "sources": [
         "Υπουργείο Μετανάστευσης και Ασύλου",
         "Ν. 4939/2022"
-      ]
+      ],
+      "phonetics_ar": "at-taqyid al-jughrafi",
+      "phonetics_fa": "mahdudiyat-e joghrafiyayi"
     },
     {
       "id": "alternatives-to-detention",
@@ -1205,7 +1251,9 @@
         "ECHR art. 5",
         "EU Charter of Fundamental Rights art. 6",
         "UNHCR Detention Guidelines"
-      ]
+      ],
+      "phonetics_ar": "al-hirman min al-hurriyya",
+      "phonetics_fa": "mahrumiyat az azadi"
     },
     {
       "id": "maximum-detention-period",
@@ -1222,7 +1270,9 @@
       "sources": [
         "EU Return Directive 2008/115/EC art. 15(5)-(6)",
         "Ν. 3907/2011"
-      ]
+      ],
+      "phonetics_ar": "al-hadd al-aqsa li-muddat al-ihtijaz",
+      "phonetics_fa": "haddaksar-e moddat-e bazdasht"
     },
     {
       "id": "objections-against-detention",
@@ -1239,7 +1289,9 @@
       "sources": [
         "Ν. 3907/2011 αρ. 30",
         "Ν. 3386/2005 αρ. 76"
-      ]
+      ],
+      "phonetics_ar": "i'tiradat 'ala al-ihtijaz",
+      "phonetics_fa": "e'terazat 'aleyh-e bazdasht"
     },
     {
       "id": "right-to-information-detention",
@@ -1276,7 +1328,9 @@
       "definition_en": "Detention of an applicant for international protection solely to secure transfer procedures to the Member State responsible under the Dublin III Regulation, where there is a significant risk of absconding.",
       "sources": [
         "Dublin III Regulation (EU) 604/2013 art. 28"
-      ]
+      ],
+      "phonetics_ar": "al-ihtijaz bi-mujib la'ihat dublin",
+      "phonetics_fa": "bazdasht bar asas-e dublin"
     },
     {
       "id": "voluntary-return",
@@ -1349,7 +1403,9 @@
       "definition_en": "Administrative measure prohibiting entry and stay in EU Member States' territory for a defined period.",
       "sources": [
         "EU Return Directive 2008/115/EC art. 11"
-      ]
+      ],
+      "phonetics_ar": "hazr i'adat ad-dukhul",
+      "phonetics_fa": "man'-e bazgasht"
     },
     {
       "id": "avr",
@@ -1366,7 +1422,9 @@
       "sources": [
         "IOM AVRR",
         "Υπουργείο Μετανάστευσης και Ασύλου"
-      ]
+      ],
+      "phonetics_ar": "al-'awda at-tawa'iyya al-musa'ada (AVR)",
+      "phonetics_fa": "bazgasht-e davtalabaneh-ye komaki"
     },
     {
       "id": "readmission-agreement",
@@ -1383,7 +1441,9 @@
       "sources": [
         "EU Return Directive 2008/115/EC",
         "EU readmission agreements"
-      ]
+      ],
+      "phonetics_ar": "ittifaqiyyat i'adat al-qubul",
+      "phonetics_fa": "movafeqat-nameh-ye paziresh-e mojaddad"
     },
     {
       "id": "period-for-voluntary-departure",
@@ -1400,7 +1460,9 @@
       "sources": [
         "EU Return Directive 2008/115/EC art. 7",
         "Ν. 3907/2011"
-      ]
+      ],
+      "phonetics_ar": "muhlat al-mughadara at-tawa'iyya",
+      "phonetics_fa": "mohlat-e khoruj-e davtalabaneh"
     },
     {
       "id": "escorted-return",
@@ -1417,7 +1479,9 @@
       "sources": [
         "EU Return Directive 2008/115/EC",
         "Frontex Code of Conduct for Return Operations"
-      ]
+      ],
+      "phonetics_ar": "al-'awda al-murafiqa",
+      "phonetics_fa": "bazgasht-e badraghe-shodeh"
     },
     {
       "id": "joint-return-operation",
@@ -1434,7 +1498,9 @@
       "sources": [
         "Regulation (EU) 2019/1896 (Frontex)",
         "Frontex Code of Conduct for Return Operations"
-      ]
+      ],
+      "phonetics_ar": "'amaliyyat 'awda mushtaraka",
+      "phonetics_fa": "amaliyat-e bazgasht-e moshtarak"
     },
     {
       "id": "postponement-of-removal",
@@ -1451,7 +1517,9 @@
       "sources": [
         "EU Return Directive 2008/115/EC art. 9",
         "Ν. 3907/2011"
-      ]
+      ],
+      "phonetics_ar": "ta'jil al-ib'ad",
+      "phonetics_fa": "ta'khir-e ekhraj"
     },
     {
       "id": "family-member",
@@ -1487,7 +1555,9 @@
       "sources": [
         "ECHR art. 8",
         "UN Convention on the Rights of the Child art. 9"
-      ]
+      ],
+      "phonetics_ar": "wahdat al-'usra",
+      "phonetics_fa": "vahdat-e khanevadeh"
     },
     {
       "id": "guardian",
@@ -1543,7 +1613,9 @@
       "definition_en": "Structured procedure for assessing what best serves the child's interest in specific decisions.",
       "sources": [
         "UNHCR BIA Guidelines"
-      ]
+      ],
+      "phonetics_ar": "taqyim al-masalih al-fudla",
+      "phonetics_fa": "arziyabi-ye manafe'-e 'aliyeh"
     },
     {
       "id": "sponsor",
@@ -1559,7 +1631,9 @@
       "definition_en": "In family reunification: the lawfully residing person who applies to be reunited with their family members.",
       "sources": [
         "EU Family Reunification Directive 2003/86/EC art. 2(c)"
-      ]
+      ],
+      "phonetics_ar": "al-kafil / sahib at-talab",
+      "phonetics_fa": "kafil / darkhast-konandeh"
     },
     {
       "id": "residence-permit",
@@ -1593,7 +1667,9 @@
       "definition_en": "Integration programme for beneficiaries of international protection in Greece, providing Greek language courses, employability support and rent subsidy.",
       "sources": [
         "IOM Greece HELIOS"
-      ]
+      ],
+      "phonetics_ar": "barnamaj Helios",
+      "phonetics_fa": "barnameh-ye Helios"
     },
     {
       "id": "naturalisation",
@@ -1646,7 +1722,9 @@
       "sources": [
         "ΔΟΑΤΑΠ",
         "Υπουργείο Παιδείας"
-      ]
+      ],
+      "phonetics_ar": "al-i'tiraf bi-l-mu'ahhilat",
+      "phonetics_fa": "be rasmiyat shenakhtan-e madarek"
     },
     {
       "id": "integration-course",
@@ -1663,7 +1741,9 @@
       "sources": [
         "HELIOS",
         "Δήμοι"
-      ]
+      ],
+      "phonetics_ar": "dawrat al-indimaj",
+      "phonetics_fa": "dowreh-ye adghām"
     },
     {
       "id": "interpreter",
@@ -1717,7 +1797,9 @@
       "definition_en": "Simultaneous interpretation whispered to one or two listeners without equipment.",
       "sources": [
         "AIIC"
-      ]
+      ],
+      "phonetics_ar": "at-tarjama al-hamsiyya",
+      "phonetics_fa": "tarjomeh-ye pech-pechi"
     },
     {
       "id": "confidentiality-interpreter",
@@ -1773,7 +1855,9 @@
       "sources": [
         "AIIC",
         "EUAA Practical Guide: Interpretation"
-      ]
+      ],
+      "phonetics_ar": "at-tarjama al-fawriyya",
+      "phonetics_fa": "tarjomeh-ye hamzaman"
     },
     {
       "id": "sight-translation",
@@ -1790,7 +1874,9 @@
       "sources": [
         "EUAA Practical Guide: Interpretation",
         "AIIC"
-      ]
+      ],
+      "phonetics_ar": "at-tarjama al-manzura",
+      "phonetics_fa": "tarjomeh-ye did-e-shodeh"
     },
     {
       "id": "relay-interpretation",
@@ -1807,7 +1893,9 @@
       "sources": [
         "AIIC",
         "EUAA Practical Guide: Interpretation"
-      ]
+      ],
+      "phonetics_ar": "at-tarjama 'abr lugha wasita",
+      "phonetics_fa": "tarjomeh-ye vasete-i"
     },
     {
       "id": "impartiality-interpreter",
@@ -1844,7 +1932,9 @@
         "AIIC",
         "EUAA Practical Guide: Interpretation",
         "UNHCR Self-Study Module: Interview Techniques"
-      ]
+      ],
+      "phonetics_ar": "at-tarjama bi-sighat al-mutakallim",
+      "phonetics_fa": "tarjomeh be-suret-e avval-shakhs"
     },
     {
       "id": "asylum-applicant-card",
@@ -1880,7 +1970,9 @@
       "sources": [
         "1951 Geneva Convention art. 28",
         "ICAO Doc 9303"
-      ]
+      ],
+      "phonetics_ar": "wathiqat safar",
+      "phonetics_fa": "sanad-e safar"
     },
     {
       "id": "passport",
@@ -1914,7 +2006,9 @@
       "definition_en": "Official document certifying a person's birth, with identification details and parents.",
       "sources": [
         "UN Convention on the Rights of the Child art. 7"
-      ]
+      ],
+      "phonetics_ar": "shahadat al-milad",
+      "phonetics_fa": "shenasnameh"
     },
     {
       "id": "identity-verification",
@@ -1931,7 +2025,9 @@
       "sources": [
         "EU Screening Regulation 2024/1356",
         "Ν. 4939/2022"
-      ]
+      ],
+      "phonetics_ar": "at-tahaqquq min al-hawiyya",
+      "phonetics_fa": "ehraz-e hoviyat"
     },
     {
       "id": "refugee-travel-document",
@@ -1948,7 +2044,9 @@
       "sources": [
         "1951 Geneva Convention art. 28",
         "ICAO Doc 9303"
-      ]
+      ],
+      "phonetics_ar": "wathiqat safar al-laji'",
+      "phonetics_fa": "sanad-e safar-e panahandeh"
     },
     {
       "id": "certified-translation",
@@ -1984,7 +2082,9 @@
       "sources": [
         "ΚΥΑ 717/2020",
         "Ν. 4636/2019"
-      ]
+      ],
+      "phonetics_ar": "PAAYPA",
+      "phonetics_fa": "PAAYPA"
     },
     {
       "id": "apostille",
@@ -2000,7 +2100,9 @@
       "definition_en": "Authentication of a public document issued by a competent authority of a state party to the 1961 Hague Convention, enabling acceptance of the document in another contracting state without further legalisation.",
       "sources": [
         "Hague Apostille Convention (1961)"
-      ]
+      ],
+      "phonetics_ar": "tasdiq Apostille",
+      "phonetics_fa": "tasdiq-e Apostille"
     },
     {
       "id": "marriage-certificate",
@@ -2017,7 +2119,9 @@
       "sources": [
         "UNHCR Family Reunification Guidance",
         "Ν. 4636/2019 αρ. 80"
-      ]
+      ],
+      "phonetics_ar": "shahadat az-zawaj",
+      "phonetics_fa": "sanad-e ezdevaj"
     },
     {
       "id": "frontex",
@@ -2034,7 +2138,9 @@
       "sources": [
         "Regulation (EU) 2019/1896",
         "frontex.europa.eu"
-      ]
+      ],
+      "phonetics_ar": "Frontex",
+      "phonetics_fa": "Frontex"
     },
     {
       "id": "eurodac",
@@ -2051,7 +2157,9 @@
       "sources": [
         "Eurodac Regulation (EU) 603/2013",
         "Eurodac Regulation (EU) 2024/1358"
-      ]
+      ],
+      "phonetics_ar": "Eurodac",
+      "phonetics_fa": "Eurodac"
     },
     {
       "id": "appeal",

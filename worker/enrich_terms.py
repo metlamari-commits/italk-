@@ -301,6 +301,234 @@ ENRICHMENT = {
         "recommendation_el": "Δωρεάν σε β' βαθμό (προσφυγή) — αίτηση εγκαίρως στο Μητρώο Δικηγόρων.",
         "recommendation_en": "Free at appeal stage — apply on time via the Legal Aid Registry.",
     },
+
+    # ========== SECOND PASS (2026-09-05) — remaining 54 AR/FA terms ==========
+    # ---- STATUS (continued) ----
+    "refugee-status-determination": {
+        "phonetics_ar": "tahdid wad' al-laji'",
+        "phonetics_fa": "ta'yin-e vaziyat-e panahandegi",
+    },
+    "internally-displaced-person": {
+        "phonetics_ar": "nazih dakhili",
+        "phonetics_fa": "avareh-ye dakheli",
+    },
+    "resettlement": {
+        "phonetics_ar": "i'adat at-tawtin",
+        "phonetics_fa": "esteqrar-e mojaddad",
+    },
+    "mandate-refugee": {
+        "phonetics_ar": "laji' bi-mujib wilayat al-mufawwadiyya",
+        "phonetics_fa": "panahandeh-ye tahat-e mandat",
+    },
+    "cessation-of-status": {
+        "phonetics_ar": "inha' wad' al-laji'",
+        "phonetics_fa": "khatm-e vaziyat-e panahandegi",
+    },
+    # ---- PROCEDURE (continued) ----
+    "country-of-origin-information": {
+        "phonetics_ar": "ma'lumat balad al-mansha'",
+        "phonetics_fa": "ettelaat-e keshvar-e mabda",
+    },
+    "admissibility-procedure": {
+        "phonetics_ar": "ijra' al-maqbuliyya",
+        "phonetics_fa": "ravand-e paziresh",
+    },
+    "safe-country-of-origin": {
+        "phonetics_ar": "balad al-mansha' al-amin",
+        "phonetics_fa": "keshvar-e mabda-ye amn",
+    },
+    "safe-third-country": {
+        "phonetics_ar": "balad thalith amin",
+        "phonetics_fa": "keshvar-e sales-e amn",
+    },
+    "subsequent-application": {
+        "phonetics_ar": "talab lahiq",
+        "phonetics_fa": "darkhast-e ba'di",
+    },
+    # ---- RECEPTION (continued) ----
+    "first-reception": {
+        "phonetics_ar": "al-istiqbal al-awwali",
+        "phonetics_fa": "paziresh-e avvaliyeh",
+    },
+    "screening": {
+        "phonetics_ar": "al-farz",
+        "phonetics_fa": "ghalbargari",
+    },
+    "reception-centre": {
+        "phonetics_ar": "markaz al-istiqbal",
+        "phonetics_fa": "markaz-e paziresh",
+    },
+    "ric": {
+        "phonetics_ar": "markaz al-istiqbal wa-t-tahdid",
+        "phonetics_fa": "markaz-e paziresh va shenasayi",
+    },
+    "closed-controlled-access-centre": {
+        "phonetics_ar": "markaz al-wusul al-muraqab al-mughlaq",
+        "phonetics_fa": "markaz-e dastresi-ye kontrol-shodeh-ye baste",
+    },
+    "biometric-data": {
+        "phonetics_ar": "al-bayanat al-biyumitriyya",
+        "phonetics_fa": "dade-haye biyometrik",
+    },
+    "frontex": {
+        "phonetics_ar": "Frontex",
+        "phonetics_fa": "Frontex",
+    },
+    "eurodac": {
+        "phonetics_ar": "Eurodac",
+        "phonetics_fa": "Eurodac",
+    },
+    # ---- LEGAL (continued) ----
+    "acts-of-persecution": {
+        "phonetics_ar": "a'mal al-idtihad",
+        "phonetics_fa": "a'mal-e az̄ar",
+    },
+    "agents-of-persecution": {
+        "phonetics_ar": "al-jihat al-murtakiba li-l-idtihad",
+        "phonetics_fa": "amelan-e az̄ar",
+    },
+    "internal-protection-alternative": {
+        "phonetics_ar": "badil al-himaya ad-dakhiliyya",
+        "phonetics_fa": "jaygozin-e hemayat-e dakheli",
+    },
+    "sur-place-claim": {
+        "phonetics_ar": "talab al-luju' fi al-mawqi'",
+        "phonetics_fa": "darkhast-e panahandegi dar mahal",
+    },
+    "material-facts": {
+        "phonetics_ar": "al-waqa'i' al-jawhariyya",
+        "phonetics_fa": "haqayeq-e jouhari",
+    },
+    # ---- DETENTION (continued) ----
+    "pre-removal-detention": {
+        "phonetics_ar": "al-ihtijaz qabl at-tarhil",
+        "phonetics_fa": "bazdasht-e pish az ekhraj",
+    },
+    "geographic-restriction": {
+        "phonetics_ar": "at-taqyid al-jughrafi",
+        "phonetics_fa": "mahdudiyat-e joghrafiyayi",
+    },
+    "deprivation-of-liberty": {
+        "phonetics_ar": "al-hirman min al-hurriyya",
+        "phonetics_fa": "mahrumiyat az azadi",
+    },
+    "maximum-detention-period": {
+        "phonetics_ar": "al-hadd al-aqsa li-muddat al-ihtijaz",
+        "phonetics_fa": "haddaksar-e moddat-e bazdasht",
+    },
+    "objections-against-detention": {
+        "phonetics_ar": "i'tiradat 'ala al-ihtijaz",
+        "phonetics_fa": "e'terazat 'aleyh-e bazdasht",
+    },
+    "dublin-detention": {
+        "phonetics_ar": "al-ihtijaz bi-mujib la'ihat dublin",
+        "phonetics_fa": "bazdasht bar asas-e dublin",
+    },
+    # ---- RETURN (continued) ----
+    "re-entry-ban": {
+        "phonetics_ar": "hazr i'adat ad-dukhul",
+        "phonetics_fa": "man'-e bazgasht",
+    },
+    "avr": {
+        "phonetics_ar": "al-'awda at-tawa'iyya al-musa'ada (AVR)",
+        "phonetics_fa": "bazgasht-e davtalabaneh-ye komaki",
+    },
+    "readmission-agreement": {
+        "phonetics_ar": "ittifaqiyyat i'adat al-qubul",
+        "phonetics_fa": "movafeqat-nameh-ye paziresh-e mojaddad",
+    },
+    "period-for-voluntary-departure": {
+        "phonetics_ar": "muhlat al-mughadara at-tawa'iyya",
+        "phonetics_fa": "mohlat-e khoruj-e davtalabaneh",
+    },
+    "escorted-return": {
+        "phonetics_ar": "al-'awda al-murafiqa",
+        "phonetics_fa": "bazgasht-e badraghe-shodeh",
+    },
+    "joint-return-operation": {
+        "phonetics_ar": "'amaliyyat 'awda mushtaraka",
+        "phonetics_fa": "amaliyat-e bazgasht-e moshtarak",
+    },
+    "postponement-of-removal": {
+        "phonetics_ar": "ta'jil al-ib'ad",
+        "phonetics_fa": "ta'khir-e ekhraj",
+    },
+    # ---- FAMILY (continued) ----
+    "family-unity": {
+        "phonetics_ar": "wahdat al-'usra",
+        "phonetics_fa": "vahdat-e khanevadeh",
+    },
+    "best-interest-assessment": {
+        "phonetics_ar": "taqyim al-masalih al-fudla",
+        "phonetics_fa": "arziyabi-ye manafe'-e 'aliyeh",
+    },
+    "sponsor": {
+        "phonetics_ar": "al-kafil / sahib at-talab",
+        "phonetics_fa": "kafil / darkhast-konandeh",
+    },
+    # ---- INTEGRATION (continued) ----
+    "helios-programme": {
+        "phonetics_ar": "barnamaj Helios",
+        "phonetics_fa": "barnameh-ye Helios",
+    },
+    "recognition-of-qualifications": {
+        "phonetics_ar": "al-i'tiraf bi-l-mu'ahhilat",
+        "phonetics_fa": "be rasmiyat shenakhtan-e madarek",
+    },
+    "integration-course": {
+        "phonetics_ar": "dawrat al-indimaj",
+        "phonetics_fa": "dowreh-ye adghām",
+    },
+    # ---- COMMUNICATION (continued) ----
+    "whisper-interpretation": {
+        "phonetics_ar": "at-tarjama al-hamsiyya",
+        "phonetics_fa": "tarjomeh-ye pech-pechi",
+    },
+    "simultaneous-interpretation": {
+        "phonetics_ar": "at-tarjama al-fawriyya",
+        "phonetics_fa": "tarjomeh-ye hamzaman",
+    },
+    "sight-translation": {
+        "phonetics_ar": "at-tarjama al-manzura",
+        "phonetics_fa": "tarjomeh-ye did-e-shodeh",
+    },
+    "relay-interpretation": {
+        "phonetics_ar": "at-tarjama 'abr lugha wasita",
+        "phonetics_fa": "tarjomeh-ye vasete-i",
+    },
+    "first-person-interpretation": {
+        "phonetics_ar": "at-tarjama bi-sighat al-mutakallim",
+        "phonetics_fa": "tarjomeh be-suret-e avval-shakhs",
+    },
+    # ---- DOCUMENTATION (continued) ----
+    "travel-document": {
+        "phonetics_ar": "wathiqat safar",
+        "phonetics_fa": "sanad-e safar",
+    },
+    "birth-certificate": {
+        "phonetics_ar": "shahadat al-milad",
+        "phonetics_fa": "shenasnameh",
+    },
+    "identity-verification": {
+        "phonetics_ar": "at-tahaqquq min al-hawiyya",
+        "phonetics_fa": "ehraz-e hoviyat",
+    },
+    "refugee-travel-document": {
+        "phonetics_ar": "wathiqat safar al-laji'",
+        "phonetics_fa": "sanad-e safar-e panahandeh",
+    },
+    "paaypa": {
+        "phonetics_ar": "PAAYPA",
+        "phonetics_fa": "PAAYPA",
+    },
+    "apostille": {
+        "phonetics_ar": "tasdiq Apostille",
+        "phonetics_fa": "tasdiq-e Apostille",
+    },
+    "marriage-certificate": {
+        "phonetics_ar": "shahadat az-zawaj",
+        "phonetics_fa": "sanad-e ezdevaj",
+    },
 }
 
 def main():
