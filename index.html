@@ -479,6 +479,63 @@
     .cat-chip[data-dom="favorites"] .cat-dot { background: var(--dom-warm); }
     .cat-chip[data-dom="favorites"].active { background: var(--dom-warm); }
 
+    /* Urgency badge on card head */
+    .urgency-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 4px 10px;
+      border-radius: 12px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      color: #fff;
+    }
+    .urgency-high { background: var(--dom-medical); animation: pulse-urgent 1.8s ease-in-out infinite; }
+    .urgency-medium { background: var(--dom-warm); }
+    @keyframes pulse-urgent {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(217,56,58,0.5); }
+      50%      { box-shadow: 0 0 0 6px rgba(217,56,58,0); }
+    }
+    .term-card.urgent { border-left-color: var(--dom-medical) !important; }
+
+    /* Phonetic transliteration line under AR/FA translations */
+    .trans-phonetic {
+      font-family: 'Atkinson Hyperlegible', system-ui, sans-serif;
+      font-size: 12px;
+      font-style: italic;
+      color: var(--text-muted);
+      margin-top: 3px;
+      letter-spacing: 0.2px;
+    }
+
+    /* Recommendation footer bar */
+    .term-recommendation {
+      background: linear-gradient(90deg, rgba(0,105,112,0.08), rgba(0,105,112,0.02));
+      border-left: 4px solid var(--secondary, #006970);
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-top: 10px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .term-recommendation .rec-icon {
+      font-size: 18px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .term-recommendation strong {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #006970;
+    }
+
     /* Focus mode (single-term view) */
     body.focused .cat-bar,
     body.focused .stats,
@@ -1523,6 +1580,16 @@ function renderTermCard(term, opts) {
   rightCol.style.gap = "6px";
   rightCol.style.flexShrink = "0";
 
+  // Urgency badge (if data has urgency flag)
+  if (term.urgency === "high" || term.urgency === "medium") {
+    const uBadge = document.createElement("span");
+    uBadge.className = "urgency-badge urgency-" + term.urgency;
+    uBadge.textContent = term.urgency === "high"
+      ? (state.uiLang === "el" ? "⚠ ΕΠΕΙΓΟΝ" : "⚠ URGENT")
+      : (state.uiLang === "el" ? "ΠΡΟΣΟΧΗ" : "ATTENTION");
+    rightCol.appendChild(uBadge);
+  }
+
   const badge = document.createElement("span");
   badge.className = "term-cat-badge";
   badge.dataset.dom = dom;
@@ -1542,6 +1609,11 @@ function renderTermCard(term, opts) {
 
   head.appendChild(rightCol);
   card.appendChild(head);
+
+  // High-urgency terms get a red accent border
+  if (term.urgency === "high") {
+    card.classList.add("urgent");
+  }
 
   const grid = document.createElement("div");
   grid.className = "term-translations";
@@ -1597,9 +1669,33 @@ function renderTermCard(term, opts) {
       txt.textContent = "— pending —";
     }
     item.appendChild(txt);
+
+    // Phonetic transliteration for AR/FA (if data provided)
+    const phoneticKey = "phonetics_" + l;
+    if (val && term[phoneticKey]) {
+      const ph = document.createElement("div");
+      ph.className = "trans-phonetic";
+      ph.textContent = "«" + term[phoneticKey] + "»";
+      item.appendChild(ph);
+    }
+
     grid.appendChild(item);
   });
   card.appendChild(grid);
+
+  // Recommendation footer (if data provided)
+  const recKey = "recommendation_" + state.uiLang;
+  const rec = term[recKey] || term.recommendation_el || term.recommendation_en;
+  if (rec) {
+    const recBox = document.createElement("div");
+    recBox.className = "term-recommendation";
+    recBox.innerHTML =
+      '<span class="rec-icon">💡</span>' +
+      '<div><strong>' + (state.uiLang === "el" ? "Σύσταση:" : "Recommendation:") + '</strong> ' +
+      '<span></span></div>';
+    recBox.querySelector("span:last-child").textContent = rec;
+    card.appendChild(recBox);
+  }
 
   const hasDetails = term.definition_el || term.definition_en || (term.sources && term.sources.length);
   if (hasDetails) {

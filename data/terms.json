@@ -9,7 +9,15 @@
       "fa",
       "fr"
     ],
-    "note": "Greek and English fields are sourced and verified against public references. Arabic, Farsi and French translations are best-effort drafts (AR/FA from UNHCR glossaries; FR drafted with reference to UNHCR/EUAA/IATE French terminology) and should be reviewed by native-speaker interpreters before publication."
+    "note": "Greek and English fields are sourced and verified against public references. Arabic, Farsi and French translations are best-effort drafts (AR/FA from UNHCR glossaries; FR drafted with reference to UNHCR/EUAA/IATE French terminology) and should be reviewed by native-speaker interpreters before publication.",
+    "enriched": "2026-09-05",
+    "enrichment_fields": [
+      "phonetics_ar",
+      "phonetics_fa",
+      "urgency",
+      "recommendation_el",
+      "recommendation_en"
+    ]
   },
   "categories": [
     {
@@ -101,7 +109,9 @@
       "sources": [
         "UNHCR Master Glossary",
         "Ν. 4939/2022 αρ. 2"
-      ]
+      ],
+      "phonetics_ar": "talib luju'",
+      "phonetics_fa": "panahju"
     },
     {
       "id": "refugee",
@@ -118,7 +128,9 @@
       "sources": [
         "1951 Geneva Convention art. 1A(2)",
         "UNHCR Master Glossary"
-      ]
+      ],
+      "phonetics_ar": "laji'",
+      "phonetics_fa": "panahandeh"
     },
     {
       "id": "subsidiary-protection",
@@ -135,7 +147,9 @@
       "sources": [
         "EU Qualification Directive 2011/95/EU art. 15",
         "Ν. 4939/2022"
-      ]
+      ],
+      "phonetics_ar": "al-himaya al-idafiyya",
+      "phonetics_fa": "hemayat-e far'i"
     },
     {
       "id": "stateless",
@@ -151,7 +165,9 @@
       "definition_en": "A person who is not considered a national by any State under the operation of its law.",
       "sources": [
         "1954 Convention on Statelessness art. 1"
-      ]
+      ],
+      "phonetics_ar": "'adim al-jinsiyya",
+      "phonetics_fa": "bedun-e tabe'iyat"
     },
     {
       "id": "refugee-status-determination",
@@ -200,7 +216,9 @@
       "definition_en": "A person who has been granted refugee status or subsidiary protection.",
       "sources": [
         "EU Qualification Directive 2011/95/EU art. 2(b)"
-      ]
+      ],
+      "phonetics_ar": "al-mustafid min al-himaya al-duwaliyya",
+      "phonetics_fa": "darandeh-ye hemayat-e beynolmelali"
     },
     {
       "id": "resettlement",
@@ -268,7 +286,12 @@
         "EU Procedures Directive 2013/32/EU",
         "Ν. 4939/2022",
         "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
-      ]
+      ],
+      "phonetics_ar": "talab al-himaya al-duwaliyya",
+      "phonetics_fa": "darkhast-e hemayat-e beynolmelali",
+      "urgency": "medium",
+      "recommendation_el": "Καταγραφή με ακριβή ημερομηνία υποβολής — καθορίζει προθεσμίες.",
+      "recommendation_en": "Record the exact submission date — it drives all downstream deadlines."
     },
     {
       "id": "personal-interview",
@@ -286,7 +309,12 @@
         "EU Procedures Directive 2013/32/EU art. 15",
         "EUAA Practical Guide: Personal Interview",
         "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
-      ]
+      ],
+      "phonetics_ar": "muqabala shakhsiyya",
+      "phonetics_fa": "mosahebe-ye shakhsi",
+      "urgency": "medium",
+      "recommendation_el": "Ο διερμηνέας μιλά σε πρώτο πρόσωπο και δεν συνοψίζει — μεταφέρει κατά λέξη.",
+      "recommendation_en": "Interpret in the first person; never summarise or add opinion."
     },
     {
       "id": "dublin-transfer",
@@ -302,7 +330,9 @@
       "definition_en": "Transfer of an applicant to the EU Member State responsible for examining their application for international protection.",
       "sources": [
         "Dublin III Regulation (EU) 604/2013"
-      ]
+      ],
+      "phonetics_ar": "naql dublin",
+      "phonetics_fa": "enteqal-e dublin"
     },
     {
       "id": "country-of-origin-information",
@@ -354,7 +384,9 @@
       "sources": [
         "EU Procedures Directive 2013/32/EU art. 43",
         "EU Asylum Procedures Regulation 2024/1348"
-      ]
+      ],
+      "phonetics_ar": "ijra' 'ala al-hudud",
+      "phonetics_fa": "ravand-e marzi"
     },
     {
       "id": "accelerated-procedure",
@@ -371,7 +403,12 @@
       "sources": [
         "EU Procedures Directive 2013/32/EU art. 31(8)",
         "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
-      ]
+      ],
+      "phonetics_ar": "ijra' musarra'",
+      "phonetics_fa": "ravand-e shetabi",
+      "urgency": "medium",
+      "recommendation_el": "Προθεσμία προσφυγής πολύ σύντομη — ενημέρωση δικηγόρου άμεσα.",
+      "recommendation_en": "Appeal window is very short — refer to legal aid immediately."
     },
     {
       "id": "safe-country-of-origin",
@@ -439,7 +476,9 @@
       "sources": [
         "EUAA Judicial Analysis: Evidence and Credibility Assessment",
         "UNHCR Beyond Proof"
-      ]
+      ],
+      "phonetics_ar": "taqyim al-masdaqiyya",
+      "phonetics_fa": "arziyabi-ye e'tebar"
     },
     {
       "id": "benefit-of-the-doubt",
@@ -455,7 +494,9 @@
       "definition_en": "Principle that, where full proof is lacking but statements are generally credible, doubt operates in favour of the applicant.",
       "sources": [
         "UNHCR Handbook §196-204"
-      ]
+      ],
+      "phonetics_ar": "qarinat al-shakk",
+      "phonetics_fa": "asl-e bara'at"
     },
     {
       "id": "first-reception",
@@ -489,7 +530,9 @@
       "sources": [
         "Eurodac Regulation (EU) 603/2013",
         "Υπηρεσία Ασύλου"
-      ]
+      ],
+      "phonetics_ar": "tasjil",
+      "phonetics_fa": "sabt-e nam"
     },
     {
       "id": "screening",
@@ -572,7 +615,12 @@
       "sources": [
         "EU Reception Conditions Directive 2013/33/EU art. 22",
         "EUAA Tool for Identification of Persons with Special Needs"
-      ]
+      ],
+      "phonetics_ar": "taqyim al-hashasha",
+      "phonetics_fa": "arziyabi-ye asibpaziri",
+      "urgency": "medium",
+      "recommendation_el": "Αν εντοπίσεις ένδειξη ευαλωτότητας, καταγράφεται και ενεργοποιεί ειδικές εγγυήσεις.",
+      "recommendation_en": "Flag any vulnerability signal — it unlocks special procedural guarantees."
     },
     {
       "id": "biometric-data",
@@ -605,7 +653,12 @@
       "sources": [
         "EU Qualification Directive 2011/95/EU art. 2(l)",
         "Ν. 4939/2022"
-      ]
+      ],
+      "phonetics_ar": "qasir ghayr musahab",
+      "phonetics_fa": "khordsal-e bi-hamrah",
+      "urgency": "high",
+      "recommendation_el": "Άμεση ειδοποίηση κοινωνικής υπηρεσίας & ορισμός επιτρόπου. Καμία απόφαση χωρίς επίτροπο.",
+      "recommendation_en": "Notify social service immediately & appoint guardian. No decision without guardian."
     },
     {
       "id": "vulnerable-person",
@@ -622,7 +675,10 @@
       "sources": [
         "EU Reception Conditions Directive 2013/33/EU art. 21",
         "Ν. 4939/2022"
-      ]
+      ],
+      "phonetics_ar": "shakhs mustad'af",
+      "phonetics_fa": "shakhs-e asibpazir",
+      "urgency": "medium"
     },
     {
       "id": "best-interest-of-child",
@@ -639,7 +695,12 @@
       "sources": [
         "UN Convention on the Rights of the Child art. 3",
         "EU Charter of Fundamental Rights art. 24"
-      ]
+      ],
+      "phonetics_ar": "al-maslaha al-fudla li-l-tifl",
+      "phonetics_fa": "manafe'-e 'aliyeh-ye kudak",
+      "urgency": "medium",
+      "recommendation_el": "Πρωταρχικό κριτήριο σε κάθε απόφαση για ανήλικο (Άρθρο 3 CRC).",
+      "recommendation_en": "Primary consideration in every decision affecting a minor (CRC Art. 3)."
     },
     {
       "id": "pregnant-woman",
@@ -655,7 +716,12 @@
       "definition_en": "A pregnant woman, classified as a vulnerable person with special reception needs.",
       "sources": [
         "EU Reception Conditions Directive 2013/33/EU art. 21"
-      ]
+      ],
+      "phonetics_ar": "imra'a hamil",
+      "phonetics_fa": "zan-e bardar",
+      "urgency": "high",
+      "recommendation_el": "Ιατρικός έλεγχος προτεραιότητας. Αποφυγή πολύωρης αναμονής.",
+      "recommendation_en": "Priority medical screening; avoid long waits."
     },
     {
       "id": "survivor-gender-based-violence",
@@ -672,7 +738,12 @@
       "sources": [
         "UNHCR SGBV Guidelines",
         "Istanbul Convention"
-      ]
+      ],
+      "phonetics_ar": "an-najiya min al-'unf al-qa'im 'ala al-naw' al-ijtima'i",
+      "phonetics_fa": "bazmandeh-ye khoshunat-e jensiyati",
+      "urgency": "high",
+      "recommendation_el": "Trauma-informed προσέγγιση. Θηλυκή διερμηνέας αν διατίθεται. Χώρος με ιδιωτικότητα.",
+      "recommendation_en": "Trauma-informed approach. Female interpreter if available. Private setting."
     },
     {
       "id": "survivor-trafficking",
@@ -689,7 +760,12 @@
       "sources": [
         "EU Anti-Trafficking Directive 2011/36/EU",
         "Council of Europe Convention on Action against Trafficking"
-      ]
+      ],
+      "phonetics_ar": "an-najiya min al-ittijar bi-l-bashar",
+      "phonetics_fa": "bazmandeh-ye qacaq-e ensan",
+      "urgency": "high",
+      "recommendation_el": "Παραπομπή σε Εθνικό Μηχανισμό Αναφοράς (ΕΜΑ). Ενημέρωση για δικαιώματα προστασίας.",
+      "recommendation_en": "Refer to National Referral Mechanism. Inform on protection rights."
     },
     {
       "id": "person-with-disability",
@@ -705,7 +781,12 @@
       "definition_en": "A person with long-term physical, mental, intellectual or sensory impairments.",
       "sources": [
         "UN Convention on the Rights of Persons with Disabilities art. 1"
-      ]
+      ],
+      "phonetics_ar": "shakhs dhu i'aqa",
+      "phonetics_fa": "shakhs-e dara-ye ma'luliyat",
+      "urgency": "medium",
+      "recommendation_el": "Έλεγχος προσβασιμότητας εγκαταστάσεων. Ειδικές ανάγκες επικοινωνίας (νοηματική/Braille κ.ά.).",
+      "recommendation_en": "Check facility accessibility. Communication needs (sign language / Braille, etc.)."
     },
     {
       "id": "elderly-person",
@@ -721,7 +802,9 @@
       "definition_en": "An elderly person, classified as vulnerable under the Reception Conditions Directive.",
       "sources": [
         "EU Reception Conditions Directive 2013/33/EU art. 21"
-      ]
+      ],
+      "phonetics_ar": "shakhs musinn",
+      "phonetics_fa": "shakhs-e salmand"
     },
     {
       "id": "well-founded-fear",
@@ -738,7 +821,9 @@
       "sources": [
         "1951 Geneva Convention art. 1A(2)",
         "UNHCR Handbook §37-50"
-      ]
+      ],
+      "phonetics_ar": "khawf ma'qul",
+      "phonetics_fa": "tars-e mavajah"
     },
     {
       "id": "persecution",
@@ -755,7 +840,9 @@
       "sources": [
         "EU Qualification Directive 2011/95/EU art. 9",
         "1951 Geneva Convention"
-      ]
+      ],
+      "phonetics_ar": "idtihad",
+      "phonetics_fa": "az̄ar va shekanjeh"
     },
     {
       "id": "non-refoulement",
@@ -773,7 +860,12 @@
         "1951 Geneva Convention art. 33",
         "ECHR art. 3",
         "EU Charter art. 19"
-      ]
+      ],
+      "phonetics_ar": "'adam al-i'ada al-qasriyya",
+      "phonetics_fa": "'adam-e bazgardaneh-ye ejbari",
+      "urgency": "high",
+      "recommendation_el": "Θεμελιώδης αρχή — απαγορεύεται η επιστροφή σε χώρα κινδύνου. Άμεση παρέμβαση αν παραβιάζεται.",
+      "recommendation_en": "Cornerstone principle — no return to a country of risk. Escalate immediately if breached."
     },
     {
       "id": "family-reunification",
@@ -790,7 +882,11 @@
       "sources": [
         "EU Family Reunification Directive 2003/86/EC",
         "Dublin III Regulation"
-      ]
+      ],
+      "phonetics_ar": "lamm shaml al-'a'ila",
+      "phonetics_fa": "peyvand-e mojaddad-e khanevadeh",
+      "recommendation_el": "Αίτηση συνήθως εντός 3 μηνών από αναγνώριση — έλεγχος προθεσμίας.",
+      "recommendation_en": "Application usually within 3 months of recognition — check the deadline."
     },
     {
       "id": "particular-social-group",
@@ -807,7 +903,9 @@
       "sources": [
         "1951 Geneva Convention art. 1A(2)",
         "UNHCR Guidelines on PSG"
-      ]
+      ],
+      "phonetics_ar": "fi'a ijtima'iyya khassa",
+      "phonetics_fa": "goruh-e ejtemai-ye khass"
     },
     {
       "id": "acts-of-persecution",
@@ -906,7 +1004,10 @@
       "sources": [
         "Ν. 4939/2022",
         "WHO Health of Refugees and Migrants Reports"
-      ]
+      ],
+      "phonetics_ar": "fahs tibbi",
+      "phonetics_fa": "moaine-ye peseshki",
+      "urgency": "medium"
     },
     {
       "id": "torture-survivor",
@@ -924,7 +1025,12 @@
         "UN Convention against Torture",
         "Istanbul Protocol",
         "EU Reception Conditions Directive 2013/33/EU art. 25"
-      ]
+      ],
+      "phonetics_ar": "an-najiya min al-ta'dhib",
+      "phonetics_fa": "bazmandeh-ye shekanjeh",
+      "urgency": "high",
+      "recommendation_el": "Παραπομπή σε εξειδικευμένη ιατρική/ψυχολογική υποστήριξη (π.χ. ΜΕΤΑδραση, Ιατρική Μέριμνα). Istanbul Protocol.",
+      "recommendation_en": "Refer to specialised medical/psychological support (e.g. METAdrasi, Medical Care). Istanbul Protocol."
     },
     {
       "id": "ptsd",
@@ -941,7 +1047,12 @@
       "sources": [
         "WHO ICD-11",
         "DSM-5"
-      ]
+      ],
+      "phonetics_ar": "idtirab ma ba'd al-sadma",
+      "phonetics_fa": "ekhtelal-e esteres-e pas az sanehe",
+      "urgency": "high",
+      "recommendation_el": "Παύσεις κατά τη συνέντευξη. Αποφυγή αναμνηστικών ερεθισμάτων. Ψυχολογική υποστήριξη.",
+      "recommendation_en": "Interview breaks. Avoid triggering cues. Psychological support referral."
     },
     {
       "id": "mental-health-assessment",
@@ -957,7 +1068,10 @@
       "definition_en": "Clinical evaluation of mental health by a specialist, often with the assistance of an interpreter.",
       "sources": [
         "WHO mhGAP Humanitarian Intervention Guide"
-      ]
+      ],
+      "phonetics_ar": "taqyim al-sihha al-nafsiyya",
+      "phonetics_fa": "arziyabi-ye salamat-e ravan",
+      "urgency": "medium"
     },
     {
       "id": "referral",
@@ -974,7 +1088,9 @@
       "sources": [
         "UNHCR SOPs",
         "IASC Guidelines"
-      ]
+      ],
+      "phonetics_ar": "ihala",
+      "phonetics_fa": "erja'"
     },
     {
       "id": "amka",
@@ -991,7 +1107,11 @@
       "sources": [
         "e-EFKA",
         "Υπουργείο Υγείας"
-      ]
+      ],
+      "phonetics_ar": "raqm al-ta'min al-ijtima'i",
+      "phonetics_fa": "shomareh-ye bimeh-ye ejtemai",
+      "recommendation_el": "Απαραίτητο για πρόσβαση σε δημόσια υγεία & εμβολιασμούς. Χωρίς ΑΜΚΑ, μόνο επείγοντα.",
+      "recommendation_en": "Required for public healthcare & vaccinations. Without AMKA, only emergency care."
     },
     {
       "id": "administrative-detention",
@@ -1008,7 +1128,12 @@
       "sources": [
         "EU Return Directive 2008/115/EC",
         "ECHR art. 5"
-      ]
+      ],
+      "phonetics_ar": "ihtijaz idari",
+      "phonetics_fa": "bazdasht-e edari",
+      "urgency": "high",
+      "recommendation_el": "Δικαίωμα ενημέρωσης σε γλώσσα που καταλαβαίνει. Δικαίωμα προσφυγής. Νομική συνδρομή δωρεάν.",
+      "recommendation_en": "Right to information in understood language. Right to appeal. Free legal aid."
     },
     {
       "id": "pre-removal-detention",
@@ -1059,7 +1184,9 @@
       "sources": [
         "EU Return Directive 2008/115/EC art. 15(1)",
         "UNHCR Detention Guidelines"
-      ]
+      ],
+      "phonetics_ar": "bada'il al-ihtijaz",
+      "phonetics_fa": "jaygozin-haye bazdasht"
     },
     {
       "id": "detention-review",
@@ -1076,7 +1203,10 @@
       "sources": [
         "EU Return Directive 2008/115/EC art. 15(3)",
         "ECHR art. 5(4)"
-      ]
+      ],
+      "phonetics_ar": "muraja'at al-ihtijaz",
+      "phonetics_fa": "baznegari-ye bazdasht",
+      "urgency": "medium"
     },
     {
       "id": "deprivation-of-liberty",
@@ -1145,7 +1275,12 @@
       "sources": [
         "EU Return Directive 2008/115/EC art. 15(2)",
         "ECHR art. 5(2)"
-      ]
+      ],
+      "phonetics_ar": "haqq al-i'lam bi-l-ihtijaz",
+      "phonetics_fa": "haqq-e ettelaresani darbareh-ye bazdasht",
+      "urgency": "high",
+      "recommendation_el": "Έντυπο δικαιωμάτων σε γλώσσα του κρατούμενου εντός εύλογου χρόνου.",
+      "recommendation_en": "Rights notice in the detainee's language within a reasonable time."
     },
     {
       "id": "dublin-detention",
@@ -1178,7 +1313,9 @@
       "sources": [
         "EU Return Directive 2008/115/EC",
         "IOM AVRR Programme"
-      ]
+      ],
+      "phonetics_ar": "'awda tawa'iyya",
+      "phonetics_fa": "bazgasht-e davtalabaneh"
     },
     {
       "id": "forced-return",
@@ -1194,7 +1331,10 @@
       "definition_en": "Enforcement of return by means of coercive measures.",
       "sources": [
         "EU Return Directive 2008/115/EC"
-      ]
+      ],
+      "phonetics_ar": "'awda qasriyya",
+      "phonetics_fa": "bazgasht-e ejbari",
+      "urgency": "medium"
     },
     {
       "id": "removal-order",
@@ -1210,7 +1350,12 @@
       "definition_en": "Administrative decision establishing irregular stay and imposing an obligation to leave the territory.",
       "sources": [
         "EU Return Directive 2008/115/EC art. 3(4)"
-      ]
+      ],
+      "phonetics_ar": "amr al-ib'ad",
+      "phonetics_fa": "hokm-e ekhraj",
+      "urgency": "medium",
+      "recommendation_el": "Έλεγχος προθεσμίας προσφυγής. Έλεγχος non-refoulement.",
+      "recommendation_en": "Check appeal deadline. Verify non-refoulement compliance."
     },
     {
       "id": "re-entry-ban",
@@ -1345,7 +1490,9 @@
       "sources": [
         "EU Qualification Directive 2011/95/EU art. 2(j)",
         "Dublin III Regulation art. 2(g)"
-      ]
+      ],
+      "phonetics_ar": "fard al-'a'ila",
+      "phonetics_fa": "'ozv-e khanevadeh"
     },
     {
       "id": "family-unity",
@@ -1379,7 +1526,10 @@
       "sources": [
         "Ν. 4554/2018",
         "EU Qualification Directive art. 31"
-      ]
+      ],
+      "phonetics_ar": "wali / wasi",
+      "phonetics_fa": "sarparast",
+      "urgency": "medium"
     },
     {
       "id": "age-assessment",
@@ -1396,7 +1546,12 @@
       "sources": [
         "EUAA Practical Guide on Age Assessment",
         "Ν. 4939/2022"
-      ]
+      ],
+      "phonetics_ar": "tahdid al-sinn",
+      "phonetics_fa": "ta'yin-e senn",
+      "urgency": "medium",
+      "recommendation_el": "Πολυδιάστατη προσέγγιση — όχι μόνο ιατρική εξέταση. Benefit of the doubt αν αμφιβολία.",
+      "recommendation_en": "Multi-disciplinary approach — not only medical. Benefit of the doubt if uncertain."
     },
     {
       "id": "best-interest-assessment",
@@ -1444,7 +1599,9 @@
       "definition_en": "Document granting the right of lawful residence in Greece for a fixed period.",
       "sources": [
         "Ν. 5038/2023 (Κώδικας Μετανάστευσης)"
-      ]
+      ],
+      "phonetics_ar": "tasrih al-iqama",
+      "phonetics_fa": "ejaze-ye eqamat"
     },
     {
       "id": "helios-programme",
@@ -1476,7 +1633,9 @@
       "definition_en": "Acquisition of Greek citizenship by a foreigner upon application and fulfilment of legal requirements.",
       "sources": [
         "Κώδικας Ελληνικής Ιθαγένειας (Ν. 3284/2004)"
-      ]
+      ],
+      "phonetics_ar": "at-tajnis",
+      "phonetics_fa": "tabe'iyat-pazyri"
     },
     {
       "id": "afm-tax-number",
@@ -1492,7 +1651,9 @@
       "definition_en": "Tax Registration Number, required for any economic transaction in Greece.",
       "sources": [
         "ΑΑΔΕ"
-      ]
+      ],
+      "phonetics_ar": "al-raqm al-daribi",
+      "phonetics_fa": "shomareh-ye maliyati"
     },
     {
       "id": "recognition-of-qualifications",
@@ -1543,7 +1704,9 @@
       "sources": [
         "AIIC Code of Professional Ethics",
         "EUAA Practical Guide: Interpretation"
-      ]
+      ],
+      "phonetics_ar": "mutarjim shafahi",
+      "phonetics_fa": "motarjem-e shafahi"
     },
     {
       "id": "consecutive-interpretation",
@@ -1560,7 +1723,9 @@
       "sources": [
         "AIIC",
         "EUAA Practical Guide: Interpretation"
-      ]
+      ],
+      "phonetics_ar": "at-tarjama at-tatabu'iyya",
+      "phonetics_fa": "tarjomeh-ye motavali"
     },
     {
       "id": "whisper-interpretation",
@@ -1593,7 +1758,11 @@
       "sources": [
         "AIIC Code of Professional Ethics",
         "EUAA Code of Conduct for Interpreters"
-      ]
+      ],
+      "phonetics_ar": "sirriyyat al-mutarjim",
+      "phonetics_fa": "razdari-ye motarjem",
+      "recommendation_el": "Καμία αποκάλυψη πληροφοριών εκτός συνέντευξης. Θεμελιώδης δεοντολογικός κανόνας.",
+      "recommendation_en": "No disclosure of information outside the interview. Fundamental ethical rule."
     },
     {
       "id": "cultural-mediation",
@@ -1609,7 +1778,9 @@
       "definition_en": "Mediation between persons of different cultural backgrounds, going beyond simple interpretation to include explanation of cultural references.",
       "sources": [
         "IOM Guidelines on Cultural Mediation"
-      ]
+      ],
+      "phonetics_ar": "wasata thaqafiyya",
+      "phonetics_fa": "miyanjigari-ye farhangi"
     },
     {
       "id": "simultaneous-interpretation",
@@ -1677,7 +1848,9 @@
       "sources": [
         "AIIC Code of Professional Ethics",
         "EUAA Code of Conduct for Interpreters"
-      ]
+      ],
+      "phonetics_ar": "hiyad al-mutarjim",
+      "phonetics_fa": "bitarafi-ye motarjem"
     },
     {
       "id": "first-person-interpretation",
@@ -1712,7 +1885,9 @@
       "sources": [
         "Ν. 4939/2022",
         "Υπηρεσία Ασύλου"
-      ]
+      ],
+      "phonetics_ar": "bitaqat talib al-luju'",
+      "phonetics_fa": "kart-e panahju"
     },
     {
       "id": "travel-document",
@@ -1745,7 +1920,9 @@
       "definition_en": "Official travel document issued by a State certifying the identity and nationality of the holder.",
       "sources": [
         "ICAO Doc 9303"
-      ]
+      ],
+      "phonetics_ar": "jawaz safar",
+      "phonetics_fa": "gozarnameh"
     },
     {
       "id": "birth-certificate",
@@ -1812,7 +1989,9 @@
       "sources": [
         "Greek Ministry of Foreign Affairs — Translation Service",
         "Ν. 4781/2021"
-      ]
+      ],
+      "phonetics_ar": "tarjama musaddaqa",
+      "phonetics_fa": "tarjomeh-ye rasmi"
     },
     {
       "id": "paaypa",
@@ -1914,7 +2093,12 @@
         "EU Procedures Directive 2013/32/EU art. 46",
         "Ν. 4939/2022",
         "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
-      ]
+      ],
+      "phonetics_ar": "ta'n / isti'naf",
+      "phonetics_fa": "tajdid-e nazar",
+      "urgency": "high",
+      "recommendation_el": "Πολύ αυστηρές προθεσμίες (συχνά 10 ή 30 μέρες). Έγκαιρη νομική συνδρομή.",
+      "recommendation_en": "Strict deadlines (often 10 or 30 days). Get legal aid on time."
     },
     {
       "id": "legal-aid",
@@ -1932,7 +2116,12 @@
         "EU Procedures Directive 2013/32/EU art. 20-22",
         "Ν. 4939/2022 αρ. 71",
         "Regulation (EU) 2024/1348 (Asylum Procedures Regulation), applies from 12.06.2026 — CELEX:32024R1348"
-      ]
+      ],
+      "phonetics_ar": "al-musa'ada al-qanuniyya",
+      "phonetics_fa": "komak-e hoquqi",
+      "urgency": "medium",
+      "recommendation_el": "Δωρεάν σε β' βαθμό (προσφυγή) — αίτηση εγκαίρως στο Μητρώο Δικηγόρων.",
+      "recommendation_en": "Free at appeal stage — apply on time via the Legal Aid Registry."
     },
     {
       "id": "serious-harm",
