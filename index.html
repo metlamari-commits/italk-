@@ -1041,6 +1041,52 @@ async function loadData() {
   throw lastErr;
 }
 
+/* ---- CLOUD-SAVED AI TERMS ---- */
+async function loadCloudTerms() {
+  try {
+    const res = await fetch(WORKER_URL + "list", { cache: "no-cache" });
+    if (!res.ok) return;
+    const data = await res.json();
+    if (!data.terms || !data.terms.length) return;
+    // Merge each cloud term into state.data.terms as a searchable entry
+    const existingIds = new Set(state.data.terms.map(t => t.id));
+    for (const t of data.terms) {
+      const id = "cloud:" + (t.source_lang || "el") + ":" + (t.term_input || "").toLowerCase();
+      if (existingIds.has(id)) continue;
+      state.data.terms.push({
+        id,
+        category: t.category || "general",
+        translations: t.translations || {},
+        definition_el: t.definition_el || "",
+        definition_en: t.definition_en || "",
+        sources: ["🤖 " + (t.model || "AI") + " · saved " + (t.saved_at || "").slice(0, 10)],
+        _cloud: true,
+        _term_input: t.term_input,
+        _source_lang: t.source_lang
+      });
+    }
+    console.log("Merged " + data.terms.length + " cloud-saved AI terms");
+  } catch (e) {
+    console.warn("Cloud terms fetch failed:", e);
+  }
+}
+
+async function saveAiToCloud(aiResult) {
+  try {
+    const res = await fetch(WORKER_URL + "save", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(aiResult)
+    });
+    const data = await res.json();
+    if (!res.ok || !data.ok) throw new Error(data.error || "HTTP " + res.status);
+    return data;
+  } catch (e) {
+    console.warn("Save to cloud failed:", e);
+    return null;
+  }
+}
+
 function readUrlState() {
   const p = new URLSearchParams(location.search);
   const q = p.get("q"), cat = p.get("cat");
@@ -1532,11 +1578,47 @@ function renderAiCard(ai) {
   titleWrap.appendChild(title);
   head.appendChild(titleWrap);
 
+  const rightCol = document.createElement("div");
+  rightCol.style.display = "flex";
+  rightCol.style.flexDirection = "column";
+  rightCol.style.alignItems = "flex-end";
+  rightCol.style.gap = "6px";
+  rightCol.style.flexShrink = "0";
+
   const badge = document.createElement("span");
   badge.className = "term-cat-badge";
   badge.dataset.dom = card.dataset.dom;
   badge.textContent = ai.category || "general";
-  head.appendChild(badge);
+  rightCol.appendChild(badge);
+
+  // Bookmark button — bookmarks the AI card locally AND saves to cloud KV
+  const aiId = "cloud:" + (ai.source_lang || "el") + ":" + (ai.term_input || "").toLowerCase();
+  const bookBtn = document.createElement("button");
+  const isBooked = state.bookmarks.has(aiId);
+  bookBtn.className = "icon-btn" + (isBooked ? " bookmarked" : "");
+  bookBtn.title = state.uiLang === "el"
+    ? (isBooked ? "Σβήσε από αγαπημένα (και από κοινό λεξιλόγιο)" : "Αγαπημένο + σώσε στο κοινό λεξιλόγιο")
+    : (isBooked ? "Remove favorite (also from shared glossary)" : "Favorite + save to shared glossary");
+  bookBtn.setAttribute("aria-label", bookBtn.title);
+  bookBtn.innerHTML = isBooked
+    ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>'
+    : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>';
+  bookBtn.addEventListener("click", async (e) => {
+    e.stopPropagation();
+    const wasBookmarked = state.bookmarks.has(aiId);
+    toggleBookmark(aiId);
+    if (!wasBookmarked) {
+      // Was just added — also save to cloud KV
+      bookBtn.classList.add("saving");
+      const saved = await saveAiToCloud(ai);
+      bookBtn.classList.remove("saving");
+      if (saved) {
+        toast(state.uiLang === "el" ? "★ Αποθηκεύτηκε στο κοινό λεξιλόγιο" : "★ Saved to shared glossary");
+      }
+    }
+  });
+  rightCol.appendChild(bookBtn);
+  head.appendChild(rightCol);
   card.appendChild(head);
 
   const grid = document.createElement("div");
@@ -1693,6 +1775,7 @@ async function init() {
     return;
   }
   loadBookmarks();
+  await loadCloudTerms();
   readUrlState();
   buildLangToggle();
   buildCatBar();
