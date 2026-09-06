@@ -1,0 +1,339 @@
+{
+  "meta": {
+    "version": "0.1",
+    "created": "2026-09-06",
+    "note": "Skill tree for the /learn.html practice game. Each skill maps to a subset of term IDs from data/terms.json. Domains follow the refugee's journey through a Greek reception centre."
+  },
+  "domains": [
+    {
+      "id": "arrival",
+      "title_el": "ΑΦΙΞΗ",
+      "title_en": "ARRIVAL",
+      "subtitle_el": "Πρώτη επαφή & ταυτοποίηση",
+      "color": "restrict",
+      "icon": "🚨",
+      "order": 1
+    },
+    {
+      "id": "medical",
+      "title_el": "ΙΑΤΡΙΚΟ",
+      "title_en": "MEDICAL",
+      "subtitle_el": "Έλεγχος υγείας & ψυχική υγεία",
+      "color": "medical",
+      "icon": "🏥",
+      "order": 2
+    },
+    {
+      "id": "registration",
+      "title_el": "ΚΑΤΑΓΡΑΦΙΚΟ",
+      "title_en": "REGISTRATION",
+      "subtitle_el": "Καταγραφή & έγγραφα",
+      "color": "admin",
+      "icon": "📋",
+      "order": 3
+    },
+    {
+      "id": "vulnerability",
+      "title_el": "ΕΥΑΛΩΤΟΤΗΤΑ",
+      "title_en": "VULNERABILITY",
+      "subtitle_el": "Εντοπισμός ευάλωτων",
+      "color": "psychosocial",
+      "icon": "🛡",
+      "order": 4
+    },
+    {
+      "id": "pss",
+      "title_el": "ΨΥΧΟΚΟΙΝΩΝΙΚΟ",
+      "title_en": "PSYCHOSOCIAL",
+      "subtitle_el": "PSS intake & τραύμα",
+      "color": "psychosocial",
+      "icon": "💙",
+      "order": 5
+    },
+    {
+      "id": "interview",
+      "title_el": "ΣΥΝΕΝΤΕΥΞΗ ΑΣΥΛΟΥ",
+      "title_en": "ASYLUM INTERVIEW",
+      "subtitle_el": "RAO — προσωπική συνέντευξη",
+      "color": "legal",
+      "icon": "🎙",
+      "order": 6
+    },
+    {
+      "id": "legal",
+      "title_el": "ΝΟΜΙΚΟ",
+      "title_en": "LEGAL",
+      "subtitle_el": "Ένδικα μέσα & κράτηση",
+      "color": "legal",
+      "icon": "⚖",
+      "order": 7
+    },
+    {
+      "id": "outcome",
+      "title_el": "ΕΝΤΑΞΗ / ΕΠΙΣΤΡΟΦΗ",
+      "title_en": "INTEGRATION / RETURN",
+      "subtitle_el": "Ένταξη ή αναχώρηση",
+      "color": "warm",
+      "icon": "🛂",
+      "order": 8
+    }
+  ],
+  "skills": [
+    {
+      "id": "arrival-01",
+      "domain": "arrival",
+      "title_el": "Πρώτη Επαφή",
+      "title_en": "First Contact",
+      "description_el": "Άφιξη, screening, μεταφορά στη δομή — τι λέει η Frontex/Λιμενικό στα πρώτα λεπτά.",
+      "order": 1,
+      "terms": [
+        "first-reception", "screening", "biometric-data", "frontex", "eurodac",
+        "ric", "reception-centre", "closed-controlled-access-centre", "registration"
+      ]
+    },
+    {
+      "id": "arrival-02",
+      "domain": "arrival",
+      "title_el": "Ταυτοποίηση & Έγγραφα Ταξιδιού",
+      "title_en": "Identity & Travel Documents",
+      "description_el": "Έλεγχος εθνικότητας, δακτυλικά αποτυπώματα, έγγραφα ταυτότητας.",
+      "order": 2,
+      "terms": [
+        "identity-verification", "passport", "travel-document", "birth-certificate",
+        "refugee-travel-document", "eurodac", "biometric-data", "screening"
+      ]
+    },
+    {
+      "id": "medical-01",
+      "domain": "medical",
+      "title_el": "Ιατρικός Έλεγχος",
+      "title_en": "Medical Screening",
+      "description_el": "Πρώτος ιατρικός έλεγχος — μεταδοτικά, εμβόλια, ΑΜΚΑ.",
+      "order": 1,
+      "terms": [
+        "medical-screening", "amka", "referral", "paaypa"
+      ]
+    },
+    {
+      "id": "medical-02",
+      "domain": "medical",
+      "title_el": "Ψυχική Υγεία & Τραύμα",
+      "title_en": "Mental Health & Trauma",
+      "description_el": "PTSD, βασανιστήρια, ψυχολογική αξιολόγηση — ορολογία που ακούς σε ιατρείο ή PSS.",
+      "order": 2,
+      "terms": [
+        "ptsd", "torture-survivor", "mental-health-assessment", "referral",
+        "survivor-gender-based-violence", "vulnerable-person"
+      ]
+    },
+    {
+      "id": "reg-01",
+      "domain": "registration",
+      "title_el": "Καταγραφή Αίτησης",
+      "title_en": "Application Registration",
+      "description_el": "Πλήρης καταγραφή στην ΥΠΥΤ — προσωπικά, δελτίο αιτούντος.",
+      "order": 1,
+      "terms": [
+        "registration", "asylum-applicant-card", "biometric-data",
+        "application-international-protection", "asylum-seeker",
+        "certified-translation", "apostille", "marriage-certificate", "birth-certificate"
+      ]
+    },
+    {
+      "id": "reg-02",
+      "domain": "registration",
+      "title_el": "Καθεστώς & Παραπομπή",
+      "title_en": "Status & Referral",
+      "description_el": "Ποιος είναι πρόσφυγας, ποιος αιτών, ποιος ανιθαγενής — και πώς μπαίνεις στη διαδικασία.",
+      "order": 2,
+      "terms": [
+        "asylum-seeker", "refugee", "stateless", "internally-displaced-person",
+        "refugee-status-determination", "beneficiary-international-protection",
+        "mandate-refugee", "resettlement"
+      ]
+    },
+    {
+      "id": "vuln-01",
+      "domain": "vulnerability",
+      "title_el": "Δείκτες Ευαλωτότητας",
+      "title_en": "Vulnerability Indicators",
+      "description_el": "Ποιος θεωρείται ευάλωτος (EUAA IPSN) και τι ενεργοποιεί ειδικές εγγυήσεις.",
+      "order": 1,
+      "terms": [
+        "vulnerability-assessment", "vulnerable-person", "special-procedural-guarantees",
+        "pregnant-woman", "elderly-person", "person-with-disability"
+      ]
+    },
+    {
+      "id": "vuln-02",
+      "domain": "vulnerability",
+      "title_el": "GBV & Θύματα Εμπορίας",
+      "title_en": "GBV & Trafficking",
+      "description_el": "Έμφυλη βία και εμπορία ανθρώπων — trauma-informed χειρισμός.",
+      "order": 2,
+      "terms": [
+        "survivor-gender-based-violence", "survivor-trafficking",
+        "vulnerable-person", "special-procedural-guarantees", "referral"
+      ]
+    },
+    {
+      "id": "vuln-03",
+      "domain": "vulnerability",
+      "title_el": "Ασυνόδευτοι Ανήλικοι",
+      "title_en": "Unaccompanied Minors",
+      "description_el": "UAM — επίτροπος, best interest, ηλικιακή αξιολόγηση.",
+      "order": 3,
+      "terms": [
+        "unaccompanied-minor", "guardian", "age-assessment",
+        "best-interest-of-child", "best-interest-assessment", "family-member",
+        "family-unity", "sponsor"
+      ]
+    },
+    {
+      "id": "pss-01",
+      "domain": "pss",
+      "title_el": "PSS Intake",
+      "title_en": "PSS Intake",
+      "description_el": "Ψυχοκοινωνική εκτίμηση, παραπομπές, βασική ορολογία τραύματος.",
+      "order": 1,
+      "terms": [
+        "mental-health-assessment", "torture-survivor", "ptsd",
+        "referral", "survivor-gender-based-violence", "vulnerable-person"
+      ]
+    },
+    {
+      "id": "pss-02",
+      "domain": "pss",
+      "title_el": "Ρόλος & Δεοντολογία Διερμηνέα",
+      "title_en": "Interpreter Role & Ethics",
+      "description_el": "Πρώτο πρόσωπο, εμπιστευτικότητα, αμεροληψία, πολιτισμική διαμεσολάβηση — τι κάνει ένας διερμηνέας.",
+      "order": 2,
+      "terms": [
+        "interpreter", "consecutive-interpretation", "simultaneous-interpretation",
+        "whisper-interpretation", "sight-translation", "relay-interpretation",
+        "confidentiality-interpreter", "impartiality-interpreter",
+        "cultural-mediation", "first-person-interpretation"
+      ]
+    },
+    {
+      "id": "int-01",
+      "domain": "interview",
+      "title_el": "Καθεστώς & Δικαιώματα",
+      "title_en": "Status & Rights",
+      "description_el": "Κατηγορίες προστασίας που εξηγεί ο χειριστής στην αρχή της συνέντευξης.",
+      "order": 1,
+      "terms": [
+        "asylum-seeker", "refugee", "subsidiary-protection",
+        "beneficiary-international-protection", "stateless",
+        "temporary-protection", "cessation-of-status", "exclusion-from-protection"
+      ]
+    },
+    {
+      "id": "int-02",
+      "domain": "interview",
+      "title_el": "Δίωξη & Λόγοι Φυγής",
+      "title_en": "Persecution & Grounds",
+      "description_el": "Ο πυρήνας της συνέντευξης — γιατί έφυγες, τι φοβάσαι, ποιος σε δίωξε.",
+      "order": 2,
+      "terms": [
+        "persecution", "well-founded-fear", "acts-of-persecution",
+        "agents-of-persecution", "particular-social-group", "serious-harm",
+        "actors-of-protection", "internal-protection-alternative", "sur-place-claim"
+      ]
+    },
+    {
+      "id": "int-03",
+      "domain": "interview",
+      "title_el": "Αξιοπιστία & Λεπτομέρειες",
+      "title_en": "Credibility & Details",
+      "description_el": "Πώς ο χειριστής αξιολογεί την αξιοπιστία — και τι σημαίνει «material facts».",
+      "order": 3,
+      "terms": [
+        "personal-interview", "credibility-assessment", "benefit-of-the-doubt",
+        "material-facts", "country-of-origin-information", "sur-place-claim",
+        "application-international-protection"
+      ]
+    },
+    {
+      "id": "legal-01",
+      "domain": "legal",
+      "title_el": "Ένδικα Μέσα & Προσφυγή",
+      "title_en": "Remedies & Appeals",
+      "description_el": "Τι γίνεται μετά την απόρριψη — προσφυγή, νομική συνδρομή, β' βαθμός.",
+      "order": 1,
+      "terms": [
+        "appeal", "legal-aid", "effective-remedy", "inadmissible-application",
+        "manifestly-unfounded-application", "admissibility-procedure",
+        "explicit-withdrawal", "implicit-withdrawal", "right-to-remain"
+      ]
+    },
+    {
+      "id": "legal-02",
+      "domain": "legal",
+      "title_el": "Κράτηση",
+      "title_en": "Detention",
+      "description_el": "Διοικητική κράτηση, δικαίωμα ενημέρωσης, εναλλακτικά μέτρα.",
+      "order": 2,
+      "terms": [
+        "administrative-detention", "pre-removal-detention", "deprivation-of-liberty",
+        "right-to-information-detention", "alternatives-to-detention",
+        "detention-review", "maximum-detention-period", "objections-against-detention",
+        "geographic-restriction", "dublin-detention"
+      ]
+    },
+    {
+      "id": "legal-03",
+      "domain": "legal",
+      "title_el": "Δουβλίνο & Ασφαλείς Χώρες",
+      "title_en": "Dublin & Safe Countries",
+      "description_el": "Κανονισμός Δουβλίνο, ασφαλείς χώρες, νέος APR κανόνας 20%.",
+      "order": 3,
+      "terms": [
+        "safe-country-of-origin", "safe-third-country", "first-country-of-asylum",
+        "dublin-transfer", "take-charge-request", "take-back-request",
+        "twenty-percent-rule", "sovereignty-clause", "humanitarian-clause",
+        "effective-protection-third-country"
+      ]
+    },
+    {
+      "id": "legal-04",
+      "domain": "legal",
+      "title_el": "APR & Σύμφωνο 2024",
+      "title_en": "APR & 2024 Pact",
+      "description_el": "Νέος Κανονισμός Διαδικασιών Ασύλου + Migration Pact — τι αλλάζει από 12.06.2026.",
+      "order": 4,
+      "terms": [
+        "asylum-procedures-regulation", "common-procedure-international-protection",
+        "twenty-percent-rule", "migration-asylum-pact", "screening-regulation",
+        "asylum-border-procedure", "return-border-procedure",
+        "solidarity-mechanism", "relocation-pact", "crisis-force-majeure-regulation"
+      ]
+    },
+    {
+      "id": "outcome-01",
+      "domain": "outcome",
+      "title_el": "Ένταξη",
+      "title_en": "Integration",
+      "description_el": "HELIOS, άδεια διαμονής, ΑΦΜ, οικογενειακή επανένωση — μετά την αναγνώριση.",
+      "order": 1,
+      "terms": [
+        "residence-permit", "helios-programme", "afm-tax-number",
+        "naturalisation", "recognition-of-qualifications", "integration-course",
+        "family-reunification", "family-unity"
+      ]
+    },
+    {
+      "id": "outcome-02",
+      "domain": "outcome",
+      "title_el": "Επιστροφή",
+      "title_en": "Return",
+      "description_el": "Οικειοθελής, αναγκαστική, AVR, απαγόρευση επανεισόδου.",
+      "order": 2,
+      "terms": [
+        "voluntary-return", "forced-return", "removal-order", "avr",
+        "re-entry-ban", "period-for-voluntary-departure",
+        "escorted-return", "readmission-agreement", "postponement-of-removal"
+      ]
+    }
+  ]
+}

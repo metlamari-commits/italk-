@@ -426,6 +426,134 @@
     }
     .info-card li { margin-bottom: 3px; }
 
+    /* Skill tree */
+    .skill-tree { display: flex; flex-direction: column; gap: 22px; }
+    .dom-section { display: flex; flex-direction: column; gap: 10px; }
+    .dom-header {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-left-width: 6px;
+      border-radius: 12px;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0px 3px 0px 0px var(--dark);
+    }
+    .dom-header .dom-emoji { font-size: 24px; }
+    .dom-header .dom-titles { flex: 1; min-width: 0; }
+    .dom-header .dom-lbl {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--text-dim);
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      display: block;
+    }
+    .dom-header .dom-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.2;
+    }
+    .dom-header .dom-sub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+    .dom-header .dom-count {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      padding: 4px 8px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .dom-header[data-dom="restrict"]     { border-left-color: #7A2E2E; }
+    .dom-header[data-dom="restrict"] .dom-lbl { color: #7A2E2E; }
+    .dom-header[data-dom="medical"]      { border-left-color: var(--dom-medical); }
+    .dom-header[data-dom="medical"] .dom-lbl { color: var(--dom-medical); }
+    .dom-header[data-dom="admin"]        { border-left-color: #506173; }
+    .dom-header[data-dom="admin"] .dom-lbl { color: #506173; }
+    .dom-header[data-dom="psychosocial"] { border-left-color: #7A39BB; }
+    .dom-header[data-dom="psychosocial"] .dom-lbl { color: #7A39BB; }
+    .dom-header[data-dom="legal"]        { border-left-color: var(--dom-legal); }
+    .dom-header[data-dom="legal"] .dom-lbl { color: var(--dom-legal); }
+    .dom-header[data-dom="warm"]         { border-left-color: var(--dom-warm); }
+    .dom-header[data-dom="warm"] .dom-lbl { color: var(--dom-warm); }
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 8px;
+    }
+    .skill-card {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      cursor: pointer;
+      text-align: left;
+      font-family: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      transition: transform 0.1s, border-color 0.15s;
+      position: relative;
+    }
+    .skill-card:hover { border-color: var(--primary); transform: translateY(-1px); }
+    .skill-card:active { transform: translateY(0) scale(0.99); }
+    .skill-card[data-dom="restrict"]:hover     { border-color: #7A2E2E; }
+    .skill-card[data-dom="medical"]:hover      { border-color: var(--dom-medical); }
+    .skill-card[data-dom="admin"]:hover        { border-color: #506173; }
+    .skill-card[data-dom="psychosocial"]:hover { border-color: #7A39BB; }
+    .skill-card[data-dom="legal"]:hover        { border-color: var(--dom-legal); }
+    .skill-card[data-dom="warm"]:hover         { border-color: var(--dom-warm); }
+    .skill-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.25;
+    }
+    .skill-desc {
+      font-size: 11px;
+      color: var(--text-dim);
+      line-height: 1.4;
+    }
+    .skill-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-top: 4px;
+    }
+    .skill-stars {
+      font-size: 13px;
+      letter-spacing: 1px;
+      color: #E6A700;
+    }
+    .skill-stars .empty { color: var(--border); }
+    .skill-count {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--text-muted);
+    }
+    .skill-completions {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      background: var(--surface-alt);
+      color: var(--text-dim);
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+    .skill-completions.mastered {
+      background: #FFF6E5;
+      color: #B87700;
+      border-color: #E6A700;
+      font-weight: 700;
+    }
+    .skill-card.mastered { border-color: #E6A700; background: #FFFCF3; }
+
     /* Hearts-empty state */
     .hearts-warning {
       background: var(--dom-medical-bg);
@@ -788,8 +916,8 @@
       <div class="daily-body">
         <span class="daily-tag">ΗΜΕΡΗΣΙΑ ΕΞΑΣΚΗΣΗ</span>
         <span class="daily-mins">~5 λεπτά · 10 ερωτήσεις</span>
-        <h2 class="daily-title">Εξάσκηση Ορολογίας Ασύλου</h2>
-        <p class="daily-desc">10 multiple choice για να κρατάς την ορολογία σου σε ετοιμότητα πριν από συνεντεύξεις.</p>
+        <h2 class="daily-title">Γρήγορη Εξάσκηση</h2>
+        <p class="daily-desc">10 τυχαίες ερωτήσεις από όλους τους τομείς. Για στοχευμένη εξάσκηση σε συγκεκριμένο σταθμό, δες τους τομείς πιο κάτω.</p>
         <button class="start-btn" id="start-btn">
           <span>▶</span>
           <span>Ξεκίνα Μάθημα</span>
@@ -801,6 +929,8 @@
       <strong>Τελείωσαν οι ζωές σου.</strong> Επόμενη καρδιά σε <span class="countdown" id="regen-countdown">--:--</span>.
       Χρησιμοποίησε τον χρόνο για να ξεφυλλίσεις το <a href="index.html">γλωσσάρι</a>.
     </div>
+
+    <section id="skill-tree" class="skill-tree"></section>
 
     <div class="info-card">
       <h3>Πώς λειτουργεί</h3>
@@ -907,7 +1037,9 @@ const RTL_LANGS = new Set(["ar", "fa"]);
 const state = {
   terms: null,
   categories: null,
+  skills: null,     // loaded from data/skills.json
   quiz: null,       // {questions: [...], currentIndex, correctCount, wrongCount}
+  currentSkillId: null,  // set when a skill node is picked; null = mixed daily quiz
   game: null        // loaded from localStorage
 };
 
@@ -922,7 +1054,8 @@ function defaultGame() {
     hearts: MAX_HEARTS,
     heartRegenAt: null,
     lessonsCompleted: 0,
-    langPair: { source: "el", target: "ar" }
+    langPair: { source: "el", target: "ar" },
+    skillProgress: {}  // {skillId: {completions, bestPct, lastPlayedIso}}
   };
 }
 
@@ -1018,10 +1151,16 @@ function stopCountdown() { if (countdownTimer) { clearInterval(countdownTimer); 
 
 /* ---- Data ---- */
 async function loadTerms() {
-  const res = await fetch("data/terms.json", { cache: "no-cache" });
-  const data = await res.json();
-  state.terms = data.terms;
-  state.categories = data.categories;
+  const [tRes, sRes] = await Promise.all([
+    fetch("data/terms.json", { cache: "no-cache" }),
+    fetch("data/skills.json", { cache: "no-cache" })
+  ]);
+  const tData = await tRes.json();
+  state.terms = tData.terms;
+  state.categories = tData.categories;
+  if (sRes.ok) {
+    state.skills = await sRes.json();
+  }
 }
 
 /* ---- Quiz generation ---- */
@@ -1066,16 +1205,24 @@ function generateQuestion(term, otherTerms, pair) {
 
 function generateQuiz() {
   const pair = state.game.langPair;
-  const eligible = state.terms.filter(t => t.translations[pair.source] && t.translations[pair.target]);
+  // Filter to skill terms if a skill was picked
+  let pool = state.terms;
+  if (state.currentSkillId && state.skills) {
+    const skill = state.skills.skills.find(s => s.id === state.currentSkillId);
+    if (skill) pool = state.terms.filter(t => skill.terms.includes(t.id));
+  }
+  const eligible = pool.filter(t => t.translations[pair.source] && t.translations[pair.target]);
   if (eligible.length < 4) return { eligibleCount: eligible.length };
   const picked = pickRandom(eligible, Math.min(QUIZ_LENGTH, eligible.length));
   const questions = [];
+  // Distractor pool: prefer within-skill; fall back to full terms if skill is small
+  const distractorPool = eligible.length >= 6 ? pool : state.terms;
   for (const t of picked) {
-    const others = state.terms.filter(x => x.id !== t.id);
+    const others = distractorPool.filter(x => x.id !== t.id);
     const q = generateQuestion(t, others, pair);
     if (q) questions.push(q);
   }
-  state.quiz = { questions, currentIndex: 0, correctCount: 0, wrongCount: 0, xpEarned: 0, heartsLostInQuiz: 0 };
+  state.quiz = { questions, currentIndex: 0, correctCount: 0, wrongCount: 0, xpEarned: 0, heartsLostInQuiz: 0, skillId: state.currentSkillId };
   return { eligibleCount: eligible.length, count: questions.length };
 }
 
@@ -1171,14 +1318,19 @@ function nextQuestion() {
   renderCurrentQuestion();
 }
 
-function startQuiz() {
+function startQuiz(skillId) {
   if (state.game.hearts === 0) return;
+  state.currentSkillId = skillId || null;
   const info = generateQuiz();
   const pair = state.game.langPair;
   if (!state.quiz || !state.quiz.questions.length) {
-    alert("Δεν υπάρχουν αρκετοί όροι που να έχουν και τις δύο γλώσσες " +
-          LANG_LABELS[pair.source] + " και " + LANG_LABELS[pair.target] +
-          ". Δοκίμασε άλλο ζεύγος γλωσσών (πάτα το κουμπί «Άλλαξε ⚙»).");
+    const skillLbl = skillId && state.skills
+      ? (state.skills.skills.find(s => s.id === skillId) || {}).title_el || skillId
+      : "τυχαία εξάσκηση";
+    alert("Δεν υπάρχουν αρκετοί όροι στο μάθημα «" + skillLbl + "» για το ζεύγος " +
+          LANG_LABELS[pair.source] + " → " + LANG_LABELS[pair.target] +
+          ". Δοκίμασε άλλο μάθημα ή άλλαξε γλώσσες.");
+    state.currentSkillId = null;
     return;
   }
   document.body.classList.add("quiz-open");
@@ -1186,6 +1338,9 @@ function startQuiz() {
   document.getElementById("result-overlay").classList.remove("show");
   renderCurrentQuestion();
 }
+
+function startSkillQuiz(skillId) { startQuiz(skillId); }
+function startDailyQuiz() { startQuiz(null); }
 
 function endQuiz(ranOutOfHearts) {
   document.getElementById("quiz-overlay").classList.remove("show");
@@ -1195,9 +1350,21 @@ function endQuiz(ranOutOfHearts) {
   if (state.quiz.correctCount > 0) {
     state.game.lessonsCompleted++;
     updateStreakOnPlay();
+    // Skill progress
+    if (state.quiz.skillId) {
+      const total = state.quiz.questions.length;
+      const pct = Math.round((state.quiz.correctCount / total) * 100);
+      const prev = state.game.skillProgress[state.quiz.skillId] || { completions: 0, bestPct: 0 };
+      state.game.skillProgress[state.quiz.skillId] = {
+        completions: prev.completions + 1,
+        bestPct: Math.max(prev.bestPct, pct),
+        lastPlayedIso: new Date().toISOString()
+      };
+    }
   }
   saveGame();
   renderHud();
+  if (typeof renderSkillTree === "function") renderSkillTree();
 
   const total = state.quiz.questions.length;
   const correct = state.quiz.correctCount;
@@ -1223,6 +1390,70 @@ function closeQuiz() {
   document.getElementById("quiz-overlay").classList.remove("show");
   document.body.classList.remove("quiz-open");
   state.quiz = null;
+}
+
+/* ---- Skill tree ---- */
+function crownStars(completions) {
+  const filled = Math.min(completions, 5);
+  return "★".repeat(filled) + '<span class="empty">' + "★".repeat(5 - filled) + '</span>';
+}
+
+function renderSkillTree() {
+  const container = document.getElementById("skill-tree");
+  if (!container || !state.skills) return;
+  container.innerHTML = "";
+  const domains = state.skills.domains.slice().sort((a, b) => a.order - b.order);
+  const skills = state.skills.skills;
+
+  domains.forEach(dom => {
+    const domSkills = skills.filter(s => s.domain === dom.id).sort((a, b) => a.order - b.order);
+    if (!domSkills.length) return;
+
+    const section = document.createElement("div");
+    section.className = "dom-section";
+
+    const header = document.createElement("div");
+    header.className = "dom-header";
+    header.dataset.dom = dom.color;
+    const totalCompl = domSkills.reduce((sum, s) => {
+      const p = state.game.skillProgress[s.id];
+      return sum + (p ? Math.min(p.completions, 5) : 0);
+    }, 0);
+    const maxCompl = domSkills.length * 5;
+    header.innerHTML =
+      '<span class="dom-emoji">' + dom.icon + '</span>' +
+      '<div class="dom-titles">' +
+      '<span class="dom-lbl">ΤΟΜΕΑΣ 0' + dom.order + ' · ' + dom.title_en + '</span>' +
+      '<div class="dom-title">' + dom.title_el + '</div>' +
+      '<div class="dom-sub">' + dom.subtitle_el + '</div>' +
+      '</div>' +
+      '<div class="dom-count">' + totalCompl + '/' + maxCompl + ' ★</div>';
+    section.appendChild(header);
+
+    const grid = document.createElement("div");
+    grid.className = "skill-grid";
+    domSkills.forEach(sk => {
+      const prog = state.game.skillProgress[sk.id] || { completions: 0, bestPct: 0 };
+      const isMastered = prog.completions >= 5;
+
+      const card = document.createElement("button");
+      card.className = "skill-card" + (isMastered ? " mastered" : "");
+      card.dataset.dom = dom.color;
+      card.innerHTML =
+        '<div class="skill-title">' + sk.title_el + '</div>' +
+        '<div class="skill-desc">' + sk.description_el + '</div>' +
+        '<div class="skill-meta">' +
+          '<span class="skill-stars">' + crownStars(prog.completions) + '</span>' +
+          '<span class="skill-completions' + (isMastered ? ' mastered' : '') + '">' +
+            (isMastered ? '★ MASTERED' : prog.completions + '/5') +
+          '</span>' +
+        '</div>';
+      card.addEventListener("click", () => startSkillQuiz(sk.id));
+      grid.appendChild(card);
+    });
+    section.appendChild(grid);
+    container.appendChild(section);
+  });
 }
 
 /* ---- Language pair picker ---- */
@@ -1303,13 +1534,14 @@ async function init() {
   }
   renderHud();
   renderLangPairRow();
-  document.getElementById("start-btn").addEventListener("click", startQuiz);
+  renderSkillTree();
+  document.getElementById("start-btn").addEventListener("click", startDailyQuiz);
   document.getElementById("quiz-close").addEventListener("click", closeQuiz);
   document.getElementById("quiz-next").addEventListener("click", nextQuestion);
   document.getElementById("result-again").addEventListener("click", () => {
     document.getElementById("result-overlay").classList.remove("show");
     document.body.classList.remove("quiz-open");
-    startQuiz();
+    startQuiz(state.currentSkillId);
   });
   // Language picker wiring
   document.getElementById("langpair-row").addEventListener("click", openPicker);
