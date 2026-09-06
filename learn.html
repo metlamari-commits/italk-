@@ -137,6 +137,194 @@
     .hud-val.hearts { color: var(--dom-medical); }
     .hud-val.hearts.empty { color: var(--text-muted); }
 
+    /* Language pair selector pill */
+    .langpair-row {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      transition: border-color 0.15s;
+    }
+    .langpair-row:hover { border-color: var(--primary); }
+    .langpair-row:active { transform: scale(0.98); }
+    .langpair-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--dom-warm); flex-shrink: 0; }
+    .langpair-labels { flex: 1; min-width: 0; }
+    .langpair-lbl {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      display: block;
+    }
+    .langpair-val {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .langpair-arrow {
+      color: var(--dom-warm);
+      font-weight: 700;
+    }
+    .langpair-edit {
+      background: var(--surface-alt);
+      border: 1.5px solid var(--border);
+      color: var(--text-dim);
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    /* Language picker modal */
+    .picker-scrim {
+      position: fixed;
+      inset: 0;
+      background: rgba(10,14,19,0.55);
+      z-index: 90;
+      display: none;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 16px;
+    }
+    .picker-scrim.show { display: flex; }
+    .picker-sheet {
+      background: var(--surface);
+      border: 2px solid var(--dark);
+      border-radius: 16px;
+      padding: 20px;
+      max-width: 560px;
+      width: 100%;
+      box-shadow: 0px 4px 0px 0px var(--dark);
+      max-height: 85vh;
+      overflow-y: auto;
+    }
+    .picker-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .picker-desc {
+      font-size: 13px;
+      color: var(--text-dim);
+      margin-bottom: 16px;
+    }
+    .picker-section-lbl {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin: 14px 0 8px;
+    }
+    .picker-langs {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 6px;
+    }
+    .picker-lang {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      color: var(--text);
+      border-radius: 10px;
+      padding: 10px 4px;
+      font-family: inherit;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      min-height: 60px;
+      transition: all 0.12s;
+    }
+    .picker-lang:hover { border-color: var(--primary); background: var(--surface-alt); }
+    .picker-lang.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+    .picker-lang-code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .picker-lang-name {
+      font-size: 11px;
+      opacity: 0.85;
+    }
+    .picker-swap-row {
+      display: flex;
+      justify-content: center;
+      margin: 12px 0;
+    }
+    .picker-swap {
+      background: var(--surface-alt);
+      border: 1.5px solid var(--border);
+      color: var(--primary);
+      border-radius: 20px;
+      padding: 8px 16px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .picker-summary {
+      background: var(--dom-warm-bg);
+      border: 1.5px solid var(--dom-warm);
+      border-radius: 10px;
+      padding: 12px;
+      margin: 14px 0;
+      color: #5c3106;
+      font-size: 14px;
+      text-align: center;
+    }
+    .picker-summary strong { color: var(--dom-warm); }
+    .picker-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .picker-btn {
+      flex: 1;
+      border: 2px solid var(--dark);
+      border-radius: 10px;
+      padding: 12px;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0px 4px 0px 0px var(--dark);
+    }
+    .picker-btn.primary { background: var(--primary); color: #fff; }
+    .picker-btn.secondary { background: var(--surface); color: var(--text); box-shadow: 0px 4px 0px 0px var(--border-strong); border-color: var(--border-strong); }
+    .picker-warning {
+      background: var(--dom-medical-bg);
+      border: 1px solid var(--dom-medical);
+      color: var(--dom-medical);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 13px;
+      margin: 10px 0;
+      display: none;
+    }
+    .picker-warning.show { display: block; }
+
     /* Daily "Πρωινή Βάρδια" card */
     .daily-card {
       background: var(--primary);
@@ -581,6 +769,20 @@
       </div>
     </section>
 
+    <div class="langpair-row" id="langpair-row">
+      <span class="langpair-dot"></span>
+      <div class="langpair-labels">
+        <span class="langpair-lbl">Ζεύγος Γλωσσών</span>
+        <div class="langpair-val" id="langpair-val">
+          <span id="lp-source">EL</span>
+          <span class="langpair-arrow">→</span>
+          <span id="lp-target">AR</span>
+          <span id="lp-full" style="color:var(--text-dim);font-weight:400;font-size:13px">(Ελληνικά → Αραβικά)</span>
+        </div>
+      </div>
+      <span class="langpair-edit">Άλλαξε ⚙</span>
+    </div>
+
     <section class="daily-card">
       <div class="daily-icon">⏱</div>
       <div class="daily-body">
@@ -657,6 +859,34 @@
     </div>
   </div>
 
+  <div class="picker-scrim" id="picker-scrim">
+    <div class="picker-sheet">
+      <div class="picker-title">🌐 Επίλεξε Ζεύγος Γλωσσών</div>
+      <div class="picker-desc">Διάλεξε από ποια γλώσσα ξεκινάς (source) και σε ποια θέλεις να μεταφράζεις (target). Οι όροι που δεν υπάρχουν στις δύο γλώσσες παραλείπονται.</div>
+
+      <div class="picker-section-lbl">Γλώσσα Πηγής (source)</div>
+      <div class="picker-langs" id="picker-source"></div>
+
+      <div class="picker-swap-row">
+        <button class="picker-swap" id="picker-swap-btn">
+          <span>⇄</span><span>Αντιστροφή</span>
+        </button>
+      </div>
+
+      <div class="picker-section-lbl">Γλώσσα Στόχος (target)</div>
+      <div class="picker-langs" id="picker-target"></div>
+
+      <div class="picker-warning" id="picker-warning">Πρέπει να είναι διαφορετικές γλώσσες.</div>
+
+      <div class="picker-summary" id="picker-summary">—</div>
+
+      <div class="picker-actions">
+        <button class="picker-btn secondary" id="picker-cancel">Άκυρο</button>
+        <button class="picker-btn primary" id="picker-save">Αποθήκευση</button>
+      </div>
+    </div>
+  </div>
+
   <nav class="bottom-nav">
     <a href="index.html"><span class="nav-icon">📚</span><span>Γλωσσάρι</span></a>
     <a href="learn.html" class="active"><span class="nav-icon">🎯</span><span>Μάθε</span></a>
@@ -691,15 +921,22 @@ function defaultGame() {
     xp: 0,
     hearts: MAX_HEARTS,
     heartRegenAt: null,
-    lessonsCompleted: 0
+    lessonsCompleted: 0,
+    langPair: { source: "el", target: "ar" }
   };
 }
 
 function loadGame() {
   try {
     const raw = localStorage.getItem(STATE_KEY);
-    if (raw) state.game = { ...defaultGame(), ...JSON.parse(raw) };
-    else state.game = defaultGame();
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      state.game = { ...defaultGame(), ...parsed };
+      // Ensure langPair is a full object even if older localStorage entry missed it
+      if (!state.game.langPair || !state.game.langPair.source) {
+        state.game.langPair = defaultGame().langPair;
+      }
+    } else state.game = defaultGame();
   } catch(e) { state.game = defaultGame(); }
   regenHearts();
 }
@@ -795,24 +1032,18 @@ function pickRandom(arr, n, exclude) {
   return shuffled.slice(0, n);
 }
 
-// Generate one question: pick a term, choose source & target languages, build 4 options
-function generateQuestion(term, otherTerms) {
-  // Random language direction — always EL as source, target is one of ar/en/fr/fa
-  const targetLangOptions = ["ar", "en", "fr", "fa"];
-  const availableTargets = targetLangOptions.filter(l => term.translations[l]);
-  if (!availableTargets.length) return null;
-  const targetLang = availableTargets[Math.floor(Math.random() * availableTargets.length)];
-  const sourceLang = "el";
+// Generate one question using the user's chosen source→target pair
+function generateQuestion(term, otherTerms, pair) {
+  const sourceLang = pair.source;
+  const targetLang = pair.target;
   const source = term.translations[sourceLang];
   const correct = term.translations[targetLang];
   if (!source || !correct) return null;
 
-  // Distractors: same category if possible, else any
   const sameCat = otherTerms.filter(t => t.category === term.category && t.translations[targetLang] && t.translations[targetLang] !== correct);
   const anyCat = otherTerms.filter(t => t.translations[targetLang] && t.translations[targetLang] !== correct);
   const pool = sameCat.length >= 3 ? sameCat : anyCat;
   const distractors = pickRandom(pool, 3).map(t => t.translations[targetLang]);
-  // Dedupe just in case
   const uniqueDistractors = Array.from(new Set(distractors)).slice(0, 3);
   while (uniqueDistractors.length < 3) {
     const extra = pickRandom(otherTerms, 1)[0];
@@ -821,7 +1052,6 @@ function generateQuestion(term, otherTerms) {
     } else break;
   }
   const choices = [correct, ...uniqueDistractors].sort(() => Math.random() - 0.5);
-
   const catObj = state.categories.find(c => c.id === term.category);
   return {
     termId: term.id,
@@ -835,19 +1065,18 @@ function generateQuestion(term, otherTerms) {
 }
 
 function generateQuiz() {
-  // Pick 10 random terms that have at least 2 non-EL translations (to allow multiple targets)
-  const eligible = state.terms.filter(t => {
-    const langs = Object.keys(t.translations).filter(l => l !== "el" && t.translations[l]);
-    return langs.length >= 1;
-  });
-  const picked = pickRandom(eligible, QUIZ_LENGTH);
+  const pair = state.game.langPair;
+  const eligible = state.terms.filter(t => t.translations[pair.source] && t.translations[pair.target]);
+  if (eligible.length < 4) return { eligibleCount: eligible.length };
+  const picked = pickRandom(eligible, Math.min(QUIZ_LENGTH, eligible.length));
   const questions = [];
   for (const t of picked) {
     const others = state.terms.filter(x => x.id !== t.id);
-    const q = generateQuestion(t, others);
+    const q = generateQuestion(t, others, pair);
     if (q) questions.push(q);
   }
   state.quiz = { questions, currentIndex: 0, correctCount: 0, wrongCount: 0, xpEarned: 0, heartsLostInQuiz: 0 };
+  return { eligibleCount: eligible.length, count: questions.length };
 }
 
 /* ---- Quiz UI ---- */
@@ -944,9 +1173,12 @@ function nextQuestion() {
 
 function startQuiz() {
   if (state.game.hearts === 0) return;
-  generateQuiz();
-  if (!state.quiz.questions.length) {
-    alert("Δεν βρέθηκαν ερωτήσεις — φόρτωσε ξανά τη σελίδα.");
+  const info = generateQuiz();
+  const pair = state.game.langPair;
+  if (!state.quiz || !state.quiz.questions.length) {
+    alert("Δεν υπάρχουν αρκετοί όροι που να έχουν και τις δύο γλώσσες " +
+          LANG_LABELS[pair.source] + " και " + LANG_LABELS[pair.target] +
+          ". Δοκίμασε άλλο ζεύγος γλωσσών (πάτα το κουμπί «Άλλαξε ⚙»).");
     return;
   }
   document.body.classList.add("quiz-open");
@@ -993,6 +1225,75 @@ function closeQuiz() {
   state.quiz = null;
 }
 
+/* ---- Language pair picker ---- */
+const ALL_LANGS = ["el", "en", "ar", "fa", "fr"];
+let pickerState = { source: "el", target: "ar" };
+
+function renderLangPairRow() {
+  const pair = state.game.langPair;
+  document.getElementById("lp-source").textContent = LANG_SHORT[pair.source];
+  document.getElementById("lp-target").textContent = LANG_SHORT[pair.target];
+  document.getElementById("lp-full").textContent =
+    "(" + LANG_LABELS[pair.source] + " → " + LANG_LABELS[pair.target] + ")";
+}
+
+function openPicker() {
+  pickerState = { source: state.game.langPair.source, target: state.game.langPair.target };
+  renderPicker();
+  document.getElementById("picker-scrim").classList.add("show");
+}
+function closePicker() {
+  document.getElementById("picker-scrim").classList.remove("show");
+}
+function renderPicker() {
+  const srcContainer = document.getElementById("picker-source");
+  const tgtContainer = document.getElementById("picker-target");
+  srcContainer.innerHTML = "";
+  tgtContainer.innerHTML = "";
+
+  ALL_LANGS.forEach(l => {
+    for (const [which, container] of [["source", srcContainer], ["target", tgtContainer]]) {
+      const btn = document.createElement("button");
+      btn.className = "picker-lang" + (pickerState[which] === l ? " active" : "");
+      btn.innerHTML =
+        '<span class="picker-lang-code">' + LANG_SHORT[l] + '</span>' +
+        '<span class="picker-lang-name">' + LANG_LABELS[l] + '</span>';
+      btn.addEventListener("click", () => {
+        pickerState[which] = l;
+        // If new pick conflicts with the other slot, swap the other
+        if (pickerState.source === pickerState.target) {
+          const other = which === "source" ? "target" : "source";
+          const alt = ALL_LANGS.find(x => x !== l);
+          pickerState[other] = alt;
+        }
+        renderPicker();
+      });
+      container.appendChild(btn);
+    }
+  });
+
+  // Count of terms that satisfy this pair
+  let count = 0;
+  if (state.terms) {
+    count = state.terms.filter(t => t.translations[pickerState.source] && t.translations[pickerState.target]).length;
+  }
+  const summary = document.getElementById("picker-summary");
+  summary.innerHTML = "<strong>" + LANG_LABELS[pickerState.source] + " → " + LANG_LABELS[pickerState.target] + "</strong>" +
+    "<br>Διαθέσιμοι όροι: <strong>" + count + " / " + (state.terms ? state.terms.length : "?") + "</strong>";
+  const warn = document.getElementById("picker-warning");
+  if (pickerState.source === pickerState.target) warn.classList.add("show");
+  else warn.classList.remove("show");
+  document.getElementById("picker-save").disabled = pickerState.source === pickerState.target || count < 4;
+}
+
+function savePicker() {
+  if (pickerState.source === pickerState.target) return;
+  state.game.langPair = { source: pickerState.source, target: pickerState.target };
+  saveGame();
+  renderLangPairRow();
+  closePicker();
+}
+
 async function init() {
   loadGame();
   try { await loadTerms(); } catch(e) {
@@ -1001,13 +1302,26 @@ async function init() {
     return;
   }
   renderHud();
+  renderLangPairRow();
   document.getElementById("start-btn").addEventListener("click", startQuiz);
   document.getElementById("quiz-close").addEventListener("click", closeQuiz);
   document.getElementById("quiz-next").addEventListener("click", nextQuestion);
   document.getElementById("result-again").addEventListener("click", () => {
     document.getElementById("result-overlay").classList.remove("show");
+    document.body.classList.remove("quiz-open");
     startQuiz();
   });
+  // Language picker wiring
+  document.getElementById("langpair-row").addEventListener("click", openPicker);
+  document.getElementById("picker-cancel").addEventListener("click", closePicker);
+  document.getElementById("picker-scrim").addEventListener("click", (e) => {
+    if (e.target.id === "picker-scrim") closePicker();
+  });
+  document.getElementById("picker-swap-btn").addEventListener("click", () => {
+    const s = pickerState.source; pickerState.source = pickerState.target; pickerState.target = s;
+    renderPicker();
+  });
+  document.getElementById("picker-save").addEventListener("click", savePicker);
 }
 
 document.addEventListener("DOMContentLoaded", init);
