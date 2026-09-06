@@ -601,6 +601,59 @@
     }
     .ob-next:active { transform: translateY(1px); box-shadow: 0px 2px 0px 0px var(--dark); }
 
+    /* Custom decks (weak / bookmarks) */
+    .deck-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 4px;
+    }
+    .deck-card {
+      background: var(--surface);
+      border: 2px solid var(--dark);
+      border-left-width: 8px;
+      border-radius: 12px;
+      padding: 12px 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-align: left;
+      font-family: inherit;
+      transition: transform 0.1s;
+      box-shadow: 0px 3px 0px 0px var(--dark);
+    }
+    .deck-card:active { transform: translateY(2px); box-shadow: 0px 1px 0px 0px var(--dark); }
+    .deck-card.deck-weak { border-left-color: #7A39BB; }
+    .deck-card.deck-weak .deck-icon { background: #7A39BB; }
+    .deck-card.deck-bookmarks { border-left-color: var(--dom-warm); }
+    .deck-card.deck-bookmarks .deck-icon { background: var(--dom-warm); }
+    .deck-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .deck-body { flex: 1; min-width: 0; }
+    .deck-title { font-size: 15px; font-weight: 700; color: var(--text); }
+    .deck-sub { font-size: 12px; color: var(--text-dim); margin-top: 2px; }
+    .deck-count {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-dim);
+      flex-shrink: 0;
+    }
+
     /* Skill tree */
     .skill-tree { display: flex; flex-direction: column; gap: 22px; }
     .dom-section { display: flex; flex-direction: column; gap: 10px; }
@@ -1109,6 +1162,8 @@
 
     <section id="skill-tree" class="skill-tree"></section>
 
+    <div id="custom-decks"></div>
+
     <div class="info-card">
       <h3>Πώς λειτουργεί</h3>
       <ul>
@@ -1161,7 +1216,7 @@
       </div>
     </div>
     <div class="result-actions">
-      <button class="result-btn" id="result-again">Ξανά</button>
+      <button class="result-btn" id="result-again">Επόμενο →</button>
       <a class="result-btn secondary" href="index.html" style="text-align:center; text-decoration:none; display:block;">Πίσω στο Γλωσσάρι</a>
     </div>
   </div>
@@ -1265,7 +1320,8 @@ const state = {
   skills: null,     // loaded from data/skills.json
   scenarios: null,  // loaded from data/scenarios.json
   quiz: null,       // {questions: [...], currentIndex, correctCount, wrongCount}
-  currentSkillId: null,  // set when a skill node is picked; null = mixed daily quiz
+  currentSkillId: null,   // set when a skill node is picked
+  currentMode: "daily",   // "daily" | "skill" | "weak" | "bookmarks"
   game: null        // loaded from localStorage
 };
 
@@ -1282,8 +1338,17 @@ function defaultGame() {
     lessonsCompleted: 0,
     langPair: { source: "el", target: "ar" },
     skillProgress: {},  // {skillId: {completions, bestPct, lastPlayedIso}}
-    profile: null       // {nickname, motherTongue, workingLangs, facility, years, interests, onboardedAt}
+    profile: null,      // {nickname, motherTongue, workingLangs, facility, years, interests, onboardedAt}
+    wrongTerms: {}      // {termId: wrongCount} — decrements on later correct answer
   };
+}
+const BOOKMARKS_KEY = "italk_bookmarks_v1"; // shared with index.html glossary
+function getGlossaryBookmarks() {
+  try {
+    const raw = localStorage.getItem(BOOKMARKS_KEY);
+    if (!raw) return new Set();
+    return new Set(JSON.parse(raw));
+  } catch(e) { return new Set(); }
 }
 
 const FACILITIES = [
@@ -1457,16 +1522,24 @@ function generateQuestion(term, otherTerms, pair) {
 
 function generateQuiz() {
   const pair = state.game.langPair;
-  // Base pool: all terms; if a skill was picked, filter to that skill's terms
+  // Base pool: all terms; narrowed by mode below
   let pool = state.terms.slice();
   const skill = state.currentSkillId && state.skills
     ? state.skills.skills.find(s => s.id === state.currentSkillId)
     : null;
-  if (skill) pool = state.terms.filter(t => skill.terms.includes(t.id));
+  if (state.currentMode === "skill" && skill) {
+    pool = state.terms.filter(t => skill.terms.includes(t.id));
+  } else if (state.currentMode === "weak") {
+    const weakIds = new Set(Object.keys(state.game.wrongTerms || {}));
+    pool = state.terms.filter(t => weakIds.has(t.id));
+  } else if (state.currentMode === "bookmarks") {
+    const marks = getGlossaryBookmarks();
+    pool = state.terms.filter(t => marks.has(t.id));
+  }
 
-  // Add scenarios into the pool (treated as pseudo-terms so the existing MC engine works)
-  if (state.scenarios) {
-    const scenarioList = skill
+  // Add scenarios into the pool for skill mode only
+  if (state.scenarios && state.currentMode !== "weak" && state.currentMode !== "bookmarks") {
+    const scenarioList = (state.currentMode === "skill" && skill)
       ? state.scenarios.scenarios.filter(sc => sc.skill_id === state.currentSkillId)
       : state.scenarios.scenarios;
     for (const sc of scenarioList) {
@@ -1563,6 +1636,11 @@ function handleAnswer(btnEl, choice, q) {
     feedback.classList.add("show", "correct");
     feedbackText.textContent = "✓ Σωστά! +" + XP_PER_CORRECT + " XP";
     speakText(q.correct, q.targetLang);
+    // If this was a "weak" term, decrement its wrong count (spaced-repetition-lite)
+    if (q.termId && state.game.wrongTerms[q.termId]) {
+      state.game.wrongTerms[q.termId]--;
+      if (state.game.wrongTerms[q.termId] <= 0) delete state.game.wrongTerms[q.termId];
+    }
   } else {
     btnEl.classList.add("wrong");
     // Also highlight correct answer
@@ -1577,6 +1655,10 @@ function handleAnswer(btnEl, choice, q) {
     }
     feedback.classList.add("show", "wrong");
     feedbackText.innerHTML = "✗ Σωστή απάντηση: <strong>" + q.correct + "</strong>";
+    // Mark this term as weak (max cap 5 to avoid runaway)
+    if (q.termId) {
+      state.game.wrongTerms[q.termId] = Math.min(5, (state.game.wrongTerms[q.termId] || 0) + 1);
+    }
   }
   document.getElementById("quiz-hearts-mini").textContent = "❤ " + state.game.hearts;
   saveGame();
@@ -1599,19 +1681,24 @@ function nextQuestion() {
   renderCurrentQuestion();
 }
 
-function startQuiz(skillId) {
+function startQuiz(opts) {
+  opts = opts || {};
   if (state.game.hearts === 0) return;
-  state.currentSkillId = skillId || null;
+  state.currentMode = opts.mode || (opts.skillId ? "skill" : "daily");
+  state.currentSkillId = opts.skillId || null;
   const info = generateQuiz();
   const pair = state.game.langPair;
   if (!state.quiz || !state.quiz.questions.length) {
-    const skillLbl = skillId && state.skills
-      ? (state.skills.skills.find(s => s.id === skillId) || {}).title_el || skillId
+    const label = state.currentMode === "skill" && state.skills
+      ? "«" + ((state.skills.skills.find(s => s.id === state.currentSkillId) || {}).title_el || state.currentSkillId) + "»"
+      : state.currentMode === "weak" ? "«Αδυναμίες μου»"
+      : state.currentMode === "bookmarks" ? "«Αγαπημένα μου»"
       : "τυχαία εξάσκηση";
-    alert("Δεν υπάρχουν αρκετοί όροι στο μάθημα «" + skillLbl + "» για το ζεύγος " +
+    alert("Δεν υπάρχουν αρκετοί όροι " + label + " για το ζεύγος " +
           LANG_LABELS[pair.source] + " → " + LANG_LABELS[pair.target] +
           ". Δοκίμασε άλλο μάθημα ή άλλαξε γλώσσες.");
     state.currentSkillId = null;
+    state.currentMode = "daily";
     return;
   }
   document.body.classList.add("quiz-open");
@@ -1620,8 +1707,10 @@ function startQuiz(skillId) {
   renderCurrentQuestion();
 }
 
-function startSkillQuiz(skillId) { startQuiz(skillId); }
-function startDailyQuiz() { startQuiz(null); }
+function startSkillQuiz(skillId) { startQuiz({ mode: "skill", skillId }); }
+function startDailyQuiz() { startQuiz({ mode: "daily" }); }
+function startWeakQuiz() { startQuiz({ mode: "weak" }); }
+function startBookmarksQuiz() { startQuiz({ mode: "bookmarks" }); }
 
 function endQuiz(ranOutOfHearts) {
   document.getElementById("quiz-overlay").classList.remove("show");
@@ -1646,6 +1735,7 @@ function endQuiz(ranOutOfHearts) {
   saveGame();
   renderHud();
   if (typeof renderSkillTree === "function") renderSkillTree();
+  if (typeof renderCustomDecks === "function") renderCustomDecks();
 
   const total = state.quiz.questions.length;
   const correct = state.quiz.correctCount;
@@ -1839,6 +1929,54 @@ function renderHeaderGreet() {
   }
 }
 
+/* ---- Custom decks (Αδυναμίες + Αγαπημένα) ---- */
+function renderCustomDecks() {
+  const container = document.getElementById("custom-decks");
+  if (!container || !state.terms) return;
+  container.innerHTML = "";
+  const wrap = document.createElement("div");
+  wrap.className = "deck-list";
+  let anyShown = false;
+
+  // Weak terms deck
+  const weakCount = Object.keys(state.game.wrongTerms || {}).length;
+  if (weakCount >= 3) {
+    const card = document.createElement("button");
+    card.className = "deck-card deck-weak";
+    card.innerHTML =
+      '<div class="deck-icon">🎯</div>' +
+      '<div class="deck-body">' +
+      '<div class="deck-title">Πρακτική Αδυναμιών</div>' +
+      '<div class="deck-sub">Ξαναδούλεψε όσους όρους έκανες λάθος</div>' +
+      '</div>' +
+      '<div class="deck-count">' + weakCount + ' όροι</div>';
+    card.addEventListener("click", startWeakQuiz);
+    wrap.appendChild(card);
+    anyShown = true;
+  }
+
+  // Glossary bookmarks deck (from index.html)
+  const bookmarks = getGlossaryBookmarks();
+  // Filter to bookmark IDs that actually match terms in the glossary
+  const bookmarkTermIds = [...bookmarks].filter(id => state.terms.some(t => t.id === id));
+  if (bookmarkTermIds.length >= 3) {
+    const card = document.createElement("button");
+    card.className = "deck-card deck-bookmarks";
+    card.innerHTML =
+      '<div class="deck-icon">★</div>' +
+      '<div class="deck-body">' +
+      '<div class="deck-title">Τα Αγαπημένα Μου</div>' +
+      '<div class="deck-sub">Οι όροι που έχεις μαρκάρει στο γλωσσάρι</div>' +
+      '</div>' +
+      '<div class="deck-count">' + bookmarkTermIds.length + ' όροι</div>';
+    card.addEventListener("click", startBookmarksQuiz);
+    wrap.appendChild(card);
+    anyShown = true;
+  }
+
+  if (anyShown) container.appendChild(wrap);
+}
+
 /* ---- Skill tree ---- */
 function crownStars(completions) {
   const filled = Math.min(completions, 5);
@@ -1981,6 +2119,7 @@ async function init() {
   }
   renderHud();
   renderLangPairRow();
+  renderCustomDecks();
   renderSkillTree();
   document.getElementById("start-btn").addEventListener("click", startDailyQuiz);
   document.getElementById("quiz-close").addEventListener("click", closeQuiz);
@@ -1988,7 +2127,8 @@ async function init() {
   document.getElementById("result-again").addEventListener("click", () => {
     document.getElementById("result-overlay").classList.remove("show");
     document.body.classList.remove("quiz-open");
-    startQuiz(state.currentSkillId);
+    // Replay in same mode
+    startQuiz({ mode: state.currentMode, skillId: state.currentSkillId });
   });
   // Language picker wiring
   document.getElementById("langpair-row").addEventListener("click", openPicker);
