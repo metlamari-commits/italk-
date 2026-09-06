@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.4.0",
+    "version": "0.5.0",
     "updated": "2026-09-06",
     "languages": [
       "el",
@@ -8296,6 +8296,2822 @@
       },
       "definition_el": "Τυποποιημένες δοκιμασίες αξιολόγησης του επιπέδου κατανόησης και ομιλίας της ελληνικής γλώσσας από αιτούντες άσυλο και πρόσφυγες για σκοπούς διαδικασιών ή ολοκλήρωσης ολοκληρωμένων.",
       "definition_en": "Standardized examinations that assess the level of Greek language comprehension and speaking ability of asylum seekers and refugees for purposes of procedural communication or integration requirements.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "head-part-of-the-body-in-medical-examination",
+      "category": "medical",
+      "translations": {
+        "el": "κεφάλι",
+        "en": "head (part of the body in medical examination)",
+        "ar": "الرأس (جزء من الجسم في الفحص الطبي)",
+        "fa": "سر (بخشی از بدن در معاینه پزشکی)",
+        "fr": "tête (partie du corps lors de l'examen médical)"
+      },
+      "definition_el": "Το ανώτερο μέρος του ανθρώπινου σώματος που περιλαμβάνει το κρανίο, τον εγκέφαλο και τα όργανα αισθήσεων, το οποίο εξετάζεται κατά τη διάρκεια της κλινικής αξιολόγησης.",
+      "definition_en": "The upper part of the human body that includes the skull, brain, and sensory organs, which is examined during clinical medical assessment.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "eye-part-of-the-body-oculus",
+      "category": "medical",
+      "translations": {
+        "el": "μάτι",
+        "en": "eye (part of the body, oculus)",
+        "ar": "العين (جزء من الجسم، العضو البصري)",
+        "fa": "چشم (بخشی از بدن، اندام بینایی)",
+        "fr": "œil (partie du corps, organe visuel)"
+      },
+      "definition_el": "Το όργανο της όρασης που βρίσκεται στο κεφάλι και χρησιμεύει για τη λήψη οπτικών πληροφοριών.",
+      "definition_en": "The organ of vision located in the head that serves to receive visual information.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "nose",
+      "category": "medical",
+      "translations": {
+        "el": "μύτη",
+        "en": "nose",
+        "ar": "الأنف",
+        "fa": "بینی",
+        "fr": "nez"
+      },
+      "definition_el": "Το μέρος του προσώπου που χρησιμοποιείται για την αναπνοή και την όσφρηση.",
+      "definition_en": "The part of the face used for breathing and smelling.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "tooth-dental-health",
+      "category": "medical",
+      "translations": {
+        "el": "δόντι",
+        "en": "tooth (dental health)",
+        "ar": "السن (صحة الفم)",
+        "fa": "دندان (بهداشت دهان)",
+        "fr": "dent (santé dentaire)"
+      },
+      "definition_el": "Το σκληρό οστέινο όργανο που βρίσκεται στο στόμα και χρησιμοποιείται για την μάσηση της τροφής.",
+      "definition_en": "The hard bone structure in the mouth used for chewing food and related to overall oral health.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "arm-upper-limb",
+      "category": "medical",
+      "translations": {
+        "el": "βραχίονας",
+        "en": "arm (upper limb)",
+        "ar": "الذراع (الطرف العلوي)",
+        "fa": "بازو (اندام فوقانی)",
+        "fr": "bras (membre supérieur)"
+      },
+      "definition_el": "Το άνω άκρο του σώματος που εκτείνεται από τον ώμο μέχρι τα δάχτυλα.",
+      "definition_en": "The upper limb of the body extending from the shoulder to the fingers.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "elbow-upper-limb-joint",
+      "category": "medical",
+      "translations": {
+        "el": "αγκώνας",
+        "en": "elbow (upper limb joint)",
+        "ar": "المرفق (مفصل الطرف العلوي)",
+        "fa": "آرنج (مفصل اندام فوقانی)",
+        "fr": "coude (articulation du membre supérieur)"
+      },
+      "definition_el": "Η άρθρωση που συνδέει το βραχιόνιο με το πήχυ και επιτρέπει την κάμψη και την έκταση του άνω άκρου.",
+      "definition_en": "The joint that connects the upper arm to the forearm and allows flexion and extension of the upper limb.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "wrist-hand-joint",
+      "category": "medical",
+      "translations": {
+        "el": "καρπός",
+        "en": "wrist (hand joint)",
+        "ar": "الرسغ (مفصل اليد)",
+        "fa": "مچ دست (مفصل دست)",
+        "fr": "poignet (articulation de la main)"
+      },
+      "definition_el": "Η άρθρωση που συνδέει το χέρι με το κάτω μέρος του βραχίονα, σημαντική για την κινητικότητα και την λειτουργικότητα του χεριού.",
+      "definition_en": "The joint connecting the hand to the forearm, crucial for hand mobility and functional capacity.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "heart-cardiovascular-organ",
+      "category": "medical",
+      "translations": {
+        "el": "καρδιά",
+        "en": "heart (cardiovascular organ)",
+        "ar": "القلب (العضو القلبي الوعائي)",
+        "fa": "قلب (ارگان قلبی عروقی)",
+        "fr": "cœur (organe cardiovasculaire)"
+      },
+      "definition_el": "Το κεντρικό όργανο του κυκλοφοριακού συστήματος που αντλεί το αίμα σε όλο το σώμα.",
+      "definition_en": "The central organ of the circulatory system that pumps blood throughout the body.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "sneezing-respiratory-symptom",
+      "category": "medical",
+      "translations": {
+        "el": "φτέρνισμα",
+        "en": "sneezing (respiratory symptom)",
+        "ar": "العطس (عرض تنفسي)",
+        "fa": "عطسه (علامت تنفسی)",
+        "fr": "éternuement (symptôme respiratoire)"
+      },
+      "definition_el": "Αναπνευστικό σύμπτωμα που χαρακτηρίζεται από ακούσια έκρηξη αέρα μέσω του στόματος και της μύτης, συχνά σχετιζόμενο με λοιμώξεις ή αλλεργίες.",
+      "definition_en": "A respiratory symptom characterized by an involuntary expulsion of air through the mouth and nose, often associated with infections or allergies.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "measles-rubeola",
+      "category": "medical",
+      "translations": {
+        "el": "ερυθρά",
+        "en": "measles (rubeola)",
+        "ar": "الحصبة",
+        "fa": "سرخک",
+        "fr": "rougeole"
+      },
+      "definition_el": "Μεταδοτική ιογενής νόσος που προκαλεί πυρετό και χαρακτηριστικό ερυθρό εξάνθημα, κυρίως σε παιδιά.",
+      "definition_en": "A contagious viral disease characterized by fever and a distinctive red rash, primarily affecting children.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "analgesic-pharmaceutical-category-painkiller",
+      "category": "medical",
+      "translations": {
+        "el": "παυσίπονο",
+        "en": "analgesic (pharmaceutical category, painkiller)",
+        "ar": "مسكن الألم (فئة صيدلانية، مسكن)",
+        "fa": "مسکن درد (دسته داروایی، درمان کننده درد)",
+        "fr": "analgésique (catégorie pharmaceutique, antidouleur)"
+      },
+      "definition_el": "Φάρμακο που χρησιμοποιείται για την ανακούφιση του πόνου χωρίς να προκαλεί αναισθησία.",
+      "definition_en": "A medication used to relieve pain without causing loss of consciousness or anesthesia.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "splint-medical-device-for-fracture-immobilization",
+      "category": "medical",
+      "translations": {
+        "el": "νάρθηκας",
+        "en": "splint (medical device for fracture immobilization)",
+        "ar": "جبيرة (جهاز طبي لتثبيت الكسور)",
+        "fa": "گچ بندی (دستگاه پزشکی برای ثابت کردن شکستگی)",
+        "fr": "attelle (dispositif médical d'immobilisation de fracture)"
+      },
+      "definition_el": "Ιατρικό υλικό που χρησιμοποιείται για την ακινητοποίηση και σταθεροποίηση κατάγματος ή τραυματισμού άρθρωσης κατά τη θεραπεία.",
+      "definition_en": "A medical device used to immobilize and stabilize a fracture or joint injury during treatment.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "gauze-medical-material-dressing",
+      "category": "medical",
+      "translations": {
+        "el": "γάζα",
+        "en": "gauze (medical material, dressing)",
+        "ar": "شاش (مادة طبية، ضمادة)",
+        "fa": "گاز (ماده پزشکی، پانسمان)",
+        "fr": "gaze (matériel médical, pansement)"
+      },
+      "definition_el": "Λεπτό, διαπερατό ύφασμα από βαμβάκι ή συνθετικό υλικό που χρησιμοποιείται για καθαρισμό, επίδεσμο και προστασία πληγών.",
+      "definition_en": "A thin, permeable fabric made of cotton or synthetic material used for cleaning, dressing, and protecting wounds.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "nightmares-sleep-disorder-ptsd-symptom",
+      "category": "medical",
+      "translations": {
+        "el": "εφιάλτες",
+        "en": "nightmares (sleep disorder, PTSD symptom)",
+        "ar": "الكوابيس (اضطراب النوم، عرض من أعراض اضطراب ما بعد الصدمة)",
+        "fa": "کابوس‌ها (اختلال خواب، علامت اختلال استرس پس از سانحه)",
+        "fr": "cauchemars (trouble du sommeil, symptôme du TSPT)"
+      },
+      "definition_el": "Ανησυχητικά ή τρομακτικά όνειρα που διαταράσσουν τον ύπνο και αποτελούν συχνό σύμπτωμα του διαταρακτικού στρες μετά από τραυματικά γεγονότα.",
+      "definition_en": "Disturbing or frightening dreams that disrupt sleep and are a common symptom of post-traumatic stress disorder following traumatic events.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "tax-clearance-certificate-tax-document-for-tax-identificatio",
+      "category": "documentation",
+      "translations": {
+        "el": "εκκαθαριστικό εφορίας",
+        "en": "tax clearance certificate (tax document for tax identification number)",
+        "ar": "شهادة الخلو من الالتزامات الضريبية (وثيقة ضريبية لرقم التعريف الضريبي)",
+        "fa": "گواهی پاکی از تعهدات مالیاتی (سند مالیاتی برای شماره شناسایی مالیاتی)",
+        "fr": "certificat de régularité fiscale (document fiscal pour le numéro d'identification fiscale)"
+      },
+      "definition_el": "Διοικητικό έγγραφο που εκδίδεται από τις φορολογικές αρχές για να αποδεικνύει ότι ένα άτομο ή εταιρεία δεν έχει ληξιπρόθεσμες φορολογικές υποχρεώσεις.",
+      "definition_en": "Administrative document issued by tax authorities to certify that an individual or entity has no outstanding tax obligations.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "godparent-religious-legal-role-in-greek-family",
+      "category": "family",
+      "translations": {
+        "el": "νονός",
+        "en": "godparent (religious/legal role in Greek family)",
+        "ar": "الكفيل الروحي (الدور الديني/القانوني في الأسرة اليونانية)",
+        "fa": "پدرخوانده یا مادرخوانده (نقش مذهبی/قانونی در خانواده یونانی)",
+        "fr": "parrain/marraine (rôle religieux/juridique dans la famille grecque)"
+      },
+      "definition_el": "Ο νονός είναι το άτομο που αναλαμβάνει θρησκευτικές και νομικές υποχρεώσεις έναντι του βαπτισθέντος παιδιού στο πλαίσιο της ελληνικής οικογενειακής δομής.",
+      "definition_en": "A godparent is the person who assumes religious and legal responsibilities toward a baptized child within Greek family structure and tradition.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "godmother-religious-legal-role-in-greek-family",
+      "category": "family",
+      "translations": {
+        "el": "νονά",
+        "en": "godmother (religious/legal role in Greek family)",
+        "ar": "العرّابة (دور ديني/قانوني في الأسرة اليونانية)",
+        "fa": "خالهٔ روحی (نقش مذهبی/حقوقی در خانوادهٔ یونانی)",
+        "fr": "marraine (rôle religieux/légal dans la famille grecque)"
+      },
+      "definition_el": "Γυναίκα που έχει θρησκευτικό και νομικό ρόλο στην ελληνική κοινωνία, συνήθως ως νονά σε βαπτίσματα και με συγκεκριμένες νομικές υποχρεώσεις προς το νονό παιδί.",
+      "definition_en": "A woman who holds a religious and legal role in Greek society, typically as a godmother at baptisms and with specific legal obligations toward the godchild.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "artery-blood-vessel",
+      "category": "medical",
+      "translations": {
+        "el": "αρτηρία",
+        "en": "artery (blood vessel)",
+        "ar": "الشريان (الوعاء الدموي)",
+        "fa": "شریان (رگ خونی)",
+        "fr": "artère (vaisseau sanguin)"
+      },
+      "definition_el": "Αιμοφόρο αγγείο που μεταφέρει το αίμα από την καρδιά προς τα διάφορα όργανα του σώματος.",
+      "definition_en": "A blood vessel that carries blood from the heart to various organs and tissues throughout the body.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "vein-blood-vessel",
+      "category": "medical",
+      "translations": {
+        "el": "φλέβα",
+        "en": "vein (blood vessel)",
+        "ar": "الوريد (الأوعية الدموية)",
+        "fa": "رگ (رگ خونی)",
+        "fr": "veine (vaisseau sanguin)"
+      },
+      "definition_el": "Αγγείο του κυκλοφορικού συστήματος που μεταφέρει αίμα προς την καρδιά.",
+      "definition_en": "A blood vessel that carries blood toward the heart as part of the circulatory system.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "thyroid-gland-endocrine-organ",
+      "category": "medical",
+      "translations": {
+        "el": "θυρεοειδής αδένας",
+        "en": "thyroid gland (endocrine organ)",
+        "ar": "الغدة الدرقية (غدة صماء)",
+        "fa": "غدهٔ تیروئید (غدهٔ درونریز)",
+        "fr": "glande thyroïde (glande endocrine)"
+      },
+      "definition_el": "Ενδοκρινικό όργανο που βρίσκεται στο λαιμό και παράγει ορμόνες που ρυθμίζουν το μεταβολισμό και άλλες σημαντικές λειτουργίες του σώματος.",
+      "definition_en": "An endocrine gland located in the neck that produces hormones regulating metabolism and other vital body functions.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "adrenal-glands-endocrine-organs-above-the-kidneys",
+      "category": "medical",
+      "translations": {
+        "el": "επινεφρίδια",
+        "en": "adrenal glands (endocrine organs above the kidneys)",
+        "ar": "الغدد الكظرية (الأعضاء الصماء فوق الكليتين)",
+        "fa": "غدد فوق کلیوی (اندام های غدی فوق کلیه ها)",
+        "fr": "glandes surrénales (organes endocrines situés au-dessus des reins)"
+      },
+      "definition_el": "Ζεύγος ενδοκρινικών αδένων που βρίσκονται πάνω από τους νεφρούς και εκκρίνουν ορμόνες όπως η αδρεναλίνη και το κορτιζόλη.",
+      "definition_en": "A pair of endocrine glands located above the kidneys that secrete hormones such as adrenaline and cortisol.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "pituitary-gland-cerebral-gland",
+      "category": "medical",
+      "translations": {
+        "el": "υπόφυση",
+        "en": "pituitary gland (cerebral gland)",
+        "ar": "الغدة النخامية (الغدة الدماغية)",
+        "fa": "غده هيپوفيز (غده مغزی)",
+        "fr": "glande pituitaire (glande cérébrale)"
+      },
+      "definition_el": "Μικρή ενδοκρινική αδένα που βρίσκεται στη βάση του εγκεφάλου και ελέγχει σημαντικές ορμονικές λειτουργίες του σώματος.",
+      "definition_en": "A small endocrine gland located at the base of the brain that controls important hormonal functions in the body.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "lymph-nodes-lymphatic-system",
+      "category": "medical",
+      "translations": {
+        "el": "λεμφαδένες",
+        "en": "lymph nodes (lymphatic system)",
+        "ar": "العقد الليمفاوية (الجهاز اللمفاوي)",
+        "fa": "غدد لنفاوی (سیستم لنفاوی)",
+        "fr": "ganglions lymphatiques (système lymphatique)"
+      },
+      "definition_el": "Μικροί όργανοι του λεμφικού συστήματος που παράγουν και αποθηκεύουν λευκά αιμοσφαίρια για την καταπολέμηση λοιμώξεων.",
+      "definition_en": "Small organs of the lymphatic system that produce and store white blood cells to fight infections.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "spleen-abdominal-organ",
+      "category": "medical",
+      "translations": {
+        "el": "σπλήνας",
+        "en": "spleen (abdominal organ)",
+        "ar": "الطحال (عضو بطني)",
+        "fa": "طحال (اندام شکمی)",
+        "fr": "rate (organe abdominal)"
+      },
+      "definition_el": "Λεμφικό όργανο που βρίσκεται στην κοιλιά και συμμετέχει στη δημιουργία αιμοσφαιρίνης και στην άμυνα του σώματος.",
+      "definition_en": "A lymphoid organ located in the abdomen that participates in hemoglobin production and body immune defense.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "appendix",
+      "category": "medical",
+      "translations": {
+        "el": "σκωληκοειδής απόφυση",
+        "en": "appendix",
+        "ar": "الزائدة الدودية",
+        "fa": "آپاندیکس",
+        "fr": "appendice"
+      },
+      "definition_el": "Ένα σωληνοειδές όργανο που είναι συνδεδεμένο με το τυφλό έντερο στο κάτω δεξί μέρος της κοιλιάς.",
+      "definition_en": "A small tubular organ connected to the large intestine at the lower right side of the abdomen.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "uterus-female-reproductive-organ",
+      "category": "medical",
+      "translations": {
+        "el": "μήτρα",
+        "en": "uterus (female reproductive organ)",
+        "ar": "الرحم (عضو التكاثر الأنثوي)",
+        "fa": "رحم (اندام تولید مثل زنانه)",
+        "fr": "utérus (organe reproducteur féminin)"
+      },
+      "definition_el": "Το γυναικείο αναπαραγωγικό όργανο όπου αναπτύσσεται το έμβρυο κατά τη διάρκεια της εγκυμοσύνης.",
+      "definition_en": "The female reproductive organ in which an embryo develops during pregnancy.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "ovaries",
+      "category": "medical",
+      "translations": {
+        "el": "ωοθήκες",
+        "en": "ovaries",
+        "ar": "المبايض",
+        "fa": "تخمدان",
+        "fr": "ovaires"
+      },
+      "definition_el": "Ζεύγος αναπαραγωγικών αδένων στις γυναίκες που παράγουν ωάρια και ορμόνες.",
+      "definition_en": "A pair of reproductive glands in females that produce eggs and hormones.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "breast",
+      "category": "medical",
+      "translations": {
+        "el": "μαστός",
+        "en": "breast",
+        "ar": "الثدي",
+        "fa": "پستان",
+        "fr": "sein"
+      },
+      "definition_el": "Το θηλαστικό αδένα στο στήθος των γυναικών που παράγει γάλα για τη θρέψη του βρέφους.",
+      "definition_en": "The mammary gland in the chest of women that produces milk for infant nutrition.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "prostate-male-reproductive-organ",
+      "category": "medical",
+      "translations": {
+        "el": "προστάτης",
+        "en": "prostate (male reproductive organ)",
+        "ar": "البروستاتا (غدة الذكور التناسلية)",
+        "fa": "پروستات (غدد تناسلی نر)",
+        "fr": "prostate (glande reproductive masculine)"
+      },
+      "definition_el": "Αδένας του αρσενικού αναπαραγωγικού συστήματος που εκκρίνει υγρό για τη σύνθεση του σπέρματος.",
+      "definition_en": "A gland of the male reproductive system that secretes fluid contributing to seminal composition.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "knee-lower-limb-joint",
+      "category": "medical",
+      "translations": {
+        "el": "γόνατο",
+        "en": "knee (lower limb joint)",
+        "ar": "الركبة (مفصل الطرف السفلي)",
+        "fa": "زانو (مفصل اندام تحتانی)",
+        "fr": "genou (articulation du membre inférieur)"
+      },
+      "definition_el": "Η άρθρωση που συνδέει το μηριαίο οστό με την κνήμη και την περόνη, επιτρέποντας την κάμψη και την έκταση του κάτω άκρου.",
+      "definition_en": "The joint that connects the femur to the tibia and fibula, allowing flexion and extension of the lower limb.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "ankle-ankle-joint",
+      "category": "medical",
+      "translations": {
+        "el": "αστράγαλος",
+        "en": "ankle (ankle joint)",
+        "ar": "الكاحل (مفصل الكاحل)",
+        "fa": "مچ پا (مفصل مچ پا)",
+        "fr": "cheville (articulation de la cheville)"
+      },
+      "definition_el": "Το οστό που βρίσκεται στη σύνδεση του ποδιού με το κνήμη και το περόνη, που αποτελεί σημαντικό σημείο άρθρωσης.",
+      "definition_en": "The bone located at the junction between the foot and the tibia and fibula, forming an important joint articulation.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "thigh-lower-limb-segment",
+      "category": "medical",
+      "translations": {
+        "el": "μηρός",
+        "en": "thigh (lower limb segment)",
+        "ar": "الفخذ (جزء من الطرف السفلي)",
+        "fa": "ران (بخش اندام تحتانی)",
+        "fr": "cuisse (segment du membre inférieur)"
+      },
+      "definition_el": "Το τμήμα του σώματος που βρίσκεται μεταξύ του ισχίου και του γόνατος.",
+      "definition_en": "The part of the body located between the hip and the knee.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "rib-thoracic-bone",
+      "category": "medical",
+      "translations": {
+        "el": "πλευρά",
+        "en": "rib (thoracic bone)",
+        "ar": "الضلع (العظم الصدري)",
+        "fa": "دنده (استخوان قفسه سینه)",
+        "fr": "côte (os thoracique)"
+      },
+      "definition_el": "Το μακρύ, καμπύλο οστό που αποτελεί μέρος του θωρακικού κλωβού και προστατεύει τα εσωτερικά όργανα.",
+      "definition_en": "The long, curved bone that forms part of the rib cage and protects internal organs of the thorax.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "spinal-column-vertebral-axis",
+      "category": "medical",
+      "translations": {
+        "el": "σπονδυλική στήλη",
+        "en": "spinal column (vertebral axis)",
+        "ar": "العمود الفقري (المحور الفقري)",
+        "fa": "ستون فقرات (محور فقرات)",
+        "fr": "colonne vertébrale (axe vertébral)"
+      },
+      "definition_el": "Η σπονδυλική στήλη είναι η κεντρική κόκαλη δομή του σώματος που προστατεύει το νωτιαίο μυελό και υποστηρίζει το σκελετό.",
+      "definition_en": "The spinal column is the central bony structure of the body that protects the spinal cord and supports the skeletal framework.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "skull-cranial-bone",
+      "category": "medical",
+      "translations": {
+        "el": "κρανίο",
+        "en": "skull (cranial bone)",
+        "ar": "الجمجمة (عظم الجمجمة)",
+        "fa": "جمجمه (استخوان جمجمه)",
+        "fr": "crâne (os crânien)"
+      },
+      "definition_el": "Το κόκαλο που αποτελεί το σκελετό του κεφαλιού και προστατεύει τον εγκέφαλο.",
+      "definition_en": "The bone structure that forms the skeleton of the head and protects the brain.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "kidney-stones-renal-disease",
+      "category": "medical",
+      "translations": {
+        "el": "νεφρικοί λίθοι",
+        "en": "kidney stones (renal disease)",
+        "ar": "حصوات كلوية (أمراض كلوية)",
+        "fa": "سنگ کلیه (بیماری کلیوی)",
+        "fr": "calculs rénaux (maladie rénale)"
+      },
+      "definition_el": "Σκληρές κρυσταλλικές δομές που σχηματίζονται στα νεφρά και μπορούν να προκαλέσουν οξεία ή χρόνια νεφρική πάθηση.",
+      "definition_en": "Hard crystalline structures that form in the kidneys and can cause acute or chronic renal disease.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "gallbladder-digestive-organ",
+      "category": "medical",
+      "translations": {
+        "el": "χοληδόχος κύστη",
+        "en": "gallbladder (digestive organ)",
+        "ar": "المرارة (عضو هضمي)",
+        "fa": "کیسه صفرا (عضو گوارشی)",
+        "fr": "vésicule biliaire (organe digestif)"
+      },
+      "definition_el": "Μικρό όργανο του πεπτικού συστήματος που αποθηκεύει τη χολή και συμβάλλει στην πέψη των λιπών.",
+      "definition_en": "A small digestive organ that stores bile and aids in the digestion of fats.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "hypothyroidism-endocrine-disorder",
+      "category": "medical",
+      "translations": {
+        "el": "υποθυρεοειδισμός",
+        "en": "hypothyroidism (endocrine disorder)",
+        "ar": "قصور الغدة الدرقية (اضطراب الغدد الصماء)",
+        "fa": "کمکاری تیروئید (اختلال غدد درون‌ریز)",
+        "fr": "hypothyroïdie (trouble endocrinien)"
+      },
+      "definition_el": "Η κατάσταση που χαρακτηρίζεται από ανεπάρκεια της παραγωγής ορμονών θυρεοειδούς, που προκαλεί επιβράδυνση του μεταβολισμού και διάφορα κλινικά συμπτώματα.",
+      "definition_en": "A condition characterized by insufficient production of thyroid hormones, resulting in slowed metabolism and various clinical symptoms.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "hyperthyroidism-endocrine-disorder",
+      "category": "medical",
+      "translations": {
+        "el": "υπερθυρεοειδισμός",
+        "en": "hyperthyroidism (endocrine disorder)",
+        "ar": "فرط نشاط الغدة الدرقية (اضطراب الغدد الصماء)",
+        "fa": "فزونی کارکرد غدهٔ تیروئید (اختلال غدد درون‌ریز)",
+        "fr": "hyperthyroïdie (trouble endocrinien)"
+      },
+      "definition_el": "Ενδοκρινική πάθηση που χαρακτηρίζεται από υπερβολική παραγωγή θυρεοειδικών ορμονών, προκαλώντας ταχυκαρδία, απώλεια βάρους και άγχος.",
+      "definition_en": "An endocrine disorder characterized by excessive production of thyroid hormones, causing rapid heart rate, weight loss, and anxiety.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "iron-deficiency-anemia-hematological-condition",
+      "category": "medical",
+      "translations": {
+        "el": "αναιμία σιδηροπενική",
+        "en": "iron deficiency anemia (hematological condition)",
+        "ar": "فقر الدم بنقص الحديد (حالة دموية)",
+        "fa": "کم‌خونی ناشی از کمبود آهن (بیماری خونی)",
+        "fr": "anémie ferriprive (pathologie hématologique)"
+      },
+      "definition_el": "Αιματολογική πάθηση που χαρακτηρίζεται από ανεπάρκεια σιδήρου στον οργανισμό, με αποτέλεσμα τη μειωμένη παραγωγή αιμοσφαιρίνης και ερυθρών αιμοσφαιρίων.",
+      "definition_en": "A hematological condition characterized by insufficient iron in the body, resulting in reduced hemoglobin and red blood cell production.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "sickle-cell-disease",
+      "category": "medical",
+      "translations": {
+        "el": "δρεπανοκυτταρική αναιμία",
+        "en": "sickle cell disease",
+        "ar": "فقر الدم المنجلي",
+        "fa": "بیماری کم‌خونی سلولی‌های داتی‌شکل",
+        "fr": "drépanocytose"
+      },
+      "definition_el": "Κληρονομική αιματολογική διαταραχή που χαρακτηρίζεται από ανώμαλα κόκκινα αιμοσφαίρια σε σχήμα δρεπάνης, προκαλώντας αναιμία και αγγειακές κρίσεις.",
+      "definition_en": "An inherited blood disorder characterized by abnormal sickle-shaped red blood cells, causing anemia and vascular crises.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "mediterranean-anaemia-thalassaemia",
+      "category": "medical",
+      "translations": {
+        "el": "μεσογειακή αναιμία",
+        "en": "Mediterranean anaemia (thalassaemia)",
+        "ar": "فقر الدم المتوسطي (الثلاسيميا)",
+        "fa": "کم‌خونی مدیترانه‌ای (تالاسمی)",
+        "fr": "Anémie méditerranéenne (thalassémie)"
+      },
+      "definition_el": "Κληρονομική αιματολογική διαταραχή που χαρακτηρίζεται από ανεπάρκεια παραγωγής αιμοσφαιρίνης και συχνά απαιτεί τακτικές μεταγγίσεις αίματος.",
+      "definition_en": "An inherited blood disorder characterized by insufficient production of haemoglobin and often requiring regular blood transfusions.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "gastritis-stomach-condition",
+      "category": "medical",
+      "translations": {
+        "el": "γαστρίτιδα",
+        "en": "gastritis (stomach condition)",
+        "ar": "التهاب المعدة (حالة المعدة)",
+        "fa": "التهاب معده (بیماری معده)",
+        "fr": "gastrite (affection de l'estomac)"
+      },
+      "definition_el": "Φλεγμονή του βλεννογόνου της μεσογαστρικής κοιλότητας που προκαλεί πόνο, δυσφορία και δυσπεψία.",
+      "definition_en": "Inflammation of the stomach lining that causes pain, discomfort, and indigestion.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "gastric-ulcer-peptic-disease",
+      "category": "medical",
+      "translations": {
+        "el": "γαστρικό έλκος",
+        "en": "gastric ulcer (peptic disease)",
+        "ar": "قرحة معدية (مرض الجهاز الهضمي)",
+        "fa": "زخم معده (بیماری گوارشی)",
+        "fr": "ulcère gastrique (maladie peptique)"
+      },
+      "definition_el": "Ένα σημάδι ή πληγή στο εσωτερικό της στομάχου ή του λεπτού εντέρου που προκαλεί πόνο και δυσφορία.",
+      "definition_en": "A sore or open wound on the inside of the stomach or small intestine that causes pain and discomfort.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "colitis-intestinal-inflammation",
+      "category": "medical",
+      "translations": {
+        "el": "κολίτιδα",
+        "en": "colitis (intestinal inflammation)",
+        "ar": "التهاب القولون (التهاب الأمعاء)",
+        "fa": "کولیت (التهاب روده)",
+        "fr": "colite (inflammation intestinale)"
+      },
+      "definition_el": "Φλεγμονή του παχέος εντέρου που προκαλεί πόνο, διάρροια και άλλα γαστρεντερικά συμπτώματα.",
+      "definition_en": "Inflammation of the colon that causes pain, diarrhea, and other gastrointestinal symptoms.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "crohn-s-disease-idiopathic-inflammatory-bowel-disease",
+      "category": "medical",
+      "translations": {
+        "el": "νόσος Crohn",
+        "en": "Crohn's disease (idiopathic inflammatory bowel disease)",
+        "ar": "مرض كرون (التهاب الأمعاء المجهول السبب)",
+        "fa": "بیماری کرون (التهاب روده‌ای مجهول‌السبب)",
+        "fr": "maladie de Crohn (entéropathie inflammatoire idiopathique)"
+      },
+      "definition_el": "Χρόνια φλεγμονώδης νόσος του πεπτικού συστήματος που προκαλεί φλεγμονή στο έντερο και συνοδεύεται από διάρροια, κοιλιακό πόνο και κακή απορρόφηση θρεπτικών συστατικών.",
+      "definition_en": "A chronic inflammatory bowel disease that causes inflammation of the digestive tract, leading to diarrhea, abdominal pain, and malabsorption of nutrients.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "cirrhosis-of-the-liver-hepatic-disease",
+      "category": "medical",
+      "translations": {
+        "el": "κίρρωση ήπατος",
+        "en": "cirrhosis of the liver (hepatic disease)",
+        "ar": "تليف الكبد (مرض كبدي)",
+        "fa": "سیروز کبد (بیماری کبدی)",
+        "fr": "cirrhose du foie (maladie hépatique)"
+      },
+      "definition_el": "Χρόνια ηπατική νόσος που χαρακτηρίζεται από εκτεταμένη ίνωση του ηπατικού ιστού και απώλεια της ηπατικής λειτουργίας.",
+      "definition_en": "A chronic liver disease characterized by extensive fibrosis of hepatic tissue and progressive loss of liver function.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "dermatitis-skin-condition",
+      "category": "medical",
+      "translations": {
+        "el": "δερματίτιδα",
+        "en": "dermatitis (skin condition)",
+        "ar": "التهاب الجلد (حالة جلدية)",
+        "fa": "التهاب الجلد (بیماری پوستی)",
+        "fr": "dermatite (affection cutanée)"
+      },
+      "definition_el": "Φλεγμονή του δέρματος που προκαλεί κνησμό, ερύθημα και πιθανή εκδόρια, συχνά αποτέλεσμα αλλεργικής αντίδρασης, επαφής ή λοίμωξης.",
+      "definition_en": "Inflammation of the skin causing itching, redness, and possible scaling, often resulting from allergic reaction, contact irritation, or infection.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "eczema-skin-condition",
+      "category": "medical",
+      "translations": {
+        "el": "έκζεμα",
+        "en": "eczema (skin condition)",
+        "ar": "الإكزيما (حالة جلدية)",
+        "fa": "اگزما (بیماری پوستی)",
+        "fr": "eczéma (affection cutanée)"
+      },
+      "definition_el": "Χρόνια δερματική φλεγμονώδης πάθηση που χαρακτηρίζεται από κνησμό, ερύθημα και ξηρότητα του δέρματος.",
+      "definition_en": "A chronic inflammatory skin condition characterized by itching, redness, and dry skin.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "scabies-chronic-skin-condition",
+      "category": "medical",
+      "translations": {
+        "el": "ψωρίαση",
+        "en": "scabies (chronic skin condition)",
+        "ar": "الجرب (حالة جلدية مزمنة)",
+        "fa": "خارش (بیماری پوستی مزمن)",
+        "fr": "gale (affection cutanée chronique)"
+      },
+      "definition_el": "Μολυσματική δερματική νόσος που προκαλείται από το ακάρι Sarcoptes scabiei, χαρακτηρίζεται από έντονο κνησμό και εξανθήματα, συχνή σε συνθήκες πολυσυχνίας και κακής υγιεινής.",
+      "definition_en": "A contagious skin disease caused by the mite Sarcoptes scabiei, characterized by intense itching and rash, commonly occurring in overcrowded conditions with poor hygiene.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "epilepsy-neurological-condition",
+      "category": "medical",
+      "translations": {
+        "el": "επιληψία",
+        "en": "epilepsy (neurological condition)",
+        "ar": "الصرع (حالة عصبية)",
+        "fa": "صرع (اختلال عصبی)",
+        "fr": "épilepsie (affection neurologique)"
+      },
+      "definition_el": "Χρόνια νευρολογική διαταραχή που χαρακτηρίζεται από επαναλαμβανόμενες κρίσεις επιληψίας.",
+      "definition_en": "A chronic neurological disorder characterized by recurrent seizures.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "parkinson-s-disease-neurodegenerative-disease",
+      "category": "medical",
+      "translations": {
+        "el": "νόσος Πάρκινσον",
+        "en": "Parkinson's disease (neurodegenerative disease)",
+        "ar": "مرض الزهايمر (مرض التنكس العصبي)",
+        "fa": "بیماری پارکینسون (بیماری تخریب اعصاب)",
+        "fr": "maladie de Parkinson (maladie neurodégénérative)"
+      },
+      "definition_el": "Χρόνια νευροεκφυλιστική νόσος του κεντρικού νευρικού συστήματος που προκαλεί τρόμο, δυσκινησίες και προβλήματα κινητικότητας.",
+      "definition_en": "A chronic neurodegenerative disorder of the central nervous system characterized by tremor, movement difficulties, and motor impairment.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "alzheimer-s-dementia-neurodegenerative-disease",
+      "category": "medical",
+      "translations": {
+        "el": "άνοια Αλτσχάιμερ",
+        "en": "Alzheimer's dementia (neurodegenerative disease)",
+        "ar": "الخرف الزهايمري (مرض تنكسي عصبي)",
+        "fa": "زوال عقل آلزایمری (بیماری تخریب کننده اعصاب)",
+        "fr": "démence d'Alzheimer (maladie neurodégénérative)"
+      },
+      "definition_el": "Χρόνια νευροεκφυλιστική νόσος που προκαλεί προοδευτική απώλεια νοητικών ικανοτήτων και μνήμης.",
+      "definition_en": "A chronic neurodegenerative disease causing progressive loss of cognitive abilities and memory.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "multiple-sclerosis",
+      "category": "medical",
+      "translations": {
+        "el": "σκλήρυνση κατά πλάκας",
+        "en": "multiple sclerosis",
+        "ar": "التصلب اللويحي المتعدد",
+        "fa": "تصلب مختاری",
+        "fr": "sclérose en plaques"
+      },
+      "definition_el": "Χρόνια νευρολογική νόσος του κεντρικού νευρικού συστήματος που χαρακτηρίζεται από φλεγμονή και βλάβη της μυελίνης των νευρικών ινών.",
+      "definition_en": "A chronic neurological disease of the central nervous system characterized by inflammation and damage to the myelin sheath of nerve fibers.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "infectious-mononucleosis-infection",
+      "category": "medical",
+      "translations": {
+        "el": "μολυσματική μονοπυρήνωση",
+        "en": "infectious mononucleosis (infection)",
+        "ar": "داء كثرة الوحيدات العدوائي",
+        "fa": "عفونت مونونوکلئوز عفونی",
+        "fr": "mononucléose infectieuse"
+      },
+      "definition_el": "Λοιμώδης νόσος που προκαλείται από τον ιό Epstein-Barr και χαρακτηρίζεται από πυρετό, ανgin, διόγκωση αδένων και κόπωση.",
+      "definition_en": "An infectious disease caused by the Epstein-Barr virus, characterized by fever, sore throat, swollen lymph nodes, and fatigue.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "whooping-cough-pertussis-childhood-respiratory-infection",
+      "category": "medical",
+      "translations": {
+        "el": "κοκκύτης",
+        "en": "whooping cough (pertussis, childhood respiratory infection)",
+        "ar": "السعار الديكي (السعال الديكي، عدوى الجهاز التنفسي عند الأطفال)",
+        "fa": "سرفه صد روزه (عفونت تنفسی کودکان)",
+        "fr": "coqueluche (infection respiratoire de l'enfant)"
+      },
+      "definition_el": "Μεταδοτική βακτηριακή λοίμωξη του αναπνευστικού συστήματος που προκαλεί σοβαρές προσβολές βήχα, ιδιαίτερα συχνή και κίνδυνος στα παιδιά.",
+      "definition_en": "A contagious bacterial infection of the respiratory system characterized by severe coughing fits, particularly common and dangerous in children.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "meningitis-central-nervous-system-infection",
+      "category": "medical",
+      "translations": {
+        "el": "μηνιγγίτιδα",
+        "en": "meningitis (central nervous system infection)",
+        "ar": "التهاب السحايا (عدوى الجهاز العصبي المركزي)",
+        "fa": "مننژیت (عفونت سیستم عصبی مرکزی)",
+        "fr": "méningite (infection du système nerveux central)"
+      },
+      "definition_el": "Λοίμωξη των μεμβρανών που περιβάλλουν το εγκέφαλο και τον νωτιαίο μυελό, που μπορεί να προκληθεί από βακτήρια, ιούς ή άλλους παθογόνους.",
+      "definition_en": "An infection of the membranes surrounding the brain and spinal cord, which can be caused by bacteria, viruses, or other pathogens.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "ebola-viral-hemorrhagic-fever",
+      "category": "medical",
+      "translations": {
+        "el": "Ebola",
+        "en": "Ebola (viral hemorrhagic fever)",
+        "ar": "إيبولا (حمى نزفية فيروسية)",
+        "fa": "ابولا (تب خونریزی ویروسی)",
+        "fr": "Ebola (fièvre hémorragique virale)"
+      },
+      "definition_el": "Σοβαρή και συχνά θανατηφόρα λοιμώδης ασθένεια που προκαλείται από τον ιό Ebola και χαρακτηρίζεται από αιμορραγία και πολυοργανική ανεπάρκεια.",
+      "definition_en": "A serious and often fatal infectious disease caused by the Ebola virus, characterized by hemorrhaging and multi-organ failure.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "covid-19-viral-infection",
+      "category": "medical",
+      "translations": {
+        "el": "COVID-19",
+        "en": "COVID-19 (viral infection)",
+        "ar": "كوفيد-19 (عدوى فيروسية)",
+        "fa": "کووید-۱۹ (عفونت ویروسی)",
+        "fr": "COVID-19 (infection virale)"
+      },
+      "definition_el": "Μία μολυσματική νόσος που προκαλείται από τον ιό SARS-CoV-2 και έχει σημαντικές επιπτώσεις στη δημόσια υγεία και στις διαδικασίες υποδοχής προσφύγων.",
+      "definition_en": "An infectious disease caused by the SARS-CoV-2 virus that has significant impacts on public health and refugee reception procedures.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "brucellosis-zoonotic-disease",
+      "category": "medical",
+      "translations": {
+        "el": "μπρουκέλλωση",
+        "en": "brucellosis (zoonotic disease)",
+        "ar": "داء البروسيلات (مرض حيواني المنشأ)",
+        "fa": "بروسلوز (بیماری حیوانی منشأ)",
+        "fr": "brucellose (maladie zoonotique)"
+      },
+      "definition_el": "Μολυσματική ασθένεια που μεταδίδεται από ζώα στον άνθρωπο, προκαλούμενη από βακτήρια του γένους Brucella.",
+      "definition_en": "An infectious disease transmitted from animals to humans, caused by Brucella bacteria, commonly acquired through contact with infected livestock or contaminated food products.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "leprosy-mycobacterial-disease",
+      "category": "medical",
+      "translations": {
+        "el": "λέπρα",
+        "en": "leprosy (mycobacterial disease)",
+        "ar": "الجذام (مرض بكتيري فطري)",
+        "fa": "بیماری جذام (بیماری میکوباکتریایی)",
+        "fr": "lèpre (maladie mycobactérienne)"
+      },
+      "definition_el": "Χρόνια μολυσματική νόσος που προκαλείται από το βακτήριο Mycobacterium leprae και επηρεάζει το δέρμα, τα περιφερικά νεύρα και άλλα όργανα.",
+      "definition_en": "A chronic infectious disease caused by the bacterium Mycobacterium leprae that affects the skin, peripheral nerves, and other organs.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "dementia-cognitive-disorder",
+      "category": "medical",
+      "translations": {
+        "el": "άνοια",
+        "en": "dementia (cognitive disorder)",
+        "ar": "الخرف (اضطراب معرفي)",
+        "fa": "زوال عقل (اختلال شناختی)",
+        "fr": "démence (trouble cognitif)"
+      },
+      "definition_el": "Προοδευτική νευρολογική κατάσταση που χαρακτηρίζεται από σταδιακή απώλεια γνωσιακών λειτουργιών, συμπεριλαμβανομένης της μνήμης, της σκέψης και της κρίσης.",
+      "definition_en": "A progressive neurological condition characterized by gradual loss of cognitive functions, including memory, thinking, and judgment.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "dental-caries-tooth-decay",
+      "category": "medical",
+      "translations": {
+        "el": "τερηδόνα",
+        "en": "dental caries (tooth decay)",
+        "ar": "تسوس الأسنان",
+        "fa": "پوسیدگی دندان",
+        "fr": "carie dentaire"
+      },
+      "definition_el": "Λοίμωξη και αποσύνθεση της δοντικής δομής που προκαλείται από βακτήρια και άλλα παθογόνα.",
+      "definition_en": "Bacterial infection and decay of tooth structure caused by acid-producing microorganisms.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "dental-abscess-dental-emergency",
+      "category": "medical",
+      "translations": {
+        "el": "οδοντικό απόστημα",
+        "en": "dental abscess (dental emergency)",
+        "ar": "خراج سني (حالة طوارئ طب أسنان)",
+        "fa": "آبسه دندانی (اورژانس دندانپزشکی)",
+        "fr": "abcès dentaire (urgence dentaire)"
+      },
+      "definition_el": "Σοβαρή και επείγουσα οδοντιατρική κατάσταση που χαρακτηρίζεται από συσσώρευση πύου στη ρίζα του δοντιού ή το ούλο, συνήθως λόγω μόλυνσης και απαιτεί άμεση ιατρική παρέμβαση.",
+      "definition_en": "A serious and urgent dental condition characterized by accumulation of pus at the tooth root or gum, usually caused by infection, requiring immediate medical intervention.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "maxillofacial-surgeon",
+      "category": "medical",
+      "translations": {
+        "el": "γναθοπροσωπικός χειρουργός",
+        "en": "maxillofacial surgeon",
+        "ar": "جراح الفكين والوجه",
+        "fa": "جراح فک و صورت",
+        "fr": "chirurgien maxillo-facial"
+      },
+      "definition_el": "Ιατρός ειδικευμένος στη χειρουργική αντιμετώπιση παθήσεων και τραυμάτων των σιαγόνων, του προσώπου και των συναφών δομών.",
+      "definition_en": "A physician specialized in surgical treatment of diseases, injuries, and conditions affecting the jaws, face, and related structures.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "denture-dental-prosthesis",
+      "category": "medical",
+      "translations": {
+        "el": "οδοντοστοιχία",
+        "en": "denture (dental prosthesis)",
+        "ar": "طقم أسنان (تعويض سني)",
+        "fa": "دندان مصنوعی (ارتوپروتزی دندانی)",
+        "fr": "dentier (prothèse dentaire)"
+      },
+      "definition_el": "Τεχνητή οδοντοστοιχία που χρησιμοποιείται για την αντικατάσταση των χαμένων φυσικών δοντιών και περιστοιχίου.",
+      "definition_en": "An artificial dental prosthesis used to replace missing natural teeth and surrounding tissues.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "myopia-refractive-error",
+      "category": "medical",
+      "translations": {
+        "el": "μυωπία",
+        "en": "myopia (refractive error)",
+        "ar": "قصر النظر (خطأ انكساري)",
+        "fa": "نزدیک‌بینی (اختلال انکسار نور)",
+        "fr": "myopie (erreur de réfraction)"
+      },
+      "definition_el": "Διαθλαστικό σφάλμα του οφθαλμού όπου το φως εστιάζεται μπροστά από τον αμφιβληστροειδή, προκαλώντας θόλωση της όρασης σε μακρινά αντικείμενα.",
+      "definition_en": "A refractive error of the eye in which light focuses in front of the retina, causing blurred vision for distant objects.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "hyperopia-refractive-error",
+      "category": "medical",
+      "translations": {
+        "el": "υπερμετρωπία",
+        "en": "hyperopia (refractive error)",
+        "ar": "قصو النظر (خطأ انكساري)",
+        "fa": "دوربینی (خطای شکست نور)",
+        "fr": "hypermétropie (erreur de réfraction)"
+      },
+      "definition_el": "Διαθλαστικό σφάλμα του ματιού όπου το φως εστιάζεται πίσω από τον αμφιβληστροειδή, προκαλώντας δυσκολία στη λήψη οράματος από κοντά.",
+      "definition_en": "A refractive error of the eye where light focuses behind the retina, causing difficulty with near vision.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "glaucoma",
+      "category": "medical",
+      "translations": {
+        "el": "γλαύκωμα",
+        "en": "glaucoma",
+        "ar": "الجلوكوما",
+        "fa": "گلوکوما",
+        "fr": "glaucome"
+      },
+      "definition_el": "Οφθαλμολογική πάθηση που χαρακτηρίζεται από αυξημένη ενδοφθάλμια πίεση και προοδευτική βλάβη του οπτικού νεύρου.",
+      "definition_en": "An eye disease characterized by elevated intraocular pressure leading to progressive damage of the optic nerve and vision loss.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "cataract-ophthalmological-condition",
+      "category": "medical",
+      "translations": {
+        "el": "καταρράκτης",
+        "en": "cataract (ophthalmological condition)",
+        "ar": "إعتام عدسة العين (حالة طب العيون)",
+        "fa": "آب سفید چشم (بیماری چشم پزشکی)",
+        "fr": "cataracte (affection ophtalmologique)"
+      },
+      "definition_el": "Θόλωση του φακού του ματιού που προκαλεί μείωση της όρασης και μπορεί να οδηγήσει σε τύφλωση εάν δεν αντιμετωπιστεί ιατρικά.",
+      "definition_en": "A clouding of the lens of the eye that causes vision impairment and can lead to blindness if left untreated medically.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "conjunctivitis-eye-infection",
+      "category": "medical",
+      "translations": {
+        "el": "επιπεφυκίτιδα",
+        "en": "conjunctivitis (eye infection)",
+        "ar": "التهاب الملتحمة (عدوى العين)",
+        "fa": "التهاب ملتحمه (عفونت چشم)",
+        "fr": "conjonctivite (infection oculaire)"
+      },
+      "definition_el": "Φλεγμονή του επιπεφυκότα χιτώνα του οφθαλμού που προκαλείται συνήθως από ιές, βακτήρια ή αλλεργικές αντιδράσεις.",
+      "definition_en": "Inflammation of the conjunctiva (the membrane covering the white part of the eye and inner eyelids) typically caused by viral, bacterial, or allergic reactions.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "dissociative-identity-disorder",
+      "category": "medical",
+      "translations": {
+        "el": "διαχωριστική διαταραχή ταυτότητας",
+        "en": "Dissociative Identity Disorder",
+        "ar": "اضطراب الهوية الانفصالي",
+        "fa": "اختلال هویت تفکیک‌شده",
+        "fr": "Trouble de l'identité dissociative"
+      },
+      "definition_el": "Ψυχιατρική διαταραχή που χαρακτηρίζεται από την ύπαρξη δύο ή περισσότερων ξεχωριστών καταστάσεων ταυτότητας ή προσωπικότητας στο ίδιο άτομο.",
+      "definition_en": "A psychiatric disorder characterized by the presence of two or more distinct identity or personality states within the same individual.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "borderline-personality-disorder-psychiatric-diagnosis",
+      "category": "medical",
+      "translations": {
+        "el": "διαταραχή προσωπικότητας οριακού τύπου",
+        "en": "borderline personality disorder (psychiatric diagnosis)",
+        "ar": "اضطراب الشخصية الحدية (التشخيص النفسي)",
+        "fa": "اختلال شخصیت مرزی (تشخیص روانپزشکی)",
+        "fr": "trouble de la personnalité borderline (diagnostic psychiatrique)"
+      },
+      "definition_el": "Ψυχιατρική διαταραχή που χαρακτηρίζεται από ασταθή συσχετίσεις, φόβο εγκατάλειψης, ασταθή αυτοεικόνα και ορμητική συμπεριφορά.",
+      "definition_en": "A psychiatric disorder characterized by unstable relationships, fear of abandonment, unstable self-image, and impulsive behaviors.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "anorexia-nervosa-eating-disorder",
+      "category": "medical",
+      "translations": {
+        "el": "νευρική ανορεξία",
+        "en": "anorexia nervosa (eating disorder)",
+        "ar": "فقدان الشهية العصابي (اضطراب الأكل)",
+        "fa": "بی‌اشتهایی عصبی (اختلال خوردن)",
+        "fr": "anorexie mentale (trouble du comportement alimentaire)"
+      },
+      "definition_el": "Σοβαρή ψυχική διαταραχή που χαρακτηρίζεται από περιορισμό της πρόσληψης τροφής, έντονο φόβο για αύξηση βάρους και δυστοπική αντίληψη του σωματικού σχήματος.",
+      "definition_en": "A serious mental health condition characterized by severe food restriction, intense fear of weight gain, and distorted body image perception.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "bulimia-eating-disorder",
+      "category": "medical",
+      "translations": {
+        "el": "βουλιμία",
+        "en": "bulimia (eating disorder)",
+        "ar": "الشره المرضي (اضطراب الأكل)",
+        "fa": "بولیمیا (اختلال در خوردن)",
+        "fr": "boulimie (trouble alimentaire)"
+      },
+      "definition_el": "Ψυχική διαταραχή που χαρακτηρίζεται από επαναλαμβανόμενα επεισόδια υπερφαγίας ακολουθούμενα από συμπεριφορές εξάλειψης όπως εμέτοι ή χρήση καθαρτικών.",
+      "definition_en": "A mental health disorder characterized by recurrent episodes of binge eating followed by compensatory behaviors such as vomiting or laxative use.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "anxiety-attack-psychiatric-symptom",
+      "category": "medical",
+      "translations": {
+        "el": "κρίση άγχους",
+        "en": "anxiety attack (psychiatric symptom)",
+        "ar": "نوبة قلق (عرض نفسي)",
+        "fa": "حمله اضطراب (عارضه روانپزشکی)",
+        "fr": "crise d'anxiété (symptôme psychiatrique)"
+      },
+      "definition_el": "Ξαφνική και έντονη κρίση φόβου ή άγχους συνοδευόμενη από σωματικά και ψυχικά συμπτώματα που συχνά εμφανίζεται σε άτομα που έχουν υποστεί τραύμα ή στρες.",
+      "definition_en": "A sudden and intense episode of fear or anxiety accompanied by physical and psychological symptoms, commonly experienced by trauma survivors or individuals under extreme stress.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "hypervigilance",
+      "category": "medical",
+      "translations": {
+        "el": "υπερεγρήγορση",
+        "en": "hypervigilance",
+        "ar": "فرط اليقظة",
+        "fa": "بیش‌هوشیاری",
+        "fr": "hypervigilance"
+      },
+      "definition_el": "Κατάσταση συνεχούς αυξημένης συναγερμότητας και προσοχής στο περιβάλλον, συνήθως ως σύμπτωμα διαταραχής μετατραυματικού στρες (PTSD).",
+      "definition_en": "A state of heightened and persistent alertness to environmental threats, typically occurring as a symptom of post-traumatic stress disorder (PTSD).",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "re-experiencing-of-traumatic-event-flashback-ptsd",
+      "category": "medical",
+      "translations": {
+        "el": "επανάληψη τραυματικού βιώματος",
+        "en": "re-experiencing of traumatic event (flashback, PTSD)",
+        "ar": "إعادة عيش الحدث الصادم (فلاش باك، اضطراب ما بعد الصدمة)",
+        "fa": "باززندگی کردن تجربه تروماتیک (فلش بک، اختلال استرس پس از سانحه)",
+        "fr": "reviviscence du trauma (flashback, TSPT)"
+      },
+      "definition_el": "Ανεπιθύμητη επανάληψη ή ανάκληση της μνήμης ενός τραυματικού γεγονότος που προκαλεί έντονη συναισθηματική και φυσιολογική αντίδραση, χαρακτηριστικό σύμπτωμα της διαταραχής μετατραυματικού στρες (PTSD).",
+      "definition_en": "Involuntary recurrence or intrusive recall of a traumatic event memory that triggers intense emotional and physiological responses, a characteristic symptom of post-traumatic stress disorder (PTSD).",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "dissociation",
+      "category": "medical",
+      "translations": {
+        "el": "αποσύνδεση",
+        "en": "dissociation",
+        "ar": "فك الارتباط",
+        "fa": "جدایی روانی",
+        "fr": "dissociation"
+      },
+      "definition_el": "Ψυχιατρικό σύμπτωμα κατά το οποίο το άτομο αισθάνεται αποκομμένο από τα συναισθήματά του, τις σκέψεις του ή το σώμα του, συχνά ως αντιδραστικό μηχανισμό σε τραύμα ή σοβαρό άγχος.",
+      "definition_en": "A psychiatric symptom in which a person experiences detachment from their emotions, thoughts, or body, often as a reactive mechanism to trauma or severe stress.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "emotional-numbing",
+      "category": "medical",
+      "translations": {
+        "el": "συναισθηματική αναισθησία",
+        "en": "emotional numbing",
+        "ar": "تخدير عاطفي",
+        "fa": "بی‌حسی عاطفی",
+        "fr": "engourdissement émotionnel"
+      },
+      "definition_el": "Κατάσταση ψυχικής αναισθησίας κατά την οποία ο άτομο εμφανίζει μειωμένη ικανότητα να αισθάνεται ή να εκφράζει συναισθήματα, συχνά ως σύμπτωμα του διαταραχής μετατραυματικού στρες (PTSD).",
+      "definition_en": "A psychological state of reduced capacity to feel or express emotions, often occurring as a symptom of post-traumatic stress disorder (PTSD) in asylum seekers and refugees exposed to severe trauma.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "post-traumatic-insomnia-sleep-disorder-accompanying-ptsd",
+      "category": "medical",
+      "translations": {
+        "el": "αϋπνία μετά από τραύμα",
+        "en": "post-traumatic insomnia (sleep disorder accompanying PTSD)",
+        "ar": "الأرق بعد الصدمة (اضطراب النوم المصاحب لاضطراب ما بعد الصدمة)",
+        "fa": "بی‌خوابی پس از تروما (اختلال خواب همراه با PTSD)",
+        "fr": "insomnie post-traumatique (trouble du sommeil accompagnant le PTSD)"
+      },
+      "definition_el": "Διαταραχή ύπνου που εμφανίζεται ως σύμπτωμα του διαταραχής μετατραυματικού στρες και χαρακτηρίζεται από δυσκολία στην έναρξη ή συνέχεια του ύπνου λόγω τραυματικών εμπειριών.",
+      "definition_en": "A sleep disorder that manifests as a symptom of post-traumatic stress disorder, characterized by difficulty initiating or maintaining sleep due to traumatic experiences.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "administrative-court",
+      "category": "legal",
+      "translations": {
+        "el": "διοικητικό δικαστήριο",
+        "en": "administrative court",
+        "ar": "المحكمة الإدارية",
+        "fa": "دادگاه اداری",
+        "fr": "tribunal administratif"
+      },
+      "definition_el": "Δικαστήριο που έχει δικαιοδοσία να εξετάζει διαφορές μεταξύ ιδιωτών και δημόσιας διοίκησης, συμπεριλαμβανομένων αποφάσεων σχετικών με το άσυλο.",
+      "definition_en": "A court with jurisdiction to examine disputes between individuals and public administration, including decisions related to asylum applications.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "administrative-court-of-appeal",
+      "category": "legal",
+      "translations": {
+        "el": "διοικητικό εφετείο",
+        "en": "administrative court of appeal",
+        "ar": "محكمة الاستئناف الإدارية",
+        "fa": "دادگاه تجدیدنظر اداری",
+        "fr": "cour administrative d'appel"
+      },
+      "definition_el": "Δικαστήριο που εξετάζει τις εφέσεις κατά αποφάσεων διοικητικών αρχών, συμπεριλαμβανομένων αποφάσεων σε θέματα ασύλου και μετανάστευσης.",
+      "definition_en": "A court that reviews appeals against decisions made by administrative authorities, including decisions on asylum and migration matters.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "multi-member-court-of-first-instance-court-composition",
+      "category": "legal",
+      "translations": {
+        "el": "Πολυμελές Πρωτοδικείο",
+        "en": "Multi-member Court of First Instance (court composition)",
+        "ar": "محكمة ابتدائية متعددة الأعضاء (تشكيل المحكمة)",
+        "fa": "دادگاه درجه اول چند نفری (ترکیب دادگاه)",
+        "fr": "Tribunal de première instance collégial (composition du tribunal)"
+      },
+      "definition_el": "Δικαστήριο πρώτης βαθμίδας που αποτελείται από περισσότερους του ενός δικαστές και αποφασίζει συλλογικά σε υποθέσεις ασύλου και μετανάστευσης.",
+      "definition_en": "A court of first instance composed of multiple judges who decide collectively on asylum and migration cases.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "single-member-court-of-first-instance-court-composition",
+      "category": "legal",
+      "translations": {
+        "el": "Μονομελές Πρωτοδικείο",
+        "en": "Single-Member Court of First Instance (court composition)",
+        "ar": "محكمة ابتدائية بعضو واحد (تشكيل المحكمة)",
+        "fa": "دادگاه تک‌نفره درجه اول (ترکیب دادگاه)",
+        "fr": "Tribunal d'instance monocratique (composition du tribunal)"
+      },
+      "definition_el": "Δικαστήριο πρώτης βαθμίδας που αποτελείται από έναν μόνο δικαστή, ο οποίος ασκεί τη δικαστική εξουσία και αποφασίζει τις υποθέσεις κατά τη νόμιμη διαδικασία.",
+      "definition_en": "A court of first instance composed of a single judge who exercises judicial authority and decides cases according to legal procedure.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "ordinary-procedure-type-of-civil-action",
+      "category": "legal",
+      "translations": {
+        "el": "τακτική διαδικασία",
+        "en": "ordinary procedure (type of civil action)",
+        "ar": "الإجراء العادي (نوع من الدعوى المدنية)",
+        "fa": "رویه معمولی (نوع از دعوی حقوقی)",
+        "fr": "procédure ordinaire (type d'action civile)"
+      },
+      "definition_el": "Η τακτική διαδικασία είναι το συνηθισμένο δικαστικό πλαίσιο για την επίλυση αστικών διαφορών με τήρηση όλων των κανονικών σταδίων.",
+      "definition_en": "The ordinary procedure is the standard judicial framework for resolving civil disputes while following all regular procedural stages.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "voluntary-jurisdiction-procedure-type-of-civil-proceeding",
+      "category": "legal",
+      "translations": {
+        "el": "διαδικασία εκουσίας δικαιοδοσίας",
+        "en": "voluntary jurisdiction procedure (type of civil proceeding)",
+        "ar": "إجراء الولاية الاختيارية (نوع من الدعوى المدنية)",
+        "fa": "رویه صلاحیت داوطلبانه (نوع رسیدگی حقوقی)",
+        "fr": "procédure de juridiction volontaire (type de procédure civile)"
+      },
+      "definition_el": "Διαδικασία δικαστική που αφορά θέματα μη αντιδικονομικής φύσης, όπως η συγκατάθεση και η κηδεμονία, που δεν περιέχουν διαφορά μεταξύ αντιδίκων.",
+      "definition_en": "A civil court procedure dealing with non-contentious matters such as guardianship and consent issues, where there is no dispute between parties.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "interim-measures-before-court-urgent-judicial-protection",
+      "category": "legal",
+      "translations": {
+        "el": "ασφαλιστικά μέτρα ενώπιον δικαστή",
+        "en": "interim measures before court (urgent judicial protection)",
+        "ar": "تدابير مؤقتة أمام المحكمة (الحماية القضائية العاجلة)",
+        "fa": "تدابیر موقت پیش روی دادگاه (حفاظت قضایی فوری)",
+        "fr": "mesures provisoires devant le tribunal (protection judiciaire urgente)"
+      },
+      "definition_el": "Προσωρινές δικαστικές αποφάσεις που εκδίδονται για την άμεση προστασία δικαιωμάτων του αιτούντα άσυλο κατά την εκδίκαση της υπόθεσής του.",
+      "definition_en": "Temporary judicial measures issued to provide immediate protection of an asylum applicant's rights during the examination of their case.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "sworn-statement-procedural-act",
+      "category": "legal",
+      "translations": {
+        "el": "κατάθεση ενόρκως",
+        "en": "sworn statement (procedural act)",
+        "ar": "إفادة موّلفة بحلف اليمين (إجراء قضائي)",
+        "fa": "شهادت تحت سوگند (اقدام رویه‌ای)",
+        "fr": "déposition sous serment (acte procédural)"
+      },
+      "definition_el": "Η υποχρεωτική δήλωση αληθείας που υποβάλλει μάρτυρας ή αιτών ενώπιον δικαστικής αρχής με προηγούμενη ορκωμοσία, η οποία αποτελεί νόμιμη διαδικαστική πράξη στη διαδικασία ασύλου.",
+      "definition_en": "A mandatory truthful statement made by a witness or applicant before a judicial authority following a sworn oath, which constitutes a legal procedural act in asylum proceedings.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "investigating-judge",
+      "category": "legal",
+      "translations": {
+        "el": "ανακριτής",
+        "en": "investigating judge",
+        "ar": "قاضي التحقيق",
+        "fa": "قاضی تحقیق",
+        "fr": "juge d'instruction"
+      },
+      "definition_el": "Δικαστικός λειτουργός που διενεργεί την προδικασία έρευνα και συλλέγει αποδείξεις σε ποινικές υποθέσεις πριν την δίκη.",
+      "definition_en": "A judicial officer who conducts preliminary investigation and gathers evidence in criminal cases before trial.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "interrogation-criminal-trial-stage",
+      "category": "legal",
+      "translations": {
+        "el": "ανάκριση",
+        "en": "interrogation (criminal trial stage)",
+        "ar": "الاستجواب (مرحلة المحاكمة الجنائية)",
+        "fa": "بازجویی (مرحله دادرسی جنایی)",
+        "fr": "interrogatoire (phase du procès pénal)"
+      },
+      "definition_el": "Το στάδιο της ποινικής διαδικασίας κατά το οποίο ο κατηγορούμενος ή ο μάρτυρας ερωτάται από τις αρχές για τα περιστατικά που σχετίζονται με υποτιθέμενο αδίκημα.",
+      "definition_en": "The stage of criminal proceedings in which an accused person or witness is questioned by authorities regarding facts related to an alleged crime.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "defence-statement-procedural-act-of-the-accused",
+      "category": "legal",
+      "translations": {
+        "el": "απολογία",
+        "en": "defence statement (procedural act of the accused)",
+        "ar": "الدفاع (إجراء قانوني من المتهم)",
+        "fa": "دفاعیه (اقدام رویه ای متهم)",
+        "fr": "défense (acte procédural de l'accusé)"
+      },
+      "definition_el": "Η δήλωση ή αναφορά του κατηγορουμένου κατά τη διάρκεια της δικαστικής διαδικασίας, με την οποία απαντά στις κατηγορίες που του επιβάλλονται.",
+      "definition_en": "The statement or oral account made by an accused person during legal proceedings in which they respond to charges brought against them.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "summons-court-summons-document",
+      "category": "legal",
+      "translations": {
+        "el": "κλητήριο θέσπισμα",
+        "en": "summons (court summons document)",
+        "ar": "استدعاء قضائي (وثيقة استدعاء للمحكمة)",
+        "fa": "احضاریه دادرسی (سند احضار به دادگاه)",
+        "fr": "assignation (document d'assignation en justice)"
+      },
+      "definition_el": "Επίσημο έγγραφο με το οποίο ένα δικαστήριο κλητεύει ένα πρόσωπο να παρουσιαστεί σε ακροαματική διαδικασία ή δίκη.",
+      "definition_en": "An official document issued by a court that requires a person to appear before the court for a hearing or trial proceedings.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "adjournment-of-proceedings",
+      "category": "legal",
+      "translations": {
+        "el": "αναβολή δικασίμου",
+        "en": "adjournment of proceedings",
+        "ar": "تأجيل الإجراءات القضائية",
+        "fa": "تعویق رسیدگی (دادرسی)",
+        "fr": "ajournement de l'audience"
+      },
+      "definition_el": "Η αναβολή του δικαστικού ακροάματος ή της συνεδρίασης σε μεταγενέστερη ημερομηνία κατά τη διάρκεια διαδικασίας ασύλου ή άλλης δικαστικής διαδικασίας.",
+      "definition_en": "The postponement of a court hearing or session to a later date during asylum or other legal proceedings.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "free-lawyer-legal-aid",
+      "category": "legal",
+      "translations": {
+        "el": "δωρεάν δικηγόρος",
+        "en": "free lawyer (legal aid)",
+        "ar": "محام مجاني (المساعدة القانونية)",
+        "fa": "وکیل رایگان (کمک حقوقی)",
+        "fr": "avocat gratuit (aide juridique)"
+      },
+      "definition_el": "Δικηγόρος που παρέχεται δωρεάν από το κράτος ή μη κερδοσκοπικές οργανώσεις για να συμβουλεύει και να εκπροσωπεί αιτούντες άσυλο στη διαδικασία ασύλου.",
+      "definition_en": "A lawyer provided free of charge by the state or non-profit organizations to advise and represent asylum seekers in asylum proceedings.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "mediation-alternative-dispute-resolution",
+      "category": "legal",
+      "translations": {
+        "el": "διαμεσολάβηση",
+        "en": "mediation (alternative dispute resolution)",
+        "ar": "الوساطة (حل النزاعات البديل)",
+        "fa": "میانجیگری (حل جایگزین اختلافات)",
+        "fr": "médiation (résolution alternative des différends)"
+      },
+      "definition_el": "Διαδικασία εναλλακτική της δικαστικής επίλυσης διαφορών, στην οποία ένας ουδέτερος τρίτος (διαμεσολαβητής) βοηθά τα μέρη να επιτύχουν συμφωνία.",
+      "definition_en": "An alternative dispute resolution process in which a neutral third party (mediator) assists the parties in reaching a mutually acceptable agreement.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "court-costs-legal-fees",
+      "category": "legal",
+      "translations": {
+        "el": "δικαστικά έξοδα",
+        "en": "court costs (legal fees)",
+        "ar": "المصاريف القضائية (تكاليف الدعوى)",
+        "fa": "هزینه‌های دادرسی (هزینه رافع دعوی)",
+        "fr": "frais de justice (dépens)"
+      },
+      "definition_el": "Τα χρηματικά ποσά που επιβαρύνουν τον αιτούντα άσυλο για τη διεξαγωγή της δικαστικής διαδικασίας ή της αίτησης ασύλου, συμπεριλαμβανομένων των διοικητικών και δικηγορικών τελών.",
+      "definition_en": "The financial amounts charged to an asylum applicant for conducting legal proceedings or asylum application processes, including administrative and legal fees.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "award-of-legal-costs-procedural",
+      "category": "legal",
+      "translations": {
+        "el": "επιδίκαση δικαστικών εξόδων",
+        "en": "award of legal costs (procedural)",
+        "ar": "الحكم برسوم قانونية (إجرائية)",
+        "fa": "رای دادگاه برای هزینه‌های حقوقی (رویه‌ای)",
+        "fr": "condamnation aux dépens (procédurale)"
+      },
+      "definition_el": "Η δικαστική απόφαση που επιβάλλει σε έναν από τα μέρη τη διαδικαστική υποχρέωση να καταβάλει τα δικαστικά έξοδα του αντιδίκου.",
+      "definition_en": "A judicial decision imposing on one party the procedural obligation to pay the legal costs incurred by the opposing party.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "final-decision",
+      "category": "legal",
+      "translations": {
+        "el": "τελεσίδικη απόφαση",
+        "en": "final decision",
+        "ar": "قرار نهائي",
+        "fa": "تصمیم قطعی",
+        "fr": "décision définitive"
+      },
+      "definition_el": "Δικαστική απόφαση που έχει αποκτήσει τελεσίδικο χαρακτήρα και δεν μπορεί να ανακληθεί ή να αναθεωρηθεί μέσω κανονικών δικαστικών διαδικασιών.",
+      "definition_en": "A judicial decision that has acquired final and binding status and cannot be reversed or reviewed through ordinary legal procedures.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "final-decision-2",
+      "category": "legal",
+      "translations": {
+        "el": "αμετάκλητη απόφαση",
+        "en": "final decision",
+        "ar": "قرار نهائي",
+        "fa": "تصمیم قطعی",
+        "fr": "décision définitive"
+      },
+      "definition_el": "Δικαστική απόφαση που δεν μπορεί να ανακληθεί ή να αναθεωρηθεί και έχει νόμιμη ισχύ.",
+      "definition_en": "A judicial decision that cannot be withdrawn or reviewed and has legal force.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "enforceable-decision-executable-title",
+      "category": "legal",
+      "translations": {
+        "el": "απόφαση με αναγκαστική εκτέλεση",
+        "en": "enforceable decision (executable title)",
+        "ar": "قرار قابل للتنفيذ الجبري (سند تنفيذي)",
+        "fa": "تصمیم قابل اجرای اجباری (عنوان قابل اجرا)",
+        "fr": "décision exécutoire (titre exécutif)"
+      },
+      "definition_el": "Διοικητική ή δικαστική απόφαση που έχει νόμιμη ισχύ και μπορεί να εκτελεστεί αναγκαστικά μέσω των αρμόδιων αρχών.",
+      "definition_en": "An administrative or judicial decision that has legal force and can be forcibly executed by the competent authorities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "seizure-enforcement-action",
+      "category": "legal",
+      "translations": {
+        "el": "κατάσχεση",
+        "en": "seizure (enforcement action)",
+        "ar": "المصادرة (إجراء تنفيذي)",
+        "fa": "ضبط (اقدام اجرایی)",
+        "fr": "saisie (acte d'exécution)"
+      },
+      "definition_el": "Η διοικητική ή δικαστική πράξη με την οποία αρχές επιβάλλουν τη λήψη ή παγίωση περιουσίας ή εγγράφων ενός ατόμου για λόγους εκτέλεσης απόφασης ή διοικητικής διαδικασίας.",
+      "definition_en": "An administrative or judicial action by which authorities take or secure possession of an individual's property or documents for purposes of enforcing a decision or administrative procedure.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "foreclosure-enforcement-action",
+      "category": "legal",
+      "translations": {
+        "el": "πλειστηριασμός",
+        "en": "foreclosure (enforcement action)",
+        "ar": "الحجز القضائي (إجراء تنفيذي)",
+        "fa": "توقیف اموال (اقدام اجرایی)",
+        "fr": "saisie (acte d'exécution)"
+      },
+      "definition_el": "Νομική διαδικασία εκτέλεσης δικαστικής απόφασης κατά της περιουσίας ή των δικαιωμάτων ενός ατόμου.",
+      "definition_en": "Legal enforcement procedure through which a court decision is executed against the property or rights of a person.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "contract-legal-document",
+      "category": "documentation",
+      "translations": {
+        "el": "συμβόλαιο",
+        "en": "contract (legal document)",
+        "ar": "عقد (وثيقة قانونية)",
+        "fa": "قرارداد (سند حقوقی)",
+        "fr": "contrat (document juridique)"
+      },
+      "definition_el": "Νομικό έγγραφο που καταγράφει τη συμφωνία μεταξύ δύο ή περισσοτέρων μερών και τις υποχρεώσεις τους.",
+      "definition_en": "A legal document that records an agreement between two or more parties and their respective obligations.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "employment-contract-2",
+      "category": "documentation",
+      "translations": {
+        "el": "συμφωνητικό εργασίας",
+        "en": "employment contract",
+        "ar": "عقد العمل",
+        "fa": "قرارداد کار",
+        "fr": "contrat de travail"
+      },
+      "definition_el": "Νομικό έγγραφο που καθορίζει τους όρους και τις προϋποθέσεις της εργασίας μεταξύ εργοδότη και εργαζομένου.",
+      "definition_en": "A legal document that establishes the terms and conditions of employment between an employer and an employee.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "rental-agreement-2",
+      "category": "documentation",
+      "translations": {
+        "el": "μισθωτήριο συμβόλαιο",
+        "en": "rental agreement",
+        "ar": "عقد الإيجار",
+        "fa": "قرارداد اجاره",
+        "fr": "contrat de location"
+      },
+      "definition_el": "Νομικό έγγραφο που καθορίζει τους όρους ενοικίασης ακινήτου μεταξύ ιδιοκτήτη και ενοικιαστή.",
+      "definition_en": "A legal document that outlines the terms and conditions of renting a property between a landlord and tenant.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "inheritance-certificate-judicial-document-of-succession",
+      "category": "documentation",
+      "translations": {
+        "el": "κληρονομητήριο",
+        "en": "inheritance certificate (judicial document of succession)",
+        "ar": "شهادة الوراثة (وثيقة قضائية لتسلسل الميراث)",
+        "fa": "گواهی ارث (سند قضایی برای ترتیب وراثت)",
+        "fr": "certificat d'héritage (document judiciaire de succession)"
+      },
+      "definition_el": "Δικαστικό έγγραφο που αποδεικνύει τα δικαιώματα κληρονομίας ενός ατόμου σε περιουσιακά στοιχεία ενός αποθανόντος συγγενή.",
+      "definition_en": "A judicial document that establishes and certifies an individual's inheritance rights to the estate of a deceased relative.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "legal-opinion-memorandum-lawyer-s-document",
+      "category": "documentation",
+      "translations": {
+        "el": "νομικό γνωμοδοτικό σημείωμα",
+        "en": "legal opinion memorandum (lawyer's document)",
+        "ar": "مذكرة الرأي القانوني (وثيقة المحامي)",
+        "fa": "یادداشت نظر حقوقی (سند وکیل)",
+        "fr": "note juridique d'avis (document d'avocat)"
+      },
+      "definition_el": "Γραπτό έγγραφο που συντάσσει δικηγόρος περιέχοντας νομική ανάλυση, συμβουλές και γνώμη επί συγκεκριμένων νομικών ζητημάτων που αφορούν υποθέσεις αιτούντων ασύλου.",
+      "definition_en": "A written document prepared by a lawyer containing legal analysis, advice, and professional opinion on specific legal matters pertaining to asylum seekers' cases.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "memorandum-legal-memorandum-to-court",
+      "category": "documentation",
+      "translations": {
+        "el": "υπόμνημα",
+        "en": "memorandum (legal memorandum to court)",
+        "ar": "مذكرة (مذكرة قانونية موجهة للمحكمة)",
+        "fa": "یادداشت (یادداشت حقوقی برای دادگاه)",
+        "fr": "mémoire (mémoire juridique adressé à la cour)"
+      },
+      "definition_el": "Γραπτό έγγραφο που υποβάλλεται στο δικαστήριο από δικηγόρο ή νομικό εκπρόσωπο για την παρουσίαση νομικών επιχειρημάτων και αποδεικτικών στοιχείων σε υποθέσεις ασύλου ή μετανάστευσης.",
+      "definition_en": "A written document submitted to the court by a lawyer or legal representative presenting legal arguments and evidence in asylum or migration cases.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "signature-authentication-verification-procedure",
+      "category": "documentation",
+      "translations": {
+        "el": "γνήσιο υπογραφής",
+        "en": "signature authentication (verification procedure)",
+        "ar": "التحقق من صحة التوقيع (إجراء المصادقة)",
+        "fa": "تصدیق امضا (فرایند احراز هویت)",
+        "fr": "authentification de signature (procédure de vérification)"
+      },
+      "definition_el": "Η διαδικασία επιβεβαίωσης της γνησιότητας και της νομιμότητας μιας υπογραφής σε έγγραφα που υποβάλλονται κατά τη διαδικασία αιτήματος ασύλου.",
+      "definition_en": "The process of verifying the authenticity and legal validity of a signature on documents submitted during an asylum application procedure.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "second-personal-interview-procedural-stage",
+      "category": "procedure",
+      "translations": {
+        "el": "δεύτερη προσωπική συνέντευξη",
+        "en": "second personal interview (procedural stage)",
+        "ar": "المقابلة الشخصية الثانية (مرحلة الإجراء)",
+        "fa": "مصاحبه فردی دوم (مرحله رویه)",
+        "fr": "deuxième entretien personnel (stade de la procédure)"
+      },
+      "definition_el": "Το δεύτερο επίσημο προσωπικό συνέντευξη που διεξάγεται κατά τη διαδικασία αξιολόγησης της αίτησης ασύλου, συνήθως για διευκρινίσεις ή συμπληρώσεις των πληροφοριών της πρώτης συνέντευξης.",
+      "definition_en": "The second formal personal interview conducted during the asylum application evaluation process, typically for clarification or supplementation of information provided during the first interview.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "supplementary-interview-procedural-stage",
+      "category": "procedure",
+      "translations": {
+        "el": "συμπληρωματική συνέντευξη",
+        "en": "supplementary interview (procedural stage)",
+        "ar": "مقابلة تكميلية (مرحلة إجرائية)",
+        "fa": "مصاحبه تکمیلی (مرحله رویه)",
+        "fr": "entretien complémentaire (stade procédural)"
+      },
+      "definition_el": "Πρόσθετη συνέντευξη που διεξάγεται κατά τη διαδικασία εξέτασης αιτήματος ασύλου για συμπλήρωση ή διευκρίνιση πληροφοριών που έχουν ήδη αναφερθεί.",
+      "definition_en": "An additional interview conducted during the asylum application examination process to supplement or clarify information previously provided by the applicant.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "oral-hearing-at-second-instance-asylum-stage",
+      "category": "procedure",
+      "translations": {
+        "el": "προφορική ακρόαση σε β' βαθμό",
+        "en": "oral hearing at second instance (asylum stage)",
+        "ar": "جلسة استماع شفوية في درجة ثانية (مرحلة اللجوء)",
+        "fa": "جلسه استماع شفاهی در درجه دوم (مرحله پناهندگی)",
+        "fr": "audience orale en deuxième instance (stade de l'asile)"
+      },
+      "definition_el": "Η προφορική ακρόαση ενώπιον του δικαστηρίου δεύτερης βαθμίδας κατά την οποία ο αιτών ασύλου παρουσιάζει τα επιχειρήματά του σε προσφυγή της αρχικής απόφασης.",
+      "definition_en": "An oral hearing before a second-instance court where an asylum applicant presents arguments in appeal against the initial asylum decision.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "written-appeal-type-of-appeal",
+      "category": "procedure",
+      "translations": {
+        "el": "έγγραφη προσφυγή",
+        "en": "written appeal (type of appeal)",
+        "ar": "الطعن المكتوب (نوع من أنواع الطعن)",
+        "fa": "اعتراض کتبی (نوع اعتراض)",
+        "fr": "recours écrit (type de recours)"
+      },
+      "definition_el": "Η αίτηση ή η ένσταση που υποβάλλεται γραπτώς για την αμφισβήτηση μιας διοικητικής απόφασης σχετικά με το αίτημα ασύλου.",
+      "definition_en": "A written application or objection submitted to challenge an administrative decision regarding an asylum application.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "new-application-subsequent-application-for-international-pro",
+      "category": "procedure",
+      "translations": {
+        "el": "νέα αίτηση",
+        "en": "new application (subsequent application for international protection)",
+        "ar": "طلب جديد (طلب لاحق للحماية الدولية)",
+        "fa": "درخواست جدید (درخواست بعدی برای حمایت بین‌المللی)",
+        "fr": "nouvelle demande (demande ultérieure de protection internationale)"
+      },
+      "definition_el": "Αίτηση διεθνούς προστασίας που υποβάλλεται μετά την απόρριψη ή ανάκληση προηγούμενης αίτησης, συνήθως με νέα στοιχεία ή αλλαγή περιστάσεων.",
+      "definition_en": "An application for international protection submitted after the rejection or withdrawal of a previous application, typically based on new facts or changed circumstances.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "dublin-sovereignty-clause-article-17-dublin",
+      "category": "procedure",
+      "translations": {
+        "el": "ρήτρα κυριαρχίας Δουβλίνο",
+        "en": "Dublin sovereignty clause (Article 17 Dublin)",
+        "ar": "شرط السيادة في دبلن (المادة 17 من دبلن)",
+        "fa": "بند حاکمیت دوبلین (ماده ۱۷ دوبلین)",
+        "fr": "clause de souveraineté Dublin (article 17 Dublin)"
+      },
+      "definition_el": "Διάταξη του κανονισμού Δουβλίνο που επιτρέπει στα κράτη μέλη να αποκλίνουν από τους κανόνες κατανομής της ευθύνης και να δεχτούν εθελοντικά αιτήματα ασύλου ενός τρίτου κράτους.",
+      "definition_en": "A provision of the Dublin Regulation that allows EU Member States to voluntarily depart from the responsibility-sharing rules and accept asylum applications from third countries on a discretionary basis.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "dublin-humanitarian-clause-article-17-paragraph-2",
+      "category": "procedure",
+      "translations": {
+        "el": "ανθρωπιστική ρήτρα Δουβλίνο",
+        "en": "Dublin humanitarian clause (Article 17 paragraph 2)",
+        "ar": "شرط دبلن الإنساني (المادة 17 الفقرة 2)",
+        "fa": "بند انساندوستانه دوبلین (ماده 17 بند 2)",
+        "fr": "clause humanitaire de Dublin (article 17 paragraphe 2)"
+      },
+      "definition_el": "Διάταξη του κανονισμού Δουβλίνο ΙΙΙ που επιτρέπει την απόκλιση από τους κανόνες αρμοδιότητας όταν υπάρχουν σοβαρές ενδείξεις δυσπροσαρμογής του αιτούντος στο κράτος υποδοχής.",
+      "definition_en": "A provision in the Dublin III Regulation that allows derogation from standard jurisdiction rules when there is substantial evidence that the applicant would face serious difficulties due to physical or mental health conditions or severe vulnerability.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "eurodac-data-check-procedural-step",
+      "category": "procedure",
+      "translations": {
+        "el": "έλεγχος στοιχείων EURODAC",
+        "en": "EURODAC data check (procedural step)",
+        "ar": "فحص بيانات يوروداك (خطوة إجرائية)",
+        "fa": "بررسی اطلاعات یوروداک (مرحله رویه‌ای)",
+        "fr": "vérification des données EURODAC (étape procédurale)"
+      },
+      "definition_el": "Διαδικαστικό βήμα κατά το οποίο οι αρχές ελέγχουν τα δακτυλικά αποτυπώματα και τα προσωπικά στοιχεία ενός αιτούντος διαφυγής μέσω της βάσης δεδομένων EURODAC.",
+      "definition_en": "A procedural step in which authorities verify an asylum applicant's fingerprints and personal data against the EURODAC database to determine if they have previously applied for asylum in another EU member state.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "request-for-reconsideration-procedural-act",
+      "category": "procedure",
+      "translations": {
+        "el": "αίτημα εκ νέου εξέτασης",
+        "en": "request for reconsideration (procedural act)",
+        "ar": "طلب إعادة النظر (إجراء إجرائي)",
+        "fa": "درخواست بازبینی مجدد (عمل رویه‌ای)",
+        "fr": "demande de réexamen (acte procédural)"
+      },
+      "definition_el": "Τυπική διαδικαστική αίτηση υποβολής νέας εξέτασης μιας απόφασης ή αίτησης ασύλου από τις αρμόδιες αρχές.",
+      "definition_en": "A formal procedural request for a new examination or reconsideration of an asylum decision or application by the competent authorities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "unauthorized-departure-from-reception-facility-administrativ",
+      "category": "procedure",
+      "translations": {
+        "el": "αποχώρηση από τη δομή χωρίς άδεια",
+        "en": "unauthorized departure from reception facility (administrative incident)",
+        "ar": "المغادرة غير المرخصة من مركز الاستقبال (حادثة إدارية)",
+        "fa": "ترک تأسیس پذیرش بدون اجازه (حادثه اداری)",
+        "fr": "départ non autorisé de la structure d'accueil (incident administratif)"
+      },
+      "definition_el": "Η αποχώρηση ενός αιτητή ασύλου από τη δομή φιλοξενίας χωρίς προηγούμενη ενημέρωση ή συναίνεση των αρμοδίων υπηρεσιών, η οποία καταχωρείται ως διοικητικό γεγονός.",
+      "definition_en": "The departure of an asylum seeker from a reception facility without prior notification or authorization from the responsible authorities, formally recorded as an administrative incident.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "expiration-of-asylum-application-filing-deadline-procedural",
+      "category": "procedure",
+      "translations": {
+        "el": "λήξη προθεσμίας κατάθεσης προσφυγής",
+        "en": "expiration of asylum application filing deadline (procedural)",
+        "ar": "انتهاء مهلة تقديم طلب اللجوء (إجرائية)",
+        "fa": "انقضای مهلت زمانی برای ثبت درخواست پناهندگی (رویه‌ای)",
+        "fr": "expiration du délai de dépôt de demande d'asile (procédural)"
+      },
+      "definition_el": "Η περάτωση της νόμιμης προθεσμίας εντός της οποίας ένας αιτών πρέπει να υποβάλει την αίτησή του για διεθνή προστασία στις αρμόδιες αρχές.",
+      "definition_en": "The expiration of the legal time limit within which an applicant must submit their application for international protection to the competent authorities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "service-of-decision-by-mail-procedural",
+      "category": "procedure",
+      "translations": {
+        "el": "επίδοση απόφασης με ταχυδρομείο",
+        "en": "service of decision by mail (procedural)",
+        "ar": "تسليم القرار بالبريد (إجرائي)",
+        "fa": "اعلام تصمیم از طریق پست (رویه ای)",
+        "fr": "signification de la décision par courrier (procédural)"
+      },
+      "definition_el": "Η επίδοση ή αποστολή μιας διοικητικής ή δικαστικής απόφασης στον ενδιαφερόμενο μέσω ταχυδρομικής αποστολής.",
+      "definition_en": "The service or delivery of an administrative or judicial decision to the interested party through postal mail.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "service-of-decision-by-electronic-means-procedural",
+      "category": "procedure",
+      "translations": {
+        "el": "επίδοση απόφασης με ηλεκτρονικά μέσα",
+        "en": "service of decision by electronic means (procedural)",
+        "ar": "تبليغ القرار بالوسائل الإلكترونية (إجرائي)",
+        "fa": "ابلاغ تصمیم از طریق وسایل الکترونیکی (رویه ای)",
+        "fr": "signification de décision par voie électronique (procédurale)"
+      },
+      "definition_el": "Η επίδοση απόφασης διοικητικού ή δικαστικού οργάνου μέσω ηλεκτρονικών καναλιών επικοινωνίας, όπως email ή ηλεκτρονικό σύστημα υποβολής εγγράφων.",
+      "definition_en": "The service of an administrative or judicial decision to a party through electronic communication channels, such as email or electronic document submission systems.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "posting-of-decision-notice-at-reception-facility-procedural",
+      "category": "procedure",
+      "translations": {
+        "el": "θυροκόλληση απόφασης στη δομή",
+        "en": "posting of decision notice at reception facility (procedural)",
+        "ar": "تعليق قرار في مركز الاستقبال (إجرائي)",
+        "fa": "چسباندن اطلاعیه تصمیم در مرکز پذیرش (رویه‌ای)",
+        "fr": "affichage de la décision au centre d'accueil (procédural)"
+      },
+      "definition_el": "Η διαδικαστική ενέργεια της τοποθέτησης της απόφασης σε ορατό σημείο της δομής φιλοξενίας για ενημέρωση των αιτούντων.",
+      "definition_en": "The procedural action of posting an administrative decision at a visible location within a reception facility to formally notify applicants.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "attestation-of-copy-administrative-act-of-certification",
+      "category": "procedure",
+      "translations": {
+        "el": "θεώρηση αντιγράφου",
+        "en": "attestation of copy (administrative act of certification)",
+        "ar": "توثيق النسخة (عمل إداري للتصديق)",
+        "fa": "تایید کپی (عمل اداری تصدیق)",
+        "fr": "certification de copie (acte administratif d'authentification)"
+      },
+      "definition_el": "Διοικητική ενέργεια με την οποία αρμόδιο όργανο επιβεβαιώνει την συμφωνία ενός αντιγράφου με το πρωτότυπο έγγραφο.",
+      "definition_en": "Administrative action by which a competent authority verifies and certifies that a copy is true and accurate to the original document.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "lgbti-applicant-status-ipsn",
+      "category": "vulnerable",
+      "translations": {
+        "el": "LGBTI αιτών",
+        "en": "LGBTI applicant (status, IPSN)",
+        "ar": "مقدم طلب LGBTI (الصفة، IPSN)",
+        "fa": "متقاضی LGBTI (وضعیت، IPSN)",
+        "fr": "Demandeur LGBTI (statut, IPSN)"
+      },
+      "definition_el": "Πρόσωπο που υποβάλλει αίτημα ασύλου ή διεθνούς προστασίας και αναγνωρίζεται ως μέλος της κοινότητας LGBTI (Λεσβίες, Γκέι, Διφυλικά, Τρανς και Ίντερσεξ) με καταγραφή της ιδιότητάς του στο σύστημα IPSN.",
+      "definition_en": "A person who submits an asylum or international protection application and is identified as a member of the LGBTI community (Lesbian, Gay, Bisexual, Transgender, and Intersex) with their status recorded in the IPSN system.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "victim-of-serious-forms-of-violence-ipsn-category",
+      "category": "vulnerable",
+      "translations": {
+        "el": "θύμα σοβαρών μορφών βίας",
+        "en": "victim of serious forms of violence (IPSN category)",
+        "ar": "ضحية أشكال خطيرة من العنف (فئة IPSN)",
+        "fa": "قربانی اشکال جدی خشونت (دسته‌بندی IPSN)",
+        "fr": "victime de formes graves de violence (catégorie IPSN)"
+      },
+      "definition_el": "Άτομο που έχει υποστεί σοβαρές μορφές βίας όπως φυσική κακοποίηση, σεξουαλική βία ή βασανισμό, σύμφωνα με την κατηγοριοποίηση του IPSN (Integrated Package of Support for Needs).",
+      "definition_en": "A person who has experienced serious forms of violence such as physical abuse, sexual violence, or torture, as classified under the IPSN (Integrated Package of Support for Needs) framework.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "single-parent-family-with-minors-ipsn-category",
+      "category": "vulnerable",
+      "translations": {
+        "el": "μονογονεϊκή οικογένεια με ανήλικα",
+        "en": "single-parent family with minors (IPSN category)",
+        "ar": "أسرة أحادية الوالد مع قاصرين (فئة IPSN)",
+        "fa": "خانواده تک‌والدی با افراد زیرسن (دسته‌بندی IPSN)",
+        "fr": "famille monoparentale avec mineurs (catégorie IPSN)"
+      },
+      "definition_el": "Κατηγορία ευάλωτου πληθυσμού που περιλαμβάνει ένα γονέα που προστατεύει ένα ή περισσότερα ανήλικα παιδιά, σύμφωνα με τις κατηγορίες της IPSN (Ενιαία Δομή Προσδιορισμού Αναγκών).",
+      "definition_en": "A vulnerable population category comprising a single parent caring for one or more minor children, classified according to IPSN (Integrated Needs Assessment Structure) vulnerability categories.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "victim-of-torture-ipsn-category",
+      "category": "vulnerable",
+      "translations": {
+        "el": "θύμα βασανιστηρίων",
+        "en": "victim of torture (IPSN category)",
+        "ar": "ضحية التعذيب (فئة IPSN)",
+        "fa": "قربانی شکنجه (دسته بندی IPSN)",
+        "fr": "victime de torture (catégorie IPSN)"
+      },
+      "definition_el": "Άτομο που έχει υποστεί σωματική ή ψυχική κακοποίηση μέσω συστηματικής εφαρμογής πόνου, όπως κατηγοριοποιείται από το σύστημα IPSN (Identification Persons Special Needs).",
+      "definition_en": "A person who has experienced deliberate infliction of severe physical or psychological pain through systematic abuse, classified under the IPSN (Identification of Persons with Special Needs) categorization system.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "victim-of-sexual-violence-ipsn-category",
+      "category": "vulnerable",
+      "translations": {
+        "el": "θύμα σεξουαλικής βίας",
+        "en": "victim of sexual violence (IPSN category)",
+        "ar": "ضحية العنف الجنسي (فئة IPSN)",
+        "fa": "قربانی خشونت جنسی (دسته‌بندی IPSN)",
+        "fr": "victime de violence sexuelle (catégorie IPSN)"
+      },
+      "definition_el": "Πρόσωπο που έχει υποστεί σεξουαλική βία και ταξινομείται σύμφωνα με τα κριτήρια της κατηγορίας IPSN (Ενδογενής Προστασία Σεξουαλικής Νόμιμης Κατάστασης) για ευάλωτα άτομα.",
+      "definition_en": "A person who has experienced sexual violence and is classified according to the IPSN (Identification of Persons with Specific Needs) category criteria as a vulnerable person requiring special protection.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "victim-of-female-genital-mutilation",
+      "category": "vulnerable",
+      "translations": {
+        "el": "θύμα ακρωτηριασμού γυναικείων γεννητικών οργάνων",
+        "en": "victim of female genital mutilation",
+        "ar": "ضحية تشويه الأعضاء التناسلية الأنثوية",
+        "fa": "قربانی تخریب اعضای تناسلی زنانه",
+        "fr": "victime de mutilation génitale féminine"
+      },
+      "definition_el": "Πρόσωπο που έχει υποστεί τη μερική ή ολική αφαίρεση ή άλλη βλάβη των εξωτερικών γυναικείων γεννητικών οργάνων χωρίς ιατρικό λόγο.",
+      "definition_en": "A person who has undergone partial or total removal or other injury to external female genital organs for non-medical reasons.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "victim-of-forced-marriage-ipsn-category",
+      "category": "vulnerable",
+      "translations": {
+        "el": "θύμα εξαναγκαστικού γάμου",
+        "en": "victim of forced marriage (IPSN category)",
+        "ar": "ضحية الزواج القسري (فئة IPSN)",
+        "fa": "قربانی ازدواج اجباری (دسته‌بندی IPSN)",
+        "fr": "victime de mariage forcé (catégorie IPSN)"
+      },
+      "definition_el": "Άτομο που έχει αναγκαστεί να συνάψει γάμο χωρίς την ελεύθερη και πλήρη συγκατάθεσή του, κατά την ταξινόμηση του συστήματος IPSN (International Protection Status Needs).",
+      "definition_en": "A person who has been coerced into marriage without free and full consent, as classified under the IPSN (International Protection Status Needs) category system.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "child-marriage-victim",
+      "category": "vulnerable",
+      "translations": {
+        "el": "θύμα παιδικού γάμου",
+        "en": "child marriage victim",
+        "ar": "ضحية الزواج المبكر",
+        "fa": "قربانی ازدواج کودکان",
+        "fr": "victime de mariage d'enfant"
+      },
+      "definition_el": "Πρόσωπο που έχει υποχρεωθεί ή συναινέσει σε γάμο πριν από την ηλικία των 18 ετών και έχει υποστεί σωματική, ψυχολογική ή σεξουαλική κακοποίηση.",
+      "definition_en": "A person who was forced into or consented to marriage before the age of 18 and has suffered physical, psychological, or sexual abuse.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "person-with-serious-communicable-disease-ipsn-category",
+      "category": "vulnerable",
+      "translations": {
+        "el": "άτομο με σοβαρή μεταδοτική νόσο",
+        "en": "person with serious communicable disease (IPSN category)",
+        "ar": "شخص مصاب بمرض معدٍ خطير (فئة IPSN)",
+        "fa": "فرد مبتلا به بیماری عفونی شدید (دسته‌بندی IPSN)",
+        "fr": "personne atteinte d'une maladie transmissible grave (catégorie IPSN)"
+      },
+      "definition_el": "Άτομο που διαγνώστηκε με σοβαρή μεταδοτική νόσο σύμφωνα με την κατηγοριοποίηση του IPSN, η οποία μπορεί να επηρεάσει τη διαδικασία υποδοχής ή ασύλου.",
+      "definition_en": "A person diagnosed with a serious communicable disease according to IPSN classification, which may impact asylum or reception procedures.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "person-with-intellectual-disability",
+      "category": "vulnerable",
+      "translations": {
+        "el": "άτομο με νοητική αναπηρία",
+        "en": "person with intellectual disability",
+        "ar": "شخص ذو إعاقة ذهنية",
+        "fa": "فرد دارای ناتوانی ذهنی",
+        "fr": "personne en situation de handicap intellectuel"
+      },
+      "definition_el": "Άτομο που παρουσιάζει σημαντικές περιορισμούς στη νοητική λειτουργία και την προσαρμοστική συμπεριφορά, το οποίο χρειάζεται ειδικής προστασίας και υποστήριξης στις διαδικασίες ασύλου.",
+      "definition_en": "A person with significant limitations in intellectual functioning and adaptive behavior who requires special protection and support in asylum procedures.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "person-with-psychiatric-disorder",
+      "category": "vulnerable",
+      "translations": {
+        "el": "άτομο με ψυχιατρική διαταραχή",
+        "en": "person with psychiatric disorder",
+        "ar": "شخص يعاني من اضطراب نفسي",
+        "fa": "فرد مبتلا به اختلال روانپزشکی",
+        "fr": "personne atteinte d'un trouble psychiatrique"
+      },
+      "definition_el": "Άτομο που παρουσιάζει κλινικά σημαντική ψυχική διαταραχή που απαιτεί ιατρική αξιολόγηση και υποστήριξη.",
+      "definition_en": "A person with a clinically significant mental health condition requiring medical assessment and support.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "illiterate-applicant-ipsn-special-procedural-needs",
+      "category": "vulnerable",
+      "translations": {
+        "el": "αναλφάβητος αιτών",
+        "en": "illiterate applicant (IPSN, special procedural needs)",
+        "ar": "مقدم طلب أمي (IPSN، احتياجات إجرائية خاصة)",
+        "fa": "متقاضی بی‌سواد (IPSN، نیازهای رویه‌ای خاص)",
+        "fr": "demandeur illettré (IPSN, besoins procéduraux particuliers)"
+      },
+      "definition_el": "Ο αιτών που δεν διαθέτει ικανότητα ανάγνωσης και γραφής, ο οποίος αναγνωρίζεται στο σύστημα IPSN (πληροφορίες ειδικών διαδικαστικών αναγκών) και δικαιούται προσαρμοσμένη διαδικασία ασύλου.",
+      "definition_en": "An asylum applicant lacking reading and writing skills, identified in the IPSN (Information on Procedural and Special Needs) system and entitled to adapted asylum procedures.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "elderly-person-without-family",
+      "category": "vulnerable",
+      "translations": {
+        "el": "ηλικιωμένος χωρίς οικογένεια",
+        "en": "elderly person without family",
+        "ar": "شخص مسن بدون عائلة",
+        "fa": "فرد مسن بدون خانواده",
+        "fr": "personne âgée sans famille"
+      },
+      "definition_el": "Ηλικιωμένο άτομο που δεν έχει κανέναν συγγενή ή δίκτυο οικογενειακής υποστήριξης και θεωρείται ευάλωτη κατηγορία στο πλαίσιο της προστασίας προσφύγων.",
+      "definition_en": "An elderly person who has no family members or family support network and is considered a vulnerable category in the context of refugee protection.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "legality-review-of-detention-judicial-review",
+      "category": "detention",
+      "translations": {
+        "el": "έλεγχος νομιμότητας κράτησης",
+        "en": "legality review of detention (judicial review)",
+        "ar": "مراجعة شرعية الاحتجاز (المراجعة القضائية)",
+        "fa": "بررسی قانونی بازداشت (نظارت قضایی)",
+        "fr": "contrôle de la légalité de la détention (contrôle judiciaire)"
+      },
+      "definition_el": "Η δικαστική διαδικασία ελέγχου της νομιμότητας και της νομιμοφροσύνης της κράτησης ενός ατόμου από τις αρχές.",
+      "definition_en": "A judicial process to review whether the detention of a person by authorities is lawful and complies with legal requirements.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "appeal-against-detention-in-administrative-courts-legal-reme",
+      "category": "detention",
+      "translations": {
+        "el": "προσφυγή κατά κράτησης στα διοικητικά δικαστήρια",
+        "en": "appeal against detention in administrative courts (legal remedy)",
+        "ar": "الطعن ضد الاحتجاز في المحاكم الإدارية (طريقة قانونية)",
+        "fa": "تجدیدنظرخواهی علیه بازداشت در دادگاه‌های اداری (راه حقوقی)",
+        "fr": "recours contre la détention auprès des tribunaux administratifs (voie de recours)"
+      },
+      "definition_el": "Το ένδικο μέσο που επιτρέπει στον κρατούμενο να προσφύγει στα διοικητικά δικαστήρια για την ακύρωση ή αναστολή της απόφασης κράτησής του.",
+      "definition_en": "A legal remedy that allows a detained person to appeal to administrative courts to challenge or suspend the detention decision.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "right-to-communicate-with-a-lawyer-while-in-detention-proced",
+      "category": "detention",
+      "translations": {
+        "el": "δικαίωμα επικοινωνίας με δικηγόρο εντός κράτησης",
+        "en": "right to communicate with a lawyer while in detention (procedural right)",
+        "ar": "الحق في التواصل مع محام أثناء الاحتجاز (حق إجرائي)",
+        "fa": "حق ارتباط با وکیل در طی بازداشت (حق رویهای)",
+        "fr": "droit de communiquer avec un avocat en détention (droit procédural)"
+      },
+      "definition_el": "Το διαδικαστικό δικαίωμα του κρατουμένου να έχει πρόσβαση και να επικοινωνεί με νομικό αντιπρόσωπο κατά τη διάρκεια της κράτησης.",
+      "definition_en": "The procedural right of a detained person to have access to and communicate with a legal representative during their detention.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "right-to-medical-examination-while-in-detention",
+      "category": "detention",
+      "translations": {
+        "el": "δικαίωμα ιατρικής εξέτασης εντός κράτησης",
+        "en": "right to medical examination while in detention",
+        "ar": "الحق في الفحص الطبي أثناء الحجز",
+        "fa": "حق معاینه پزشکی در دوران بازداشت",
+        "fr": "droit à l'examen médical en détention"
+      },
+      "definition_el": "Το δικαίωμα κάθε κρατούμενου να υποβληθεί σε ιατρική εξέταση και να λάβει ιατρική περίθαλψη κατά τη διάρκεια της κράτησής του.",
+      "definition_en": "The right of any detained person to undergo medical examination and receive medical care during their period of detention.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "isolation-within-detention-conditions",
+      "category": "detention",
+      "translations": {
+        "el": "απομόνωση εντός κράτησης",
+        "en": "isolation within detention (conditions)",
+        "ar": "العزلة داخل الاحتجاز (الظروف)",
+        "fa": "انزوای داخل بازداشت (شرایط)",
+        "fr": "isolement en détention (conditions)"
+      },
+      "definition_el": "Οι συνθήκες απομόνωσης ενός ατόμου εντός κέντρου κράτησης, συνήθως για λόγους ασφαλείας, υγείας ή συμπεριφοράς.",
+      "definition_en": "The conditions of isolating a person within a detention facility, typically for reasons of security, health, or behavioral management.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "detention-conditions-treatment",
+      "category": "detention",
+      "translations": {
+        "el": "συνθήκες κράτησης",
+        "en": "detention conditions (treatment)",
+        "ar": "ظروف الاحتجاز (المعاملة)",
+        "fa": "شرایط بازداشت (رفتار)",
+        "fr": "conditions de détention (traitement)"
+      },
+      "definition_el": "Οι φυσικές, υγειονομικές και ψυχοκοινωνικές συνθήκες υπό τις οποίες βρίσκονται οι άτομα κατά την περίοδο της κράτησής τους, συμπεριλαμβανομένης της μεταχείρισης που λαμβάνουν από τις αρχές.",
+      "definition_en": "The physical, sanitary, and psychosocial conditions under which persons are held during detention, including the treatment they receive from authorities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "ill-treatment-in-detention-violation-of-rights",
+      "category": "detention",
+      "translations": {
+        "el": "κακομεταχείριση εντός κράτησης",
+        "en": "ill-treatment in detention (violation of rights)",
+        "ar": "سوء المعاملة في الاحتجاز (انتهاك الحقوق)",
+        "fa": "بدرفتاری در بازداشت (نقض حقوق)",
+        "fr": "mauvais traitement en détention (violation des droits)"
+      },
+      "definition_el": "Η ενδημική πρακτική της άσκησης κακομεταχείρισης, βίας ή παραμέλησης κατά ατόμων που βρίσκονται υπό κράτηση, που αποτελεί παραβίαση των διεθνών νορμών προστασίας των ανθρωπίνων δικαιωμάτων.",
+      "definition_en": "The practice of subjecting detained persons to ill-treatment, violence, or neglect that violates international human rights protections and standards applicable to persons deprived of liberty.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "complaint-of-ill-treatment-submitted-to-the-ombudsman-compla",
+      "category": "detention",
+      "translations": {
+        "el": "αναφορά κακομεταχείρισης στον Συνήγορο του Πολίτη",
+        "en": "complaint of ill-treatment submitted to the Ombudsman (complaint mechanism)",
+        "ar": "تقرير عن سوء المعاملة المقدم لأمين المظالم (آلية الشكوى)",
+        "fa": "گزارش بدرفتاری ارائه شده به دیوان دادرسی (سازوکار شکایت)",
+        "fr": "plainte de maltraitance adressée au Médiateur (mécanisme de recours)"
+      },
+      "definition_el": "Η διαδικασία υποβολής επίσημης καταγγελίας σχετικά με κακομεταχείριση ενός αιτούντα άσυλο προς τον Συνήγορο του Πολίτη, ο οποίος είναι ανεξάρτητος μηχανισμός προστασίας των δικαιωμάτων.",
+      "definition_en": "The formal procedure for submitting a complaint regarding ill-treatment of an asylum seeker to the Ombudsman, an independent human rights protection mechanism.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "national-preventive-mechanism-against-torture-institutional-",
+      "category": "detention",
+      "translations": {
+        "el": "Εθνικός Μηχανισμός Πρόληψης Βασανιστηρίων",
+        "en": "National Preventive Mechanism against Torture (institutional body)",
+        "ar": "الآلية الوطنية لمنع التعذيب (هيئة مؤسسية)",
+        "fa": "مکانیزم ملی پیشگیری از شکنجه (نهاد نهادی)",
+        "fr": "Mécanisme national de prévention de la torture (organe institutionnel)"
+      },
+      "definition_el": "Ανεξάρτητος θεσμικός φορέας που ελέγχει τις συνθήκες κράτησης και τη μεταχείριση των ατόμων σε θέσεις κατακράτησης προκειμένου να αποτρέψει τη χρήση βασανιστηρίων και άλλης κακομεταχείρισης.",
+      "definition_en": "An independent institutional body that monitors detention conditions and the treatment of persons in places of detention to prevent torture and other ill-treatment.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "recognized-refugee-beneficiary-category",
+      "category": "status",
+      "translations": {
+        "el": "αναγνωρισμένος πρόσφυγας",
+        "en": "recognized refugee (beneficiary category)",
+        "ar": "لاجئ معترف به (فئة المستفيد)",
+        "fa": "پناهنده شناخته شده (دسته‌بندی ذی‌نفع)",
+        "fr": "réfugié reconnu (catégorie de bénéficiaire)"
+      },
+      "definition_el": "Πρόσφυγας ο οποίος έχει επισήμως αναγνωριστεί από τις αρμόδιες αρχές και διαθέτει δικαιώματα και προστασία σύμφωνα με τη διεθνή νομοθεσία.",
+      "definition_en": "A person who has been officially determined by competent authorities to be a refugee and is entitled to rights and protections under international law.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "beneficiary-of-subsidiary-protection-category-of-beneficiary",
+      "category": "status",
+      "translations": {
+        "el": "δικαιούχος επικουρικής προστασίας",
+        "en": "beneficiary of subsidiary protection (category of beneficiary)",
+        "ar": "المستفيد من الحماية الإضافية (فئة المستفيد)",
+        "fa": "ذینفع از حمایت تکمیلی (دسته‌بندی ذینفع)",
+        "fr": "bénéficiaire de la protection subsidiaire (catégorie de bénéficiaire)"
+      },
+      "definition_el": "Πρόσωπο που έχει λάβει επικουρική προστασία καθώς αντιμετωπίζει σοβαρή απειλή σωματικής βλάβης λόγω βίας ή διαφοράς δόξης σε συγκρούσεις, αλλά δεν πληροί τα κριτήρια του πρόσφυγα.",
+      "definition_en": "A person who has been granted subsidiary protection because they face a serious threat of harm due to violence or political opinion in armed conflict, but does not meet the refugee definition criteria.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "applicant-for-subsidiary-protection-category",
+      "category": "status",
+      "translations": {
+        "el": "αιτών επικουρικής προστασίας",
+        "en": "applicant for subsidiary protection (category)",
+        "ar": "طالب الحماية الإضافية (فئة)",
+        "fa": "متقاضی حمایت تکمیلی (دسته‌بندی)",
+        "fr": "demandeur de protection subsidiaire (catégorie)"
+      },
+      "definition_el": "Κατηγορία ατόμου που αιτείται διεθνή προστασία όταν δεν πληροί τα κριτήρια του πρόσφυγα, αλλά αντιμετωπίζει σοβαρή βλάβη εάν επιστρέψει στη χώρα προέλευσής του.",
+      "definition_en": "A category of person seeking international protection who does not meet the refugee definition but faces a real risk of serious harm if returned to their country of origin.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "applicant-without-family-category",
+      "category": "status",
+      "translations": {
+        "el": "αιτών χωρίς οικογένεια",
+        "en": "applicant without family (category)",
+        "ar": "مقدم طلب بدون عائلة (فئة)",
+        "fa": "متقاضی بدون خانواده (دسته)",
+        "fr": "demandeur sans famille (catégorie)"
+      },
+      "definition_el": "Κατηγορία αιτούντος διεθνή προστασία που δεν συνοδεύεται ή δεν συνάζει με μέλη της οικογένειάς του κατά την υποβολή της αίτησης ασύλου.",
+      "definition_en": "Category of asylum applicant who is not accompanied by or does not live with family members at the time of submitting the asylum application.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "applicant-with-family-category",
+      "category": "status",
+      "translations": {
+        "el": "αιτών με οικογένεια",
+        "en": "applicant with family (category)",
+        "ar": "مقدم الطلب مع الأسرة (فئة)",
+        "fa": "متقاضی با خانواده (دسته)",
+        "fr": "demandeur avec famille (catégorie)"
+      },
+      "definition_el": "Κατηγορία ατόμου που υποβάλλει αίτηση ασύλου ή διεθνούς προστασίας και διαθέτει μέλη της οικογένειας που εξαρτώνται από αυτόν ή συνοδεύουν την αίτησή του.",
+      "definition_en": "Category of a person who submits an asylum or international protection application and has family members who are dependent on them or accompanying their application.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "rejected-applicant-status",
+      "category": "status",
+      "translations": {
+        "el": "απορριφθείς αιτών",
+        "en": "rejected applicant (status)",
+        "ar": "مقدم طلب مرفوض (الحالة)",
+        "fa": "متقاضی رد شده (وضعیت)",
+        "fr": "demandeur rejeté (statut)"
+      },
+      "definition_el": "Πρόσωπο του οποίου η αίτηση ασύλου ή διεθνούς προστασίας έχει απορριφθεί από τις αρμόδιες αρχές.",
+      "definition_en": "A person whose application for asylum or international protection has been rejected by the competent authorities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "applicant-at-second-instance-procedural-stage",
+      "category": "status",
+      "translations": {
+        "el": "αιτών σε β' βαθμό",
+        "en": "applicant at second instance (procedural stage)",
+        "ar": "مقدم الطلب في المرحلة الثانية (مرحلة الإجراء)",
+        "fa": "متقاضی در درجه دوم (مرحله رویه)",
+        "fr": "demandeur en deuxième instance (stade procédural)"
+      },
+      "definition_el": "Ο αιτών άσυλου που έχει υποβάλει ένδικο μέσο (έφεση) κατά της αρνητικής απόφασης της πρώτης βαθμίδας και βρίσκεται σε στάδιο εξέτασης της υπόθεσής του από ανώτερο δικαστηριακό ή διοικητικό όργανο.",
+      "definition_en": "An asylum applicant who has filed an appeal against a negative first-instance decision and whose case is under examination by a higher judicial or administrative body.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "finally-rejected-status",
+      "category": "status",
+      "translations": {
+        "el": "τελεσίδικα απορριφθείς",
+        "en": "finally rejected (status)",
+        "ar": "مرفوض نهائياً (الحالة)",
+        "fa": "نهایتاً رد شده (وضعیت)",
+        "fr": "rejeté définitivement (statut)"
+      },
+      "definition_el": "Άτομο που η αίτηση ασύλου του έχει απορριφθεί τελεσίδικα, δηλαδή με δικαστική απόφαση που δεν δύναται να ανακληθεί ή να αναθεωρηθεί περαιτέρω.",
+      "definition_en": "A person whose asylum application has been definitively rejected by a final court decision that cannot be appealed or further reviewed.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "voluntary-returnee-avr-status",
+      "category": "status",
+      "translations": {
+        "el": "επιστρέφων εθελοντικά",
+        "en": "Voluntary Returnee (AVR status)",
+        "ar": "العائد طواعية (حالة العودة الطوعية)",
+        "fa": "بازگشت‌کننده داوطلبانه (وضعیت AVR)",
+        "fr": "Retourneur volontaire (statut AVR)"
+      },
+      "definition_el": "Πρόσωπο που επιστρέφει εθελοντικά στη χώρα προέλευσης ή τρίτη χώρα με υποστήριξη προγραμμάτων επιστροφής.",
+      "definition_en": "A person who voluntarily returns to their country of origin or a third country with support from assisted voluntary return programmes.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "a1-level-language-course-cefr",
+      "category": "integration",
+      "translations": {
+        "el": "μάθημα γλώσσας επιπέδου Α1",
+        "en": "A1 level language course (CEFR)",
+        "ar": "دورة لغة من المستوى A1 (إطار مرجعي أوروبي مشترك)",
+        "fa": "کورس زبان سطح A1 (چارچوب مرجع اروپایی مشترک)",
+        "fr": "cours de langue niveau A1 (CECR)"
+      },
+      "definition_el": "Εκπαιδευτικό πρόγραμμα ή μάθημα για την εκμάθηση της τοπικής γλώσσας στο αρχικό επίπεδο (A1) σύμφωνα με το Κοινό Ευρωπαϊκό Πλαίσιο Αναφοράς για τις Γλώσσες.",
+      "definition_en": "An educational programme or course for learning the local language at the beginner level (A1) according to the Common European Framework of Reference for Languages.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "a2-level-language-course-cefr",
+      "category": "integration",
+      "translations": {
+        "el": "μάθημα γλώσσας επιπέδου Α2",
+        "en": "A2 level language course (CEFR)",
+        "ar": "دورة لغة بمستوى A2 (الإطار الأوروبي المرجعي الموحد للغات)",
+        "fa": "دوره آموزش زبان سطح A2 (CEFR)",
+        "fr": "cours de langue niveau A2 (CECR)"
+      },
+      "definition_el": "Δομημένο πρόγραμμα διδασκαλίας γλώσσας σύμφωνα με το επίπεδο Α2 του Κοινού Ευρωπαϊκού Πλαισίου Αναφοράς για τις Γλώσσες, που αντιστοιχεί σε στοιχειώδη γνώση.",
+      "definition_en": "A structured language teaching programme at the A2 level according to the Common European Framework of Reference for Languages, corresponding to elementary proficiency.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "b1-level-language-course-cefr",
+      "category": "integration",
+      "translations": {
+        "el": "μάθημα γλώσσας επιπέδου Β1",
+        "en": "B1 level language course (CEFR)",
+        "ar": "دورة لغة المستوى B1 (CEFR)",
+        "fa": "دوره آموزش زبان سطح B1 (CEFR)",
+        "fr": "cours de langue de niveau B1 (CECR)"
+      },
+      "definition_el": "Εκπαιδευτικό πρόγραμμα διδασκαλίας της γλώσσας που αντιστοιχεί στο ενδιάμεσο επίπεδο B1 του Κοινού Ευρωπαϊκού Πλαισίου Αναφοράς (CEFR).",
+      "definition_en": "Educational language training program corresponding to the intermediate B1 level of the Common European Framework of Reference for Languages (CEFR).",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "greek-language-proficiency-certificate-level-b1-required-for",
+      "category": "integration",
+      "translations": {
+        "el": "πιστοποιητικό ελληνομάθειας επιπέδου Β1",
+        "en": "Greek language proficiency certificate level B1 (required for naturalization)",
+        "ar": "شهادة إتقان اللغة اليونانية المستوى B1 (مطلوبة للحصول على الجنسية)",
+        "fa": "گواهینامه مهارت زبان یونانی سطح B1 (لازم برای تابعیت)",
+        "fr": "certificat de compétence en langue grecque niveau B1 (requis pour la naturalisation)"
+      },
+      "definition_el": "Επίσημο πιστοποιητικό που αποδεικνύει την επάρκεια στη γλώσσα και τη γραμματική της ελληνικής γλώσσας σε ενδιάμεσο επίπεδο, που αποτελεί προϋπόθεση για την απόκτηση ελληνικής ιθαγένειας.",
+      "definition_en": "An official certificate demonstrating intermediate-level proficiency in Greek language and grammar, which is a mandatory requirement for obtaining Greek citizenship through naturalization.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "naturalization-examination-citizenship-acquisition-procedure",
+      "category": "integration",
+      "translations": {
+        "el": "εξετάσεις πολιτογράφησης",
+        "en": "naturalization examination (citizenship acquisition procedure)",
+        "ar": "اختبارات التجنس (إجراء الحصول على الجنسية)",
+        "fa": "امتحانات تابعیت (فرایند کسب شهروندی)",
+        "fr": "examens de naturalisation (procédure d'acquisition de la nationalité)"
+      },
+      "definition_el": "Η διαδικασία εξέτασης των προϋποθέσεων και της ικανότητας ενός αλλοδαπού για απόκτηση της ιθαγένειας ενός κράτους.",
+      "definition_en": "The process of examining the conditions and eligibility of a foreigner to acquire citizenship of a state.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "regularization-of-residence-long-term-permit",
+      "category": "integration",
+      "translations": {
+        "el": "μονιμοποίηση διαμονής",
+        "en": "regularization of residence (long-term permit)",
+        "ar": "تثبيت الإقامة (تصريح إقامة طويل الأجل)",
+        "fa": "تثبیت اقامت (مجوز اقامت بلند مدت)",
+        "fr": "régularisation du séjour (permis de long terme)"
+      },
+      "definition_el": "Η νομική διαδικασία με την οποία ένα άτομο αποκτά νόμιμο καθεστώς διαμονής για μεσοπρόθεσμη ή μακροχρόνια παραμονή σε ένα κράτος.",
+      "definition_en": "The legal process through which a person obtains lawful residential status for medium-term or long-term stay in a country.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "dypa-unemployment-card-employment",
+      "category": "integration",
+      "translations": {
+        "el": "κάρτα ανεργίας ΔΥΠΑ",
+        "en": "DYPA unemployment card (employment)",
+        "ar": "بطاقة البطالة DYPA (العمل)",
+        "fa": "کارت بیکاری DYPA (اشتغال)",
+        "fr": "carte de chômage DYPA (emploi)"
+      },
+      "definition_el": "Επίσημο έγγραφο που εκδίδει ο Οργανισμός Απασχόλησης (ΔΥΠΑ) για τους ανέργους και καταγράφει την εργασιακή κατάστασή τους.",
+      "definition_en": "Official document issued by the Greek Employment Organization (DYPA) to unemployed persons that records their employment status.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "obtaining-a-tax-identification-number-procedural-step",
+      "category": "integration",
+      "translations": {
+        "el": "απόκτηση ΑΦΜ",
+        "en": "obtaining a tax identification number (procedural step)",
+        "ar": "الحصول على رقم التعريف الضريبي (خطوة إجرائية)",
+        "fa": "دریافت شماره شناسایی مالیاتی (مرحله رویه‌ای)",
+        "fr": "obtention d'un numéro d'identification fiscale (étape procédurale)"
+      },
+      "definition_el": "Η διαδικασία λήψης αριθμού φορολογικού αναγνωριστικού (ΑΦΜ) από τις αρμόδιες αρχές, το οποίο αποτελεί προϋπόθεση για την πρόσβαση σε υπηρεσίες, εργασία και κοινωνικές παροχές.",
+      "definition_en": "The procedural step of obtaining a tax identification number (TIN) from competent authorities, which is a prerequisite for accessing services, employment, and social benefits.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "obtaining-amka-procedural-step-for-healthcare-coverage",
+      "category": "integration",
+      "translations": {
+        "el": "απόκτηση ΑΜΚΑ",
+        "en": "obtaining AMKA (procedural step for healthcare coverage)",
+        "ar": "الحصول على رقم AMKA (خطوة إجرائية للتغطية الصحية)",
+        "fa": "دریافت AMKA (مرحله رویه‌ای برای پوشش بهداشتی)",
+        "fr": "obtention de l'AMKA (étape procédurale de couverture sanitaire)"
+      },
+      "definition_el": "Η διαδικαστική διαδικασία για την εγγραφή αιτούντων/ών ασύλου και ευάλωτων ατόμων στο ελληνικό σύστημα υγείας μέσω της απόκτησης του Αριθμού Μητρώου Κοινωνικής Ασφάλισης (ΑΜΚΑ).",
+      "definition_en": "The procedural process for registering asylum seekers and vulnerable individuals in the Greek healthcare system through the acquisition of a Social Security Registration Number (AMKA).",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "opening-of-a-bank-account-procedural-step",
+      "category": "integration",
+      "translations": {
+        "el": "άνοιγμα τραπεζικού λογαριασμού",
+        "en": "opening of a bank account (procedural step)",
+        "ar": "فتح حساب بنكي (خطوة إجرائية)",
+        "fa": "باز کردن حساب بانکی (مرحله رویه‌ای)",
+        "fr": "ouverture d'un compte bancaire (étape procédurale)"
+      },
+      "definition_el": "Διοικητική διαδικασία που απαιτείται για την ίδρυση τραπεζικού λογαριασμού από αιτούντες άσυλο ή πρόσφυγες, προκειμένου να διευκολυνθεί η οικονομική ενσωμάτωσή τους και η λήψη κοινωνικών παροχών.",
+      "definition_en": "Administrative procedure required for asylum seekers or refugees to establish a bank account, facilitating their financial integration and receipt of social benefits.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "signing-of-employment-contract-work-step",
+      "category": "integration",
+      "translations": {
+        "el": "υπογραφή σύμβασης εργασίας",
+        "en": "signing of employment contract (work step)",
+        "ar": "التوقيع على عقد العمل (خطوة العمل)",
+        "fa": "امضای قرارداد کار (مرحله کاری)",
+        "fr": "signature d'un contrat de travail (étape professionnelle)"
+      },
+      "definition_el": "Η υπογραφή εγγράφου που επιβεβαιώνει τη σύμφωνη θέληση μεταξύ εργοδότη και εργαζομένου για την έναρξη εργασιακής σχέσης.",
+      "definition_en": "The signing of a document that confirms mutual agreement between an employer and employee to establish an employment relationship.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "remote-interpretation-distance-interpretation",
+      "category": "communication",
+      "translations": {
+        "el": "τηλεδιερμηνεία",
+        "en": "remote interpretation (distance interpretation)",
+        "ar": "الترجمة الفورية عن بعد (الترجمة عن طريق الهاتف أو الفيديو)",
+        "fa": "ترجمانی از راه دور (ترجمانی تلفنی یا ویدیویی)",
+        "fr": "interprétation à distance (interprétation téléphonique ou vidéo)"
+      },
+      "definition_el": "Η παροχή υπηρεσιών διερμηνείας μεταξύ ενός διερμηνέα και ενός αιτούντος μέσω τηλεφώνου, βίντεο ή άλλης τηλεματικής τεχνολογίας, χωρίς φυσική παρουσία.",
+      "definition_en": "The provision of interpretation services between an interpreter and an asylum applicant through telephone, video, or other remote communication technology, without physical presence.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "telephone-interpreting-method",
+      "category": "communication",
+      "translations": {
+        "el": "διερμηνεία μέσω τηλεφώνου",
+        "en": "telephone interpreting (method)",
+        "ar": "الترجمة الفورية عبر الهاتف (الطريقة)",
+        "fa": "ترجمانی تلفنی (روش)",
+        "fr": "interprétation par téléphone (méthode)"
+      },
+      "definition_el": "Η μέθοδος διερμηνείας κατά την οποία ο διερμηνέας παρέχει υπηρεσίες ερμηνείας εξ αποστάσεως μέσω τηλεφωνικής σύνδεσης, χωρίς να βρίσκεται φυσικά παρών στο χώρο της συνάντησης.",
+      "definition_en": "An interpreting method in which the interpreter provides interpreting services remotely via telephone connection without being physically present at the location of the meeting.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "video-remote-interpreting-method",
+      "category": "communication",
+      "translations": {
+        "el": "διερμηνεία μέσω βιντεοκλήσης",
+        "en": "video remote interpreting (method)",
+        "ar": "الترجمة الفورية عن بعد عبر الفيديو (الطريقة)",
+        "fa": "ترجمانی از راه دور از طریق تماس ویدئویی (روش)",
+        "fr": "interprétation à distance par vidéo (méthode)"
+      },
+      "definition_el": "Μέθοδος διερμηνείας κατά την οποία ο διερμηνέας παρέχει υπηρεσίες ερμηνείας μέσω ζωντανής βιντεοσύνδεσης, χωρίς να βρίσκεται φυσικά παρών στο χώρο της συνομιλίας.",
+      "definition_en": "An interpreting method in which the interpreter provides interpretation services via live video link without being physically present at the location of the interaction.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "sworn-interpreter-legal-role",
+      "category": "communication",
+      "translations": {
+        "el": "ορκωτός μεταφραστής",
+        "en": "sworn interpreter (legal role)",
+        "ar": "مترجم محلف (دور قانوني)",
+        "fa": "مترجم سوگند خورده (نقش حقوقی)",
+        "fr": "interprète assermenté (rôle juridique)"
+      },
+      "definition_el": "Επαγγελματίας μεταφραστής που έχει ορκιστεί ενώπιον αρμόδιας αρχής και διαθέτει νομική εξουσία να διεξάγει μεταφράσεις σε διαδικασίες ασύλου και δικαστικές υποθέσεις.",
+      "definition_en": "A professional interpreter who has been sworn in before a competent authority and is legally authorized to conduct interpretations in asylum proceedings and court cases.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "ministry-of-foreign-affairs-interpretation-service-official-",
+      "category": "communication",
+      "translations": {
+        "el": "μεταφραστική υπηρεσία ΥΠΕΞ",
+        "en": "Ministry of Foreign Affairs interpretation service (official service)",
+        "ar": "خدمة الترجمة الفورية بوزارة الخارجية (خدمة رسمية)",
+        "fa": "خدمات ترجمه فوری وزارت امور خارجه (خدمه رسمی)",
+        "fr": "service d'interprétation du ministère des Affaires étrangères (service officiel)"
+      },
+      "definition_el": "Επίσημη υπηρεσία μεταφραστικής υποστήριξης που παρέχεται από το Υπουργείο Εξωτερικών της Ελλάδας σε διαδικασίες αιτημάτων ασύλου και φιλοξενίας αλλοδαπών.",
+      "definition_en": "Official interpretation service provided by the Greek Ministry of Foreign Affairs to support asylum applications and reception procedures for foreign nationals.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "code-of-ethics-for-interpreters-professional-standards",
+      "category": "communication",
+      "translations": {
+        "el": "δεοντολογικός κώδικας διερμηνέα",
+        "en": "code of ethics for interpreters (professional standards)",
+        "ar": "مدونة الأخلاقيات للمترجمين الفوريين (معايير مهنية)",
+        "fa": "کد اخلاق برای مترجمان شفاهی (استانداردهای حرفه‌ای)",
+        "fr": "code de déontologie des interprètes (normes professionnelles)"
+      },
+      "definition_el": "Το σύνολο των επαγγελματικών κανόνων και ηθικών αρχών που υποχρεούνται να ακολουθούν οι διερμηνείς κατά την εκτέλεση των καθηκόντων τους σε διαδικασίες αιτημάτων ασύλου και ανθρωπιστικών περιστατικών.",
+      "definition_en": "The set of professional standards and ethical principles that interpreters must follow when performing their duties in asylum procedures and humanitarian contexts.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "interpreter-training-education",
+      "category": "communication",
+      "translations": {
+        "el": "κατάρτιση διερμηνέα",
+        "en": "interpreter training (education)",
+        "ar": "تدريب المترجمين الفوريين (التعليم)",
+        "fa": "آموزش مترجم شفاهی (آموزش)",
+        "fr": "formation des interprètes (éducation)"
+      },
+      "definition_el": "Η διαδικασία εκπαίδευσης και ανάπτυξης δεξιοτήτων των διερμηνέων που εργάζονται σε χώρους υποδοχής προσφύγων, γραφεία ασύλου και ιατρικο-νομικές υπηρεσίες.",
+      "definition_en": "The process of training and developing the skills of interpreters working in refugee reception centers, asylum offices, and medical-legal services.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "sign-language-interpretation-specialized-interpretation",
+      "category": "communication",
+      "translations": {
+        "el": "διερμηνεία σε νοηματική γλώσσα",
+        "en": "sign language interpretation (specialized interpretation)",
+        "ar": "الترجمة الفورية بلغة الإشارة (ترجمة متخصصة)",
+        "fa": "ترجمه‌ی زبان نشانه‌ای (ترجمه‌ی تخصصی)",
+        "fr": "interprétation en langue des signes (interprétation spécialisée)"
+      },
+      "definition_el": "Η παροχή ειδικευμένης διερμηνείας μέσω νοηματικής γλώσσας για άτομα με προβλήματα ακοής κατά τη διάρκεια διαδικασιών αίτησης ασύλου, ιατρικών εξετάσεων ή νομικών συναντήσεων.",
+      "definition_en": "The provision of specialized interpretation through sign language for deaf or hard-of-hearing individuals during asylum procedures, medical examinations, or legal meetings.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "interpretation-for-deafblind-persons-specialized-interpretat",
+      "category": "communication",
+      "translations": {
+        "el": "διερμηνεία για ΚωΦούς-Τυφλούς",
+        "en": "interpretation for DeafBlind persons (specialized interpretation)",
+        "ar": "الترجمة الفورية للأشخاص الصم العميان (ترجمة متخصصة)",
+        "fa": "ترجمانی برای افراد کر و نابینا (ترجمانی تخصصی)",
+        "fr": "interprétation pour les personnes sourdes-aveugles (interprétation spécialisée)"
+      },
+      "definition_el": "Εξειδικευμένη υπηρεσία διερμηνείας που παρέχεται σε άτομα με συνδυασμένη απώλεια ακοής και όρασης, χρησιμοποιώντας τακτιλιακές μεθόδους επικοινωνίας.",
+      "definition_en": "Specialized interpretation service provided to persons with combined hearing and vision loss, using tactile communication methods.",
       "sources": [
         "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
       ]
