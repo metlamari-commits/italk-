@@ -1070,6 +1070,40 @@
     }
     footer a { margin: 0 6px; color: var(--primary); }
 
+    /* Bottom nav */
+    body { padding-bottom: 80px; }
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--surface);
+      border-top: 1.5px solid var(--border);
+      display: flex;
+      justify-content: space-around;
+      padding: 8px 12px;
+      z-index: 30;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+    }
+    .bottom-nav a {
+      flex: 1;
+      max-width: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      padding: 6px 4px;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 11px;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .bottom-nav a.active { color: var(--primary); background: var(--surface-alt); }
+    .bottom-nav a:hover { color: var(--primary); text-decoration: none; }
+    .bottom-nav .nav-icon { font-size: 20px; line-height: 1; }
+
     /* ---- MOBILE ---- */
     @media (max-width: 640px) {
       .header-row { padding: 10px 14px; gap: 10px; }
@@ -1158,6 +1192,11 @@
   </main>
 
   <div class="toast" id="toast"></div>
+
+  <nav class="bottom-nav">
+    <a href="index.html" class="active"><span class="nav-icon">📚</span><span>Γλωσσάρι</span></a>
+    <a href="learn.html"><span class="nav-icon">🎯</span><span>Μάθε</span></a>
+  </nav>
 
   <div class="fs-overlay" id="fs-overlay" role="dialog" aria-modal="true" aria-label="Προβολή στον εξυπηρετούμενο">
     <div class="fs-content">

@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Μάθε — i-talk.gr</title>
+  <meta name="description" content="Ημερήσια εξάσκηση ορολογίας ασύλου με multiple choice — για διερμηνείς. Δωρεάν, χωρίς λογαριασμό.">
+  <link rel="canonical" href="https://i-talk.gr/learn.html">
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+  <link rel="apple-touch-icon" href="/icon-192.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#114277">
+  <meta name="robots" content="index, follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500;600;700&family=Noto+Naskh+Arabic:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --surface-alt: #eef2f8;
+      --border: #cbd5e1;
+      --border-strong: #94a3b8;
+      --text: #0a0e13;
+      --text-dim: #475569;
+      --text-muted: #64748b;
+      --primary: #114277;
+      --primary-hover: #0a3f7a;
+      --dark: #0F1419;
+      --dom-medical: #D9383A;
+      --dom-medical-bg: #FDF2F2;
+      --dom-legal: #2B52BA;
+      --dom-legal-bg: #EEF2FC;
+      --dom-warm: #E06D24;
+      --dom-warm-bg: #FDF4EA;
+      --success: #0D828A;
+      --success-bg: #E7F6F7;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Atkinson Hyperlegible', system-ui, -apple-system, sans-serif;
+      line-height: 1.5;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 80px; /* bottom nav space */
+    }
+
+    a { color: var(--primary); text-decoration: none; }
+
+    /* HEADER */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+    .header-row {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .brand {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+    }
+    .brand .dot { color: var(--dom-warm); }
+    .header-sub {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--text-muted);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    /* MAIN */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 20px 16px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    /* HUD — streak · XP · hearts */
+    .hud {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      padding: 10px;
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      gap: 8px;
+      box-shadow: 0px 4px 0px 0px var(--dark);
+    }
+    .hud-item {
+      flex: 1;
+      background: var(--surface-alt);
+      border-radius: 8px;
+      padding: 8px 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 0;
+    }
+    .hud-emoji { font-size: 22px; line-height: 1; }
+    .hud-labels { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+    .hud-lbl {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+    .hud-val {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.1;
+    }
+    .hud-val.xp { color: var(--primary); }
+    .hud-val.hearts { color: var(--dom-medical); }
+    .hud-val.hearts.empty { color: var(--text-muted); }
+
+    /* Daily "Πρωινή Βάρδια" card */
+    .daily-card {
+      background: var(--primary);
+      color: #fff;
+      border: 2px solid var(--dark);
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0px 4px 0px 0px var(--dark);
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .daily-icon {
+      background: rgba(255,255,255,0.12);
+      border-radius: 10px;
+      padding: 8px;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+    .daily-body { flex: 1; }
+    .daily-tag {
+      display: inline-block;
+      background: var(--dom-warm);
+      color: #fff;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      letter-spacing: 0.6px;
+      margin-right: 8px;
+    }
+    .daily-mins {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: rgba(255,255,255,0.8);
+    }
+    .daily-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 6px 0 4px;
+      line-height: 1.25;
+    }
+    .daily-desc {
+      font-size: 13px;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 14px;
+    }
+    .start-btn {
+      background: var(--dom-warm);
+      color: #fff;
+      border: 2px solid var(--dark);
+      border-radius: 10px;
+      padding: 12px 20px;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0px 4px 0px 0px var(--dark);
+      transition: transform 0.1s, box-shadow 0.1s;
+    }
+    .start-btn:hover { background: #cc5a15; }
+    .start-btn:active {
+      transform: translateY(2px);
+      box-shadow: 0px 2px 0px 0px var(--dark);
+    }
+    .start-btn:disabled {
+      background: var(--text-muted);
+      cursor: not-allowed;
+      opacity: 0.6;
+      box-shadow: 0px 2px 0px 0px var(--dark);
+    }
+
+    /* Info box */
+    .info-card {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-size: 13px;
+      color: var(--text-dim);
+      line-height: 1.55;
+    }
+    .info-card h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .info-card ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .info-card li { margin-bottom: 3px; }
+
+    /* Hearts-empty state */
+    .hearts-warning {
+      background: var(--dom-medical-bg);
+      border: 1.5px solid var(--dom-medical);
+      color: #7a1c1e;
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 13px;
+      display: none;
+    }
+    .hearts-warning.show { display: block; }
+    .hearts-warning strong { color: var(--dom-medical); }
+    .hearts-warning .countdown { font-family: 'JetBrains Mono', monospace; }
+
+    /* ============ QUIZ OVERLAY ============ */
+    .quiz-overlay, .result-overlay {
+      position: fixed;
+      inset: 0;
+      background: var(--bg);
+      z-index: 100;
+      display: none;
+      flex-direction: column;
+      padding: 16px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .quiz-overlay.show, .result-overlay.show { display: flex; }
+    .quiz-top {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .quiz-close {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      color: var(--text-dim);
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .quiz-progress-outer {
+      flex: 1;
+      height: 12px;
+      background: var(--surface-alt);
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .quiz-progress-bar {
+      height: 100%;
+      background: var(--success);
+      transition: width 0.3s ease;
+    }
+    .quiz-hearts-mini {
+      background: var(--dom-medical-bg);
+      color: var(--dom-medical);
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: 1.5px solid var(--dom-medical);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      min-width: 50px;
+      justify-content: center;
+    }
+
+    .quiz-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 560px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .quiz-instruction {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+    .quiz-question-card {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: 14px;
+      padding: 24px 20px;
+      text-align: center;
+      box-shadow: 0px 4px 0px 0px var(--dark);
+    }
+    .quiz-term {
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.2;
+      margin-top: 6px;
+    }
+    .quiz-term.rtl {
+      direction: rtl;
+      font-family: 'Noto Naskh Arabic', 'Atkinson Hyperlegible', serif;
+      font-size: 34px;
+    }
+    .quiz-category {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--text-dim);
+      background: var(--surface-alt);
+      padding: 3px 8px;
+      border-radius: 6px;
+      margin-top: 12px;
+      text-transform: uppercase;
+    }
+    .quiz-listen {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      color: var(--primary);
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-family: inherit;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+
+    .quiz-choices {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .quiz-choice {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 16px 18px;
+      font-family: inherit;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: left;
+      min-height: 56px;
+      transition: all 0.12s;
+      box-shadow: 0px 3px 0px 0px var(--border-strong);
+    }
+    .quiz-choice:hover { border-color: var(--primary); background: var(--surface-alt); }
+    .quiz-choice:active { transform: translateY(1px); box-shadow: 0px 2px 0px 0px var(--border-strong); }
+    .quiz-choice.rtl { direction: rtl; font-family: 'Noto Naskh Arabic', 'Atkinson Hyperlegible', serif; font-size: 18px; }
+    .quiz-choice.correct {
+      background: var(--success-bg);
+      border-color: var(--success);
+      color: var(--success);
+      font-weight: 700;
+      box-shadow: 0px 3px 0px 0px var(--success);
+    }
+    .quiz-choice.wrong {
+      background: var(--dom-medical-bg);
+      border-color: var(--dom-medical);
+      color: var(--dom-medical);
+      font-weight: 700;
+      box-shadow: 0px 3px 0px 0px var(--dom-medical);
+    }
+    .quiz-choice:disabled { cursor: default; }
+
+    .quiz-feedback {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .quiz-feedback.show { display: flex; }
+    .quiz-feedback.correct { background: var(--success-bg); border-color: var(--success); }
+    .quiz-feedback.wrong { background: var(--dom-medical-bg); border-color: var(--dom-medical); }
+    .quiz-feedback-text {
+      flex: 1;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .quiz-feedback.correct .quiz-feedback-text { color: var(--success); }
+    .quiz-feedback.wrong .quiz-feedback-text { color: var(--dom-medical); }
+    .quiz-next {
+      background: var(--dark);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 20px;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      min-height: 44px;
+    }
+
+    /* ============ RESULT OVERLAY ============ */
+    .result-overlay {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .result-emoji { font-size: 72px; }
+    .result-title { font-size: 30px; font-weight: 700; margin: 12px 0 6px; }
+    .result-score { font-size: 18px; color: var(--text-dim); margin-bottom: 20px; }
+    .result-stats {
+      background: var(--surface);
+      border: 2px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      max-width: 380px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 24px;
+      box-shadow: 0px 4px 0px 0px var(--dark);
+    }
+    .result-stat { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+    .result-stat-lbl {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+    }
+    .result-stat-val {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .result-actions {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      width: 100%;
+      max-width: 380px;
+    }
+    .result-btn {
+      background: var(--primary);
+      color: #fff;
+      border: 2px solid var(--dark);
+      border-radius: 10px;
+      padding: 14px;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 0px 4px 0px 0px var(--dark);
+    }
+    .result-btn.secondary { background: var(--surface); color: var(--text); box-shadow: 0px 4px 0px 0px var(--border-strong); border-color: var(--border-strong); }
+
+    /* BOTTOM NAV */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--surface);
+      border-top: 1.5px solid var(--border);
+      display: flex;
+      justify-content: space-around;
+      padding: 8px 12px;
+      z-index: 30;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+    }
+    .bottom-nav a {
+      flex: 1;
+      max-width: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      padding: 6px 4px;
+      color: var(--text-muted);
+      font-family: inherit;
+      font-size: 11px;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .bottom-nav a.active {
+      color: var(--primary);
+      background: var(--surface-alt);
+    }
+    .bottom-nav .nav-icon { font-size: 20px; line-height: 1; }
+
+    @media (max-width: 400px) {
+      .quiz-term { font-size: 24px; }
+      .quiz-term.rtl { font-size: 28px; }
+      .daily-title { font-size: 17px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-row">
+      <div class="brand">i-talk<span class="dot">.</span>gr</div>
+      <span class="header-sub">🎯 Μάθε</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hud">
+      <div class="hud-item">
+        <span class="hud-emoji">🔥</span>
+        <div class="hud-labels">
+          <span class="hud-lbl">Σερί</span>
+          <span class="hud-val" id="hud-streak">0 μέρες</span>
+        </div>
+      </div>
+      <div class="hud-item">
+        <span class="hud-emoji">⚡</span>
+        <div class="hud-labels">
+          <span class="hud-lbl">Πόντοι</span>
+          <span class="hud-val xp" id="hud-xp">0 XP</span>
+        </div>
+      </div>
+      <div class="hud-item">
+        <span class="hud-emoji">❤</span>
+        <div class="hud-labels">
+          <span class="hud-lbl">Ζωές</span>
+          <span class="hud-val hearts" id="hud-hearts">5/5</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="daily-card">
+      <div class="daily-icon">⏱</div>
+      <div class="daily-body">
+        <span class="daily-tag">ΗΜΕΡΗΣΙΑ ΕΞΑΣΚΗΣΗ</span>
+        <span class="daily-mins">~5 λεπτά · 10 ερωτήσεις</span>
+        <h2 class="daily-title">Εξάσκηση Ορολογίας Ασύλου</h2>
+        <p class="daily-desc">10 multiple choice για να κρατάς την ορολογία σου σε ετοιμότητα πριν από συνεντεύξεις.</p>
+        <button class="start-btn" id="start-btn">
+          <span>▶</span>
+          <span>Ξεκίνα Μάθημα</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="hearts-warning" id="hearts-warning">
+      <strong>Τελείωσαν οι ζωές σου.</strong> Επόμενη καρδιά σε <span class="countdown" id="regen-countdown">--:--</span>.
+      Χρησιμοποίησε τον χρόνο για να ξεφυλλίσεις το <a href="index.html">γλωσσάρι</a>.
+    </div>
+
+    <div class="info-card">
+      <h3>Πώς λειτουργεί</h3>
+      <ul>
+        <li>10 ερωτήσεις multiple choice — σου δίνω έναν όρο, διαλέγεις σωστή μετάφραση από 4 επιλογές</li>
+        <li>Σωστή: <strong>+10 XP</strong> · Λάθος: <strong>−1 καρδιά</strong></li>
+        <li>Καρδιές: 5. Αν τελειώσουν, περιμένεις 30 λεπτά για την επόμενη</li>
+        <li>Παίξε καθημερινά για σερί 🔥. Χάνεις το σερί αν δεν παίξεις για 24+ ώρες</li>
+        <li>Οι όροι έρχονται από το γλωσσάρι (UNHCR / EUAA / Ν.4939/2022) — μαθαίνεις μόνο ελεγμένη ορολογία</li>
+      </ul>
+    </div>
+  </main>
+
+  <div class="quiz-overlay" id="quiz-overlay">
+    <div class="quiz-top">
+      <button class="quiz-close" id="quiz-close" aria-label="Κλείσιμο">×</button>
+      <div class="quiz-progress-outer"><div class="quiz-progress-bar" id="quiz-progress-bar"></div></div>
+      <div class="quiz-hearts-mini" id="quiz-hearts-mini">❤ 5</div>
+    </div>
+    <div class="quiz-body">
+      <div class="quiz-question-card">
+        <div class="quiz-instruction" id="quiz-instruction">Ποια είναι η μετάφραση;</div>
+        <div class="quiz-term" id="quiz-term">—</div>
+        <button class="quiz-listen" id="quiz-listen" hidden>🔊 Άκουσε</button>
+        <div><span class="quiz-category" id="quiz-category">—</span></div>
+      </div>
+      <div class="quiz-choices" id="quiz-choices"></div>
+      <div class="quiz-feedback" id="quiz-feedback">
+        <div class="quiz-feedback-text" id="quiz-feedback-text"></div>
+        <button class="quiz-next" id="quiz-next">Συνέχεια →</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="result-overlay" id="result-overlay">
+    <div class="result-emoji" id="result-emoji">🎉</div>
+    <div class="result-title" id="result-title">Τέλεια δουλειά!</div>
+    <div class="result-score" id="result-score">— / 10 σωστά</div>
+    <div class="result-stats">
+      <div class="result-stat">
+        <span class="result-stat-lbl">XP</span>
+        <span class="result-stat-val" id="result-xp">+0</span>
+      </div>
+      <div class="result-stat">
+        <span class="result-stat-lbl">Σερί</span>
+        <span class="result-stat-val" id="result-streak">0 🔥</span>
+      </div>
+      <div class="result-stat">
+        <span class="result-stat-lbl">Ζωές</span>
+        <span class="result-stat-val" id="result-hearts">5</span>
+      </div>
+    </div>
+    <div class="result-actions">
+      <button class="result-btn" id="result-again">Ξανά</button>
+      <a class="result-btn secondary" href="index.html" style="text-align:center; text-decoration:none; display:block;">Πίσω στο Γλωσσάρι</a>
+    </div>
+  </div>
+
+  <nav class="bottom-nav">
+    <a href="index.html"><span class="nav-icon">📚</span><span>Γλωσσάρι</span></a>
+    <a href="learn.html" class="active"><span class="nav-icon">🎯</span><span>Μάθε</span></a>
+  </nav>
+
+<script>
+const STATE_KEY = "italk_game_v1";
+const MAX_HEARTS = 5;
+const REGEN_MINUTES = 30;
+const XP_PER_CORRECT = 10;
+const QUIZ_LENGTH = 10;
+
+const LANG_LABELS = { el: "Ελληνικά", en: "English", ar: "العربية", fa: "فارسی", fr: "Français" };
+const LANG_SHORT  = { el: "EL", en: "EN", ar: "AR", fa: "FA", fr: "FR" };
+const LANG_BCP47  = { el: "el-GR", en: "en-US", ar: "ar-SA", fa: "fa-IR", fr: "fr-FR" };
+const RTL_LANGS = new Set(["ar", "fa"]);
+
+const state = {
+  terms: null,
+  categories: null,
+  quiz: null,       // {questions: [...], currentIndex, correctCount, wrongCount}
+  game: null        // loaded from localStorage
+};
+
+/* ---- localStorage state ---- */
+function todayISO() { return new Date().toISOString().slice(0, 10); }
+
+function defaultGame() {
+  return {
+    streak: 0,
+    lastPlayedDate: null,
+    xp: 0,
+    hearts: MAX_HEARTS,
+    heartRegenAt: null,
+    lessonsCompleted: 0
+  };
+}
+
+function loadGame() {
+  try {
+    const raw = localStorage.getItem(STATE_KEY);
+    if (raw) state.game = { ...defaultGame(), ...JSON.parse(raw) };
+    else state.game = defaultGame();
+  } catch(e) { state.game = defaultGame(); }
+  regenHearts();
+}
+
+function saveGame() {
+  try { localStorage.setItem(STATE_KEY, JSON.stringify(state.game)); } catch(e) {}
+}
+
+function regenHearts() {
+  if (state.game.hearts >= MAX_HEARTS) {
+    state.game.heartRegenAt = null;
+    return;
+  }
+  if (!state.game.heartRegenAt) {
+    state.game.heartRegenAt = Date.now() + REGEN_MINUTES * 60 * 1000;
+    return;
+  }
+  const now = Date.now();
+  while (state.game.hearts < MAX_HEARTS && now >= state.game.heartRegenAt) {
+    state.game.hearts++;
+    state.game.heartRegenAt = state.game.heartRegenAt + REGEN_MINUTES * 60 * 1000;
+  }
+  if (state.game.hearts >= MAX_HEARTS) state.game.heartRegenAt = null;
+}
+
+function updateStreakOnPlay() {
+  const today = todayISO();
+  const last = state.game.lastPlayedDate;
+  if (last === today) return; // already counted today
+  const y = new Date();
+  y.setDate(y.getDate() - 1);
+  const yesterday = y.toISOString().slice(0, 10);
+  if (last === yesterday) state.game.streak++;
+  else state.game.streak = 1;
+  state.game.lastPlayedDate = today;
+}
+
+function renderHud() {
+  document.getElementById("hud-streak").textContent = state.game.streak + " μέρες";
+  document.getElementById("hud-xp").textContent = state.game.xp.toLocaleString("el-GR") + " XP";
+  const hEl = document.getElementById("hud-hearts");
+  hEl.textContent = state.game.hearts + "/" + MAX_HEARTS;
+  hEl.classList.toggle("empty", state.game.hearts === 0);
+
+  const warn = document.getElementById("hearts-warning");
+  const startBtn = document.getElementById("start-btn");
+  if (state.game.hearts === 0) {
+    warn.classList.add("show");
+    startBtn.disabled = true;
+    startBtn.innerHTML = "<span>❤</span><span>Καμία ζωή διαθέσιμη</span>";
+    startCountdown();
+  } else {
+    warn.classList.remove("show");
+    startBtn.disabled = false;
+    startBtn.innerHTML = "<span>▶</span><span>Ξεκίνα Μάθημα</span>";
+    stopCountdown();
+  }
+}
+
+let countdownTimer = null;
+function startCountdown() {
+  stopCountdown();
+  const tick = () => {
+    if (!state.game.heartRegenAt || state.game.hearts >= MAX_HEARTS) {
+      regenHearts(); renderHud(); return;
+    }
+    const ms = state.game.heartRegenAt - Date.now();
+    if (ms <= 0) { regenHearts(); saveGame(); renderHud(); return; }
+    const s = Math.floor(ms / 1000);
+    const mm = String(Math.floor(s / 60)).padStart(2, "0");
+    const ss = String(s % 60).padStart(2, "0");
+    const el = document.getElementById("regen-countdown");
+    if (el) el.textContent = mm + ":" + ss;
+  };
+  tick();
+  countdownTimer = setInterval(tick, 1000);
+}
+function stopCountdown() { if (countdownTimer) { clearInterval(countdownTimer); countdownTimer = null; } }
+
+/* ---- Data ---- */
+async function loadTerms() {
+  const res = await fetch("data/terms.json", { cache: "no-cache" });
+  const data = await res.json();
+  state.terms = data.terms;
+  state.categories = data.categories;
+}
+
+/* ---- Quiz generation ---- */
+function pickRandom(arr, n, exclude) {
+  const excl = new Set(exclude || []);
+  const pool = arr.filter(x => !excl.has(x));
+  const shuffled = pool.slice().sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, n);
+}
+
+// Generate one question: pick a term, choose source & target languages, build 4 options
+function generateQuestion(term, otherTerms) {
+  // Random language direction — always EL as source, target is one of ar/en/fr/fa
+  const targetLangOptions = ["ar", "en", "fr", "fa"];
+  const availableTargets = targetLangOptions.filter(l => term.translations[l]);
+  if (!availableTargets.length) return null;
+  const targetLang = availableTargets[Math.floor(Math.random() * availableTargets.length)];
+  const sourceLang = "el";
+  const source = term.translations[sourceLang];
+  const correct = term.translations[targetLang];
+  if (!source || !correct) return null;
+
+  // Distractors: same category if possible, else any
+  const sameCat = otherTerms.filter(t => t.category === term.category && t.translations[targetLang] && t.translations[targetLang] !== correct);
+  const anyCat = otherTerms.filter(t => t.translations[targetLang] && t.translations[targetLang] !== correct);
+  const pool = sameCat.length >= 3 ? sameCat : anyCat;
+  const distractors = pickRandom(pool, 3).map(t => t.translations[targetLang]);
+  // Dedupe just in case
+  const uniqueDistractors = Array.from(new Set(distractors)).slice(0, 3);
+  while (uniqueDistractors.length < 3) {
+    const extra = pickRandom(otherTerms, 1)[0];
+    if (extra && extra.translations[targetLang] && !uniqueDistractors.includes(extra.translations[targetLang]) && extra.translations[targetLang] !== correct) {
+      uniqueDistractors.push(extra.translations[targetLang]);
+    } else break;
+  }
+  const choices = [correct, ...uniqueDistractors].sort(() => Math.random() - 0.5);
+
+  const catObj = state.categories.find(c => c.id === term.category);
+  return {
+    termId: term.id,
+    sourceLang,
+    targetLang,
+    source,
+    correct,
+    choices,
+    categoryLabel: catObj ? catObj.el : term.category
+  };
+}
+
+function generateQuiz() {
+  // Pick 10 random terms that have at least 2 non-EL translations (to allow multiple targets)
+  const eligible = state.terms.filter(t => {
+    const langs = Object.keys(t.translations).filter(l => l !== "el" && t.translations[l]);
+    return langs.length >= 1;
+  });
+  const picked = pickRandom(eligible, QUIZ_LENGTH);
+  const questions = [];
+  for (const t of picked) {
+    const others = state.terms.filter(x => x.id !== t.id);
+    const q = generateQuestion(t, others);
+    if (q) questions.push(q);
+  }
+  state.quiz = { questions, currentIndex: 0, correctCount: 0, wrongCount: 0, xpEarned: 0, heartsLostInQuiz: 0 };
+}
+
+/* ---- Quiz UI ---- */
+function renderCurrentQuestion() {
+  const q = state.quiz.questions[state.quiz.currentIndex];
+  if (!q) return endQuiz();
+
+  const progressPct = (state.quiz.currentIndex / state.quiz.questions.length) * 100;
+  document.getElementById("quiz-progress-bar").style.width = progressPct + "%";
+  document.getElementById("quiz-hearts-mini").textContent = "❤ " + state.game.hearts;
+
+  document.getElementById("quiz-instruction").textContent =
+    "Ποια είναι η μετάφραση στα " + LANG_LABELS[q.targetLang] + ";";
+  const termEl = document.getElementById("quiz-term");
+  termEl.textContent = q.source;
+  termEl.className = "quiz-term" + (RTL_LANGS.has(q.sourceLang) ? " rtl" : "");
+  document.getElementById("quiz-category").textContent = q.categoryLabel;
+
+  // Speak button — play the source term
+  const listenBtn = document.getElementById("quiz-listen");
+  listenBtn.hidden = false;
+  listenBtn.onclick = () => speakText(q.source, q.sourceLang);
+
+  const choicesEl = document.getElementById("quiz-choices");
+  choicesEl.innerHTML = "";
+  q.choices.forEach(choice => {
+    const btn = document.createElement("button");
+    btn.className = "quiz-choice" + (RTL_LANGS.has(q.targetLang) ? " rtl" : "");
+    btn.textContent = choice;
+    btn.addEventListener("click", () => handleAnswer(btn, choice, q));
+    choicesEl.appendChild(btn);
+  });
+
+  document.getElementById("quiz-feedback").className = "quiz-feedback";
+}
+
+function speakText(text, lang) {
+  if (!window.speechSynthesis) return;
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = LANG_BCP47[lang] || "en-US";
+  u.rate = 0.85;
+  speechSynthesis.speak(u);
+}
+
+function handleAnswer(btnEl, choice, q) {
+  const choicesEl = document.getElementById("quiz-choices");
+  Array.from(choicesEl.children).forEach(b => b.disabled = true);
+  const feedback = document.getElementById("quiz-feedback");
+  const feedbackText = document.getElementById("quiz-feedback-text");
+  const isCorrect = choice === q.correct;
+  if (isCorrect) {
+    btnEl.classList.add("correct");
+    state.quiz.correctCount++;
+    state.quiz.xpEarned += XP_PER_CORRECT;
+    feedback.classList.add("show", "correct");
+    feedbackText.textContent = "✓ Σωστά! +" + XP_PER_CORRECT + " XP";
+    speakText(q.correct, q.targetLang);
+  } else {
+    btnEl.classList.add("wrong");
+    // Also highlight correct answer
+    Array.from(choicesEl.children).forEach(b => {
+      if (b.textContent === q.correct) b.classList.add("correct");
+    });
+    state.quiz.wrongCount++;
+    state.quiz.heartsLostInQuiz++;
+    state.game.hearts = Math.max(0, state.game.hearts - 1);
+    if (state.game.hearts < MAX_HEARTS && !state.game.heartRegenAt) {
+      state.game.heartRegenAt = Date.now() + REGEN_MINUTES * 60 * 1000;
+    }
+    feedback.classList.add("show", "wrong");
+    feedbackText.innerHTML = "✗ Σωστή απάντηση: <strong>" + q.correct + "</strong>";
+  }
+  document.getElementById("quiz-hearts-mini").textContent = "❤ " + state.game.hearts;
+  saveGame();
+}
+
+function nextQuestion() {
+  state.quiz.currentIndex++;
+  if (state.game.hearts === 0) {
+    endQuiz(true); // ran out of hearts
+    return;
+  }
+  if (state.quiz.currentIndex >= state.quiz.questions.length) {
+    endQuiz(false);
+    return;
+  }
+  renderCurrentQuestion();
+}
+
+function startQuiz() {
+  if (state.game.hearts === 0) return;
+  generateQuiz();
+  if (!state.quiz.questions.length) {
+    alert("Δεν βρέθηκαν ερωτήσεις — φόρτωσε ξανά τη σελίδα.");
+    return;
+  }
+  document.getElementById("quiz-overlay").classList.add("show");
+  document.getElementById("result-overlay").classList.remove("show");
+  renderCurrentQuestion();
+}
+
+function endQuiz(ranOutOfHearts) {
+  document.getElementById("quiz-overlay").classList.remove("show");
+  state.game.xp += state.quiz.xpEarned;
+  if (state.quiz.correctCount > 0) {
+    state.game.lessonsCompleted++;
+    updateStreakOnPlay();
+  }
+  saveGame();
+  renderHud();
+
+  const total = state.quiz.questions.length;
+  const correct = state.quiz.correctCount;
+  const pct = correct / total;
+  let emoji = "🎉", title = "Τέλεια δουλειά!";
+  if (ranOutOfHearts) { emoji = "💔"; title = "Τελείωσαν οι καρδιές"; }
+  else if (pct === 1) { emoji = "🏆"; title = "Άριστα!"; }
+  else if (pct >= 0.7) { emoji = "👏"; title = "Πολύ καλά!"; }
+  else if (pct >= 0.4) { emoji = "💪"; title = "Συνέχισε την προσπάθεια!"; }
+  else { emoji = "📖"; title = "Καλή αρχή"; }
+
+  document.getElementById("result-emoji").textContent = emoji;
+  document.getElementById("result-title").textContent = title;
+  document.getElementById("result-score").textContent = correct + " / " + total + " σωστά";
+  document.getElementById("result-xp").textContent = "+" + state.quiz.xpEarned;
+  document.getElementById("result-streak").textContent = state.game.streak + " 🔥";
+  document.getElementById("result-hearts").textContent = state.game.hearts + "/" + MAX_HEARTS;
+  document.getElementById("result-overlay").classList.add("show");
+}
+
+function closeQuiz() {
+  if (!confirm("Θέλεις να διακόψεις την εξάσκηση; Οι πόντοι που κέρδισες θα χαθούν.")) return;
+  document.getElementById("quiz-overlay").classList.remove("show");
+  state.quiz = null;
+}
+
+async function init() {
+  loadGame();
+  try { await loadTerms(); } catch(e) {
+    document.querySelector("main").innerHTML =
+      '<div class="info-card" style="border-color:var(--dom-medical);color:var(--dom-medical)">Δεν φόρτωσαν τα δεδομένα. Δοκίμασε refresh.</div>';
+    return;
+  }
+  renderHud();
+  document.getElementById("start-btn").addEventListener("click", startQuiz);
+  document.getElementById("quiz-close").addEventListener("click", closeQuiz);
+  document.getElementById("quiz-next").addEventListener("click", nextQuestion);
+  document.getElementById("result-again").addEventListener("click", () => {
+    document.getElementById("result-overlay").classList.remove("show");
+    startQuiz();
+  });
+}
+
+document.addEventListener("DOMContentLoaded", init);
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  });
+}
+</script>
+
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0d5d3395ee364e91b84a31570635e971"}'></script>
+</body>
+</html>
