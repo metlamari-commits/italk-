@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.7.0",
+    "version": "0.7.1",
     "updated": "2026-09-06",
     "languages": [
       "el",
@@ -17,7 +17,8 @@
       "recommendation_el",
       "recommendation_en"
     ],
-    "ai_filled_note": "41 terms (mostly APR/Pact-era legal instruments) had AR/FA translations added on 2026-09-06 via Claude Haiku through the italk-translate Cloudflare Worker; these should be reviewed by a native speaker before quoting in official contexts."
+    "ai_filled_note": "41 terms (mostly APR/Pact-era legal instruments) had AR/FA translations added on 2026-09-06 via Claude Haiku through the italk-translate Cloudflare Worker; these should be reviewed by a native speaker before quoting in official contexts.",
+    "total_terms_note": "Milestone: crossed 1000 terms on 2026-09-06 via 4 AI batches on the italk-translate Cloudflare Worker (Claude Haiku 4.5). Original 151 human-curated terms are unchanged; the AI-added 849+ are flagged in sources[] as needing native-speaker review."
   },
   "categories": [
     {
@@ -16376,6 +16377,230 @@
       },
       "definition_el": "Προσπάθεια προκαλέσει το θάνατό του από άτομο, που απαιτεί άμεση ψυχιατρική παρέμβαση και νοσηλεία.",
       "definition_en": "An act of self-harm with the intent to end one's life, requiring immediate psychiatric intervention and hospitalization.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "income-tax-refund-greek-tax-procedure",
+      "category": "integration",
+      "translations": {
+        "el": "επιστροφή φόρου εισοδήματος",
+        "en": "income tax refund (Greek tax procedure)",
+        "ar": "استرجاع ضريبة الدخل (الإجراء الضريبي اليوناني)",
+        "fa": "بازپرداخت مالیات درآمد (رویه مالیاتی یونانی)",
+        "fr": "remboursement de l'impôt sur le revenu (procédure fiscale grecque)"
+      },
+      "definition_el": "Η διαδικασία επιστροφής του υπερβολικά καταβληθέντος φόρου εισοδήματος από τις ελληνικές φορολογικές αρχές στον φορολογούμενο.",
+      "definition_en": "The process by which the Greek tax authorities return overpaid income tax to a taxpayer.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "oasa-athens-monthly-travel-card-public-transport-card",
+      "category": "integration",
+      "translations": {
+        "el": "κάρτα μηνιαίας μετακίνησης ΟΑΣΑ Αθήνας",
+        "en": "OASA Athens monthly travel card (public transport card)",
+        "ar": "بطاقة التنقل الشهرية لمنظمة النقل العام بأثينا (بطاقة النقل العام)",
+        "fa": "کارت سفر ماهانه اتوبوس‌رانی اتن (کارت حمل‌ونقل عمومی)",
+        "fr": "carte de transport mensuelle OASA Athènes (carte de transports publics)"
+      },
+      "definition_el": "Επίσημη κάρτα πρόσβασης στο δίκτυο δημόσιας συγκοινωνίας της Αθήνας που επιτρέπει ανεριόριστα ταξίδια για διάρκεια ενός μηνιαίου περιόδου.",
+      "definition_en": "Official access card to Athens public transport network that allows unlimited travel for one calendar month.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "voluntary-return-iom-iom-avr-programme",
+      "category": "return",
+      "translations": {
+        "el": "εθελοντική επιστροφή IOM",
+        "en": "voluntary return IOM (IOM AVR programme)",
+        "ar": "العودة الطوعية IOM (برنامج AVR التابع للمنظمة الدولية للهجرة)",
+        "fa": "بازگشت داوطلبانه سازمان مهاجرت بین‌الملل (برنامج AVR)",
+        "fr": "retour volontaire IOM (programme AVR de l'OIM)"
+      },
+      "definition_el": "Το πρόγραμμα της Διεθνούς Οργάνωσης Μετανάστευσης (IOM) που παρέχει οικονομική και λογιστική υποστήριξη σε αιτητές ασύλου και μετανάστες που επιθυμούν να επιστρέψουν εθελοντικά στη χώρα προέλευσής τους.",
+      "definition_en": "The International Organization for Migration (IOM) programme that provides financial and logistical assistance to asylum seekers and migrants who wish to voluntarily return to their country of origin.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "helios-programme-housing-allowance",
+      "category": "integration",
+      "translations": {
+        "el": "πρόγραμμα Ήλιος (HELIOS) επίδομα στέγασης",
+        "en": "HELIOS programme housing allowance",
+        "ar": "برنامج هيليوس (HELIOS) بدل الإسكان",
+        "fa": "برنامه هلیوس (HELIOS) کمک هزینه مسکن",
+        "fr": "programme HELIOS allocation de logement"
+      },
+      "definition_el": "Κρατικό πρόγραμμα χρηματοδότησης που παρέχει οικονομική ενίσχυση για τη στέγαση ευάλωτων προσώπων και αιτούντων ασύλου στην Ελλάδα.",
+      "definition_en": "A state-funded housing assistance programme that provides financial support for accommodation of vulnerable persons and asylum seekers in Greece.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "labour-market-integration",
+      "category": "integration",
+      "translations": {
+        "el": "ένταξη στην αγορά εργασίας",
+        "en": "labour market integration",
+        "ar": "الاندماج في سوق العمل",
+        "fa": "ادغام در بازار کار",
+        "fr": "intégration au marché du travail"
+      },
+      "definition_el": "Η διαδικασία επιτρέπης και διευκόλυνσης της πρόσβασης των προσφύγων και αιτούντων ασύλου στις θέσεις εργασίας και στον οικονομικό ιστό της χώρας υποδοχής.",
+      "definition_en": "The process of enabling and facilitating access of refugees and asylum seekers to employment opportunities and economic participation in the host country.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "efka-social-insurance-contributions-greek-social-security",
+      "category": "integration",
+      "translations": {
+        "el": "ασφαλιστικές εισφορές ΕΦΚΑ",
+        "en": "EFKA social insurance contributions (Greek social security)",
+        "ar": "اشتراكات التأمين الاجتماعي EFKA (الضمان الاجتماعي اليوناني)",
+        "fa": "سهم‌های بیمه اجتماعی EFKA (تأمین اجتماعی یونانی)",
+        "fr": "cotisations d'assurance sociale EFKA (sécurité sociale grecque)"
+      },
+      "definition_el": "Υποχρεωτικές εισφορές που καταβάλλουν εργαζόμενοι και εργοδότες στο Ενιαίο Φορέα Κοινωνικής Ασφάλισης για την κάλυψη συντάξεων, ιατρικής περίθαλψης και άλλων κοινωνικών παροχών.",
+      "definition_en": "Mandatory contributions paid by employees and employers to the Unified Social Security Fund (EFKA) to cover pensions, healthcare, and other social benefits in Greece.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "general-practitioner-in-primary-healthcare-new-greek-system",
+      "category": "integration",
+      "translations": {
+        "el": "προσωπικός γιατρός στην πρωτοβάθμια",
+        "en": "General Practitioner in Primary Healthcare (new Greek system)",
+        "ar": "طبيب عام في الرعاية الصحية الأولية (النظام اليوناني الجديد)",
+        "fa": "پزشک عمومی در مراقبت های بهداشتی اولیه (سیستم جدید یونانی)",
+        "fr": "Médecin généraliste dans les soins de santé primaires (nouveau système grec)"
+      },
+      "definition_el": "Ο γιατρός πρώτης επαφής που παρέχει βασική ιατρική περίθαλψη και διαχείριση υγείας σε πρόσφυγες και αιτούντες άσυλο μέσω του νέου ελληνικού συστήματος υγειονομικής περίθαλψης.",
+      "definition_en": "The first-contact physician who provides basic medical care and health management to refugees and asylum seekers through the reformed Greek primary healthcare system.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "initial-covid-diagnosis-diagnostic-procedure",
+      "category": "medical",
+      "translations": {
+        "el": "αρχική διάγνωση COVID",
+        "en": "initial COVID diagnosis (diagnostic procedure)",
+        "ar": "التشخيص الأولي لفيروس كوفيد-19 (إجراء التشخيص)",
+        "fa": "تشخیص اولیه کووید-۱۹ (روند تشخیص)",
+        "fr": "diagnostic initial du COVID (procédure de diagnostic)"
+      },
+      "definition_el": "Η αρχική εκτίμηση και διάγνωση της λοίμωξης COVID-19 σε πρόσφυγες και αιτούντες άσυλο κατά την άφιξή τους σε κέντρα υποδοχής ή κατά την πρώτη επαφή με τις υγειονομικές αρχές.",
+      "definition_en": "The initial assessment and diagnosis of COVID-19 infection in refugees and asylum seekers upon their arrival at reception centres or during first contact with health authorities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "covid-19-mrna-vaccine-vaccination",
+      "category": "medical",
+      "translations": {
+        "el": "εμβόλιο COVID-19 mRNA",
+        "en": "COVID-19 mRNA vaccine (vaccination)",
+        "ar": "لقاح كوفيد-19 الحمض النووي الريبوسومي (التطعيم)",
+        "fa": "واکسن کووید-۱۹ mRNA (واکسیناسیون)",
+        "fr": "vaccin COVID-19 à ARNm (vaccination)"
+      },
+      "definition_el": "Εμβόλιο που περιέχει μεσσέγγερο RNA για την παραγωγή πρωτεΐνης spike και την ενεργοποίηση του ανοσοποιητικού συστήματος κατά του COVID-19.",
+      "definition_en": "A vaccine containing messenger RNA that instructs cells to produce the spike protein to trigger immune response against COVID-19.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "rapid-antigen-detection-test-diagnostic-test",
+      "category": "medical",
+      "translations": {
+        "el": "τεστ ταχείας ανίχνευσης αντιγόνου",
+        "en": "rapid antigen detection test (diagnostic test)",
+        "ar": "اختبار الكشف السريع عن المستضد (اختبار تشخيصي)",
+        "fa": "آزمایش سریع تشخیص آنتی‌ژن (آزمایش تشخیصی)",
+        "fr": "test rapide de détection d'antigène (test diagnostique)"
+      },
+      "definition_el": "Ταχύ διαγνωστικό τεστ που ανιχνεύει αντιγόνα ιών ή παθογόνων για την άμεση διάγνωση λοιμωδών νοσημάτων.",
+      "definition_en": "A rapid diagnostic test that detects viral or pathogenic antigens for immediate identification of infectious diseases.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "sos-line-197-for-abused-women-greek-helpline",
+      "category": "vulnerable",
+      "translations": {
+        "el": "γραμμή SOS 197 για κακοποιημένες γυναίκες",
+        "en": "SOS Line 197 for abused women (Greek helpline)",
+        "ar": "خط الاستغاثة 197 للنساء المعنفات (خط المساعدة اليوناني)",
+        "fa": "خط کمک 197 برای زنان آزار دیده (خط تلفنی کمک یونانی)",
+        "fr": "Ligne SOS 197 pour les femmes maltraitées (ligne d'aide grecque)"
+      },
+      "definition_el": "Ελληνική τηλεφωνική γραμμή 24/7 που παρέχει άμεση υποστήριξη, συμβουλές και πληροφορίες σε γυναίκες που είναι θύματα κακοποίησης ή οικογενειακής βίας.",
+      "definition_en": "A 24/7 Greek telephone helpline that provides immediate support, counseling, and information to women who are victims of abuse or domestic violence.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "sos-line-15900-for-gender-based-violence-greek-helpline",
+      "category": "vulnerable",
+      "translations": {
+        "el": "γραμμή SOS 15900 έμφυλης βίας",
+        "en": "SOS line 15900 for gender-based violence (Greek helpline)",
+        "ar": "خط الطوارئ 15900 للعنف القائم على النوع الاجتماعي (خط المساعدة اليوناني)",
+        "fa": "خط کمک 15900 برای خشونت مبتنی بر جنسیت (خط راهنمایی یونانی)",
+        "fr": "ligne SOS 15900 de lutte contre les violences basées sur le genre (ligne d'aide grecque)"
+      },
+      "definition_el": "Ελληνική τηλεφωνική γραμμή βοήθειας (15900) που παρέχει άμεση υποστήριξη και καθοδήγηση σε άτομα που είναι θύματα έμφυλης βίας.",
+      "definition_en": "Greek emergency helpline (15900) providing immediate support and guidance to victims of gender-based violence.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "smile-of-the-child-1056-helpline-for-children-at-risk",
+      "category": "vulnerable",
+      "translations": {
+        "el": "Χαμόγελο του Παιδιού 1056",
+        "en": "Smile of the Child 1056 (helpline for children at risk)",
+        "ar": "ابتسامة الطفل 1056 (خط ساخن للأطفال المعرضين للخطر)",
+        "fa": "لبخند کودک 1056 (خط کمک برای کودکان در خطر)",
+        "fr": "Sourire de l'Enfant 1056 (ligne d'aide pour enfants en danger)"
+      },
+      "definition_el": "Ελληνική υπηρεσία τηλεφωνικής βοήθειας (γραμμή 1056) που παρέχει προστασία και στήριξη σε παιδιά που αντιμετωπίζουν κρίσιμους κινδύνους, συμπεριλαμβανομένων παιδιών πρόσφυγες και μετανάστες.",
+      "definition_en": "Greek child protection helpline (1056) providing emergency assistance and support to children at risk, including refugee and migrant children facing critical dangers.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "national-centre-for-social-solidarity-ncss",
+      "category": "reception",
+      "translations": {
+        "el": "Εθνικό Κέντρο Κοινωνικής Αλληλεγγύης (ΕΚΚΑ)",
+        "en": "National Centre for Social Solidarity (NCSS)",
+        "ar": "المركز الوطني للتضامن الاجتماعي",
+        "fa": "مرکز ملی همبستگی اجتماعی",
+        "fr": "Centre National de Solidarité Sociale (CNSS)"
+      },
+      "definition_el": "Ελληνικός δημόσιος φορέας υπεύθυνος για την παροχή κοινωνικής προστασίας, στέγασης και υπηρεσιών αλληλεγγύης σε ευάλωτες ομάδες, συμπεριλαμβανομένων προσφύγων και μεταναστών.",
+      "definition_en": "Greek public authority responsible for providing social protection, housing, and solidarity services to vulnerable groups, including refugees and migrants.",
       "sources": [
         "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
       ]
