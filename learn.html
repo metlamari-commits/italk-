@@ -1038,6 +1038,7 @@ const state = {
   terms: null,
   categories: null,
   skills: null,     // loaded from data/skills.json
+  scenarios: null,  // loaded from data/scenarios.json
   quiz: null,       // {questions: [...], currentIndex, correctCount, wrongCount}
   currentSkillId: null,  // set when a skill node is picked; null = mixed daily quiz
   game: null        // loaded from localStorage
@@ -1151,16 +1152,16 @@ function stopCountdown() { if (countdownTimer) { clearInterval(countdownTimer); 
 
 /* ---- Data ---- */
 async function loadTerms() {
-  const [tRes, sRes] = await Promise.all([
+  const [tRes, sRes, scRes] = await Promise.all([
     fetch("data/terms.json", { cache: "no-cache" }),
-    fetch("data/skills.json", { cache: "no-cache" })
+    fetch("data/skills.json", { cache: "no-cache" }),
+    fetch("data/scenarios.json", { cache: "no-cache" })
   ]);
   const tData = await tRes.json();
   state.terms = tData.terms;
   state.categories = tData.categories;
-  if (sRes.ok) {
-    state.skills = await sRes.json();
-  }
+  if (sRes.ok) state.skills = await sRes.json();
+  if (scRes.ok) state.scenarios = await scRes.json();
 }
 
 /* ---- Quiz generation ---- */
@@ -1205,22 +1206,49 @@ function generateQuestion(term, otherTerms, pair) {
 
 function generateQuiz() {
   const pair = state.game.langPair;
-  // Filter to skill terms if a skill was picked
-  let pool = state.terms;
-  if (state.currentSkillId && state.skills) {
-    const skill = state.skills.skills.find(s => s.id === state.currentSkillId);
-    if (skill) pool = state.terms.filter(t => skill.terms.includes(t.id));
+  // Base pool: all terms; if a skill was picked, filter to that skill's terms
+  let pool = state.terms.slice();
+  const skill = state.currentSkillId && state.skills
+    ? state.skills.skills.find(s => s.id === state.currentSkillId)
+    : null;
+  if (skill) pool = state.terms.filter(t => skill.terms.includes(t.id));
+
+  // Add scenarios into the pool (treated as pseudo-terms so the existing MC engine works)
+  if (state.scenarios) {
+    const scenarioList = skill
+      ? state.scenarios.scenarios.filter(sc => sc.skill_id === state.currentSkillId)
+      : state.scenarios.scenarios;
+    for (const sc of scenarioList) {
+      pool.push({
+        id: sc.id,
+        category: skill ? skill.domain : "general",
+        translations: sc.translations || {},
+        _scenario: true,
+        _context_el: sc.context_el,
+        _context_en: sc.context_en
+      });
+    }
   }
+
   const eligible = pool.filter(t => t.translations[pair.source] && t.translations[pair.target]);
   if (eligible.length < 4) return { eligibleCount: eligible.length };
   const picked = pickRandom(eligible, Math.min(QUIZ_LENGTH, eligible.length));
   const questions = [];
-  // Distractor pool: prefer within-skill; fall back to full terms if skill is small
-  const distractorPool = eligible.length >= 6 ? pool : state.terms;
+  // Distractor pool: prefer within-skill; fall back to full terms if skill pool is thin
+  const distractorPool = eligible.length >= 6 ? pool : state.terms.concat(
+    (state.scenarios ? state.scenarios.scenarios.map(sc => ({ id: sc.id, category: sc.skill_id, translations: sc.translations || {}, _scenario: true })) : [])
+  );
   for (const t of picked) {
     const others = distractorPool.filter(x => x.id !== t.id);
     const q = generateQuestion(t, others, pair);
-    if (q) questions.push(q);
+    if (q) {
+      if (t._scenario) {
+        q.isScenario = true;
+        q.contextEl = t._context_el;
+        q.contextEn = t._context_en;
+      }
+      questions.push(q);
+    }
   }
   state.quiz = { questions, currentIndex: 0, correctCount: 0, wrongCount: 0, xpEarned: 0, heartsLostInQuiz: 0, skillId: state.currentSkillId };
   return { eligibleCount: eligible.length, count: questions.length };
@@ -1235,8 +1263,10 @@ function renderCurrentQuestion() {
   document.getElementById("quiz-progress-bar").style.width = progressPct + "%";
   document.getElementById("quiz-hearts-mini").textContent = "❤ " + state.game.hearts;
 
-  document.getElementById("quiz-instruction").textContent =
-    "Ποια είναι η μετάφραση στα " + LANG_LABELS[q.targetLang] + ";";
+  const instr = q.isScenario
+    ? (q.contextEl || "Ο υπάλληλος του σταθμού λέει:") + " μετάφρασε στα " + LANG_LABELS[q.targetLang]
+    : "Ποια είναι η μετάφραση στα " + LANG_LABELS[q.targetLang] + ";";
+  document.getElementById("quiz-instruction").textContent = instr;
   const termEl = document.getElementById("quiz-term");
   termEl.textContent = q.source;
   termEl.className = "quiz-term" + (RTL_LANGS.has(q.sourceLang) ? " rtl" : "");
