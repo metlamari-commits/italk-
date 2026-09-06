@@ -1694,9 +1694,10 @@ function renderTermCard(term, opts) {
   if (!opts.focused && term.id) {
     card.style.cursor = "pointer";
     card.addEventListener("click", (e) => {
-      // Only fire if the click landed on the card itself (not on a child button/item)
+      // Only fire on empty parts of the card (not on buttons, translation cells, or links)
       if (e.target.closest("button, .trans-item, a")) return;
-      setFocusedTerm(term.id);
+      // Toggle in-place details (definition + sources), like the "Ορισμός & πηγές" button
+      card.classList.toggle("open");
     });
   }
 
