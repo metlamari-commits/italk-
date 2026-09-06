@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.6.0",
+    "version": "0.7.0",
     "updated": "2026-09-06",
     "languages": [
       "el",
@@ -14040,6 +14040,2342 @@
       },
       "definition_el": "Επίσημη κατάσταση με τα ονόματα των πιστοποιημένων διερμηνέων που εξουσιοδοτούνται να παρέχουν υπηρεσίες διερμηνείας σε διαδικασίες του δικαστηρίου.",
       "definition_en": "An official register containing the names of certified interpreters authorized to provide interpretation services in court proceedings.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "meal-distribution-at-the-reception-facility-daily-operation",
+      "category": "reception",
+      "translations": {
+        "el": "διανομή γεύματος στη δομή",
+        "en": "meal distribution at the reception facility (daily operation)",
+        "ar": "توزيع الوجبات في المركز (العملية اليومية)",
+        "fa": "توزیع وعده های غذایی در مرکز استقبال (عملیات روزمره)",
+        "fr": "distribution des repas au centre d'accueil (fonctionnement quotidien)"
+      },
+      "definition_el": "Η καθημερινή διαδικασία παροχής και διανομής των γευμάτων στους φιλοξενούμενους της δομής υποδοχής.",
+      "definition_en": "The daily procedure of providing and distributing meals to residents of a reception facility.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "meal-provision-programme-scheduled",
+      "category": "reception",
+      "translations": {
+        "el": "πρόγραμμα σίτισης",
+        "en": "meal provision programme (scheduled)",
+        "ar": "برنامج توفير الوجبات (جدول زمني)",
+        "fa": "برنامه تامین غذا (برنامه زمان‌بندی شده)",
+        "fr": "programme de ravitaillement (horaire)"
+      },
+      "definition_el": "Οργανωμένο πρόγραμμα παροχής τροφίμων και γευμάτων στους δικαιούχους διεθνούς προστασίας σε καθορισμένες ώρες της ημέρας.",
+      "definition_en": "An organized programme for providing meals and food to asylum seekers and beneficiaries of international protection at scheduled times throughout the day.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "change-of-diet-for-religious-reasons-provision",
+      "category": "reception",
+      "translations": {
+        "el": "αλλαγή διαιτολογίου για θρησκευτικούς λόγους",
+        "en": "change of diet for religious reasons (provision)",
+        "ar": "تغيير النظام الغذائي لأسباب دينية (توفير)",
+        "fa": "تغيير رژيم غذایی برای دلایل مذهبی (فراهم‌کردن)",
+        "fr": "modification du régime alimentaire pour raisons religieuses (fourniture)"
+      },
+      "definition_el": "Η παροχή εναλλακτικών τροφίμων ή διαιτολογίου σε πρόσφυγες και αιτούντες άσυλο σύμφωνα με τις θρησκευτικές τους πεποιθήσεις και κανόνες.",
+      "definition_en": "The provision of alternative food or diet arrangements for refugees and asylum seekers in accordance with their religious beliefs and dietary requirements.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "distribution-of-personal-hygiene-items-provision",
+      "category": "reception",
+      "translations": {
+        "el": "διανομή προσωπικής υγιεινής",
+        "en": "distribution of personal hygiene items (provision)",
+        "ar": "توزيع مستلزمات النظافة الشخصية (تقديم الخدمات)",
+        "fa": "توزیع مصالح بهداشت شخصی (ارائه خدمات)",
+        "fr": "distribution d'articles d'hygiène personnelle (fourniture)"
+      },
+      "definition_el": "Η παροχή και διανομή βασικών υλικών προσωπικής υγιεινής όπως σαπούνι, οδοντόπαστα, και άλλα αναλώσιμα σε πρόσφυγες και αιτούντες άσυλο σε δομές υποδοχής.",
+      "definition_en": "The provision and distribution of basic personal hygiene items such as soap, toothpaste, and other consumables to refugees and asylum seekers in reception facilities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "seasonal-clothing-distribution-provision",
+      "category": "reception",
+      "translations": {
+        "el": "διανομή ρουχισμού εποχής",
+        "en": "seasonal clothing distribution (provision)",
+        "ar": "توزيع الملابس الموسمية (المساعدة)",
+        "fa": "توزیع لباس فصلی (کمک رسانی)",
+        "fr": "distribution de vêtements saisonniers (fourniture)"
+      },
+      "definition_el": "Η παροχή και διανομή κατάλληλων ρούχων ανάλογα με την εποχή του χρόνου σε δικαιούχους που διαμένουν σε δομές υποδοχής.",
+      "definition_en": "The provision and distribution of season-appropriate clothing to eligible individuals residing in reception facilities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "reception-centre-access-exit-card-control",
+      "category": "reception",
+      "translations": {
+        "el": "κάρτα εισόδου-εξόδου δομής",
+        "en": "reception centre access/exit card (control)",
+        "ar": "بطاقة الدخول والخروج من مركز الاستقبال (التحكم)",
+        "fa": "کارت ورود و خروج مرکز استقبال (کنترل)",
+        "fr": "carte d'accès/sortie du centre d'accueil (contrôle)"
+      },
+      "definition_el": "Ταυτοποιητική κάρτα που χορηγείται στους κατοίκους δομής υποδοχής για τον έλεγχο των κινήσεων εισόδου και εξόδου από την εγκατάσταση.",
+      "definition_en": "An identification card issued to reception centre residents to monitor and control their movements in and out of the facility.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "curfew-time-dormitory-curfew-internal-regulation",
+      "category": "reception",
+      "translations": {
+        "el": "ώρα κοιτώνα",
+        "en": "curfew time / dormitory curfew (internal regulation)",
+        "ar": "وقت حظر التجول في السكن (اللائحة الداخلية)",
+        "fa": "ساعت منع برون‌رفتن از خوابگاه (مقررات داخلی)",
+        "fr": "heure de couvre-feu du dortoir (règlement intérieur)"
+      },
+      "definition_el": "Η καθορισμένη ώρα που οι κάτοικοι ενός κέντρου υποδοχής πρέπει να παραμείνουν στους κοιτώνες σύμφωνα με τους εσωτερικούς κανονισμούς της δομής.",
+      "definition_en": "The designated time when residents of a reception centre must remain in their dormitories according to the facility's internal regulations.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "night-exit-ban-internal-regulation",
+      "category": "reception",
+      "translations": {
+        "el": "απαγόρευση εξόδου τη νύχτα",
+        "en": "night exit ban (internal regulation)",
+        "ar": "حظر مغادرة المركز ليلاً (اللائحة الداخلية)",
+        "fa": "منع خروج شبانه (مقررات داخلی)",
+        "fr": "interdiction de sortie la nuit (règlement intérieur)"
+      },
+      "definition_el": "Εσωτερικός κανονισμός δομών υποδοχής που απαγορεύει στους κατοίκους να εγκαταλείψουν το κέντρο κατά τις νυχτερινές ώρες.",
+      "definition_en": "An internal reception facility regulation that prohibits residents from leaving the centre during nighttime hours.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "visit-by-external-person-internal-regulation",
+      "category": "reception",
+      "translations": {
+        "el": "επίσκεψη εξωτερικού προσώπου",
+        "en": "visit by external person (internal regulation)",
+        "ar": "زيارة شخص خارجي (اللوائح الداخلية)",
+        "fa": "بازدید فرد خارجی (مقررات داخلی)",
+        "fr": "visite d'une personne extérieure (règlement intérieur)"
+      },
+      "definition_el": "Ο έλεγχος και η ρύθμιση των επισκέψεων μη-κατοίκων ή εξωτερικών ατόμων σε κέντρα υποδοχής ή δομές κράτησης σύμφωνα με τους εσωτερικούς κανονισμούς της δομής.",
+      "definition_en": "The regulation and control of visits by external persons or non-residents to reception centres or detention facilities in accordance with the facility's internal rules and procedures.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "reception-centre-administration-office-facility-secretariat",
+      "category": "reception",
+      "translations": {
+        "el": "γραμματεία της δομής",
+        "en": "reception centre administration office / facility secretariat",
+        "ar": "مكتب إدارة مركز الاستقبال",
+        "fa": "دفتر اداری مرکز پذیرش",
+        "fr": "secrétariat de la structure d'accueil / bureau administratif du centre"
+      },
+      "definition_el": "Η διοικητική υπηρεσία ενός κέντρου φιλοξενίας που είναι υπεύθυνη για τη διαχείριση αιτημάτων, έγγραφα και διοικητικές διαδικασίες των κατοίκων της δομής.",
+      "definition_en": "The administrative office of a reception facility responsible for managing resident requests, documentation, and administrative procedures related to the centre's operations.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "social-worker-of-the-reception-facility-staff-member",
+      "category": "reception",
+      "translations": {
+        "el": "κοινωνικός λειτουργός της δομής",
+        "en": "social worker of the reception facility (staff member)",
+        "ar": "أخصائي اجتماعي في مركز الاستقبال (موظف)",
+        "fa": "کارمند خدمات اجتماعی مرکز پذیرش (پرسنل)",
+        "fr": "assistant social de la structure d'accueil (agent)"
+      },
+      "definition_el": "Υπάλληλος της δομής υpoδοχής που παρέχει κοινωνικές υπηρεσίες, υποστήριξη και συμβουλευτική στους αιτούντες άσυλο.",
+      "definition_en": "A staff member of a reception facility who provides social services, support, and counseling to asylum seekers.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "housing-advisor-staff-member",
+      "category": "reception",
+      "translations": {
+        "el": "σύμβουλος στέγασης",
+        "en": "housing advisor (staff member)",
+        "ar": "مستشار الإسكان (موظف)",
+        "fa": "مشاور مسکن (کارمند)",
+        "fr": "conseiller en logement (personnel)"
+      },
+      "definition_el": "Υπάλληλος που παρέχει συμβουλές και υποστήριξη σε πρόσφυγες και αιτούντες άσυλο σχετικά με θέματα στέγασης και κατοικίας.",
+      "definition_en": "A staff member who provides advice and support to refugees and asylum seekers regarding housing and accommodation matters.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "facility-manager-staff-member",
+      "category": "reception",
+      "translations": {
+        "el": "έφορος της δομής",
+        "en": "facility manager (staff member)",
+        "ar": "مدير المركز (موظف)",
+        "fa": "مدیر تأسیسات (کارمند)",
+        "fr": "gestionnaire du centre (personnel)"
+      },
+      "definition_el": "Υπάλληλος που είναι υπεύθυνος για τη διαχείριση και την감독 μιας δομής υποδοχής ή καταφυγής προσφύγων.",
+      "definition_en": "Staff member responsible for managing and overseeing the operations of a reception or shelter facility for refugees and asylum seekers.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "case-manager-staff-member",
+      "category": "reception",
+      "translations": {
+        "el": "διαχειριστής case management",
+        "en": "case manager (staff member)",
+        "ar": "مدير الحالة (موظف)",
+        "fa": "مدیر پرونده (کارمند)",
+        "fr": "gestionnaire de cas (agent)"
+      },
+      "definition_el": "Ο υπάλληλος ή στέλεχος που είναι υπεύθυνος για τη διαχείριση και παρακολούθηση της ατομικής υπόθεσης ενός αιτούντα άσυλο ή πρόσφυγα.",
+      "definition_en": "The staff member or officer responsible for managing and monitoring the individual case of an asylum seeker or refugee.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "case-management-meeting-procedural",
+      "category": "reception",
+      "translations": {
+        "el": "συνάντηση case management",
+        "en": "case management meeting (procedural)",
+        "ar": "اجتماع إدارة الملف (إجرائي)",
+        "fa": "جلسه مدیریت پرونده (رویه ای)",
+        "fr": "réunion de gestion de dossier (procédurale)"
+      },
+      "definition_el": "Η συνάντηση μεταξύ του case manager και του αιτούντα/αιτούντων καταφυγής για την παρακολούθηση, αξιολόγηση και προγραμματισμό των διαδικαστικών βημάτων της αίτησης.",
+      "definition_en": "A meeting between the case manager and the asylum applicant(s) to monitor, assess, and plan the procedural steps of the asylum application process.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "local-iom-coordinator-staff-member",
+      "category": "reception",
+      "translations": {
+        "el": "τοπικός συντονιστής IOM",
+        "en": "local IOM coordinator (staff member)",
+        "ar": "منسق IOM محلي (موظف)",
+        "fa": "هماهنگ‌کننده محلی سازمان جهانی مهاجرت (کارمند)",
+        "fr": "coordinateur local de l'OIM (agent)"
+      },
+      "definition_el": "Υπάλληλος της Διεθνούς Οργάνωσης Μετανάστευσης που είναι υπεύθυνος για τον συντονισμό και την υλοποίηση των προγραμμάτων και των υπηρεσιών της οργάνωσης σε τοπικό επίπεδο.",
+      "definition_en": "An International Organization for Migration (IOM) staff member responsible for coordinating and implementing the organization's programmes and services at the local level.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "social-support-network-provision",
+      "category": "reception",
+      "translations": {
+        "el": "κοινωνικό δίκτυο υποστήριξης",
+        "en": "social support network (provision)",
+        "ar": "شبكة الدعم الاجتماعي (التوفير)",
+        "fa": "شبکه حمایت اجتماعی (ارائه)",
+        "fr": "réseau de soutien social (fourniture)"
+      },
+      "definition_el": "Το σύνολο των διαθέσιμων πόρων, υπηρεσιών και δομών που παρέχονται για την ψυχοκοινωνική και υλική υποστήριξη αιτούντων ασύλου και προσφύγων κατά τη διάρκεια της διαδικασίας αποδοχής.",
+      "definition_en": "The range of available resources, services, and structures provided for psychosocial and material support to asylum seekers and refugees during the reception process.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "incident-report-of-violence-in-the-reception-facility-manage",
+      "category": "reception",
+      "translations": {
+        "el": "έκθεση συμβάντος βίας στη δομή",
+        "en": "incident report of violence in the reception facility (management)",
+        "ar": "تقرير حادثة عنف في مركز الاستقبال (الإدارة)",
+        "fa": "گزارش حادثه خشونت در مرکز استقبال (مدیریت)",
+        "fr": "rapport d'incident de violence dans le centre d'accueil (gestion)"
+      },
+      "definition_el": "Τυπικό έγγραφο που τεκμηριώνει περιστατικά βίας ή επιθετικής συμπεριφοράς που συμβαίνουν στις δομές φιλοξενίας και χρησιμοποιείται για τη διαχείριση και πρόληψη τέτοιων συμβάντων.",
+      "definition_en": "An official document that records incidents of violence or aggressive behavior occurring in reception facilities and is used for incident management and prevention purposes.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "transfer-to-another-reception-facility-administrative",
+      "category": "reception",
+      "translations": {
+        "el": "μεταφορά σε άλλη δομή",
+        "en": "transfer to another reception facility (administrative)",
+        "ar": "نقل إلى هيكل استقبال آخر (إداري)",
+        "fa": "انتقال به مرکز دیگر (اداری)",
+        "fr": "transfert vers une autre structure d'accueil (administrative)"
+      },
+      "definition_el": "Η διοικητική μεταφορά ενός αιτούντα άσυλο από μία δομή υποδοχής σε άλλη για λόγους οργανωτικούς, διαχειριστικούς ή διανομής ικανότητας.",
+      "definition_en": "The administrative transfer of an asylum seeker from one reception facility to another for organizational, managerial, or capacity distribution reasons.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "child-enrollment-in-kindergarten-early-childhood-education",
+      "category": "integration",
+      "translations": {
+        "el": "εγγραφή παιδιού σε νηπιαγωγείο",
+        "en": "child enrollment in kindergarten (early childhood education)",
+        "ar": "تسجيل الطفل في روضة الأطفال (التعليم في مرحلة الطفولة المبكرة)",
+        "fa": "ثبت‌نام کودک در مهد کودک (آموزش کودکان)",
+        "fr": "inscription d'un enfant à la maternelle (éducation de la petite enfance)"
+      },
+      "definition_el": "Η διοικητική διαδικασία εγγραφής ενός παιδιού σε θεσμό προσχολικής εκπαίδευσης, συχνά απαραίτητη για την ενσωμάτωση προσφύγων και μεταναστών παιδιών στο εκπαιδευτικό σύστημα της φιλοξενίας χώρας.",
+      "definition_en": "The administrative process of registering a child in an early childhood education institution, often necessary for the integration of refugee and migrant children into the host country's educational system.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "enrollment-of-a-child-in-primary-school-primary-education",
+      "category": "integration",
+      "translations": {
+        "el": "εγγραφή παιδιού σε δημοτικό",
+        "en": "enrollment of a child in primary school (primary education)",
+        "ar": "تسجيل الطفل في المدرسة الابتدائية (التعليم الابتدائي)",
+        "fa": "ثبت‌نام کودک در مدرسه ابتدایی (آموزش ابتدایی)",
+        "fr": "inscription d'un enfant à l'école primaire (enseignement primaire)"
+      },
+      "definition_el": "Η διαδικασία εγγραφής και δεκτικότητας ενός παιδιού προσφύγων ή μετανάστη στο δημοτικό σχολείο για τη λήψη πρωτοβάθμιας εκπαίδευσης.",
+      "definition_en": "The process of registering and enrolling a refugee or migrant child in primary school to receive primary education.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "enrollment-in-secondary-school-junior-high-school",
+      "category": "integration",
+      "translations": {
+        "el": "εγγραφή σε γυμνάσιο",
+        "en": "enrollment in secondary school (junior high school)",
+        "ar": "التسجيل في المدرسة الثانوية الدنيا",
+        "fa": "ثبت‌نام در مدرسه متوسطه (دوره اول)",
+        "fr": "inscription au collège (enseignement secondaire inférieur)"
+      },
+      "definition_el": "Η διαδικασία εγγραφής ενός παιδιού/νέου σε δευτεροβάθμιο σχολείο για την παρακολούθηση της υποχρεωτικής εκπαίδευσης.",
+      "definition_en": "The administrative process of registering a child or adolescent in secondary school for compulsory education.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "reception-class-zep-refugee-education",
+      "category": "integration",
+      "translations": {
+        "el": "τάξη υποδοχής ΖΕΠ",
+        "en": "Reception Class ZEP (Refugee Education)",
+        "ar": "فئة الاستقبال ذات الأولوية التعليمية (تعليم اللاجئين)",
+        "fa": "کلاس پذیرش ZEP (آموزش پناهندگان)",
+        "fr": "Classe d'accueil ZEP (éducation des réfugiés)"
+      },
+      "definition_el": "Εκπαιδευτική τάξη σε σχολεία που βρίσκονται σε ζώνες εκπαιδευτικής προτεραιότητας (ΖΕΠ) για την υποδοχή και ολοκληρωμένη εκπαίδευση προσφύγων και παιδιών μεταναστών.",
+      "definition_en": "An educational classroom in schools located in priority education zones (ZEP) designed to receive and provide comprehensive education to refugee and migrant children.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "primary-school-leaving-certificate-educational-credential",
+      "category": "integration",
+      "translations": {
+        "el": "απολυτήριο δημοτικού",
+        "en": "primary school leaving certificate (educational credential)",
+        "ar": "شهادة إتمام المرحلة الابتدائية (وثيقة تعليمية)",
+        "fa": "گواهی اتمام دوره ابتدایی (گواهی تحصیلی)",
+        "fr": "certificat de fin d'études primaires (diplôme scolaire)"
+      },
+      "definition_el": "Πιστοποιητικό που χορηγείται στους μαθητές κατά την ολοκλήρωση της υποχρεωτικής εκπαίδευσης του δημοτικού σχολείου.",
+      "definition_en": "Certificate issued to students upon completion of primary school education, documenting their educational attainment.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "lower-secondary-school-certificate",
+      "category": "integration",
+      "translations": {
+        "el": "απολυτήριο γυμνασίου",
+        "en": "lower secondary school certificate",
+        "ar": "شهادة إتمام المرحلة الإعدادية",
+        "fa": "گواهینامه اتمام آموزش متوسطه پایین",
+        "fr": "certificat de fin d'études du collège"
+      },
+      "definition_el": "Επίσημο πιστοποιητικό που χορηγείται στους μαθητές κατά την ολοκλήρωση της υποχρεωτικής εκπαίδευσης (τριών ετών γυμνασίου) στο ελληνικό σχολικό σύστημα.",
+      "definition_en": "Official certificate awarded to students upon completion of compulsory lower secondary education (three years of gymnasium) in the Greek school system.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "recognition-of-secondary-education-studies-doatap-equivalenc",
+      "category": "integration",
+      "translations": {
+        "el": "αναγνώριση σπουδών δευτεροβάθμιας",
+        "en": "recognition of secondary education studies (DOATAP equivalence)",
+        "ar": "الاعتراف بدراسات التعليم الثانوي (معادلة DOATAP)",
+        "fa": "به رسمیت شناخت تحصیلات آموزش متوسطه (معادل DOATAP)",
+        "fr": "reconnaissance des études d'enseignement secondaire (équivalence DOATAP)"
+      },
+      "definition_el": "Η διαδικασία επίσημης αναγνώρισης και ισοδυναμίας των σπουδών δευτεροβάθμιας εκπαίδευσης που ολοκλήρωσε ένας αιτών ασύλου στη χώρα προέλευσής του, μέσω της Διεύθυνσης Οργάνωσης και Αξιολόγησης Τίτλων Αγνώστου Προελεύσεως και Ανταγωνιστικότητας (ΔΟΑΤΑΠ) στην Ελλάδα.",
+      "definition_en": "The official process of recognition and equivalence of secondary education qualifications completed by an asylum seeker in their country of origin, through Greece's DOATAP (Directorate for the Organization and Assessment of Qualifications of Unknown Origin and Competitiveness).",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "recognition-of-higher-education-qualifications-doatap",
+      "category": "integration",
+      "translations": {
+        "el": "αναγνώριση σπουδών τριτοβάθμιας",
+        "en": "recognition of higher education qualifications (DOATAP)",
+        "ar": "الاعتراف بمؤهلات التعليم العالي (DOATAP)",
+        "fa": "به رسمیت شناخت مدارک تحصیلات عالی (DOATAP)",
+        "fr": "reconnaissance des diplômes d'enseignement supérieur (DOATAP)"
+      },
+      "definition_el": "Η διαδικασία επίσημης αναγνώρισης και ισοδυναμίας των πτυχίων ή διπλωμάτων τριτοβάθμιας εκπαίδευσης που αποκτήθηκαν στο εξωτερικό, που διεξάγεται από το ελληνικό κράτος.",
+      "definition_en": "The official process of recognizing and establishing equivalence of higher education qualifications or diplomas obtained abroad, conducted by the Greek state authorities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "access-to-public-hospital-healthcare-coverage",
+      "category": "integration",
+      "translations": {
+        "el": "πρόσβαση σε δημόσιο νοσοκομείο",
+        "en": "access to public hospital (healthcare coverage)",
+        "ar": "الوصول إلى المستشفى العام (التغطية الصحية)",
+        "fa": "دسترسی به بیمارستان دولتی (پوشش بهداشتی)",
+        "fr": "accès à l'hôpital public (couverture sanitaire)"
+      },
+      "definition_el": "Το δικαίωμα του αιτούντος ασύλου ή του πρόσφυγα να λαμβάνει ιατρική φροντίδα και θεραπεία σε δημόσια νοσοκομεία με κρατική οικονομική κάλυψη.",
+      "definition_en": "The right of an asylum seeker or refugee to receive medical care and treatment at public hospitals with state-funded healthcare coverage.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "visit-to-a-health-centre-medical",
+      "category": "integration",
+      "translations": {
+        "el": "επίσκεψη σε κέντρο υγείας",
+        "en": "visit to a health centre (medical)",
+        "ar": "زيارة إلى مركز صحي (طبي)",
+        "fa": "بازدید از مركز بهداشتی (درمانی)",
+        "fr": "visite à un centre de santé (médical)"
+      },
+      "definition_el": "Η επίσκεψη ενός αιτητή ασύλου ή πρόσφυγα σε δημόσιο ή ιδιωτικό κέντρο υγείας για ιατρική εξέταση, διάγνωση ή θεραπεία.",
+      "definition_en": "The visit of an asylum seeker or refugee to a public or private health centre for medical examination, diagnosis, or treatment.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "medical-prescription-by-a-doctor-procedural-health",
+      "category": "integration",
+      "translations": {
+        "el": "συνταγογράφηση από ιατρό",
+        "en": "medical prescription by a doctor (procedural health)",
+        "ar": "وصف طبي من قبل طبيب (إجراء صحي)",
+        "fa": "نسخه پزشکی توسط پزشک (رویه بهداشتی)",
+        "fr": "prescription médicale par un médecin (procédure de santé)"
+      },
+      "definition_el": "Η έκδοση ιατρικής συνταγής από αδειοδοτημένο ιατρό κατά τη διαδικασία υγειονομικής αξιολόγησης ή φροντίδας πρόσφυγα ή αιτούντα άσυλο.",
+      "definition_en": "The issuance of a medical prescription by a licensed physician during the health assessment or care procedure for a refugee or asylum seeker.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "pharmacy-with-amka-healthcare-procedure",
+      "category": "integration",
+      "translations": {
+        "el": "φαρμακείο με ΑΜΚΑ",
+        "en": "pharmacy with AMKA (healthcare procedure)",
+        "ar": "صيدلية مع رقم AMKA (إجراء صحي)",
+        "fa": "داروخانه با AMKA (روند مراقبت‌های بهداشتی)",
+        "fr": "pharmacie avec AMKA (procédure de santé)"
+      },
+      "definition_el": "Φαρμακείο που δέχεται την ελληνική κάρτα υγείας ΑΜΚΑ και μπορεί να εκδώσει φάρμακα και θεραπευτικά αγαθά στο πλαίσιο της νόμιμης διαδικασίας υγείας.",
+      "definition_en": "A pharmacy authorized to accept the Greek AMKA health insurance card and dispense medications and healthcare goods as part of the official healthcare procedure.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "child-allowance-from-opeka-social-benefit",
+      "category": "integration",
+      "translations": {
+        "el": "επίδομα παιδιού από ΟΠΕΚΑ",
+        "en": "child allowance from OPEKA (social benefit)",
+        "ar": "بدل الطفل من OPEKA (إعانة اجتماعية)",
+        "fa": "کمک هزینه کودک از سازمان OPEKA (کمک اجتماعی)",
+        "fr": "allocation enfant de l'OPEKA (prestation sociale)"
+      },
+      "definition_el": "Κοινωνική παροχή που παρέχεται από την Οργάνωση Προνοίας και Κοινωνικής Ασφάλισης (ΟΠΕΚΑ) για τη στήριξη οικογενειών με ανήλικα τέκνα.",
+      "definition_en": "A social benefit provided by the Organization for Social Care and Social Insurance (OPEKA) to support families with dependent children.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "housing-allowance-from-opeka-social-welfare-benefit",
+      "category": "integration",
+      "translations": {
+        "el": "επίδομα στέγασης από ΟΠΕΚΑ",
+        "en": "housing allowance from OPEKA (social welfare benefit)",
+        "ar": "بدل الإسكان من المنظمة الوطنية للرعاية الاجتماعية (مساعدة اجتماعية)",
+        "fa": "کمک مسکن از سازمان ملی تامین اجتماعی (تعهد اجتماعی)",
+        "fr": "allocation de logement de l'OPEKA (prestations sociales)"
+      },
+      "definition_el": "Κοινωνικό χρηματικό επίδομα που παρέχεται από τον Οργανισμό Προνοίας και Κοινωνικής Αλληλεγγύης (ΟΠΕΚΑ) για τη στέγαση αιτούντων ασύλου και λοιπών ωφελούμενων κοινωνικής προστασίας.",
+      "definition_en": "A social cash allowance provided by the National Organization for the Provision of Social Care and Social Solidarity (OPEKA) to assist with housing expenses for asylum seekers and other beneficiaries of social welfare.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "minimum-guaranteed-income-social-benefit",
+      "category": "integration",
+      "translations": {
+        "el": "ελάχιστο εγγυημένο εισόδημα",
+        "en": "minimum guaranteed income (social benefit)",
+        "ar": "الحد الأدنى للدخل المضمون (المخصصات الاجتماعية)",
+        "fa": "حداقل درآمد تضمین شده (کمک اجتماعی)",
+        "fr": "revenu minimum garanti (allocation sociale)"
+      },
+      "definition_el": "Κοινωνικό επίδομα που χορηγείται από το κράτος για τη διασφάλιση ενός ελάχιστου επιπέδου εισοδήματος στους δικαιούχους, συμπεριλαμβανομένων ορισμένων κατηγοριών προσφύγων και αιτούντων ασύλου.",
+      "definition_en": "A social benefit provided by the state to ensure a minimum income level for eligible recipients, including certain categories of refugees and asylum seekers.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "residential-tenancy-agreement-housing",
+      "category": "integration",
+      "translations": {
+        "el": "συμβόλαιο ενοικίασης κατοικίας",
+        "en": "residential tenancy agreement (housing)",
+        "ar": "عقد إيجار السكن (الإسكان)",
+        "fa": "قرارداد اجاره مسکن (مسکن)",
+        "fr": "contrat de location résidentielle (logement)"
+      },
+      "definition_el": "Νομικό έγγραφο που καθορίζει τους όρους και τις υποχρεώσεις μεταξύ του ιδιοκτήτη ακινήτου και του ενοικιαστή για τη μίσθωση κατοικίας.",
+      "definition_en": "A legal document that establishes the terms and obligations between a property owner and tenant for residential housing rental.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "common-house-expenses-operational-costs",
+      "category": "integration",
+      "translations": {
+        "el": "κοινόχρηστα σπιτιού",
+        "en": "common house expenses (operational costs)",
+        "ar": "نفقات المنزل المشتركة (تكاليف التشغيل)",
+        "fa": "هزینه های مشترک خانه (هزینه های عملیاتی)",
+        "fr": "frais communs du logement (frais de fonctionnement)"
+      },
+      "definition_el": "Τα έξοδα που κοινοποιούνται μεταξύ των κατοίκων ενός δομήματος υποδοχής για τη λειτουργία και συντήρησή του.",
+      "definition_en": "The expenses shared among residents of a reception facility for its operation and maintenance.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "electricity-bill-utility-bill-operational",
+      "category": "integration",
+      "translations": {
+        "el": "λογαριασμός ΔΕΗ ρεύματος",
+        "en": "electricity bill/utility bill (operational)",
+        "ar": "فاتورة الكهرباء (تشغيلية)",
+        "fa": "قبض برق (عملیاتی)",
+        "fr": "facture d'électricité (fonctionnement)"
+      },
+      "definition_el": "Το λογαριασμό ηλεκτρικής ενέργειας που εκδίδει η ΔΕΗ για την κάλυψη των λειτουργικών δαπανών ενός κέντρου υποδοχής ή ιδρύματος.",
+      "definition_en": "The electricity utility bill issued by the power company to cover operational costs of a reception centre or institutional facility.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "eydap-water-bill-operational",
+      "category": "integration",
+      "translations": {
+        "el": "λογαριασμός νερού ΕΥΔΑΠ",
+        "en": "EYDAP water bill (operational)",
+        "ar": "فاتورة المياه EYDAP (تشغيلية)",
+        "fa": "صورت حساب آب EYDAP (عملیاتی)",
+        "fr": "facture d'eau EYDAP (fonctionnelle)"
+      },
+      "definition_el": "Τιμολόγιο για την κατανάλωση νερού από την εταιρεία ΕΥΔΑΠ (Εταιρεία Ύδρευσης και Αποχέτευσης Πρωτευούσης) που χρησιμοποιείται για διοικητικούς και λειτουργικούς σκοπούς σε δομές υποδοχής ή αρχές ασύλου.",
+      "definition_en": "An operational water utility bill issued by EYDAP (Athens Water Supply and Sewerage Company) used for administrative and operational purposes in reception facilities or asylum authorities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "municipality-destitution-card-social-welfare-benefit",
+      "category": "integration",
+      "translations": {
+        "el": "κάρτα απορίας από τον δήμο",
+        "en": "municipality destitution card (social welfare benefit)",
+        "ar": "بطاقة الفقر من البلدية (مساعدة اجتماعية)",
+        "fa": "کارت فقر شهرداری (کمک اجتماعی)",
+        "fr": "carte de dénuement municipal (allocation sociale)"
+      },
+      "definition_el": "Επίσημο έγγραφο που εκδίδει ο δήμος και πιστοποιεί την κατάσταση οικονομικής δυσπραγίας του κατόχου του, δικαιώνοντάς τον για κοινωνικές παροχές και βοήθειες.",
+      "definition_en": "An official municipal document certifying the economic destitution of its holder, entitling them to social welfare benefits and assistance programs.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "social-grocery-store-provision",
+      "category": "integration",
+      "translations": {
+        "el": "κοινωνικό παντοπωλείο",
+        "en": "social grocery store (provision)",
+        "ar": "متجر البقالة الاجتماعية (المساعدة)",
+        "fa": "فروشگاه مواد غذایی اجتماعی (کمک)",
+        "fr": "épicerie sociale (prestation)"
+      },
+      "definition_el": "Δομή που παρέχει βασικά είδη διατροφής και αγαθά πρώτης ανάγκης σε άτομα και οικογένειες που βρίσκονται σε κατάσταση ευάλωτης υποδοχής.",
+      "definition_en": "A facility that provides basic food items and essential goods to vulnerable individuals and families in reception settings.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "parish-meal-provision",
+      "category": "integration",
+      "translations": {
+        "el": "συσσίτιο ενορίας",
+        "en": "parish meal provision",
+        "ar": "وجبة الرعية (المساعدة)",
+        "fa": "وعده جماعتی (کمک)",
+        "fr": "repas communautaire (fourniture)"
+      },
+      "definition_el": "Παροχή γευμάτων από την τοπική ενορία ή θρησκευτική κοινότητα για πρόσφυγες και ασυμπτώτους.",
+      "definition_en": "Provision of meals by a local parish or religious community as assistance to refugees and asylum seekers.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "monthly-transport-card",
+      "category": "integration",
+      "translations": {
+        "el": "μηνιαία κάρτα μεταφορών",
+        "en": "monthly transport card",
+        "ar": "بطاقة النقل الشهرية",
+        "fa": "کارت حمل‌ونقل ماهانه",
+        "fr": "carte de transport mensuelle"
+      },
+      "definition_el": "Έγγραφο ή κάρτα που παρέχεται σε πρόσφυγες και αιτούντες άσυλο για δωρεάν ή επιδοτούμενη χρήση δημόσιων μέσων μεταφοράς για ένα μήνα.",
+      "definition_en": "A document or card provided to refugees and asylum seekers for free or subsidized use of public transportation for one month.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "signing-of-an-employment-contract",
+      "category": "integration",
+      "translations": {
+        "el": "υπογραφή σύμβασης εξαρτημένης εργασίας",
+        "en": "signing of an employment contract",
+        "ar": "توقيع عقد العمل التابع",
+        "fa": "امضای قرارداد کار وابسته",
+        "fr": "signature d'un contrat de travail dépendant"
+      },
+      "definition_el": "Η διαδικασία υπογραφής νόμιμης σύμβασης εργασίας μεταξύ αιτούντα άσυλο ή αναγνωρισμένου πρόσφυγα και εργοδότη, που καθορίζει τους όρους και τις υποχρεώσεις της εργασίας.",
+      "definition_en": "The process of signing a legal employment contract between an asylum seeker or recognized refugee and an employer, which establishes the terms and obligations of employment.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "notification-of-employment-registration-with-dypa-labor",
+      "category": "integration",
+      "translations": {
+        "el": "αναγγελία πρόσληψης στη ΔΥΠΑ",
+        "en": "notification of employment registration with DYPA (labor)",
+        "ar": "إخطار التسجيل في التوظيف لدى DYPA (عمل)",
+        "fa": "اطلاع‌رسانی ثبت‌نام اشتغال در DYPA (کاری)",
+        "fr": "notification d'enregistrement d'emploi auprès de l'OAED (travail)"
+      },
+      "definition_el": "Η επίσημη αναγγελία και εγγραφή ενός πρόσφυγα ή αιτούντος ασύλου στη ΔΥΠΑ (Δημόσια Υπηρεσία Πλacement Αγοράς Εργασίας) για την εξεύρεση εργασίας και τη συμμετοχή σε προγράμματα ενταξης.",
+      "definition_en": "The formal notification and registration of a refugee or asylum seeker with DYPA (Greek Public Employment Service) for job placement assistance and participation in labor integration programs.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "payroll-receipt-employment",
+      "category": "integration",
+      "translations": {
+        "el": "απόδειξη μισθοδοσίας",
+        "en": "payroll receipt (employment)",
+        "ar": "إيصال الرواتب (العمل)",
+        "fa": "رسید حقوق (اشتغال)",
+        "fr": "bulletin de paie (emploi)"
+      },
+      "definition_el": "Έγγραφο που αποδεικνύει την καταβολή μισθού ή αμοιβής από εργοδότη προς εργαζόμενο για την εργασία που εκτέλεσε.",
+      "definition_en": "A document that proves the payment of salary or wages by an employer to an employee for work performed.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "payroll-settlement-statement-employment",
+      "category": "integration",
+      "translations": {
+        "el": "εκκαθαριστικό μισθοδοσίας",
+        "en": "payroll settlement statement (employment)",
+        "ar": "كشف تسوية الرواتب (العمل)",
+        "fa": "صورت تسویه حقوق و دستمزد (کاری)",
+        "fr": "relevé de règlement de paie (emploi)"
+      },
+      "definition_el": "Έγγραφο που εκδίδει ο εργοδότης ή η τράπεζα που περιέχει λεπτομέρειες για την τελική τακτοποίηση των μισθών και των δεδουλευμένων ποσών ενός εργαζομένου.",
+      "definition_en": "A document issued by an employer or financial institution that contains details of the final settlement of wages and accrued amounts owed to an employee.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "work-permit-employment-insurance-document",
+      "category": "integration",
+      "translations": {
+        "el": "εργόσημο",
+        "en": "work permit (employment insurance document)",
+        "ar": "تصريح العمل (وثيقة التأمين الوظيفي)",
+        "fa": "مجوز کار (سند بیمه اشتغال)",
+        "fr": "permis de travail (document d'assurance emploi)"
+      },
+      "definition_el": "Διοικητικό έγγραφο που εκδίδεται από τις αρχές και δίνει το δικαίωμα σε αλλοδαπό να εργάζεται νόμιμα στη χώρα, συνοδευόμενο από κάλυψη ασφαλιστικής προστασίας.",
+      "definition_en": "An administrative document issued by authorities that grants a foreigner the legal right to work in a country, accompanied by employment insurance coverage.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "service-provision-voucher-self-employed-professionals",
+      "category": "integration",
+      "translations": {
+        "el": "μπλοκάκι παροχής υπηρεσιών",
+        "en": "service provision voucher (self-employed professionals)",
+        "ar": "قسيمة تقديم الخدمات (المهنيون العاملون بحسابهم الخاص)",
+        "fa": "کوپن ارائه خدمات (حرفه‌ای‌ها و کارآفرینان خودمختار)",
+        "fr": "bon de prestation de services (travailleurs indépendants)"
+      },
+      "definition_el": "Έγγραφο ή κουπόνι που χρησιμοποιείται για την αναγνώριση και την πληρωμή ελεύθερων επαγγελματιών που παρέχουν υπηρεσίες στα κέντρα υποδοχής ή στις δομές φιλοξενίας προσφύγων.",
+      "definition_en": "A document or voucher used to identify and compensate self-employed professionals who provide services in refugee reception centres or accommodation facilities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "commencement-of-professional-activity-tax-office-procedure",
+      "category": "integration",
+      "translations": {
+        "el": "έναρξη επαγγελματικής δραστηριότητας",
+        "en": "commencement of professional activity (tax office procedure)",
+        "ar": "بدء النشاط المهني (إجراء مصلحة الضرائب)",
+        "fa": "آغاز فعالیت حرفه‌ای (روند اداره مالیات)",
+        "fr": "commencement d'activité professionnelle (procédure fiscale)"
+      },
+      "definition_el": "Η διαδικασία νόμιμης ίδρυσης και εγγραφής μιας επαγγελματικής δραστηριότητας στις φορολογικές αρχές, απαραίτητη για την νόμιμη άσκηση επαγγέλματος.",
+      "definition_en": "The legal process of establishing and registering a professional activity with the tax authorities, required for lawful exercise of a profession.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "work-suspension-tax-authority",
+      "category": "integration",
+      "translations": {
+        "el": "διακοπή εργασιών",
+        "en": "work suspension (tax authority)",
+        "ar": "إيقاف العمل (السلطة الضريبية)",
+        "fa": "تعلیق فعالیت (اداره مالیات)",
+        "fr": "suspension d'activité (autorité fiscale)"
+      },
+      "definition_el": "Η διακοπή των εργασιών μιας επιχείρησης ή δραστηριότητας που επιβάλλεται από τις φορολογικές αρχές.",
+      "definition_en": "The suspension of business operations or activities imposed by the tax authorities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "monthly-tax-declaration-tax-authority",
+      "category": "integration",
+      "translations": {
+        "el": "μηνιαία φορολογική δήλωση",
+        "en": "monthly tax declaration (tax authority)",
+        "ar": "الإقرار الضريبي الشهري (السلطة الضريبية)",
+        "fa": "اظهارنامه مالیاتی ماهانه (اداره مالیات)",
+        "fr": "déclaration fiscale mensuelle (autorité fiscale)"
+      },
+      "definition_el": "Επίσημο έγγραφο που υποβάλλεται στις φορολογικές αρχές για την αναφορά των μηνιαίων εισοδημάτων και υποχρεώσεων.",
+      "definition_en": "An official document submitted to tax authorities reporting monthly income and tax obligations.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "annual-tax-return-tax-authority",
+      "category": "integration",
+      "translations": {
+        "el": "ετήσια φορολογική δήλωση",
+        "en": "annual tax return (tax authority)",
+        "ar": "الإقرار الضريبي السنوي (السلطة الضريبية)",
+        "fa": "اظهارنامه مالیاتی سالانه (اداره مالیات)",
+        "fr": "déclaration fiscale annuelle (autorité fiscale)"
+      },
+      "definition_el": "Η ετήσια υποβολή εγγράφου από έναν φυσικό ή νομικό πρόσωπο στην εφορία για την αναφορά των εισοδημάτων και υποχρεώσεων του.",
+      "definition_en": "The annual submission of a document by an individual or legal entity to the tax authority reporting income and tax obligations.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "exemption-from-professional-tax-tax-office",
+      "category": "integration",
+      "translations": {
+        "el": "απαλλαγή από τέλος επιτηδεύματος",
+        "en": "exemption from professional tax (tax office)",
+        "ar": "إعفاء من رسم المهنة (مصلحة الضرائب)",
+        "fa": "معافیت از عوارض حرفه ای (اداره مالیات)",
+        "fr": "exemption de taxe professionnelle (bureau des impôts)"
+      },
+      "definition_el": "Απαλλαγή από την υποχρέωση καταβολής του τέλους επιτηδεύματος που απαιτείται από τις φορολογικές αρχές για την άσκηση επαγγελματικής δραστηριότητας.",
+      "definition_en": "Exemption from the obligation to pay a professional tax fee required by tax authorities for the exercise of professional activity.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "police-check-with-official-report-administrative-document",
+      "category": "documentation",
+      "translations": {
+        "el": "αστυνομικός έλεγχος με πρακτικό",
+        "en": "police check with official report (administrative document)",
+        "ar": "فحص شرطي مع تقرير رسمي (وثيقة إدارية)",
+        "fa": "بازرسی پلیسی با گزارش رسمی (سند اداری)",
+        "fr": "contrôle policier avec rapport officiel (document administratif)"
+      },
+      "definition_el": "Διοικητικό έγγραφο που εκδίδει η αστυνομία κατά τη διεξαγωγή ελέγχου και καταγράφει τα αποτελέσματα και τις περιστάσεις της έρευνας.",
+      "definition_en": "An administrative document issued by police during a control procedure that records the findings and circumstances of the inspection.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "police-incident-report-administrative-document",
+      "category": "documentation",
+      "translations": {
+        "el": "δελτίο συμβάντος αστυνομίας",
+        "en": "police incident report (administrative document)",
+        "ar": "تقرير حادثة شرطة (وثيقة إدارية)",
+        "fa": "گزارش حادثه پلیس (سند اداری)",
+        "fr": "rapport d'incident policier (document administratif)"
+      },
+      "definition_el": "Επίσημο διοικητικό έγγραφο που καταγράφει τα στοιχεία ενός περιστατικού που ενεπλάκη η αστυνομία, ιδίως σχετικά με τη σωματική ασφάλεια ή παράβαση νόμου.",
+      "definition_en": "An official administrative document that records details of an incident involving police intervention, particularly concerning bodily safety or legal violations.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "criminal-complaint-report",
+      "category": "documentation",
+      "translations": {
+        "el": "μηνυτήρια αναφορά",
+        "en": "criminal complaint report",
+        "ar": "تقرير الشكوى الجنائية",
+        "fa": "گزارش شکایت کیفری",
+        "fr": "rapport de plainte pénale"
+      },
+      "definition_el": "Νομικό έγγραφο με το οποίο ένα άτομο υποβάλλει επίσημη κατηγορία για διάπραξη εγκλήματος σε αρμόδια αρχή.",
+      "definition_en": "A legal document through which a person files a formal accusation of a crime with the competent authorities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "medical-certificate-from-hospital-medical-document",
+      "category": "documentation",
+      "translations": {
+        "el": "ιατρική βεβαίωση από νοσοκομείο",
+        "en": "medical certificate from hospital (medical document)",
+        "ar": "شهادة طبية من المستشفى (وثيقة طبية)",
+        "fa": "گواهی پزشکی از بیمارستان (سند پزشکی)",
+        "fr": "certificat médical de l'hôpital (document médical)"
+      },
+      "definition_el": "Επίσημο έγγραφο που εκδίδει το νοσοκομείο και περιέχει ιατρικές πληροφορίες και διαγνώσεις για ένα άτομο.",
+      "definition_en": "An official document issued by a hospital containing medical information and clinical findings about an individual's health status.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "specialist-medical-opinion-medical-document",
+      "category": "documentation",
+      "translations": {
+        "el": "γνωμάτευση ιατρού ειδικότητας",
+        "en": "specialist medical opinion (medical document)",
+        "ar": "رأي الطبيب المتخصص (وثيقة طبية)",
+        "fa": "نظر پزشک متخصص (سند پزشکی)",
+        "fr": "avis médical d'un médecin spécialiste (document médical)"
+      },
+      "definition_el": "Γραπτή γνώμη ενός ιατρού ειδικότητας σχετικά με την κατάσταση υγείας ενός ατόμου, που χρησιμοποιείται ως αποδεικτικό στοιχείο σε διαδικασίες ασύλου και δικαστικές υποθέσεις.",
+      "definition_en": "A written medical opinion from a specialist physician regarding a person's health condition, used as evidence in asylum and legal proceedings.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "medical-examination-schedule-prescription-medical-document",
+      "category": "documentation",
+      "translations": {
+        "el": "συνταγή ιατρικών εξετάσεων",
+        "en": "medical examination schedule/prescription (medical document)",
+        "ar": "جدول الفحوصات الطبية (وثيقة طبية)",
+        "fa": "برنامه معاینات پزشکی (سند پزشکی)",
+        "fr": "prescription d'examens médicaux (document médical)"
+      },
+      "definition_el": "Έγγραφο που περιγράφει τις απαιτούμενες ιατρικές εξετάσεις που πρέπει να υποβληθεί ένας ασθενής ή αιτών ασύλου.",
+      "definition_en": "A medical document that outlines the required medical examinations that a patient or asylum applicant must undergo.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "referral-for-examination-medical-administrative",
+      "category": "documentation",
+      "translations": {
+        "el": "παραπεμπτικό για εξέταση",
+        "en": "referral for examination (medical administrative)",
+        "ar": "إحالة للفحص (إداري طبي)",
+        "fa": "ارجاع برای معاینه (اداری پزشکی)",
+        "fr": "lettre de référence pour examen (administratif médical)"
+      },
+      "definition_el": "Διοικητικό έγγραφο με το οποίο ένας φορέας παραπέμπει έναν πρόσφυγα ή αιτητή ασύλου σε ιατρική εξέταση ή αξιολόγηση.",
+      "definition_en": "An administrative document through which an authority refers a refugee or asylum seeker to medical examination or evaluation.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "hospitalization-form-medical-administrative",
+      "category": "documentation",
+      "translations": {
+        "el": "έντυπο νοσηλείας",
+        "en": "hospitalization form (medical administrative)",
+        "ar": "نموذج الاستشفاء (إداري طبي)",
+        "fa": "فرم بستری (اداری پزشکی)",
+        "fr": "formulaire d'hospitalisation (administratif médical)"
+      },
+      "definition_el": "Επίσημο διοικητικό έγγραφο που συμπληρώνεται κατά την εισαγωγή ασθενούς σε νοσοκομείο και περιέχει ιατρικές και διοικητικές πληροφορίες.",
+      "definition_en": "Official administrative document completed upon a patient's admission to hospital containing medical and administrative information.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "medical-discharge-form-administrative",
+      "category": "documentation",
+      "translations": {
+        "el": "έντυπο εξιτηρίου",
+        "en": "medical discharge form (administrative)",
+        "ar": "نموذج الخروج الطبي (إداري)",
+        "fa": "فرم ترخیص پزشکی (اداری)",
+        "fr": "formulaire de sortie médicale (administratif)"
+      },
+      "definition_el": "Επίσημο έντυπο που συμπληρώνεται κατά την εξέλιση ασθενούς από ιατρική δομή και περιέχει διοικητικές και ιατρικές πληροφορίες.",
+      "definition_en": "Official form completed upon patient discharge from a medical facility containing administrative and clinical information.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "foreigner-health-card-fhc",
+      "category": "documentation",
+      "translations": {
+        "el": "κάρτα υγείας αλλοδαπών (ΚΥΠΑ)",
+        "en": "Foreigner Health Card (FHC)",
+        "ar": "بطاقة الصحة للأجانب (KYPA)",
+        "fa": "کارت سلامت بیگانگان (KYPA)",
+        "fr": "Carte de Santé des Étrangers (CSE)"
+      },
+      "definition_el": "Διοικητικό έγγραφο που χορηγείται στους αλλοδαπούς στην Ελλάδα για την πρόσβαση στις υπηρεσίες υγείας του ΕΣΥ και την καταγραφή των ιατρικών τους δεδομένων.",
+      "definition_en": "An administrative health document issued to foreign nationals in Greece to access National Health System services and maintain a record of their medical data.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "efka-clearance-settlement-action-administrative-insurance",
+      "category": "documentation",
+      "translations": {
+        "el": "πράξη εκκαθάρισης ΕΦΚΑ",
+        "en": "EFKA clearance/settlement action (administrative insurance)",
+        "ar": "إجراء تسوية صندوق الضمان الاجتماعي الموحد (إداري تأميني)",
+        "fa": "اقدام تسویه صندوق تأمین اجتماعی یکپارچه (اداری و بیمه ای)",
+        "fr": "acte de régularisation/apurement de l'EFKA (administratif assurantiel)"
+      },
+      "definition_el": "Διοικητική πράξη εκκαθάρισης οφειλών ή ασφαλιστικών υποχρεώσεων απέναντι στο Ενιαίο Φορέα Κοινωνικής Ασφάλειας για πρόσφυγες ή αιτούντες άσυλο.",
+      "definition_en": "An administrative action by the Greek unified social security fund (EFKA) to settle or clear insurance obligations and liabilities for refugees or asylum seekers.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "certificate-of-social-security-contribution-compliance-admin",
+      "category": "documentation",
+      "translations": {
+        "el": "βεβαίωση ασφαλιστικής ενημερότητας",
+        "en": "certificate of social security contribution compliance (administrative insurance)",
+        "ar": "شهادة الامتثال لمساهمات الضمان الاجتماعي (إداري تأميني)",
+        "fa": "گواهی تطابق کمک‌های بیمه اجتماعی (اداری بیمه‌ای)",
+        "fr": "certificat de conformité des cotisations de sécurité sociale (administratif assurantiel)"
+      },
+      "definition_el": "Διοικητικό έγγραφο που βεβαιώνει ότι ένα άτομο ή οργανισμός έχει ανταποκριθεί στις υποχρεώσεις συνεισφοράς στο σύστημα κοινωνικής ασφάλισης.",
+      "definition_en": "Administrative document certifying that a person or organization has fulfilled their obligations to contribute to the social security system.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "tax-clearance-certificate-administrative-tax",
+      "category": "documentation",
+      "translations": {
+        "el": "βεβαίωση φορολογικής ενημερότητας",
+        "en": "tax clearance certificate (administrative tax)",
+        "ar": "شهادة براءة الذمة الضريبية (إدارية ضريبية)",
+        "fa": "گواهی پاکی مالیاتی (اداری مالیاتی)",
+        "fr": "certificat de conformité fiscale (administrative fiscale)"
+      },
+      "definition_el": "Διοικητικό έγγραφο που εκδίδεται από τις φορολογικές αρχές και αποδεικνύει ότι ένα φυσικό ή νομικό πρόσωπο είναι ενημερωμένο ως προς τις φορολογικές του υποχρεώσεις.",
+      "definition_en": "An administrative document issued by tax authorities certifying that an individual or legal entity has fulfilled all their tax obligations and has no outstanding tax liabilities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "criminal-record-certificate-for-general-use",
+      "category": "documentation",
+      "translations": {
+        "el": "απόσπασμα ποινικού μητρώου γενικής χρήσης",
+        "en": "criminal record certificate for general use",
+        "ar": "شهادة السجل الجنائي للاستخدام العام",
+        "fa": "گواهی سوابق کیفری برای استفاده عمومی",
+        "fr": "extrait de casier judiciaire à usage général"
+      },
+      "definition_el": "Νομικό έγγραφο που εκδίδεται από τις αρμόδιες αρχές και αποδεικνύει την ύπαρξη ή απουσία ποινικών καταδίκων για ένα φυσικό πρόσωπο.",
+      "definition_en": "Official legal document issued by competent authorities certifying the presence or absence of criminal convictions for a natural person.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "extract-from-criminal-record-for-judicial-use",
+      "category": "documentation",
+      "translations": {
+        "el": "απόσπασμα ποινικού μητρώου δικαστικής χρήσης",
+        "en": "extract from criminal record for judicial use",
+        "ar": "مستخرج من السجل الجنائي للاستخدام القضائي",
+        "fa": "گواهی سوابق کیفری برای استفاده قضایی",
+        "fr": "extrait du casier judiciaire à usage judiciaire"
+      },
+      "definition_el": "Νομικό έγγραφο που περιέχει αποσπάσματα από το ποινικό μητρώο ενός ατόμου και χρησιμοποιείται σε δικαστικές διαδικασίες.",
+      "definition_en": "A legal document containing extracts from an individual's criminal record used in judicial proceedings.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "greek-language-proficiency-certificate-educational-certifica",
+      "category": "documentation",
+      "translations": {
+        "el": "πιστοποιητικό ελληνομάθειας ΚΕΓ",
+        "en": "Greek Language Proficiency Certificate ΚΕΓ (educational certificate)",
+        "ar": "شهادة إجادة اللغة اليونانية ΚΕΓ (شهادة تعليمية)",
+        "fa": "گواهی تسلط بر زبان یونانی ΚΕΓ (گواهی آموزشی)",
+        "fr": "Certificat de compétence en langue grecque ΚΕΓ (certificat éducatif)"
+      },
+      "definition_el": "Επίσημο εκπαιδευτικό πιστοποιητικό που αποδεικνύει το επίπεδο γλωσσικής ικανότητας στα ελληνικά και χρησιμοποιείται για σκοπούς ολοκλήρωσης της δευτεροβάθμιας εκπαίδευσης ή ένταξης.",
+      "definition_en": "Official educational certificate that demonstrates the level of Greek language proficiency and is used for secondary education completion or integration purposes.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "marriage-in-a-third-country-family-event",
+      "category": "family",
+      "translations": {
+        "el": "γάμος σε τρίτη χώρα",
+        "en": "marriage in a third country (family event)",
+        "ar": "الزواج في دولة ثالثة (حدث عائلي)",
+        "fa": "ازدواج در کشور ثالث (رویداد خانوادگی)",
+        "fr": "mariage dans un tiers pays (événement familial)"
+      },
+      "definition_el": "Γάμος που πραγματοποιείται σε χώρα άλλη από τη χώρα προέλευσης του αιτούντος και τη χώρα υποδοχής, συνήθως αναφερόμενος σε αιτήματα για επανένωση οικογένειας ή αλλαγή καταστάσεως.",
+      "definition_en": "A marriage that takes place in a country other than the applicant's country of origin or country of reception, typically referenced in family reunification requests or change of status applications.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "religious-marriage-without-civil-registration-family-documen",
+      "category": "family",
+      "translations": {
+        "el": "θρησκευτικός γάμος χωρίς πολιτικό",
+        "en": "religious marriage without civil registration (family documentation)",
+        "ar": "زواج ديني بدون تسجيل مدني (وثيقة عائلية)",
+        "fa": "ازدواج مذهبی بدون ثبت احوال رسمی (اسناد خانوادگی)",
+        "fr": "mariage religieux sans enregistrement civil (document familial)"
+      },
+      "definition_el": "Γάμος που τελέστηκε σύμφωνα με θρησκευτικές τελετουργίες χωρίς την απαιτούμενη πολιτική καταχώριση ή νόμιμη αναγνώριση από τις αρμόδιες αρχές.",
+      "definition_en": "A marriage ceremony conducted according to religious rites without official civil registration or legal recognition by the competent authorities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "cohabitation-without-marriage-cohabitation-arrangements",
+      "category": "family",
+      "translations": {
+        "el": "συμβίωση χωρίς γάμο",
+        "en": "cohabitation without marriage (cohabitation arrangements)",
+        "ar": "المعيشة المشتركة بدون زواج (ترتيبات المعيشة المشتركة)",
+        "fa": "زندگی مشترک بدون ازدواج (شرایط زندگی مشترک)",
+        "fr": "cohabitation sans mariage (arrangements de cohabitation)"
+      },
+      "definition_el": "Η κατάσταση όπου δύο άτομα ζουν μαζί και έχουν κοινή οικονομική ή προσωπική σχέση χωρίς να είναι νόμιμα παντρεμένα.",
+      "definition_en": "A situation where two persons live together and share economic or personal relationships without being legally married.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "cohabitation-agreement-legal-framework",
+      "category": "family",
+      "translations": {
+        "el": "σύμφωνο συμβίωσης",
+        "en": "cohabitation agreement (legal framework)",
+        "ar": "اتفاق المعاشرة (الإطار القانوني)",
+        "fa": "قرارداد همزیستی (چارچوب حقوقی)",
+        "fr": "accord de cohabitation (cadre juridique)"
+      },
+      "definition_el": "Νομικό έγγραφο που ρυθμίζει τις σχέσεις και τα δικαιώματα ατόμων που συζούν χωρίς γάμο, συχνά σχετικό με τον προσδιορισμό της οικογενειακής κατάστασης αιτούντων ασύλου.",
+      "definition_en": "A legal document that regulates the rights and obligations of individuals living together without marriage, often relevant to determining family status of asylum applicants.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "joint-custody-of-child-custody-arrangement",
+      "category": "family",
+      "translations": {
+        "el": "επιμέλεια τέκνου κοινή",
+        "en": "joint custody of child (custody arrangement)",
+        "ar": "الحضانة المشتركة للطفل (ترتيب الحضانة)",
+        "fa": "حضانت مشترک فرزند (ترتیب حضانت)",
+        "fr": "garde conjointe de l'enfant (arrangement de garde)"
+      },
+      "definition_el": "Νομική διάταξη κατά την οποία και οι δύο γονείς διατηρούν ίσα δικαιώματα και ευθύνες για την φροντίδα και воспитание του ανηλίκου τέκνου τους.",
+      "definition_en": "Legal arrangement in which both parents retain equal rights and responsibilities for the care and upbringing of their minor child.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "exclusive-custody-of-child-custody-arrangement",
+      "category": "family",
+      "translations": {
+        "el": "επιμέλεια τέκνου αποκλειστική",
+        "en": "exclusive custody of child (custody arrangement)",
+        "ar": "الحضانة الحصرية للطفل (ترتيب الحضانة)",
+        "fa": "حضانت انحصاری فرزند (ترتیب حضانت)",
+        "fr": "garde exclusive de l'enfant (arrangement de garde)"
+      },
+      "definition_el": "Νομική διάταξη κατά την οποία ένας γονέας έχει την αποκλειστική νομική και φυσική επιμέλεια του τέκνου, χωρίς την κοινή άσκησή της με τον άλλο γονέα.",
+      "definition_en": "A legal arrangement whereby one parent has sole legal and physical custody of a child, without shared exercise of custody with the other parent.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "right-to-contact-between-parent-and-child",
+      "category": "family",
+      "translations": {
+        "el": "επικοινωνία γονέα με τέκνο",
+        "en": "right to contact between parent and child",
+        "ar": "حق التواصل بين الوالد والطفل",
+        "fa": "حق ارتباط والدین با فرزند",
+        "fr": "droit de communication entre parent et enfant"
+      },
+      "definition_el": "Το δικαίωμα του αιτούντος άσυλο ή πρόσφυγα γονέα να διατηρεί επικοινωνία με το τέκνό του, ιδίως σε περιπτώσεις διαχωρισμού κατά τη διαδικασία υποδοχής ή ασύλου.",
+      "definition_en": "The right of an asylum seeker or refugee parent to maintain contact with their child, especially in cases of family separation during reception or asylum procedures.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "child-maintenance-legal-right",
+      "category": "family",
+      "translations": {
+        "el": "διατροφή τέκνου",
+        "en": "child maintenance (legal right)",
+        "ar": "نفقة الطفل (حق قانوني)",
+        "fa": "نفقه فرزند (حق قانونی)",
+        "fr": "entretien de l'enfant (droit légal)"
+      },
+      "definition_el": "Το νομικό δικαίωμα του τέκνου να λαμβάνει οικονομική ενίσχυση από τους γονείς για την κάλυψη των βασικών του αναγκών.",
+      "definition_en": "The legal right of a child to receive financial support from parents for the coverage of basic needs.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "international-child-abduction-hague-1980",
+      "category": "family",
+      "translations": {
+        "el": "διεθνής απαγωγή παιδιού",
+        "en": "international child abduction (Hague 1980)",
+        "ar": "الاختطاف الدولي للأطفال (اتفاقية لاهاي 1980)",
+        "fa": "ربودن بین‌المللی کودک (کنوانسیون لاهه ۱۹۸۰)",
+        "fr": "enlèvement international d'enfant (Convention de La Haye 1980)"
+      },
+      "definition_el": "Η παράνομη μεταφορά ή κράτηση ενός ανηλίκου από ένα γονέα κατά του θελήματος του άλλου γονέα, διέπεται από τη Διεθνή Σύμβαση της Χάγης του 1980 για την αστική πτυχή της διεθνούς απαγωγής παιδιών.",
+      "definition_en": "The unlawful removal or retention of a minor by one parent against the will of the other parent, governed by the 1980 Hague Convention on the Civil Aspects of International Child Abduction.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "guardianship-of-a-minor-child-protection",
+      "category": "family",
+      "translations": {
+        "el": "αναδοχή ανηλίκου",
+        "en": "guardianship of a minor (child protection)",
+        "ar": "الوصاية على قاصر (حماية الطفل)",
+        "fa": "سرپرستی فرزند خردسال (حفاظت از کودک)",
+        "fr": "tutelle d'un mineur (protection de l'enfant)"
+      },
+      "definition_el": "Η νομική διαδικασία ανάθεσης της φροντίδας και της νομικής εκπροσώπησης ενός ανήλικου πρόσφυγα ή μετανάστη σε ένα κατάλληλο ενήλικο πρόσωπο ή φορέα για την προστασία των δικαιωμάτων και των συμφερόντων του.",
+      "definition_en": "The legal process of appointing a suitable adult or authorized body to assume guardianship and legal representation of a minor refugee or migrant to ensure protection of the child's rights and welfare.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "intercountry-adoption-international-adoption",
+      "category": "family",
+      "translations": {
+        "el": "υιοθεσία διακρατική",
+        "en": "intercountry adoption (international adoption)",
+        "ar": "التبني بين الدول (التبني الدولي)",
+        "fa": "فرزندخواندگی بین‌المللی (فرزندخواندگی بین‌الدول)",
+        "fr": "adoption internationale (adoption interétatique)"
+      },
+      "definition_el": "Η διαδικασία υιοθεσίας ενός ανηλίκου από γονείς που διαμένουν σε διαφορετική χώρα από τη χώρα προέλευσης του παιδιού.",
+      "definition_en": "The process of adoption of a minor by parents residing in a different country from the child's country of origin.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "unaccompanied-infant-special-category",
+      "category": "family",
+      "translations": {
+        "el": "ασυνόδευτο βρέφος",
+        "en": "unaccompanied infant (special category)",
+        "ar": "رضيع غير مصحوب (فئة خاصة)",
+        "fa": "نوزاد بدون همراه (دسته‌بندی ویژه)",
+        "fr": "nourrisson non accompagné (catégorie spéciale)"
+      },
+      "definition_el": "Βρέφος ηλικίας συνήθως έως τριών ετών που εισέρχεται ή διαμένει σε χώρα χωρίς συνοδό ενήλικα και λαμβάνει ειδική νομική και κοινωνική προστασία.",
+      "definition_en": "An infant typically up to three years of age who enters or resides in a country without an accompanying adult and receives special legal and social protection.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "victim-of-persecution-on-grounds-of-religion",
+      "category": "vulnerable",
+      "translations": {
+        "el": "θύμα δίωξης βάσει θρησκείας",
+        "en": "victim of persecution on grounds of religion",
+        "ar": "ضحية الاضطهاد على أساس الدين",
+        "fa": "قربانی تبعیض و آزار بر اساس دین",
+        "fr": "victime de persécution fondée sur la religion"
+      },
+      "definition_el": "Πρόσωπο που υφίσταται δίωξη λόγω της θρησκευτικής του πίστης ή πρακτικών και ζητά διεθνή προστασία.",
+      "definition_en": "A person who suffers persecution due to their religious beliefs or practices and seeks international protection.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "victim-of-persecution-based-on-sexual-orientation",
+      "category": "vulnerable",
+      "translations": {
+        "el": "θύμα δίωξης βάσει σεξουαλικού προσανατολισμού",
+        "en": "victim of persecution based on sexual orientation",
+        "ar": "ضحية الاضطهاد على أساس التوجه الجنسي",
+        "fa": "قربانی تعقیب بر اساس گرایش جنسی",
+        "fr": "victime de persécution fondée sur l'orientation sexuelle"
+      },
+      "definition_el": "Πρόσωπο που έχει υποστεί ή φοβάται να υποστεί διώξεις λόγω του σεξουαλικού του προσανατολισμού, όπως ορίζεται στη σύμβαση της Γενεύης και στο κοινοτικό δίκαιο.",
+      "definition_en": "A person who has suffered or has a well-founded fear of persecution due to their sexual orientation, as defined in the Geneva Convention and EU asylum law.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "victim-of-persecution-on-grounds-of-gender-identity",
+      "category": "vulnerable",
+      "translations": {
+        "el": "θύμα δίωξης βάσει ταυτότητας φύλου",
+        "en": "victim of persecution on grounds of gender identity",
+        "ar": "ضحية الاضطهاد على أساس الهوية الجنسانية",
+        "fa": "قربانی تعقیب و آزار بر اساس هویت جنسانی",
+        "fr": "victime de persécution fondée sur l'identité de genre"
+      },
+      "definition_el": "Πρόσωπο που υφίσταται δίωξη λόγω της δηλωμένης ή αντιληπτής ταυτότητας φύλου του, η οποία αποτελεί βάση για αίτηση διεθνούς προστασίας.",
+      "definition_en": "A person who suffers persecution because of their stated or perceived gender identity, which constitutes grounds for an international protection claim.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "victim-of-persecution-based-on-political-opinion",
+      "category": "vulnerable",
+      "translations": {
+        "el": "θύμα δίωξης βάσει πολιτικής γνώμης",
+        "en": "victim of persecution based on political opinion",
+        "ar": "ضحية الاضطهاد على أساس الرأي السياسي",
+        "fa": "قربانی تعقیب و آزار بر اساس نظر سیاسی",
+        "fr": "victime de persécution fondée sur l'opinion politique"
+      },
+      "definition_el": "Πρόσωπο που υφίσταται διώξεις ή βίαιη μεταχείριση λόγω των πολιτικών του απόψεων ή δραστηριοτήτων.",
+      "definition_en": "A person who suffers persecution or serious harm due to their political opinions or political activities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "victim-of-persecution-on-grounds-of-nationality-or-race",
+      "category": "vulnerable",
+      "translations": {
+        "el": "θύμα δίωξης βάσει εθνικότητας ή φυλής",
+        "en": "victim of persecution on grounds of nationality or race",
+        "ar": "受害者 بسبب الاضطهاد على أساس الجنسية أو العرق",
+        "fa": "قربانی تعقیب بر اساس ملیت یا نژاد",
+        "fr": "victime de persécution fondée sur la nationalité ou la race"
+      },
+      "definition_el": "Άτομο που υφίσταται διακρίσεις, βία ή άλλες μορφές δυσμενούς μεταχείρισης λόγω της εθνικότητας ή φυλετικής του καταγωγής.",
+      "definition_en": "A person subjected to discrimination, violence, or other forms of adverse treatment due to their nationality or racial origin.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "victim-of-persecution-based-on-membership-of-a-particular-so",
+      "category": "vulnerable",
+      "translations": {
+        "el": "θύμα δίωξης βάσει συμμετοχής σε ιδιαίτερη κοινωνική ομάδα",
+        "en": "victim of persecution based on membership of a particular social group (grounds PSG)",
+        "ar": "ضحية الاضطهاد بسبب العضوية في مجموعة اجتماعية معينة (أسس PSG)",
+        "fa": "قربانی تعقیب و ستم بر اساس عضویت در یک گروه اجتماعی خاص (مبانی PSG)",
+        "fr": "victime de persécution fondée sur l'appartenance à un groupe social particulier (fondements PSG)"
+      },
+      "definition_el": "Πρόσωπο που υφίσταται δίωξη λόγω της ιδιότητάς του ως μέλους συγκεκριμένης κοινωνικής ομάδας, όπως ορίζεται στη σύμβαση της Γενεύης.",
+      "definition_en": "A person who suffers persecution due to their membership in a particular social group, as defined under the 1951 Refugee Convention.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "person-who-has-renounced-their-religion",
+      "category": "vulnerable",
+      "translations": {
+        "el": "άτομο που αποκήρυξε θρησκεία (απόστατης)",
+        "en": "person who has renounced their religion",
+        "ar": "شخص تخلى عن دينه",
+        "fa": "فردی که دین خود را رها کرده است",
+        "fr": "personne qui a renoncé à sa religion"
+      },
+      "definition_el": "Άτομο που έχει εγκαταλείψει ή απορρίψει την θρησκεία στην οποία ανήκε, συχνά αντιμέτωπο με διώξεις στη χώρα προέλευσης.",
+      "definition_en": "A person who has abandoned or rejected the religion they previously adhered to, often facing persecution in their country of origin.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "person-who-changed-religion",
+      "category": "vulnerable",
+      "translations": {
+        "el": "άτομο που άλλαξε θρησκεία",
+        "en": "person who changed religion",
+        "ar": "شخص غيّر دينه",
+        "fa": "فردی که دین خود را تغییر داده است",
+        "fr": "personne ayant changé de religion"
+      },
+      "definition_el": "Άτομο που εγκατέλειψε τη θρησκεία του προέλευσης και υιοθέτησε διαφορετική θρησκευτική πίστη, γεγονός που ενδέχεται να θέτει σε κίνδυνο τη σωματική του ακεραιότητα ή ελευθερία στη χώρα καταγωγής.",
+      "definition_en": "A person who has abandoned their religion of origin and adopted a different religious faith, a circumstance that may expose them to physical harm or persecution in their country of origin.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "atheist-from-islamic-country",
+      "category": "vulnerable",
+      "translations": {
+        "el": "άθεος από ισλαμική χώρα",
+        "en": "atheist from Islamic country",
+        "ar": "ملحد من بلد إسلامي",
+        "fa": "بی‌دین از کشور اسلامی",
+        "fr": "athée en provenance d'un pays islamique"
+      },
+      "definition_el": "Πρόσωπο που δηλώνει ότι δεν πιστεύει σε θρησκευτικές δοξασίες και κατέχεται από χώρα με ισλαμική πλειοψηφία ή νομοθεσία, αντιμετωπίζοντας διακρίσεις ή διώξεις.",
+      "definition_en": "A person who professes atheism or non-belief and originates from a country with Islamic majority or Islamic law, potentially facing persecution or discrimination.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "member-of-a-persecuted-religious-minority",
+      "category": "vulnerable",
+      "translations": {
+        "el": "μέλος διωκόμενης θρησκευτικής μειονότητας",
+        "en": "member of a persecuted religious minority",
+        "ar": "عضو في أقلية دينية مضطهدة",
+        "fa": "عضو اقلیت دینی آزاردیده",
+        "fr": "membre d'une minorité religieuse persécutée"
+      },
+      "definition_el": "Πρόσωπο που ανήκει σε θρησκευτική ομάδα η οποία υφίσταται διακρίσεις, βία ή αναγκαστικές μέτρα λόγω της θρησκείας του.",
+      "definition_en": "A person belonging to a religious group that experiences discrimination, violence, or coercive measures based on their religious beliefs or practices.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "woman-in-a-sharia-law-country-gender-based-persecution",
+      "category": "vulnerable",
+      "translations": {
+        "el": "γυναίκα σε χώρα με sharia",
+        "en": "woman in a Sharia law country (gender-based persecution)",
+        "ar": "امرأة في دولة تطبق الشريعة الإسلامية (الاضطهاد على أساس نوع الجنس)",
+        "fa": "زن در کشوری با قانون شریعت (آزار و اذیت مبتنی بر جنسیت)",
+        "fr": "femme dans un pays appliquant la loi Sharia (persécution basée sur le genre)"
+      },
+      "definition_el": "Γυναίκα που ζει ή προέρχεται από χώρα όπου εφαρμόζεται η Sharia και αντιμετωπίζει διακρίσεις, βία ή διώξεις λόγω του φύλου της.",
+      "definition_en": "A woman living in or coming from a country where Sharia law is applied, facing discrimination, violence, or persecution based on her gender.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "woman-who-refused-forced-marriage-gbv",
+      "category": "vulnerable",
+      "translations": {
+        "el": "γυναίκα που αρνήθηκε αναγκαστικό γάμο",
+        "en": "woman who refused forced marriage (GBV)",
+        "ar": "امرأة رفضت الزواج القسري (العنف القائم على نوع الجنس)",
+        "fa": "زنی که ازدواج اجباری را رد کرد (خشونت مبتنی بر جنسیت)",
+        "fr": "femme qui a refusé le mariage forcé (VBG)"
+      },
+      "definition_el": "Γυναίκα που έχει αρνηθεί ή αντιστάθηκε στην επιβολή γάμου χωρίς τη δική της συναίνεση, γεγονός που αποτελεί μορφή δομημένης βίας κατά των γυναικών.",
+      "definition_en": "A woman who has refused or resisted a marriage imposed without her consent, which constitutes a form of gender-based violence.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "woman-victim-of-honour-based-violence",
+      "category": "vulnerable",
+      "translations": {
+        "el": "γυναίκα θύμα εγκλήματος τιμής",
+        "en": "woman victim of honour-based violence",
+        "ar": "امرأة ضحية جريمة شرف",
+        "fa": "زن قربانی خشونت مبتنی بر ناموس",
+        "fr": "femme victime de violence fondée sur l'honneur"
+      },
+      "definition_el": "Γυναίκα που έχει υποστεί σωματική, ψυχολογική ή σεξουαλική βία από μέλη της οικογένειας ή της κοινότητάς της, που δικαιολογείται με την προστασία της οικογενειακής τιμής ή της φήμης.",
+      "definition_en": "A woman who has experienced physical, psychological, or sexual violence perpetrated by family or community members, justified by claims of protecting family honour or reputation.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "lgbtqi-person-in-a-criminalization-country-sogi-persecution",
+      "category": "vulnerable",
+      "translations": {
+        "el": "άτομο ΛΟΑΤΚΙ+ σε χώρα ποινικοποίησης",
+        "en": "LGBTQI+ person in a criminalization country (SOGI persecution)",
+        "ar": "شخص LGBTQI+ في دولة تجرم الهويات الجنسية والتوجهات الجنسية (اضطهاد قائم على SOGI)",
+        "fa": "فرد LGBTQI+ در کشوری با تجریم هویت و گرایش جنسی (آزار مبتنی بر SOGI)",
+        "fr": "personne LGBTQI+ dans un pays de criminalisation (persécution basée sur l'orientation sexuelle et l'identité de genre)"
+      },
+      "definition_el": "Άτομο που ανήκει στη ΛΟΑΤΚΙ+ κοινότητα και διαφεύγει από χώρα όπου η ταυτότητα και/ή το ένστικτό του είναι ποινικοποιημένα.",
+      "definition_en": "A person belonging to the LGBTQI+ community fleeing a country where their sexual orientation and/or gender identity is criminalized.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "active-women-s-rights-activist",
+      "category": "vulnerable",
+      "translations": {
+        "el": "ενεργός ακτιβιστής δικαιωμάτων γυναικών",
+        "en": "active women's rights activist",
+        "ar": "ناشطة نسوية نشطة",
+        "fa": "فعال حقوق زنان فعال",
+        "fr": "militante active des droits des femmes"
+      },
+      "definition_el": "Πρόσωπο που συμμετέχει ενεργά σε κινήματα και δραστηριότητες για την προάσπιση και προώθηση των δικαιωμάτων των γυναικών.",
+      "definition_en": "A person who actively participates in movements and activities advocating for and promoting women's rights.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "journalist-under-persecution",
+      "category": "vulnerable",
+      "translations": {
+        "el": "δημοσιογράφος υπό δίωξη",
+        "en": "journalist under persecution",
+        "ar": "صحفي يتعرض للاضطهاد",
+        "fa": "روزنامه‌نگار تحت آزار و اذیت",
+        "fr": "journaliste persécuté"
+      },
+      "definition_el": "Δημοσιογράφος που διώκεται στη χώρα προέλευσής του λόγω του επαγγέλματος και του έργου του.",
+      "definition_en": "A journalist who is persecuted in their country of origin due to their professional activities and reporting.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "trade-unionist-under-persecution",
+      "category": "vulnerable",
+      "translations": {
+        "el": "συνδικαλιστής υπό δίωξη",
+        "en": "trade unionist under persecution",
+        "ar": "نقابي مضطهد",
+        "fa": "اتحادیه‌ای تحت تعقیب",
+        "fr": "syndicaliste persécuté"
+      },
+      "definition_el": "Άτομο που διώκεται στη χώρα προέλευσης λόγω της συνδικαλιστικής του δραστηριότητας και της άσκησης του δικαιώματος στη συλλογική διαπραγμάτευση.",
+      "definition_en": "A person who faces persecution in their country of origin due to their trade union activities and exercise of labor rights.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "military-deserter",
+      "category": "vulnerable",
+      "translations": {
+        "el": "λιποτάκτης στρατού",
+        "en": "military deserter",
+        "ar": "فارّ من الجيش",
+        "fa": "فراری از ارتش",
+        "fr": "déserteur militaire"
+      },
+      "definition_el": "Στρατιώτης ή επιστρατευμένος που εγκαταλείπει τις στρατιωτικές του υποχρεώσεις χωρίς άδεια και δεν επιστρέφει.",
+      "definition_en": "A soldier or conscripted person who abandons military service without permission and does not return.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "conscientious-objection-to-military-service",
+      "category": "vulnerable",
+      "translations": {
+        "el": "άρνηση στράτευσης για λόγους συνείδησης",
+        "en": "conscientious objection to military service",
+        "ar": "الاعتراض على الخدمة العسكرية لأسباب ضميرية",
+        "fa": "انکار خدمت سربازی به دلایل وجدانی",
+        "fr": "objection de conscience au service militaire"
+      },
+      "definition_el": "Η άρνηση ενός ατόμου να υπηρετήσει στο στρατό λόγω βαθιών ηθικών, θρησκευτικών ή φιλοσοφικών πεποιθήσεων.",
+      "definition_en": "The refusal of an individual to perform military service based on deeply held moral, religious, or philosophical convictions.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "interview-on-religious-persecution",
+      "category": "procedure",
+      "translations": {
+        "el": "συνέντευξη για θρησκευτική δίωξη",
+        "en": "interview on religious persecution",
+        "ar": "مقابلة بشأن الاضطهاد الديني",
+        "fa": "مصاحبه درباره تعقیب مذهبی",
+        "fr": "entretien sur la persécution religieuse"
+      },
+      "definition_el": "Εξειδικευμένη συνέντευξη κατά την οποία ο αιτών ασύλου παρουσιάζει τους λόγους της θρησκευτικής διώξεως που αντιμετωπίζει ή αντιμετώπισε στη χώρα προέλευσής του.",
+      "definition_en": "Specialized interview during which an asylum applicant presents the reasons for religious persecution they face or have faced in their country of origin.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "sogi-interview-specialised-interview",
+      "category": "procedure",
+      "translations": {
+        "el": "συνέντευξη για SOGI αίτημα",
+        "en": "SOGI interview (specialised interview)",
+        "ar": "مقابلة متخصصة بشأن الميول الجنسية والهوية الجندرية",
+        "fa": "مصاحبه تخصصی برای درخواست SOGI",
+        "fr": "entretien spécialisé pour demande SOGI"
+      },
+      "definition_el": "Ειδικευμένη συνέντευξη που διεξάγεται με αιτούντες ασύλου για την αξιολόγηση αιτημάτων που βασίζονται στη σεξουαλική προσανατολισμό ή την ταυτότητα φύλου.",
+      "definition_en": "A specialised interview conducted with asylum applicants to assess claims based on sexual orientation or gender identity.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "specialized-interview-for-gbv-claim",
+      "category": "procedure",
+      "translations": {
+        "el": "συνέντευξη για GBV αίτημα",
+        "en": "specialized interview for GBV claim",
+        "ar": "مقابلة متخصصة بشأن مطالبة العنف القائم على أساس النوع الاجتماعي",
+        "fa": "مصاحبه تخصصی برای درخواست خشونت مبتنی بر جنسیت",
+        "fr": "entretien spécialisé pour demande de GBV"
+      },
+      "definition_el": "Εξειδικευμένη συνέντευξη που διενεργείται με αιτούντες που υποστήριξαν ότι έχουν τύχει βίας ή διακρίσεων λόγω του φύλου τους ή της σεξουαλικής τους ταυτότητας.",
+      "definition_en": "A specialized interview conducted with applicants who claim to have suffered violence or persecution based on their gender or sexual identity.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "female-case-worker-for-gbv",
+      "category": "procedure",
+      "translations": {
+        "el": "γυναίκα χειριστής για GBV",
+        "en": "female case worker for GBV",
+        "ar": "موظفة متخصصة في العنف القائم على النوع الاجتماعي",
+        "fa": "کارمند زن متخصص در خشونت مبتنی بر جنسیت",
+        "fr": "agent féminin spécialisé en violences sexistes"
+      },
+      "definition_el": "Γυναίκα επαγγελματρία που παρέχει υποστήριξη και διαχείριση υποθέσεων για θύματα βίας βάσει φύλου (GBV) στο πλαίσιο διαδικασιών ασύλου.",
+      "definition_en": "A female professional who provides case management and support to victims of gender-based violence (GBV) within asylum procedures.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "female-interpreter-for-gbv-procedural-guarantee",
+      "category": "procedure",
+      "translations": {
+        "el": "γυναίκα διερμηνέας για GBV",
+        "en": "female interpreter for GBV (procedural guarantee)",
+        "ar": "مترجمة امرأة لقضايا العنف القائم على النوع الاجتماعي (ضمان إجرائي)",
+        "fa": "مترجم زن برای خشونت مبتنی بر جنسیت (تضمین رویه ای)",
+        "fr": "interprète femme pour les violences liées au genre (garantie procédurale)"
+      },
+      "definition_el": "Γυναίκα διερμηνέας που διατίθεται ως διαδικαστική εγγύηση για την ασφαλή και ευαίσθητη επικοινωνία κατά τη διαδικασία ασύλου σε θέματα που αφορούν έμψυχη βία βάσει φύλου.",
+      "definition_en": "A female interpreter provided as a procedural guarantee to ensure safe and sensitive communication during asylum procedures regarding gender-based violence (GBV) cases.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "protected-interview-room",
+      "category": "procedure",
+      "translations": {
+        "el": "δωμάτιο συνέντευξης προστατευμένο",
+        "en": "protected interview room",
+        "ar": "غرفة مقابلة محمية",
+        "fa": "اتاق مصاحبه محافظت‌شده",
+        "fr": "salle d'entretien protégée"
+      },
+      "definition_el": "Ειδικά διαμορφωμένος χώρος συνέντευξης όπου οι αιτούντες άσυλο, ιδίως οι ευάλωτες ομάδες, συνομιλούν με τις αρχές σε ασφαλές και εμπιστευτικό περιβάλλον.",
+      "definition_en": "A specially designed interview space where asylum applicants, particularly vulnerable persons, meet with authorities in a secure and confidential environment.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "break-during-interview",
+      "category": "procedure",
+      "translations": {
+        "el": "διάλειμμα κατά τη διάρκεια συνέντευξης",
+        "en": "break during interview",
+        "ar": "فترة راحة أثناء المقابلة",
+        "fa": "تعطیل/وقفه در حین مصاحبه",
+        "fr": "pause au cours de l'entretien"
+      },
+      "definition_el": "Η προσωρινή διακοπή της συνέντευξης ασύλου που παρέχεται στον αιτούντα για ανάπαυση και ανάκαμψη κατά τη διάρκεια της διαδικασίας.",
+      "definition_en": "A temporary cessation of an asylum interview provided to the applicant for rest and recuperation during the interview process.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "interview-with-psychologist-present-vulnerable-friendly",
+      "category": "procedure",
+      "translations": {
+        "el": "συνέντευξη με ψυχολόγο παρόντα",
+        "en": "interview with psychologist present (vulnerable-friendly)",
+        "ar": "مقابلة مع حضور طبيب نفسي (ملائمة للأشخاص الضعفاء)",
+        "fa": "مصاحبه با حضور روانشناس (دوستانه با افراد آسیب پذیر)",
+        "fr": "entretien avec psychologue présent (adapté aux personnes vulnérables)"
+      },
+      "definition_el": "Συνέντευξη που διεξάγεται με την παρουσία ψυχολόγου προκειμένου να παρασχεθεί υποστήριξη και προστασία σε ευάλωτα άτομα κατά τη διάρκειά της.",
+      "definition_en": "An interview conducted with a psychologist present to provide support and protection to vulnerable individuals during the proceedings.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "interview-of-a-minor-with-a-psychologist-and-guardian-child-",
+      "category": "procedure",
+      "translations": {
+        "el": "συνέντευξη ανηλίκου με ψυχολόγο και επίτροπο",
+        "en": "interview of a minor with a psychologist and guardian (child-friendly)",
+        "ar": "مقابلة قاصر مع طبيب نفسي وولي (ملائمة للطفل)",
+        "fa": "مصاحبه با یک بزهکار در حضور روانشناس و سرپرست (مناسب برای کودک)",
+        "fr": "entretien d'un mineur avec un psychologue et un tuteur (adapté aux enfants)"
+      },
+      "definition_el": "Διαδικασία συνέντευξης ανήλικου αιτητή με την παρουσία εξειδικευμένου ψυχολόγου και νόμιμου επιτρόπου, σχεδιασμένη για την προστασία και την ψυχολογική υποστήριξη του παιδιού.",
+      "definition_en": "An interview procedure for a minor asylum applicant conducted in the presence of a qualified psychologist and legal guardian, designed to ensure child protection and psychological support throughout the process.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "interview-recording-transcription-administrative-procedure",
+      "category": "procedure",
+      "translations": {
+        "el": "απομαγνητοφώνηση συνέντευξης",
+        "en": "interview recording transcription (administrative procedure)",
+        "ar": "نسخ تسجيل المقابلة (إجراء إداري)",
+        "fa": "رونویسی ضبط صوتی مصاحبه (مرحلهٔ اداری)",
+        "fr": "transcription de l'enregistrement d'entretien (étape administrative)"
+      },
+      "definition_el": "Η διαδικασία μετατροπής του ηχητικού ή οπτικοακουστικού ηχογραφήματος μιας συνέντευξης ασύλου σε γραπτό κείμενο για διοικητικούς και νομικούς σκοπούς.",
+      "definition_en": "The administrative procedure of converting a recorded audio or audiovisual asylum interview into a written transcript for administrative and legal purposes.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "correction-of-audio-recording-transcription-administrative-p",
+      "category": "procedure",
+      "translations": {
+        "el": "διόρθωση απομαγνητοφώνησης",
+        "en": "correction of audio recording transcription (administrative procedure)",
+        "ar": "تصحيح نسخة التسجيل الصوتي (إجراء إداري)",
+        "fa": "اصلاح متن ترانسکریپشن ضبط صوتی (مرحله اداری)",
+        "fr": "correction de la transcription d'enregistrement audio (procédure administrative)"
+      },
+      "definition_el": "Διοικητικό βήμα που αφορά τη διόρθωση σφαλμάτων στη γραπτή απομαγνητοφώνηση ηχητικής καταγραφής πρωτοκόλλου ασύλου ή συνέντευξης.",
+      "definition_en": "An administrative procedure for correcting errors in the transcription of audio recordings of asylum interviews or hearings.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "applicant-s-signature-on-audio-recording-transcript-procedur",
+      "category": "procedure",
+      "translations": {
+        "el": "υπογραφή απομαγνητοφώνησης από αιτούντα",
+        "en": "applicant's signature on audio recording transcript (procedural)",
+        "ar": "توقيع طالب اللجوء على نسخة تفريغ التسجيل الصوتي (إجرائي)",
+        "fa": "امضای متقاضی بر روی متن تراتیپ ضبط صوتی (رویه ای)",
+        "fr": "signature du demandeur sur la retranscription de l'enregistrement audio (procédural)"
+      },
+      "definition_el": "Η υπογραφή του αιτούντα ασύλου στο έγγραφο που περιέχει την απομαγνητοφώνηση της ηχητικής εγγραφής της συνέντευξης, ως απόδειξη ελέγχου και επιβεβαίωσης του περιεχομένου.",
+      "definition_en": "The asylum applicant's signature on the document containing the transcription of the audio recording of the interview, as proof of review and confirmation of the content's accuracy.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "law-4251-2014-migration-code",
+      "category": "legal",
+      "translations": {
+        "el": "Ν.4251/2014 Κώδικας Μετανάστευσης",
+        "en": "Law 4251/2014 Migration Code",
+        "ar": "القانون 4251/2014 قانون الهجرة",
+        "fa": "قانون 4251/2014 کد مهاجرت",
+        "fr": "Loi 4251/2014 Code de la Migration"
+      },
+      "definition_el": "Ελληνική νομοθεσία που ρυθμίζει την είσοδο, παραμονή, απασχόληση και έξοδο αλλοδαπών από την Ελλάδα.",
+      "definition_en": "Greek legislation that regulates the entry, residence, employment, and exit of foreign nationals in Greece.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "residence-permit-for-exceptional-reasons",
+      "category": "legal",
+      "translations": {
+        "el": "άδεια διαμονής για εξαιρετικούς λόγους",
+        "en": "residence permit for exceptional reasons",
+        "ar": "تصريح إقامة لأسباب استثنائية",
+        "fa": "اجازه اقامت به دلایل استثنایی",
+        "fr": "titre de séjour pour raisons exceptionnelles"
+      },
+      "definition_el": "Νομική άδεια διαμονής που χορηγείται σε τρίτους υπηκόους για εξαιρετικούς λόγους, όπως ιατρικοί λόγοι, θέσεις εργασίας ή ανθρωπιστικές περιστάσεις, εκτός των συνηθισμένων διαδικασιών αιτήματος ασύλου.",
+      "definition_en": "A legal residence permit granted to third-country nationals for exceptional reasons, such as medical grounds, employment opportunities, or humanitarian circumstances, outside of standard asylum application procedures.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "work-residence-permit",
+      "category": "legal",
+      "translations": {
+        "el": "άδεια διαμονής για εργασία",
+        "en": "work residence permit",
+        "ar": "تصريح إقامة للعمل",
+        "fa": "اجازه اقامت براي کار",
+        "fr": "permis de séjour pour travail"
+      },
+      "definition_el": "Διοικητική άδεια που επιτρέπει στον κάτοχό της να διαμένει νόμιμα σε μια χώρα και να ασκεί εργασία ή επάγγελμα.",
+      "definition_en": "An administrative authorization that permits the holder to legally reside in a country and engage in employment or professional activities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "residence-permit-for-studies",
+      "category": "legal",
+      "translations": {
+        "el": "άδεια διαμονής για σπουδές",
+        "en": "residence permit for studies",
+        "ar": "تصريح إقامة للدراسة",
+        "fa": "اجازه اقامت برای تحصیل",
+        "fr": "permis de résidence pour études"
+      },
+      "definition_el": "Έγγραφη άδεια που χορηγείται σε ξένους υπηκόους για να διαμείνουν νόμιμα σε χώρα με σκοπό την παρακολούθηση ανώτερων σπουδών.",
+      "definition_en": "An official permit granted to foreign nationals that authorizes them to reside legally in a country for the purpose of pursuing higher education.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "residence-permit-for-medical-reasons",
+      "category": "legal",
+      "translations": {
+        "el": "άδεια διαμονής για ιατρικούς λόγους",
+        "en": "residence permit for medical reasons",
+        "ar": "تصريح إقامة لأسباب طبية",
+        "fa": "اجازه اقامت به دلایل پزشکی",
+        "fr": "titre de séjour pour raisons médicales"
+      },
+      "definition_el": "Ειδική άδεια διαμονής που χορηγείται σε αλλοδαπούς που δεν μπορούν να επιστρέψουν στη χώρα προέλευσης λόγω σοβαρών υγειονομικών καταστάσεων ή ιατρικών αναγκών.",
+      "definition_en": "A special residence permit issued to foreign nationals who cannot return to their country of origin due to serious health conditions or medical needs.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "residence-permit-for-humanitarian-reasons",
+      "category": "legal",
+      "translations": {
+        "el": "άδεια διαμονής για ανθρωπιστικούς λόγους",
+        "en": "residence permit for humanitarian reasons",
+        "ar": "تصريح إقامة لأسباب إنسانية",
+        "fa": "اجازه اقامت به دلایل بشردوستانه",
+        "fr": "titre de séjour pour raisons humanitaires"
+      },
+      "definition_el": "Νομική άδεια διαμονής που χορηγείται σε τρίτους υπηκόους όταν υπάρχουν σοβαροί ανθρωπιστικοί λόγοι που δεν επιτρέπουν τη διακοπή της νόμιμης διαμονής τους.",
+      "definition_en": "A legal residence permit granted to third-country nationals when serious humanitarian reasons exist that prevent the termination of their lawful residence in the country.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "eu-blue-card",
+      "category": "legal",
+      "translations": {
+        "el": "μπλε κάρτα ΕΕ",
+        "en": "EU Blue Card",
+        "ar": "البطاقة الزرقاء للاتحاد الأوروبي",
+        "fa": "کارت آبی اتحادیه اروپا",
+        "fr": "Carte bleue UE"
+      },
+      "definition_el": "Άδεια διαμονής και εργασίας που χορηγείται από κράτη μέλη της ΕΕ σε υψηλά προσόντα τρίτους υπηκόους για λόγους εργασίας.",
+      "definition_en": "A residence and work permit issued by EU member states to highly qualified third-country nationals for employment purposes.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "long-term-residence-permit-2",
+      "category": "legal",
+      "translations": {
+        "el": "άδεια διαμονής επί μακρόν διαμένοντος",
+        "en": "long-term residence permit",
+        "ar": "تصريح الإقامة طويلة الأجل",
+        "fa": "اجازه اقامت بلندمدت",
+        "fr": "titre de séjour de résident de longue durée"
+      },
+      "definition_el": "Το νομικό έγγραφο που χορηγείται σε τρίτους υπηκόους που πληρούν τις προϋποθέσεις για να διαμείνουν νόμιμα σε χώρα μέλος της ΕΕ για χρονικό διάστημα μακράς διάρκειας.",
+      "definition_en": "A legal document issued to third-country nationals who meet the requirements to reside lawfully in an EU member state for an extended period of time.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "type-c-entry-visa-short-stay-visa",
+      "category": "legal",
+      "translations": {
+        "el": "θεώρηση εισόδου τύπου C",
+        "en": "Type C entry visa (short-stay visa)",
+        "ar": "تأشيرة الدخول من النوع C (تأشيرة الإقامة القصيرة)",
+        "fa": "ویزای ورودی نوع C (ویزای اقامت کوتاه مدت)",
+        "fr": "Visa d'entrée de type C (visa de courte durée)"
+      },
+      "definition_el": "Θεώρηση που χορηγείται για βραχυχρόνιες επισκέψεις εντός της Ευρωπαϊκής Ένωσης, συνήθως με ισχύ έως 90 ημέρες.",
+      "definition_en": "A visa issued for short-term visits within the European Union, typically valid for up to 90 days.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "type-d-visa-long-stay-visa",
+      "category": "legal",
+      "translations": {
+        "el": "θεώρηση εισόδου τύπου D",
+        "en": "Type D visa (long-stay visa)",
+        "ar": "تأشيرة من النوع D (تأشيرة الإقامة طويلة الأجل)",
+        "fa": "ویزای نوع D (ویزای اقامت طولانی مدت)",
+        "fr": "Visa de type D (visa de long séjour)"
+      },
+      "definition_el": "Θεώρηση εισόδου που χορηγείται για εισόδους και διαμονή υψηλής διάρκειας σε χώρα του Σένγκεν, συνήθως για σκοπούς εργασίας, σπουδών ή ένωσης οικογένειας.",
+      "definition_en": "An entry visa issued for long-term residence and entry into a Schengen country, typically for purposes of employment, education, or family reunification.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "asylum-under-article-3-echr",
+      "category": "legal",
+      "translations": {
+        "el": "άσυλο δυνάμει άρθρου 3 ΕΣΔΑ",
+        "en": "asylum under Article 3 ECHR",
+        "ar": "اللجوء بموجب المادة 3 من الاتفاقية الأوروبية لحقوق الإنسان",
+        "fa": "پناهندگی براساس ماده 3 کنوانسیون حقوق بشر اروپا",
+        "fr": "asile en vertu de l'article 3 CEDH"
+      },
+      "definition_el": "Προστασία που χορηγείται σε άτομα που διατρέχουν κίνδυνο βασανισμού ή άλλης σοβαρής παραβίασης των δικαιωμάτων τους σύμφωνα με το άρθρο 3 της Ευρωπαϊκής Σύμβασης Δικαιωμάτων του Ανθρώπου.",
+      "definition_en": "Protection granted to individuals facing risk of torture or other serious violations of their human rights under Article 3 of the European Convention on Human Rights.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "asylum-on-the-basis-of-article-33-of-the-geneva-convention-n",
+      "category": "legal",
+      "translations": {
+        "el": "άσυλο δυνάμει άρθρου 33 Σύμβασης Γενεύης",
+        "en": "asylum on the basis of Article 33 of the Geneva Convention (non-refoulement basis)",
+        "ar": "اللجوء على أساس المادة 33 من اتفاقية جنيف (أساس عدم الإعادة القسرية)",
+        "fa": "پناهندگی بر اساس ماده 33 کنوانسیون ژنو (مبنای عدم بازگرداندن)",
+        "fr": "asile sur la base de l'article 33 de la Convention de Genève (principe du non-refoulement)"
+      },
+      "definition_el": "Η προστασία από την επιστροφή ενός ατόμου σε χώρα όπου κινδυνεύει να διωχθεί ή να υποστεί σοβαρή βλάβη, όπως ορίζεται στο άρθρο 33 της Σύμβασης του 1951 για τους Πρόσφυγες.",
+      "definition_en": "Protection from return of an individual to a country where they face risk of persecution or serious harm, as defined in Article 33 of the 1951 Refugee Convention.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "res-judicata-effect-on-subsequent-application",
+      "category": "legal",
+      "translations": {
+        "el": "επίδραση δεδικασμένου σε νεότερη αίτηση",
+        "en": "res judicata effect on subsequent application",
+        "ar": "تأثير الحكم النهائي على الطلب اللاحق (res judicata)",
+        "fa": "اثر حکم قطعی بر درخواست بعدی (res judicata)",
+        "fr": "effet de la chose jugée sur une demande ultérieure (res judicata)"
+      },
+      "definition_el": "Αρχή δικαίου που απαγορεύει την επανεξέταση του ίδιου ζητήματος που έχει ήδη κριθεί σε τελεσίδικη απόφαση, με σκοπό την αποφυγή διαδοχικών αιτήσεων για το ίδιο αντικείμενο.",
+      "definition_en": "A legal principle that prevents the re-examination of a matter already decided by a final judgment, prohibiting successive applications on the same grounds to avoid duplicative proceedings.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "new-evidence-in-a-subsequent-application",
+      "category": "legal",
+      "translations": {
+        "el": "νέα στοιχεία σε μεταγενέστερη αίτηση",
+        "en": "new evidence in a subsequent application",
+        "ar": "أدلة جديدة في طلب لاحق",
+        "fa": "شواهد جدید در درخواست بعدی",
+        "fr": "nouvelles preuves dans une demande ultérieure"
+      },
+      "definition_el": "Νέα αποδεικτικά στοιχεία που υποβάλλονται σε επαναληπτική αίτηση ασύλου μετά την απόρριψη της αρχικής αίτησης.",
+      "definition_en": "New evidence or documentation submitted in a subsequent asylum application after rejection of the initial claim.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "interpreter-for-unaccompanied-minor",
+      "category": "communication",
+      "translations": {
+        "el": "διερμηνέας για ασυνόδευτο ανήλικο",
+        "en": "interpreter for unaccompanied minor",
+        "ar": "مترجم فوري متخصص للقاصر غير المصحوب برفقة",
+        "fa": "مترجم تخصصی برای کودکان همراه نشده",
+        "fr": "interprète spécialisé pour mineur non accompagné"
+      },
+      "definition_el": "Ειδικευμένος διερμηνέας που διευκολύνει την επικοινωνία μεταξύ ασυνόδευτων ανηλίκων αιτούντων ασύλου και των αρμόδιων υπηρεσιών, λαμβάνοντας υπόψη τις ιδιαίτερες ανάγκες και ευαισθησίες τους.",
+      "definition_en": "A specialized interpreter who facilitates communication between unaccompanied minor asylum seekers and competent authorities, taking into account their particular needs and vulnerabilities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "gender-based-violence-interpreter-for-interview",
+      "category": "communication",
+      "translations": {
+        "el": "διερμηνέας για συνέντευξη GBV",
+        "en": "Gender-Based Violence interpreter for interview",
+        "ar": "مترجم متخصص لمقابلات العنف القائم على النوع الاجتماعي",
+        "fa": "مترجم تخصصی برای مصاحبه خشونت مبتنی بر جنسیت",
+        "fr": "interprète spécialisé pour entretiens de violences sexistes"
+      },
+      "definition_el": "Εξειδικευμένος διερμηνέας που διευκολύνει τη επικοινωνία σε συνεντεύξεις που αφορούν περιστατικά βίας και κακοποίησης βάσει του φύλου ή της σεξουαλικής ταυτότητας.",
+      "definition_en": "A specialized interpreter who facilitates communication during interviews involving cases of gender-based violence or sexual abuse, providing culturally sensitive and confidential interpretation.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "interpreter-for-medical-appointment-specialised-interpreter",
+      "category": "communication",
+      "translations": {
+        "el": "διερμηνέας για ιατρικό ραντεβού",
+        "en": "interpreter for medical appointment (specialised interpreter)",
+        "ar": "مترجم فوري متخصص للمواعيد الطبية",
+        "fa": "مترجم متخصص برای قرارهای ملاقات پزشکی",
+        "fr": "interprète pour rendez-vous médical (interprète spécialisé)"
+      },
+      "definition_el": "Ειδικευμένος διερμηνέας που διευκολύνει την επικοινωνία μεταξύ ασθενών-αιτούντων ασύλου και ιατρικού προσωπικού σε ιατρικές συναντήσεις και διαγνωστικές διαδικασίες.",
+      "definition_en": "A specialised interpreter who facilitates communication between patients/asylum seekers and medical personnel during medical appointments and diagnostic procedures.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "mental-health-interpreter-psychotherapy-interpreter",
+      "category": "communication",
+      "translations": {
+        "el": "διερμηνέας για ψυχοθεραπεία",
+        "en": "mental health interpreter / psychotherapy interpreter",
+        "ar": "مترجم متخصص في الصحة النفسية",
+        "fa": "مترجم تخصصی برای روانشناسی و پزشکی روان",
+        "fr": "interprète spécialisé en santé mentale"
+      },
+      "definition_el": "Διερμηνέας με ειδική κατάρτιση που παρέχει ερμηνευτικές υπηρεσίες σε συνεδρίες ψυχοθεραπείας ή ψυχιατρικής αξιολόγησης προσφύγων και αιτούντων ασύλου.",
+      "definition_en": "A trained interpreter who provides interpreting services during psychotherapy sessions or psychiatric assessments for refugees and asylum seekers, with specialized knowledge of trauma-informed communication.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "court-interpreter",
+      "category": "communication",
+      "translations": {
+        "el": "διερμηνέας για δικαστική συνέντευξη",
+        "en": "court interpreter",
+        "ar": "مترجم فوري للمحكمة",
+        "fa": "مترجم دادرسی",
+        "fr": "interprète judiciaire"
+      },
+      "definition_el": "Επαγγελματίας διερμηνέας που παρέχει υπηρεσίες μετάφρασης κατά τη διάρκεια δικαστικών διαδικασιών και συνεντεύξεων με δικαστικές αρχές.",
+      "definition_en": "A professional interpreter who provides translation services during court proceedings and interviews with judicial authorities.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "legal-interpreter",
+      "category": "communication",
+      "translations": {
+        "el": "διερμηνέας για νομική συμβουλή",
+        "en": "legal interpreter",
+        "ar": "مترجم فوري للمسائل القانونية",
+        "fa": "مترجم برای مشاوره حقوقی",
+        "fr": "interprète juridique"
+      },
+      "definition_el": "Επαγγελματίας διερμηνέας που παρέχει ερμηνευτικές υπηρεσίες κατά τη διάρκεια νομικών διαδικασιών και συμβουλευτικών συνεδριών για αιτούντες άσυλο.",
+      "definition_en": "A professional interpreter who provides interpretation services during legal proceedings and advisory sessions for asylum seekers.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "interpreter-for-citizenship-application",
+      "category": "communication",
+      "translations": {
+        "el": "διερμηνέας για αίτηση ιθαγένειας",
+        "en": "interpreter for citizenship application",
+        "ar": "مترجم فوري لطلب الجنسية",
+        "fa": "مترجم برای درخواست شهروندی",
+        "fr": "interprète pour demande de naturalisation"
+      },
+      "definition_el": "Επαγγελματίας διερμηνέας που παρέχει υπηρεσίες ερμηνείας κατά τη διαδικασία υποβολής και εξέτασης αίτησης για απόκτηση ιθαγένειας.",
+      "definition_en": "A professional interpreter who provides interpretation services during the application process for acquiring citizenship or naturalization status.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "silence-management-in-interview",
+      "category": "communication",
+      "translations": {
+        "el": "διαχείριση σιωπής στη συνέντευξη",
+        "en": "silence management in interview",
+        "ar": "إدارة الصمت في المقابلة",
+        "fa": "مدیریت سکوت در مصاحبه",
+        "fr": "gestion du silence en entretien"
+      },
+      "definition_el": "Τεχνική διερμηνείας που αφορά την αποτελεσματική διαχείριση των παύσεων και των σιωπών κατά τη διάρκεια μιας συνέντευξης ασύλου, ώστε να διασφαλίζεται η ακρίβεια της επικοινωνίας και η κατανόηση.",
+      "definition_en": "An interpreting technique concerning the effective management of pauses and silences during an asylum interview to ensure communication accuracy and comprehension.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "management-of-applicant-s-emotional-response",
+      "category": "communication",
+      "translations": {
+        "el": "διαχείριση συγκίνησης αιτούντος",
+        "en": "management of applicant's emotional response",
+        "ar": "إدارة الاستجابة العاطفية للطالب",
+        "fa": "مدیریت پاسخ عاطفی متقاضی",
+        "fr": "gestion de la réponse émotionnelle du demandeur"
+      },
+      "definition_el": "Τεχνική διερμηνείας που αφορά στον έλεγχο και την παρέμβαση του διερμηνέα κατά τη διάρκεια της συνέντευξης, ώστε να διαχειριστεί την συναισθηματική κατάσταση του αιτούντος (φόβο, θλίψη, τραύμα) και να διατηρήσει την αποτελεσματικότητα της επικοινωνίας.",
+      "definition_en": "An interpreter technique involving the management and intervention by the interpreter during an interview to handle the applicant's emotional state (fear, distress, trauma) while maintaining effective communication.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "request-for-clarification-of-an-unknown-term",
+      "category": "communication",
+      "translations": {
+        "el": "αναζήτηση διευκρίνισης άγνωστου όρου",
+        "en": "request for clarification of an unknown term",
+        "ar": "طلب توضيح مصطلح غير معروف",
+        "fa": "درخواست برای روشن‌سازی یک اصطلاح نامعلوم",
+        "fr": "demande de clarification d'un terme inconnu"
+      },
+      "definition_el": "Η ενέργεια του διερμηνέα ή του συμμετέχοντος να ζητήσει επεξήγηση ενός όρου που δεν κατανοείται κατά τη διάρκεια της διερμηνείας σε διαδικασίες αιτήματος ασύλου ή ιατρικές/νομικές συναντήσεις.",
+      "definition_en": "The action of an interpreter or participant requesting clarification or explanation of a term that is not understood during interpretation in asylum procedures or medical/legal meetings.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "epileptic-seizure-neurological-emergency",
+      "category": "medical",
+      "translations": {
+        "el": "επιληπτική κρίση",
+        "en": "epileptic seizure (neurological emergency)",
+        "ar": "نوبة صرع (حالة طبية طارئة عصبية)",
+        "fa": "تشنج صرعی (اورژانس نورولوژیک)",
+        "fr": "crise d'épilepsie (urgence neurologique)"
+      },
+      "definition_el": "Ξαφνική και παροδική διαταραχή της εγκεφαλικής λειτουργίας που χαρακτηρίζεται από ακούσιες μυϊκές συσπάσεις και απώλεια συνείδησης, απαιτούσα άμεση ιατρική παρέμβαση.",
+      "definition_en": "A sudden and temporary disruption of brain function characterized by involuntary muscle contractions and loss of consciousness, requiring immediate medical intervention.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "acute-asthma-attack-emergency",
+      "category": "medical",
+      "translations": {
+        "el": "αναπνευστική κρίση άσθματος",
+        "en": "acute asthma attack (emergency)",
+        "ar": "نوبة ربو حادة (طارئة)",
+        "fa": "حمله حاد آسم (اورژانسی)",
+        "fr": "crise d'asthme aigu (urgence)"
+      },
+      "definition_el": "Ξαφνική και σοβαρή악화 των συμπτωμάτων άσθματος που απαιτεί άμεση ιατρική αγωγή.",
+      "definition_en": "A sudden and severe worsening of asthma symptoms requiring immediate medical intervention.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "allergic-reaction-to-insect-bite-urgent",
+      "category": "medical",
+      "translations": {
+        "el": "αλλεργική αντίδραση σε τσίμπημα",
+        "en": "allergic reaction to insect bite (urgent)",
+        "ar": "رد فعل تحسسي من لدغة حشرة (حالة طارئة)",
+        "fa": "واکنش حساسیتی به نیش حشره (اورژانس)",
+        "fr": "réaction allergique à une piqûre d'insecte (urgent)"
+      },
+      "definition_el": "Σοβαρή αλλεργική αντίδραση του οργανισμού σε τσίμπημα ή νιση από έντομο που απαιτεί άμεση ιατρική παρέμβαση.",
+      "definition_en": "A severe allergic reaction of the body to an insect bite or sting that requires immediate medical intervention.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "pregnant-woman-with-hemorrhage-obstetric-emergency",
+      "category": "medical",
+      "translations": {
+        "el": "έγκυος με αιμορραγία",
+        "en": "pregnant woman with hemorrhage (obstetric emergency)",
+        "ar": "امرأة حامل تعاني من نزيف (حالة طوارئ التوليد)",
+        "fa": "زن باردار با خونریزی (اورژانس زنان و زایمان)",
+        "fr": "femme enceinte avec hémorragie (urgence obstétricale)"
+      },
+      "definition_el": "Έγκυη γυναίκα που παρουσιάζει μη φυσιολογική απώλεια αίματος κατά τη διάρκεια της κύησης ή του τοκετού, απαιτούσα άμεση ιατρική παρέμβαση.",
+      "definition_en": "A pregnant woman presenting with abnormal blood loss during pregnancy or childbirth, requiring immediate medical intervention.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "home-birth-obstetric-event",
+      "category": "medical",
+      "translations": {
+        "el": "τοκετός εν οίκω",
+        "en": "home birth (obstetric event)",
+        "ar": "الولادة في المنزل (حدث التوليد)",
+        "fa": "زایمان در منزل (رویداد پزشکی‌توليدی)",
+        "fr": "accouchement à domicile (événement obstétrical)"
+      },
+      "definition_el": "Η γέννηση του παιδιού που πραγματοποιείται στο σπίτι ή σε μη ιατρικό χώρο, αντί της νοσηλείας σε νοσοκομείο ή μαιευτικό κέντρο.",
+      "definition_en": "Childbirth that occurs at home or in a non-medical setting rather than in a hospital or maternity facility.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "myocardial-infarction-cardiac-emergency",
+      "category": "medical",
+      "translations": {
+        "el": "έμφραγμα μυοκαρδίου",
+        "en": "myocardial infarction (cardiac emergency)",
+        "ar": "احتشاء عضل القلب (حالة طوارئ قلبية)",
+        "fa": "احتشاء عضلة القلب (اورژانس قلبی)",
+        "fr": "infarctus du myocarde (urgence cardiaque)"
+      },
+      "definition_el": "Αιφνίδια απόφραξη της αιμάτωσης του καρδιακού μυός που προκαλεί ιστικη νέκρωση και αποτελεί καρδιολογικό επείγον με ζωή σε κίνδυνο.",
+      "definition_en": "Sudden blockage of blood supply to the heart muscle causing tissue death, constituting a cardiac emergency with life-threatening consequences.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "cerebrovascular-accident-neurological-emergency",
+      "category": "medical",
+      "translations": {
+        "el": "εγκεφαλικό αγγειακό επεισόδιο",
+        "en": "cerebrovascular accident (neurological emergency)",
+        "ar": "حادثة دماغية وعائية (حالة طوارئ عصبية)",
+        "fa": "حادثه مغزی عروقی (اورژانس عصبی)",
+        "fr": "accident vasculaire cérébral (urgence neurologique)"
+      },
+      "definition_el": "Ξαφνικό νευρολογικό επεισόδιο που προκαλείται από διακοπή της αιμάτωσης του εγκεφάλου, απαιτώντας άμεση ιατρική αγωγή.",
+      "definition_en": "A sudden neurological event caused by disruption of blood supply to the brain, requiring immediate medical intervention.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "drug-overdose-toxicological-emergency",
+      "category": "medical",
+      "translations": {
+        "el": "υπερβολική δόση φαρμάκου",
+        "en": "drug overdose (toxicological emergency)",
+        "ar": "جرعة زائدة من الدواء (حالة طوارئ سموم)",
+        "fa": "دوز بیش از حد دارو (اورژانس توکسیکولوژی)",
+        "fr": "surdose de médicament (urgence toxicologique)"
+      },
+      "definition_el": "Κατάσταση έκθεσης σε τοξικό ή θανατηφόρο ποσό φαρμακευτικής ουσίας που απαιτεί άμεση ιατρική παρέμβαση.",
+      "definition_en": "A medical emergency condition resulting from excessive intake of medication or drugs that requires immediate medical intervention.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "self-immolation-psychiatric-emergency",
+      "category": "medical",
+      "translations": {
+        "el": "αυτοπυρπόληση",
+        "en": "self-immolation (psychiatric emergency)",
+        "ar": "إحراق الذات (حالة طوارئ نفسية)",
+        "fa": "خودسوزی (اورژانس روانپزشکی)",
+        "fr": "immolation par le feu (urgence psychiatrique)"
+      },
+      "definition_el": "Η αυτοτραυματική πράξη του αυτοπροσανατολισμού με φωτιά ή άλλα καύσιμα υλικά, συνήθως ως εκδήλωση σοβαρής ψυχιατρικής κρίσης ή απόγνωσης.",
+      "definition_en": "A severe self-harm act involving setting oneself on fire or using other incendiary materials, typically manifesting as a serious psychiatric crisis or expression of extreme distress.",
+      "sources": [
+        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+      ]
+    },
+    {
+      "id": "suicide-attempt-psychiatric-emergency",
+      "category": "medical",
+      "translations": {
+        "el": "αυτοκτονική απόπειρα",
+        "en": "suicide attempt (psychiatric emergency)",
+        "ar": "محاولة انتحار (حالة طوارئ نفسية)",
+        "fa": "تلاش خودکشی (اورژانس روانپزشکی)",
+        "fr": "tentative de suicide (urgence psychiatrique)"
+      },
+      "definition_el": "Προσπάθεια προκαλέσει το θάνατό του από άτομο, που απαιτεί άμεση ψυχιατρική παρέμβαση και νοσηλεία.",
+      "definition_en": "An act of self-harm with the intent to end one's life, requiring immediate psychiatric intervention and hospitalization.",
       "sources": [
         "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
       ]
