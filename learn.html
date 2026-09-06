@@ -263,8 +263,14 @@
       padding: 16px;
       max-width: 720px;
       margin: 0 auto;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 32px;
     }
     .quiz-overlay.show, .result-overlay.show { display: flex; }
+    /* When quiz/result is open, hide bottom nav and body scroll */
+    body.quiz-open { overflow: hidden; }
+    body.quiz-open .bottom-nav { display: none; }
     .quiz-top {
       display: flex;
       align-items: center;
@@ -917,6 +923,10 @@ function handleAnswer(btnEl, choice, q) {
   }
   document.getElementById("quiz-hearts-mini").textContent = "❤ " + state.game.hearts;
   saveGame();
+  // Scroll feedback into view so the "Συνέχεια" button is immediately visible
+  requestAnimationFrame(() => {
+    feedback.scrollIntoView({ behavior: "smooth", block: "end" });
+  });
 }
 
 function nextQuestion() {
@@ -939,6 +949,7 @@ function startQuiz() {
     alert("Δεν βρέθηκαν ερωτήσεις — φόρτωσε ξανά τη σελίδα.");
     return;
   }
+  document.body.classList.add("quiz-open");
   document.getElementById("quiz-overlay").classList.add("show");
   document.getElementById("result-overlay").classList.remove("show");
   renderCurrentQuestion();
@@ -946,6 +957,8 @@ function startQuiz() {
 
 function endQuiz(ranOutOfHearts) {
   document.getElementById("quiz-overlay").classList.remove("show");
+  // Keep quiz-open on body so result overlay is fullscreen
+  document.body.classList.add("quiz-open");
   state.game.xp += state.quiz.xpEarned;
   if (state.quiz.correctCount > 0) {
     state.game.lessonsCompleted++;
@@ -976,6 +989,7 @@ function endQuiz(ranOutOfHearts) {
 function closeQuiz() {
   if (!confirm("Θέλεις να διακόψεις την εξάσκηση; Οι πόντοι που κέρδισες θα χαθούν.")) return;
   document.getElementById("quiz-overlay").classList.remove("show");
+  document.body.classList.remove("quiz-open");
   state.quiz = null;
 }
 
