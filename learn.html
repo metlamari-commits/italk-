@@ -426,6 +426,181 @@
     }
     .info-card li { margin-bottom: 3px; }
 
+    /* Header greeting + profile button */
+    .header-greet {
+      margin-left: auto;
+      font-size: 13px;
+      color: var(--text-dim);
+      font-weight: 600;
+      max-width: 40vw;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .header-greet:empty { display: none; }
+    .header-profile {
+      background: var(--surface-alt);
+      border: 1.5px solid var(--border);
+      color: var(--text);
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+    }
+    .header-greet + .header-profile { margin-left: 8px; }
+    .header-profile:hover { background: var(--surface); border-color: var(--primary); color: var(--primary); }
+
+    /* Onboarding wizard */
+    .onboard-scrim {
+      position: fixed;
+      inset: 0;
+      background: rgba(10,14,19,0.7);
+      z-index: 200;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      overflow-y: auto;
+    }
+    .onboard-scrim.show { display: flex; }
+    .onboard-sheet {
+      background: var(--surface);
+      border: 2px solid var(--dark);
+      border-radius: 16px;
+      padding: 20px 18px 16px;
+      max-width: 560px;
+      width: 100%;
+      max-height: calc(100vh - 24px);
+      overflow-y: auto;
+      box-shadow: 0px 4px 0px 0px var(--dark);
+    }
+    .onboard-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+    .onboard-progress {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-dim);
+      background: var(--surface-alt);
+      padding: 4px 10px;
+      border-radius: 12px;
+      letter-spacing: 0.5px;
+    }
+    .onboard-close {
+      background: none;
+      border: none;
+      color: var(--text-dim);
+      font-size: 26px;
+      cursor: pointer;
+      line-height: 1;
+      padding: 4px 10px;
+    }
+    .onboard-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.25;
+      margin-bottom: 6px;
+    }
+    .onboard-desc {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    .onboard-label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 14px 0 6px;
+    }
+    .onboard-label .opt {
+      font-weight: 400;
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+    .onboard-input {
+      width: 100%;
+      padding: 10px 12px;
+      font-family: inherit;
+      font-size: 15px;
+      color: var(--text);
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      outline: none;
+      min-height: 44px;
+    }
+    .onboard-input:focus { border-color: var(--primary); }
+    select.onboard-input { cursor: pointer; }
+    .onboard-langs, .onboard-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .onboard-langs button, .onboard-chips button {
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      color: var(--text);
+      padding: 8px 12px;
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 13px;
+      border-radius: 20px;
+      cursor: pointer;
+      min-height: 40px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .onboard-langs button:hover, .onboard-chips button:hover {
+      border-color: var(--primary);
+      background: var(--surface-alt);
+    }
+    .onboard-langs button.active, .onboard-chips button.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+    .onboard-langs button .code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      opacity: 0.7;
+    }
+    .onboard-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 20px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+    }
+    .onboard-actions button {
+      padding: 12px 18px;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      min-height: 44px;
+    }
+    .ob-back { background: var(--surface-alt); border: 1.5px solid var(--border); color: var(--text-dim); }
+    .ob-skip { background: var(--surface); border: 1.5px solid var(--border); color: var(--text-dim); margin-left: auto; }
+    .ob-next {
+      background: var(--primary); color: #fff; border: 2px solid var(--dark);
+      box-shadow: 0px 3px 0px 0px var(--dark);
+    }
+    .ob-next:active { transform: translateY(1px); box-shadow: 0px 2px 0px 0px var(--dark); }
+
     /* Skill tree */
     .skill-tree { display: flex; flex-direction: column; gap: 22px; }
     .dom-section { display: flex; flex-direction: column; gap: 10px; }
@@ -869,6 +1044,8 @@
     <div class="header-row">
       <div class="brand">i-talk<span class="dot">.</span>gr</div>
       <span class="header-sub">🎯 Μάθε</span>
+      <span class="header-greet" id="header-greet"></span>
+      <button class="header-profile" id="header-profile" title="Προφίλ" aria-label="Προφίλ">⚙</button>
     </div>
   </header>
 
@@ -989,6 +1166,54 @@
     </div>
   </div>
 
+  <div class="onboard-scrim" id="onboard-scrim">
+    <div class="onboard-sheet">
+      <div class="onboard-head">
+        <span class="onboard-progress" id="onboard-progress">Βήμα 1/3</span>
+        <button class="onboard-close" id="onboard-close" title="Κλείσιμο" aria-label="Κλείσιμο">×</button>
+      </div>
+
+      <div class="onboard-step" id="onboard-step-1">
+        <h2 class="onboard-title">Καλωσόρισες στο i-talk Μάθε 🎯</h2>
+        <p class="onboard-desc">Δύο λεπτά για να προσαρμόσουμε την εξάσκηση στη δική σου γλώσσα και δουλειά.</p>
+
+        <label class="onboard-label">Πώς να σε λέμε; <span class="opt">(προαιρετικό)</span></label>
+        <input type="text" class="onboard-input" id="ob-nickname" placeholder="π.χ. Μαρία" maxlength="30">
+
+        <label class="onboard-label">Ποια είναι η μητρική σου γλώσσα;</label>
+        <div class="onboard-langs" id="ob-mother-tongue"></div>
+
+        <label class="onboard-label">Ποιες άλλες γλώσσες μιλάς; <span class="opt">(διάλεξε όσες θες)</span></label>
+        <div class="onboard-langs multi" id="ob-working-langs"></div>
+      </div>
+
+      <div class="onboard-step" id="onboard-step-2" hidden>
+        <h2 class="onboard-title">Πού δουλεύεις;</h2>
+        <p class="onboard-desc">Θα βοηθήσει να δίνουμε προτεραιότητα σε ορολογία που ακούς πιο πολύ.</p>
+
+        <label class="onboard-label">Δομή / πλαίσιο εργασίας</label>
+        <select class="onboard-input" id="ob-facility">
+          <option value="">— διάλεξε —</option>
+        </select>
+
+        <label class="onboard-label">Πόσα χρόνια εμπειρίας ως διερμηνέας;</label>
+        <div class="onboard-chips" id="ob-years"></div>
+      </div>
+
+      <div class="onboard-step" id="onboard-step-3" hidden>
+        <h2 class="onboard-title">Τι σε ενδιαφέρει πιο πολύ;</h2>
+        <p class="onboard-desc">Θα εμφανίζουμε πρώτους τους τομείς που διάλεξες. Μπορείς να πατήσεις όσους θες, ή να το προσπεράσεις.</p>
+        <div class="onboard-chips multi" id="ob-interests"></div>
+      </div>
+
+      <div class="onboard-actions">
+        <button class="ob-back" id="ob-back" hidden>← Πίσω</button>
+        <button class="ob-skip" id="ob-skip">Παράλειψη</button>
+        <button class="ob-next" id="ob-next">Επόμενο →</button>
+      </div>
+    </div>
+  </div>
+
   <div class="picker-scrim" id="picker-scrim">
     <div class="picker-sheet">
       <div class="picker-title">🌐 Επίλεξε Ζεύγος Γλωσσών</div>
@@ -1056,9 +1281,35 @@ function defaultGame() {
     heartRegenAt: null,
     lessonsCompleted: 0,
     langPair: { source: "el", target: "ar" },
-    skillProgress: {}  // {skillId: {completions, bestPct, lastPlayedIso}}
+    skillProgress: {},  // {skillId: {completions, bestPct, lastPlayedIso}}
+    profile: null       // {nickname, motherTongue, workingLangs, facility, years, interests, onboardedAt}
   };
 }
+
+const FACILITIES = [
+  { id: "ric-fylakio",  label: "Φυλάκιο (RIC · Έβρος)" },
+  { id: "ric-diavata",  label: "Διαβατά (RIC · Θεσσαλονίκη)" },
+  { id: "ric-malakasa", label: "Μαλακάσα (RIC · Αττική)" },
+  { id: "ccac-lesvos",  label: "Μαυροβούνι — Λέσβος (CCAC)" },
+  { id: "ccac-chios",   label: "Χαλκειός — Χίος (CCAC)" },
+  { id: "ccac-samos",   label: "Σάμος (CCAC)" },
+  { id: "ccac-kos",     label: "Κως (CCAC)" },
+  { id: "ccac-leros",   label: "Λέρος (CCAC)" },
+  { id: "second-line",  label: "Δεύτερη γραμμή φιλοξενίας (Ελαιώνας/Σκαραμαγκάς κ.ά.)" },
+  { id: "rao",          label: "Περιφερειακό Γραφείο Ασύλου (RAO)" },
+  { id: "ngo",          label: "ΜΚΟ (ΜΕΤΑδραση/Ιατρική Μέριμνα κ.ά.)" },
+  { id: "healthcare",   label: "Νοσοκομείο / Υγειονομικός φορέας" },
+  { id: "freelance",    label: "Ελεύθερος επαγγελματίας — δικαστήρια/ραντεβού" },
+  { id: "student",      label: "Σπουδάζω τη διερμηνεία" },
+  { id: "other",        label: "Άλλο" }
+];
+const YEARS = [
+  { id: "0-1", label: "0–1 χρόνο" },
+  { id: "1-3", label: "1–3 χρόνια" },
+  { id: "3-5", label: "3–5 χρόνια" },
+  { id: "5+",  label: "5+ χρόνια" },
+  { id: "student", label: "Σπουδάζω" }
+];
 
 function loadGame() {
   try {
@@ -1422,6 +1673,172 @@ function closeQuiz() {
   state.quiz = null;
 }
 
+/* ---- Onboarding ---- */
+let obDraft = null;
+let obStep = 1;
+const OB_MAX_STEP = 3;
+
+function openOnboarding(reset) {
+  obStep = 1;
+  const existing = state.game.profile || {};
+  obDraft = {
+    nickname: existing.nickname || "",
+    motherTongue: existing.motherTongue || state.game.langPair.source,
+    workingLangs: (existing.workingLangs || (state.game.langPair.target ? [state.game.langPair.target] : [])).slice(),
+    facility: existing.facility || "",
+    years: existing.years || "",
+    interests: (existing.interests || []).slice()
+  };
+  renderOnboardingStep();
+  document.getElementById("onboard-scrim").classList.add("show");
+}
+function closeOnboarding() {
+  document.getElementById("onboard-scrim").classList.remove("show");
+}
+
+function renderOnboardingStep() {
+  document.getElementById("onboard-progress").textContent = "Βήμα " + obStep + "/" + OB_MAX_STEP;
+  for (let i = 1; i <= OB_MAX_STEP; i++) {
+    document.getElementById("onboard-step-" + i).hidden = (i !== obStep);
+  }
+  document.getElementById("ob-back").hidden = (obStep === 1);
+  document.getElementById("ob-next").textContent = (obStep === OB_MAX_STEP) ? "Τέλος ✓" : "Επόμενο →";
+
+  if (obStep === 1) {
+    document.getElementById("ob-nickname").value = obDraft.nickname;
+    renderLangButtons("ob-mother-tongue", "motherTongue", false);
+    renderLangButtons("ob-working-langs", "workingLangs", true);
+  } else if (obStep === 2) {
+    const sel = document.getElementById("ob-facility");
+    if (sel.options.length <= 1) {
+      FACILITIES.forEach(f => {
+        const opt = document.createElement("option");
+        opt.value = f.id;
+        opt.textContent = f.label;
+        sel.appendChild(opt);
+      });
+    }
+    sel.value = obDraft.facility || "";
+    renderYearsChips();
+  } else if (obStep === 3) {
+    renderInterestChips();
+  }
+}
+
+function renderLangButtons(containerId, field, multi) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = "";
+  ALL_LANGS.forEach(l => {
+    const isActive = multi
+      ? obDraft[field].includes(l)
+      : obDraft[field] === l;
+    const btn = document.createElement("button");
+    btn.className = isActive ? "active" : "";
+    btn.innerHTML = LANG_LABELS[l] + ' <span class="code">' + LANG_SHORT[l] + '</span>';
+    btn.addEventListener("click", () => {
+      if (multi) {
+        if (obDraft[field].includes(l)) obDraft[field] = obDraft[field].filter(x => x !== l);
+        else obDraft[field] = [...obDraft[field], l];
+      } else {
+        obDraft[field] = l;
+      }
+      renderLangButtons(containerId, field, multi);
+    });
+    container.appendChild(btn);
+  });
+}
+
+function renderYearsChips() {
+  const c = document.getElementById("ob-years");
+  c.innerHTML = "";
+  YEARS.forEach(y => {
+    const btn = document.createElement("button");
+    btn.className = obDraft.years === y.id ? "active" : "";
+    btn.textContent = y.label;
+    btn.addEventListener("click", () => { obDraft.years = y.id; renderYearsChips(); });
+    c.appendChild(btn);
+  });
+}
+
+function renderInterestChips() {
+  const c = document.getElementById("ob-interests");
+  c.innerHTML = "";
+  if (!state.skills) return;
+  state.skills.domains.slice().sort((a, b) => a.order - b.order).forEach(d => {
+    const btn = document.createElement("button");
+    btn.className = obDraft.interests.includes(d.id) ? "active" : "";
+    btn.innerHTML = d.icon + " " + d.title_el;
+    btn.addEventListener("click", () => {
+      if (obDraft.interests.includes(d.id)) obDraft.interests = obDraft.interests.filter(x => x !== d.id);
+      else obDraft.interests = [...obDraft.interests, d.id];
+      renderInterestChips();
+    });
+    c.appendChild(btn);
+  });
+}
+
+function saveOnboardingStep1() {
+  const nick = document.getElementById("ob-nickname").value.trim();
+  obDraft.nickname = nick;
+}
+function saveOnboardingStep2() {
+  obDraft.facility = document.getElementById("ob-facility").value;
+}
+
+function nextOnboardingStep() {
+  if (obStep === 1) saveOnboardingStep1();
+  if (obStep === 2) saveOnboardingStep2();
+  if (obStep < OB_MAX_STEP) {
+    obStep++;
+    renderOnboardingStep();
+  } else {
+    finishOnboarding();
+  }
+}
+function backOnboardingStep() {
+  if (obStep > 1) { obStep--; renderOnboardingStep(); }
+}
+function skipOnboardingStep() {
+  if (obStep < OB_MAX_STEP) { obStep++; renderOnboardingStep(); }
+  else finishOnboarding();
+}
+
+function finishOnboarding() {
+  state.game.profile = {
+    nickname: obDraft.nickname || "",
+    motherTongue: obDraft.motherTongue || "el",
+    workingLangs: obDraft.workingLangs || [],
+    facility: obDraft.facility || "",
+    years: obDraft.years || "",
+    interests: obDraft.interests || [],
+    onboardedAt: new Date().toISOString()
+  };
+  // Suggest a langPair if user hasn't customised it OR if it doesn't match their profile
+  if (obDraft.motherTongue && obDraft.workingLangs && obDraft.workingLangs.length) {
+    const target = obDraft.workingLangs.find(l => l !== obDraft.motherTongue) || obDraft.workingLangs[0];
+    if (target && target !== obDraft.motherTongue) {
+      state.game.langPair = { source: obDraft.motherTongue, target };
+    }
+  }
+  saveGame();
+  renderLangPairRow();
+  renderHeaderGreet();
+  closeOnboarding();
+}
+
+function renderHeaderGreet() {
+  const el = document.getElementById("header-greet");
+  if (!el) return;
+  const nick = state.game.profile && state.game.profile.nickname;
+  if (nick) {
+    const hour = new Date().getHours();
+    const greet = hour < 5 ? "Καλή νύχτα" : hour < 12 ? "Καλημέρα" : hour < 18 ? "Καλησπέρα" : "Καλησπέρα";
+    el.textContent = greet + ", " + nick + " 👋";
+  } else {
+    el.textContent = "";
+  }
+}
+
 /* ---- Skill tree ---- */
 function crownStars(completions) {
   const filled = Math.min(completions, 5);
@@ -1584,6 +2001,18 @@ async function init() {
     renderPicker();
   });
   document.getElementById("picker-save").addEventListener("click", savePicker);
+
+  // Onboarding wiring
+  document.getElementById("header-profile").addEventListener("click", () => openOnboarding(false));
+  document.getElementById("onboard-close").addEventListener("click", closeOnboarding);
+  document.getElementById("ob-back").addEventListener("click", backOnboardingStep);
+  document.getElementById("ob-skip").addEventListener("click", skipOnboardingStep);
+  document.getElementById("ob-next").addEventListener("click", nextOnboardingStep);
+  renderHeaderGreet();
+  // Auto-open on first visit
+  if (!state.game.profile) {
+    setTimeout(() => openOnboarding(true), 400);
+  }
 }
 
 document.addEventListener("DOMContentLoaded", init);
