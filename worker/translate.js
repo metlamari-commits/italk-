@@ -170,6 +170,30 @@ async function handleSave(request, env, origin) {
   }
 }
 
+// One-shot cleanup of the two corrupted test entries that Windows-terminal
+// curl POSTed during KV setup on 2026-09-05. Idempotent; safe to leave in.
+const CLEANUP_KEYS = [
+  'term:en:bunker',
+  'term:en:curfew'
+];
+async function handleCleanup(env, origin) {
+  if (!env.ITALK_KV) {
+    return jsonResponse({ error: 'KV not bound' }, 500, origin);
+  }
+  const deleted = [];
+  const missing = [];
+  for (const key of CLEANUP_KEYS) {
+    const existing = await env.ITALK_KV.get(key);
+    if (existing === null) {
+      missing.push(key);
+      continue;
+    }
+    await env.ITALK_KV.delete(key);
+    deleted.push(key);
+  }
+  return jsonResponse({ ok: true, deleted, already_missing: missing }, 200, origin);
+}
+
 async function handleList(env, origin) {
   if (!env.ITALK_KV) {
     return jsonResponse({ terms: [], warning: 'KV not bound', has_kv: false }, 200, origin);
@@ -204,6 +228,9 @@ export default {
 
     if (request.method === 'GET' && path === '/list') {
       return handleList(env, origin);
+    }
+    if (request.method === 'GET' && path === '/cleanup') {
+      return handleCleanup(env, origin);
     }
     if (request.method === 'GET' && (path === '/' || path === '')) {
       return jsonResponse({ ok: true, service: 'italk-translate', model: MODEL, has_kv: !!env.ITALK_KV }, 200, origin);
