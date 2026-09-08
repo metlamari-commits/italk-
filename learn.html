@@ -459,6 +459,7 @@
     .start-btn .material-symbols-outlined { font-size: 20px; }
 
     /* Mode toggle inside the daily card */
+    .mode-toggle[hidden] { display: none !important; }
     .mode-toggle {
       display: inline-flex;
       padding: 3px;
@@ -2012,7 +2013,8 @@
         <span class="daily-mins">~5 λεπτά · 10 ερωτήσεις</span>
         <h2 class="daily-title">Ημερήσια Εξάσκηση Ορολογίας</h2>
         <p class="daily-desc">10 τυχαίες ερωτήσεις από όλους τους τομείς — για να κρατάς την ορολογία σου σε ετοιμότητα πριν από τις συνεδρίες.</p>
-        <div class="mode-toggle" role="group" aria-label="Είδος άσκησης">
+        <!-- Listening mode toggle hidden until TTS voice availability is more reliable across field devices -->
+        <div class="mode-toggle" role="group" aria-label="Είδος άσκησης" hidden>
           <button type="button" class="mode-toggle-btn active" data-format="choice">
             <span class="material-symbols-outlined">quiz</span>
             <span>Πολλαπλής επιλογής</span>
