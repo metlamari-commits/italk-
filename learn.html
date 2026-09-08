@@ -1795,6 +1795,39 @@
       pointer-events: none;
     }
 
+    /* Missing-voice warning banner */
+    .listen-voice-warn {
+      background: var(--m3-error-container);
+      border: 1px solid var(--m3-error);
+      color: var(--m3-on-error-container);
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .listen-voice-warn[hidden] { display: none !important; }
+    .listen-voice-warn-head {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+    .listen-voice-warn-head .material-symbols-outlined { font-size: 20px; color: var(--m3-error); }
+    .listen-voice-warn details { margin-top: 4px; }
+    .listen-voice-warn summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--m3-primary);
+      padding: 4px 0;
+    }
+    .listen-voice-warn ol {
+      margin: 6px 0 0 22px;
+      padding: 0;
+      font-size: 12px;
+    }
+    .listen-voice-warn li { margin-bottom: 2px; }
+    .listen-voice-warn em { font-style: normal; font-weight: 700; }
+
     /* Check button — appears below chips, before feedback opens */
     .listen-check-btn {
       width: 100%;
@@ -2076,6 +2109,24 @@
         <div class="quiz-listen-tag">
           <span class="material-symbols-outlined">hearing</span>
           <span>Άσκηση Ακρόασης Πεδίου</span>
+        </div>
+        <div class="listen-voice-warn" id="listen-voice-warn" hidden>
+          <div class="listen-voice-warn-head">
+            <span class="material-symbols-outlined">volume_off</span>
+            <strong>Δεν βρέθηκε <span id="listen-voice-warn-lang">αραβική</span> φωνή</strong>
+          </div>
+          <div class="listen-voice-warn-body">
+            Ο υπολογιστής σου δεν έχει εγκατεστημένη φωνή για αυτή τη γλώσσα.
+            <details>
+              <summary>Πώς να την προσθέσεις (Windows)</summary>
+              <ol>
+                <li>Ρυθμίσεις των Windows → <em>Ώρα &amp; γλώσσα</em></li>
+                <li><em>Ομιλία</em> → <em>Διαχείριση φωνών</em> → <em>Προσθήκη φωνών</em></li>
+                <li>Διάλεξε τη γλώσσα (π.χ. «Αραβικά (Σαουδική Αραβία)») → Εγκατάσταση</li>
+                <li>Ανανέωσε αυτή τη σελίδα</li>
+              </ol>
+            </details>
+          </div>
         </div>
         <div class="listen-audio-card" id="listen-audio-card">
           <div class="listen-audio-head">
@@ -2664,14 +2715,29 @@ function renderCurrentQuestion() {
   });
 }
 
+function findVoiceForLang(lang) {
+  if (!window.speechSynthesis) return null;
+  const voices = speechSynthesis.getVoices();
+  if (!voices.length) return null;
+  const bcp = (LANG_BCP47[lang] || lang || "").toLowerCase();
+  const short = (lang || "").toLowerCase();
+  return voices.find(v => v.lang.toLowerCase() === bcp)
+      || voices.find(v => v.lang.toLowerCase().startsWith(short + "-"))
+      || voices.find(v => v.lang.toLowerCase().startsWith(short))
+      || null;
+}
+
 function speakText(text, lang, opts) {
-  if (!window.speechSynthesis) return;
+  if (!window.speechSynthesis) return false;
   speechSynthesis.cancel();
+  const voice = findVoiceForLang(lang);
   const u = new SpeechSynthesisUtterance(text);
-  u.lang = LANG_BCP47[lang] || "en-US";
+  u.lang = voice ? voice.lang : (LANG_BCP47[lang] || "en-US");
+  if (voice) u.voice = voice;
   u.rate = (opts && typeof opts.rate === "number") ? opts.rate : 0.85;
   if (opts && typeof opts.onend === "function") u.onend = opts.onend;
   speechSynthesis.speak(u);
+  return !!voice;
 }
 
 /* ---- Listening exercise ---- */
@@ -2709,6 +2775,17 @@ function renderListeningQuestion(q) {
 
   document.getElementById("listen-audio-lang").textContent =
     LANG_LABELS_EL[q.targetLang] + " προφορά";
+
+  // Voice availability check — warn user if no matching voice installed
+  const voice = findVoiceForLang(q.targetLang);
+  const warn = document.getElementById("listen-voice-warn");
+  if (voice) {
+    warn.hidden = true;
+  } else {
+    warn.hidden = false;
+    document.getElementById("listen-voice-warn-lang").textContent =
+      (LANG_LABELS_EL[q.targetLang] || "").toLowerCase();
+  }
 
   const input = document.getElementById("listen-input");
   input.value = "";
@@ -3337,6 +3414,21 @@ function savePicker() {
 }
 
 async function init() {
+  // Warm up voice list — some browsers lazy-load
+  if (window.speechSynthesis) {
+    speechSynthesis.getVoices();
+    speechSynthesis.addEventListener && speechSynthesis.addEventListener("voiceschanged", () => {
+      // Re-run listening warning if quiz is open in listening mode
+      if (state.quiz && state.quiz.format === "listening") {
+        const q = state.quiz.questions[state.quiz.currentIndex];
+        if (q) {
+          const voice = findVoiceForLang(q.targetLang);
+          const warn = document.getElementById("listen-voice-warn");
+          if (warn) warn.hidden = !!voice;
+        }
+      }
+    });
+  }
   loadGame();
   try { await loadTerms(); } catch(e) {
     document.querySelector("main").innerHTML =
