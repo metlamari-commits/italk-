@@ -15,7 +15,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500;600;700&family=Noto+Naskh+Arabic:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300..700,0..1,-50..200&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -38,13 +39,58 @@
       --dom-warm-bg: #FDF4EA;
       --success: #0D828A;
       --success-bg: #E7F6F7;
+
+      /* Material 3 tokens (Field Interpreter palette) — used by quiz overlay */
+      --m3-surface: #f8f9ff;
+      --m3-surface-lowest: #ffffff;
+      --m3-surface-container-low: #eef4fe;
+      --m3-surface-container: #e9eef8;
+      --m3-surface-container-high: #e3e8f3;
+      --m3-surface-container-highest: #dde3ed;
+      --m3-on-surface: #161c23;
+      --m3-on-surface-variant: #43474f;
+      --m3-outline: #737780;
+      --m3-outline-variant: #c3c6d1;
+      --m3-primary: #002c56;
+      --m3-on-primary: #ffffff;
+      --m3-primary-container: #114277;
+      --m3-on-primary-container: #88b0eb;
+      --m3-secondary: #006970;
+      --m3-on-secondary: #ffffff;
+      --m3-secondary-container: #94f1fa;
+      --m3-on-secondary-container: #007077;
+      --m3-tertiary: #4d1d00;
+      --m3-tertiary-fixed: #ffdbca;
+      --m3-on-tertiary-fixed-variant: #783200;
+      --m3-error: #ba1a1a;
+      --m3-on-error: #ffffff;
+      --m3-error-container: #ffdad6;
+      --m3-on-error-container: #93000a;
     }
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+      user-select: none;
+      vertical-align: middle;
+    }
+    .material-symbols-outlined.filled { font-variation-settings: 'FILL' 1; }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     html, body {
-      background: var(--bg);
-      color: var(--text);
+      background: var(--m3-surface);
+      color: var(--m3-on-surface);
       font-family: 'Atkinson Hyperlegible', system-ui, -apple-system, sans-serif;
       line-height: 1.5;
       min-height: 100vh;
@@ -52,12 +98,12 @@
       padding-bottom: 80px; /* bottom nav space */
     }
 
-    a { color: var(--primary); text-decoration: none; }
+    a { color: var(--m3-primary); text-decoration: none; }
 
-    /* HEADER */
+    /* HEADER — M3 top app bar */
     header {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
+      background: var(--m3-surface-lowest);
+      border-bottom: 1px solid var(--m3-outline-variant);
       position: sticky;
       top: 0;
       z-index: 20;
@@ -65,22 +111,22 @@
     .header-row {
       max-width: 720px;
       margin: 0 auto;
-      padding: 12px 20px;
+      padding: 10px 16px;
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 12px;
     }
     .brand {
       font-size: 20px;
       font-weight: 700;
-      color: var(--primary);
+      color: var(--m3-primary);
       letter-spacing: -0.5px;
     }
-    .brand .dot { color: var(--dom-warm); }
+    .brand .dot { color: var(--m3-tertiary-fixed-dim, #ffb690); }
     .header-sub {
       font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
-      color: var(--text-muted);
+      color: var(--m3-outline);
       letter-spacing: 0.5px;
       text-transform: uppercase;
     }
@@ -89,99 +135,105 @@
     main {
       max-width: 720px;
       margin: 0 auto;
-      padding: 20px 16px 40px;
+      padding: 16px 16px 40px;
       display: flex;
       flex-direction: column;
-      gap: 18px;
+      gap: 16px;
     }
 
-    /* HUD — streak · XP · hearts */
+    /* HUD — M3 stat strip: streak · XP · hearts */
     .hud {
-      background: var(--surface);
-      border: 2px solid var(--border);
+      background: var(--m3-surface-lowest);
+      border: 1px solid var(--m3-outline-variant);
       border-radius: 12px;
-      padding: 10px;
+      padding: 10px 8px;
       display: flex;
       align-items: stretch;
       justify-content: space-between;
-      gap: 8px;
-      box-shadow: 0px 4px 0px 0px var(--dark);
+      gap: 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
     }
     .hud-item {
       flex: 1;
-      background: var(--surface-alt);
-      border-radius: 8px;
+      background: var(--m3-surface-container-low);
+      border-radius: 10px;
+      margin: 0 4px;
       padding: 8px 10px;
       display: flex;
       align-items: center;
       gap: 8px;
       min-width: 0;
     }
-    .hud-emoji { font-size: 22px; line-height: 1; }
+    .hud-emoji { font-size: 20px; line-height: 1; flex-shrink: 0; }
     .hud-labels { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
     .hud-lbl {
       font-family: 'JetBrains Mono', monospace;
       font-size: 10px;
-      color: var(--text-dim);
+      color: var(--m3-on-surface-variant);
       text-transform: uppercase;
       letter-spacing: 0.3px;
+      line-height: 1;
     }
     .hud-val {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 15px;
+      font-family: 'Atkinson Hyperlegible', system-ui, sans-serif;
+      font-size: 14px;
       font-weight: 700;
-      color: var(--text);
-      line-height: 1.1;
+      color: var(--m3-on-surface);
+      line-height: 1.15;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
-    .hud-val.xp { color: var(--primary); }
-    .hud-val.hearts { color: var(--dom-medical); }
-    .hud-val.hearts.empty { color: var(--text-muted); }
+    .hud-val.xp { color: var(--m3-primary); }
+    .hud-val.hearts { color: var(--m3-error); }
+    .hud-val.hearts.empty { color: var(--m3-outline); }
 
-    /* Language pair selector pill */
+    /* Language pair selector pill (M3) */
     .langpair-row {
-      background: var(--surface);
-      border: 2px solid var(--border);
+      background: var(--m3-surface-lowest);
+      border: 1px solid var(--m3-outline-variant);
       border-radius: 12px;
       padding: 10px 12px;
       display: flex;
       align-items: center;
       gap: 10px;
       cursor: pointer;
-      transition: border-color 0.15s;
+      transition: border-color 0.15s, background 0.15s;
     }
-    .langpair-row:hover { border-color: var(--primary); }
-    .langpair-row:active { transform: scale(0.98); }
-    .langpair-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--dom-warm); flex-shrink: 0; }
+    .langpair-row:hover { border-color: var(--m3-primary-container); background: var(--m3-surface-container-low); }
+    .langpair-row:active { transform: scale(0.99); }
+    .langpair-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--m3-secondary); flex-shrink: 0; }
     .langpair-labels { flex: 1; min-width: 0; }
     .langpair-lbl {
       font-family: 'JetBrains Mono', monospace;
       font-size: 10px;
-      color: var(--text-dim);
+      color: var(--m3-on-surface-variant);
       text-transform: uppercase;
       letter-spacing: 0.4px;
       display: block;
     }
     .langpair-val {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 700;
-      color: var(--text);
+      color: var(--m3-on-surface);
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
+      flex-wrap: wrap;
     }
     .langpair-arrow {
-      color: var(--dom-warm);
+      color: var(--m3-secondary);
       font-weight: 700;
     }
     .langpair-edit {
-      background: var(--surface-alt);
-      border: 1.5px solid var(--border);
-      color: var(--text-dim);
-      border-radius: 8px;
-      padding: 6px 10px;
+      background: var(--m3-surface-container);
+      border: 1px solid var(--m3-outline-variant);
+      color: var(--m3-primary);
+      border-radius: 999px;
+      padding: 5px 12px;
       font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
-      font-weight: 600;
+      font-weight: 700;
       flex-shrink: 0;
     }
 
@@ -325,14 +377,14 @@
     }
     .picker-warning.show { display: block; }
 
-    /* Daily "Πρωινή Βάρδια" card */
+    /* Daily "Πρωινή Βάρδια" hero card (M3 primary surface) */
     .daily-card {
-      background: var(--primary);
-      color: #fff;
-      border: 2px solid var(--dark);
-      border-radius: 14px;
-      padding: 18px;
-      box-shadow: 0px 4px 0px 0px var(--dark);
+      background: var(--m3-primary);
+      color: var(--m3-on-primary);
+      border: none;
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 2px 6px rgba(0, 44, 86, 0.18);
       display: flex;
       gap: 14px;
       align-items: flex-start;
@@ -340,44 +392,51 @@
     .daily-icon {
       background: rgba(255,255,255,0.12);
       border-radius: 10px;
-      padding: 8px;
+      padding: 10px;
       font-size: 22px;
       flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--m3-secondary-container);
     }
-    .daily-body { flex: 1; }
+    .daily-icon .material-symbols-outlined { font-size: 24px; }
+    .daily-body { flex: 1; min-width: 0; }
     .daily-tag {
       display: inline-block;
-      background: var(--dom-warm);
-      color: #fff;
+      background: var(--m3-secondary);
+      color: var(--m3-on-secondary);
       font-family: 'JetBrains Mono', monospace;
       font-size: 10px;
       font-weight: 700;
       padding: 3px 8px;
-      border-radius: 6px;
+      border-radius: 4px;
       letter-spacing: 0.6px;
-      margin-right: 8px;
+      margin-right: 6px;
     }
     .daily-mins {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 12px;
-      color: rgba(255,255,255,0.8);
+      font-size: 11px;
+      color: rgba(255,255,255,0.75);
     }
     .daily-title {
       font-size: 20px;
       font-weight: 700;
       margin: 6px 0 4px;
-      line-height: 1.25;
+      line-height: 1.2;
+      letter-spacing: -0.3px;
     }
     .daily-desc {
       font-size: 13px;
       color: rgba(255,255,255,0.85);
       margin-bottom: 14px;
+      line-height: 1.45;
     }
     .start-btn {
-      background: var(--dom-warm);
-      color: #fff;
-      border: 2px solid var(--dark);
-      border-radius: 10px;
+      background: var(--m3-secondary-container);
+      color: var(--m3-on-secondary-container);
+      border: none;
+      border-radius: 12px;
       padding: 12px 20px;
       font-family: inherit;
       font-weight: 700;
@@ -386,35 +445,113 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      box-shadow: 0px 4px 0px 0px var(--dark);
-      transition: transform 0.1s, box-shadow 0.1s;
+      min-height: 48px;
+      transition: transform 0.1s, background 0.15s;
     }
-    .start-btn:hover { background: #cc5a15; }
-    .start-btn:active {
-      transform: translateY(2px);
-      box-shadow: 0px 2px 0px 0px var(--dark);
-    }
+    .start-btn:hover { background: #7fe4ed; }
+    .start-btn:active { transform: scale(0.98); }
     .start-btn:disabled {
-      background: var(--text-muted);
+      background: var(--m3-outline-variant);
+      color: var(--m3-outline);
       cursor: not-allowed;
-      opacity: 0.6;
-      box-shadow: 0px 2px 0px 0px var(--dark);
+      opacity: 0.7;
+    }
+    .start-btn .material-symbols-outlined { font-size: 20px; }
+
+    /* Mode toggle inside the daily card */
+    .mode-toggle {
+      display: inline-flex;
+      padding: 3px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .mode-toggle-btn {
+      background: transparent;
+      border: none;
+      color: rgba(255,255,255,0.75);
+      padding: 8px 12px;
+      border-radius: 9px;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: background 0.15s, color 0.15s;
+      min-height: 36px;
+    }
+    .mode-toggle-btn .material-symbols-outlined { font-size: 16px; }
+    .mode-toggle-btn.active {
+      background: rgba(255,255,255,0.9);
+      color: var(--m3-primary);
+    }
+    .mode-toggle-btn:not(.active):hover { color: #fff; }
+
+    /* Daily reward chest card (Καθημερινό Σεντούκι) */
+    .reward-card {
+      background: var(--m3-tertiary-fixed);
+      color: var(--m3-on-tertiary-fixed-variant);
+      border: 1px solid var(--m3-tertiary-fixed);
+      border-radius: 12px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .reward-icon {
+      background: var(--m3-surface-lowest);
+      border: 1px solid var(--m3-outline-variant);
+      border-radius: 10px;
+      padding: 6px 8px;
+      font-size: 22px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .reward-body { flex: 1; min-width: 0; }
+    .reward-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--m3-tertiary);
+      line-height: 1.2;
+    }
+    .reward-sub {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--m3-on-tertiary-fixed-variant);
+      margin-top: 2px;
+    }
+    .reward-progress {
+      width: 60px;
+      height: 8px;
+      background: var(--m3-surface-lowest);
+      border: 1px solid var(--m3-outline-variant);
+      border-radius: 999px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .reward-progress-bar {
+      height: 100%;
+      background: var(--m3-tertiary);
+      border-radius: 999px;
+      transition: width 0.3s;
     }
 
     /* Info box */
     .info-card {
-      background: var(--surface);
-      border: 1.5px solid var(--border);
+      background: var(--m3-surface-container-low);
+      border: 1px solid var(--m3-outline-variant);
       border-radius: 12px;
       padding: 14px 16px;
       font-size: 13px;
-      color: var(--text-dim);
+      color: var(--m3-on-surface-variant);
       line-height: 1.55;
     }
     .info-card h3 {
       font-size: 14px;
       font-weight: 700;
-      color: var(--text);
+      color: var(--m3-on-surface);
       margin-bottom: 6px;
       display: flex;
       align-items: center;
@@ -439,21 +576,26 @@
     }
     .header-greet:empty { display: none; }
     .header-profile {
-      background: var(--surface-alt);
-      border: 1.5px solid var(--border);
-      color: var(--text);
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
+      background: transparent;
+      border: 1px solid var(--m3-outline-variant);
+      color: var(--m3-on-surface-variant);
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
       cursor: pointer;
       font-size: 18px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       margin-left: auto;
+      transition: background 0.15s, border-color 0.15s;
     }
     .header-greet + .header-profile { margin-left: 8px; }
-    .header-profile:hover { background: var(--surface); border-color: var(--primary); color: var(--primary); }
+    .header-profile:hover { background: var(--m3-surface-container); border-color: var(--m3-primary); color: var(--m3-primary); }
+    .header-greet {
+      margin-left: auto;
+      color: var(--m3-on-surface-variant);
+    }
 
     /* Onboarding wizard */
     .onboard-scrim {
@@ -654,139 +796,210 @@
       flex-shrink: 0;
     }
 
-    /* Skill tree */
-    .skill-tree { display: flex; flex-direction: column; gap: 22px; }
-    .dom-section { display: flex; flex-direction: column; gap: 10px; }
+    /* Skill tree — M3 domain sections */
+    .skill-tree { display: flex; flex-direction: column; gap: 24px; }
+    .dom-section { display: flex; flex-direction: column; gap: 12px; }
     .dom-header {
-      background: var(--surface);
-      border: 2px solid var(--border);
-      border-left-width: 6px;
+      background: var(--m3-surface-lowest);
+      border: 2px solid var(--m3-outline-variant);
       border-radius: 12px;
-      padding: 10px 14px;
+      padding: 10px 12px;
       display: flex;
       align-items: center;
       gap: 12px;
-      box-shadow: 0px 3px 0px 0px var(--dark);
+      position: relative;
+      overflow: hidden;
     }
-    .dom-header .dom-emoji { font-size: 24px; }
+    .dom-header::before {
+      content: "";
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5px;
+      height: 36px;
+      border-radius: 3px;
+      background: var(--m3-primary);
+    }
+    .dom-header .dom-emoji {
+      font-size: 20px;
+      margin-left: 12px;
+      flex-shrink: 0;
+    }
     .dom-header .dom-titles { flex: 1; min-width: 0; }
     .dom-header .dom-lbl {
       font-family: 'JetBrains Mono', monospace;
       font-size: 10px;
-      color: var(--text-dim);
+      color: var(--m3-outline);
       letter-spacing: 0.6px;
       text-transform: uppercase;
       display: block;
+      font-weight: 700;
     }
     .dom-header .dom-title {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 700;
-      color: var(--text);
+      color: var(--m3-on-surface);
       line-height: 1.2;
+      margin-top: 2px;
     }
-    .dom-header .dom-sub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+    .dom-header .dom-sub {
+      font-size: 12px;
+      color: var(--m3-on-surface-variant);
+      margin-top: 2px;
+    }
     .dom-header .dom-count {
       font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
       font-weight: 700;
-      background: var(--surface-alt);
-      border: 1px solid var(--border);
-      padding: 4px 8px;
+      background: var(--m3-surface-lowest);
+      border: 1px solid var(--m3-outline-variant);
+      color: var(--m3-primary);
+      padding: 4px 9px;
       border-radius: 8px;
       flex-shrink: 0;
     }
 
-    .dom-header[data-dom="restrict"]     { border-left-color: #7A2E2E; }
+    /* Per-domain accent (bar + label + count pill) */
+    .dom-header[data-dom="restrict"]     { border-color: #f2b8b5; background: #fef2f2; }
+    .dom-header[data-dom="restrict"]::before { background: #7A2E2E; }
     .dom-header[data-dom="restrict"] .dom-lbl { color: #7A2E2E; }
-    .dom-header[data-dom="medical"]      { border-left-color: var(--dom-medical); }
-    .dom-header[data-dom="medical"] .dom-lbl { color: var(--dom-medical); }
-    .dom-header[data-dom="admin"]        { border-left-color: #506173; }
+    .dom-header[data-dom="restrict"] .dom-count { border-color: #7A2E2E; color: #7A2E2E; }
+
+    .dom-header[data-dom="medical"]      { border-color: var(--m3-error); background: var(--m3-error-container); }
+    .dom-header[data-dom="medical"]::before { background: var(--m3-error); }
+    .dom-header[data-dom="medical"] .dom-lbl { color: var(--m3-error); }
+    .dom-header[data-dom="medical"] .dom-count { border-color: var(--m3-error); color: var(--m3-error); }
+
+    .dom-header[data-dom="admin"]        { border-color: #b8c4d1; background: #eef2f8; }
+    .dom-header[data-dom="admin"]::before { background: #506173; }
     .dom-header[data-dom="admin"] .dom-lbl { color: #506173; }
-    .dom-header[data-dom="psychosocial"] { border-left-color: #7A39BB; }
+    .dom-header[data-dom="admin"] .dom-count { border-color: #506173; color: #506173; }
+
+    .dom-header[data-dom="psychosocial"] { border-color: #d4bae5; background: #f7f0fd; }
+    .dom-header[data-dom="psychosocial"]::before { background: #7A39BB; }
     .dom-header[data-dom="psychosocial"] .dom-lbl { color: #7A39BB; }
-    .dom-header[data-dom="legal"]        { border-left-color: var(--dom-legal); }
-    .dom-header[data-dom="legal"] .dom-lbl { color: var(--dom-legal); }
-    .dom-header[data-dom="warm"]         { border-left-color: var(--dom-warm); }
-    .dom-header[data-dom="warm"] .dom-lbl { color: var(--dom-warm); }
+    .dom-header[data-dom="psychosocial"] .dom-count { border-color: #7A39BB; color: #7A39BB; }
+
+    .dom-header[data-dom="legal"]        { border-color: #a6c8ff; background: #d4e3ff; }
+    .dom-header[data-dom="legal"]::before { background: var(--m3-primary-container); }
+    .dom-header[data-dom="legal"] .dom-lbl { color: var(--m3-primary-container); }
+    .dom-header[data-dom="legal"] .dom-count { border-color: var(--m3-primary-container); color: var(--m3-primary-container); }
+
+    .dom-header[data-dom="warm"]         { border-color: var(--m3-on-tertiary-fixed-variant); background: var(--m3-tertiary-fixed); }
+    .dom-header[data-dom="warm"]::before { background: var(--m3-on-tertiary-fixed-variant); }
+    .dom-header[data-dom="warm"] .dom-lbl { color: var(--m3-on-tertiary-fixed-variant); }
+    .dom-header[data-dom="warm"] .dom-count { border-color: var(--m3-on-tertiary-fixed-variant); color: var(--m3-on-tertiary-fixed-variant); }
 
     .skill-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 8px;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 10px;
     }
     .skill-card {
-      background: var(--surface);
-      border: 2px solid var(--border);
+      background: var(--m3-surface-lowest);
+      border: 1px solid var(--m3-outline-variant);
       border-radius: 12px;
-      padding: 12px 14px;
+      padding: 12px;
       cursor: pointer;
       text-align: left;
       font-family: inherit;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      transition: transform 0.1s, border-color 0.15s;
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 12px;
+      align-items: center;
+      transition: transform 0.1s, border-color 0.15s, box-shadow 0.15s;
       position: relative;
     }
-    .skill-card:hover { border-color: var(--primary); transform: translateY(-1px); }
-    .skill-card:active { transform: translateY(0) scale(0.99); }
-    .skill-card[data-dom="restrict"]:hover     { border-color: #7A2E2E; }
-    .skill-card[data-dom="medical"]:hover      { border-color: var(--dom-medical); }
-    .skill-card[data-dom="admin"]:hover        { border-color: #506173; }
+    .skill-card:hover {
+      border-color: var(--m3-primary-container);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      transform: translateY(-1px);
+    }
+    .skill-card:active { transform: scale(0.99); }
+    .skill-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--m3-surface-container);
+      color: var(--m3-primary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+      border: 2px solid var(--m3-outline-variant);
+    }
+    .skill-card-icon .material-symbols-outlined { font-size: 22px; }
+    .skill-card-body { min-width: 0; }
+    .skill-card[data-dom="medical"]      .skill-card-icon { background: var(--m3-error-container); color: var(--m3-error); border-color: var(--m3-error); }
+    .skill-card[data-dom="medical"]:hover      { border-color: var(--m3-error); }
+    .skill-card[data-dom="legal"]        .skill-card-icon { background: #d4e3ff; color: var(--m3-primary); border-color: var(--m3-primary-container); }
+    .skill-card[data-dom="legal"]:hover        { border-color: var(--m3-primary-container); }
+    .skill-card[data-dom="psychosocial"] .skill-card-icon { background: #f7f0fd; color: #7A39BB; border-color: #7A39BB; }
     .skill-card[data-dom="psychosocial"]:hover { border-color: #7A39BB; }
-    .skill-card[data-dom="legal"]:hover        { border-color: var(--dom-legal); }
-    .skill-card[data-dom="warm"]:hover         { border-color: var(--dom-warm); }
+    .skill-card[data-dom="admin"]        .skill-card-icon { background: #eef2f8; color: #506173; border-color: #506173; }
+    .skill-card[data-dom="admin"]:hover        { border-color: #506173; }
+    .skill-card[data-dom="restrict"]     .skill-card-icon { background: #fef2f2; color: #7A2E2E; border-color: #7A2E2E; }
+    .skill-card[data-dom="restrict"]:hover     { border-color: #7A2E2E; }
+    .skill-card[data-dom="warm"]         .skill-card-icon { background: var(--m3-tertiary-fixed); color: var(--m3-on-tertiary-fixed-variant); border-color: var(--m3-on-tertiary-fixed-variant); }
+    .skill-card[data-dom="warm"]:hover         { border-color: var(--m3-on-tertiary-fixed-variant); }
+
     .skill-title {
       font-size: 14px;
       font-weight: 700;
-      color: var(--text);
+      color: var(--m3-on-surface);
       line-height: 1.25;
     }
     .skill-desc {
       font-size: 11px;
-      color: var(--text-dim);
+      color: var(--m3-on-surface-variant);
       line-height: 1.4;
+      margin-top: 2px;
     }
     .skill-meta {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 8px;
-      margin-top: 4px;
+      margin-top: 6px;
     }
     .skill-stars {
       font-size: 13px;
       letter-spacing: 1px;
       color: #E6A700;
     }
-    .skill-stars .empty { color: var(--border); }
-    .skill-count {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 10px;
-      color: var(--text-muted);
-    }
+    .skill-stars .empty { color: var(--m3-outline-variant); }
     .skill-completions {
       font-family: 'JetBrains Mono', monospace;
       font-size: 10px;
-      background: var(--surface-alt);
-      color: var(--text-dim);
-      padding: 2px 6px;
-      border-radius: 4px;
-      border: 1px solid var(--border);
+      background: var(--m3-surface-container);
+      color: var(--m3-on-surface-variant);
+      padding: 2px 7px;
+      border-radius: 6px;
+      font-weight: 700;
     }
     .skill-completions.mastered {
       background: #FFF6E5;
       color: #B87700;
-      border-color: #E6A700;
+      border: 1px solid #E6A700;
       font-weight: 700;
     }
-    .skill-card.mastered { border-color: #E6A700; background: #FFFCF3; }
+    .skill-card.mastered {
+      border-color: #E6A700;
+      background: linear-gradient(135deg, #FFFCF3 0%, #FFF8E1 100%);
+    }
+    .skill-card.mastered .skill-card-icon {
+      background: linear-gradient(135deg, #FFE99A 0%, #E6A700 100%);
+      color: #7A5200;
+      border-color: #B87700;
+    }
 
     /* Hearts-empty state */
     .hearts-warning {
-      background: var(--dom-medical-bg);
-      border: 1.5px solid var(--dom-medical);
-      color: #7a1c1e;
+      background: var(--m3-error-container);
+      border: 1px solid var(--m3-error);
+      color: var(--m3-on-error-container);
       border-radius: 10px;
       padding: 12px 14px;
       font-size: 13px;
@@ -797,7 +1010,22 @@
     .hearts-warning .countdown { font-family: 'JetBrains Mono', monospace; }
 
     /* ============ QUIZ OVERLAY ============ */
-    .quiz-overlay, .result-overlay {
+    /* ============ QUIZ OVERLAY — Material 3 (Field Interpreter palette) ============ */
+    .quiz-overlay {
+      position: fixed;
+      inset: 0;
+      background: var(--m3-surface);
+      color: var(--m3-on-surface);
+      z-index: 100;
+      display: none;
+      flex-direction: column;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 0;
+    }
+    .quiz-overlay.show { display: flex; }
+    /* Result overlay keeps its old look — separate block below */
+    .result-overlay {
       position: fixed;
       inset: 0;
       background: var(--bg);
@@ -808,192 +1036,793 @@
       max-width: 720px;
       margin: 0 auto;
       overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
       padding-bottom: 32px;
     }
-    .quiz-overlay.show, .result-overlay.show { display: flex; }
-    /* When quiz/result is open, hide bottom nav and body scroll */
+    .result-overlay.show { display: flex; }
     body.quiz-open { overflow: hidden; }
     body.quiz-open .bottom-nav { display: none; }
+
+    /* Top shell: close + progress + streak + hearts */
     .quiz-top {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--m3-surface-lowest);
+      border-bottom: 1px solid var(--m3-outline-variant);
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+    .quiz-top-row {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 8px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .quiz-top-main {
       display: flex;
       align-items: center;
-      gap: 12px;
-      margin-bottom: 20px;
+      gap: 8px;
+      min-height: 48px;
     }
     .quiz-close {
-      background: var(--surface);
-      border: 1.5px solid var(--border);
-      color: var(--text-dim);
-      width: 40px;
-      height: 40px;
-      border-radius: 10px;
+      background: transparent;
+      border: none;
+      color: var(--m3-on-surface);
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
       cursor: pointer;
-      font-size: 22px;
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: background 0.15s, transform 0.15s;
     }
+    .quiz-close:hover { background: var(--m3-surface-container); }
+    .quiz-close:active { transform: scale(0.95); }
+    .quiz-close .material-symbols-outlined { font-size: 26px; }
+
     .quiz-progress-outer {
       flex: 1;
-      height: 12px;
-      background: var(--surface-alt);
-      border: 1.5px solid var(--border);
-      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      padding: 0 4px;
+    }
+    .quiz-progress-labels {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--m3-outline);
+    }
+    .quiz-progress-count { letter-spacing: 0.4px; }
+    .quiz-progress-percent { color: var(--m3-primary); font-weight: 700; }
+    .quiz-progress-track {
+      width: 100%;
+      height: 8px;
+      background: var(--m3-surface-container-highest);
+      border-radius: 999px;
       overflow: hidden;
     }
     .quiz-progress-bar {
       height: 100%;
-      background: var(--success);
-      transition: width 0.3s ease;
-    }
-    .quiz-hearts-mini {
-      background: var(--dom-medical-bg);
-      color: var(--dom-medical);
-      font-family: 'JetBrains Mono', monospace;
-      font-weight: 700;
-      font-size: 14px;
-      padding: 8px 12px;
-      border-radius: 10px;
-      border: 1.5px solid var(--dom-medical);
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      min-width: 50px;
-      justify-content: center;
+      background: var(--m3-primary-container);
+      border-radius: 999px;
+      transition: width 0.35s cubic-bezier(0.2, 0.7, 0.3, 1);
     }
 
+    .quiz-streak {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      padding: 5px 9px;
+      background: var(--m3-tertiary-fixed);
+      color: var(--m3-tertiary);
+      border-radius: 999px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 12px;
+    }
+    .quiz-streak .material-symbols-outlined { font-size: 16px; }
+    .quiz-hearts-mini {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      padding: 5px 9px;
+      background: var(--m3-error-container);
+      color: var(--m3-on-error-container);
+      border-radius: 999px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 12px;
+      min-width: 46px;
+      justify-content: center;
+    }
+    .quiz-hearts-mini .material-symbols-outlined { font-size: 16px; color: var(--m3-error); }
+
+    /* Sub-pills row: domain badge + lang pair */
+    .quiz-subrow {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      padding-bottom: 4px;
+    }
+    .quiz-domain-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      background: var(--m3-error-container);
+      color: var(--m3-error);
+      border: 1px solid var(--m3-error);
+    }
+    .quiz-domain-badge .material-symbols-outlined { font-size: 14px; }
+    .quiz-domain-badge[data-domain="legal"],
+    .quiz-domain-badge[data-domain="procedure"],
+    .quiz-domain-badge[data-domain="status"],
+    .quiz-domain-badge[data-domain="detention"] {
+      background: #d4e3ff;
+      color: #002c56;
+      border-color: #114277;
+    }
+    .quiz-domain-badge[data-domain="vulnerable"],
+    .quiz-domain-badge[data-domain="family"],
+    .quiz-domain-badge[data-domain="integration"],
+    .quiz-domain-badge[data-domain="communication"] {
+      background: var(--m3-tertiary-fixed);
+      color: var(--m3-on-tertiary-fixed-variant);
+      border-color: var(--m3-on-tertiary-fixed-variant);
+    }
+    .quiz-domain-badge[data-domain="reception"],
+    .quiz-domain-badge[data-domain="documentation"],
+    .quiz-domain-badge[data-domain="return"] {
+      background: var(--m3-secondary-container);
+      color: var(--m3-on-secondary-container);
+      border-color: var(--m3-secondary);
+    }
+    .quiz-langpair {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 8px;
+      background: var(--m3-surface-container);
+      color: var(--m3-primary);
+      border: 1px solid var(--m3-outline-variant);
+      border-radius: 6px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+      font-size: 11px;
+    }
+    .quiz-langpair::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: var(--m3-secondary);
+      border-radius: 50%;
+    }
+
+    /* Main body */
     .quiz-body {
       flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      max-width: 560px;
+      max-width: 640px;
       margin: 0 auto;
       width: 100%;
+      padding: 12px 16px 220px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .quiz-prompt-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
     }
     .quiz-instruction {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 12px;
-      color: var(--text-dim);
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
+      flex: 1;
+      font-family: 'Atkinson Hyperlegible', system-ui, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--m3-on-surface);
+      text-transform: none;
+      letter-spacing: 0;
     }
+    .quiz-listen {
+      flex-shrink: 0;
+      background: var(--m3-surface-container);
+      border: none;
+      color: var(--m3-primary);
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s, transform 0.15s;
+    }
+    .quiz-listen:hover { background: var(--m3-surface-container-high); }
+    .quiz-listen:active { transform: scale(0.95); }
+    .quiz-listen .material-symbols-outlined { font-size: 22px; }
+    .quiz-listen[hidden], .quiz-question-card[hidden] { display: none !important; }
+
+    /* Term anchor card */
     .quiz-question-card {
-      background: var(--surface);
-      border: 2px solid var(--border);
-      border-radius: 14px;
-      padding: 24px 20px;
-      text-align: center;
-      box-shadow: 0px 4px 0px 0px var(--dark);
+      background: var(--m3-surface-lowest);
+      border: 2px solid var(--m3-primary-container);
+      border-radius: 12px;
+      padding: 20px 16px 14px;
+      text-align: left;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      position: relative;
+      overflow: hidden;
+    }
+    .quiz-question-card::before {
+      content: "ΒΑΣΙΚΟΣ ΟΡΟΣ";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: var(--m3-primary-container);
+      color: var(--m3-on-primary);
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      padding: 3px 10px;
+      border-bottom-left-radius: 8px;
     }
     .quiz-term {
-      font-size: 30px;
+      font-family: 'Atkinson Hyperlegible', system-ui, sans-serif;
+      font-size: 28px;
       font-weight: 700;
-      color: var(--text);
-      line-height: 1.2;
-      margin-top: 6px;
+      color: var(--m3-primary);
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+      margin-top: 4px;
+      word-wrap: break-word;
     }
     .quiz-term.rtl {
       direction: rtl;
-      font-family: 'Noto Naskh Arabic', 'Atkinson Hyperlegible', serif;
-      font-size: 34px;
+      font-family: 'Noto Naskh Arabic', 'Noto Sans Arabic', serif;
+      font-size: 32px;
+      line-height: 1.4;
     }
     .quiz-category {
       display: inline-block;
       font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
-      color: var(--text-dim);
-      background: var(--surface-alt);
-      padding: 3px 8px;
-      border-radius: 6px;
-      margin-top: 12px;
+      color: var(--m3-outline);
+      font-weight: 700;
+      letter-spacing: 0.6px;
       text-transform: uppercase;
-    }
-    .quiz-listen {
-      background: var(--surface-alt);
-      border: 1px solid var(--border);
-      color: var(--primary);
-      border-radius: 8px;
-      padding: 6px 12px;
-      font-family: inherit;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
       margin-top: 10px;
-      font-size: 13px;
+      padding-top: 10px;
+      border-top: 1px solid var(--m3-outline-variant);
+      width: 100%;
     }
 
+    /* Choices — cards with letter badge */
     .quiz-choices {
       display: flex;
       flex-direction: column;
       gap: 10px;
     }
     .quiz-choice {
-      background: var(--surface);
-      border: 2px solid var(--border);
-      color: var(--text);
+      background: var(--m3-surface-lowest);
+      border: 2px solid var(--m3-outline-variant);
+      color: var(--m3-on-surface);
       border-radius: 12px;
-      padding: 16px 18px;
-      font-family: inherit;
-      font-size: 16px;
+      padding: 14px 14px 14px 12px;
+      font-family: 'Atkinson Hyperlegible', system-ui, sans-serif;
+      font-size: 15px;
       cursor: pointer;
       text-align: left;
-      min-height: 56px;
-      transition: all 0.12s;
-      box-shadow: 0px 3px 0px 0px var(--border-strong);
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      transition: border-color 0.15s, background 0.15s, transform 0.1s;
+      position: relative;
+      overflow: hidden;
     }
-    .quiz-choice:hover { border-color: var(--primary); background: var(--surface-alt); }
-    .quiz-choice:active { transform: translateY(1px); box-shadow: 0px 2px 0px 0px var(--border-strong); }
-    .quiz-choice.rtl { direction: rtl; font-family: 'Noto Naskh Arabic', 'Atkinson Hyperlegible', serif; font-size: 18px; }
-    .quiz-choice.correct {
-      background: var(--success-bg);
-      border-color: var(--success);
-      color: var(--success);
+    .quiz-choice:hover:not(:disabled) { border-color: var(--m3-primary-container); }
+    .quiz-choice:active:not(:disabled) { transform: scale(0.99); }
+    .quiz-choice-label {
+      flex-shrink: 0;
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      border: 2px solid var(--m3-outline-variant);
+      color: var(--m3-outline);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'JetBrains Mono', monospace;
       font-weight: 700;
-      box-shadow: 0px 3px 0px 0px var(--success);
+      font-size: 14px;
+      background: var(--m3-surface-lowest);
+    }
+    .quiz-choice-text {
+      flex: 1;
+      font-weight: 600;
+      color: var(--m3-on-surface);
+      line-height: 1.35;
+    }
+    .quiz-choice.rtl .quiz-choice-text {
+      direction: rtl;
+      font-family: 'Noto Naskh Arabic', 'Noto Sans Arabic', serif;
+      font-size: 20px;
+      line-height: 1.5;
+      text-align: right;
+    }
+    .quiz-choice.correct {
+      background: rgba(148, 241, 250, 0.25);
+      border-color: var(--m3-secondary);
+      box-shadow: inset 4px 0 0 0 var(--m3-secondary);
+    }
+    .quiz-choice.correct .quiz-choice-text { color: var(--m3-primary); font-weight: 700; }
+    .quiz-choice.correct .quiz-choice-label {
+      background: var(--m3-secondary);
+      color: var(--m3-on-secondary);
+      border-color: var(--m3-secondary);
     }
     .quiz-choice.wrong {
-      background: var(--dom-medical-bg);
-      border-color: var(--dom-medical);
-      color: var(--dom-medical);
+      background: rgba(255, 218, 214, 0.5);
+      border-color: var(--m3-error);
+      box-shadow: inset 4px 0 0 0 var(--m3-error);
+    }
+    .quiz-choice.wrong .quiz-choice-text {
+      color: var(--m3-error);
+      text-decoration: line-through;
+      text-decoration-color: var(--m3-error);
       font-weight: 700;
-      box-shadow: 0px 3px 0px 0px var(--dom-medical);
+    }
+    .quiz-choice.wrong .quiz-choice-label {
+      background: var(--m3-error);
+      color: var(--m3-on-error);
+      border-color: var(--m3-error);
     }
     .quiz-choice:disabled { cursor: default; }
 
+    /* Feedback panel — fixed bottom sheet */
     .quiz-feedback {
-      background: var(--surface);
-      border: 2px solid var(--border);
-      border-radius: 12px;
-      padding: 14px 16px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      background: var(--m3-surface-lowest);
+      border-top: 2px solid var(--m3-outline-variant);
+      box-shadow: 0 -8px 24px rgba(0,0,0,0.12);
+      padding: 16px;
       display: none;
-      align-items: center;
-      justify-content: space-between;
+      transform: translateY(0);
+    }
+    .quiz-feedback.show { display: block; }
+    .quiz-feedback.correct {
+      background: var(--m3-secondary-container);
+      border-top-color: var(--m3-secondary);
+    }
+    .quiz-feedback.wrong {
+      background: var(--m3-error-container);
+      border-top-color: var(--m3-error);
+    }
+    .quiz-feedback-inner {
+      max-width: 640px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
       gap: 12px;
     }
-    .quiz-feedback.show { display: flex; }
-    .quiz-feedback.correct { background: var(--success-bg); border-color: var(--success); }
-    .quiz-feedback.wrong { background: var(--dom-medical-bg); border-color: var(--dom-medical); }
-    .quiz-feedback-text {
-      flex: 1;
-      font-weight: 700;
-      font-size: 14px;
+    .quiz-feedback-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
     }
-    .quiz-feedback.correct .quiz-feedback-text { color: var(--success); }
-    .quiz-feedback.wrong .quiz-feedback-text { color: var(--dom-medical); }
-    .quiz-next {
-      background: var(--dark);
-      color: #fff;
-      border: none;
-      border-radius: 10px;
-      padding: 12px 20px;
-      font-family: inherit;
+    .quiz-feedback-icon {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .quiz-feedback.correct .quiz-feedback-icon {
+      background: var(--m3-secondary);
+      color: var(--m3-on-secondary);
+    }
+    .quiz-feedback.wrong .quiz-feedback-icon {
+      background: var(--m3-error);
+      color: var(--m3-on-error);
+    }
+    .quiz-feedback-icon .material-symbols-outlined { font-size: 26px; }
+    .quiz-feedback-body { flex: 1; min-width: 0; }
+    .quiz-feedback-title-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .quiz-feedback-title {
+      font-family: 'Atkinson Hyperlegible', system-ui, sans-serif;
+      font-size: 18px;
       font-weight: 700;
-      font-size: 14px;
+      line-height: 1.2;
+    }
+    .quiz-feedback.correct .quiz-feedback-title { color: #003237; }
+    .quiz-feedback.wrong .quiz-feedback-title { color: var(--m3-on-error-container); }
+    .quiz-feedback-badge {
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 11px;
+    }
+    .quiz-feedback.correct .quiz-feedback-badge {
+      background: var(--m3-on-secondary-container);
+      color: var(--m3-surface-lowest);
+    }
+    .quiz-feedback.wrong .quiz-feedback-badge {
+      background: var(--m3-error);
+      color: var(--m3-on-error);
+    }
+    .quiz-feedback-detail {
+      margin-top: 6px;
+      font-size: 13px;
+      line-height: 1.4;
+      color: var(--m3-on-surface-variant);
+    }
+    .quiz-feedback-detail .arabic-inline {
+      font-family: 'Noto Naskh Arabic', 'Noto Sans Arabic', serif;
+      direction: rtl;
+      unicode-bidi: isolate;
+      font-weight: 700;
+      color: var(--m3-primary);
+    }
+    .quiz-feedback.wrong .quiz-feedback-detail-box {
+      margin-top: 6px;
+      background: rgba(255,255,255,0.7);
+      border: 1px solid rgba(186, 26, 26, 0.3);
+      border-radius: 8px;
+      padding: 8px 10px;
+    }
+    .quiz-next {
+      width: 100%;
+      min-height: 52px;
+      padding: 12px 16px;
+      border: none;
+      border-radius: 12px;
+      background: var(--m3-primary-container);
+      color: var(--m3-on-primary);
+      font-family: 'Atkinson Hyperlegible', system-ui, sans-serif;
+      font-weight: 700;
+      font-size: 16px;
       cursor: pointer;
-      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: background 0.15s, transform 0.1s;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+    .quiz-next:hover { background: var(--m3-primary); }
+    .quiz-next:active { transform: scale(0.98); }
+    .quiz-feedback.wrong .quiz-next {
+      background: var(--m3-error);
+      color: var(--m3-on-error);
+    }
+    .quiz-feedback.wrong .quiz-next:hover { opacity: 0.9; background: var(--m3-error); }
+    .quiz-next .material-symbols-outlined { font-size: 20px; }
+
+    /* ============ LISTENING EXERCISE PANEL ============ */
+    .quiz-listen-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .quiz-listen-panel[hidden] { display: none !important; }
+    .quiz-listen-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--m3-secondary);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: -4px;
+    }
+    .quiz-listen-tag .material-symbols-outlined { font-size: 16px; }
+    .listen-audio-card {
+      background: var(--m3-surface-lowest);
+      border: 2px solid var(--m3-outline-variant);
+      border-radius: 12px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .listen-audio-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--m3-outline-variant);
+      font-size: 13px;
+    }
+    .listen-audio-source {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--m3-on-surface);
+      font-weight: 600;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .listen-audio-source .material-symbols-outlined { font-size: 18px; color: var(--m3-secondary); flex-shrink: 0; }
+    .listen-audio-source-dialect { color: var(--m3-on-surface-variant); font-weight: 400; margin-left: 2px; }
+    .listen-audio-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      background: var(--m3-surface-container-low);
+      color: var(--m3-secondary);
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+    .listen-audio-badge .material-symbols-outlined { font-size: 13px; }
+    .listen-audio-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 6px 0;
+      gap: 8px;
+    }
+    .listen-waves {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 5px;
+      height: 40px;
+      width: 100%;
+      max-width: 240px;
+      padding: 6px 10px;
+      background: var(--m3-surface-container-low);
+      border: 1px solid var(--m3-outline-variant);
+      border-radius: 8px;
+    }
+    .listen-wave-bar {
+      width: 5px;
+      background: var(--m3-primary-container);
+      border-radius: 999px;
+      transition: height 0.15s;
+    }
+    .listen-wave-bar:nth-child(1) { height: 30%; }
+    .listen-wave-bar:nth-child(2) { height: 70%; }
+    .listen-wave-bar:nth-child(3) { height: 45%; background: var(--m3-secondary); }
+    .listen-wave-bar:nth-child(4) { height: 90%; }
+    .listen-wave-bar:nth-child(5) { height: 55%; background: var(--m3-secondary); }
+    .listen-wave-bar:nth-child(6) { height: 80%; }
+    .listen-wave-bar:nth-child(7) { height: 35%; background: var(--m3-secondary); }
+    .listen-wave-bar:nth-child(8) { height: 65%; }
+    .listen-audio-card.playing .listen-wave-bar {
+      animation: listen-wave 0.8s ease-in-out infinite alternate;
+    }
+    .listen-audio-card.playing .listen-wave-bar:nth-child(2n) { animation-delay: 0.15s; }
+    .listen-audio-card.playing .listen-wave-bar:nth-child(3n) { animation-delay: 0.3s; }
+    @keyframes listen-wave {
+      from { transform: scaleY(0.55); }
+      to   { transform: scaleY(1.05); }
+    }
+    .listen-play-btn {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: none;
+      background: var(--m3-primary-container);
+      color: var(--m3-on-primary);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 3px 8px rgba(17, 66, 119, 0.28);
+      transition: transform 0.1s, background 0.15s;
+    }
+    .listen-play-btn:hover { background: var(--m3-primary); }
+    .listen-play-btn:active { transform: scale(0.95); }
+    .listen-play-btn .material-symbols-outlined { font-size: 36px; }
+    .listen-play-hint {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--m3-on-surface-variant);
+      text-align: center;
+    }
+    .listen-speed-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding-top: 8px;
+      border-top: 1px solid var(--m3-outline-variant);
+      font-size: 12px;
+      color: var(--m3-outline);
+      font-weight: 500;
+    }
+    .listen-speed-toggle {
+      display: inline-flex;
+      padding: 2px;
+      background: var(--m3-surface-container);
+      border: 1px solid var(--m3-outline-variant);
+      border-radius: 10px;
+    }
+    .listen-speed-btn {
+      background: transparent;
+      border: none;
+      color: var(--m3-on-surface-variant);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      transition: background 0.15s, color 0.15s;
+    }
+    .listen-speed-btn .material-symbols-outlined { font-size: 14px; }
+    .listen-speed-btn.active {
+      background: var(--m3-surface-lowest);
+      color: var(--m3-primary);
+      box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+    }
+
+    .listen-input-label {
+      display: block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--m3-on-surface-variant);
+      margin-bottom: 4px;
+    }
+    .listen-input-wrap {
+      display: flex;
+      align-items: center;
+      background: var(--m3-surface-lowest);
+      border: 2px solid var(--m3-primary-container);
+      border-radius: 12px;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .listen-input-wrap:focus-within {
+      border-color: var(--m3-secondary);
+      box-shadow: 0 0 0 3px rgba(0, 105, 112, 0.15);
+    }
+    .listen-input-icon {
+      color: var(--m3-primary);
+      padding-left: 12px;
+      padding-right: 4px;
+      display: inline-flex;
+    }
+    .listen-input-icon .material-symbols-outlined { font-size: 22px; }
+    .listen-input {
+      flex: 1;
+      min-width: 0;
+      padding: 14px 8px;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-family: 'Atkinson Hyperlegible', system-ui, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--m3-on-surface);
+    }
+    .listen-input::placeholder { color: var(--m3-outline); font-weight: 400; }
+    .listen-clear-btn {
+      width: 40px;
+      height: 40px;
+      margin-right: 4px;
+      background: transparent;
+      border: none;
+      color: var(--m3-outline);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: background 0.15s;
+    }
+    .listen-clear-btn:hover { background: var(--m3-surface-container); color: var(--m3-on-surface); }
+    .listen-clear-btn .material-symbols-outlined { font-size: 20px; }
+
+    .listen-chips-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+    .listen-chips-label { font-size: 12px; color: var(--m3-outline); font-weight: 500; }
+    .listen-chips-brand {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--m3-primary);
+      font-weight: 700;
+    }
+    .listen-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .listen-chip {
+      background: var(--m3-surface-container-low);
+      border: 1px solid var(--m3-outline-variant);
+      color: var(--m3-on-surface);
+      padding: 7px 12px;
+      border-radius: 8px;
+      font-family: 'Atkinson Hyperlegible', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      min-height: 36px;
+      transition: transform 0.1s, border-color 0.15s, background 0.15s;
+    }
+    .listen-chip:hover { border-color: var(--m3-primary); }
+    .listen-chip:active { transform: scale(0.95); background: var(--m3-secondary-container); }
+    .listen-chip.used {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    /* Check button — appears below chips, before feedback opens */
+    .listen-check-btn {
+      width: 100%;
+      min-height: 52px;
+      padding: 14px 20px;
+      background: var(--m3-primary-container);
+      color: var(--m3-on-primary);
+      border: none;
+      border-radius: 12px;
+      font-family: 'Atkinson Hyperlegible', system-ui, sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      box-shadow: 0 2px 6px rgba(17, 66, 119, 0.28);
+      transition: background 0.15s, transform 0.1s;
+      margin-top: 4px;
+    }
+    .listen-check-btn:hover { background: var(--m3-primary); }
+    .listen-check-btn:active { transform: scale(0.98); }
+    .listen-check-btn:disabled {
+      background: var(--m3-outline-variant);
+      color: var(--m3-outline);
+      cursor: not-allowed;
+      box-shadow: none;
     }
 
     /* ============ RESULT OVERLAY ============ */
@@ -1086,8 +1915,10 @@
     .bottom-nav .nav-icon { font-size: 20px; line-height: 1; }
 
     @media (max-width: 400px) {
-      .quiz-term { font-size: 24px; }
-      .quiz-term.rtl { font-size: 28px; }
+      .quiz-term { font-size: 22px; }
+      .quiz-term.rtl { font-size: 26px; }
+      .quiz-instruction { font-size: 17px; }
+      .quiz-choice.rtl .quiz-choice-text { font-size: 18px; }
       .daily-title { font-size: 17px; }
     }
   </style>
@@ -1142,18 +1973,37 @@
     </div>
 
     <section class="daily-card">
-      <div class="daily-icon">⏱</div>
+      <div class="daily-icon"><span class="material-symbols-outlined">timer</span></div>
       <div class="daily-body">
-        <span class="daily-tag">ΗΜΕΡΗΣΙΑ ΕΞΑΣΚΗΣΗ</span>
+        <span class="daily-tag">ΠΡΩΙΝΗ ΒΑΡΔΙΑ</span>
         <span class="daily-mins">~5 λεπτά · 10 ερωτήσεις</span>
-        <h2 class="daily-title">Γρήγορη Εξάσκηση</h2>
-        <p class="daily-desc">10 τυχαίες ερωτήσεις από όλους τους τομείς. Για στοχευμένη εξάσκηση σε συγκεκριμένο σταθμό, δες τους τομείς πιο κάτω.</p>
+        <h2 class="daily-title">Ημερήσια Εξάσκηση Ορολογίας</h2>
+        <p class="daily-desc">10 τυχαίες ερωτήσεις από όλους τους τομείς — για να κρατάς την ορολογία σου σε ετοιμότητα πριν από τις συνεδρίες.</p>
+        <div class="mode-toggle" role="group" aria-label="Είδος άσκησης">
+          <button type="button" class="mode-toggle-btn active" data-format="choice">
+            <span class="material-symbols-outlined">quiz</span>
+            <span>Πολλαπλής επιλογής</span>
+          </button>
+          <button type="button" class="mode-toggle-btn" data-format="listening">
+            <span class="material-symbols-outlined">hearing</span>
+            <span>Ακρόαση</span>
+          </button>
+        </div>
         <button class="start-btn" id="start-btn">
-          <span>▶</span>
+          <span class="material-symbols-outlined filled">play_arrow</span>
           <span>Ξεκίνα Μάθημα</span>
         </button>
       </div>
     </section>
+
+    <aside class="reward-card" id="reward-card">
+      <div class="reward-icon">🎁</div>
+      <div class="reward-body">
+        <div class="reward-title">Καθημερινό Σεντούκι</div>
+        <div class="reward-sub"><span id="reward-count">0/3</span> μαθήματα σήμερα (+50 XP)</div>
+      </div>
+      <div class="reward-progress"><div class="reward-progress-bar" id="reward-progress-bar" style="width:0%"></div></div>
+    </aside>
 
     <div class="hearts-warning" id="hearts-warning">
       <strong>Τελείωσαν οι ζωές σου.</strong> Επόμενη καρδιά σε <span class="countdown" id="regen-countdown">--:--</span>.
@@ -1177,24 +2027,142 @@
   </main>
 
   <div class="quiz-overlay" id="quiz-overlay">
-    <div class="quiz-top">
-      <button class="quiz-close" id="quiz-close" aria-label="Κλείσιμο">×</button>
-      <div class="quiz-progress-outer"><div class="quiz-progress-bar" id="quiz-progress-bar"></div></div>
-      <div class="quiz-hearts-mini" id="quiz-hearts-mini">❤ 5</div>
-    </div>
-    <div class="quiz-body">
-      <div class="quiz-question-card">
-        <div class="quiz-instruction" id="quiz-instruction">Ποια είναι η μετάφραση;</div>
+    <header class="quiz-top">
+      <div class="quiz-top-row">
+        <div class="quiz-top-main">
+          <button class="quiz-close" id="quiz-close" aria-label="Κλείσιμο άσκησης" title="Κλείσιμο">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+          <div class="quiz-progress-outer">
+            <div class="quiz-progress-labels">
+              <span class="quiz-progress-count" id="quiz-progress-count">ΕΡΩΤΗΣΗ 01/10</span>
+              <span class="quiz-progress-percent" id="quiz-progress-percent">0%</span>
+            </div>
+            <div class="quiz-progress-track">
+              <div class="quiz-progress-bar" id="quiz-progress-bar" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="quiz-streak" id="quiz-streak" title="Ημερήσιο σερί">
+            <span class="material-symbols-outlined filled">local_fire_department</span>
+            <span id="quiz-streak-val">0</span>
+          </div>
+          <div class="quiz-hearts-mini" id="quiz-hearts-mini" title="Ζωές">
+            <span class="material-symbols-outlined filled">favorite</span>
+            <span id="quiz-hearts-val">5/5</span>
+          </div>
+        </div>
+        <div class="quiz-subrow">
+          <div class="quiz-domain-badge" id="quiz-domain-badge" data-domain="medical" hidden>
+            <span class="material-symbols-outlined filled" id="quiz-domain-icon">emergency</span>
+            <span id="quiz-domain-text">—</span>
+          </div>
+          <div class="quiz-langpair" id="quiz-langpair">EL ⇄ AR</div>
+        </div>
+      </div>
+    </header>
+    <main class="quiz-body">
+      <div class="quiz-prompt-row">
+        <h1 class="quiz-instruction" id="quiz-instruction">Ποια είναι η μετάφραση;</h1>
+        <button class="quiz-listen" id="quiz-listen" hidden aria-label="Ακρόαση εκφώνησης" title="Άκουσε">
+          <span class="material-symbols-outlined">volume_up</span>
+        </button>
+      </div>
+      <section class="quiz-question-card" id="quiz-question-card">
         <div class="quiz-term" id="quiz-term">—</div>
-        <button class="quiz-listen" id="quiz-listen" hidden>🔊 Άκουσε</button>
-        <div><span class="quiz-category" id="quiz-category">—</span></div>
+        <span class="quiz-category" id="quiz-category">—</span>
+      </section>
+      <section class="quiz-choices" id="quiz-choices" aria-label="Επιλογές απάντησης"></section>
+      <section class="quiz-listen-panel" id="quiz-listen-panel" hidden aria-label="Άσκηση ακρόασης">
+        <div class="quiz-listen-tag">
+          <span class="material-symbols-outlined">hearing</span>
+          <span>Άσκηση Ακρόασης Πεδίου</span>
+        </div>
+        <div class="listen-audio-card" id="listen-audio-card">
+          <div class="listen-audio-head">
+            <div class="listen-audio-source">
+              <span class="material-symbols-outlined">record_voice_over</span>
+              <span id="listen-audio-lang">Προφορά</span>
+            </div>
+            <span class="listen-audio-badge">
+              <span class="material-symbols-outlined">offline_pin</span>
+              <span>HQ Audio</span>
+            </span>
+          </div>
+          <div class="listen-audio-body">
+            <div class="listen-waves" aria-hidden="true">
+              <div class="listen-wave-bar"></div>
+              <div class="listen-wave-bar"></div>
+              <div class="listen-wave-bar"></div>
+              <div class="listen-wave-bar"></div>
+              <div class="listen-wave-bar"></div>
+              <div class="listen-wave-bar"></div>
+              <div class="listen-wave-bar"></div>
+              <div class="listen-wave-bar"></div>
+            </div>
+            <button class="listen-play-btn" id="listen-play-btn" type="button" aria-label="Αναπαραγωγή ήχου">
+              <span class="material-symbols-outlined filled">play_arrow</span>
+            </button>
+            <span class="listen-play-hint">Πατήστε για επανάληψη ακρόασης</span>
+          </div>
+          <div class="listen-speed-row">
+            <span>Ταχύτητα φωνής:</span>
+            <div class="listen-speed-toggle" role="group" aria-label="Ταχύτητα αναπαραγωγής">
+              <button type="button" class="listen-speed-btn" data-rate="0.75">
+                <span class="material-symbols-outlined">speed</span>
+                <span>0.75x Αργή</span>
+              </button>
+              <button type="button" class="listen-speed-btn active" data-rate="1">
+                <span>1.0x Κανονική</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label class="listen-input-label" for="listen-input">Ελληνική Απόδοση / Μετάφραση</label>
+          <div class="listen-input-wrap">
+            <span class="listen-input-icon"><span class="material-symbols-outlined">keyboard</span></span>
+            <input id="listen-input" class="listen-input" type="text" autocomplete="off" spellcheck="false" placeholder="Πληκτρολογήστε τον όρο...">
+            <button class="listen-clear-btn" id="listen-clear-btn" type="button" aria-label="Καθαρισμός πεδίου" title="Καθαρισμός">
+              <span class="material-symbols-outlined">cancel</span>
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <div class="listen-chips-head">
+            <span class="listen-chips-label">Βοηθητικές λέξεις (tap-to-insert):</span>
+            <span class="listen-chips-brand">Πληκτρολόγιο i-talk</span>
+          </div>
+          <div class="listen-chips" id="listen-chips"></div>
+        </div>
+
+        <button class="listen-check-btn" id="listen-check-btn" type="button">
+          <span>Έλεγχος απάντησης</span>
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </button>
+      </section>
+    </main>
+    <aside class="quiz-feedback" id="quiz-feedback" aria-live="polite">
+      <div class="quiz-feedback-inner">
+        <div class="quiz-feedback-top">
+          <div class="quiz-feedback-icon" id="quiz-feedback-icon">
+            <span class="material-symbols-outlined filled">check_circle</span>
+          </div>
+          <div class="quiz-feedback-body">
+            <div class="quiz-feedback-title-row">
+              <h3 class="quiz-feedback-title" id="quiz-feedback-title">Σωστή απάντηση</h3>
+              <span class="quiz-feedback-badge" id="quiz-feedback-badge">+10 XP</span>
+            </div>
+            <div class="quiz-feedback-detail" id="quiz-feedback-text"></div>
+          </div>
+        </div>
+        <button class="quiz-next" id="quiz-next">
+          <span>Συνέχεια</span>
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </button>
       </div>
-      <div class="quiz-choices" id="quiz-choices"></div>
-      <div class="quiz-feedback" id="quiz-feedback">
-        <div class="quiz-feedback-text" id="quiz-feedback-text"></div>
-        <button class="quiz-next" id="quiz-next">Συνέχεια →</button>
-      </div>
-    </div>
+    </aside>
   </div>
 
   <div class="result-overlay" id="result-overlay">
@@ -1310,6 +2278,7 @@ const XP_PER_CORRECT = 10;
 const QUIZ_LENGTH = 10;
 
 const LANG_LABELS = { el: "Ελληνικά", en: "English", ar: "العربية", fa: "فارسی", fr: "Français" };
+const LANG_LABELS_EL = { el: "Ελληνικά", en: "Αγγλικά", ar: "Αραβικά", fa: "Περσικά (Φαρσί)", fr: "Γαλλικά" };
 const LANG_SHORT  = { el: "EL", en: "EN", ar: "AR", fa: "FA", fr: "FR" };
 const LANG_BCP47  = { el: "el-GR", en: "en-US", ar: "ar-SA", fa: "fa-IR", fr: "fr-FR" };
 const RTL_LANGS = new Set(["ar", "fa"]);
@@ -1319,9 +2288,11 @@ const state = {
   categories: null,
   skills: null,     // loaded from data/skills.json
   scenarios: null,  // loaded from data/scenarios.json
-  quiz: null,       // {questions: [...], currentIndex, correctCount, wrongCount}
-  currentSkillId: null,   // set when a skill node is picked
-  currentMode: "daily",   // "daily" | "skill" | "weak" | "bookmarks"
+  quiz: null,       // {questions: [...], currentIndex, correctCount, wrongCount, format}
+  currentSkillId: null,     // set when a skill node is picked
+  currentMode: "daily",     // "daily" | "skill" | "weak" | "bookmarks"
+  currentFormat: "choice",  // "choice" | "listening"
+  speechRate: 1.0,          // 0.75 or 1.0 for listening playback
   game: null        // loaded from localStorage
 };
 
@@ -1336,12 +2307,15 @@ function defaultGame() {
     hearts: MAX_HEARTS,
     heartRegenAt: null,
     lessonsCompleted: 0,
+    lessonsTodayDate: null,
+    lessonsTodayCount: 0,
     langPair: { source: "el", target: "ar" },
     skillProgress: {},  // {skillId: {completions, bestPct, lastPlayedIso}}
     profile: null,      // {nickname, motherTongue, workingLangs, facility, years, interests, onboardedAt}
     wrongTerms: {}      // {termId: wrongCount} — decrements on later correct answer
   };
 }
+const DAILY_GOAL = 3;
 const BOOKMARKS_KEY = "italk_bookmarks_v1"; // shared with index.html glossary
 function getGlossaryBookmarks() {
   try {
@@ -1436,14 +2410,27 @@ function renderHud() {
   if (state.game.hearts === 0) {
     warn.classList.add("show");
     startBtn.disabled = true;
-    startBtn.innerHTML = "<span>❤</span><span>Καμία ζωή διαθέσιμη</span>";
+    startBtn.innerHTML = '<span class="material-symbols-outlined filled">favorite</span><span>Καμία ζωή διαθέσιμη</span>';
     startCountdown();
   } else {
     warn.classList.remove("show");
     startBtn.disabled = false;
-    startBtn.innerHTML = "<span>▶</span><span>Ξεκίνα Μάθημα</span>";
+    startBtn.innerHTML = '<span class="material-symbols-outlined filled">play_arrow</span><span>Ξεκίνα Μάθημα</span>';
     stopCountdown();
   }
+  renderRewardCard();
+}
+
+function renderRewardCard() {
+  const card = document.getElementById("reward-card");
+  if (!card) return;
+  const today = todayISO();
+  const isToday = state.game.lessonsTodayDate === today;
+  const done = isToday ? Math.min(state.game.lessonsTodayCount, DAILY_GOAL) : 0;
+  const pct = Math.round((done / DAILY_GOAL) * 100);
+  document.getElementById("reward-count").textContent = done + "/" + DAILY_GOAL;
+  document.getElementById("reward-progress-bar").style.width = pct + "%";
+  card.classList.toggle("complete", done >= DAILY_GOAL);
 }
 
 let countdownTimer = null;
@@ -1516,6 +2503,7 @@ function generateQuestion(term, otherTerms, pair) {
     source,
     correct,
     choices,
+    category: term.category,
     categoryLabel: catObj ? catObj.el : term.category
   };
 }
@@ -1574,27 +2562,77 @@ function generateQuiz() {
       questions.push(q);
     }
   }
-  state.quiz = { questions, currentIndex: 0, correctCount: 0, wrongCount: 0, xpEarned: 0, heartsLostInQuiz: 0, skillId: state.currentSkillId };
+  state.quiz = { questions, currentIndex: 0, correctCount: 0, wrongCount: 0, xpEarned: 0, heartsLostInQuiz: 0, skillId: state.currentSkillId, format: state.currentFormat };
   return { eligibleCount: eligible.length, count: questions.length };
 }
 
 /* ---- Quiz UI ---- */
+const DOMAIN_ICONS = {
+  medical: "emergency",
+  legal: "gavel",
+  procedure: "assignment",
+  status: "verified_user",
+  reception: "meeting_room",
+  detention: "lock",
+  vulnerable: "favorite",
+  family: "family_restroom",
+  integration: "diversity_3",
+  communication: "record_voice_over",
+  documentation: "description",
+  return: "flight_takeoff"
+};
+const CHOICE_LETTERS = ["Α", "Β", "Γ", "Δ", "Ε", "ΣΤ"];
+
 function renderCurrentQuestion() {
   const q = state.quiz.questions[state.quiz.currentIndex];
   if (!q) return endQuiz();
 
-  const progressPct = (state.quiz.currentIndex / state.quiz.questions.length) * 100;
+  const total = state.quiz.questions.length;
+  const displayIdx = state.quiz.currentIndex + 1;
+  const progressPct = (state.quiz.currentIndex / total) * 100;
   document.getElementById("quiz-progress-bar").style.width = progressPct + "%";
-  document.getElementById("quiz-hearts-mini").textContent = "❤ " + state.game.hearts;
+  document.getElementById("quiz-progress-count").textContent =
+    "ΕΡΩΤΗΣΗ " + String(displayIdx).padStart(2, "0") + "/" + String(total).padStart(2, "0");
+  document.getElementById("quiz-progress-percent").textContent = Math.round(progressPct) + "%";
+  document.getElementById("quiz-hearts-val").textContent = state.game.hearts + "/" + MAX_HEARTS;
+  document.getElementById("quiz-streak-val").textContent = state.game.streak || 0;
 
+  // Language pair pill
+  document.getElementById("quiz-langpair").textContent =
+    (LANG_SHORT[q.sourceLang] || q.sourceLang.toUpperCase()) + " ⇄ " +
+    (LANG_SHORT[q.targetLang] || q.targetLang.toUpperCase());
+
+  // Domain badge
+  const badge = document.getElementById("quiz-domain-badge");
+  if (q.category && q.categoryLabel) {
+    badge.hidden = false;
+    badge.dataset.domain = q.category;
+    document.getElementById("quiz-domain-icon").textContent = DOMAIN_ICONS[q.category] || "label";
+    document.getElementById("quiz-domain-text").textContent = q.categoryLabel;
+  } else {
+    badge.hidden = true;
+  }
+
+  // Reset feedback + toggle panels by format
+  document.getElementById("quiz-feedback").className = "quiz-feedback";
+  const isListening = state.quiz.format === "listening";
+  document.getElementById("quiz-choices").hidden = isListening;
+  document.getElementById("quiz-listen-panel").hidden = !isListening;
+  document.getElementById("quiz-question-card").hidden = isListening;
+
+  if (isListening) return renderListeningQuestion(q);
+
+  const targetLabel = LANG_LABELS_EL[q.targetLang] || LANG_LABELS[q.targetLang];
   const instr = q.isScenario
-    ? (q.contextEl || "Ο υπάλληλος του σταθμού λέει:") + " μετάφρασε στα " + LANG_LABELS[q.targetLang]
-    : "Ποια είναι η μετάφραση στα " + LANG_LABELS[q.targetLang] + ";";
+    ? (q.contextEl || "Ο υπάλληλος του σταθμού λέει:") + " μετάφρασε στα " + targetLabel
+    : "Επιλέξτε τη σωστή μετάφραση στα " + targetLabel + ":";
   document.getElementById("quiz-instruction").textContent = instr;
   const termEl = document.getElementById("quiz-term");
   termEl.textContent = q.source;
   termEl.className = "quiz-term" + (RTL_LANGS.has(q.sourceLang) ? " rtl" : "");
-  document.getElementById("quiz-category").textContent = q.categoryLabel;
+  termEl.style.fontSize = "";
+  termEl.style.color = "";
+  document.getElementById("quiz-category").textContent = q.categoryLabel || "";
 
   // Speak button — play the source term
   const listenBtn = document.getElementById("quiz-listen");
@@ -1603,24 +2641,172 @@ function renderCurrentQuestion() {
 
   const choicesEl = document.getElementById("quiz-choices");
   choicesEl.innerHTML = "";
-  q.choices.forEach(choice => {
+  const isRTL = RTL_LANGS.has(q.targetLang);
+  q.choices.forEach((choice, i) => {
     const btn = document.createElement("button");
-    btn.className = "quiz-choice" + (RTL_LANGS.has(q.targetLang) ? " rtl" : "");
-    btn.textContent = choice;
+    btn.className = "quiz-choice" + (isRTL ? " rtl" : "");
+    btn.type = "button";
+    btn.dataset.choice = choice;
+    const label = document.createElement("span");
+    label.className = "quiz-choice-label";
+    label.textContent = CHOICE_LETTERS[i] || String(i + 1);
+    const text = document.createElement("span");
+    text.className = "quiz-choice-text";
+    text.textContent = choice;
+    if (isRTL) {
+      text.setAttribute("dir", "rtl");
+      text.setAttribute("lang", q.targetLang);
+    }
+    btn.appendChild(label);
+    btn.appendChild(text);
     btn.addEventListener("click", () => handleAnswer(btn, choice, q));
     choicesEl.appendChild(btn);
   });
-
-  document.getElementById("quiz-feedback").className = "quiz-feedback";
 }
 
-function speakText(text, lang) {
+function speakText(text, lang, opts) {
   if (!window.speechSynthesis) return;
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text);
   u.lang = LANG_BCP47[lang] || "en-US";
-  u.rate = 0.85;
+  u.rate = (opts && typeof opts.rate === "number") ? opts.rate : 0.85;
+  if (opts && typeof opts.onend === "function") u.onend = opts.onend;
   speechSynthesis.speak(u);
+}
+
+/* ---- Listening exercise ---- */
+function normalizeAnswer(s) {
+  let out = String(s || "").toLowerCase().normalize("NFD");
+  try { out = out.replace(/\p{M}/gu, ""); }         // strip combining diacritics (modern engines)
+  catch (e) { out = out.replace(/[̀-ͯ]/g, ""); } // legacy fallback
+  return out
+    .replace(/[·.,!?;:()"«»'‘’“”]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function buildChipPool(q) {
+  const words = String(q.source || "").split(/\s+/).filter(w => w.length > 1);
+  const targetLang = q.sourceLang; // for listening, we type in q.sourceLang
+  const pool = new Set(words);
+  // Add distractor words from other questions with same lang
+  for (const other of state.quiz.questions) {
+    if (other === q) continue;
+    const otherText = other.source || "";
+    otherText.split(/\s+/).forEach(w => { if (w.length > 3) pool.add(w); });
+    if (pool.size >= words.length + 4) break;
+  }
+  const arr = Array.from(pool);
+  // Ensure required words are present, then shuffle
+  return arr.sort(() => Math.random() - 0.5).slice(0, Math.min(8, arr.length));
+}
+
+function renderListeningQuestion(q) {
+  const promptLabel = LANG_LABELS_EL[q.sourceLang] || LANG_LABELS[q.sourceLang];
+  document.getElementById("quiz-instruction").textContent =
+    "Ακούστε τον όρο και πληκτρολογήστε τη μετάφραση στα " + promptLabel + ":";
+  document.getElementById("quiz-listen").hidden = true; // hide the small header TTS
+
+  document.getElementById("listen-audio-lang").textContent =
+    LANG_LABELS_EL[q.targetLang] + " προφορά";
+
+  const input = document.getElementById("listen-input");
+  input.value = "";
+  input.disabled = false;
+  input.focus();
+  const checkBtn = document.getElementById("listen-check-btn");
+  checkBtn.disabled = false;
+  checkBtn.innerHTML = '<span>Έλεγχος απάντησης</span><span class="material-symbols-outlined">arrow_forward</span>';
+  checkBtn.hidden = false;
+  const card = document.getElementById("listen-audio-card");
+  card.classList.remove("playing");
+
+  // Build helper chips (source language words + distractors)
+  const chipsEl = document.getElementById("listen-chips");
+  chipsEl.innerHTML = "";
+  buildChipPool(q).forEach(w => {
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "listen-chip";
+    chip.textContent = w;
+    chip.addEventListener("click", () => {
+      const cur = input.value.trim();
+      input.value = (cur ? cur + " " : "") + w;
+      chip.classList.add("used");
+      input.focus();
+    });
+    chipsEl.appendChild(chip);
+  });
+
+  // Auto-play once when question opens
+  playListeningAudio(q);
+}
+
+function playListeningAudio(q) {
+  const card = document.getElementById("listen-audio-card");
+  const playBtn = document.getElementById("listen-play-btn");
+  const icon = playBtn.querySelector(".material-symbols-outlined");
+  card.classList.add("playing");
+  icon.textContent = "pause";
+  speakText(q.correct, q.targetLang, {
+    rate: state.speechRate,
+    onend: () => {
+      card.classList.remove("playing");
+      icon.textContent = "replay";
+    }
+  });
+}
+
+function checkListeningAnswer() {
+  const q = state.quiz.questions[state.quiz.currentIndex];
+  if (!q) return;
+  const input = document.getElementById("listen-input");
+  const answer = input.value;
+  if (!normalizeAnswer(answer)) { input.focus(); return; }
+  input.disabled = true;
+  const checkBtn = document.getElementById("listen-check-btn");
+  checkBtn.hidden = true;
+
+  const feedback = document.getElementById("quiz-feedback");
+  const feedbackText = document.getElementById("quiz-feedback-text");
+  const feedbackTitle = document.getElementById("quiz-feedback-title");
+  const feedbackBadge = document.getElementById("quiz-feedback-badge");
+  const feedbackIcon = document.getElementById("quiz-feedback-icon").querySelector(".material-symbols-outlined");
+
+  const isCorrect = normalizeAnswer(answer) === normalizeAnswer(q.source);
+  if (isCorrect) {
+    state.quiz.correctCount++;
+    state.quiz.xpEarned += XP_PER_CORRECT;
+    feedback.classList.add("show", "correct");
+    feedbackTitle.textContent = "Εξαιρετικά! Σωστή απάντηση";
+    feedbackBadge.textContent = "+" + XP_PER_CORRECT + " XP";
+    feedbackIcon.textContent = "check_circle";
+    feedbackText.innerHTML = "<strong>" + escapeHtml(q.source) + "</strong>" +
+      (q.categoryLabel ? " • " + escapeHtml(q.categoryLabel) : "");
+    if (q.termId && state.game.wrongTerms[q.termId]) {
+      state.game.wrongTerms[q.termId]--;
+      if (state.game.wrongTerms[q.termId] <= 0) delete state.game.wrongTerms[q.termId];
+    }
+  } else {
+    state.quiz.wrongCount++;
+    state.quiz.heartsLostInQuiz++;
+    state.game.hearts = Math.max(0, state.game.hearts - 1);
+    if (state.game.hearts < MAX_HEARTS && !state.game.heartRegenAt) {
+      state.game.heartRegenAt = Date.now() + REGEN_MINUTES * 60 * 1000;
+    }
+    feedback.classList.add("show", "wrong");
+    feedbackTitle.textContent = "Λάθος απάντηση";
+    feedbackBadge.textContent = "-1 Ζωή";
+    feedbackIcon.textContent = "cancel";
+    feedbackText.innerHTML =
+      'Η απάντησή σου: <em>' + escapeHtml(answer.trim()) + '</em><br>' +
+      'Σωστή απόδοση: <strong>' + escapeHtml(q.source) + '</strong>';
+    if (q.termId) {
+      state.game.wrongTerms[q.termId] = Math.min(5, (state.game.wrongTerms[q.termId] || 0) + 1);
+    }
+  }
+  document.getElementById("quiz-hearts-val").textContent = state.game.hearts + "/" + MAX_HEARTS;
+  saveGame();
 }
 
 function handleAnswer(btnEl, choice, q) {
@@ -1628,24 +2814,33 @@ function handleAnswer(btnEl, choice, q) {
   Array.from(choicesEl.children).forEach(b => b.disabled = true);
   const feedback = document.getElementById("quiz-feedback");
   const feedbackText = document.getElementById("quiz-feedback-text");
+  const feedbackTitle = document.getElementById("quiz-feedback-title");
+  const feedbackBadge = document.getElementById("quiz-feedback-badge");
+  const feedbackIcon = document.getElementById("quiz-feedback-icon").querySelector(".material-symbols-outlined");
+  const isRTL = RTL_LANGS.has(q.targetLang);
+  const rtlAttrs = isRTL ? ' dir="rtl" lang="' + q.targetLang + '"' : '';
+  const correctFmt = isRTL
+    ? '<span class="arabic-inline"' + rtlAttrs + '>' + escapeHtml(q.correct) + '</span>'
+    : '<strong>' + escapeHtml(q.correct) + '</strong>';
   const isCorrect = choice === q.correct;
   if (isCorrect) {
     btnEl.classList.add("correct");
     state.quiz.correctCount++;
     state.quiz.xpEarned += XP_PER_CORRECT;
     feedback.classList.add("show", "correct");
-    feedbackText.textContent = "✓ Σωστά! +" + XP_PER_CORRECT + " XP";
+    feedbackTitle.textContent = "Εξαιρετικά! Σωστή απάντηση";
+    feedbackBadge.textContent = "+" + XP_PER_CORRECT + " XP";
+    feedbackIcon.textContent = "check_circle";
+    feedbackText.innerHTML = correctFmt + (q.categoryLabel ? ' • ' + escapeHtml(q.categoryLabel) : '');
     speakText(q.correct, q.targetLang);
-    // If this was a "weak" term, decrement its wrong count (spaced-repetition-lite)
     if (q.termId && state.game.wrongTerms[q.termId]) {
       state.game.wrongTerms[q.termId]--;
       if (state.game.wrongTerms[q.termId] <= 0) delete state.game.wrongTerms[q.termId];
     }
   } else {
     btnEl.classList.add("wrong");
-    // Also highlight correct answer
     Array.from(choicesEl.children).forEach(b => {
-      if (b.textContent === q.correct) b.classList.add("correct");
+      if (b.dataset.choice === q.correct) b.classList.add("correct");
     });
     state.quiz.wrongCount++;
     state.quiz.heartsLostInQuiz++;
@@ -1654,18 +2849,22 @@ function handleAnswer(btnEl, choice, q) {
       state.game.heartRegenAt = Date.now() + REGEN_MINUTES * 60 * 1000;
     }
     feedback.classList.add("show", "wrong");
-    feedbackText.innerHTML = "✗ Σωστή απάντηση: <strong>" + q.correct + "</strong>";
-    // Mark this term as weak (max cap 5 to avoid runaway)
+    feedbackTitle.textContent = "Λάθος απάντηση";
+    feedbackBadge.textContent = "-1 Ζωή";
+    feedbackIcon.textContent = "cancel";
+    feedbackText.innerHTML = 'Σωστή απόδοση: ' + correctFmt;
     if (q.termId) {
       state.game.wrongTerms[q.termId] = Math.min(5, (state.game.wrongTerms[q.termId] || 0) + 1);
     }
   }
-  document.getElementById("quiz-hearts-mini").textContent = "❤ " + state.game.hearts;
+  document.getElementById("quiz-hearts-val").textContent = state.game.hearts + "/" + MAX_HEARTS;
   saveGame();
-  // Scroll feedback into view so the "Συνέχεια" button is immediately visible
-  requestAnimationFrame(() => {
-    feedback.scrollIntoView({ behavior: "smooth", block: "end" });
-  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[c]));
 }
 
 function nextQuestion() {
@@ -1686,6 +2885,7 @@ function startQuiz(opts) {
   if (state.game.hearts === 0) return;
   state.currentMode = opts.mode || (opts.skillId ? "skill" : "daily");
   state.currentSkillId = opts.skillId || null;
+  state.currentFormat = opts.format || state.currentFormat || "choice";
   const info = generateQuiz();
   const pair = state.game.langPair;
   if (!state.quiz || !state.quiz.questions.length) {
@@ -1707,10 +2907,10 @@ function startQuiz(opts) {
   renderCurrentQuestion();
 }
 
-function startSkillQuiz(skillId) { startQuiz({ mode: "skill", skillId }); }
-function startDailyQuiz() { startQuiz({ mode: "daily" }); }
-function startWeakQuiz() { startQuiz({ mode: "weak" }); }
-function startBookmarksQuiz() { startQuiz({ mode: "bookmarks" }); }
+function startSkillQuiz(skillId) { startQuiz({ mode: "skill", skillId, format: state.currentFormat }); }
+function startDailyQuiz() { startQuiz({ mode: "daily", format: state.currentFormat }); }
+function startWeakQuiz() { startQuiz({ mode: "weak", format: state.currentFormat }); }
+function startBookmarksQuiz() { startQuiz({ mode: "bookmarks", format: state.currentFormat }); }
 
 function endQuiz(ranOutOfHearts) {
   document.getElementById("quiz-overlay").classList.remove("show");
@@ -1719,6 +2919,12 @@ function endQuiz(ranOutOfHearts) {
   state.game.xp += state.quiz.xpEarned;
   if (state.quiz.correctCount > 0) {
     state.game.lessonsCompleted++;
+    const today = todayISO();
+    if (state.game.lessonsTodayDate !== today) {
+      state.game.lessonsTodayDate = today;
+      state.game.lessonsTodayCount = 0;
+    }
+    state.game.lessonsTodayCount++;
     updateStreakOnPlay();
     // Skill progress
     if (state.quiz.skillId) {
@@ -1983,6 +3189,17 @@ function crownStars(completions) {
   return "★".repeat(filled) + '<span class="empty">' + "★".repeat(5 - filled) + '</span>';
 }
 
+const SKILL_ICONS = {
+  arrival: "flight_land",
+  medical: "medical_services",
+  registration: "assignment_ind",
+  vulnerability: "shield_person",
+  pss: "psychology",
+  interview: "record_voice_over",
+  legal: "gavel",
+  outcome: "flight_takeoff"
+};
+
 function renderSkillTree() {
   const container = document.getElementById("skill-tree");
   if (!container || !state.skills) return;
@@ -2005,10 +3222,11 @@ function renderSkillTree() {
       return sum + (p ? Math.min(p.completions, 5) : 0);
     }, 0);
     const maxCompl = domSkills.length * 5;
+    const orderPad = String(dom.order).padStart(2, "0");
     header.innerHTML =
       '<span class="dom-emoji">' + dom.icon + '</span>' +
       '<div class="dom-titles">' +
-      '<span class="dom-lbl">ΤΟΜΕΑΣ 0' + dom.order + ' · ' + dom.title_en + '</span>' +
+      '<span class="dom-lbl">ΤΟΜΕΑΣ ' + orderPad + ' · ' + dom.title_en + '</span>' +
       '<div class="dom-title">' + dom.title_el + '</div>' +
       '<div class="dom-sub">' + dom.subtitle_el + '</div>' +
       '</div>' +
@@ -2017,6 +3235,7 @@ function renderSkillTree() {
 
     const grid = document.createElement("div");
     grid.className = "skill-grid";
+    const iconName = SKILL_ICONS[dom.id] || "school";
     domSkills.forEach(sk => {
       const prog = state.game.skillProgress[sk.id] || { completions: 0, bestPct: 0 };
       const isMastered = prog.completions >= 5;
@@ -2025,13 +3244,20 @@ function renderSkillTree() {
       card.className = "skill-card" + (isMastered ? " mastered" : "");
       card.dataset.dom = dom.color;
       card.innerHTML =
-        '<div class="skill-title">' + sk.title_el + '</div>' +
-        '<div class="skill-desc">' + sk.description_el + '</div>' +
-        '<div class="skill-meta">' +
-          '<span class="skill-stars">' + crownStars(prog.completions) + '</span>' +
-          '<span class="skill-completions' + (isMastered ? ' mastered' : '') + '">' +
-            (isMastered ? '★ MASTERED' : prog.completions + '/5') +
+        '<div class="skill-card-icon">' +
+          '<span class="material-symbols-outlined' + (isMastered ? ' filled' : '') + '">' +
+            (isMastered ? 'workspace_premium' : iconName) +
           '</span>' +
+        '</div>' +
+        '<div class="skill-card-body">' +
+          '<div class="skill-title">' + sk.title_el + '</div>' +
+          '<div class="skill-desc">' + sk.description_el + '</div>' +
+          '<div class="skill-meta">' +
+            '<span class="skill-stars">' + crownStars(prog.completions) + '</span>' +
+            '<span class="skill-completions' + (isMastered ? ' mastered' : '') + '">' +
+              (isMastered ? '★ MASTERED' : prog.completions + '/5') +
+            '</span>' +
+          '</div>' +
         '</div>';
       card.addEventListener("click", () => startSkillQuiz(sk.id));
       grid.appendChild(card);
@@ -2124,6 +3350,40 @@ async function init() {
   document.getElementById("start-btn").addEventListener("click", startDailyQuiz);
   document.getElementById("quiz-close").addEventListener("click", closeQuiz);
   document.getElementById("quiz-next").addEventListener("click", nextQuestion);
+
+  // Listening exercise wiring
+  document.getElementById("listen-play-btn").addEventListener("click", () => {
+    const q = state.quiz && state.quiz.questions[state.quiz.currentIndex];
+    if (q) playListeningAudio(q);
+  });
+  document.getElementById("listen-clear-btn").addEventListener("click", () => {
+    const input = document.getElementById("listen-input");
+    input.value = "";
+    document.querySelectorAll("#listen-chips .listen-chip.used").forEach(c => c.classList.remove("used"));
+    input.focus();
+  });
+  document.getElementById("listen-check-btn").addEventListener("click", checkListeningAnswer);
+  document.getElementById("listen-input").addEventListener("keydown", (e) => {
+    if (e.key === "Enter") { e.preventDefault(); checkListeningAnswer(); }
+  });
+  document.querySelectorAll(".listen-speed-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".listen-speed-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      state.speechRate = parseFloat(btn.dataset.rate) || 1.0;
+    });
+  });
+
+  // Mode toggle (Multiple Choice / Ακρόαση)
+  document.querySelectorAll(".mode-toggle-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const format = btn.dataset.format;
+      state.currentFormat = format;
+      document.querySelectorAll(".mode-toggle-btn").forEach(b => {
+        b.classList.toggle("active", b.dataset.format === format);
+      });
+    });
+  });
   document.getElementById("result-again").addEventListener("click", () => {
     document.getElementById("result-overlay").classList.remove("show");
     document.body.classList.remove("quiz-open");
