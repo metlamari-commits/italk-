@@ -490,55 +490,6 @@
     }
     .mode-toggle-btn:not(.active):hover { color: #fff; }
 
-    /* Daily reward chest card (Καθημερινό Σεντούκι) */
-    .reward-card {
-      background: var(--m3-tertiary-fixed);
-      color: var(--m3-on-tertiary-fixed-variant);
-      border: 1px solid var(--m3-tertiary-fixed);
-      border-radius: 12px;
-      padding: 12px 14px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .reward-icon {
-      background: var(--m3-surface-lowest);
-      border: 1px solid var(--m3-outline-variant);
-      border-radius: 10px;
-      padding: 6px 8px;
-      font-size: 22px;
-      line-height: 1;
-      flex-shrink: 0;
-    }
-    .reward-body { flex: 1; min-width: 0; }
-    .reward-title {
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--m3-tertiary);
-      line-height: 1.2;
-    }
-    .reward-sub {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 11px;
-      color: var(--m3-on-tertiary-fixed-variant);
-      margin-top: 2px;
-    }
-    .reward-progress {
-      width: 60px;
-      height: 8px;
-      background: var(--m3-surface-lowest);
-      border: 1px solid var(--m3-outline-variant);
-      border-radius: 999px;
-      overflow: hidden;
-      flex-shrink: 0;
-    }
-    .reward-progress-bar {
-      height: 100%;
-      background: var(--m3-tertiary);
-      border-radius: 999px;
-      transition: width 0.3s;
-    }
-
     /* Info box */
     .info-card {
       background: var(--m3-surface-container-low);
@@ -2031,14 +1982,6 @@
       </div>
     </section>
 
-    <aside class="reward-card" id="reward-card">
-      <div class="reward-icon">🎁</div>
-      <div class="reward-body">
-        <div class="reward-title">Καθημερινό Σεντούκι</div>
-        <div class="reward-sub"><span id="reward-count">0/3</span> μαθήματα σήμερα (+50 XP)</div>
-      </div>
-      <div class="reward-progress"><div class="reward-progress-bar" id="reward-progress-bar" style="width:0%"></div></div>
-    </aside>
 
     <div class="hearts-warning" id="hearts-warning">
       <strong>Τελείωσαν οι ζωές σου.</strong> Επόμενη καρδιά σε <span class="countdown" id="regen-countdown">--:--</span>.
@@ -2359,15 +2302,12 @@ function defaultGame() {
     hearts: MAX_HEARTS,
     heartRegenAt: null,
     lessonsCompleted: 0,
-    lessonsTodayDate: null,
-    lessonsTodayCount: 0,
     langPair: { source: "el", target: "ar" },
     skillProgress: {},  // {skillId: {completions, bestPct, lastPlayedIso}}
     profile: null,      // {nickname, motherTongue, workingLangs, facility, years, interests, onboardedAt}
     wrongTerms: {}      // {termId: wrongCount} — decrements on later correct answer
   };
 }
-const DAILY_GOAL = 3;
 const BOOKMARKS_KEY = "italk_bookmarks_v1"; // shared with index.html glossary
 function getGlossaryBookmarks() {
   try {
@@ -2470,19 +2410,6 @@ function renderHud() {
     startBtn.innerHTML = '<span class="material-symbols-outlined filled">play_arrow</span><span>Ξεκίνα Μάθημα</span>';
     stopCountdown();
   }
-  renderRewardCard();
-}
-
-function renderRewardCard() {
-  const card = document.getElementById("reward-card");
-  if (!card) return;
-  const today = todayISO();
-  const isToday = state.game.lessonsTodayDate === today;
-  const done = isToday ? Math.min(state.game.lessonsTodayCount, DAILY_GOAL) : 0;
-  const pct = Math.round((done / DAILY_GOAL) * 100);
-  document.getElementById("reward-count").textContent = done + "/" + DAILY_GOAL;
-  document.getElementById("reward-progress-bar").style.width = pct + "%";
-  card.classList.toggle("complete", done >= DAILY_GOAL);
 }
 
 let countdownTimer = null;
@@ -2966,12 +2893,6 @@ function endQuiz(ranOutOfHearts) {
   state.game.xp += state.quiz.xpEarned;
   if (state.quiz.correctCount > 0) {
     state.game.lessonsCompleted++;
-    const today = todayISO();
-    if (state.game.lessonsTodayDate !== today) {
-      state.game.lessonsTodayDate = today;
-      state.game.lessonsTodayCount = 0;
-    }
-    state.game.lessonsTodayCount++;
     updateStreakOnPlay();
     // Skill progress
     if (state.quiz.skillId) {
