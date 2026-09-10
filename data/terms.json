@@ -5331,14 +5331,15 @@
       "translations": {
         "el": "εισαγγελέας",
         "en": "prosecutor",
-        "ar": "النيابة العامة",
+        "ar": "المدعي العام (وكيل النيابة)",
         "fa": "دادستان",
         "fr": "procureur"
       },
       "definition_el": "Δικαστικός λειτουργός που είναι υπεύθυνος για την άσκηση ποινικής διώξεως και την προστασία του δημοσίου συμφέροντος.",
       "definition_en": "A judicial official responsible for conducting criminal prosecutions and representing the public interest in legal proceedings.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κώδικας Ποινικής Δικονομίας — https://www.kodiko.gr",
+        "IATE / UNHCR Master Glossary — https://iate.europa.eu"
       ]
     },
     {
@@ -5380,13 +5381,14 @@
         "el": "μάρτυρας κατηγορίας",
         "en": "prosecution witness",
         "ar": "شاهد الاتهام",
-        "fa": "شاهد تعقیب کننده",
+        "fa": "شاهد دادستان (شاهد اتهام)",
         "fr": "témoin à charge"
       },
       "definition_el": "Πρόσωπο που καλείται να μαρτυρήσει υπέρ της κατηγορίας σε διαδικασία δίκης ή ακροάματος για θέματα ασύλου.",
       "definition_en": "A person called to testify on behalf of the prosecution in asylum hearing or legal proceedings.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κώδικας Ποινικής Δικονομίας — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu"
       ]
     },
     {
@@ -5406,19 +5408,20 @@
       ]
     },
     {
-      "id": "sworn",
+      "id": "juror",
       "category": "legal",
       "translations": {
         "el": "ένορκος",
-        "en": "sworn",
-        "ar": "محلوف",
-        "fa": "سوگند خورده",
-        "fr": "assermenté"
+        "en": "juror",
+        "ar": "محلف",
+        "fa": "PENDING_NATIVE_REVIEW",
+        "fr": "juré"
       },
-      "definition_el": "Επίθετο που περιγράφει πρόσωπο ή έγγραφο που έχει δώσει ή ισχύει κάτω από όρκο ή δεσμευτική δήλωση.",
-      "definition_en": "An adjective describing a person or document that has taken or is binding under oath or a solemn declaration.",
+      "definition_el": "Λαϊκός δικαστής (μη επαγγελματίας) που μετέχει στη σύνθεση του Μικτού Ορκωτού Δικαστηρίου για την εκδίκαση κακουργημάτων (Κώδικας Ποινικής Δικονομίας).",
+      "definition_en": "Lay judge (non-professional) who serves as a member of the Mixed Jury Court for the trial of felonies (Greek Code of Criminal Procedure).",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κώδικας Ποινικής Δικονομίας — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu (search: ένορκος)"
       ]
     },
     {
@@ -5454,19 +5457,20 @@
       ]
     },
     {
-      "id": "defendant-2",
+      "id": "plaintiff",
       "category": "legal",
       "translations": {
         "el": "ενάγων",
-        "en": "defendant",
-        "ar": "被告",
-        "fa": "متهم",
-        "fr": "défendeur"
+        "en": "plaintiff (claimant)",
+        "ar": "المدعي",
+        "fa": "خواهان",
+        "fr": "demandeur"
       },
-      "definition_el": "Το πρόσωπο που κατηγορείται ή διώκεται δικαστικά σε μια υπόθεση.",
-      "definition_en": "A person who is accused or prosecuted in a legal case.",
+      "definition_el": "Ο διάδικος που υποβάλλει την αγωγή, δηλαδή αυτός που κινεί την πολιτική δίκη ζητώντας δικαστική προστασία (Κώδικας Πολιτικής Δικονομίας).",
+      "definition_en": "The party who files the lawsuit — the one who initiates civil proceedings seeking judicial protection (Greek Code of Civil Procedure).",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κώδικας Πολιτικής Δικονομίας — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu (search: ενάγων)"
       ]
     },
     {
@@ -5588,13 +5592,14 @@
         "el": "Άρειος Πάγος",
         "en": "Court of Cassation",
         "ar": "محكمة النقض",
-        "fa": "دیوان عدالت",
+        "fa": "دیوان عالی کشور",
         "fr": "Cour de Cassation"
       },
       "definition_el": "Το ανώτατο δικαστήριο της Ελλάδας που ασκεί έλεγχο νομιμότητας και έχει αρμοδιότητα για αναιρέσεις σε υποθέσεις ασύλου και διαμονής.",
       "definition_en": "Greece's highest court of law that exercises control of legality and has jurisdiction over cassation appeals in asylum and residence cases.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Άρειος Πάγος — https://www.areiospagos.gr",
+        "IATE — https://iate.europa.eu"
       ]
     },
     {
@@ -5678,51 +5683,54 @@
       ]
     },
     {
-      "id": "application-for-annulment",
+      "id": "cassation-appeal",
       "category": "legal",
       "translations": {
         "el": "αίτηση αναίρεσης",
-        "en": "application for annulment",
-        "ar": "طلب الإلغاء",
-        "fa": "درخواست فسخ",
-        "fr": "demande d'annulation"
+        "en": "application for cassation (cassation appeal)",
+        "ar": "طلب النقض (الطعن بالنقض)",
+        "fa": "درخواست فرجام‌خواهی",
+        "fr": "pourvoi en cassation"
       },
-      "definition_el": "Αίτηση που υποβάλλεται για την ακύρωση ή το ακυρωτικό δικαίωμα ενός διοικητικού αποφάσματος ή δικαστικής απόφασης σε θέματα ασύλου.",
-      "definition_en": "An application filed to seek the annulment or reversal of an administrative or judicial decision in asylum matters.",
+      "definition_el": "Έκτακτο ένδικο μέσο που ασκείται ενώπιον του Αρείου Πάγου για νομικά σφάλματα σε τελεσίδικες αποφάσεις (άρθρα 552 επ. Κώδικα Πολιτικής Δικονομίας).",
+      "definition_en": "Extraordinary appeal to the Court of Cassation (Άρειος Πάγος) on points of law against final judgments (arts. 552 ff. Greek Code of Civil Procedure).",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κώδικας Πολιτικής Δικονομίας, άρθρα 552 επ. — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu (search: αίτηση αναίρεσης)"
       ]
     },
     {
-      "id": "suspension",
+      "id": "opposition-to-enforcement",
       "category": "legal",
       "translations": {
         "el": "ανακοπή",
-        "en": "suspension",
-        "ar": "إيقاف",
-        "fa": "تعلیق",
-        "fr": "suspension"
+        "en": "opposition (to enforcement)",
+        "ar": "اعتراض على التنفيذ",
+        "fa": "اعتراض به اجرا",
+        "fr": "opposition"
       },
-      "definition_el": "Η προσωρινή διακοπή ή αναστολή μιας διαδικασίας, απόφασης ή δικαιώματος.",
-      "definition_en": "The temporary interruption or halting of a procedure, decision, or right.",
+      "definition_el": "Το ειδικό δικονομικό ένδικο βοήθημα με το οποίο ο οφειλέτης προσβάλλει πράξη αναγκαστικής εκτέλεσης ή διαταγή πληρωμής (άρθρα 632-638 Κώδικα Πολιτικής Δικονομίας).",
+      "definition_en": "The specific procedural remedy by which a debtor challenges an enforcement act or payment order (arts. 632–638 Greek Code of Civil Procedure).",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κώδικας Πολιτικής Δικονομίας, άρθρα 632-638 — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu (search: ανακοπή)"
       ]
     },
     {
-      "id": "appeal-2",
+      "id": "administrative-appeal",
       "category": "legal",
       "translations": {
         "el": "ενδικοφανής προσφυγή",
-        "en": "appeal",
-        "ar": "الاستئناف",
-        "fa": "تجدیدنظرخواهی",
-        "fr": "appel"
+        "en": "administrative appeal (quasi-judicial remedy)",
+        "ar": "الطعن الإداري (التظلم الإداري)",
+        "fa": "PENDING_NATIVE_REVIEW",
+        "fr": "recours administratif (recours hiérarchique)"
       },
-      "definition_el": "Νομική διαδικασία με την οποία ένας αιτών ασύλου ή πρόσφυγας ζητά την επανεξέταση μιας απόφασης της διοικητικής αρχής από ανώτερο δικαστήριο.",
-      "definition_en": "A legal procedure through which an asylum seeker or refugee requests the review of an administrative decision by a higher court.",
+      "definition_el": "Διοικητικό ένδικο βοήθημα που ασκείται ενώπιον ανώτερης διοικητικής αρχής προτού ο ενδιαφερόμενος προσφύγει στη δικαιοσύνη (άρθρο 25 Ν. 2690/1999).",
+      "definition_en": "Administrative remedy filed before a superior administrative body prior to judicial review (art. 25 Law 2690/1999).",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 2690/1999, άρθρο 25 — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu (search: ενδικοφανής προσφυγή)"
       ]
     },
     {
@@ -5742,19 +5750,20 @@
       ]
     },
     {
-      "id": "safety-measures",
+      "id": "interim-measures",
       "category": "legal",
       "translations": {
         "el": "ασφαλιστικά μέτρα",
-        "en": "safety measures",
-        "ar": "تدابير الحماية",
-        "fa": "تدابیر حفاظتی",
-        "fr": "mesures de protection"
+        "en": "interim measures (provisional measures)",
+        "ar": "تدابير مؤقتة (تدابير تحفظية)",
+        "fa": "تدابیر موقت (تدابیر تأمینی)",
+        "fr": "mesures provisoires"
       },
-      "definition_el": "Διοικητικά ή νομικά μέτρα που λαμβάνονται για την προστασία και ασφάλεια ευάλωτων ατόμων κατά τη διαδικασία ασύλου.",
-      "definition_en": "Administrative or legal measures taken to protect and ensure the safety of vulnerable persons during asylum procedures.",
+      "definition_el": "Επείγον δικαστικό μέτρο προσωρινής δικαστικής προστασίας που διατάσσεται από το δικαστήριο όταν συντρέχει επικείμενος κίνδυνος ή κατεπείγουσα περίπτωση (άρθρα 682 επ. Κώδικα Πολιτικής Δικονομίας).",
+      "definition_en": "Urgent judicial measure of provisional protection ordered by the court in cases of imminent danger or urgency (arts. 682 ff. Greek Code of Civil Procedure).",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κώδικας Πολιτικής Δικονομίας, άρθρα 682 επ. — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu (search: ασφαλιστικά μέτρα)"
       ]
     },
     {
@@ -5780,13 +5789,14 @@
         "el": "πληρεξούσιο",
         "en": "power of attorney",
         "ar": "وكالة",
-        "fa": "دفترچه اختیارات",
+        "fa": "وکالتنامه",
         "fr": "procuration"
       },
       "definition_el": "Νομικό έγγραφο με το οποίο ένα πρόσωπο εξουσιοδοτεί άλλο πρόσωπο να ενεργεί εκ περιτροπής του σε νομικά ζητήματα.",
       "definition_en": "A legal document by which a person authorizes another person to act on their behalf in legal matters.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Αστικός Κώδικας, άρθρα 216 επ. — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu"
       ]
     },
     {
@@ -5806,19 +5816,20 @@
       ]
     },
     {
-      "id": "declaration-under-responsibility",
+      "id": "solemn-declaration",
       "category": "legal",
       "translations": {
         "el": "υπεύθυνη δήλωση",
-        "en": "declaration under responsibility",
-        "ar": "إقرار تحت المسؤولية",
-        "fa": "اظهارنامه تحت مسؤولیت",
-        "fr": "déclaration sous responsabilité"
+        "en": "solemn declaration (declaration in lieu of oath)",
+        "ar": "إقرار رسمي (على المسؤولية الشخصية)",
+        "fa": "PENDING_NATIVE_REVIEW",
+        "fr": "déclaration sur l'honneur"
       },
-      "definition_el": "Γραπτή δήλωση που υπογράφει ο αιτών καταφέρνοντας ότι οι πληροφορίες που παρέχει είναι αληθείς και αναλαμβάνει τις νομικές συνέπειες της ψευδούς κατάθεσης.",
-      "definition_en": "A written statement signed by an applicant affirming that the information provided is truthful and assuming legal responsibility for any false statements.",
+      "definition_el": "Έγγραφη δήλωση με την οποία ο υπογράφων δηλώνει γεγονότα υπό την προσωπική του ευθύνη, με ποινικές συνέπειες σε περίπτωση ψευδούς δήλωσης (άρθρο 8 Ν. 1599/1986).",
+      "definition_en": "A written declaration by which the signer states facts under personal responsibility, with criminal consequences for false statement (art. 8 Law 1599/1986).",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 1599/1986, άρθρο 8 — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu (search: υπεύθυνη δήλωση)"
       ]
     },
     {
@@ -5841,7 +5852,7 @@
       "id": "arrest-warrant",
       "category": "legal",
       "translations": {
-        "el": "εντολή σύλληψης",
+        "el": "ένταλμα σύλληψης",
         "en": "arrest warrant",
         "ar": "أمر اعتقال",
         "fa": "قرار بازداشت",
@@ -5850,14 +5861,15 @@
       "definition_el": "Δικαστικό έγγραφο που εκδίδεται από αρμόδια δικαστική αρχή και επιτρέπει τη σύλληψη ενός ατόμου για λόγους που σχετίζονται με ποινική διαδικασία.",
       "definition_en": "A judicial document issued by competent court authorities that authorizes the arrest of a person for reasons related to criminal proceedings.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κώδικας Ποινικής Δικονομίας, άρθρο 275 — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu"
       ]
     },
     {
       "id": "search-warrant",
       "category": "legal",
       "translations": {
-        "el": "εντολή έρευνας",
+        "el": "ένταλμα έρευνας",
         "en": "search warrant",
         "ar": "أمر بحث",
         "fa": "دستور جستجو",
@@ -5866,7 +5878,8 @@
       "definition_el": "Δικαστική εντολή που εξουσιοδοτεί τις αρχές να διεξάγουν έρευνα σε χώρο ή να κατάσχουν στοιχεία σχετικά με υπόθεση ασύλου ή νομικής διαδικασίας.",
       "definition_en": "A judicial order authorizing authorities to conduct a search or seize evidence relevant to an asylum case or legal proceeding.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κώδικας Ποινικής Δικονομίας — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu"
       ]
     },
     {
@@ -5923,14 +5936,15 @@
       "translations": {
         "el": "συμβολαιογραφικό έγγραφο",
         "en": "notarial document",
-        "ar": "وثيقة موثقة من محام عدل",
+        "ar": "وثيقة موثقة (من كاتب العدل / الموثق)",
         "fa": "سند دفتری",
         "fr": "acte notarié"
       },
       "definition_el": "Επίσημο έγγραφο που επικυρώνεται από συμβολαιογράφο και έχει νομική ισχύ για την απόδειξη γεγονότων και συμφωνιών.",
       "definition_en": "An official document authenticated by a notary public that has legal validity as evidence of facts and agreements.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κώδικας Συμβολαιογράφων — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu"
       ]
     },
     {
@@ -5953,7 +5967,7 @@
       "id": "employment-contract",
       "category": "legal",
       "translations": {
-        "el": "συμβόλαιο εργασίας",
+        "el": "σύμβαση εργασίας",
         "en": "employment contract",
         "ar": "عقد العمل",
         "fa": "قرارداد کار",
@@ -5962,7 +5976,8 @@
       "definition_el": "Γραπτή συμφωνία μεταξύ εργοδότη και εργαζομένου που καθορίζει τους όρους, τα δικαιώματα και τις υποχρεώσεις της εργασιακής σχέσης.",
       "definition_en": "A written agreement between an employer and employee that specifies the terms, rights, and obligations of the employment relationship.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Αστικός Κώδικας, άρθρα 648 επ. — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu"
       ]
     },
     {
@@ -6078,19 +6093,21 @@
       ]
     },
     {
-      "id": "evidence-of-innocence",
+      "id": "presumption-of-innocence",
       "category": "legal",
       "translations": {
         "el": "τεκμήριο αθωότητας",
-        "en": "evidence of innocence",
-        "ar": "دليل البراءة",
-        "fa": "شواهد بی‌گناهی",
-        "fr": "preuve d'innocence"
+        "en": "presumption of innocence",
+        "ar": "قرينة البراءة (افتراض البراءة)",
+        "fa": "اماره بی‌گناهی (فرض برائت)",
+        "fr": "présomption d'innocence"
       },
-      "definition_el": "Αποδεικτικό υλικό που επιδεικνύει ότι ένα άτομο δεν έχει διαπράξει ένα αδίκημα ή παράβαση του οποίου κατηγορείται.",
-      "definition_en": "Documentary evidence demonstrating that a person has not committed a crime or violation of which they are accused.",
+      "definition_el": "Θεμελιώδης εγγύηση δίκαιης δίκης: κάθε κατηγορούμενος τεκμαίρεται αθώος μέχρι να αποδειχθεί νόμιμα η ενοχή του (άρθρο 6 §2 ΕΣΔΑ, άρθρο 14 §2 ΔΣΑΠΔ, άρθρο 71 Ποινικού Κώδικα).",
+      "definition_en": "Fundamental fair-trial guarantee: every accused person is presumed innocent until proven guilty according to law (ECHR art. 6(2), ICCPR art. 14(2), Greek Penal Code art. 71).",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "ΕΣΔΑ, άρθρο 6 §2 — https://www.echr.coe.int/documents/convention_ell.pdf",
+        "ΔΣΑΠΔ, άρθρο 14 §2 — https://www.ohchr.org",
+        "IATE — https://iate.europa.eu (search: τεκμήριο αθωότητας)"
       ]
     },
     {
@@ -6132,13 +6149,14 @@
         "el": "δικαίωμα ακρόασης",
         "en": "right to be heard",
         "ar": "حق الاستماع إليه",
-        "fa": "حق شنیداری",
+        "fa": "حق استماع",
         "fr": "droit d'être entendu"
       },
       "definition_el": "Το δικαίωμα του αιτούντα άσυλο να παρουσιάσει την υπόθεσή του και να εκφράσει τις απόψεις του σε διαδικασίες που τον αφορούν.",
       "definition_en": "The right of an asylum applicant to present their case and express their views in proceedings that concern them.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 2690/1999, άρθρο 20 — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu"
       ]
     },
     {
@@ -6254,19 +6272,20 @@
       ]
     },
     {
-      "id": "legal-representation",
+      "id": "judicial-support-adult-guardianship",
       "category": "legal",
       "translations": {
         "el": "δικαστική συμπαράσταση",
-        "en": "legal representation",
-        "ar": "التمثيل القانوني",
-        "fa": "نمایندگی حقوقی",
-        "fr": "représentation juridique"
+        "en": "judicial support (guardianship of adults)",
+        "ar": "الوصاية القضائية على البالغين (الحماية القضائية)",
+        "fa": "PENDING_NATIVE_REVIEW",
+        "fr": "curatelle / tutelle des majeurs (mise sous protection judiciaire)"
       },
-      "definition_el": "Η παροχή νομικής υποστήριξης και αντιπροσώπευσης από δικηγόρο ή εξειδικευμένο νομικό σύμβουλο σε διαδικασίες ασύλου και μετανάστευσης.",
-      "definition_en": "The provision of legal support and representation by a lawyer or specialized legal advisor in asylum and migration proceedings.",
+      "definition_el": "Ο θεσμός δικαστικής προστασίας ενήλικα που δεν μπορεί να φροντίζει τις υποθέσεις του λόγω ψυχικής ή σωματικής διαταραχής (άρθρα 1666 επ. Αστικού Κώδικα). Ο δικαστής διορίζει δικαστικό συμπαραστάτη.",
+      "definition_en": "The institution of court-appointed protection for an adult unable to manage their affairs due to mental or physical condition (arts. 1666 ff. Greek Civil Code). The court appoints a judicial supporter.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Αστικός Κώδικας, άρθρα 1666 επ. — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu (search: δικαστική συμπαράσταση)"
       ]
     },
     {
@@ -6350,19 +6369,20 @@
       ]
     },
     {
-      "id": "harmonized-interpretation",
+      "id": "consistent-interpretation",
       "category": "legal",
       "translations": {
         "el": "εναρμονισμένη ερμηνεία",
-        "en": "harmonized interpretation",
-        "ar": "الترجمة المنسقة",
-        "fa": "ترجمه هماهنگ",
-        "fr": "interprétation harmonisée"
+        "en": "consistent interpretation (interpretation in conformity with EU law)",
+        "ar": "التفسير المتوافق (مع قانون الاتحاد الأوروبي)",
+        "fa": "تفسیر منطبق (بر حقوق اتحادیه اروپا)",
+        "fr": "interprétation conforme (au droit de l'Union)"
       },
-      "definition_el": "Η ερμηνεία που εφαρμόζεται με συνεπή και ενιαίο τρόπο σύμφωνα με κοινά πρότυπα και κατευθυντήριες γραμμές μεταξύ διαφόρων υπηρεσιών και δικαιοδοσιών.",
-      "definition_en": "Interpretation applied consistently and uniformly according to common standards and guidelines across different services and jurisdictions.",
+      "definition_el": "Δικαστική αρχή του δικαίου της ΕΕ (νομολογία ΔΕΕ, C-106/89 Marleasing): τα εθνικά δικαστήρια υποχρεούνται να ερμηνεύουν το εθνικό δίκαιο κατά τρόπο σύμφωνο με το δίκαιο της Ένωσης, εντός των ορίων της εθνικής νομοθεσίας.",
+      "definition_en": "Doctrine of EU law (CJEU case-law, C-106/89 Marleasing): national courts are obliged to interpret national law in conformity with EU law, within the limits of national legislation.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "ΔΕΕ C-106/89 Marleasing — https://curia.europa.eu/juris/liste.jsf?num=C-106/89",
+        "IATE — https://iate.europa.eu (search: consistent interpretation)"
       ]
     },
     {
@@ -6420,45 +6440,48 @@
         "el": "πλημμέλημα",
         "en": "misdemeanor",
         "ar": "جنحة",
-        "fa": "تخلف",
-        "fr": "contravention"
+        "fa": "جنحه",
+        "fr": "délit"
       },
       "definition_el": "Αξιόποινη πράξη που αποτελεί παράβαση του νόμου και τιμωρείται με ελαφρύτερες ποινές από τα κακουργήματα.",
       "definition_en": "A criminal offense less serious than a felony, punishable by lighter penalties under criminal law.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ποινικός Κώδικας, άρθρο 18 (Ν. 4619/2019) — https://www.kodiko.gr",
+        "IATE / French Code pénal art. 111-1 — https://iate.europa.eu"
       ]
     },
     {
-      "id": "stumble",
+      "id": "petty-offence",
       "category": "legal",
       "translations": {
         "el": "πταίσμα",
-        "en": "stumble",
-        "ar": "عثرة",
-        "fa": "لغزش",
-        "fr": "faux pas"
+        "en": "petty offence (contravention)",
+        "ar": "مخالفة",
+        "fa": "تخلف (خلافی)",
+        "fr": "contravention"
       },
-      "definition_el": "Ένα λάθος, παράπτωμα ή ολίσθημα στη συμπεριφορά ή στη δικαιοδοσία που μπορεί να επηρεάσει την αξιολόγηση μιας υπόθεσης ασύλου.",
-      "definition_en": "A mistake, offense, or lapse in conduct or judgment that may affect the assessment of an asylum case.",
+      "definition_el": "Η ελαφρύτερη κατηγορία εγκλήματος στο ελληνικό ποινικό δίκαιο (άρθρο 18 Ποινικού Κώδικα), κάτω από τα πλημμελήματα και τα κακουργήματα. Τιμωρείται με πρόστιμο ή κράτηση έως ένα μήνα.",
+      "definition_en": "The lightest tier of criminal offence in Greek criminal law (art. 18 Penal Code), below misdemeanor and felony. Punishable by fine or detention up to one month.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ποινικός Κώδικας, άρθρο 18 (Ν. 4619/2019) — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu (search: πταίσμα)"
       ]
     },
     {
-      "id": "fraud",
+      "id": "criminal-intent",
       "category": "legal",
       "translations": {
         "el": "δόλος",
-        "en": "fraud",
-        "ar": "الاحتيال",
-        "fa": "تقلب",
-        "fr": "fraude"
+        "en": "intent (dolus / criminal intent)",
+        "ar": "القصد الجنائي",
+        "fa": "قصد مجرمانه (سوء نیت)",
+        "fr": "intention (dol / intention criminelle)"
       },
-      "definition_el": "Η σκόπιμη παραπλάνηση ή διαστρέβλωση γεγονότων για την απόκτηση αδικήμονος πλεονεκτήματος στη διαδικασία αιτήσεως ασύλου.",
-      "definition_en": "Intentional deception or misrepresentation of facts to obtain unlawful advantage in an asylum application procedure.",
+      "definition_el": "Ο υποκειμενικός όρος (mens rea) του εγκλήματος: η γνώση και θέληση του δράστη να πραγματώσει τα στοιχεία της εγκληματικής πράξης (άρθρο 27 Ποινικού Κώδικα). Δεν ταυτίζεται με το αδίκημα της απάτης.",
+      "definition_en": "The subjective element (mens rea) of a crime: the perpetrator's knowledge and will to bring about the constituent elements of the criminal act (art. 27 Greek Penal Code). NOT the same as the offence of fraud (απάτη).",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ποινικός Κώδικας, άρθρο 27 (Ν. 4619/2019) — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu (search: δόλος)"
       ]
     },
     {
@@ -6478,51 +6501,54 @@
       ]
     },
     {
-      "id": "preliminary-study",
+      "id": "premeditation",
       "category": "legal",
       "translations": {
         "el": "προμελέτη",
-        "en": "preliminary study",
-        "ar": "دراسة أولية",
-        "fa": "مطالعه اولیه",
-        "fr": "étude préliminaire"
+        "en": "premeditation",
+        "ar": "سبق الإصرار (والترصد)",
+        "fa": "پیش‌اندیشی (قصد قبلی)",
+        "fr": "préméditation"
       },
-      "definition_el": "Αρχική έρευνα ή εξέταση που διενεργείται πριν από την κύρια διαδικασία αξιολόγησης ή λήψης απόφασης σε θέματα ασύλου.",
-      "definition_en": "An initial investigation or examination conducted before the main assessment or decision-making procedure in asylum matters.",
+      "definition_el": "Επιβαρυντικό στοιχείο σε ορισμένα εγκλήματα (κυρίως ανθρωποκτονία εκ προθέσεως, άρθρο 299 Ποινικού Κώδικα): ο δράστης έχει σχεδιάσει και προμελετήσει την τέλεση της πράξης πριν από αυτήν.",
+      "definition_en": "An aggravating factor in certain crimes (primarily intentional homicide, art. 299 Greek Penal Code): the perpetrator has planned and premeditated the act before committing it.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ποινικός Κώδικας, άρθρο 299 (Ν. 4619/2019) — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu (search: προμελέτη)"
       ]
     },
     {
-      "id": "cooperation",
+      "id": "complicity",
       "category": "legal",
       "translations": {
         "el": "συνέργεια",
-        "en": "cooperation",
-        "ar": "التعاون",
-        "fa": "همکاری",
-        "fr": "coopération"
+        "en": "complicity (aiding and abetting)",
+        "ar": "الاشتراك في الجريمة (المساعدة على الجريمة)",
+        "fa": "معاونت در جرم",
+        "fr": "complicité"
       },
-      "definition_el": "Η συνεργασία και ο συντονισμός μεταξύ διαφόρων φορέων και υπηρεσιών για την επίλυση ζητημάτων αιτητών και προσφύγων.",
-      "definition_en": "The coordination and joint effort between various organizations and services to address matters concerning asylum seekers and refugees.",
+      "definition_el": "Η δευτερεύουσα συμμετοχή στην τέλεση εγκλήματος από κάποιον που δεν είναι ο κύριος αυτουργός: παρέχει με πρόθεση συνδρομή στον αυτουργό (άρθρα 46-47 Ποινικού Κώδικα).",
+      "definition_en": "Secondary participation in the commission of a crime by someone who is not the principal perpetrator: intentionally provides assistance to the principal (arts. 46–47 Greek Penal Code).",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ποινικός Κώδικας, άρθρα 46-47 (Ν. 4619/2019) — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu (search: συνέργεια)"
       ]
     },
     {
-      "id": "moral-complicity",
+      "id": "instigation",
       "category": "legal",
       "translations": {
         "el": "ηθική αυτουργία",
-        "en": "moral complicity",
-        "ar": "التواطؤ الأخلاقي",
-        "fa": "شریکداری اخلاقی",
-        "fr": "complicité morale"
+        "en": "instigation (incitement to commit the offence)",
+        "ar": "التحريض على ارتكاب الجريمة",
+        "fa": "تحریک (به ارتکاب جرم)",
+        "fr": "instigation (incitation à commettre l'infraction)"
       },
-      "definition_el": "Η κατάσταση όπου ένα άτομο ή κράτος θεωρείται συμμέτοχο σε παράνομη ή αθέμιτη πράξη μέσω της ανενεργής συμπεριφοράς ή αποδοχής της.",
-      "definition_en": "A situation where a person or state is considered complicit in an unlawful or wrongful act through inaction or tacit acceptance.",
+      "definition_el": "Η μορφή συμμετοχής όπου κάποιος (ηθικός αυτουργός) παρακινεί εκ προθέσεως άλλον στην τέλεση εγκλήματος (άρθρο 46 §1α Ποινικού Κώδικα). Τιμωρείται όπως ο αυτουργός.",
+      "definition_en": "A form of participation whereby a person (the instigator) intentionally induces another to commit a crime (art. 46 §1(a) Greek Penal Code). Punished as the principal perpetrator.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ποινικός Κώδικας, άρθρο 46 §1α (Ν. 4619/2019) — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu (search: ηθική αυτουργία)"
       ]
     },
     {
@@ -6533,12 +6559,14 @@
         "en": "insult",
         "ar": "إهانة",
         "fa": "توهین",
-        "fr": "insulte"
+        "fr": "injure"
       },
       "definition_el": "Η πράξη της προσβολής ή της προσέβλησης της τιμής και του σεβασμού ενός ατόμου.",
       "definition_en": "The act of treating someone with disrespect or rudeness, often causing offense or harm to their dignity.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ποινικός Κώδικας, άρθρο 361 (Ν. 4619/2019) — https://www.kodiko.gr",
+        "Loi française du 29 juillet 1881, art. 33",
+        "IATE — https://iate.europa.eu"
       ]
     },
     {
@@ -6663,10 +6691,10 @@
         "fa": "خشونت خانگی",
         "fr": "violences domestiques"
       },
-      "definition_el": "Η βία που ασκείται από έναν συντρόφου ή μέλος της οικογένειας εναντίον άλλου μέλους, συμπεριλαμβανομένης της σωματικής, ψυχολογικής και σεξουαλικής κακοποίησης.",
-      "definition_en": "Violence perpetrated by an intimate partner or family member against another family member, including physical, psychological, and sexual abuse.",
+      "definition_el": "Η βία που ασκείται εντός της οικογένειας, ποινικά κολάσιμη πράξη κατά τον Ν. 3500/2006 (για την αντιμετώπιση της ενδοοικογενειακής βίας). Περιλαμβάνει σωματική, ψυχολογική, σεξουαλική βία και απειλές μεταξύ συζύγων, συντρόφων και συγγενών εξ αίματος ή αγχιστείας.",
+      "definition_en": "Violence within the family, a criminal offence under Law 3500/2006 (on combating domestic violence). Includes physical, psychological, sexual violence and threats between spouses, partners, and blood or in-law relatives.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 3500/2006 — Για την αντιμετώπιση της ενδοοικογενειακής βίας — https://www.kodiko.gr"
       ]
     },
     {
@@ -6942,19 +6970,20 @@
       ]
     },
     {
-      "id": "application-for-treatment",
+      "id": "petition-for-review",
       "category": "legal",
       "translations": {
         "el": "αίτηση θεραπείας",
-        "en": "application for treatment",
-        "ar": "طلب العلاج",
-        "fa": "درخواست درمان",
-        "fr": "demande de traitement"
+        "en": "petition for review",
+        "ar": "PENDING_NATIVE_REVIEW",
+        "fa": "PENDING_NATIVE_REVIEW",
+        "fr": "recours gracieux"
       },
-      "definition_el": "Επίσημο αίτημα που υποβάλλει ένας πρόσφυγας ή αιτών ασύλου για πρόσβαση σε ιατρική ή ψυχολογική θεραπεία.",
-      "definition_en": "A formal request submitted by a refugee or asylum seeker for access to medical or psychological treatment.",
+      "definition_el": "Ένδικο βοήθημα προβλεπόμενο στο άρθρο 24 του Ν. 2690/1999 (Κώδικας Διοικητικής Διαδικασίας). Ο ενδιαφερόμενος ζητεί από τη διοικητική αρχή που εξέδωσε την ατομική διοικητική πράξη την ανάκληση ή τροποποίησή της, για την αποκατάσταση υλικής ή ηθικής βλάβης των έννομων συμφερόντων του. Έχει προαιρετικό χαρακτήρα και δεν προϋποθέτει ορισμένο τύπο.",
+      "definition_en": "An administrative petition under Article 24 of Law 2690/1999 (Greek Code of Administrative Procedure). The applicant asks the same administrative authority that issued the act to annul or amend it, to remedy material or moral damage to their legal interests. It is optional in nature and requires no particular form.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 2690/1999, άρθρο 24 (ΦΕΚ Α' 45/9-3-1999) — Κώδικας Διοικητικής Διαδικασίας",
+        "https://www.lawspot.gr/nomothesia/kodikas-dioikitikis-diadikasias/arthro-24-nomos-2690-1999-aitisi-therapeias-ierarhiki/"
       ]
     },
     {
@@ -6996,13 +7025,13 @@
         "el": "κοινοτικό κεκτημένο",
         "en": "EU acquis",
         "ar": "الحوزة المكتسبة للاتحاد الأوروبي",
-        "fa": "دستاوری تجمع اروپا",
+        "fa": "دستاوردهای مشترک اتحادیه اروپا (acquis)",
         "fr": "acquis communautaire"
       },
       "definition_el": "Το σύνολο των νόμων, κανονισμών και αποφάσεων της Ευρωπαϊκής Ένωσης που ισχύουν στα κράτη μέλη και ρυθμίζουν διάφορα πολιτικά πεδία, συμπεριλαμβανομένης της πολιτικής ασύλου.",
       "definition_en": "The body of EU law comprising regulations, directives, and decisions that are binding on member states and govern various policy areas, including asylum and immigration policy.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "IATE — https://iate.europa.eu (search: acquis communautaire)"
       ]
     },
     {
@@ -9684,13 +9713,16 @@
         "el": "διαδικασία εκουσίας δικαιοδοσίας",
         "en": "voluntary jurisdiction procedure (type of civil proceeding)",
         "ar": "إجراء الولاية الاختيارية (نوع من الدعوى المدنية)",
-        "fa": "رویه صلاحیت داوطلبانه (نوع رسیدگی حقوقی)",
-        "fr": "procédure de juridiction volontaire (type de procédure civile)"
+        "fa": "رسیدگی غیرترافعی (امور حسبی)",
+        "fr": "procédure gracieuse (juridiction gracieuse)"
       },
       "definition_el": "Διαδικασία δικαστική που αφορά θέματα μη αντιδικονομικής φύσης, όπως η συγκατάθεση και η κηδεμονία, που δεν περιέχουν διαφορά μεταξύ αντιδίκων.",
       "definition_en": "A civil court procedure dealing with non-contentious matters such as guardianship and consent issues, where there is no dispute between parties.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κώδικας Πολιτικής Δικονομίας — https://www.kodiko.gr",
+        "French Code de procédure civile — matière gracieuse",
+        "Iranian Non-Contentious Matters Act 1319 (قانون امور حسبی)",
+        "IATE — https://iate.europa.eu"
       ]
     },
     {
@@ -9886,19 +9918,20 @@
       ]
     },
     {
-      "id": "final-decision-2",
+      "id": "irrevocable-decision",
       "category": "legal",
       "translations": {
         "el": "αμετάκλητη απόφαση",
-        "en": "final decision",
-        "ar": "قرار نهائي",
-        "fa": "تصمیم قطعی",
-        "fr": "décision définitive"
+        "en": "irrevocable decision (no further remedy including cassation)",
+        "ar": "قرار بات (لا يقبل الطعن)",
+        "fa": "رأی قطعی و بلاعتراض",
+        "fr": "décision irrévocable (passée en force de chose jugée)"
       },
-      "definition_el": "Δικαστική απόφαση που δεν μπορεί να ανακληθεί ή να αναθεωρηθεί και έχει νόμιμη ισχύ.",
-      "definition_en": "A judicial decision that cannot be withdrawn or reviewed and has legal force.",
+      "definition_el": "Δικαστική απόφαση κατά της οποίας δεν χωρεί κανένα ένδικο μέσο (ούτε τακτικό ούτε έκτακτο, συμπεριλαμβανομένης της αναίρεσης). Αποκτά ισχύ δεδικασμένου (άρθρα 553 επ. Κώδικα Πολιτικής Δικονομίας).",
+      "definition_en": "Court decision against which no remedy is available (neither ordinary nor extraordinary, including cassation). Acquires the force of res judicata (arts. 553 ff. Greek Code of Civil Procedure).",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κώδικας Πολιτικής Δικονομίας, άρθρα 553 επ. — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu (search: αμετάκλητη απόφαση)"
       ]
     },
     {
@@ -9923,30 +9956,32 @@
       "translations": {
         "el": "κατάσχεση",
         "en": "seizure (enforcement action)",
-        "ar": "المصادرة (إجراء تنفيذي)",
-        "fa": "ضبط (اقدام اجرایی)",
+        "ar": "الحجز التنفيذي",
+        "fa": "توقیف اموال",
         "fr": "saisie (acte d'exécution)"
       },
       "definition_el": "Η διοικητική ή δικαστική πράξη με την οποία αρχές επιβάλλουν τη λήψη ή παγίωση περιουσίας ή εγγράφων ενός ατόμου για λόγους εκτέλεσης απόφασης ή διοικητικής διαδικασίας.",
       "definition_en": "An administrative or judicial action by which authorities take or secure possession of an individual's property or documents for purposes of enforcing a decision or administrative procedure.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κώδικας Πολιτικής Δικονομίας, άρθρα 951 επ. — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu"
       ]
     },
     {
-      "id": "foreclosure-enforcement-action",
+      "id": "judicial-auction",
       "category": "legal",
       "translations": {
         "el": "πλειστηριασμός",
-        "en": "foreclosure (enforcement action)",
-        "ar": "الحجز القضائي (إجراء تنفيذي)",
-        "fa": "توقیف اموال (اقدام اجرایی)",
-        "fr": "saisie (acte d'exécution)"
+        "en": "judicial auction (public auction / sale by auction)",
+        "ar": "المزاد العلني (البيع بالمزاد)",
+        "fa": "مزایده (فروش از طریق مزایده)",
+        "fr": "vente aux enchères (adjudication)"
       },
-      "definition_el": "Νομική διαδικασία εκτέλεσης δικαστικής απόφασης κατά της περιουσίας ή των δικαιωμάτων ενός ατόμου.",
-      "definition_en": "Legal enforcement procedure through which a court decision is executed against the property or rights of a person.",
+      "definition_el": "Η δημόσια αναγκαστική πώληση περιουσιακών στοιχείων του οφειλέτη ενώπιον συμβολαιογράφου, στο πλαίσιο της αναγκαστικής εκτέλεσης (άρθρα 954 επ. Κώδικα Πολιτικής Δικονομίας).",
+      "definition_en": "The public forced sale of the debtor's assets before a notary, as part of enforcement proceedings (arts. 954 ff. Greek Code of Civil Procedure).",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κώδικας Πολιτικής Δικονομίας, άρθρα 954 επ. — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu (search: πλειστηριασμός)"
       ]
     },
     {
@@ -12385,7 +12420,7 @@
       "id": "european-arrest-warrant-eaw",
       "category": "legal",
       "translations": {
-        "el": "ευρωπαϊκή εντολή σύλληψης",
+        "el": "ευρωπαϊκό ένταλμα σύλληψης",
         "en": "European Arrest Warrant (EAW)",
         "ar": "أمر القبض الأوروبي",
         "fa": "دستور بازداشت اروپایی",
@@ -12394,7 +12429,8 @@
       "definition_el": "Μηχανισμό δικαστικής συνεργασίας της ΕΕ που επιτρέπει την σύλληψη και την παράδοση ενός ατόμου μεταξύ κρατών μελών για την ενδεχόμενη διέξαγωγη ποινικής δίωξης ή εκτέλεση ποινής.",
       "definition_en": "An EU judicial cooperation mechanism that allows the arrest and surrender of a person between member states for the purposes of conducting criminal prosecution or executing a sentence.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Απόφαση-πλαίσιο 2002/584/ΔΕΥ — https://eur-lex.europa.eu",
+        "Ν. 3251/2004 — https://www.kodiko.gr"
       ]
     },
     {
@@ -12404,13 +12440,14 @@
         "el": "έκδοση αλλοδαπού",
         "en": "extradition",
         "ar": "تسليم المطلوبين",
-        "fa": "تحویل متهم",
+        "fa": "استرداد مجرمین (استرداد)",
         "fr": "extradition"
       },
       "definition_el": "Η διαδικασία παράδοσης ενός αλλοδαπού από ένα κράτος σε άλλο για λόγους δικαστικής διώξεως ή εκτέλεσης ποινής.",
       "definition_en": "The legal process by which one state surrenders an individual to another state for prosecution or enforcement of a criminal sentence.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κώδικας Ποινικής Δικονομίας, άρθρα 435 επ. — https://www.kodiko.gr",
+        "IATE — https://iate.europa.eu"
       ]
     },
     {
