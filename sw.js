@@ -1,6 +1,6 @@
 // i-talk.gr service worker
 // Bump CACHE_VERSION when shell assets change so old caches are evicted.
-const CACHE_VERSION = 'italk-v1.0.10';
+const CACHE_VERSION = 'italk-v1.0.11';
 
 const SHELL_ASSETS = [
   '/',
