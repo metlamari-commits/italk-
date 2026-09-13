@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "0.7.2",
-    "updated": "2026-09-11",
+    "updated": "2026-09-13",
     "languages": [
       "el",
       "en",
@@ -1376,13 +1376,13 @@
       "category": "return",
       "translations": {
         "el": "Απόφαση επιστροφής",
-        "en": "Return decision / Removal order",
+        "en": "Return decision",
         "ar": "قرار العودة",
         "fa": "حکم بازگشت",
-        "fr": "Décision de retour / Ordre d'éloignement"
+        "fr": "Décision de retour"
       },
-      "definition_el": "Διοικητική απόφαση που διαπιστώνει την παράνομη παραμονή και επιβάλλει υποχρέωση εγκατάλειψης του εδάφους.",
-      "definition_en": "Administrative decision establishing irregular stay and imposing an obligation to leave the territory.",
+      "definition_el": "Διοικητική απόφαση που διαπιστώνει την παράνομη παραμονή και επιβάλλει υποχρέωση εγκατάλειψης του εδάφους. Η μεταγενέστερη εκτέλεση της απομάκρυνσης εκδίδεται χωριστά — βλ. removal-enforcement-order.",
+      "definition_en": "Administrative decision establishing irregular stay and imposing an obligation to leave the territory. The subsequent enforcement act (removal) is issued separately — see removal-enforcement-order.",
       "sources": [
         "EU Return Directive 2008/115/EC art. 3(4)"
       ],
@@ -5474,17 +5474,17 @@
       ]
     },
     {
-      "id": "defendant-3",
+      "id": "defendant-civil",
       "category": "legal",
       "translations": {
         "el": "εναγόμενος",
-        "en": "defendant",
+        "en": "defendant (civil)",
         "ar": "المدعى عليه",
-        "fa": "متهم",
+        "fa": "خوانده",
         "fr": "défendeur"
       },
-      "definition_el": "Το πρόσωπο που έχει ασκηθεί εναντίον του δικαστική διαδικασία ή κατηγορία σε δικαστήριο.",
-      "definition_en": "A person against whom legal proceedings or charges have been brought in court.",
+      "definition_el": "Στην πολιτική δίκη, το πρόσωπο εναντίον του οποίου ασκείται αγωγή. Διακρίνεται από τον 'κατηγορούμενο' της ποινικής δίκης.",
+      "definition_en": "In civil proceedings, the party against whom a lawsuit is brought. Distinct from the 'defendant' (κατηγορούμενος) in criminal proceedings.",
       "sources": [
         "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
       ]
@@ -6008,22 +6008,6 @@
       },
       "definition_el": "Νομικό έγγραφο στο οποίο ένα πρόσωπο καθορίζει πώς θέλει να διανεμηθεί η περιουσία του μετά το θάνατό του.",
       "definition_en": "A legal document in which a person specifies how their property and assets should be distributed after their death.",
-      "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
-      ]
-    },
-    {
-      "id": "marriage-certificate-2",
-      "category": "legal",
-      "translations": {
-        "el": "ληξιαρχική πράξη γάμου",
-        "en": "marriage certificate",
-        "ar": "شهادة الزواج",
-        "fa": "گواهی ازدواج",
-        "fr": "acte de mariage"
-      },
-      "definition_el": "Επίσημο έγγραφο που εκδίδεται από τις αρχές και αποδεικνύει τη νόμιμη σύναψη γάμου μεταξύ δύο ατόμων.",
-      "definition_en": "Official civil document issued by the competent authorities that proves the legal marriage between two persons.",
       "sources": [
         "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
       ]
@@ -6746,19 +6730,19 @@
       ]
     },
     {
-      "id": "removal-order-2",
+      "id": "removal-enforcement-order",
       "category": "legal",
       "translations": {
         "el": "εντολή απομάκρυνσης",
-        "en": "removal order",
-        "ar": "أمر الإبعاد",
-        "fa": "دستور اخراج",
+        "en": "removal (enforcement) order",
+        "ar": "أمر تنفيذ الإبعاد",
+        "fa": "دستور اجرای اخراج",
         "fr": "arrêté d'éloignement"
       },
-      "definition_el": "Διοικητική απόφαση που εκδίδει η αρμόδια αρχή με την οποία διατάσσει την απομάκρυνση ενός τρίτου υπηκόου από το έδαφος του κράτους.",
-      "definition_en": "An administrative decision issued by the competent authority ordering a third-country national to leave the territory of a state.",
+      "definition_el": "Εκτελεστική διοικητική πράξη με την οποία υλοποιείται η απομάκρυνση τρίτου υπηκόου από το έδαφος, μετά την έκδοση απόφασης επιστροφής (άρθρο 8 Οδηγίας 2008/115/ΕΚ). Διακρίνεται από την ίδια την απόφαση επιστροφής, η οποία απλώς διαπιστώνει την παράνομη διαμονή και επιβάλλει την υποχρέωση αναχώρησης.",
+      "definition_en": "Enforcement act carrying out the removal of a third-country national from the territory, following a return decision (art. 8, EU Return Directive 2008/115/EC). Distinct from the return decision itself, which merely establishes irregular stay and imposes the obligation to leave.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "EU Return Directive 2008/115/EC art. 8"
       ]
     },
     {
@@ -7078,22 +7062,6 @@
       },
       "definition_el": "Επίσημο έγγραφο που συντάσσεται και επικυρώνεται από συμβολαιογράφο με νομική ισχύ.",
       "definition_en": "An official document drawn up and authenticated by a notary public with legal validity.",
-      "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
-      ]
-    },
-    {
-      "id": "notarial-deed-2",
-      "category": "documentation",
-      "translations": {
-        "el": "νοταριακή πράξη",
-        "en": "notarial deed",
-        "ar": "الوثيقة الموثقة",
-        "fa": "سند دولتی",
-        "fr": "acte notarié"
-      },
-      "definition_el": "Επίσημο έγγραφο που συντάσσεται και επικυρώνεται από δικαιούχο συμβολαίου (νοτάριο) με νόμιμη ισχύ.",
-      "definition_en": "An official document drafted and authenticated by a notary public, possessing legal validity and serving as evidence in legal proceedings.",
       "sources": [
         "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
       ]
@@ -9996,38 +9964,6 @@
       },
       "definition_el": "Νομικό έγγραφο που καταγράφει τη συμφωνία μεταξύ δύο ή περισσοτέρων μερών και τις υποχρεώσεις τους.",
       "definition_en": "A legal document that records an agreement between two or more parties and their respective obligations.",
-      "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
-      ]
-    },
-    {
-      "id": "employment-contract-2",
-      "category": "documentation",
-      "translations": {
-        "el": "συμφωνητικό εργασίας",
-        "en": "employment contract",
-        "ar": "عقد العمل",
-        "fa": "قرارداد کار",
-        "fr": "contrat de travail"
-      },
-      "definition_el": "Νομικό έγγραφο που καθορίζει τους όρους και τις προϋποθέσεις της εργασίας μεταξύ εργοδότη και εργαζομένου.",
-      "definition_en": "A legal document that establishes the terms and conditions of employment between an employer and an employee.",
-      "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
-      ]
-    },
-    {
-      "id": "rental-agreement-2",
-      "category": "documentation",
-      "translations": {
-        "el": "μισθωτήριο συμβόλαιο",
-        "en": "rental agreement",
-        "ar": "عقد الإيجار",
-        "fa": "قرارداد اجاره",
-        "fr": "contrat de location"
-      },
-      "definition_el": "Νομικό έγγραφο που καθορίζει τους όρους ενοικίασης ακινήτου μεταξύ ιδιοκτήτη και ενοικιαστή.",
-      "definition_en": "A legal document that outlines the terms and conditions of renting a property between a landlord and tenant.",
       "sources": [
         "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
       ]
@@ -15987,17 +15923,17 @@
       ]
     },
     {
-      "id": "long-term-residence-permit-2",
+      "id": "eu-long-term-resident-status",
       "category": "legal",
       "translations": {
         "el": "άδεια διαμονής επί μακρόν διαμένοντος",
-        "en": "long-term residence permit",
-        "ar": "تصريح الإقامة طويلة الأجل",
-        "fa": "اجازه اقامت بلندمدت",
-        "fr": "titre de séjour de résident de longue durée"
+        "en": "EU long-term resident status (Directive 2003/109/EC)",
+        "ar": "وضع المقيم طويل الأمد في الاتحاد الأوروبي",
+        "fa": "وضعیت مقیم بلندمدت اتحادیه اروپا",
+        "fr": "statut de résident de longue durée UE"
       },
-      "definition_el": "Το νομικό έγγραφο που χορηγείται σε τρίτους υπηκόους που πληρούν τις προϋποθέσεις για να διαμείνουν νόμιμα σε χώρα μέλος της ΕΕ για χρονικό διάστημα μακράς διάρκειας.",
-      "definition_en": "A legal document issued to third-country nationals who meet the requirements to reside lawfully in an EU member state for an extended period of time.",
+      "definition_el": "Ειδικό καθεστώς διαμονής της Οδηγίας 2003/109/ΕΚ που χορηγείται σε τρίτους υπηκόους μετά από πέντε έτη νόμιμης και συνεχούς διαμονής σε κράτος-μέλος της ΕΕ και παρέχει ενισχυμένα δικαιώματα και δυνατότητα κινητικότητας εντός της Ένωσης.",
+      "definition_en": "Specific residence status under EU Directive 2003/109/EC granted to third-country nationals after five years of legal and continuous residence in a Member State, providing enhanced rights and intra-EU mobility. Distinct from a generic national long-term permit.",
       "sources": [
         "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
       ]
