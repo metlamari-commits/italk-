@@ -5518,7 +5518,8 @@
       "definition_el": "Η δικαστική απόφαση που κηρύσσει κάποιον αθώο από κατηγορίες που του απαγγέλθησαν σε ποινικό δικαστήριο.",
       "definition_en": "A court judgment declaring a person not guilty of criminal charges brought against them.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κώδικας Ποινικής Δικονομίας (Ν. 4620/2019), άρ. 370 — αθωωτική απόφαση — https://www.kodiko.gr/nomothesia/document/530491/nomos-4620-2019",
+        "Directive (EU) 2016/343 on presumption of innocence, art. 6 — burden of proof (contextual — acquittal follows from failure of the prosecution burden) — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L0343"
       ]
     },
     {
@@ -9802,7 +9803,8 @@
       "definition_el": "Η αναβολή του δικαστικού ακροάματος ή της συνεδρίασης σε μεταγενέστερη ημερομηνία κατά τη διάρκεια διαδικασίας ασύλου ή άλλης δικαστικής διαδικασίας.",
       "definition_en": "The postponement of a court hearing or session to a later date during asylum or other legal proceedings.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κώδικας Ποινικής Δικονομίας (Ν. 4620/2019), άρ. 349 — Αναβολή δίκης (ποινική διαδικασία) — https://www.kodiko.gr/nomothesia/document/530491/nomos-4620-2019",
+        "Κώδικας Πολιτικής Δικονομίας, άρ. 241 — Αναβολή συζήτησης (πολιτική διαδικασία) — https://www.kodiko.gr/nomothesia/document/135121/proedriko-diatagma-503-1985"
       ]
     },
     {
@@ -10509,7 +10511,9 @@
       "definition_el": "Το ένδικο μέσο που επιτρέπει στον κρατούμενο να προσφύγει στα διοικητικά δικαστήρια για την ακύρωση ή αναστολή της απόφασης κράτησής του.",
       "definition_en": "A legal remedy that allows a detained person to appeal to administrative courts to challenge or suspend the detention decision.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Directive 2013/33/EU (Reception Conditions), art. 9(3) — speedy judicial review of detention lawfulness — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013L0033",
+        "Ν. 4939/2022 άρ. 50 (αντιρρήσεις κατά κράτησης ενώπιον διοικητικού δικαστηρίου) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Directive 2008/115/EC art. 15(2) — speedy judicial review of return-detention — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008L0115"
       ]
     },
     {
@@ -10573,7 +10577,9 @@
       "definition_el": "Οι φυσικές, υγειονομικές και ψυχοκοινωνικές συνθήκες υπό τις οποίες βρίσκονται οι άτομα κατά την περίοδο της κράτησής τους, συμπεριλαμβανομένης της μεταχείρισης που λαμβάνουν από τις αρχές.",
       "definition_en": "The physical, sanitary, and psychosocial conditions under which persons are held during detention, including the treatment they receive from authorities.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Directive 2013/33/EU (Reception Conditions), art. 10 — Conditions of detention — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013L0033",
+        "Directive 2008/115/EC (Return Directive), art. 16 — Conditions of detention — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008L0115",
+        "CPT Standards — Foreign nationals detained under aliens legislation (CPT/Inf(2017)3) — https://rm.coe.int/16806fbf12"
       ]
     },
     {
@@ -10605,7 +10611,8 @@
       "definition_el": "Η διαδικασία υποβολής επίσημης καταγγελίας σχετικά με κακομεταχείριση ενός αιτούντα άσυλο προς τον Συνήγορο του Πολίτη, ο οποίος είναι ανεξάρτητος μηχανισμός προστασίας των δικαιωμάτων.",
       "definition_en": "The formal procedure for submitting a complaint regarding ill-treatment of an asylum seeker to the Ombudsman, an independent human rights protection mechanism.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 3094/2003, άρ. 1 παρ. 1 — Συνήγορος του Πολίτη ως Εθνικός Μηχανισμός Διερεύνησης Περιστατικών Αυθαιρεσίας στα σώματα ασφαλείας και τους υπαλλήλους των καταστημάτων κράτησης — https://www.kodiko.gr/nomothesia/document/175210/nomos-3094-2003",
+        "Ν. 4228/2014 (κύρωση OPCAT) — Συνήγορος του Πολίτη ως Εθνικός Μηχανισμός Πρόληψης βασανιστηρίων — https://www.synigoros.gr/el/opcat"
       ]
     },
     {
@@ -10669,7 +10676,9 @@
       "definition_el": "Κατηγορία ατόμου που αιτείται διεθνή προστασία όταν δεν πληροί τα κριτήρια του πρόσφυγα, αλλά αντιμετωπίζει σοβαρή βλάβη εάν επιστρέψει στη χώρα προέλευσής του.",
       "definition_en": "A category of person seeking international protection who does not meet the refugee definition but faces a real risk of serious harm if returned to their country of origin.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Directive 2011/95/EU (Qualification Directive), art. 2(f) & art. 15 — 'person eligible for subsidiary protection' definition and serious-harm grounds — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L:2011:337:FULL",
+        "Regulation (EU) 2024/1347 (Qualification Regulation, from 12 June 2026), arts. 2 & 15 — https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401347",
+        "Ν. 4939/2022 άρ. 15 (επικουρική προστασία) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -10685,7 +10694,8 @@
       "definition_el": "Κατηγορία αιτούντος διεθνή προστασία που δεν συνοδεύεται ή δεν συνάζει με μέλη της οικογένειάς του κατά την υποβολή της αίτησης ασύλου.",
       "definition_en": "Category of asylum applicant who is not accompanied by or does not live with family members at the time of submitting the asylum application.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Directive 2013/33/EU (RCD) art. 2(c) — 'family members' definition (a contrario: applicants without accompanying family members) — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013L0033",
+        "Ν. 4939/2022 άρ. 2 (ορισμοί) & άρ. 55 (υλικές συνθήκες υποδοχής — διαφοροποίηση για μη-συνοδευόμενους / μονήρεις αιτούντες) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -10701,7 +10711,9 @@
       "definition_el": "Κατηγορία ατόμου που υποβάλλει αίτηση ασύλου ή διεθνούς προστασίας και διαθέτει μέλη της οικογένειας που εξαρτώνται από αυτόν ή συνοδεύουν την αίτησή του.",
       "definition_en": "Category of a person who submits an asylum or international protection application and has family members who are dependent on them or accompanying their application.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Regulation (EU) 2024/1348 (APR) art. 3 point (11) — definition of 'family members' for procedure purposes — https://eur-lex.europa.eu/eli/reg/2024/1348/oj/eng",
+        "Directive 2013/33/EU (RCD) art. 2(c) — 'family members' — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013L0033",
+        "Ν. 4939/2022 άρ. 2 (ορισμοί, μέλη οικογένειας) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -10733,7 +10745,8 @@
       "definition_el": "Ο αιτών άσυλου που έχει υποβάλει ένδικο μέσο (έφεση) κατά της αρνητικής απόφασης της πρώτης βαθμίδας και βρίσκεται σε στάδιο εξέτασης της υπόθεσής του από ανώτερο δικαστηριακό ή διοικητικό όργανο.",
       "definition_en": "An asylum applicant who has filed an appeal against a negative first-instance decision and whose case is under examination by a higher judicial or administrative body.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4939/2022 άρ. 92-97 — Ενδικοφανής προσφυγή ενώπιον Ανεξάρτητων Επιτροπών Προσφυγών (β' βαθμός) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Regulation (EU) 2024/1348 (APR) art. 67 — Right to an effective remedy — https://eur-lex.europa.eu/eli/reg/2024/1348/oj/eng"
       ]
     },
     {
@@ -12141,7 +12154,9 @@
       "definition_el": "Η διεθνής σύμβαση που ορίζει τον ορισμό του προσφύγου και τα δικαιώματα και υποχρεώσεις του, καθώς και τις υποχρεώσεις των κρατών που την υπογράφουν.",
       "definition_en": "The international treaty that defines who is a refugee and establishes the rights, obligations, and protections of refugees, as well as the obligations of signatory states.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Convention Relating to the Status of Refugees, adopted 28 July 1951, entered into force 22 April 1954 (189 UNTS 137) — UNHCR consolidated text: https://www.unhcr.org/us/media/convention-and-protocol-relating-status-refugees",
+        "Ν.Δ. 3989/1959 (κύρωση Σύμβασης Γενεύης 1951 στην Ελλάδα) — see UNHCR Greece: https://www.unhcr.org/gr/",
+        "UNHCR overview page — https://www.unhcr.org/about-unhcr/overview/1951-refugee-convention"
       ]
     },
     {
@@ -12157,7 +12172,9 @@
       "definition_el": "Διεθνής συνθήκη που επεκτείνει γεωγραφικά και χρονικά το πεδίο εφαρμογής της Σύμβασης της Γενεύης του 1951 για τους πρόσφυγες.",
       "definition_en": "International treaty that removes the geographical and temporal limitations of the 1951 Geneva Convention relating to the status of refugees.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Protocol Relating to the Status of Refugees, adopted 31 January 1967, entered into force 4 October 1967 (606 UNTS 267) — UNHCR consolidated text: https://www.unhcr.org/us/media/convention-and-protocol-relating-status-refugees",
+        "Α.Ν. 389/1968 (κύρωση Πρωτοκόλλου Νέας Υόρκης 1967 στην Ελλάδα) — human reviewer to confirm exact ΦΕΚ",
+        "UNHCR — About the 1951 Convention & 1967 Protocol — https://www.unhcr.org/about-unhcr/overview/1951-refugee-convention"
       ]
     },
     {
@@ -12774,8 +12791,8 @@
       "id": "article-21-apr-information-rights-of-the-applicant",
       "category": "procedure",
       "translations": {
-        "el": "Άρθρο 21 APR πληροφορίες αιτούντος",
-        "en": "Article 21 APR - Information rights of the applicant",
+        "el": "Άρθρο 8 APR — δικαίωμα ενημέρωσης αιτούντος (πρώην άρ. 21 στο σχέδιο 2016)",
+        "en": "Article 8 APR — right to information (formerly art. 21 in the 2016 proposal)",
         "ar": "المادة 21 من نظام الإجراءات - حق تقديم المعلومات للطالب",
         "fa": "ماده ۲۱ APR - حق اطلاع رسانی متقاضی",
         "fr": "Article 21 APR - Droit à l'information du demandeur"
@@ -12783,15 +12800,16 @@
       "definition_el": "Το δικαίωμα του αιτούντος ασύλου να λαμβάνει πληρες και κατανοητή ενημέρωση σχετικά με τα δικαιώματα, τις υποχρεώσεις και τις διαδικασίες που τον αφορούν.",
       "definition_en": "The right of an asylum applicant to receive complete and understandable information about their rights, obligations, and relevant procedures.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κανονισμός (ΕΕ) 2024/1348 (APR), άρ. 8 — Ενημέρωση αιτούντος για τη διαδικασία, δικαιώματα και υποχρεώσεις — https://eur-lex.europa.eu/eli/reg/2024/1348/oj/eng",
+        "Ιστορική αρίθμηση: άρθρο 21 στο σχέδιο COM(2016)467 της Επιτροπής"
       ]
     },
     {
       "id": "article-28-apr-interpreter-role",
       "category": "procedure",
       "translations": {
-        "el": "Άρθρο 28 APR ρόλος διερμηνέα",
-        "en": "Article 28 APR interpreter role",
+        "el": "Άρθρο 13(2) APR — δικαίωμα ικανού διερμηνέα (πρώην άρ. 28 στο σχέδιο 2016)",
+        "en": "Article 13(2) APR — right to a competent interpreter (formerly art. 28 in the 2016 proposal)",
         "ar": "دور المترجم الفوري بموجب المادة 28 من قانون إجراءات اللجوء",
         "fa": "نقش مترجم شفاهی براساس ماده ۲۸ قانون رویه ناپناهندگی",
         "fr": "Rôle de l'interprète selon l'article 28 de la directive sur les procédures d'asile"
@@ -12799,7 +12817,8 @@
       "definition_el": "Ο ρόλος του διερμηνέα που ορίζεται στο άρθρο 28 της Οδηγίας περί Διαδικασιών Αιτημάτων Ασύλου (APR), ο οποίος παρέχει διερμηνεία στη διάρκεια των διαδικασιών ασύλου.",
       "definition_en": "The role of the interpreter as defined in Article 28 of the Asylum Procedures Regulation (APR), who provides interpretation services during asylum procedures.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κανονισμός (ΕΕ) 2024/1348 (APR), άρ. 13(2) — δωρεάν διερμηνεία κατά την προσωπική συνέντευξη — https://eur-lex.europa.eu/eli/reg/2024/1348/oj/eng",
+        "Ιστορική αρίθμηση: άρθρο 28 στο σχέδιο COM(2016)467 της Επιτροπής"
       ]
     },
     {
@@ -12815,7 +12834,9 @@
       "definition_el": "Αίτηση διεθνούς προστασίας που υποβάλλεται από αιτούντα χωρίς νομική αντιπροσώπευση κατά τη διεξαγωγή της διαδικασίας εξέτασης πρώτης βαθμίδας.",
       "definition_en": "An application for international protection submitted by an applicant without legal representation during the first instance examination procedure.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Regulation (EU) 2024/1348 (APR), art. 16 — Right to legal counselling in administrative procedure (free legal counselling on request; legal assistance/representation on appeal per art. 17) — https://eur-lex.europa.eu/eli/reg/2024/1348/oj/eng",
+        "Regulation (EU) 2024/1348 (APR), art. 17 — Free legal assistance and representation in appeal procedure — https://eur-lex.europa.eu/eli/reg/2024/1348/oj/eng",
+        "Ν. 4939/2022 άρ. 71 (δικαίωμα νομικής συνδρομής) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -12831,7 +12852,8 @@
       "definition_el": "Η προκαθορισμένη περίοδος τριών μηνών για την εξέταση αιτήματος ασύλου από τις ελληνικές αρχές, σύμφωνα με τις διατάξεις του Κανονισμού Dublin (APR - Accelerated Procedure Review).",
       "definition_en": "The predetermined three-month period for the examination of an asylum application by Greek authorities, in accordance with Dublin Regulation provisions (APR - Accelerated Procedure Review).",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κανονισμός (ΕΕ) 2024/1348 (APR), άρ. 35(2) — γενική 6μηνη προθεσμία εξέτασης — https://eur-lex.europa.eu/eli/reg/2024/1348/oj/eng",
+        "Κανονισμός (ΕΕ) 2024/1348 (APR), άρ. 43 — επιταχυνόμενη εξέταση (τυπικά έως 3 μήνες) — https://eur-lex.europa.eu/eli/reg/2024/1348/oj/eng"
       ]
     },
     {
@@ -12847,7 +12869,7 @@
       "definition_el": "Η παράταση του χρόνου εξέτασης της αίτησης ασύλου κατά 6 μήνες μέσω της διαδικασίας APR (Additional Period for Review), που χορηγείται όταν απαιτούνται περισσότερες πληροφορίες ή έρευνα.",
       "definition_en": "An extension of the asylum application examination period by 6 months through the APR (Additional Period for Review) procedure, granted when additional information or investigation is required.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Regulation (EU) 2024/1348 (APR), art. 35(3)-(4) — extension of the 6-month examination period by up to a further 6 months in complex cases, absolute maximum 21 months — https://eur-lex.europa.eu/eli/reg/2024/1348/oj/eng"
       ]
     },
     {
@@ -12879,7 +12901,9 @@
       "definition_el": "Η νομική υποχρέωση του αιτούντος ασύλου να συνεργάζεται πλήρως με τις αρχές και να παρέχει όλες τις απαιτούμενες πληροφορίες και έγγραφα κατά τη διαδικασία εξέτασης του αιτήματος.",
       "definition_en": "The legal obligation of an asylum applicant to cooperate fully with the authorities and provide all required information and documentation during the examination of their application.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Regulation (EU) 2024/1348 (APR), art. 9 — Obligations of the applicant (duty to cooperate with competent authorities) — https://eur-lex.europa.eu/eli/reg/2024/1348/oj/eng",
+        "Regulation (EU) 2024/1347 (Qualification Regulation), art. 4 — assessment of facts and circumstances / applicant's duty to substantiate — https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401347",
+        "Ν. 4939/2022 άρ. 78 (υποχρεώσεις αιτούντος) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -12959,7 +12983,9 @@
       "definition_el": "Η μη εξουσιοδοτημένη αποχώρηση ενός αιτούντος ασύλου από τη δομή υποδοχής χωρίς άδεια ή ενημέρωση των αρχών.",
       "definition_en": "The unauthorized departure of an asylum applicant from a reception facility without permission or notification to authorities.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Regulation (EU) 2024/1348 (APR), art. 41(1)(g) — implicit withdrawal of application when applicant absconds or leaves place of residence without authorisation — https://eur-lex.europa.eu/eli/reg/2024/1348/oj/eng",
+        "Directive 2008/115/EC (Return Directive), art. 3(7) — 'risk of absconding' definition — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008L0115",
+        "Ν. 4939/2022 άρ. 81 (σιωπηρή ανάκληση / εγκατάλειψη διαδικασίας) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -12991,7 +13017,8 @@
       "definition_el": "Η διοικητική πράξη με την οποία η αρμόδια αρχή χορηγεί στον αιτούντα άσυλο προθεσμία για να αναχωρήσει οικειοθελώς από το έδαφος του κράτους μέλους, αντί να εκτελεστεί απέλαση.",
       "definition_en": "An administrative act by which the competent authority grants an asylum applicant a deadline to voluntarily depart from the territory of the Member State, as an alternative to forced removal.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Directive 2008/115/EC (Return Directive), art. 7 — Voluntary departure (7-30 day period) — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008L0115",
+        "Ν. 3907/2011 άρ. 22 (χορήγηση προθεσμίας οικειοθελούς αναχώρησης) — https://www.kodiko.gr/nomothesia/document/152317/nomos-3907-2011"
       ]
     },
     {
@@ -13055,7 +13082,8 @@
       "definition_el": "Η νόμιμη κράτηση ενός αιτούντος ή μετανάστη με σκοπό την εκτέλεση αποφάσεως απομάκρυνσης ή επιστροφής στη χώρα προέλευσης.",
       "definition_en": "The lawful detention of an asylum seeker or migrant for the purpose of executing a removal or return decision to their country of origin.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Directive 2008/115/EC (Return Directive), art. 15 — Detention for the purpose of removal — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008L0115",
+        "Ν. 3907/2011 άρ. 30 (κράτηση ενόψει απομάκρυνσης) — https://www.kodiko.gr/nomothesia/document/152317/nomos-3907-2011"
       ]
     },
     {
@@ -13103,7 +13131,8 @@
       "definition_el": "Διοικητικό έγγραφο που εκδίδεται για τη διευκόλυνση της επιστροφής ενός αλλοδαπού στη χώρα προέλευσής του όταν δεν διαθέτει έγκυρο διαβατήριο.",
       "definition_en": "An administrative document issued to facilitate the return of a foreigner to their country of origin when they do not possess a valid passport.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Council Recommendation of 30 November 1994 concerning the adoption of a standard travel document for the expulsion of third-country nationals (EU laissez-passer) — https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31996Y0919(02)",
+        "Regulation (EU) 2016/1953 establishing a European travel document for the return of illegally staying third-country nationals — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R1953"
       ]
     },
     {
@@ -13151,7 +13180,8 @@
       "definition_el": "Απόφαση δικαστηρίου που διατάζει την προσωρινή αναστολή της εκτέλεσης μιας απόφασης απομάκρυνσης ενός αιτούντος άσυλο ή μετανάστη.",
       "definition_en": "A court decision that orders the temporary suspension of the execution of a removal decision against an asylum seeker or migrant.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Directive 2008/115/EC (Return Directive), art. 13(2) — right to effective remedy with power to temporarily suspend enforcement — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008L0115",
+        "Ν. 3907/2011 (ενσωμάτωση Οδηγίας Επιστροφών), άρ. 28 — δικαστική προστασία και αναστολή απομάκρυνσης — https://www.kodiko.gr/nomothesia/document/152317/nomos-3907-2011"
       ]
     },
     {
@@ -13183,7 +13213,8 @@
       "definition_el": "Η παράνομη πρακτική της επιστροφής αιτούντων άσυλο ή μεταναστών στη θάλασσα χωρίς να τους δοθεί η δυνατότητα να υποβάλουν αίτημα ασύλου.",
       "definition_en": "The unlawful practice of forcibly returning asylum seekers or migrants at sea without allowing them to file asylum claims or access asylum procedures.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "ECtHR, Hirsi Jamaa and Others v. Italy, Appl. no. 27765/09, judgment of 23 Feb 2012 — maritime pushback breaches Art. 3 ECHR and Art. 4 Protocol No. 4 (collective expulsion) — https://hudoc.echr.coe.int/eng?i=001-109231",
+        "1951 Refugee Convention art. 33(1) — non-refoulement — https://www.unhcr.org/us/media/convention-and-protocol-relating-status-refugees"
       ]
     },
     {
@@ -13215,7 +13246,8 @@
       "definition_el": "Συντονισμένες επιχειρήσεις της Ευρωπαϊκής Υπηρεσίας Συνοριακής Διαχείρισης (Frontex) με τα κράτη μέλη για την εκτέλεση αποδόσεων και επιστροφών μη νόμιμων μεταναστών.",
       "definition_en": "Coordinated operations conducted by the European Border and Coast Guard Agency (Frontex) with member states to facilitate the removal and return of irregular migrants.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Regulation (EU) 2019/1896 (European Border and Coast Guard), arts. 50-53 — return operations and return interventions coordinated by Frontex — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019R1896",
+        "Directive 2008/115/EC art. 8(6) — forced-return monitoring in Frontex-coordinated operations — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008L0115"
       ]
     },
     {
@@ -13295,7 +13327,8 @@
       "definition_el": "Διοικητική απόφαση που εκδίδεται από τον Διευθυντή κέντρου υποδοχής ή συγγενικού χώρου για την κράτηση αιτούντα ασύλου ή μετανάστη.",
       "definition_en": "An administrative decision issued by the Director of a reception centre or related facility for the detention of an asylum seeker or migrant.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 3907/2011 άρ. 30 παρ. 2 — απόφαση κράτησης εκδίδεται από τον Διευθυντή/αρμόδιο όργανο της αστυνομικής αρχής — https://www.kodiko.gr/nomothesia/document/152317/nomos-3907-2011",
+        "Ν. 4939/2022 άρ. 46 — κράτηση αιτούντων διεθνούς προστασίας (αρμοδιότητα οργάνου) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -13391,7 +13424,8 @@
       "definition_el": "Επίσημη επίσκεψη της Ευρωπαϊκής Επιτροπής για την Πρόληψη της Βασανισίας και της Ανθρωπίνης ή Υποβιβαστικής Μεταχείρισης σε χώρους κράτησης προσφύγων για παρακολούθηση και αξιολόγηση των συνθηκών υποδοχής.",
       "definition_en": "Official visit by the European Committee for the Prevention of Torture and Inhuman or Degrading Treatment to detention facilities holding refugees to monitor and assess reception conditions.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "European Convention for the Prevention of Torture and Inhuman or Degrading Treatment or Punishment (ECPT, 1987), arts. 1-2 — establishing the CPT and its right to visit any place of detention — https://www.coe.int/en/web/cpt/about-the-cpt",
+        "Council of Europe — CPT country reports for Greece (periodic and ad hoc visits) — https://www.coe.int/en/web/cpt/greece"
       ]
     },
     {
@@ -13487,7 +13521,9 @@
       "definition_el": "Η θανάσιμη συμβάν που συμβαίνει σε άτομο που βρίσκεται υπό κρατητική ή περιοριστική κατάσταση στις εγκαταστάσεις υποδοχής ή κράτησης.",
       "definition_en": "A fatal incident occurring to a person while in custody or under restrictive conditions in a reception or detention facility.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "European Convention on Human Rights, art. 2 — right to life, incl. procedural obligation to investigate deaths in custody (see ECtHR case-law: McCann v. UK; Salman v. Turkey) — https://www.echr.coe.int/documents/d/echr/convention_eng",
+        "CPT Standards (rev. 2015), section on deaths in custody — https://rm.coe.int/16806cd46f",
+        "UN Minnesota Protocol on the Investigation of Potentially Unlawful Death (2016) — https://www.ohchr.org/en/publications/policy-and-methodological-publications/minnesota-protocol-investigation-potentially"
       ]
     },
     {
@@ -13551,7 +13587,9 @@
       "definition_el": "Πρόσωπο που έχει λάβει διεθνή προστασία (άσυλο ή καθεστώς υπό όρους) και κατέχει νόμιμη άδεια διαμονής στη χώρα καταφυγής για περίοδο τριών ετών.",
       "definition_en": "A person who has been granted international protection (refugee or subsidiary protection status) and holds a valid residence permit in the country of asylum for a period of three years.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Directive 2011/95/EU (Qualification Directive), art. 24(1) — initial three-year residence permit for refugee status; at least one year for subsidiary protection — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L:2011:337:FULL",
+        "Regulation (EU) 2024/1347 (Qualification Regulation, from 12 June 2026), art. 24(4) — 3-year initial permit for refugees, 1-year for subsidiary protection, renewals ≥3/≥2 years — https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401347",
+        "Ν. 4939/2022 άρ. 24 (άδεια διαμονής δικαιούχων διεθνούς προστασίας) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -13695,7 +13733,8 @@
       "definition_el": "Η νόμιμη διαδικασία με την οποία ένας αλλοδαπός αποκτά την ελληνική ιθαγένεια μετά την πλήρωση των νόμιμων προϋποθέσεων και προσδιορισμένων κριτηρίων.",
       "definition_en": "The legal process by which a foreigner acquires Greek citizenship after meeting the statutory requirements and established criteria.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 3284/2004 (Κώδικας Ελληνικής Ιθαγένειας), άρ. 5-13 — Πολιτογράφηση (τυπικές/ουσιαστικές προϋποθέσεις, διαδικασία, ορκωμοσία) — https://www.ypes.gr/kodikas-ellinikis-ithageneias/",
+        "Ν. 3284/2004 κωδικοποιημένος στο kodiko.gr — https://www.kodiko.gr/nomothesia/document/166497/nomos-3284-2004"
       ]
     },
     {
@@ -15807,7 +15846,8 @@
       "definition_el": "Η υπογραφή του αιτούντα ασύλου στο έγγραφο που περιέχει την απομαγνητοφώνηση της ηχητικής εγγραφής της συνέντευξης, ως απόδειξη ελέγχου και επιβεβαίωσης του περιεχομένου.",
       "definition_en": "The asylum applicant's signature on the document containing the transcription of the audio recording of the interview, as proof of review and confirmation of the content's accuracy.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Regulation (EU) 2024/1348 (APR), art. 15 — Report and recording of personal interview; applicant given opportunity to make comments/corrections and to confirm content — https://eur-lex.europa.eu/eli/reg/2024/1348/oj/eng",
+        "Ν. 4939/2022 άρ. 77 (πρακτικό/απομαγνητοφώνηση προσωπικής συνέντευξης) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
