@@ -5849,7 +5849,9 @@
       "definition_el": "Η νομική ή διοικητική εξουσία που δίνεται σε ένα άτομο ή φορέα για να ενεργήσει εκ μέρους κάποιου ή να λάβει συγκεκριμένες αποφάσεις.",
       "definition_en": "The legal or administrative authority granted to a person or body to act on behalf of someone or to make specific decisions.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Αστικός Κώδικας (ΑΚ) art. 216 — ορισμός πληρεξουσιότητας: 'Η εξουσία που δίνει ένα πρόσωπο σε άλλο για διενέργεια δικαιοπραξίας στο όνομά του'",
+        "Ν. 4194/2013 (Κώδικας Δικηγόρων) — έγγραφη πληρεξουσιότητα προς δικηγόρο για παράσταση/εκπροσώπηση (σχετικά άρθρα 96, 227)",
+        "ΚΠολΔ art. 96 + ΚΔΔ art. 27 — πληρεξούσιο/εξουσιοδότηση για παράσταση σε δίκη"
       ]
     },
     {
@@ -6846,7 +6848,9 @@
       "definition_el": "Η διαδικασία αξιολόγησης και ελέγχου μιας αίτησης ασύλου από τις αρμόδιες αρχές για τον προσδιορισμό του δικαιώματος του αιτούντος στη διεθνή προστασία.",
       "definition_en": "The process of assessment and review of an asylum application by the competent authorities to determine whether the applicant is entitled to international protection.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4939/2022 art. 79 (Προϋποθέσεις για την εξέταση της αίτησης) + arts. 88 (Διαδικασία της εξέτασης πρώτου βαθμού), 96 (Ανάκληση) — the full examination framework — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Ν. 4939/2022 art. 3 (Υποβολή και αξιολόγηση στοιχείων) — assessment of elements of the claim — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Directive 2013/32/EU (APD recast) art. 10 (requirements for the examination of applications) + arts. 31-34 — https://eur-lex.europa.eu/eli/dir/2013/32"
       ]
     },
     {
@@ -6880,7 +6884,9 @@
       "definition_el": "Ο υπάλληλος της Υπηρεσίας Ασύλου που αναλαμβάνει τη σύνταξη αναφοράς και συστάσεων για τις αιτήσεις ασύλου.",
       "definition_en": "An Asylum Service official who prepares reports and recommendations on asylum applications.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4939/2022 art. 1 περ. ιθ' — ορισμός 'Αποφαινόμενης Αρχής': 'o υπάλληλος της αρμόδιας Αρχής Παραλαβής, ο οποίος ορίζεται ως χειριστής για την εξέταση της αίτησης διεθνούς προστασίας' — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "π.δ. 106/2020 (Α' 255) — οργανωτικές διατάξεις Υπηρεσίας Ασύλου, ρόλοι χειριστών/εισηγητών Περιφερειακών Γραφείων Ασύλου",
+        "Ν. 4939/2022 art. 88 (Διαδικασία εξέτασης) — καθήκοντα Αποφαινόμενης Αρχής στην έκδοση απόφασης — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -6960,7 +6966,9 @@
       "definition_el": "Επαγγελματικός οργανισμός που ρυθμίζει και εποπτεύει τη δραστηριότητα των δικηγόρων και διασφαλίζει τα επαγγελματικά και δεοντολογικά τους καθήκοντα.",
       "definition_en": "Professional organization that regulates and supervises the practice of lawyers and ensures their professional and ethical obligations in legal matters.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4194/2013 (Κώδικας Δικηγόρων), arts. 199-260 — Δικηγορικοί Σύλλογοι: νομική φύση (ΝΠΔΔ), σύσταση, όργανα, αρμοδιότητες, πειθαρχική εξουσία",
+        "Ολομέλεια Προέδρων Δικηγορικών Συλλόγων Ελλάδος — https://www.olomeleia.gr/",
+        "Δικηγορικός Σύλλογος Αθηνών (ΔΣΑ) — παράδειγμα κύριας ΝΠΔΔ που εποπτεύει άσκηση δικηγορίας — https://www.dsa.gr/"
       ]
     },
     {
@@ -9885,7 +9893,9 @@
       "definition_el": "Η δικαστική απόφαση που επιβάλλει σε έναν από τα μέρη τη διαδικαστική υποχρέωση να καταβάλει τα δικαστικά έξοδα του αντιδίκου.",
       "definition_en": "A judicial decision imposing on one party the procedural obligation to pay the legal costs incurred by the opposing party.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Κώδικας Διοικητικής Δικονομίας (ΚΔΔ) art. 275 — επιδίκαση δικαστικής δαπάνης (Ν. 2717/1999) — application in asylum second-instance and judicial-review proceedings",
+        "ΚΠολΔ arts. 176-193 — δικαστικά έξοδα (γενικές διατάξεις) applicable subsidiarily",
+        "Ν. 4939/2022 arts. 114-118 (Δικαστική προστασία — αίτηση ακύρωσης ενώπιον Διοικητικού Πρωτοδικείου) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -10096,7 +10106,9 @@
       "definition_el": "Η προφορική ακρόαση ενώπιον του δικαστηρίου δεύτερης βαθμίδας κατά την οποία ο αιτών ασύλου παρουσιάζει τα επιχειρήματά του σε προσφυγή της αρχικής απόφασης.",
       "definition_en": "An oral hearing before a second-instance court where an asylum applicant presents arguments in appeal against the initial asylum decision.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4939/2022 arts. 100-102 (Προσδιορισμός συζήτησης / Έκθεμα / Συζήτηση προσφυγής) — the oral-hearing procedure before Independent Appeals Committees — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Ν. 4939/2022 art. 82 (Προσωπική συνέντευξη σε β' βαθμό ενώπιον της Επιτροπής Προσφυγών) — 'personal interview' at second instance is the functional oral hearing — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Directive 2013/32/EU (APD recast) art. 46 — right to effective remedy including 'a full and ex nunc examination of both facts and points of law' — https://eur-lex.europa.eu/eli/dir/2013/32"
       ]
     },
     {
@@ -10128,7 +10140,9 @@
       "definition_el": "Αίτηση διεθνούς προστασίας που υποβάλλεται μετά την απόρριψη ή ανάκληση προηγούμενης αίτησης, συνήθως με νέα στοιχεία ή αλλαγή περιστάσεων.",
       "definition_en": "An application for international protection submitted after the rejection or withdrawal of a previous application, typically based on new facts or changed circumstances.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4939/2022 art. 1 περ. κδ' — 'μεταγενέστερη αίτηση: η αίτηση για παροχή διεθνούς προστασίας που υποβάλλεται μετά τη λήψη τελεσίδικης απόφασης επί προηγούμενης αίτησης... περιλαμβανομένων περιπτώσεων όπου ο αιτών ρητά ανακάλεσε την αίτησή του και περιπτώσεων όπου η Αποφαινόμενη Αρχή απέρριψε την αίτηση μετά από τη σιωπηρή της ανάκληση' — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Ν. 4939/2022 art. 94 (Μεταγενέστερες αιτήσεις) — προϋποθέσεις παραδεκτού, νέα στοιχεία — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Directive 2013/32/EU (APD recast) art. 40-42 — subsequent applications (Επίπεδο ΕΕ) — https://eur-lex.europa.eu/eli/dir/2013/32"
       ]
     },
     {
@@ -10284,7 +10298,8 @@
       "definition_el": "Η διαδικαστική ενέργεια της τοποθέτησης της απόφασης σε ορατό σημείο της δομής φιλοξενίας για ενημέρωση των αιτούντων.",
       "definition_en": "The procedural action of posting an administrative decision at a visible location within a reception facility to formally notify applicants.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4939/2022 art. 87 παρ. 4-7 (Αιτιολογία και επίδοση αποφάσεων και άλλων διαδικαστικών εγγράφων) + art. 108 (Επίδοση απόφασης δευτεροβάθμιας) — includes θυροκόλληση όταν ο αιτών απουσιάζει από την καταχωρημένη διεύθυνση/δομή — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Ν. 4939/2022 art. 83 (Υποχρεώσεις των αιτούντων — υποχρέωση παραμονής και συνεργασίας στην καταχωρημένη διαμονή) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -10564,7 +10579,10 @@
       "definition_el": "Το διαδικαστικό δικαίωμα του κρατουμένου να έχει πρόσβαση και να επικοινωνεί με νομικό αντιπρόσωπο κατά τη διάρκεια της κράτησης.",
       "definition_en": "The procedural right of a detained person to have access to and communicate with a legal representative during their detention.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Directive 2013/33/EU (Reception Conditions Directive) art. 10(4) — 'Member States shall ensure that legal advisers or counsellors and persons representing UNHCR... have the possibility to communicate with and visit applicants in conditions that respect privacy' — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013L0033",
+        "Directive 2008/115/EC (Return Directive) art. 16(2) — 'Third-country nationals in detention shall be allowed — on request — to establish in due time contact with legal representatives, family members and competent consular authorities' — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008L0115",
+        "Ν. 4939/2022 art. 51 (Συνθήκες κράτησης των αιτούντων) — transposition of RCD art. 10 guarantees, incl. access to lawyer — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "CoE — CPT Standards on immigration detention, para on 'right of access to a lawyer from the very outset of deprivation of liberty'"
       ]
     },
     {
@@ -10580,7 +10598,10 @@
       "definition_el": "Το δικαίωμα κάθε κρατούμενου να υποβληθεί σε ιατρική εξέταση και να λάβει ιατρική περίθαλψη κατά τη διάρκεια της κράτησής του.",
       "definition_en": "The right of any detained person to undergo medical examination and receive medical care during their period of detention.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4939/2022 art. 54 (Ιατρικές εξετάσεις) + art. 77 (Ιατρική Εξέταση αιτούντος) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Directive 2013/33/EU art. 19 — 'Member States shall ensure that applicants receive the necessary health care which shall include, at least, emergency care and essential treatment of illnesses and of serious mental disorders' (applies to detained applicants via art. 10) — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013L0033",
+        "Directive 2013/32/EU (APD) art. 18 — medical examination for signs indicating past persecution/serious harm (Istanbul-Protocol-aligned)",
+        "CoE — CPT Standards on immigration detention — requirement of medical screening on admission + access to doctor throughout detention"
       ]
     },
     {
@@ -10834,7 +10855,9 @@
       "definition_el": "Πρόσωπο που επιστρέφει εθελοντικά στη χώρα προέλευσης ή τρίτη χώρα με υποστήριξη προγραμμάτων επιστροφής.",
       "definition_en": "A person who voluntarily returns to their country of origin or a third country with support from assisted voluntary return programmes.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "IOM 'IOM's role explained' — defines the AVRR beneficiary category (migrant who chooses to return with IOM support), distinct from deportee/forced-removal subject — https://www.iom.int/assisted-voluntary-return-post-arrival-assistance-and-reintegration-ioms-role-explained",
+        "IOM Publications — 'A Framework for Assisted Voluntary Return and Reintegration' — beneficiary profiles/eligibility — https://publications.iom.int/books/framework-assisted-voluntary-return-and-reintegration",
+        "IOM Greece — AVRR programme beneficiary status (Greek national context) — https://greece.iom.int/assisted-voluntary-return-and-reintegration-migrants-situations-vulnerability"
       ]
     },
     {
@@ -12623,8 +12646,8 @@
       "id": "article-2-law-4939-definitions-basic-definitions",
       "category": "legal",
       "translations": {
-        "el": "Άρθρο 2 Ν.4939 ορισμοί",
-        "en": "Article 2 Law 4939 Definitions (Basic Definitions)",
+        "el": "Άρθρο 1 Ν.4939/2022 — ορισμοί",
+        "en": "Article 1 Law 4939/2022 — definitions",
         "ar": "المادة 2 من القانون 4939 التعاريف (التعاريف الأساسية)",
         "fa": "ماده 2 قانون 4939 تعاریف (تعاریف پایه‌ای)",
         "fr": "Article 2 Loi 4939 Définitions (Définitions de base)"
@@ -12632,15 +12655,16 @@
       "definition_el": "Το άρθρο 2 του ελληνικού νόμου 4939 που περιέχει τους βασικούς ορισμούς των εννοιών που χρησιμοποιούνται στη νομοθεσία για το άσυλο και τη διεθνή προστασία.",
       "definition_en": "Article 2 of Greek Law 4939 containing the basic definitions of key concepts used in asylum and international protection legislation.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4939/2022 art. 1 (Ορισμοί) — THIS is the definitions article, not art. 2 — contains 54 definitions (α' έως νδ') for Σύμβαση Γενεύης, αίτηση διεθνούς προστασίας, αιτών, διεθνής προστασία, κράτηση, πρόσφυγας, ευάλωτα πρόσωπα, ασυνόδευτος ανήλικος κ.λπ. — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Ν. 4939/2022 art. 2 (Ερμηνεία και εφαρμογή) — this article is about interpretive alignment with Σύμβαση Γενεύης 1951, όχι ορισμοί — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
       "id": "article-5-of-law-4939-refugee-status-granting-of-refugee-sta",
       "category": "legal",
       "translations": {
-        "el": "Άρθρο 5 Ν.4939 προσφυγική ιδιότητα",
-        "en": "Article 5 of Law 4939 refugee status (granting of refugee status)",
+        "el": "Άρθρο 12 Ν.4939/2022 — χορήγηση καθεστώτος πρόσφυγα",
+        "en": "Article 12 Law 4939/2022 — granting of refugee status",
         "ar": "المادة 5 من القانون 4939 صفة اللاجئ (منح صفة اللاجئ)",
         "fa": "ماده 5 قانون 4939 وضعیت پناهنده (اعطای وضعیت پناهنده)",
         "fr": "Article 5 de la Loi 4939 statut de réfugié (octroi du statut de réfugié)"
@@ -12648,15 +12672,18 @@
       "definition_el": "Η νομική διάταξη του ελληνικού νόμου 4939 που καθορίζει τους όρους και την διαδικασία χορήγησης της προσφυγικής ιδιότητας στα πρόσωπα που πληρούν τα κριτήρια της Σύμβασης της Γενεύης.",
       "definition_en": "The legal provision of Greek Law 4939 that establishes the conditions and procedure for granting refugee status to persons who meet the criteria of the Geneva Convention.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4939/2022 art. 12 (Χορήγηση του καθεστώτος πρόσφυγα) — THIS is 'granting of refugee status' — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Ν. 4939/2022 art. 5 (Φορείς δίωξης ή σοβαρής βλάβης) — actors of persecution/serious harm, NOT granting — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Ν. 4939/2022 art. 8 (Πράξεις δίωξης) + art. 9 (Λόγοι δίωξης) — acts and grounds of persecution — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Directive 2011/95/EU (Qualification Directive recast) art. 13 — granting refugee status — https://eur-lex.europa.eu/eli/dir/2011/95"
       ]
     },
     {
       "id": "article-15-law-4939-subsidiary-protection-granting-of-subsid",
       "category": "legal",
       "translations": {
-        "el": "Άρθρο 15 Ν.4939 επικουρική",
-        "en": "Article 15 Law 4939 subsidiary protection (granting of subsidiary protection)",
+        "el": "Άρθρο 17 Ν.4939/2022 — χορήγηση επικουρικής προστασίας",
+        "en": "Article 17 Law 4939/2022 — granting of subsidiary protection",
         "ar": "المادة 15 من القانون 4939 الحماية الإضافية (منح الحماية الإضافية)",
         "fa": "ماده 15 قانون 4939 حمایت کمکی (اعطای حمایت کمکی)",
         "fr": "Article 15 Loi 4939 protection subsidiaire (octroi de la protection subsidiaire)"
@@ -12664,15 +12691,18 @@
       "definition_el": "Νομική διάταξη του ελληνικού δικαίου που ρυθμίζει τη χορήγηση επικουρικής προστασίας σε αλλοδαπούς που δεν πληρούν τις προϋποθέσεις για καταφύγιο αλλά διατρέχουν σοβαρό κίνδυνο.",
       "definition_en": "Legal provision of Greek law regulating the granting of subsidiary protection to foreign nationals who do not meet refugee criteria but face a serious risk of harm.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4939/2022 art. 17 (Χορήγηση καθεστώτος επικουρικής προστασίας) — the GRANTING article — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Ν. 4939/2022 art. 15 (Παύση επικουρικής προστασίας) — the CESSATION article (art. 15 is NOT 'granting of subsidiary protection'; verified via full ToC scrape) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Ν. 4939/2022 art. 14 (Σοβαρή βλάβη) — substantive definition of 'serious harm' triggering subsidiary protection — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Directive 2011/95/EU (Qualification Directive recast) arts. 15-19 — subsidiary protection framework — https://eur-lex.europa.eu/eli/dir/2011/95"
       ]
     },
     {
       "id": "article-22-law-4939-access-to-procedure-procedural",
       "category": "legal",
       "translations": {
-        "el": "Άρθρο 22 Ν.4939 πρόσβαση σε διαδικασία",
-        "en": "Article 22 Law 4939 access to procedure (procedural)",
+        "el": "Άρθρο 69 Ν.4939/2022 — πρόσβαση στη διαδικασία",
+        "en": "Article 69 Law 4939/2022 — access to the procedure",
         "ar": "المادة 22 من القانون 4939 الحق في الوصول إلى الإجراء (الإجرائي)",
         "fa": "ماده 22 قانون 4939 دسترسی به رویه (رویه‌ای)",
         "fr": "Article 22 Loi 4939 accès à la procédure (procédural)"
@@ -12680,15 +12710,18 @@
       "definition_el": "Νομική διάταξη που εγγυά στους αιτούντες άσυλο το δικαίωμα πρόσβασης σε δίκαιη και διαφανή διαδικασία ασύλου σύμφωνα με το ελληνικό νομικό πλαίσιο.",
       "definition_en": "Legal provision guaranteeing asylum seekers the right to access fair and transparent asylum procedures in accordance with Greek legal framework.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4939/2022 art. 22 (Διατήρηση της οικογενειακής ενότητας) — VERIFIED via ToC: art. 22 is about family unity for beneficiaries of international protection, NOT access to procedure — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Ν. 4939/2022 art. 69 (Αίτηση διεθνούς προστασίας — υποβολή, καταγραφή, πρόσβαση στη διαδικασία) — THIS is the 'access to procedure' article — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Ν. 4939/2022 art. 68 (Πεδίο εφαρμογής) + art. 70 (Ενημέρωση σε κέντρα κράτησης) — complementary access-to-procedure guarantees — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Directive 2013/32/EU (APD recast) art. 6 — access to procedure — https://eur-lex.europa.eu/eli/dir/2013/32"
       ]
     },
     {
       "id": "article-65-law-4939-interview-procedural",
       "category": "legal",
       "translations": {
-        "el": "Άρθρο 65 Ν.4939 συνέντευξη",
-        "en": "Article 65 Law 4939 interview (procedural)",
+        "el": "Άρθρο 82 Ν.4939/2022 — προσωπική συνέντευξη",
+        "en": "Article 82 Law 4939/2022 — personal interview",
         "ar": "المادة 65 من القانون 4939 المقابلة (الإجراءات)",
         "fa": "ماده 65 قانون 4939 مصاحبه (رویه‌ای)",
         "fr": "Article 65 Loi 4939 entretien (procédural)"
@@ -12696,15 +12729,17 @@
       "definition_el": "Η δικαστική συνέντευξη που διενεργείται κατά τα προβλεπόμενα στο Άρθρο 65 του Νόμου 4939/2022 της ελληνικής νομοθεσίας για την αξιολόγηση του αιτήματος ασύλου.",
       "definition_en": "The procedural interview conducted according to Article 65 of Greek Law 4939/2022 for the assessment of an asylum application.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4939/2022 art. 82 (Προσωπική συνέντευξη) — THIS is the personal-interview article — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Ν. 4939/2022 art. 65 (Αρμοδιότητες Ειδικής Γραμματείας Προστασίας Ασυνόδευτων Ανηλίκων) — is about the Special Secretariat, NOT about the interview — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Directive 2013/32/EU (APD recast) art. 15 (personal interview conditions) + art. 34 (personal interview on admissibility) — https://eur-lex.europa.eu/eli/dir/2013/32"
       ]
     },
     {
       "id": "article-82-law-4939-appeal-procedural",
       "category": "legal",
       "translations": {
-        "el": "Άρθρο 82 Ν.4939 προσφυγή",
-        "en": "Article 82 Law 4939 appeal (procedural)",
+        "el": "Άρθρο 97 Ν.4939/2022 — προσφυγή",
+        "en": "Article 97 Law 4939/2022 — appeal",
         "ar": "المادة 82 من القانون 4939 الطعن (إجرائي)",
         "fa": "ماده 82 قانون 4939 تجدیدنظرخواهی (رویه‌ای)",
         "fr": "Article 82 Loi 4939 recours (procédural)"
@@ -12712,7 +12747,10 @@
       "definition_el": "Η διαδικαστική προσφυγή κατά απόφασης σύμφωνα με το άρθρο 82 του νόμου 4939/2022, η οποία επιτρέπει στους αιτούντες ασύλου να ζητήσουν αναθεώρηση της απόφασης σε ανώτερο δικαστήριο.",
       "definition_en": "The procedural appeal against a decision according to Article 82 of Law 4939/2022, which allows asylum applicants to request judicial review of a decision by a higher court.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4939/2022 art. 97 (Δικαίωμα άσκησης προσφυγής) — THIS is the right-of-appeal article — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Ν. 4939/2022 art. 82 (Προσωπική συνέντευξη) — art. 82 is about the personal interview, NOT appeal — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Ν. 4939/2022 arts. 98-108 (περιεχόμενο προσφυγής, άσκηση, προσδιορισμός, συζήτηση, απόφαση, επίδοση) — full appeal framework — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Directive 2013/32/EU (APD recast) art. 46 — right to an effective remedy — https://eur-lex.europa.eu/eli/dir/2013/32"
       ]
     },
     {
@@ -13003,7 +13041,9 @@
       "definition_el": "Η απόρριψη αίτησης ασύλου όταν τα στοιχεία είναι ξεκάθαρα και προφανώς δεν πληρούν τα κριτήρια της Σύμβασης του 1951.",
       "definition_en": "The rejection of an asylum application when the facts are clearly and obviously insufficient to meet the criteria of the 1951 Convention.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4939/2022 art. 93 (Αβάσιμες αιτήσεις) — 'Η Αποφαινόμενη Αρχή απορρίπτει αίτηση ως προδήλως αβάσιμη' — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Directive 2013/32/EU (APD recast) art. 32(2) + art. 31(8) — grounds for treating an application as manifestly unfounded (safe country of origin, misleading info, refusal to comply, etc.) — https://eur-lex.europa.eu/eli/dir/2013/32",
+        "Ν. 4939/2022 art. 92 (Ασφαλείς χώρες καταγωγής) — often the trigger for a manifestly-unfounded rejection — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -13019,7 +13059,9 @@
       "definition_el": "Η απόρριψη αίτησης ασύλου ή δικαιώματος με βάση το γεγονός ότι ο αιτών κατάχρησε τη δικαστική διαδικασία με δόλο ή κακή πίστη.",
       "definition_en": "The rejection of an asylum application or legal claim on the grounds that the applicant abused or misused the judicial or administrative process in bad faith.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4939/2022 art. 94 (Μεταγενέστερες αιτήσεις — μπορεί να απορριφθούν ως καταχρηστικές όταν επαναλαμβάνουν το ίδιο περιεχόμενο χωρίς νέα στοιχεία) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Directive 2013/32/EU (APD recast) art. 33(2)(d) — subsequent applications with no new elements are inadmissible; art. 40(5) explicitly addresses abusive/frivolous subsequent applications — https://eur-lex.europa.eu/eli/dir/2013/32",
+        "Ν. 4939/2022 art. 86 (Σιωπηρή ανάκληση) — related procedural ground where non-cooperation may be treated as abuse — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -13071,7 +13113,10 @@
       "definition_el": "Δικαστικό όργανο ή διοικητικό σώμα που ελέγχει τη νομιμότητα και τη νόμιμη διάρκεια της κράτησης ενός ατόμου σύμφωνα με τις διατάξεις του νόμου.",
       "definition_en": "A judicial or administrative body that reviews the lawfulness and legal justification of a person's detention in accordance with legal provisions.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4939/2022 art. 50 παρ. 5-6 (Κράτηση αιτούντων — δικαστική επανεξέταση) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Directive 2013/33/EU art. 9(3) — 'Where detention is ordered by administrative authorities, Member States shall provide for a speedy judicial review of the lawfulness of detention' + art. 9(5) — periodic ex officio and/or on-application review — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013L0033",
+        "Directive 2008/115/EC art. 15(2)-(3) — speedy judicial review + reasonable-interval review of detention — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008L0115",
+        "ECHR art. 5(4) — habeas corpus / speedy review of lawfulness of detention"
       ]
     },
     {
@@ -13122,7 +13167,9 @@
       "definition_el": "Πρόγραμμα επιστροφής προσφύγων και μεταναστών στη χώρα προέλευσής τους με χρηματική ενίσχυση για την επανένταξή τους στην κοινωνία.",
       "definition_en": "A return program for refugees and migrants to their country of origin that provides cash assistance to facilitate their social and economic reintegration.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "IOM official page 'IOM's role explained' — 'Reintegration assistance aims to support economic self-sufficiency, psychosocial wellbeing, and social stability... Where programme conditions and resources allow, IOM provides post-arrival and reintegration assistance — including case management, referrals, and tailored support' — https://www.iom.int/assisted-voluntary-return-post-arrival-assistance-and-reintegration-ioms-role-explained",
+        "IOM Publications — 'A Framework for Assisted Voluntary Return and Reintegration' — describes cash-grant + in-kind reintegration components — https://publications.iom.int/books/framework-assisted-voluntary-return-and-reintegration",
+        "Directive 2008/115/EC (Return Directive), Recital 10 + Preamble to Recast Proposal — 'access to programmes providing logistical, financial and other material or in-kind assistance' during voluntary departure — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008L0115"
       ]
     },
     {
@@ -13441,7 +13488,9 @@
       "definition_el": "Το δικαίωμα του αιτητή ασύλου να λάβει μετάφραση της επίσημης απόφασης κράτησης του σε γλώσσα που κατανοεί, ώστε να γνωρίζει τους λόγους και τη διάρκεια της κράτησης του.",
       "definition_en": "The right of an asylum seeker to receive a translation of the official detention decision in a language they understand, so they are informed of the reasons and duration of their detention.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Directive 2013/33/EU art. 9(2) + 9(4) — detention order 'in writing' and 'Detained applicants shall immediately be informed in writing, in a language which they understand or are reasonably supposed to understand, of the reasons for detention and the procedures... for challenging the detention order, as well as of the possibility to request free legal assistance and representation' — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013L0033",
+        "Directive 2008/115/EC art. 12(2) — 'Member States shall provide, upon request, a written or oral translation of the main elements of decisions related to return... including information on the available legal remedies in a language the third-country national understands' — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008L0115",
+        "Ν. 4939/2022 art. 50 (Κράτηση αιτούντων) — transposition of RCD detention safeguards — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -13607,7 +13656,9 @@
       "definition_el": "Θάνατος ενός ατόμου σε κράτηση ή κέντρο υποδοχής που προκλήθηκε από αυτοκτονία.",
       "definition_en": "Death of a person in detention or reception centre caused by suicide.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "ECHR art. 2 (right to life) — procedural obligation to investigate deaths in state custody (established via ECtHR case-law: Salman v Turkey [2000], Keenan v UK [2001] on suicide risk in detention)",
+        "CoE — CPT Standards on immigration detention, section on 'safeguards against ill-treatment and prevention of self-harm/suicide'",
+        "Ν. 4939/2022 art. 51 (Συνθήκες κράτησης) + art. 52 (Κράτηση ευάλωτων ατόμων) — obligations regarding vulnerable detainees at risk — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -13660,7 +13711,10 @@
       "definition_el": "Το δικαίωμα ενός κρατουμένου αιτούντα ή μετανάστη να συναντάται με τον δικηγόρο του ή έναν νομικό εκπρόσωπο κατά τη διάρκεια της κράτησης.",
       "definition_en": "The right of a detained asylum seeker or migrant to meet with their lawyer or legal representative during detention.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Directive 2013/33/EU art. 10(4) — 'legal advisers or counsellors... shall have the possibility to communicate with and visit applicants in conditions that respect privacy' — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013L0033",
+        "Directive 2013/33/EU art. 9(6) — 'free legal assistance and representation' for judicial review of detention orders — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013L0033",
+        "Directive 2008/115/EC art. 16(2) — right to establish contact with legal representatives in pre-removal detention — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008L0115",
+        "Ν. 4939/2022 arts. 51 (συνθήκες κράτησης αιτούντων) + 76 (νομική εκπροσώπηση και συνδρομή) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -13676,7 +13730,9 @@
       "definition_el": "Το δικαίωμα του προσώπου σε κράτηση να επικοινωνεί και να συνεργάζεται με μη κυβερνητικές οργανώσεις για την προστασία των δικαιωμάτων του.",
       "definition_en": "The right of a detained person to communicate and cooperate with non-governmental organizations for the protection of their rights.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Directive 2013/33/EU art. 10(4) — 'family members, legal advisers or counsellors and persons representing relevant non-governmental organisations recognised by the Member State concerned shall have the possibility to communicate with and visit applicants in conditions that respect privacy' — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013L0033",
+        "Directive 2008/115/EC art. 16(4) — 'Relevant and competent national, international and non-governmental organisations and bodies shall have the possibility to visit detention facilities... Access may be subject to authorisation' — https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008L0115",
+        "Ν. 4939/2022 art. 51 + art. 78 (Μητρώο ΜΚΟ) — regulates NGO access to detention & reception facilities — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -15892,7 +15948,9 @@
       "definition_el": "Ειδικά διαμορφωμένος χώρος συνέντευξης όπου οι αιτούντες άσυλο, ιδίως οι ευάλωτες ομάδες, συνομιλούν με τις αρχές σε ασφαλές και εμπιστευτικό περιβάλλον.",
       "definition_en": "A specially designed interview space where asylum applicants, particularly vulnerable persons, meet with authorities in a secure and confidential environment.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4939/2022 art. 81 (Τήρηση εμπιστευτικότητας) + art. 82 (Προσωπική συνέντευξη — προϋποθέσεις εμπιστευτικότητας, ιδιωτικότητας) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Directive 2013/32/EU (APD recast) art. 15(2) — 'A personal interview shall take place under conditions which ensure appropriate confidentiality' + art. 48 confidentiality — https://eur-lex.europa.eu/eli/dir/2013/32",
+        "EUAA Practical Guide on the personal interview — physical setup requirements (private, quiet, non-intimidating environment)"
       ]
     },
     {
@@ -15926,7 +15984,9 @@
       "definition_el": "Συνέντευξη που διεξάγεται με την παρουσία ψυχολόγου προκειμένου να παρασχεθεί υποστήριξη και προστασία σε ευάλωτα άτομα κατά τη διάρκειά της.",
       "definition_en": "An interview conducted with a psychologist present to provide support and protection to vulnerable individuals during the proceedings.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "Ν. 4939/2022 art. 82 παρ. 5 (Προσωπική συνέντευξη — παρουσία συμβούλου/ψυχολόγου/κοινωνικού λειτουργού για ευάλωτους) + art. 1 περ. κβ' ορίζει τον 'σύμβουλο του αιτούντος' ως 'ιατρός, ψυχολόγος, κοινωνικός λειτουργός' — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022",
+        "Directive 2013/32/EU (APD recast) art. 15(3)(a-e) — special guarantees during personal interview for applicants with special procedural needs, incl. vulnerable persons — https://eur-lex.europa.eu/eli/dir/2013/32",
+        "Ν. 4939/2022 art. 67 (Θύματα βασανιστηρίων και βίας) + art. 72 (ειδικές διαδικαστικές εγγυήσεις) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -16175,7 +16235,10 @@
       "definition_el": "Προστασία που χορηγείται σε άτομα που διατρέχουν κίνδυνο βασανισμού ή άλλης σοβαρής παραβίασης των δικαιωμάτων τους σύμφωνα με το άρθρο 3 της Ευρωπαϊκής Σύμβασης Δικαιωμάτων του Ανθρώπου.",
       "definition_en": "Protection granted to individuals facing risk of torture or other serious violations of their human rights under Article 3 of the European Convention on Human Rights.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "European Convention on Human Rights (ECHR), art. 3 — 'No one shall be subjected to torture or to inhuman or degrading treatment or punishment' (κυρώθηκε στην Ελλάδα με το ν.δ. 53/1974)",
+        "ECtHR — Soering v United Kingdom (App. 14038/88, judgment of 7 July 1989) — foundational: state responsibility under art. 3 for expulsion exposing person to inhuman/degrading treatment in receiving state — https://hudoc.echr.coe.int/eng?i=001-57619",
+        "ECtHR — Chahal v United Kingdom (App. 22414/93, judgment of 15 November 1996) — art. 3 protection is ABSOLUTE, no balancing with national security in expulsion cases — https://hudoc.echr.coe.int/eng?i=001-58004",
+        "ECtHR — MSS v Belgium and Greece (App. 30696/09, 21 January 2011) — art. 3 violated by transfer to Greece under Dublin due to reception conditions"
       ]
     },
     {
@@ -16191,7 +16254,10 @@
       "definition_el": "Η προστασία από την επιστροφή ενός ατόμου σε χώρα όπου κινδυνεύει να διωχθεί ή να υποστεί σοβαρή βλάβη, όπως ορίζεται στο άρθρο 33 της Σύμβασης του 1951 για τους Πρόσφυγες.",
       "definition_en": "Protection from return of an individual to a country where they face risk of persecution or serious harm, as defined in Article 33 of the 1951 Refugee Convention.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "1951 Convention Relating to the Status of Refugees, art. 33(1) — 'No Contracting State shall expel or return (\"refouler\") a refugee in any manner whatsoever to the frontiers of territories where his life or freedom would be threatened on account of his race, religion, nationality, membership of a particular social group or political opinion' — https://www.unhcr.org/about-unhcr/overview/1951-refugee-convention",
+        "UNHCR — 1951 Refugee Convention & 1967 Protocol (official text) — https://www.unhcr.org/sites/default/files/2025-02/1951-refugee-convention-1967-protocol.pdf",
+        "Ν.δ. 3989/1959 (Α' 201) — Κύρωση Σύμβασης Γενεύης στην ελληνική έννομη τάξη + α.ν. 389/1968 (Α' 125) κύρωση Πρωτοκόλλου Νέας Υόρκης",
+        "Ν. 4939/2022 art. 20 (Προστασία από την απομάκρυνση — αρχή της μη επαναπροώθησης) — https://www.kodiko.gr/nomothesia/document/797068/nomos-4939-2022"
       ]
     },
     {
@@ -16591,7 +16657,9 @@
       "definition_el": "Το πρόγραμμα της Διεθνούς Οργάνωσης Μετανάστευσης (IOM) που παρέχει οικονομική και λογιστική υποστήριξη σε αιτητές ασύλου και μετανάστες που επιθυμούν να επιστρέψουν εθελοντικά στη χώρα προέλευσής τους.",
       "definition_en": "The International Organization for Migration (IOM) programme that provides financial and logistical assistance to asylum seekers and migrants who wish to voluntarily return to their country of origin.",
       "sources": [
-        "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
+        "IOM official page 'Assisted Voluntary Return, Post-Arrival Assistance, and Reintegration: IOM's Role Explained' — 'AVRR is an IOM-led programme. It begins when a migrant chooses to return to their country of origin or a country where they have the right to enter and stay, and requests IOM's support to do so. IOM does not initiate returns. The migrant does.' — https://www.iom.int/assisted-voluntary-return-post-arrival-assistance-and-reintegration-ioms-role-explained",
+        "IOM Publications — 'A Framework for Assisted Voluntary Return and Reintegration' — policymaker/practitioner guide to AVRR design & implementation — https://publications.iom.int/books/framework-assisted-voluntary-return-and-reintegration",
+        "IOM Greece — AVRR project providing sustainable reintegration assistance to migrants (Greek national implementation) — https://greece.iom.int/assisted-voluntary-return-and-reintegration-migrants-situations-vulnerability"
       ]
     },
     {
