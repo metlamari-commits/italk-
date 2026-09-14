@@ -2413,7 +2413,15 @@ async function init() {
   render();
 }
 
-document.addEventListener("DOMContentLoaded", init);
+// INP fix: defer heavy init (loads 1.1MB terms.json) until after LCP paint,
+// so the practice-cta stays responsive to early clicks.
+window.addEventListener("load", () => {
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(init, { timeout: 2000 });
+  } else {
+    setTimeout(init, 1);
+  }
+});
 </script>
 
 <script>
