@@ -7,6 +7,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { homedir } from 'node:os';
+import { spawn } from 'node:child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const envPath = join(__dirname, '..', '.env');
@@ -173,7 +174,67 @@ const delta = (curr, prev) => {
   if (!existsSync(outDir)) mkdirSync(outDir, { recursive: true });
   const year = now.getUTCFullYear();
   const week = Math.ceil(((now - new Date(Date.UTC(year, 0, 1))) / 86400000 + new Date(Date.UTC(year, 0, 1)).getUTCDay() + 1) / 7);
-  const outFile = join(outDir, `${year}-W${String(week).padStart(2, '0')}.md`);
-  writeFileSync(outFile, output, 'utf8');
-  console.error(`\n✓ Saved to: ${outFile}`);
+  const stem = `${year}-W${String(week).padStart(2, '0')}`;
+  const mdFile = join(outDir, `${stem}.md`);
+  const htmlFile = join(outDir, `${stem}.html`);
+  writeFileSync(mdFile, output, 'utf8');
+  writeFileSync(htmlFile, mdToHtml(output, stem), 'utf8');
+  console.error(`\n✓ Saved MD:   ${mdFile}`);
+  console.error(`✓ Saved HTML: ${htmlFile}`);
+
+  if (process.argv.includes('--open')) {
+    spawn('cmd', ['/c', 'start', '', htmlFile], { detached: true, stdio: 'ignore' }).unref();
+    console.error(`✓ Opened in default browser`);
+  }
 })().catch(e => { console.error('ERROR:', e.message); process.exit(1); });
+
+function mdToHtml(md, title) {
+  const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const lines = md.split('\n');
+  const out = [];
+  let inTable = false;
+  const flushTable = () => { if (inTable) { out.push('</tbody></table>'); inTable = false; } };
+  for (let i = 0; i < lines.length; i++) {
+    const l = lines[i];
+    if (/^\|.+\|$/.test(l)) {
+      const cells = l.slice(1, -1).split('|').map(c => c.trim());
+      const next = lines[i + 1] || '';
+      const isHeaderSep = /^\|[\s\-|]+\|$/.test(next);
+      if (isHeaderSep && !inTable) {
+        out.push('<table><thead><tr>' + cells.map(c => `<th>${esc(c)}</th>`).join('') + '</tr></thead><tbody>');
+        inTable = true;
+        i++;
+        continue;
+      }
+      if (inTable) {
+        out.push('<tr>' + cells.map(c => `<td>${esc(c)}</td>`).join('') + '</tr>');
+        continue;
+      }
+    }
+    flushTable();
+    if (/^# /.test(l)) out.push(`<h1>${esc(l.slice(2))}</h1>`);
+    else if (/^## /.test(l)) out.push(`<h2>${esc(l.slice(3))}</h2>`);
+    else if (/^### /.test(l)) out.push(`<h3>${esc(l.slice(4))}</h3>`);
+    else if (/^---$/.test(l)) out.push('<hr>');
+    else if (/^_(.+)_$/.test(l)) out.push(`<p><em>${esc(l.slice(1, -1))}</em></p>`);
+    else if (l.trim() === '') out.push('');
+    else out.push(`<p>${esc(l)}</p>`);
+  }
+  flushTable();
+  return `<!doctype html><html lang="el"><head><meta charset="utf-8"><title>i-talk.gr Analytics — ${esc(title)}</title>
+<style>
+  body{font-family:system-ui,Segoe UI,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;color:#0a0e13;line-height:1.5;background:#f5f7fb}
+  h1{border-bottom:3px solid #114277;padding-bottom:.5rem;color:#114277}
+  h2{margin-top:2rem;color:#114277;border-bottom:1px solid #cbd5e1;padding-bottom:.3rem}
+  table{border-collapse:collapse;width:100%;background:#fff;margin:.5rem 0 1.5rem;box-shadow:0 1px 3px rgba(0,0,0,.06);border-radius:6px;overflow:hidden}
+  th,td{padding:.6rem .8rem;text-align:left;border-bottom:1px solid #eef2f8}
+  th{background:#114277;color:#fff;font-weight:600}
+  tr:last-child td{border-bottom:none}
+  tr:nth-child(even){background:#fafbfd}
+  hr{border:none;border-top:1px solid #cbd5e1;margin:2rem 0}
+  em{color:#64748b;font-size:.9rem}
+  p{margin:.5rem 0}
+</style></head><body>
+${out.join('\n')}
+</body></html>`;
+}
