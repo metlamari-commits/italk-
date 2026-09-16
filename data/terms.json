@@ -6829,7 +6829,7 @@
         "fa": "حق اطلاع رسانی به کنسولگری",
         "fr": "droit de notification du consulat"
       },
-      "definition_el": "Το δικαίωμα του αιτούντος άσυλο να ειδοποιηθεί η領事ική αρχή της χώρας του για τη διαδικασία ασύλου ή τη σύλληψή του.",
+      "definition_el": "Το δικαίωμα του αιτούντος άσυλο να ειδοποιηθεί η προξενική αρχή της χώρας του για τη διαδικασία ασύλου ή τη σύλληψή του.",
       "definition_en": "The right of an asylum seeker to have their consulate or diplomatic representation notified of their asylum application or detention.",
       "sources": [
         "AI-generated (claude-haiku-4-5-20251001) 2026-09-06 — needs native review"
@@ -11858,7 +11858,7 @@
       "translations": {
         "el": "οσφυαλγία-ισχιαλγία",
         "en": "lumbago-sciatica (back pain)",
-        "ar": "ألم أسفل الظهر والعصب ال坐骨 (ألم الظهر)",
+        "ar": "ألم أسفل الظهر والعصب الوركي (ألم الظهر)",
         "fa": "کمردرد-درد سیاتیک (درد کمر)",
         "fr": "lombalgie-sciatique (douleur dorsale)"
       },
@@ -13649,7 +13649,7 @@
       "translations": {
         "el": "αυτοκτονία σε κράτηση",
         "en": "suicide in detention (fatal incident)",
-        "ar": "الانتحار في الاحتجاز (حادثة م致)",
+        "ar": "الانتحار في الاحتجاز (حادثة مميتة)",
         "fa": "خودکشی در بازداشت (حادثه کشنده)",
         "fr": "suicide en détention (incident mortel)"
       },
@@ -15608,7 +15608,7 @@
       "translations": {
         "el": "θύμα δίωξης βάσει εθνικότητας ή φυλής",
         "en": "victim of persecution on grounds of nationality or race",
-        "ar": "受害者 بسبب الاضطهاد على أساس الجنسية أو العرق",
+        "ar": "ضحية الاضطهاد على أساس الجنسية أو العرق",
         "fa": "قربانی تعقیب بر اساس ملیت یا نژاد",
         "fr": "victime de persécution fondée sur la nationalité ou la race"
       },
