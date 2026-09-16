@@ -1985,7 +1985,16 @@
 
     <div class="hearts-warning" id="hearts-warning">
       <strong>Τελείωσαν οι ζωές σου.</strong> Επόμενη καρδιά σε <span class="countdown" id="regen-countdown">--:--</span>.
-      Χρησιμοποίησε τον χρόνο για να ξεφυλλίσεις το <a href="index.html">γλωσσάρι</a>.
+      <div style="margin-top:12px; padding:12px; background:var(--m3-primary-container); border-radius:12px; color:var(--m3-on-primary-container);">
+        <strong>💡 Θέλεις να παίξεις τώρα;</strong><br>
+        Κοινοποίησε το i-talk.gr σε έναν συνάδελφο και πάρε <strong>+10 καρδιές αμέσως</strong>!
+        <button id="share-reward-btn-warn" type="button" style="display:block; margin-top:10px; width:100%; padding:10px 16px; background:var(--m3-primary); color:#fff; border:none; border-radius:10px; font-weight:600; cursor:pointer; font-size:15px;">
+          📤 Κοινοποίησε &amp; πάρε +10 καρδιές
+        </button>
+      </div>
+      <div style="margin-top:10px; font-size:13px; opacity:0.8;">
+        Ή ξεφύλλισε το <a href="index.html">γλωσσάρι</a> όσο περιμένεις.
+      </div>
     </div>
 
     <section id="skill-tree" class="skill-tree"></section>
@@ -1997,7 +2006,7 @@
       <ul>
         <li>10 ερωτήσεις multiple choice — σου δίνω έναν όρο, διαλέγεις σωστή μετάφραση από 4 επιλογές</li>
         <li>Σωστή: <strong>+10 XP</strong> · Λάθος: <strong>−1 καρδιά</strong></li>
-        <li>Καρδιές: 5. Αν τελειώσουν, περιμένεις 30 λεπτά για την επόμενη</li>
+        <li>Καρδιές: 5. Αν τελειώσουν, περιμένεις 50 λεπτά για την επόμενη — <strong>ή κοινοποίησε το i-talk.gr σε συνάδελφο και πάρε +10 καρδιές αμέσως!</strong></li>
         <li>Παίξε καθημερινά για σερί 🔥. Χάνεις το σερί αν δεν παίξεις για 24+ ώρες</li>
         <li>Οι όροι έρχονται από το γλωσσάρι (UNHCR / EUAA / Ν.4939/2022) — μαθαίνεις μόνο ελεγμένη ορολογία</li>
       </ul>
@@ -2180,8 +2189,18 @@
       </div>
     </div>
     <div class="result-actions">
-      <button class="result-btn" id="result-again">Επόμενο →</button>
+      <button class="result-btn" id="result-again">🔁 Ξανά ίδια ορολογία</button>
+      <button class="result-btn" id="result-play-all" hidden style="background:var(--m3-tertiary, #6b4d80);">🎲 Παίξε με ΟΛΗ την ορολογία</button>
+      <button class="result-btn secondary" id="result-pick-other">🎯 Διάλεξε άλλη ορολογία</button>
+      <button class="result-btn secondary" id="result-share-plus10" hidden style="background:#e8f5e9; color:#1b5e20; border-color:#1b5e20;">📤 Κοινοποίησε &amp; πάρε +10 καρδιές</button>
+      <button class="result-btn secondary" id="result-install-app" hidden style="background:#e3f2fd; color:#0d47a1; border-color:#0d47a1;">📱 Εγκατέστησε την εφαρμογή στο κινητό</button>
       <a class="result-btn secondary" href="index.html" style="text-align:center; text-decoration:none; display:block;">Πίσω στο Γλωσσάρι</a>
+    </div>
+    <div id="ios-install-tip" hidden style="margin-top:12px; padding:12px; background:#fff3e0; border-radius:10px; font-size:13px; color:#5d4037; text-align:left; max-width:400px; margin-left:auto; margin-right:auto;">
+      <strong>📱 Για iPhone/iPad:</strong><br>
+      1. Πάτησε το κουμπί <strong>Κοινοποίηση</strong> (⬆️) κάτω στο Safari<br>
+      2. Πάτησε <strong>«Προσθήκη στην Οθόνη Αφετηρίας»</strong> (Add to Home Screen)<br>
+      3. Το i-talk.gr θα εμφανιστεί σαν εφαρμογή!
     </div>
   </div>
 
@@ -2269,7 +2288,28 @@
 <script>
 const STATE_KEY = "italk_game_v1";
 const MAX_HEARTS = 5;
-const REGEN_MINUTES = 30;
+const MAX_HEARTS_TOTAL = 15; // hard cap when share-bonus applied
+const REGEN_MINUTES = 50;
+const SHARE_REWARD_HEARTS = 10;
+const SHARE_REWARD_COOLDOWN_MS = 24 * 60 * 60 * 1000; // once per 24h
+
+/* ---- PWA install prompt capture ---- */
+let deferredInstallPrompt = null;
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  deferredInstallPrompt = e;
+});
+function isRunningStandalone() {
+  return window.matchMedia && window.matchMedia("(display-mode: standalone)").matches
+    || window.navigator.standalone === true;
+}
+function isIOSSafari() {
+  const ua = window.navigator.userAgent;
+  const iOS = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+  const webkit = /WebKit/i.test(ua);
+  const chrome = /CriOS|FxiOS|OPiOS|mercury/i.test(ua);
+  return iOS && webkit && !chrome;
+}
 const XP_PER_CORRECT = 10;
 const QUIZ_LENGTH = 10;
 
@@ -2305,7 +2345,8 @@ function defaultGame() {
     langPair: { source: "el", target: "ar" },
     skillProgress: {},  // {skillId: {completions, bestPct, lastPlayedIso}}
     profile: null,      // {nickname, motherTongue, workingLangs, facility, years, interests, onboardedAt}
-    wrongTerms: {}      // {termId: wrongCount} — decrements on later correct answer
+    wrongTerms: {},     // {termId: wrongCount} — decrements on later correct answer
+    lastShareRewardAt: null  // timestamp ms — for +10 hearts share cooldown
   };
 }
 const BOOKMARKS_KEY = "italk_bookmarks_v1"; // shared with index.html glossary
@@ -2361,6 +2402,68 @@ function saveGame() {
   try { localStorage.setItem(STATE_KEY, JSON.stringify(state.game)); } catch(e) {}
 }
 
+function formatHearts(n) {
+  return n > MAX_HEARTS ? n + " ❤️" : n + "/" + MAX_HEARTS;
+}
+
+function canClaimShareReward() {
+  const last = state.game.lastShareRewardAt || 0;
+  return (Date.now() - last) >= SHARE_REWARD_COOLDOWN_MS;
+}
+
+function nextShareRewardAvailableAt() {
+  const last = state.game.lastShareRewardAt || 0;
+  return last + SHARE_REWARD_COOLDOWN_MS;
+}
+
+async function claimShareReward() {
+  if (!canClaimShareReward()) {
+    const msLeft = nextShareRewardAvailableAt() - Date.now();
+    const hLeft = Math.ceil(msLeft / (3600 * 1000));
+    alert("Έχεις ήδη πάρει τη σημερινή σου ανταμοιβή! Επόμενη διαθέσιμη σε ~" + hLeft + " ώρες.");
+    return false;
+  }
+  const shareData = {
+    title: "i-talk.gr — Γλωσσάρι Διερμηνέα Ασύλου",
+    text: "Δωρεάν πολύγλωσσο γλωσσάρι για διερμηνείς άσυλου (EL/EN/AR/FA/FR). Παίξε και μάθε ορολογία!",
+    url: "https://i-talk.gr"
+  };
+  let shared = false;
+  try {
+    if (navigator.share) {
+      await navigator.share(shareData);
+      shared = true;
+    } else if (navigator.clipboard && navigator.clipboard.writeText) {
+      await navigator.clipboard.writeText("i-talk.gr — Γλωσσάρι Διερμηνέα Ασύλου: https://i-talk.gr");
+      alert("Ο σύνδεσμος αντιγράφηκε! Επικόλλησε τον σε ένα μήνυμα σε συνάδελφο για να ενεργοποιηθεί το bonus.");
+      shared = true;
+    } else {
+      alert("Ο browser σου δεν υποστηρίζει κοινοποίηση. Δοκίμασε από κινητό.");
+      return false;
+    }
+  } catch (e) {
+    // User cancelled share sheet — no reward
+    return false;
+  }
+  if (!shared) return false;
+  state.game.hearts = Math.min(state.game.hearts + SHARE_REWARD_HEARTS, MAX_HEARTS_TOTAL);
+  state.game.lastShareRewardAt = Date.now();
+  if (state.game.hearts >= MAX_HEARTS) state.game.heartRegenAt = null;
+  saveGame();
+  renderHud();
+  renderShareRewardUI();
+  return true;
+}
+
+function renderShareRewardUI() {
+  // Toggle share buttons visibility based on cooldown + hearts state
+  const btnWarn = document.getElementById("share-reward-btn-warn");
+  const btnResult = document.getElementById("result-share-plus10");
+  const eligible = canClaimShareReward();
+  if (btnWarn) btnWarn.hidden = !eligible;
+  if (btnResult) btnResult.hidden = !eligible || state.game.hearts >= MAX_HEARTS_TOTAL;
+}
+
 function regenHearts() {
   if (state.game.hearts >= MAX_HEARTS) {
     state.game.heartRegenAt = null;
@@ -2394,7 +2497,7 @@ function renderHud() {
   document.getElementById("hud-streak").textContent = state.game.streak + " μέρες";
   document.getElementById("hud-xp").textContent = state.game.xp.toLocaleString("el-GR") + " XP";
   const hEl = document.getElementById("hud-hearts");
-  hEl.textContent = state.game.hearts + "/" + MAX_HEARTS;
+  hEl.textContent = formatHearts(state.game.hearts);
   hEl.classList.toggle("empty", state.game.hearts === 0);
 
   const warn = document.getElementById("hearts-warning");
@@ -2544,7 +2647,7 @@ function renderCurrentQuestion() {
   document.getElementById("quiz-progress-count").textContent =
     "ΕΡΩΤΗΣΗ " + String(displayIdx).padStart(2, "0") + "/" + String(total).padStart(2, "0");
   document.getElementById("quiz-progress-percent").textContent = Math.round(progressPct) + "%";
-  document.getElementById("quiz-hearts-val").textContent = state.game.hearts + "/" + MAX_HEARTS;
+  document.getElementById("quiz-hearts-val").textContent = formatHearts(state.game.hearts);
   document.getElementById("quiz-streak-val").textContent = state.game.streak || 0;
 
   // Language pair pill
@@ -2779,7 +2882,7 @@ function checkListeningAnswer() {
       state.game.wrongTerms[q.termId] = Math.min(5, (state.game.wrongTerms[q.termId] || 0) + 1);
     }
   }
-  document.getElementById("quiz-hearts-val").textContent = state.game.hearts + "/" + MAX_HEARTS;
+  document.getElementById("quiz-hearts-val").textContent = formatHearts(state.game.hearts);
   saveGame();
 }
 
@@ -2831,7 +2934,7 @@ function handleAnswer(btnEl, choice, q) {
       state.game.wrongTerms[q.termId] = Math.min(5, (state.game.wrongTerms[q.termId] || 0) + 1);
     }
   }
-  document.getElementById("quiz-hearts-val").textContent = state.game.hearts + "/" + MAX_HEARTS;
+  document.getElementById("quiz-hearts-val").textContent = formatHearts(state.game.hearts);
   saveGame();
 }
 
@@ -2926,7 +3029,31 @@ function endQuiz(ranOutOfHearts) {
   document.getElementById("result-score").textContent = correct + " / " + total + " σωστά";
   document.getElementById("result-xp").textContent = "+" + state.quiz.xpEarned;
   document.getElementById("result-streak").textContent = state.game.streak + " 🔥";
-  document.getElementById("result-hearts").textContent = state.game.hearts + "/" + MAX_HEARTS;
+  document.getElementById("result-hearts").textContent = formatHearts(state.game.hearts);
+
+  // Show "Play with ALL terminology" only after a skill-specific quiz
+  const playAllBtn = document.getElementById("result-play-all");
+  if (playAllBtn) playAllBtn.hidden = !(state.currentMode === "skill" && state.currentSkillId);
+
+  // Share reward button: visible if cooldown allows + not maxed out
+  renderShareRewardUI();
+
+  // Install-app suggestion: visible if not already installed and either
+  // (a) beforeinstallprompt fired (Android/desktop Chrome) OR (b) iOS Safari (manual instructions)
+  const installBtn = document.getElementById("result-install-app");
+  const iosTip = document.getElementById("ios-install-tip");
+  if (installBtn) installBtn.hidden = true;
+  if (iosTip) iosTip.hidden = true;
+  if (!isRunningStandalone()) {
+    if (deferredInstallPrompt) {
+      installBtn.hidden = false;
+      installBtn.textContent = "📱 Εγκατέστησε την εφαρμογή στο κινητό";
+    } else if (isIOSSafari()) {
+      installBtn.hidden = false;
+      installBtn.textContent = "📱 Πώς να την εγκαταστήσεις στο iPhone";
+    }
+  }
+
   document.getElementById("result-overlay").classList.add("show");
 }
 
@@ -3327,6 +3454,7 @@ async function init() {
     return;
   }
   renderHud();
+  renderShareRewardUI();
   renderLangPairRow();
   renderCustomDecks();
   renderSkillTree();
@@ -3372,6 +3500,35 @@ async function init() {
     document.body.classList.remove("quiz-open");
     // Replay in same mode
     startQuiz({ mode: state.currentMode, skillId: state.currentSkillId });
+  });
+  document.getElementById("result-play-all").addEventListener("click", () => {
+    document.getElementById("result-overlay").classList.remove("show");
+    document.body.classList.remove("quiz-open");
+    // Switch to "daily" mode — pools from ALL terms across every category
+    startQuiz({ mode: "daily", format: state.currentFormat });
+  });
+  document.getElementById("result-pick-other").addEventListener("click", () => {
+    document.getElementById("result-overlay").classList.remove("show");
+    document.body.classList.remove("quiz-open");
+    const tree = document.getElementById("skill-tree");
+    if (tree) tree.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  document.getElementById("result-share-plus10").addEventListener("click", async () => {
+    await claimShareReward();
+  });
+  document.getElementById("share-reward-btn-warn").addEventListener("click", async () => {
+    await claimShareReward();
+  });
+  document.getElementById("result-install-app").addEventListener("click", async () => {
+    if (deferredInstallPrompt) {
+      deferredInstallPrompt.prompt();
+      const choice = await deferredInstallPrompt.userChoice.catch(() => null);
+      deferredInstallPrompt = null;
+      document.getElementById("result-install-app").hidden = true;
+    } else if (isIOSSafari()) {
+      const tip = document.getElementById("ios-install-tip");
+      if (tip) tip.hidden = !tip.hidden;
+    }
   });
   // Language picker wiring
   document.getElementById("langpair-row").addEventListener("click", openPicker);
