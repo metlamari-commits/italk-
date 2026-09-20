@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "0.7.2",
-    "updated": "2026-09-13",
+    "version": "0.7.3",
+    "updated": "2026-09-20",
     "languages": [
       "el",
       "en",
@@ -139,7 +139,7 @@
       "translations": {
         "el": "Επικουρική προστασία",
         "en": "Subsidiary protection",
-        "ar": "الحماية الإضافية",
+        "ar": "الحماية الفرعية",
         "fa": "حمایت فرعی",
         "fr": "Protection subsidiaire"
       },
@@ -834,7 +834,7 @@
       "translations": {
         "el": "Βάσιμος / Δικαιολογημένος φόβος",
         "en": "Well-founded fear",
-        "ar": "خوف مبرر",
+        "ar": "خوف له ما يبرره",
         "fa": "ترس موجه",
         "fr": "Crainte fondée"
       },
