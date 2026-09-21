@@ -1587,6 +1587,10 @@
       from { transform: scaleY(0.55); }
       to   { transform: scaleY(1.05); }
     }
+    @keyframes milestone-pop {
+      from { opacity: 0; transform: scale(0.88) translateY(8px); }
+      to   { opacity: 1; transform: scale(1) translateY(0); }
+    }
     .listen-play-btn {
       width: 64px;
       height: 64px;
@@ -2188,6 +2192,23 @@
         <span class="result-stat-val" id="result-hearts">5</span>
       </div>
     </div>
+    <!-- Milestone banner: hidden until XP crosses a threshold -->
+    <div id="milestone-banner" hidden style="margin:16px 0 4px; border-radius:14px; overflow:hidden; max-width:420px; width:100%; box-shadow:0 4px 18px rgba(17,66,119,0.18); animation: milestone-pop 0.45s cubic-bezier(.22,.82,.28,1.3) both;">
+      <div style="background:linear-gradient(135deg,#114277 0%,#1a5aa0 100%); color:#fff; padding:14px 18px; display:flex; align-items:center; gap:14px;">
+        <span id="milestone-icon" style="font-size:36px; flex-shrink:0; filter:drop-shadow(0 2px 4px rgba(0,0,0,.25));">🏅</span>
+        <div>
+          <div style="font-size:10px; font-weight:700; letter-spacing:1.2px; opacity:0.72; text-transform:uppercase; margin-bottom:2px;">Νέο Επίπεδο ✦</div>
+          <div id="milestone-level-name" style="font-size:19px; font-weight:800; line-height:1.1;">Ειδικός Ορολογίας</div>
+          <div id="milestone-xp-label" style="font-size:12px; opacity:0.8; margin-top:2px;">500 XP συνολικά</div>
+        </div>
+      </div>
+      <div style="background:#f0f7ff; border:1.5px solid #c2d9f0; border-top:none; border-radius:0 0 14px 14px; padding:14px 18px;">
+        <div style="font-size:10px; font-weight:700; color:#114277; letter-spacing:1.1px; text-transform:uppercase; margin-bottom:6px;">ΕΕ · Γνωρίζεις ότι…</div>
+        <div id="eu-fact-text" style="font-size:14px; color:#0a1e30; line-height:1.55; font-weight:500;">…</div>
+        <div id="eu-fact-source" style="font-size:11px; color:#5a7a9a; margin-top:7px; font-style:italic;"></div>
+      </div>
+    </div>
+
     <div class="result-actions">
       <button class="result-btn" id="result-again">🔁 Ξανά ίδια ορολογία</button>
       <button class="result-btn" id="result-play-all" hidden style="background:var(--m3-tertiary, #6b4d80);">🎲 Παίξε με ΟΛΗ την ορολογία</button>
@@ -2313,6 +2334,35 @@ function isIOSSafari() {
 const XP_PER_CORRECT = 10;
 const QUIZ_LENGTH = 10;
 
+const XP_MILESTONES = [
+  { xp: 50,   icon: "🌱", level: "Αρχάριος Διερμηνέας" },
+  { xp: 100,  icon: "📖", level: "Βοηθός Διερμηνέας" },
+  { xp: 250,  icon: "🎯", level: "Ειδικός Ορολογίας" },
+  { xp: 500,  icon: "⭐", level: "Εξπέρ Ασύλου" },
+  { xp: 1000, icon: "🏅", level: "Επαγγελματίας Διερμηνέας" },
+  { xp: 2500, icon: "🎓", level: "Δάσκαλος Ορολογίας" },
+  { xp: 5000, icon: "🏆", level: "Μάστερ Διερμηνέας" }
+];
+
+// Real facts from official EU sources — shown on milestone.
+const EU_FACTS = [
+  { text: "Η ΕΕ υιοθέτησε για πρώτη φορά ενιαίο νομικό πλαίσιο ασύλου — 10 κανονισμοί μαζί, σε ισχύ από Ιούνιο 2024.", source: "Συμβούλιο ΕΕ, Μάιος 2024 · Reg. 2024/1348" },
+  { text: "Το Erasmus+ διαθέτει €26,2 δισ. για 2021–2027 — σχεδόν διπλάσιο από την προηγούμενη περίοδο.", source: "Ευρωπαϊκή Επιτροπή · erasmus-plus.ec.europa.eu" },
+  { text: "Από το 1987 έως σήμερα, πάνω από 16 εκατ. άνθρωποι συμμετείχαν σε Erasmus+ — σε 230.000+ έργα.", source: "Ευρωπαϊκή Επιτροπή · erasmus-plus.ec.europa.eu" },
+  { text: "Η ΕΕ διαθέτει €9,9 δισ. μέσω AMIF για ένταξη μεταναστών & αιτούντων άσυλο (2021–2027) — τριπλάσιο κονδύλι.", source: "DG HOME · home-affairs.ec.europa.eu" },
+  { text: "14 χώρες της ΕΕ δεσμεύτηκαν για 61.000 θέσεις επανεγκατάστασης προσφύγων το 2024–2025.", source: "EUAA · Asylum Report 2025" },
+  { text: "Η ΕΕ παρέχει Προσωρινή Προστασία σε 4+ εκατ. εκτοπισμένους από την Ουκρανία — ισχύει έως Μάρτιο 2026.", source: "EUAA · Asylum Report 2025" },
+  { text: "Η EUAA ανέπτυξε ρεκόρ προσωπικού σε 13 κράτη μέλη για στήριξη διαδικασιών ασύλου (2024).", source: "EUAA · Annual Activity Report 2024" },
+  { text: "Η EUAA άνοιξε γραφείο στη Λαμπεντούζα — μαζί με UNHCR, IOM, Save the Children & UNICEF, για συντονισμό στα σύνορα.", source: "EUAA · euaa.europa.eu" },
+  { text: "Η EUAA υιοθέτησε την πρώτη Στρατηγική Θεμελιωδών Δικαιωμάτων — για πλήρη σεβασμό δικαιωμάτων αιτούντων σε όλες τις δράσεις.", source: "EUAA · Annual Activity Report 2024" },
+  { text: "Η EUAA αναγνωρίστηκε επίσημα ως πάροχος Ανώτατης Εκπαίδευσης (2024) — εκπαιδεύει εθνικά συστήματα ασύλου σε 27 χώρες.", source: "EUAA · Annual Activity Report 2024" },
+  { text: "Πάνω από 886.000 νέοι εγγράφηκαν στο Ευρωπαϊκό Σώμα Αλληλεγγύης από το 2021 — άνω του 50% από λιγότερο ευνοημένα περιβάλλοντα.", source: "EU Youth Portal · youth.europa.eu" },
+  { text: "Το Νέο Σύμφωνο ΕΕ εισάγει μόνιμο μηχανισμό αλληλεγγύης — κάθε κράτος συνεισφέρει με μεταφορά αιτούντων, χρήματα ή προσωπικό.", source: "Consilium ΕΕ · consilium.europa.eu, 2024" },
+  { text: "Η Eurodac εξελίσσεται σε πλήρη βάση δεδομένων μετανάστευσης — βιομετρικά από ηλικία 6 ετών, για ασφαλέστερη αναγνώριση.", source: "EUR-Lex · Reg. 2024/1358" },
+  { text: "Βουλγαρία και Ρουμανία εντάχθηκαν στον χώρο Σένγκεν (αέρας & θάλασσα, Μάρτιος 2024) — ελεύθερη κυκλοφορία χωρίς διαβατήριο.", source: "Συμβούλιο ΕΕ · consilium.europa.eu" },
+  { text: "Η Οδηγία Διαφάνειας Αμοιβών ΕΕ (2023/970) καθιερώνει ίσες αμοιβές ανδρών–γυναικών — υποχρεωτική εφαρμογή έως 2026.", source: "EUR-Lex · Directive 2023/970" }
+];
+
 const LANG_LABELS = { el: "Ελληνικά", en: "English", ar: "العربية", fa: "فارسی", fr: "Français" };
 const LANG_LABELS_EL = { el: "Ελληνικά", en: "Αγγλικά", ar: "Αραβικά", fa: "Περσικά (Φαρσί)", fr: "Γαλλικά" };
 const LANG_SHORT  = { el: "EL", en: "EN", ar: "AR", fa: "FA", fr: "FR" };
@@ -2346,7 +2396,8 @@ function defaultGame() {
     skillProgress: {},  // {skillId: {completions, bestPct, lastPlayedIso}}
     profile: null,      // {nickname, motherTongue, workingLangs, facility, years, interests, onboardedAt}
     wrongTerms: {},     // {termId: wrongCount} — decrements on later correct answer
-    lastShareRewardAt: null  // timestamp ms — for +10 hearts share cooldown
+    lastShareRewardAt: null,  // timestamp ms — for +10 hearts share cooldown
+    milestonesShown: []       // xp thresholds already celebrated, e.g. [50, 100]
   };
 }
 const BOOKMARKS_KEY = "italk_bookmarks_v1"; // shared with index.html glossary
@@ -2462,6 +2513,29 @@ function renderShareRewardUI() {
   const eligible = canClaimShareReward();
   if (btnWarn) btnWarn.hidden = !eligible;
   if (btnResult) btnResult.hidden = !eligible || state.game.hearts >= MAX_HEARTS_TOTAL;
+}
+
+function getNewMilestone(oldXp, newXp) {
+  const shown = new Set(state.game.milestonesShown || []);
+  // Walk milestones from highest to lowest — return the highest newly crossed one
+  for (let i = XP_MILESTONES.length - 1; i >= 0; i--) {
+    const m = XP_MILESTONES[i];
+    if (newXp >= m.xp && oldXp < m.xp && !shown.has(m.xp)) return m;
+  }
+  return null;
+}
+
+function renderMilestoneBanner(milestone) {
+  const banner = document.getElementById("milestone-banner");
+  if (!banner) return;
+  if (!milestone) { banner.hidden = true; return; }
+  document.getElementById("milestone-icon").textContent = milestone.icon;
+  document.getElementById("milestone-level-name").textContent = milestone.level;
+  document.getElementById("milestone-xp-label").textContent = state.game.xp.toLocaleString("el-GR") + " XP συνολικά";
+  const fact = EU_FACTS[Math.floor(Math.random() * EU_FACTS.length)];
+  document.getElementById("eu-fact-text").textContent = fact.text;
+  document.getElementById("eu-fact-source").textContent = "Πηγή: " + fact.source;
+  banner.hidden = false;
 }
 
 function regenHearts() {
@@ -2993,6 +3067,7 @@ function endQuiz(ranOutOfHearts) {
   document.getElementById("quiz-overlay").classList.remove("show");
   // Keep quiz-open on body so result overlay is fullscreen
   document.body.classList.add("quiz-open");
+  const xpBefore = state.game.xp;
   state.game.xp += state.quiz.xpEarned;
   if (state.quiz.correctCount > 0) {
     state.game.lessonsCompleted++;
@@ -3008,6 +3083,11 @@ function endQuiz(ranOutOfHearts) {
         lastPlayedIso: new Date().toISOString()
       };
     }
+  }
+  // Check XP milestones before saving
+  const newMilestone = getNewMilestone(xpBefore, state.game.xp);
+  if (newMilestone) {
+    state.game.milestonesShown = [...(state.game.milestonesShown || []), newMilestone.xp];
   }
   saveGame();
   renderHud();
@@ -3037,6 +3117,9 @@ function endQuiz(ranOutOfHearts) {
 
   // Share reward button: visible if cooldown allows + not maxed out
   renderShareRewardUI();
+
+  // Milestone banner: show if XP crossed a new level this quiz
+  renderMilestoneBanner(newMilestone);
 
   // Install-app suggestion: visible if not already installed and either
   // (a) beforeinstallprompt fired (Android/desktop Chrome) OR (b) iOS Safari (manual instructions)
