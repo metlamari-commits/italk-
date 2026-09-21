@@ -550,41 +550,154 @@
     }
 
     /* Onboarding wizard */
-    .stat-tile {
-      background: var(--surface-alt);
-      border: 1.5px solid var(--border);
-      border-radius: 12px;
-      padding: 12px 14px;
-      text-align: center;
-    }
-    .stat-tile-val {
-      font-size: 22px;
-      font-weight: 800;
-      color: var(--primary);
-      font-family: 'JetBrains Mono', monospace;
-    }
-    .stat-tile-lbl {
-      font-size: 11px;
-      color: var(--text-muted);
-      margin-top: 3px;
-    }
-    .skill-bar-row {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 13px;
-    }
-    .skill-bar-name { flex: 1; color: var(--text); font-weight: 600; }
-    .skill-bar-track {
-      width: 80px;
-      height: 6px;
-      background: var(--border);
-      border-radius: 99px;
+    /* ── Stitch Stats Panel ── */
+    #stitch-stats-panel {
+      width: 100%; max-width: 480px;
+      background: #f5f7fb;
+      height: 100dvh;
+      display: flex; flex-direction: column;
       overflow: hidden;
+      border-radius: 0;
+      box-shadow: 0 0 40px rgba(0,0,0,.3);
+    }
+    @media (min-width: 600px) {
+      #stitch-stats-panel { height: auto; max-height: 92vh; border-radius: 24px; }
+    }
+    #stitch-stats-header {
+      background: #002c56; color: #fff;
+      padding: 18px 20px 16px;
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,.1);
       flex-shrink: 0;
     }
-    .skill-bar-fill { height: 100%; border-radius: 99px; background: var(--primary); }
-    .skill-bar-pct { font-size: 11px; font-family: 'JetBrains Mono', monospace; color: var(--text-dim); width: 34px; text-align: right; flex-shrink: 0; }
+    #stitch-header-left { display: flex; align-items: center; gap: 10px; }
+    #stitch-header-icon {
+      width: 36px; height: 36px; border-radius: 10px;
+      background: rgba(255,255,255,.1);
+      display: flex; align-items: center; justify-content: center; font-size: 20px;
+    }
+    #stitch-brand-label {
+      font-size: 10px; font-family: 'JetBrains Mono', monospace;
+      text-transform: uppercase; letter-spacing: 1px;
+      color: #5eead4; font-weight: 700; display: block; line-height: 1; margin-bottom: 3px;
+    }
+    #stitch-title { font-size: 20px; font-weight: 800; color: #fff; line-height: 1.1; margin: 0; }
+    #stats-close {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: rgba(255,255,255,.1); border: none; color: #fff;
+      font-size: 20px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; transition: background .15s; flex-shrink: 0;
+    }
+    #stats-close:hover { background: rgba(255,255,255,.2); }
+    #stitch-stats-body {
+      flex: 1; overflow-y: auto; padding: 16px;
+      display: flex; flex-direction: column; gap: 12px; padding-bottom: 24px;
+    }
+    #stitch-hero-card {
+      background: linear-gradient(135deg, #002c56 0%, #1a5aa0 100%);
+      border-radius: 20px; padding: 20px; color: #fff;
+      box-shadow: 0 4px 16px rgba(17,66,119,.25);
+      position: relative; overflow: hidden;
+    }
+    #stitch-ring1 {
+      position: absolute; right: -24px; bottom: -24px;
+      width: 128px; height: 128px; border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.1); pointer-events: none;
+    }
+    #stitch-ring2 {
+      position: absolute; right: 24px; top: -40px;
+      width: 96px; height: 96px; border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.05); pointer-events: none;
+    }
+    #stitch-hero-inner { position: relative; z-index: 1; }
+    #stitch-hero-top { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+    #level-emoji-box {
+      width: 56px; height: 56px; border-radius: 16px;
+      background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 30px; flex-shrink: 0;
+    }
+    #stitch-level-label {
+      font-size: 10px; font-family: 'JetBrains Mono', monospace;
+      text-transform: uppercase; letter-spacing: 1px;
+      color: #99f6e4; font-weight: 700; display: block; margin-bottom: 3px;
+    }
+    #level-name { font-size: 17px; font-weight: 800; color: #fff; margin: 0; line-height: 1.25; }
+    #stitch-xp-row {
+      margin-top: 14px; padding-top: 12px;
+      border-top: 1px solid rgba(255,255,255,.15);
+      display: flex; align-items: baseline; justify-content: space-between;
+    }
+    #stitch-xp-row-label { font-size: 13px; color: #cbd5e1; }
+    #stitch-xp-amount { display: flex; align-items: baseline; gap: 4px; }
+    #xp-total { font-size: 26px; font-weight: 800; font-family: 'JetBrains Mono', monospace; color: #fcd34d; }
+    #stitch-xp-unit { font-size: 12px; color: rgba(252,211,77,.8); font-family: 'JetBrains Mono', monospace; }
+    #stitch-progress-wrap { margin-top: 10px; }
+    #stitch-progress-track {
+      width: 100%; background: rgba(0,0,0,.25); border-radius: 99px;
+      height: 12px; overflow: hidden; padding: 2px;
+      border: 1px solid rgba(255,255,255,.15);
+    }
+    #level-progress-bar {
+      height: 100%;
+      background: linear-gradient(to right, #5eead4, #fcd34d);
+      border-radius: 99px;
+      transition: width 1.2s cubic-bezier(.16,1,.3,1);
+    }
+    #stitch-progress-labels {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-top: 6px; font-size: 11px; font-family: 'JetBrains Mono', monospace;
+    }
+    #level-progress-pct { color: #5eead4; font-weight: 700; }
+    #next-level-text { color: #cbd5e1; }
+    #next-level-text strong { color: #fff; font-weight: 800; }
+    #stitch-metrics-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+    #stitch-metrics-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .stitch-metric-card {
+      background: #fff; border-radius: 18px; padding: 14px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.06);
+      display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .stitch-metric-card-wide {
+      background: #fff; border-radius: 18px; padding: 14px 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.06);
+      display: flex; align-items: center; gap: 12px; flex-direction: row;
+    }
+    .stitch-border-orange { border-top: 4px solid #f97316; }
+    .stitch-border-green  { border-top: 4px solid #22c55e; }
+    .stitch-border-blue   { border-top: 4px solid #3b82f6; }
+    .stitch-border-gold   { border-top: 4px solid #eab308; }
+    .stitch-border-teal   { border-top: 4px solid #006970; }
+    .stitch-metric-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+    .stitch-metric-lbl { font-size: 10px; font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: .8px; color: #475569; font-weight: 700; }
+    .stitch-metric-val { font-size: 24px; font-weight: 800; font-family: 'JetBrains Mono', monospace; color: #0a0e13; line-height: 1; }
+    .stitch-metric-unit { font-size: 11px; color: #475569; margin-top: 3px; display: block; }
+    .stitch-teal-val { color: #006970 !important; }
+    .stitch-metric-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
+    .stitch-icon-gold { background: #fefce8; }
+    .stitch-icon-teal { background: #f0fdfa; }
+    #stitch-skills-section {
+      background: #fff; border-radius: 20px; padding: 16px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.06);
+      border: 1px solid rgba(203,213,225,.6);
+    }
+    #stitch-skills-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid #f1f5f9;
+    }
+    #stitch-skills-header h3 { font-size: 15px; font-weight: 700; color: #0a0e13; margin: 0; }
+    #stitch-skills-hd-left { display: flex; align-items: center; gap: 8px; }
+    #stitch-skills-count { font-size: 11px; font-family: 'JetBrains Mono', monospace; font-weight: 600; color: #475569; }
+    #skills-list { display: flex; flex-direction: column; gap: 12px; }
+    .stitch-skill-row { display: flex; flex-direction: column; gap: 4px; }
+    .stitch-skill-top { display: flex; justify-content: space-between; align-items: center; font-size: 12px; }
+    .stitch-skill-name { font-weight: 600; color: #0a0e13; display: flex; align-items: center; gap: 6px; }
+    .stitch-skill-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; display: inline-block; }
+    .stitch-skill-pct { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 12px; }
+    .stitch-skill-track { width: 100%; background: #f1f5f9; border-radius: 99px; height: 10px; overflow: hidden; }
+    .stitch-skill-fill { height: 100%; border-radius: 99px; transition: width 1s cubic-bezier(.16,1,.3,1); }
+    #stitch-footer { text-align: center; font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #475569; padding: 6px 0 2px; }
+    #stats-no-data { text-align: center; padding: 12px 0; font-size: 13px; color: #64748b; }
     #stats-btn {
       background: none;
       border: 1.5px solid rgba(255,255,255,.35);
@@ -2276,45 +2389,103 @@
 
   <!-- Stats panel -->
   <div class="onboard-scrim" id="stats-scrim">
-    <div class="onboard-sheet" style="max-width:480px;">
-      <div class="onboard-head">
-        <span style="font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:var(--primary);">📊 Τα Στατιστικά σου</span>
-        <button class="onboard-close" id="stats-close" title="Κλείσιμο" aria-label="Κλείσιμο">×</button>
-      </div>
-
-      <!-- Level + progress bar -->
-      <div id="stats-level-block" style="background:linear-gradient(135deg,#114277,#1a5aa0);border-radius:12px;padding:14px 16px;margin-bottom:16px;color:#fff;">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
-          <span id="stats-level-icon" style="font-size:28px;">🌱</span>
+    <div id="stitch-stats-panel">
+      <!-- Header -->
+      <header id="stitch-stats-header">
+        <div id="stitch-header-left">
+          <div id="stitch-header-icon">📊</div>
           <div>
-            <div style="font-size:10px;font-weight:700;letter-spacing:1px;opacity:.7;text-transform:uppercase;">Τρέχον Επίπεδο</div>
-            <div id="stats-level-name" style="font-size:17px;font-weight:800;">—</div>
+            <span id="stitch-brand-label">i-talk.gr · PWA</span>
+            <h1 id="stitch-title">Στατιστικά Μου</h1>
           </div>
         </div>
-        <div style="font-size:11px;opacity:.75;margin-bottom:5px;" id="stats-next-label">Επόμενο: —</div>
-        <div style="background:rgba(255,255,255,.2);border-radius:99px;height:8px;overflow:hidden;">
-          <div id="stats-progress-bar" style="background:#fff;height:100%;border-radius:99px;transition:width .6s ease;width:0%;"></div>
-        </div>
-        <div style="font-size:11px;opacity:.7;margin-top:4px;" id="stats-xp-detail">0 / 0 XP</div>
-      </div>
+        <button id="stats-close" title="Κλείσιμο" aria-label="Κλείσιμο">✕</button>
+      </header>
 
-      <!-- Grid stats -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;" id="stats-grid">
-        <div class="stat-tile"><div class="stat-tile-val" id="st-xp">0</div><div class="stat-tile-lbl">⚡ XP Συνολικά</div></div>
-        <div class="stat-tile"><div class="stat-tile-val" id="st-acc">—</div><div class="stat-tile-lbl">🎯 Ακρίβεια</div></div>
-        <div class="stat-tile"><div class="stat-tile-val" id="st-quiz">0</div><div class="stat-tile-lbl">📝 Quiz Τελείωσαν</div></div>
-        <div class="stat-tile"><div class="stat-tile-val" id="st-streak">0</div><div class="stat-tile-lbl">🔥 Ρεκόρ Σερί</div></div>
-        <div class="stat-tile"><div class="stat-tile-val" id="st-correct">0</div><div class="stat-tile-lbl">✅ Σωστές Απαντήσεις</div></div>
-        <div class="stat-tile"><div class="stat-tile-val" id="st-weak">0</div><div class="stat-tile-lbl">⚠️ Αδύναμοι Όροι</div></div>
-      </div>
+      <!-- Scrollable body -->
+      <main id="stitch-stats-body">
+        <!-- Hero: level + XP + progress -->
+        <section id="stitch-hero-card">
+          <div id="stitch-ring1"></div>
+          <div id="stitch-ring2"></div>
+          <div id="stitch-hero-inner">
+            <div id="stitch-hero-top">
+              <div id="level-emoji-box"><span id="level-emoji">🌱</span></div>
+              <div>
+                <span id="stitch-level-label">Τρέχον Επίπεδο</span>
+                <h2 id="level-name">Ξεκίνα το πρώτο Quiz!</h2>
+              </div>
+            </div>
+            <div id="stitch-xp-row">
+              <span id="stitch-xp-row-label">Σύνολο XP</span>
+              <div id="stitch-xp-amount">
+                <span id="xp-total">0</span>
+                <span id="stitch-xp-unit">XP</span>
+              </div>
+            </div>
+            <div id="stitch-progress-wrap">
+              <div id="stitch-progress-track">
+                <div id="level-progress-bar" style="width:0%"></div>
+              </div>
+              <div id="stitch-progress-labels">
+                <span id="level-progress-pct">0%</span>
+                <span id="next-level-text">—</span>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <!-- Best / worst skills -->
-      <div id="stats-skills-block" hidden>
-        <div style="font-size:11px;font-weight:700;color:var(--primary);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;">Καλύτερες Θεματικές</div>
-        <div id="stats-top-skills" style="display:flex;flex-direction:column;gap:6px;margin-bottom:14px;"></div>
-        <div style="font-size:11px;font-weight:700;color:#c0392b;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;">Χρειάζονται Δουλειά</div>
-        <div id="stats-weak-skills" style="display:flex;flex-direction:column;gap:6px;"></div>
-      </div>
+        <!-- 3-col metrics -->
+        <section id="stitch-metrics-3">
+          <div class="stitch-metric-card stitch-border-orange">
+            <div class="stitch-metric-top"><span style="font-size:15px;">🔥</span><span class="stitch-metric-lbl">Σερί</span></div>
+            <div class="stitch-metric-val" id="streak-days">0</div>
+            <span class="stitch-metric-unit">ημέρες</span>
+          </div>
+          <div class="stitch-metric-card stitch-border-green">
+            <div class="stitch-metric-top"><span style="font-size:15px;">✅</span><span class="stitch-metric-lbl">Σωστές</span></div>
+            <div class="stitch-metric-val" id="correct-answers">0</div>
+            <span class="stitch-metric-unit">απαντήσεις</span>
+          </div>
+          <div class="stitch-metric-card stitch-border-blue">
+            <div class="stitch-metric-top"><span style="font-size:15px;">📝</span><span class="stitch-metric-lbl">Σύνολο</span></div>
+            <div class="stitch-metric-val" id="total-questions">0</div>
+            <span class="stitch-metric-unit">ερωτήσεις</span>
+          </div>
+        </section>
+
+        <!-- 2-col row -->
+        <section id="stitch-metrics-2">
+          <div class="stitch-metric-card-wide stitch-border-gold">
+            <div class="stitch-metric-icon stitch-icon-gold">🏆</div>
+            <div>
+              <span class="stitch-metric-lbl">Καλύτερο Σερί</span>
+              <div class="stitch-metric-val" id="best-streak">0 <span class="stitch-metric-unit" style="display:inline;font-size:12px;margin:0;">ημ.</span></div>
+            </div>
+          </div>
+          <div class="stitch-metric-card-wide stitch-border-teal">
+            <div class="stitch-metric-icon stitch-icon-teal">🎯</div>
+            <div>
+              <span class="stitch-metric-lbl">Επιτυχία</span>
+              <div class="stitch-metric-val stitch-teal-val" id="success-rate">—</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills breakdown -->
+        <section id="stitch-skills-section">
+          <div id="stitch-skills-header">
+            <div id="stitch-skills-hd-left">
+              <span style="font-size:17px;">📊</span>
+              <h3>Ανά Θεματική Ενότητα</h3>
+            </div>
+            <span id="stitch-skills-count"></span>
+          </div>
+          <div id="skills-list"><p id="stats-no-data">Παίξε ένα Quiz για να δεις στατιστικά ανά θεματική! 🎯</p></div>
+        </section>
+
+        <footer id="stitch-footer">i-talk.gr · Εκπαίδευση Διερμηνέων Ασύλου</footer>
+      </main>
     </div>
   </div>
 
@@ -2646,7 +2817,19 @@ function renderStats() {
   const g = state.game;
   const xp = g.xp || 0;
 
-  // Level + progress bar
+  // Domain colors for skill bars
+  const DOMAIN_COLORS = {
+    arrival:       "#06b6d4",
+    medical:       "#f97316",
+    registration:  "#3b82f6",
+    vulnerability: "#a855f7",
+    pss:           "#006970",
+    interview:     "#f59e0b",
+    legal:         "#114277",
+    outcome:       "#22c55e"
+  };
+
+  // Hero: level + progress bar
   const lv = getCurrentLevel();
   const nextIdx = lv ? XP_MILESTONES.findIndex(m => m.xp === lv.xp) + 1 : 0;
   const nextLv = XP_MILESTONES[nextIdx] || null;
@@ -2654,64 +2837,80 @@ function renderStats() {
   const nextXp = nextLv ? nextLv.xp : null;
   const pct = nextXp ? Math.min(100, Math.round((xp - prevXp) / (nextXp - prevXp) * 100)) : 100;
 
-  document.getElementById("stats-level-icon").textContent = lv ? lv.icon : "🌱";
-  document.getElementById("stats-level-name").textContent = lv ? lv.level : "Ξεκίνα το πρώτο Quiz!";
-  document.getElementById("stats-next-label").textContent = nextLv
-    ? "Επόμενο: " + nextLv.icon + " " + nextLv.level + " (" + nextLv.xp.toLocaleString("el-GR") + " XP)"
-    : "🏆 Έχεις φτάσει το υψηλότερο επίπεδο!";
-  document.getElementById("stats-progress-bar").style.width = pct + "%";
-  document.getElementById("stats-xp-detail").textContent = nextXp
-    ? xp.toLocaleString("el-GR") + " / " + nextXp.toLocaleString("el-GR") + " XP  (" + pct + "%)"
-    : xp.toLocaleString("el-GR") + " XP συνολικά";
+  document.getElementById("level-emoji").textContent = lv ? lv.icon : "🌱";
+  document.getElementById("level-name").textContent = lv ? lv.level : "Ξεκίνα το πρώτο Quiz!";
+  document.getElementById("xp-total").textContent = xp.toLocaleString("el-GR");
+  document.getElementById("level-progress-bar").style.width = pct + "%";
+  document.getElementById("level-progress-pct").textContent = pct + "%";
+  if (nextLv) {
+    const remaining = (nextLv.xp - xp).toLocaleString("el-GR");
+    document.getElementById("next-level-text").innerHTML =
+      "Επόμενο Επίπεδο σε <strong>" + remaining + " XP</strong>";
+  } else {
+    document.getElementById("next-level-text").textContent = "🏆 Υψηλότερο επίπεδο!";
+  }
 
-  // Grid
+  // Metrics
   const tc = g.totalCorrect || 0;
   const ta = g.totalAnswered || 0;
   const acc = ta > 0 ? Math.round(tc / ta * 100) + "%" : "—";
-  document.getElementById("st-xp").textContent = xp.toLocaleString("el-GR");
-  document.getElementById("st-acc").textContent = acc;
-  document.getElementById("st-quiz").textContent = (g.lessonsCompleted || 0).toLocaleString("el-GR");
-  document.getElementById("st-streak").textContent = (g.bestStreak || g.streak || 0) + " 🔥";
-  document.getElementById("st-correct").textContent = tc.toLocaleString("el-GR");
-  document.getElementById("st-weak").textContent = Object.keys(g.wrongTerms || {}).length;
+  document.getElementById("streak-days").textContent = (g.streak || 0).toLocaleString("el-GR");
+  document.getElementById("correct-answers").textContent = tc.toLocaleString("el-GR");
+  document.getElementById("total-questions").textContent = ta.toLocaleString("el-GR");
+  document.getElementById("best-streak").innerHTML =
+    (g.bestStreak || g.streak || 0).toLocaleString("el-GR") +
+    ' <span class="stitch-metric-unit" style="display:inline;font-size:12px;margin:0;">ημ.</span>';
+  document.getElementById("success-rate").textContent = acc;
 
   // Skills breakdown
   const sp = g.skillProgress || {};
   const played = Object.entries(sp).filter(([, v]) => v.completions > 0);
-  const skillsBlock = document.getElementById("stats-skills-block");
-  if (played.length === 0) { skillsBlock.hidden = true; return; }
-  skillsBlock.hidden = false;
+  const listEl = document.getElementById("skills-list");
+  const noData = document.getElementById("stats-no-data");
+
+  if (played.length === 0) {
+    listEl.innerHTML = '<p id="stats-no-data">Παίξε ένα Quiz για να δεις στατιστικά ανά θεματική! 🎯</p>';
+    document.getElementById("stitch-skills-count").textContent = "";
+    return;
+  }
 
   const sorted = played.slice().sort((a, b) => b[1].bestPct - a[1].bestPct);
-  const top = sorted.slice(0, 3);
-  const bottom = sorted.slice(-Math.min(3, sorted.length)).filter(([, v]) => v.bestPct < 70).reverse();
+  document.getElementById("stitch-skills-count").textContent = sorted.length + " θεματικές";
 
-  function skillName(id) {
-    if (!state.skills) return id;
-    const s = state.skills.skills.find(x => x.id === id);
-    return s ? s.name_el || s.name || id : id;
+  function skillLabel(id) {
+    if (state.skills) {
+      const s = state.skills.skills.find(x => x.id === id);
+      if (s) return s.title_el || s.name_el || s.name || id;
+    }
+    return id;
   }
-  function skillRow(id, val) {
+  function skillDomain(id) {
+    if (state.skills) {
+      const s = state.skills.skills.find(x => x.id === id);
+      if (s) return s.domain || "";
+    }
+    return id.split("-")[0];
+  }
+
+  listEl.innerHTML = "";
+  sorted.forEach(([id, val]) => {
+    const domain = skillDomain(id);
+    const color = DOMAIN_COLORS[domain] || "#114277";
     const row = document.createElement("div");
-    row.className = "skill-bar-row";
+    row.className = "stitch-skill-row";
     row.innerHTML =
-      '<span class="skill-bar-name">' + skillName(id) + '</span>' +
-      '<div class="skill-bar-track"><div class="skill-bar-fill" style="width:' + val.bestPct + '%"></div></div>' +
-      '<span class="skill-bar-pct">' + val.bestPct + '%</span>';
-    return row;
-  }
-
-  const topEl = document.getElementById("stats-top-skills");
-  topEl.innerHTML = "";
-  top.forEach(([id, v]) => topEl.appendChild(skillRow(id, v)));
-
-  const weakEl = document.getElementById("stats-weak-skills");
-  weakEl.innerHTML = "";
-  if (bottom.length === 0) {
-    weakEl.innerHTML = '<span style="font-size:13px;color:var(--text-muted);">Δεν υπάρχουν ακόμα αδύναμες θεματικές 🎉</span>';
-  } else {
-    bottom.forEach(([id, v]) => weakEl.appendChild(skillRow(id, v)));
-  }
+      '<div class="stitch-skill-top">' +
+        '<span class="stitch-skill-name">' +
+          '<span class="stitch-skill-dot" style="background:' + color + '"></span>' +
+          skillLabel(id) +
+        '</span>' +
+        '<span class="stitch-skill-pct" style="color:' + color + '">' + val.bestPct + '%</span>' +
+      '</div>' +
+      '<div class="stitch-skill-track">' +
+        '<div class="stitch-skill-fill" style="width:' + val.bestPct + '%;background:' + color + '"></div>' +
+      '</div>';
+    listEl.appendChild(row);
+  });
 }
 
 function regenHearts() {
