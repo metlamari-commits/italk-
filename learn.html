@@ -1936,6 +1936,7 @@
         <div class="hud-labels">
           <span class="hud-lbl">Πόντοι</span>
           <span class="hud-val xp" id="hud-xp">0 XP</span>
+          <span id="hud-level" style="font-size:10px; font-weight:700; color:var(--m3-primary-container); letter-spacing:0.5px; margin-top:1px; display:none;"></span>
         </div>
       </div>
       <div class="hud-item">
@@ -2567,9 +2568,22 @@ function updateStreakOnPlay() {
   state.game.lastPlayedDate = today;
 }
 
+function getCurrentLevel() {
+  for (let i = XP_MILESTONES.length - 1; i >= 0; i--) {
+    if (state.game.xp >= XP_MILESTONES[i].xp) return XP_MILESTONES[i];
+  }
+  return null;
+}
+
 function renderHud() {
   document.getElementById("hud-streak").textContent = state.game.streak + " μέρες";
   document.getElementById("hud-xp").textContent = state.game.xp.toLocaleString("el-GR") + " XP";
+  const lvlEl = document.getElementById("hud-level");
+  if (lvlEl) {
+    const lv = getCurrentLevel();
+    if (lv) { lvlEl.textContent = lv.icon + " " + lv.level; lvlEl.style.display = "block"; }
+    else { lvlEl.style.display = "none"; }
+  }
   const hEl = document.getElementById("hud-hearts");
   hEl.textContent = formatHearts(state.game.hearts);
   hEl.classList.toggle("empty", state.game.hearts === 0);
@@ -3531,6 +3545,12 @@ async function init() {
     });
   }
   loadGame();
+  // First-time migration: if user has XP but milestonesShown is empty,
+  // silently mark all already-passed milestones so only future ones pop up.
+  if (state.game.xp > 0 && (!state.game.milestonesShown || state.game.milestonesShown.length === 0)) {
+    state.game.milestonesShown = XP_MILESTONES.filter(m => state.game.xp >= m.xp).map(m => m.xp);
+    saveGame();
+  }
   try { await loadTerms(); } catch(e) {
     document.querySelector("main").innerHTML =
       '<div class="info-card" style="border-color:var(--dom-medical);color:var(--dom-medical)">Δεν φόρτωσαν τα δεδομένα. Δοκίμασε refresh.</div>';
