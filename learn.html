@@ -550,6 +550,53 @@
     }
 
     /* Onboarding wizard */
+    .stat-tile {
+      background: var(--surface-alt);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      text-align: center;
+    }
+    .stat-tile-val {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--primary);
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .stat-tile-lbl {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 3px;
+    }
+    .skill-bar-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+    }
+    .skill-bar-name { flex: 1; color: var(--text); font-weight: 600; }
+    .skill-bar-track {
+      width: 80px;
+      height: 6px;
+      background: var(--border);
+      border-radius: 99px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .skill-bar-fill { height: 100%; border-radius: 99px; background: var(--primary); }
+    .skill-bar-pct { font-size: 11px; font-family: 'JetBrains Mono', monospace; color: var(--text-dim); width: 34px; text-align: right; flex-shrink: 0; }
+    #stats-btn {
+      background: none;
+      border: 1.5px solid rgba(255,255,255,.35);
+      border-radius: 8px;
+      color: rgba(255,255,255,.8);
+      font-size: 16px;
+      padding: 4px 8px;
+      cursor: pointer;
+      line-height: 1;
+    }
+    #stats-btn:hover { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.6); color: #fff; }
+
     .onboard-scrim {
       position: fixed;
       inset: 0;
@@ -1918,6 +1965,7 @@
       <div class="brand">i-talk<span class="dot">.</span>gr</div>
       <span class="header-sub">🎯 Μάθε</span>
       <span class="header-greet" id="header-greet"></span>
+      <button id="stats-btn" title="Στατιστικά" aria-label="Στατιστικά">📊</button>
       <button class="header-profile" id="header-profile" title="Προφίλ" aria-label="Προφίλ">⚙</button>
     </div>
   </header>
@@ -2226,6 +2274,50 @@
     </div>
   </div>
 
+  <!-- Stats panel -->
+  <div class="onboard-scrim" id="stats-scrim">
+    <div class="onboard-sheet" style="max-width:480px;">
+      <div class="onboard-head">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:var(--primary);">📊 Τα Στατιστικά σου</span>
+        <button class="onboard-close" id="stats-close" title="Κλείσιμο" aria-label="Κλείσιμο">×</button>
+      </div>
+
+      <!-- Level + progress bar -->
+      <div id="stats-level-block" style="background:linear-gradient(135deg,#114277,#1a5aa0);border-radius:12px;padding:14px 16px;margin-bottom:16px;color:#fff;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+          <span id="stats-level-icon" style="font-size:28px;">🌱</span>
+          <div>
+            <div style="font-size:10px;font-weight:700;letter-spacing:1px;opacity:.7;text-transform:uppercase;">Τρέχον Επίπεδο</div>
+            <div id="stats-level-name" style="font-size:17px;font-weight:800;">—</div>
+          </div>
+        </div>
+        <div style="font-size:11px;opacity:.75;margin-bottom:5px;" id="stats-next-label">Επόμενο: —</div>
+        <div style="background:rgba(255,255,255,.2);border-radius:99px;height:8px;overflow:hidden;">
+          <div id="stats-progress-bar" style="background:#fff;height:100%;border-radius:99px;transition:width .6s ease;width:0%;"></div>
+        </div>
+        <div style="font-size:11px;opacity:.7;margin-top:4px;" id="stats-xp-detail">0 / 0 XP</div>
+      </div>
+
+      <!-- Grid stats -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;" id="stats-grid">
+        <div class="stat-tile"><div class="stat-tile-val" id="st-xp">0</div><div class="stat-tile-lbl">⚡ XP Συνολικά</div></div>
+        <div class="stat-tile"><div class="stat-tile-val" id="st-acc">—</div><div class="stat-tile-lbl">🎯 Ακρίβεια</div></div>
+        <div class="stat-tile"><div class="stat-tile-val" id="st-quiz">0</div><div class="stat-tile-lbl">📝 Quiz Τελείωσαν</div></div>
+        <div class="stat-tile"><div class="stat-tile-val" id="st-streak">0</div><div class="stat-tile-lbl">🔥 Ρεκόρ Σερί</div></div>
+        <div class="stat-tile"><div class="stat-tile-val" id="st-correct">0</div><div class="stat-tile-lbl">✅ Σωστές Απαντήσεις</div></div>
+        <div class="stat-tile"><div class="stat-tile-val" id="st-weak">0</div><div class="stat-tile-lbl">⚠️ Αδύναμοι Όροι</div></div>
+      </div>
+
+      <!-- Best / worst skills -->
+      <div id="stats-skills-block" hidden>
+        <div style="font-size:11px;font-weight:700;color:var(--primary);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;">Καλύτερες Θεματικές</div>
+        <div id="stats-top-skills" style="display:flex;flex-direction:column;gap:6px;margin-bottom:14px;"></div>
+        <div style="font-size:11px;font-weight:700;color:#c0392b;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;">Χρειάζονται Δουλειά</div>
+        <div id="stats-weak-skills" style="display:flex;flex-direction:column;gap:6px;"></div>
+      </div>
+    </div>
+  </div>
+
   <div class="onboard-scrim" id="onboard-scrim">
     <div class="onboard-sheet">
       <div class="onboard-head">
@@ -2398,7 +2490,10 @@ function defaultGame() {
     profile: null,      // {nickname, motherTongue, workingLangs, facility, years, interests, onboardedAt}
     wrongTerms: {},     // {termId: wrongCount} — decrements on later correct answer
     lastShareRewardAt: null,  // timestamp ms — for +10 hearts share cooldown
-    milestonesShown: []       // xp thresholds already celebrated, e.g. [50, 100]
+    milestonesShown: [],      // xp thresholds already celebrated, e.g. [50, 100]
+    totalCorrect: 0,          // cumulative correct answers
+    totalAnswered: 0,         // cumulative answers given (correct + wrong)
+    bestStreak: 0             // all-time highest daily streak
   };
 }
 const BOOKMARKS_KEY = "italk_bookmarks_v1"; // shared with index.html glossary
@@ -2539,6 +2634,86 @@ function renderMilestoneBanner(milestone) {
   banner.hidden = false;
 }
 
+function openStats() {
+  renderStats();
+  document.getElementById("stats-scrim").classList.add("show");
+}
+function closeStats() {
+  document.getElementById("stats-scrim").classList.remove("show");
+}
+
+function renderStats() {
+  const g = state.game;
+  const xp = g.xp || 0;
+
+  // Level + progress bar
+  const lv = getCurrentLevel();
+  const nextIdx = lv ? XP_MILESTONES.findIndex(m => m.xp === lv.xp) + 1 : 0;
+  const nextLv = XP_MILESTONES[nextIdx] || null;
+  const prevXp = lv ? lv.xp : 0;
+  const nextXp = nextLv ? nextLv.xp : null;
+  const pct = nextXp ? Math.min(100, Math.round((xp - prevXp) / (nextXp - prevXp) * 100)) : 100;
+
+  document.getElementById("stats-level-icon").textContent = lv ? lv.icon : "🌱";
+  document.getElementById("stats-level-name").textContent = lv ? lv.level : "Ξεκίνα το πρώτο Quiz!";
+  document.getElementById("stats-next-label").textContent = nextLv
+    ? "Επόμενο: " + nextLv.icon + " " + nextLv.level + " (" + nextLv.xp.toLocaleString("el-GR") + " XP)"
+    : "🏆 Έχεις φτάσει το υψηλότερο επίπεδο!";
+  document.getElementById("stats-progress-bar").style.width = pct + "%";
+  document.getElementById("stats-xp-detail").textContent = nextXp
+    ? xp.toLocaleString("el-GR") + " / " + nextXp.toLocaleString("el-GR") + " XP  (" + pct + "%)"
+    : xp.toLocaleString("el-GR") + " XP συνολικά";
+
+  // Grid
+  const tc = g.totalCorrect || 0;
+  const ta = g.totalAnswered || 0;
+  const acc = ta > 0 ? Math.round(tc / ta * 100) + "%" : "—";
+  document.getElementById("st-xp").textContent = xp.toLocaleString("el-GR");
+  document.getElementById("st-acc").textContent = acc;
+  document.getElementById("st-quiz").textContent = (g.lessonsCompleted || 0).toLocaleString("el-GR");
+  document.getElementById("st-streak").textContent = (g.bestStreak || g.streak || 0) + " 🔥";
+  document.getElementById("st-correct").textContent = tc.toLocaleString("el-GR");
+  document.getElementById("st-weak").textContent = Object.keys(g.wrongTerms || {}).length;
+
+  // Skills breakdown
+  const sp = g.skillProgress || {};
+  const played = Object.entries(sp).filter(([, v]) => v.completions > 0);
+  const skillsBlock = document.getElementById("stats-skills-block");
+  if (played.length === 0) { skillsBlock.hidden = true; return; }
+  skillsBlock.hidden = false;
+
+  const sorted = played.slice().sort((a, b) => b[1].bestPct - a[1].bestPct);
+  const top = sorted.slice(0, 3);
+  const bottom = sorted.slice(-Math.min(3, sorted.length)).filter(([, v]) => v.bestPct < 70).reverse();
+
+  function skillName(id) {
+    if (!state.skills) return id;
+    const s = state.skills.skills.find(x => x.id === id);
+    return s ? s.name_el || s.name || id : id;
+  }
+  function skillRow(id, val) {
+    const row = document.createElement("div");
+    row.className = "skill-bar-row";
+    row.innerHTML =
+      '<span class="skill-bar-name">' + skillName(id) + '</span>' +
+      '<div class="skill-bar-track"><div class="skill-bar-fill" style="width:' + val.bestPct + '%"></div></div>' +
+      '<span class="skill-bar-pct">' + val.bestPct + '%</span>';
+    return row;
+  }
+
+  const topEl = document.getElementById("stats-top-skills");
+  topEl.innerHTML = "";
+  top.forEach(([id, v]) => topEl.appendChild(skillRow(id, v)));
+
+  const weakEl = document.getElementById("stats-weak-skills");
+  weakEl.innerHTML = "";
+  if (bottom.length === 0) {
+    weakEl.innerHTML = '<span style="font-size:13px;color:var(--text-muted);">Δεν υπάρχουν ακόμα αδύναμες θεματικές 🎉</span>';
+  } else {
+    bottom.forEach(([id, v]) => weakEl.appendChild(skillRow(id, v)));
+  }
+}
+
 function regenHearts() {
   if (state.game.hearts >= MAX_HEARTS) {
     state.game.heartRegenAt = null;
@@ -2566,6 +2741,7 @@ function updateStreakOnPlay() {
   if (last === yesterday) state.game.streak++;
   else state.game.streak = 1;
   state.game.lastPlayedDate = today;
+  if (state.game.streak > (state.game.bestStreak || 0)) state.game.bestStreak = state.game.streak;
 }
 
 function getCurrentLevel() {
@@ -3098,6 +3274,9 @@ function endQuiz(ranOutOfHearts) {
       };
     }
   }
+  // Accumulate lifetime stats
+  state.game.totalCorrect  = (state.game.totalCorrect  || 0) + state.quiz.correctCount;
+  state.game.totalAnswered = (state.game.totalAnswered || 0) + state.quiz.correctCount + state.quiz.wrongCount;
   // Check XP milestones before saving
   const newMilestone = getNewMilestone(xpBefore, state.game.xp);
   if (newMilestone) {
@@ -3646,6 +3825,9 @@ async function init() {
   document.getElementById("picker-save").addEventListener("click", savePicker);
 
   // Onboarding wiring
+  document.getElementById("stats-btn").addEventListener("click", openStats);
+  document.getElementById("stats-close").addEventListener("click", closeStats);
+  document.getElementById("stats-scrim").addEventListener("click", (e) => { if (e.target.id === "stats-scrim") closeStats(); });
   document.getElementById("header-profile").addEventListener("click", () => openOnboarding(false));
   document.getElementById("onboard-close").addEventListener("click", closeOnboarding);
   document.getElementById("ob-back").addEventListener("click", backOnboardingStep);
