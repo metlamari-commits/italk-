@@ -2415,6 +2415,7 @@
     </div>
 
     <div class="result-actions">
+      <button class="result-btn" id="result-next-skill" hidden>▶ Επόμενο μάθημα</button>
       <button class="result-btn" id="result-again">🔁 Ξανά ίδια ορολογία</button>
       <button class="result-btn" id="result-play-all" hidden style="background:var(--m3-tertiary, #6b4d80);">🎲 Παίξε με ΟΛΗ την ορολογία</button>
       <button class="result-btn secondary" id="result-pick-other">🎯 Διάλεξε άλλη ορολογία</button>
@@ -3560,6 +3561,25 @@ function startDailyQuiz() { startQuiz({ mode: "daily", format: state.currentForm
 function startWeakQuiz() { startQuiz({ mode: "weak", format: state.currentFormat }); }
 function startBookmarksQuiz() { startQuiz({ mode: "bookmarks", format: state.currentFormat }); }
 
+function findNextSkill() {
+  if (!state.skills) return null;
+  const domOrder = {};
+  state.skills.domains.forEach(d => { domOrder[d.id] = d.order; });
+  const sorted = state.skills.skills.slice().sort((a, b) => {
+    const da = domOrder[a.domain] ?? 99, db = domOrder[b.domain] ?? 99;
+    return da !== db ? da - db : (a.order ?? 0) - (b.order ?? 0);
+  });
+  if (state.currentMode === "skill" && state.currentSkillId) {
+    const idx = sorted.findIndex(s => s.id === state.currentSkillId);
+    return idx >= 0 && idx + 1 < sorted.length ? sorted[idx + 1] : null;
+  }
+  // daily/weak/bookmarks: return first unmastered skill
+  return sorted.find(s => {
+    const p = state.game.skillProgress[s.id];
+    return !p || p.completions < 5;
+  }) || null;
+}
+
 function endQuiz(ranOutOfHearts) {
   document.getElementById("quiz-overlay").classList.remove("show");
   // Keep quiz-open on body so result overlay is fullscreen
@@ -3614,6 +3634,19 @@ function endQuiz(ranOutOfHearts) {
   // Show "Play with ALL terminology" only after a skill-specific quiz
   const playAllBtn = document.getElementById("result-play-all");
   if (playAllBtn) playAllBtn.hidden = !(state.currentMode === "skill" && state.currentSkillId);
+
+  // Show "Next lesson" button with the next skill title
+  const nextSkillBtn = document.getElementById("result-next-skill");
+  if (nextSkillBtn) {
+    const nextSkill = findNextSkill();
+    if (nextSkill) {
+      nextSkillBtn.dataset.nextSkillId = nextSkill.id;
+      nextSkillBtn.textContent = "▶ Επόμενο: " + nextSkill.title_el;
+      nextSkillBtn.hidden = false;
+    } else {
+      nextSkillBtn.hidden = true;
+    }
+  }
 
   // Share reward button: visible if cooldown allows + not maxed out
   renderShareRewardUI();
@@ -4095,6 +4128,13 @@ async function init() {
     document.body.classList.remove("quiz-open");
     // Switch to "daily" mode — pools from ALL terms across every category
     startQuiz({ mode: "daily", format: state.currentFormat });
+  });
+  document.getElementById("result-next-skill").addEventListener("click", () => {
+    const btn = document.getElementById("result-next-skill");
+    const skillId = btn.dataset.nextSkillId;
+    document.getElementById("result-overlay").classList.remove("show");
+    document.body.classList.remove("quiz-open");
+    if (skillId) startSkillQuiz(skillId);
   });
   document.getElementById("result-pick-other").addEventListener("click", () => {
     document.getElementById("result-overlay").classList.remove("show");
